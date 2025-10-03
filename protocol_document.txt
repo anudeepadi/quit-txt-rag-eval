@@ -1,0 +1,1659 @@
+Quitxt Research Study – Messaging Protocol V8 DRAFT
+Quitxt Messaging Protocol 
+Intake Basic Message Sequence 
+We will not offer the option to set a “new date” since this is a research study with a limited duration of only six months. If a participant withdraws and later wishes to re-enroll, they will be enrolled in the YA Quitxt program instead. If a participant requests to restart the study, we will review the case to determine whether a restart is appropriate, and coordinate with the UTSA team based on that decision.
+INTAKE OPENING MESSAGE 
+Welcome to Quitxt from the UT Health Science Center! Congrats on your decision to quit smoking! See why we think you’re awesome, Tap pic below pending updated link 
+(2 Minute Delay) 
+¡Bienvenido a Quitxt del UT Health Science Center! ¡Felicitaciones por decidir dejar de fumar! Mira porque pensamos que ¡eres genial! Clic el pic abajo pending updated link 
+(2 Minute Delay) 
+Second message:
+We'll help you quit smoking with fun messages. By continuing, you agree with our terms of service. 
+If you want to leave the study, type EXIT. For more info Tap pic below. Insert updated link
+Te ayudaremos a dejar de fumar con fun texts. Al continuar, aceptas nuestros términos de servicio. 
+Si deseas dejar el estudio, envía SALIR. Para más información Clic el pic abajo Insert updated link
+(If EXIT):  
+We are sorry you want to leave the study. A team member will reach out to you to talk about your reasons and complete the process. You can also contact the Quitxt study team at quitxt@uthscsa.edu to let us know your decision.
+(If SALIR):
+Lamentamos que quieras dejar el estudio. Un miembro del equipo de investigación se comunicará contigo para hablar sobre tus razones y completar el proceso. También puedes contactar al equipo del estudio Quitxt en quitxt@uthscsa.edu para informarnos tu decisión. 
+Pop quiz before we start, just 1 easy question! 
+Pop quiz antes de empezar, solo 1 pregunta fácil.
+INTAKE Cigs/day:  	 
+About how many cigarettes do you smoke on an average day?  Text the number
+¿Cuántos cigarrillos te fumas en promedio por día? Envía el número
+INTAKE Nicotine: 
+If you smoke a pack of cigarettes a day or more, usually have a cigarette within 30 minutes after waking up, or feel like you are addicted to smoking, you may have nicotine "addiction". benefit from nicotine replacement therapy.
+(NO DELAY)
+This means you may need to use Nicotine replacement to can help you yourself quit smoking. Tap pic below https://quitxt.org/nicotine-replacement
+Updated message:
+If you smoke a pack of cigarettes a day or more, have a cigarette within 30 minutes after waking up, or feel like you are addicted to smoking, you may benefit from nicotine replacement therapy.
+(NO DELAY)
+Nicotine replacement can help you quit smoking. Tap pic below https://quitxt.org/nicotine-replacement
+(2 Minute Delay) 
+Si fumas un paquete o más de cigarrillos al día, a menudo fumas durante los primeros 30 min después de despertar o sientes adicción a fumar… puedes tener adicción a la nicotina. la terapia de reemplazo de nicotina puede beneficiarte.
+(NO DELAY)
+y Esto quiere decir que puedes necesitar usar Usar reemplazo de nicotina para puede ayudarte a dejar de fumar. Clic el pic abajo https://quitxt.org/spanish/terapia-de-reemplazo-de-nicotina 
+(2 Minute Delay) 
+Updated message:
+Si fumas un paquete o más de cigarrillos al día, fumas durante los primeros 30 min después de despertar o sientes adicción a fumar… la terapia de reemplazo de nicotina puede beneficiarte.
+(NO DELAY)
+Usar reemplazo de nicotina puede ayudarte a dejar de fumar. Clic el pic abajo https://quitxt.org/spanish/terapia-de-reemplazo-de-nicotina 
+(2 Minute Delay) 
+INTAKE Reasons:
+Think about your reasons to stop smoking. You may be worried about your health, doing it for your family, to save money or other. Tap pic below https://quitxt.org/reasons
+ (2-minute delay) 
+Piensa en tus razones para dejar de fumar. Por tu salud, por tu familia, para ahorrar dinero o por otras razones. Clic el pic abajo https://quitxt.org/spanish/razones
+(2-minute delay) 
+INTAKE Support:  
+Now, think about who will support your decision to quit smoking. For example, your padres, spouse/partner, brother or sister, or your friends. You should tell them you are quitting! Tap pic below Insert updated link
+(2 Minute Delay) 
+Ahora piensa en quién apoyará tu decisión de dejar de fumar: Por ejemplo, tus padres, esposo(a)/pareja, novio(a), hermanos(as) o tus amigos. Déjales saber tu decisión de dejar de fumar. Clic el pic abajo Insert updated link
+(2 Minute Delay) 
+INTAKE Ready:  	 
+Are you ready to quit smoking tomorrow? Text Y or N
+¿Estás listo para dejar de fumar mañana? Envía S o N
+(Response “Y”):  
+Great! This week we'll spend 5 to 10 minutes chatting with you each morning. Earlier is better. Text the time you want to do this: For 8:00, text 800 or for 7:15, text 715
+(Response “S”):
+¡Estupendo! Esta semana tomaremos 5 o 10 minutos para chatear contigo cada mañana. Entre más temprano lo hagamos mejor. Envía a que horas quieres hacer esto. Si a las 8:00, envía 800 o si a las 7:15, envía 715
+(No Response default = 800)  (Continue with Q1 next day) 
+LAST Message after response: 
+OK that's it for today. We'll be back tomorrow  
+OK eso es todo por hoy. Volveremos a hablar mañana 
+(Response N or No Response): 
+QUITDATE Setting: For those not ready to quit the next day
+The first step is to set a quit date on a day when you will not have much stress, maybe a weekend. It should be between 7 and 14 days from today. 
+Think about it and text a number between 7 and 14 for your quit date.
+El primer paso es fijar un día para dejar de fumar cuando no tengas mucho estrés, tal vez un fin de semana. Debe ser entre 7 y 14 días a partir de hoy. 
+Piénsalo y envíanos un número entre 7 y 14 para tu día de dejar de fumar.
+(Selected number decides how frequently next messages are sent: see pre-quit table) 
+OK your quit day is (insert date based on number of days texted). To help you get ready, we'll send you a few helpful messages every day, beginning tomorrow morning.  
+(NO DELAY) 
+OK tu día para dejar de fumar es (insert date based on number of days selected). Para ayudarte a preparar, te enviaremos algunos textos útiles, empezando mañana en la mañana.
+(NO DELAY)
+(No Response): (DEFAULT: set quit date to 7 days [details page X] and continue with time setting) 
+INTAKE QUITDATE Time Setting:  
+What time should we send the first text? The earlier the better! Text the time: For example, for 8:00 text 800 or for 9:15 text 915.
+¿A qué hora debemos enviarte el primer texto? ¡Entre más temprano es mejor! Envía la hora. Si a las 8 envía 800 o si a las 9:15, envía 915.
+(No Response DEFAULT 8:00) 
+LAST Message after Response: 
+OK that's it for today. We'll be back tomorrow.  
+OK eso es todo por hoy. Volveremos a hablar mañana. 
+INTAKE Reminder: (ROUTINE FOR NO RESPONSE TO AN INTAKE QUESTION Appendix 5)
+PRE-QUIT TABLE: Quit Date Set 7-14 Days Ahead
+Pre-Quit Days Default: 7 
+Pre-Quitting Day -6 
+(This is the default for participants who do not respond to setting a quit day).
+(Timed as requested – DEFAULT 8:00 AM): 
+PQ-6Motiv1 Messaging: 
+Reason #1 to quit smoking while you're young: You'll live longer to enjoy the future’s coolest tech, like robot assistants and flying cars.  Insert updated gif link
+Razón #1 para dejar de fumar siendo joven: Vivirás más tiempo para disfrutar la tec del futuro como robots asistentes y carros voladores.  Insert updated gif link
+PQ-6Motiv4 Messaging – Noon: 
+"Stranger Things” is tackling the real monster: Tobacco! It kills more people than AIDS, alcohol, car accidents, murder, drugs, suicides, and fires COMBINED! Insert updated gif link
+"Stranger Things” ataca al verdadero monstruo: ¡El tabaco! Porque ¡mata más personas que el SIDA, el alcohol, las drogas, los asesinatos, los suicidios, los incendios y los accidentes de carro JUNTOS! Insert updated gif link
+Pre-Quitting Day -5 
+(Timed as requested – DEFAULT 8:00 AM): 
+PQ-5BD – 8am:  
+Drinking alcohol can trigger cravings for a cigarette and makes it harder for you to quit smoking. Tap pic below https://quitxt.org/binge-drinking
+Beber alcohol puede provocar los deseos de fumar y te hace más difícil dejar el cigarrillo. Clic el pic abajo https://quitxt.org/spanish/consumo-intensivo-de-alcohol
+PQ-5Cue1 Messaging – Noon: 
+Just like “The Mandalorian” fights to protect Grogu, you can defend your lungs from cancer and disease. Stay strong – quit smoking and be your own hero!  Insert updated gif link
+Como El Mandalorian lucha y protege a Grogu, tú puedes proteger tus pulmones del cáncer y enfermedades. ¡Deja de fumar y sé tu propio héroe!  Insert updated gif link
+PQ-5Motiv2 Messaging – 4pm: 
+Reason #2 to quit smoking while you’re young: Add a decade to your life and get yourself an AI-powered robot butler! 
+Who needs to do chores when you can get things done with the touch of a button? Quit Smoking! Your future is looking bright! Insert updated gif link
+Razón #2 para dejar de fumar siendo joven: ¡Ganarás 10 años de vida y podrás disfrutar los mayordomos robot con inteligencia artificial. 
+Quien necesita hacer las tareas caseras cuando puedes hacer todo con solo tocar un botón. ¡Deja de fumar! ¡Tu futuro se ve brillante! Insert updated gif link
+Pre-Quitting Day -4 
+ (Timed as requested – DEFAULT 8:00am): 
+PQ-4GETTING ACTIVE Messaging: 
+You’ll find it easier to quit if you get more active. There are lots of ways to get active. Just take walks, play ball with friends or exercise. Tap pic below https://quitxt.org/getting-active
+Será más fácil dejar de fumar si eres más activo. Hay muchas formas de hacerlo. Solo camina o haz ejercicio. Clic el pic abajo https://quitxt.org/spanish/mantenerte-activo
+PQ-4Cue3 Messaging - Noon: 
+If we've learned one thing from Google maps, it's to always follow directions. Do the same when using nicotine patches, gum or lozenges. 
+Si hemos aprendido algo de los mapas de Google, es siempre seguir las indicaciones. Haz lo mismo cuando uses reemplazo de nicotina.
+ PQ-4Motiv3 Messaging – 4pm: 
+Quitting is hard, but YOU CAN DO IT! Make your family proud and quit tobacco!
+https://quitxt.org/sites/quitxt/files/gifs/App1-Motiv3_ImRooting4U.gif
+Dejar de fumar es duro, pero ¡TÚ PUEDES HACERLO! Haz sentir orgullosa a tu familia y ¡deja de fumar!  https://quitxt.org/sites/quitxt/files/gifs/preq4_motiv3_tupuedes_esp.gif 
+Pre-Quitting Day -3 
+ (Timed as requested – DEFAULT 8:00am): 
+PQ-3BREATHING Messaging – 8am: 
+There are breathing exercises that can help you stop smoking. One can help you relax. One can perk you up.
+(NO DELAY)
+To relax: Breathe in VERY SLOWLY through your nose, fill your lungs from bottom up, then exhale VERY SLOWLY through your mouth. Do it 3 times. Practice daily.  
+(NO DELAY)
+To perk up: Take a deep breath QUICKLY and DEEPLY through your nose, then blow it QUICKLY out your mouth. Do it 3 times. Practice daily. Insert updated link
+Hay ejercicios de respiración que pueden ayudarte a dejar de fumar. Uno te puede ayudar a relajar y otro puede darte ánimo.
+(NO DELAY)
+Para relajarte: Respira MUY LENTAMENTE por la nariz y llena tus pulmones de abajo hacia arriba. 
+Después, MUY LENTAMENTE sopla el aire por la boca. Hazlo 3 veces. Practica diariamente. 
+(NO DELAY)
+Para animarte: Respira RÁPIDA y PROFUNDAMENTE por la nariz y luego sopla el aire RÁPIDAMENTE por la boca. Hazlo 3 veces. Practica varias veces al día. Clic el pic abajo Insert updated link
+PQ-3Cue4 Messaging – 11am: 
+Uncle Iroh Word of wisdom: Practice deep breathing to relax without smoking. Insert updated gif link
+Palabras sabias del tío Iroh: Practica respiración profunda para relajarte sin necesidad de fumar. Insert updated gif link
+PQ-3Cue5Messaging – 2pm: 
+Because we're not all Deadpool, getting active when you quit smoking will help your body recover better AND make it easier to stay away from tobacco. You’re the real hero! https://quitxt.org/sites/quitxt/files/gifs/deadpool.gif  
+Porque no todos somos Deadpool, estar más activo ayudará a tu cuerpo a recuperarse mejor y será más fácil mantenerte alejado del tabaco. https://quitxt.org/sites/quitxt/files/gifs/deadpool.gif 
+Pre-Quitting Day -2 
+(Timed as requested – DEFAULT 8:00am): 
+PQ-2NICOTINE Messaging 
+Did you decide to use nicotine replacement? If so, have your patch / gum / lozenge ready by tomorrow. Read the label and use as directed: https://quitxt.org/nicotine-replacement
+Si decidiste usar reemplazo de nicotina, recuerda tenerlo listo para mañana. Lee y sigue las indicaciones con cuidado: https://quitxt.org/spanish/terapia-de-reemplazo-de-nicotina
+PQ-2Cue6Messaging – 11am: 
+Get your body moving: Play your favorite song and dance or simply walk around the block. It only takes 30 minutes to help you stay away from tobacco. Insert updated gif link
+Mueve tu cuerpo: Toca tu canción favorita y baila o simplemente sal a caminar. Sólo 30 minutos te ayudarán a mantenerte alejado del tabaco. Insert updated gif link
+PQ-2Motiv5 Messaging – 2pm: 
+Updated Message:
+What's worse than catching a respiratory virus? Catching a severe case with breathing complications due to smoking! Insert updated gif link
+¿Qué es peor que contraer un virus respiratorio? ¡Que por fumar tengas un caso severo con complicaciones respiratorias! Insert updated gif link
+Pre-Quitting Day -1 
+(Timed as requested – DEFAULT 8:00am): 
+PQ-1INSTEAD Messaging: 
+Think about times or places you will want to smoke the most and what can you do instead… Go here for ideas: https://quitxt.org/instead-of-smoking
+Piensa cuándo y dónde es que deseas fumar más y qué puedes hacer en lugar de fumar. Clic el pic abajo para más ideas: https://goo.gl/bzPXY1   
+PQ-1Motiv6 Messaging – 11am 
+You already deal with traffic jams, work, school, and seeing ads on YouTube and Instagram… why would you want to deal with smoking? YOU CAN BE FREE from tobacco! Insert updated gif link
+Ya te aguantas el tráfico, el trabajo, la escuela y los comerciales en YouTube y en Instagram… ¿Por qué el lío de fumar? ¡LIBERATE del tabaco! Insert updated gif link
+Quit Day = Q1
+Basic Message Sequence 
+ (Timed as requested, DEFAULT 8:00 AM): 
+It's quit day! To start on the road to a smokefree life, get rid of cigarettes, butts, matches, lighters and ashtrays. Here is why you're ready: https://youtu.be/wTKMVi3t-48
+(2 Minute Delay) 
+¡Hoy es el día! Empieza tu nueva vida sin fumar, tira los cigs, las colillas, las cerillas, los encendedores y los ceniceros. Clic el pic abajo https://youtu.be/9mkr_E-1kGg
+(2 Minute Delay) 
+Q1REASONS 
+Make a list with the reasons you are quitting: Your family, your health... carry it with you and read it when you feel tempted. Tap pic below https://quitxt.org/reasons
+Escribe las razones por las que estás dejando de fumar: Tu familia, tu salud... llévalas contigo y léelas cuando sientas antojo. Clic el pic abajo https://quitxt.org/spanish/razones
+(2 Minute Delay) 
+Q1INSTEAD:   
+Think about the times or places you will want to smoke the most and what you can do instead… Go here for ideas https://quitxt.org/instead-of-smoking
+ (2 Minute Delay)
+Piensa cuándo y dónde es que deseas fumar más y qué puedes hacer en lugar de fumar. Clic el pic abajo para más ideas https://quitxt.org/spanish/en-lugar-de-fumar
+(2 Minute Delay)
+Q1NICOTINE:
+If you decided to use nicotine replacement, it is time to do it. Be sure to read and follow the directions carefully: https://quitxt.org/nicotine-replacement 
+Si decidiste usar reemplazo de nicotina, es hora de comenzar a usarlo. Lee y sigue con cuidado las indicaciones: https://quitxt.org/spanish/terapia-de-reemplazo-de-nicotina   
+Q1HELPNOW: 	 
+If you are having a hard time, text HELPNOW and we will answer. 
+Si estás pasando por un mal momento envía AYUDAYA y te responderemos.
+END OF MESSAGING SESSION
+Intermittent Messaging and Checkout 
+(FOR DAYS WITH TEXTING SESSIONS: 3 INTERMITTENT MESSAGES SPACED THROUGH THE DAY BEFORE 8 PM [1pm, 4pm, 7pm]. 
+Q1IM1pm:
+There is strength in numbers: Text your supporters and let them know you are quitting! Encouraging words can go a long way. https://quitxt.org/sites/quitxt/files/gifs/q1_strength_in_numbers.gif 
+La unión hace la fuerza. Comunícate con las personas que te apoyan y déjales saber que dejaste de fumar. Las palabras de aliento son de gran ayuda.
+https://quitxt.org/sites/quitxt/files/gifs/q1_strength_in_numbers.gif 
+Q1IM4pm: 
+Miles Morales spent a lot of time preparing to become Spider-Man. Quitting smoking is no different. We can show you how to quit 1 craving at a time. Insert updated gif link
+Miles Morales practicó mucho tiempo para ser el Hombre Araña. Dejar de fumar no es diferente. Te mostraremos cómo dejar de fumar 1 antojo a la vez. Insert updated gif link
+8 PM - Q1checkout?  
+During the day, did you smoke a tobacco cigarette, even a puff? Text Y or N
+Response: “Y”): 
+That is OK. It takes practice. Treat this as a slip. Each slip is an opportunity to learn. You CAN do this!
+(Response: “N”): 
+CONGRATULATIONS! You got the mojo! We'll text you again tomorrow… https://quitxt.org/sites/quitxt/files/gifs/q1_you_got_this.gif
+Durante el día de hoy, ¿fumaste cigarrillos de tabaco, aunque fuera una fumada? Envía S o N
+(Response: “S”):
+Es OK. Requiere práctica. Toma esto como un desliz. Cada desliz es una oportunidad de aprender.  ¡Tú PUEDES lograrlo!
+(Response: “N”):
+¡FELICITACIONES! ¡Tú tienes la magia! Hablamos de nuevo en la mañana… 
+https://quitxt.org/sites/quitxt/files/gifs/q1_8pm_checkout_esp.gif  
+(No Response):	(No response to checkout routine in Appendix 5). Wait 1 hour and send the questions again. If no response after the second time the question is sent, continue with the next day.
+Quit Day 2 = Q2
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+ Q2BREATHING Messaging:  
+Start today with breathing exercises to help you cope with the urge to smoke.  
+(NO DELAY)
+Relax away the craving! Breathe in VERY SLOWLY through your nose, fill your lungs from bottom up, then exhale VERY SLOWLY through your mouth. Do it 3 times.  
+(NO DELAY)
+To perk up: Take a deep breath QUICKLY and DEEPLY through your nose, then blow it QUICKLY out your mouth. Do it 3 times. Practice daily. Tap pic below Insert updated link
+(2 Minute Delay) 
+Empieza el día con ejercicios de respiración para ayudarte con los antojos de fumar.
+(NO DELAY)
+Para relajar el antojo: Respira MUY LENTAMENTE por la nariz y llena tus pulmones de abajo hacia arriba. Después, MUY LENTAMENTE sopla el aire por la boca. Hazlo 3 veces. 
+(NO DELAY)
+Para animarte: Respira RÁPIDA y PROFUNDAMENTE por la nariz y luego sopla el aire RÁPIDAMENTE por la boca. Hazlo 3 veces. Practica varias veces al día. Clic el pic abajo Insert updated link
+(2 Minute Delay) 
+Q2BD Messaging  
+Drinking makes it harder to quit smoking… Here are some ideas on how to control drinking. Tap pic below Insert updated link
+Tomar te hace más difícil dejar de fumar. Para ideas sobre cómo controlar la bebida Clic el pic abajo Insert updated link
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+Q2IM1pm: 
+24 hours smokefree and counting!!! Be sure to reward yourself. Each hour you're smokefree, say or do something nice for yourself. https://quitxt.org/sites/quitxt/files/gifs/Q2IM1pm.gif
+Updated message:
+¡24 horas sin fumar y contando! Asegúrate de premiarte. Cada hora sin fumar haz algo que te agrade. Insert updated gif link
+Q2IM4pm: 
+Health experts say smoking weakens the function of the lungs. Quitting smoking… Best decision ever!!
+https://quitxt.org/sites/quitxt/files/gifs/Q2_4pm_Thumbup.gif 
+Los expertos de salud dicen que fumar debilita la función de los pulmones. Dejar de fumar…¡La mejor decisión de tu vida!
+Q2IM7pm: 
+Quitting is hard, but YOU CAN DO IT! Make yourself proud & ditch tobacco for good. We got your back! Insert updated gif link
+Dejar de fumar es difícil, pero ¡TÚ PUEDES LOGRARLO! Haz que te sientas orgulloso de ti mismo y abandona el tabaco. ¡Estamos contigo!
+Insert updated gif link
+Quit Day 3 = Q3 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Q3INSTEAD OF SMOKING Messaging:  
+Chew gum instead of smoking when you want to smoke the most. Tap pic below for more ideas https://quitxt.org/instead-of-smoking
+  (2 Minute Delay) 
+Mastica chicle en lugar de fumar cuando tengas antojo de un cigarrillo. Para más ideas Clic el pic abajo https://quitxt.org/spanish/en-lugar-de-fumar
+Q3SUPPORT Messaging    
+You can get support from family and friends. Get in touch with them today to tell them how you’re doing. Tap pic below https://quitxt.org/support 
+  (2 Minute Delay) 
+Puedes recibir apoyo de tu familia y amigos. Comunícate con ellos hoy y déjales saber cómo estás. Clic el pic abajo https://quitxt.org/spanish/apoyo
+(2 Minute Delay) 
+  Q3HELPNOW: 
+If you are having a hard time, text HELPNOW and we will answer. 
+Si estás pasando por un mal momento envía AYUDAYA y te responderemos. 
+END OF MESSAGING SESSION  
+Intermittent Messaging  
+Q3IM1pm: 
+Do you know that within 72 hours of quitting smoking, healthy cells begin to replace damaged ones in the lungs, and lung function starts to improve? 
+(NO DELAY)
+There is no time like the present — this means NOW is a good time to quit smoking! You can do it and be tobacco-free!
+¿Sabías que en las primeras 72 horas sin fumar, las células sanas empiezan a reemplazar las dañadas en los pulmones y la función pulmonar empieza a mejorar?
+(NO DELAY)
+No hay tiempo como el presente… ¡AHORA es el momento perfecto para dejar de fumar! ¡Tú puedes hacerlo y estar libre del tabaco!
+ Q3IM4pm: 
+Don't be afraid to get help to stay away from smoking. It’s a brave step towards a healthier you. You’re not alone in this journey! Insert updated gif link
+No temas pedir ayuda para mantenerte alejado de fumar. Es un paso valiente hacia una vida saludable. ¡Tú no estás solo en esta jornada! Insert updated gif link
+ Q3IM7pm:  
+Nicotine is addictive! You need a plan to fight cravings: Be ready with nicotine patches, gum, or lozenges. Even the Avatar needs a plan to defeat his enemies!  Insert updated gif link
+¡La nicotina es adictiva! Necesitas un plan para combatir los antojos: ¡Prepárate con parches, chicles o pastillas de nicotina! Hasta el Avatar necesita prepararse para vencer a sus enemigos. Insert updated gif link
+Quit Day 4 = Q4 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Q4GETTING ACTIVE messaging: 
+Getting active helps you with stress and cravings. There are lots of ways to get active. Just taking walks or working out helps. Just do it! Tap pic below http://quitxt.org/getting-active
+ (2 Minute Delay)
+Estar más activo ayuda con el estrés y los antojos. ¿Cómo hacerlo? Solo camina o haz ejercicio. ¡Muévete ya! Clic el pic abajo https://quitxt.org/spanish/mantenerte-activo
+(2 Minute Delay) 
+  Q4TALKOUT Messaging:  
+You need to be ready to talk yourself out of smoking. You might tell yourself: I can have just one cigarette, that won't hurt.
+(NO DELAY)
+You SHOULD tell yourself: If I have one, I will just want another one… and that's no good! Tap pic below http://quitxt.org/talk-yourself-out-of-smoking
+Necesitas estar listo para convencerte a ti mismo de no fumar. Podrías decirte: Fumarme solo un cigarrillo no me hará daño. 
+(NO DELAY)
+Debes decirte: Si me fumo uno, voy a querer otro… y eso ¡no es bueno! Clic el pic abajo https://quitxt.org/spanish/convencete-a-ti-mismo-de-no-fumar
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+Q4IM1pm: 
+3 days smokefree! Smoking dulls your taste buds. Luckily, they regenerate after just 48 hours without cigarettes. 
+(NO DELAY)
+Now that you have your taste buds back, channel your inner Goku and savor the flavors of your favorite foods like never before! Insert updated gif link
+¡3 días sin fumar! Fumar reduce tu sentido del gusto. Por suerte se regenera en solo 48 horas sin fumar.
+(NO DELAY)
+¡Ahora que ya recuperaste tu sentido del gusto, usa tu Goku interior y saborea tus comidas favoritas como nunca antes! Insert updated gif link
+Q4IM4pm: 
+You may not always feel as confident as you should & you might slip. Why do we fall? So we can learn to pick ourselves up. Keep trying no matter what. You CAN quit smoking for good. Insert updated gif link
+Puede ser que no siempre te sientas tan seguro como deberías y tengas un desliz. ¿Por qué nos caemos? Para aprender cómo levantarnos. Sigue intentándolo. Tú PUEDES dejar de fumar para siempre. Insert updated gif link
+Q4IM7pm: 
+Drink a lot of liquids to help flush the poison out of your system. Orange juice is good because smoking depletes the vitamin C content in our bodies.
+Bebe muchos líquidos para eliminar el veneno de tu sistema. El jugo de naranja es bueno porque fumar agota la vitamina C en tu cuerpo.    
+Quit Day 5 = Q5 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Q5REASONS Messaging:  
+Remember that list you made of reasons you are quitting… Keep them close to you. Tap pic below https://quitxt.org/reasons 
+Recuerda las razones por las que estás dejando de fumar... Mantenlas cerca de ti. Clic el pic abajo https://quitxt.org/spanish/razones
+Q5INSTEAD OF SMOKING Messaging:  
+Eat carrots or drink water instead of smoking when you want to smoke the most. Tap pic below for more ideas http://quitxt.org/instead-of-smoking
+(2 Minute Delay)  
+Come zanahorias o bebe agua en lugar de fumar cuando tengas antojo de un cigarrillo. Para más ideas Clic el pic abajo https://quitxt.org/spanish/en-lugar-de-fumar
+(2 Minute Delay) 
+Q5NICOTINE  
+Remember, if you are using nicotine replacement, be sure to read and follow the directions carefully: http://quitxt.org/nicotine-replacement
+ 	(2 Minute Delay) 
+Recuerda, si estás usando reemplazo de nicotina asegúrate de leer y seguir con cuidado las indicaciones: https://quitxt.org/spanish/terapia-de-reemplazo-de-nicotina
+(2 Minute Delay) 
+Q5BD Messaging  
+Want to increase your chances of quitting smoking for good? Manage your alcohol intake. Here's how: https://quitxt.org/binge-drinking-2
+¿Quieres aumentar tus chances de dejar el cigarrillo para siempre? Aprende a controlar la bebida. Aquí hay ideas. Clic el pic abajo https://quitxt.org/spanish/consumo-intensivo-de-alcohol-2
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+ Q5IM1pm: 
+Take it 1 day at a time and practice avoiding your triggers. 
+Toma 1 día a la vez y practica cómo evitar las cosas y situaciones que te hacen antojar de fumar.
+Q5IM4pm: 
+Avoid drinking coffee or caffeinated drinks after you quit. Caffeine can make symptoms of nicotine withdrawal worse & make you feel jittery. https://quitxt.org/sites/quitxt/files/gifs/cat_caffeine.gif
+Evita beber café o bebidas con cafeína. La cafeína puede empeorar tus síntomas de abstinencia de nicotina y hacerte sentir nervioso. https://quitxt.org/sites/quitxt/files/gifs/cat_caffeine.gif
+Q5IM7pm: 
+Keep strong! With every minute, you're getting closer to staying smokefree for good! Insert updated gif link
+¡Mantente fuerte! Con cada minuto que pasa estás cada vez más cerca de estar ¡libre del cigarrillo para siempre! Insert updated gif link
+Quit Day 6 = Q6
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Q6SUPPORT Messaging: 
+It helps to have support for quitting. Remember, the Avengers didn't do it alone! https://quitxt.org/sites/quitxt/files/gifs/q6_avengers.gif
+(2 Minute Delay) 
+Ayuda mucho tener apoyo para dejar de fumar. ¡Recuerda que los Avengers no ganaron solos!  https://quitxt.org/sites/quitxt/files/gifs/q6_avengers.gif 
+	(2 Minute Delay) 
+Q6BREATHING Messaging: 
+Keep using the breathing exercises to help you cope with the urge to smoke. They do work if you try them! 
+(NO DELAY)
+To relax: Breathe in VERY SLOWLY through your nose, fill your lungs from bottom up, then exhale VERY SLOWLY through your mouth. Do it 3 times.
+(NO DELAY)
+To perk up: Take a deep breath QUICKLY and DEEPLY through your nose, then blow it QUICKLY out your mouth. Do it 3 times. Practice daily. Tap pic below Insert updated link
+(2 Minute Delay) 
+Sigue usando los ejercicios de respiración para ayudarte con los antojos de fumar. ¡Funcionan si lo intentas! 
+(NO DELAY)
+Para relajarte: Respira MUY LENTAMENTE por la nariz y llena tus pulmones de abajo hacia arriba. Después, MUY LENTAMENTE sopla el aire por la boca. Hazlo 3 veces. Practica diariamente.
+(NO DELAY)
+Para animarte: Respira RÁPIDA y PROFUNDAMENTE por la nariz y luego sopla el aire RÁPIDAMENTE por la boca. Hazlo 3 veces. Practica varias veces al día. Clic el pic abajo Insert updated gif link
+ (2 Minute Delay) 
+Q6HELPNOW: 
+If you're having a hard time, text HELPNOW and we will answer. 
+Si estás pasando por un mal momento envía AYUDAYA y te responderemos. 
+END OF MESSAGING SESSION  
+Intermittent Messaging  
+Q6IM1pm: 
+Day 6 and counting! Stay positive. Don't let things get you down. Your journey to a smokefree life might be a struggle, but it will be well worth it. 
+¡Día 6 y contando! Sigue positivo. No dejes que nada te tumbe. Tu camino hacia una vida libre de tabaco puede ser difícil, pero vale la pena.
+Q6IM4pm: 
+If friends and family smoke, ask them not to smoke or leave their cigarettes near you. Change the scenery. Go for a bike ride to ride off the craving. 
+Si tu familia y amigos fuman, pídeles que no lo hagan ni dejen los cigarrillos cerca de ti. Sal y anda en bicicleta para eliminar el antojo.
+Q6IM7pm:
+Quitting takes practice. If you slip, it's ok! Try again and stay strong! You got this!
+Dejar de fumar toma práctica. ¡Si tienes un desliz, está bien! ¡Trata otra vez y permanece fuerte, tú puedes lograrlo!
+Quit Day 7 = Q7 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+$XX. That's how much you’ve saved since quitting smoking. Go, you! Here’s why your wallet is getting bigger: https://youtu.be/rSaJBPEA3RA
+$XX. Esto es lo que has ahorrado desde que dejaste de fumar. ¡Bravo! Mira por qué tu billetera está más grande: https://youtu.be/Ygu88-BO0cY
+Q7GETTING ACTIVE messaging: 
+You’ll find it easier to quit if you start getting more active... even a short walk will help. Just go for it!! Tap pic below https://quitxt.org/getting-active
+ (2 Minute Delay) 
+Será más fácil dejar de fumar si te mantienes más activo… incluso las caminatas cortas te ayudarán. ¡Muévete ya! Clic el pic abajo https://quitxt.org/spanish/mantenerte-activo
+(2 Minute Delay) 
+Q7PP (Predict & PLAN) messaging: 
+To quit for good, you need to be prepared to cope with some tough situations: If you get yelled at by your boss, get stressed, and feel the need for a cigarette… 
+(NO DELAY)
+Take a walk, call a friend, use breathing exercises… you'll feel even worse if you start smoking again. Tap pic below http://quitxt.org/predict-and-plan
+Para dejar de fumar debes prepararte para enfrentar situaciones difíciles: Si tu jefe te regaña, te estresas y sientes la necesidad de fumarte un cigarrillo…
+(NO DELAY)
+Sal a caminar, llama a un amigo, haz ejercicios de respiración… te sentirás peor si empiezas a fumar de nuevo. Clic el pic abajo https://quitxt.org/spanish/predecir-y-planear
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+Q7IM1pm: 
+Day 7 & counting!!! Stay strong, you can do it! https://quitxt.org/sites/quitxt/files/gifs/q7_1pm.gif
+¡Día 7 y contando!! Mantente fuerte ¡tú puedes lograrlo!
+https://quitxt.org/sites/quitxt/files/gifs/q7_1pm_tupuedes_esp.gif
+Q7IM4pm:
+By not smoking you are reducing your risk of 13 types of cancer, lung disease and heart disease! Congrats!! Insert updated gif link
+¡Al no fumar estás reduciendo tu riesgo de 13 tipos de cáncer, enfermedades pulmonares y del corazón! ¡Felicitaciones! Insert updated gif link
+Q7IM7pm:
+Get your body moving: Go for a hike at the park or go play soccer with friends. Just 30 minutes a day helps you stay away from tobacco.
+Mueve tu cuerpo: Da una caminata en el parque o juega fútbol con tus amigos. Solo 30 minutos al día ayudará a mantenerte alejado del tabaco.  
+8 PM – Q7checkout?  
+During the past 7 days, have you smoked a cigarette, even a puff? Text Y or N
+(Response “Y”):  Remember this is the slip routine (Appendix 2)
+That's OK. Remember, it takes practice.  What caused you to start smoking again? Text one of these reasons: 
+Badmood 
+Stress
+Smokers
+Alcohol
+Other
+(Response “N”): 
+CONGRATS from Quitxt! You're awesome! Tomorrow's a new day… let's touch base in the morning and make it smokefree! Insert updated gif link
+Durante los últimos 7 días, ¿has fumado cigarrillos de tabaco, aunque fuera una sola fumada?  Envía S o N
+(Response: “S”):	Remember this is the slip routine (Appendix 2)
+Es OK. Recuerda, toma práctica. ¿Qué te hizo fumar de nuevo? Envía una de estas razones: 
+Malhumor
+Estrés
+Fumadores
+Alcohol
+Otra
+ (Response: “N”): 
+      ¡FELICITACIONES de Quitxt! Mañana es un nuevo día… hagamos que sea un día ¡libre de cigarrillos! 
+Insert updated gif link
+(No Response):	(No response to checkout routine in Appendix 5). If no response after the second time the question is sent, continue with next day.
+Quit Day 8 = Q8 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+The eCig question was deleted. It will be included in the surveys.
+Intermittent Messaging  
+(5 INTERMITTENT MESSAGES SPACED THROUGH THE DAY BEFORE 8 PM [11am, 1pm, 3pm, 5pm, 7pm])  
+Q8IM11am: 
+Wow! 1 week smokefree! Someone's showing off          Don't look back now. Mark your calendar & do something special to celebrate this accomplishment! 
+¡Súper 1 semana sin fumar! Alguien está presumiendo           No mires hacia atrás. Marca tu calendario, haz algo especial y ¡celebra este logro!
+ Q8IM1pm: 
+Quitting smoking when you are young will add a decade to your life and you can see your kids graduating and getting married.  
+Dejar de fumar cuando eres joven añadirá 10 años a tu vida y podrás ver a tus hijos graduarse y casarse.
+ Q8IM3pm: 
+You might feel down after quitting, but like Bad Bunny says, “No looking back, no giving up!” Keep pushing forward, you've got this!  Insert updated gif link
+Te puedes sentir un poco depre después de dejar de fumar, pero como dice Bad Bunny, “No mires atrás, no te rindas!” ¡Sigue adelante, lo puedes lograr! Insert updated gif link
+Q8IM5pm: 
+The road to quitting can be bumpy, but supportive friends and family & new hobbies can help. 
+El camino para dejar de fumar puede ser duro, pero el apoyo de tu familia, tus amigos y nuevos pasatiempos te pueden ayudar.
+Q8IM7pm: (BD) 
+Drinking makes it harder for you to stay smokefree for good.  See why else it's a GOOD THING to manage alcohol consumption: https://quitxt.org/binge-drinking
+Tomar te hace más difícil mantenerte sin fumar. Mira por qué más es bueno controlar la bebida: https://quitxt.org/spanish/consumo-intensivo-de-alcohol
+Quit Day 9 = Q9 
+Intermittent Messaging  
+Q9IM11am: 
+Quitting smoking not only makes your lungs stronger but it speeds up recovery time from injuries… wait, are you turning into a superhero? Insert updated gif link
+Dejar de fumar fortalece tus pulmones y también hace que tus heridas sanen más rápido… espera ¿te estás convirtiendo en un superhéroe?
+Insert updated gif link
+Q9IM1pm: 
+Remind yourself often that by quitting smoking, you are protecting your family’s health against respiratory diseases and cancer! 
+Insert updated gif link
+Recuérdate a menudo que, al dejar de fumar, ¡estás protegiendo la salud de tu familia contra enfermedades respiratorias y cáncer! Insert updated gif link
+Q9IM3pm: 
+It seems you've found the reset button on this Xbox game of life: You're creating a new healthy smokefree life! 
+Parece que has encontrado el botón de reinicio en este juego Xbox de la vida: ¡Tú estás creando una vida sana libre de cigarrillos!
+ Q9IM5pm: 
+Remember the 4 Ds if you get cravings–Delay, Drink water, Deep breathe, Do something else. https://quitxt.org/sites/quitxt/files/gifs/q9_5pm.gif
+Recuerda estos 4 pasos si tienes antojo – demora, bebe agua, respira profundo y haz alguna otra cosa. https://quitxt.org/sites/quitxt/files/gifs/q9_5pm_water_esp 
+Q9IM7pm: 
+Plan what to do when you go where there might be smokers… chew gum or a cinnamon stick. 
+Planea qué hacer cuando vas a un lugar donde puede haber fumadores… mastica chicle o una astilla de canela.     
+Quit Day 10 = Q10 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Q10REASONS Messaging:  
+Focus on your #1 reason for quitting. Tap pic below https://quitxt.org/reasons  
+(NO DELAY) 
+Enfócate en tu razón #1 para dejar de fumar. Clic el pic abajo https://quitxt.org/spanish/razones 
+ Q10TALKOUT Messaging:  
+Be ready to talk yourself out of smoking. You might tell yourself: I feel terrible and just don’t care… why not have a cigarette? 
+(NO DELAY)
+You SHOULD tell yourself: That might help for a minute but later I'll feel worse if I start smoking again. Tap pic below https://quitxt.org/talk-yourself-out-of-smoking 
+(2 Minute Delay)
+Prepárate para convencerte de no fumar. Podrías decirte: Me siento mal y simplemente no me importa... ¿por qué no fumarme un cigarrillo?
+(NO DELAY)
+Debes decirte: Eso me ayudaría por un minuto, pero más tarde me voy a sentir peor si comienzo a fumar de nuevo. Clic el pic abajo https://quitxt.org/spanish/convencete-a-ti-mismo-de-no-fumar  
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+Q10IM1pm: 
+Quitting smoking is not about what you are giving up but what you are gaining. Confidence, pride, better health, & investment in your future. 
+Dejar de fumar no se trata de lo que estás dejando sino de lo que estás ganando. Seguridad en ti mismo, orgullo, salud y un mejor futuro.
+Q10IM4pm: 
+At bars and clubs there's so much smoking on decks and patios. Now YOU need to go IN for fresh air. 
+Afuera en los bares y clubes hay tantas personas fumando en las terrazas y patios, que ahora necesitas ENTRAR para respirar aire fresco.
+Q10IM7pm: 
+Cravings will last 5 minutes but your health is forever! Be strong!  Insert updated gif link
+Los antojos de fumar durarán 5 minutos… pero ¡tu salud es para siempre! ¡Sé fuerte!
+Insert updated gif link
+Quit Day 11 = Q11 
+Intermittent Messaging  
+Q11IM11am: 
+Cigarettes do not make the party better. Stay strong & say no when offered a cigarette. You will thank yourself later. https://quitxt.org/sites/quitxt/files/gifs/ehh_no.gif
+Los cigarrillos no mejoran la fiesta. Sé fuerte y di NO cuando te ofrezcan un cigarrillo. Te lo agradecerás más tarde. https://quitxt.org/sites/quitxt/files/gifs/ehh_no.gif
+ Q11IM1pm: 
+Keep going. YOU CAN DO IT! We are with you all the way!
+Insert updated gif link
+¡Sigue Adelante! TÚ PUEDES HACERLO! ¡Estamos contigo! Insert updated gif link
+Q11IM3pm: 
+By quitting smoking you are helping your immune system get stronger to fight respiratory infections, just in case!
+https://quitxt.org/sites/quitxt/files/gifs/Q11_3pm_Rooster.gif 
+¡Al dejar de fumar ayudas a que tu sistema inmune esté más fuerte para luchar contra infecciones respiratorias, por si acaso!
+Q11IM5pm: 
+Like LeBron trains hard to stay at the top of his game, quitting smoking takes dedication. Practice and keep pushing! You can win and stay tobacco-free. Insert updated gif link
+Como LeBron entrena duro para mantenerse al tope de su juego, dejar de fumar toma práctica. ¡Sigue adelante! Puedes ganarle al tabaco. Insert updated gif link
+ Q11IM7pm: 
+Quit smoking and you'll be able to join The Justice League with your new and improved sense of smell… And you will smell better, too! Insert updated gif link
+Deja de fumar y podrás unirte a la Liga de la Justicia con tu sentido del olfato renovado y mejorado… Además ¡olerás mucho mejor! Insert updated gif link
+Quit Day 12 = Q12 
+Intermittent Messaging  
+(5 INTERMITTENT MESSAGES SPACED THROUGH THE DAY BEFORE 8 PM [11am, 1pm, 3pm, 5pm, 7pm]) 
+Q12IM11am: 
+Do not substitute junk food for cigarettes. Try grapes or carrots if you need to keep your mouth busy.
+No sustituyas la comida chatarra por los cigarrillos. Prueba comer uvas o zanahorias si necesitas mantener tu boca ocupada. 
+Q12IM1pm: 
+Get your body moving: Take your kids or nieces and/or nephews for a brisk walk or play with them at the park. Just 30 minutes a day will help you stay away from tobacco. 
+Mueve tu cuerpo: Camina con tus niños y/o tus sobrinos, o juega con ellos en el parque. Solo 30 minutos al día te ayudará a seguir alejado del tabaco.
+Q12IM3pm: 
+Why is it awesome to smoke? Bad breath, stinky clothes and hands, wrinkles, cuts years off your life… ummm, what was the question again? https://quitxt.org/sites/quitxt/files/gifs/App1-Motiv8_MinionsWhhaaatt.gif
+¿Por qué está en onda fumar? Mal aliento, ropa y manos apestosas, arrugas, menos años de vida… ummm ¿Cuál era la pregunta?
+https://quitxt.org/sites/quitxt/files/gifs/q12_3pm_minions_que_esp.gif 
+Q12IM5pm: 
+Quitting smoking can be a struggle, but you can win, and it will be worth it! Bucket list item: Quitting smoking. 
+Dejar de fumar puede ser una lucha, pero ¡tú puedes ganar y valdrá la pena! Cosas importantes por hacer: Dejar de fumar.
+Q12IM7pm: 
+Save your lungs by quitting smoking! Your lungs will keep getting stronger and stronger as you stay smokefree. Nice power–up! Insert updated gif link
+¡Salva tus pulmones dejando de fumar! Tus pulmones se irán fortaleciendo cada vez más al mantenerte sin fumar. ¡Gana poder! Insert updated gif link
+Quit Day 13 = Q13 
+Intermittent Messaging  
+Q13IM11am: 
+Congrats! Being smokefree means you are on the road to a healthier life. If you quit when you are young you will live 10 years longer. https://quitxt.org/sites/quitxt/files/gifs/ten_years.gif
+¡Felicidades! Estar libre del tabaco significa que estás en el camino hacia una vida más sana. Si dejas de fumar joven vivirás 10 años más. Insert updated gif link
+Q13IM1pm: 
+Almost 2 weeks smokefree! Between 2 weeks & 3 months after quitting, your lungs begin to improve & your risk of having a heart attack begins to drop.
+¡Casi 2 semanas sin fumar! Entre 2 semanas y 3 meses sin fumar, tus pulmones empiezan a mejorar y baja tu riesgo de tener un infarto.
+Q13IM3pm: 
+Good ways to have your mouth do something other than smoke: Eat celery stalks, carrot sticks, nuts, or chew gum. 
+Mastica tallos de apio, palitos de zanahoria, nueces o chicle en lugar de poner un cigarrillo en tu boca. 
+ Q13IM5pm: 
+If we've learned one thing from Google maps, it's to always follow directions. Do the same when using Nicotine patches, gum or lozenges. 
+Si hemos aprendido algo de los mapas de Google, es siempre seguir las indicaciones. Haz lo mismo cuando uses parches, chicles or pastillas de nicotina.
+Q13IM7pm: 
+Getting active when you quit smoking will help your body recover better AND make it easier to stay away from tobacco. 
+Si te mantienes activo ayudarás a tu cuerpo a que se recupere mejor y será más fácil mantenerte alejado del tabaco. 
+Quit Day 14 = Q14 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Congratulations, you have saved $XX since you quit smoking. Give yourself a back-pat and see why you should keep it up: https://youtu.be/Sf5ge70kUQQ    
+¡Felicitaciones, has ahorrado $XX desde que dejaste de fumar!!! Mira por qué debes seguir sin fumar: https://youtu.be/RHy-ZuTpAeQ   
+Q14SUPPORT Messaging: 
+Remember, you’re not alone in this journey. Reach out to someone close to you and share your progress. Their encouragement support can make a big difference! Tap pic below https://quitxt.org/support  
+(2 Minute Delay) 
+Recuerda que no estás solo en esta jornada. Habla con alguien cercano y comparte tus avances. Su apoyo puede marcar la diferencia. Clic el pic abajo https://quitxt.org/spanish/apoyo
+(2 Minute Delay) 
+Q14GETTING ACTIVE messaging: 
+Getting physically active helps with stress and cravings. Walk it out, hoop it up, or hit the weights. Just do it! TAP https://goo.gl/MGuevk 
+https://quitxt.org/sites/quitxt/files/gifs/just_do_it_excersing.gif
+(2 Minute Delay) 
+Estar más activo ayuda con el estrés y los antojos. Camina, juega con la pelota o levanta pesas. ¡Muévete ya! https://goo.gl/CzJnex
+https://quitxt.org/sites/quitxt/files/gifs/q14_getactive_walk_esp.gif
+(2 Minute Delay) 
+Q14PP (Predict & PLAN) messaging:  
+Be prepared to cope with some tough situations. If you get in a fight with a loved one and are so upset, you want to smoke a cigarette…
+(NO DELAY)
+Call your best friend or family and tell them how you are feeling, you'll feel better - especially if you don't start smoking again. Tap pic below https://quitxt.org/predict-and-plan
+ (2 Minute Delay) 
+Prepárate para manejar situaciones difíciles: Si peleas con tu pareja y estás tan molesto que quieres fumar un cigarrillo…
+(NO DELAY)
+Llama a tu mejor amigo y dile cómo te sientes, te sentirás mejor – especialmente si no empiezas a fumar de nuevo. Clic el pic abajo https://quitxt.org/spanish/predecir-y-planear
+Q14HELPNOW: 
+Like a chiropractor, we got your back! Text HELPNOW  if you are having a hard time.
+Como un quiropráctico te cuida la espalda, ¡nosotros te respaldamos! Envía AYUDAYA y te responderemos.
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+Q14IM1pm: 
+Remind your friends & family you are quitting. True friends only want what's best for you - that means staying smokefree. 
+Recuérdale a tu familia y amigos que has dejado de fumar. Los verdaderos amigos desean solo lo mejor para ti: Mantenerte sin fumar.
+Q14IM4pm: 
+2 weeks without smoking. We are so proud!! If you start again, it will just be harder to quit next time.
+2 semanas sin fumar. ¡Estamos orgullosos de ti! Si empiezas a fumar de nuevo será más duro dejar de hacerlo la próxima vez.
+Q14IM7pm: 
+You are doing great! Keep up the good work and stay smokefree. Insert updated gif link
+¡Lo estás haciendo muy bien! Mantén el buen trabajo y sigue sin fumar. 
+Insert updated gif link
+Quit Day 15 = Q15
+Intermittent Messaging  
+Q15IM11am: 
+WOW! 2 weeks smokefree! Think about how much time, energy, health, & money you have saved. Make today great! https://quitxt.org/sites/quitxt/files/gifs/crowd_applause.gif
+¡SÚPER! ¡2 semanas sin fumar! Piensa en todo el tiempo, energía, salud y dinero que has ahorrado. ¡Haz que este día sea grandioso! https://quitxt.org/sites/quitxt/files/gifs/crowd_applause.gif
+ Q15IM1pm: 
+Get your body moving: Get out the leash and walk your dog or take a walk with your family after dinner. Just 30 minutes a day helps you stay away from tobacco. 
+Mueve tu cuerpo: Sal a caminar el perro o con tu familia después de cenar. Solo 30 minutos al día ayudará a mantenerte alejado del tabaco.
+Q15IM3pm: 
+Burn calories, not cigarettes. Kick the cigarette butt - you can work out and get a looks-great-in-jeans butt instead. https://quitxt.org/sites/quitxt/files/gifs/q15_3pm.gif
+Quema calorías, no cigarrillos. ¡Haz ejercicio para mantenerte fuerte y poder patear las colillas de cigarrillo fuera de tu vida!  https://quitxt.org/sites/quitxt/files/gifs/q15_3pm_kickbutt_esp.gif
+Q15IM5pm:
+Wednesday says: Why rely on smoking to relax? Master deep breathing like a pro and chill without smoking. Do the magic yourself! Insert updated gif link 
+Wednesday dice: ¿Por qué depender de fumar para relajarse? Domina Hazte un maestro de la respiración profunda como un profesional y ¡relájate sin fumar! ¡Usa tu propia magia! Insert updated gif link
+Updated message:
+Wednesday dice: ¿Por qué depender de fumar para relajarse? Hazte un maestro de la respiración profunda y ¡relájate sin fumar! ¡Usa tu propia magia! Insert updated gif link
+Q15IM7pm: 
+Hang out with nonsmokers to reinforce your decision to quit. 
+Sal a divertirte con amigos no fumadores para reforzar tu decisión de dejar de fumar. 
+Quit Day 16 = Q16
+Intermittent Messaging  
+Q16IM11am: 
+Feeling alone can make it hard, but quitting is the way to go. Let a friend know how they can support you. https://quitxt.org/sites/quitxt/files/gifs/helping_friend.gif
+Sentirte solo puede hacer difícil dejar de fumar. Pero no fumar es el camino a seguir. Déjale saber a tus amigos cómo pueden apoyarte. https://quitxt.org/sites/quitxt/files/gifs/helping_friend.gif
+Q16IM1pm: 
+Keep busy! Grab a blank notebook and fill each page with one day's worth of activities you want to do: Go for walks, ride bikes, watch a movie. 
+¡Mantente ocupado! Escribe en un cuaderno todas las actividades que deseas hacer en un día: Caminar, andar en bici, mirar una película.
+Q16IM3pm: 
+Tell yourself "I won't give smoking any more power over my life. " 
+Dite a ti mismo "No le daré al cigarrillo más poder sobre mi vida".
+Q16IM5pm: 
+If Oppenheimer could unlock the secrets of the atom, you can unlock the strength within to quit smoking – no atomic explosions necessary! Insert updated gif link
+Si Oppenheimer pudo descubrir los secretos del átomo, tú puedes descubrir tu fuerza interior y dejar de fumar - ¡sin explosiones atómicas!  Insert updated gif link
+Q16IM7pm: 
+Reinforce your victories. Whenever you triumph over a craving, give yourself a reward to keep yourself motivated. Insert updated gif link
+Refuerza tus victorias. Cada vez que triunfes sobre un antojo, recompénsate para mantenerte motivado. Insert updated gif link
+Quit Day 17 = Q17
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Q17BREATHING Messaging:  
+Remember, use breathing exercises to help you cope with the urge to smoke and practice daily…  Tap pic below https://quitxt.org/breathing-exercises
+ (No Delay)
+Recuerda usar los ejercicios de respiración para ayudarte con los antojos de fumar y practícalos todos los días. Clic el pic abajo https://quitxt.org/spanish/ejercicios-de-respiracion
+(No Delay)
+ Q17NICOTINE  
+Nicotine is addictive and some smokers may need to use nicotine replacement to help them quit. Tap pic below https://quitxt.org/nicotine-replacement 
+La nicotina es adictiva y algunos fumadores necesitan usar reemplazo de nicotina para ayudarse a dejar de fumar. Clic el pic abajo https://quitxt.org/spanish/terapia-de-reemplazo-de-nicotina
+(2 Minute Delay) 
+Q17TALKOUT Messaging: 
+Be ready to talk yourself out of smoking. You MIGHT tell yourself: I've proved I can quit, so I can go on smoking could smoke now and quit for good later. 
+Updated Message:
+Be ready to talk yourself out of smoking. You MIGHT tell yourself: I've proved I can quit, so I could smoke now and quit for good later. 
+(NO DELAY)
+You SHOULD tell yourself: The longer I smoke, the harder it will be to quit. Better just not start again. Tap pic below https://quitxt.org/talk-yourself-out-of-smoking
+(2 Minute Delay) 
+Prepárate para convencerte de no fumar. Podrías decirte: He comprobado que puedo dejar de fumar. De modo que puedo seguir fumando fumar ahora y dejarlo para siempre después.
+Updated Message:
+Prepárate para convencerte de no fumar. Podrías decirte: He comprobado que puedo dejar de fumar. De modo que puedo fumar ahora y dejarlo para siempre después.
+(NO DELAY)
+Debes decirte: Entre más tiempo fume, será más difícil dejar de fumar. Es mejor no empezar de nuevo. Clic el pic abajo https://quitxt.org/spanish/convencete-a-ti-mismo-de-no-fumar
+(2 Minute Delay) 
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+(FOR DAYS WITH TEXTING SESSIONS: 3 INTERMITTENT MESSAGES SPACED THROUGH THE DAY BEFORE 8 PM [1pm, 4pm, 7pm]) 
+Q17IM1pm: 
+WELL DONE! 16 days without smoking. Cigarettes never solved any problems. You did it yourself. You can do great things, so stay positive. https://quitxt.org/sites/quitxt/files/gifs/applause_confetti.gif
+¡BIEN HECHO! 16 días sin fumar. Fumar nunca solucionó tus problemas. Tú lo hiciste. Puedes hacer cosas grandes. Sigue positivo.  https://quitxt.org/sites/quitxt/files/gifs/applause_confetti.gif
+Q17IM4pm: 
+Stay calm with a warm bath, meditate, read a book, or practice deep breathing exercises. https://quitxt.org/sites/quitxt/files/gifs/mediation.gif
+Para calmarte toma un baño caliente, medita, lee un libro o practica ejercicios de respiración. https://quitxt.org/sites/quitxt/files/gifs/mediation.gif
+Q17IM7pm: 
+Ask your loved ones to help keep you distracted by taking walks, watching a movie or playing games. 
+Pídeles a tus seres queridos que te ayuden a estar distraído con caminatas, con juegos o mirando una película. 
+Quit Day 18 = Q18 
+Intermittent Messaging  
+Q18IM11am: 
+Rid yourself of negative energy by working out. Go to the gym with a buddy, hit the rec at your school, or do it at home – any movement counts. Insert updated gif link
+Libérate de la energía negativa haciendo ejercicio. Ve al gym con un amigo, al rec de tu escuela o hazlo en casa – todo movimiento cuenta. Insert updated gif link
+Q18IM1pm: 
+ Tobacco is becoming John Wick’s #1 enemy! It kills more people than AIDS, alcohol, car accidents, murder, suicides and fires COMBINED. Insert updated gif link
+El tabaco es el enemigo #1 de John Wick. Mata más personas que el sida, el alcohol, las drogas, los asesinatos, los suicidios, los incendios y los accidentes de auto JUNTOS. Insert updated gif link
+Q18IM3pm: 
+You are doing great! Don't forget to ask for help to stay away from smoking. 
+¡Lo estás haciendo muy bien! No olvides pedir ayuda para mantenerte alejado de los cigarrillos. 
+ Q18IM5pm: 
+Smoking is like a bad romance, you gotta know when to walk away! Don't sit around missing your old cigs. Do cool stuff to show them you're happier without them. https://quitxt.org/sites/quitxt/files/gifs/james_harden_walk_away.gif
+Fumar es como un mal romance ¡hay que saber cuándo dejarlo! No te pongas a extrañar los cigs. Muéstrales que eres más feliz sin ellos. https://quitxt.org/sites/quitxt/files/gifs/james_harden_walk_away.gif
+Q18IM7pm: 
+By quitting smoking, your immune system is becoming stronger to fight diseases!
+https://quitxt.org/sites/quitxt/files/gifs/Q18_7pm_Aquaman.gif 
+¡Al dejar de fumar tu sistema inmune se hace más fuerte para luchar contra las enfermedades!
+Quit Day 19 = Q19 
+Intermittent Messaging  
+Q19IM11am: 
+Practice makes perfect – Keep going, soon you will be a happy nonsmoker. https://quitxt.org/sites/quitxt/files/gifs/dog_practice_with_ball.gif
+La práctica hace la perfección – lo estás haciendo muy bien y no olvides pedir ayuda para mantenerte alejado de los cigarrillos. https://quitxt.org/sites/quitxt/files/gifs/dog_practice_with_ball.gif
+Q19IM1pm: 
+Stay away from people or places you associate with smoking. You will find it easier to cope that way (& you'll avoid secondhand smoke!) 
+Mantente alejado de personas y lugares que asocias con fumar. Te será más fácil de esta manera y ¡evitarás el humo de segunda mano! 
+Q19IM3pm: 
+When you're tempted to smoke, remember - you will just get more addicted and it will be that much harder to quit later. https://quitxt.org/sites/quitxt/files/gifs/q19_3pm_dont_esp.gif
+Cuando sientas tentación de fumar recuerda – si lo haces te harás más adicto y será mucho más difícil dejar de fumar después. https://quitxt.org/sites/quitxt/files/gifs/q19_3pm_dont_esp.gif
+ Q19IM5pm: 
+Get your body moving and just dance! Do it like no one is watching and rock it out, do the two-step or the renegade! Every move counts and helps you stay away from tobacco! Insert updated gif link
+¡Mueve tu cuerpo y ponte a bailar! Hazlo como si nadie te estuviera viendo. ¡Todo movimiento cuenta y te ayuda a seguir alejado del tabaco! Insert updated gif link
+Q19IM7pm: 
+You are in charge! Don’t let smoking rule your life. You CAN be free from tobacco! https://quitxt.org/sites/quitxt/files/gifs/q19_7pm_boss_esp.gif
+¡Tu estas al mando! No dejes que el cigarrillo gobierne tu vida. Tú PUEDES liberarte del tabaco! https://quitxt.org/sites/quitxt/files/gifs/q19_7pm_boss_esp.gif
+Quit Day 20 = Q20 
+Intermittent Messaging  
+ (5 INTERMITTENT MESSAGES SPACED THROUGH THE DAY BEFORE 8 PM [11am, 1pm, 3pm, 5pm, 7pm]) 
+Q20IM11am: 
+Smoking can cause you to miss out on important moments. Write down the things you don't want to miss out on. Add them to your reasons to stay smokefree. 
+Fumar hace que te pierdas momentos importantes. Escribe las cosas que no te quieres perder. Añádelas a tus razones para seguir sin fumar.
+Q20IM1pm: 
+Quitting is hard work but as Shakira said, "You can't achieve anything in life without a small amount of sacrifice". 
+Dejar de fumar es duro, pero como dijo Shakira, "No lograrás nada en la vida sin algo de sacrificio."
+Q20IM3pm: 
+Today you can start forming habits for overcoming all obstacles in life… even nicotine cravings. 
+Hoy puedes empezar a formar hábitos para superar todos los obstáculos en la vida… incluso los antojos de nicotina. 
+ Q20IM5pm: 
+4 Ds to get through cravings: Delay, Drink water, Deep breathe, Do something else.  
+4 pasos para enfrentar los antojos: demora, bebe agua, respira profundo y haz alguna otra cosa.
+Q20IM7pm: 
+Armor up against smoking. This is the way to a healthier you. Let us guide you to be a true Mandalorian in quitting. Insert updated gif link
+Ármate contra el tabaco. Esta es la forma de estar más sano. Déjanos guiarte para que seas un verdadero Mandalorian dejando de fumar. Insert updated gif link
+Quit Day 21 = Q21 
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Congratulations you have saved $XX since you quit smoking!  You've got another great thing going for you now that you've quit: https://youtu.be/U0GG4V65Qso 
+¡Felicitaciones, has ahorrado $XX desde que dejaste de fumar! Otra cosa buena más desde que dejaste el cigarrillo: https://youtu.be/aVpp2LQnYos  
+Q21BD Messaging 
+Meeting with friends? See why it's smart to manage your alcohol consumption as you also quit smoking: Tap pic below https://quitxt.org/binge-drinking-2 
+ (2 Minute Delay) 
+¿Vas a salir con tus amigos? Mira por qué es importante aprender a controlar la bebida cuando estás dejando de fumar: Clic el pic abajo https://quitxt.org/spanish/consumo-intensivo-de-alcohol-2
+Q21GETTING ACTIVE messaging: 
+Remember, more activity = easier to stay smokefree. There are lots of ways to get active. Walk, workout, whatever any activity- just go for it! Tap pic below https://quitxt.org/getting-active   
+Updated message:
+Remember, more activity = easier to stay smokefree. There are lots of ways to get active. Walk, workout, any activity- just go for it! Tap pic below https://quitxt.org/getting-active   
+(2 Minute Delay) 
+Recuerda, será más fácil no fumar si te mantienes más activo. Camina, haz ejercicio, lo que sea, ¡hazlo ya! Clic el pic abajo https://quitxt.org/spanish/mantenerte-activo
+(2 Minute Delay)
+Q21PP (Predict & PLAN) messaging: 
+Be prepared to cope with some tough situations. If you are around a lot with of old friends who smoke and someone offers you a cigarette, you might feel tempted. 
+Updated message:
+Be prepared to cope with some tough situations. If you are with old friends who smoke and someone offers you a cigarette, you might feel tempted. 
+(NO DELAY)
+Tell them you just quit and to please not offer you cigarettes, even if you ask for one later! Tap pic below https://quitxt.org/predict-and-plan  
+Prepárate para manejar situaciones difíciles: Si estás con amigos que fuman y te ofrecen un cigarrillo podrías tener la tentación de fumar.
+(NO DELAY)
+Diles que dejaste de fumar y que por favor no te ofrezcan cigarrillos, aunque seas tú quien les pida uno más tarde. Clic el pic abajo https://quitxt.org/spanish/predecir-y-planear
+END OF MESSAGING SESSION 
+Intermittent Messaging  
+Q21IM1pm: 
+Lung capacity increases by 30% after a few weeks without cigarettes! Bike or walk… Put your healthy lungs to good use! 
+Just like the Wolverine, you have the power to heal. Stay smokefree and let your body regenerate to its full strength. Insert updated gif link
+¡La capacidad pulmonar aumenta un 30% después de unas semanas sin fumar! Anda en bicicleta o camina. ¡Pon tus pulmones en uso! 
+Como Wolverine, tú tienes el poder de sanarte. ¡Sigue sin fumar y deja que tu cuerpo se regenere al máximo! Insert updated gif link
+Q21IM4pm: 
+By quitting smoking, you are protecting your family against the dangers of secondhand smoke! You’re becoming a superhero!
+https://quitxt.org/sites/quitxt/files/gifs/Q21_4pm_BugsBunny.gif
+¡Al dejar de fumar, estás protegiendo a tu familia contra los peligros del humo de segunda mano! ¡Te estás convirtiendo en un superhéroe!
+https://quitxt.org/sites/quitxt/files/gifs/Q21_4pm_BugsBunny.gif 
+ Q21IM7pm: 
+Distract yourself during a craving with physical activity. Research shows this can help you stay smokefree & improve your mood. You may like some good yoga poses! https://quitxt.org/sites/quitxt/files/gifs/practicing_yoga_with_little_dog.gif 
+Durante un antojo distráete con actividad física. Los estudios muestran que te puede ayudar a seguir sin fumar y además mejora tu ánimo. ¡Te pueden gustar algunas poses de yoga!
+https://quitxt.org/sites/quitxt/files/gifs/practicing_yoga_with_little_dog.gif 
+Quit Day 22 = Q22 
+Intermittent Messaging  
+Q22IM11am: 
+Awesome! 3 weeks smoke-free. Reward yourself: Go out, have fun, walk with friends, and enjoy some gum or a refreshing frozen yogurt. Keep it up!  Insert updated gif link
+¡Super! 3 semanas sin fumar. ¡Prémiate! Sal y diviértete, camina con amigos y disfruta un chicle o un rico helado de yogur. ¡Vas muy bien! Insert updated gif link
+Q22IM1pm: 
+Some non-smokers find smoking unattractive. You may want to think about how smoking could be hurting your relationships before lighting up. 
+Los no fumadores encuentran poco atractivo el fumar. Antes de encender un cigarrillo piensa cómo se podrían afectar tus relaciones.
+Q22IM3pm: 
+Feel that craving? Call family and friends, hop on one foot, binge-watch on Netflix… everything and anything instead of smoking. 
+¿Sientes antojos? Llama a tu familia y amigos, párate en un pie, mira películas en Netflix… haz lo que sea en lugar de fumar.
+Q22IM5pm: 
+Every day you stay smokefree is an achievement! Be proud of yourself… We are! https://quitxt.org/sites/quitxt/files/gifs/meryl_streep_clapping.gif
+ ¡Cada día que sigues sin fumar es un gran logro! ¡Siéntete orgulloso de ti mismo… Nosotros lo estamos! https://quitxt.org/sites/quitxt/files/gifs/meryl_streep_clapping.gif
+Q22IM7pm: 
+Ca-ching! Hear that? That’s money in your wallet you’re saving from quitting smoking and less spending on healthcare costs due to respiratory diseases!
+https://quitxt.org/sites/quitxt/files/gifs/Q22_7pm_Money.gif 
+¡Ca-chin! ¡Oyes eso? ¡Es el dinero en tu cartera que estás ahorrando al no fumar y al tener menos gastos de salud por enfermedades respiratorias!
+https://quitxt.org/sites/quitxt/files/gifs/Q22_7pm_Money.gif 
+Quit Day 23 = Q23 
+Intermittent Messaging  
+Q23IM11am: 
+Tobacco companies spend more than $23M a day convincing people to smoke. Imagine all the positive things that could be done with all that money!
+Las Compañías de Tabaco gastan más de $23M al día promoviendo el fumar. Piensa en las cosas buenas que se podrían hacer con ese dinero.
+Q23IM1pm: 
+Keep staying strong and smokefree. We know it is not easy, but it is totally worth it. https://quitxt.org/sites/quitxt/files/gifs/q23_1pm.gif
+Sigue fuerte y sin fumar. Sabemos que no es fácil, pero ¡vale totalmente la pena! https://quitxt.org/sites/quitxt/files/gifs/q23_1pm.gif
+Q23IM3pm: 
+Snap, Tag, or hashtag your friends or family, watch some funny TikTok videos, do a handstand… everything and anything instead of smoking.
+Envía un Snap, Tag o hashtag a tu familia o amigos, mira videos chistosos en TikTok, párate en las manos… haz lo que sea en lugar de fumar.
+Q23IM5pm: 
+You already deal with traffic jams, work, school, and seeing ads on YouTube and Instagram... Why do you want to hassle with smoking? YOU CAN BE FREE from tobacco. 
+https://quitxt.org/sites/quitxt/files/gifs/App1-Motiv6_traffic_jam.gif
+Ya tienes que aguantar el tráfico, el trabajo, la escuela, y los ads en Instagram y YouTube. ¿Por qué quieres el lío de fumar? Tú PUEDES LIBERARTE del tabaco. https://quitxt.org/sites/quitxt/files/gifs/preq1_motiv6_traffic_esp.gif 
+Q23IM7pm: 
+There is no greater sense of self-confidence than to look back at how you broke free from smoking. There is nothing in life you can't do! https://quitxt.org/sites/quitxt/files/gifs/q23_7pm.gif
+No hay mayor sentido de logro que mirar hacia atrás y ver cómo te liberaste del cigarrillo. ¡No hay nada en la vida que no puedas hacer!
+https://quitxt.org/sites/quitxt/files/gifs/q23_7pm_applause_esp.gif
+Quit Day 24 = Q24 
+Intermittent Messaging  
+Q24IM11am: 
+The majority of smokers regret starting to smoke. Keep strong! Being smokefree means that you are on the road to a healthier life. 
+Muchos fumadores lamentan haber empezado a fumar. ¡Sigue fuerte! Estar libre del tabaco significa que estás creando una vida más sana.
+Q24IM1pm: 
+Every day you've spent smokefree made your body healthier and stronger! 
+Cada día que pasas sin fumar hace que tu cuerpo esté más fuerte y sano.
+Q24IM3pm: 
+If you slip and you have a cigarette, don’t be hard on yourself. Each day smokefree is a win. Get back on track – you're stronger than any craving! Insert updated gif link
+Si tienes un desliz y fumas, es OK. Casa día sin fumar es una victoria. Regresa al camino. ¡Puedes hacerlo, eres más fuerte que los antojos! Insert updated gif link
+ Q24IM5pm: 
+With all that money you saved from not buying cigarettes, you can splurge on the next blockbuster movie and buy the tub of popcorn AND the a large drink. https://quitxt.org/sites/quitxt/files/gifs/q24_5pm.gif
+Updated message:
+With all that money you saved from not buying cigarettes, you can splurge on the next blockbuster movie and buy the tub of popcorn AND a large drink. https://quitxt.org/sites/quitxt/files/gifs/q24_5pm.gif
+Con todo el dinero que has ahorrado al no fumar, puedes ir a ver la siguiente película taquillera, comprar palomitas de maíz Y una bebida. https://quitxt.org/sites/quitxt/files/gifs/q24_5pm.gif
+ Q24IM7pm: 
+Repeat after me: I don't smoke. I am a non-smoker. I'm not smoking anymore. 
+Repite después de mí: Yo no fumo. Yo soy un no fumador. Yo ya no estoy fumando fumo.
+Updated message:
+Repite después de mí: Yo no fumo. Yo soy un no fumador. Yo ya no fumo.
+Quit Day 25 = Q25 
+Intermittent Messaging  
+Q25IM11am: 
+Quitting smoking helps your lungs recover and speeds up your body’s healing – just like Wolverine! Regenerate your health, one day at a time. Insert updated gif link
+Dejar de fumar ayuda a que tus pulmones se recuperen y a que tu cuerpo sane – como Wolverine! Regenera tu salud un día a la vez. Insert updated gif link
+ Q25IM1pm: 
+Get your body moving: Walk around the park with your family or shoot hoops with your buddies. Just 30 minutes a day will help you stay away from tobacco. 
+Mueve tu cuerpo: Camina con tu familia en el parque o juega baloncesto con tus amigos. Solo 30 minutos al día te ayuda a seguir alejado de fumar.
+Q25IM3pm: 
+Keep a bottle of water handy. Drinking water flushes out nicotine and reduces cravings. 
+Mantén una botella de agua cerca. Beber agua elimina la nicotina y reduce los antojos. 
+ Q25IM5pm: 
+Many smokers say quitting is the hardest thing they've ever done. When it gets hard, you can text a friend or family member for support.  https://quitxt.org/sites/quitxt/files/gifs/q25_5pm.gif
+Muchos fumadores dicen que dejar de fumar es la cosa más dura lo más difícil que han hecho. Cuando se haga difícil, pídele apoyo a tu familia y amigos.
+https://quitxt.org/sites/quitxt/files/gifs/q25_5pm_support_esp.gif  
+Updated message:
+Muchos fumadores dicen que dejar de fumar es lo más difícil que han hecho. Cuando se haga difícil, pídele apoyo a tu familia y amigos.
+https://quitxt.org/sites/quitxt/files/gifs/q25_5pm_support_esp.gif  
+Q25IM7pm: 
+"Energy & persistence conquer all things." This is the beginning of a new you. Keep strong! https://quitxt.org/sites/quitxt/files/gifs/q25_7pm.gif
+"La energía y la persistencia conquistan todas las cosas." Este es el comienzo de una persona nueva tu nueva persona… TÚ. ¡Mantente fuerte! 
+https://quitxt.org/sites/quitxt/files/gifs/q25_7pm_norindas_esp.gif 
+Updated message:
+"La energía y la persistencia conquistan todas las cosas." Este es el comienzo de tu nueva persona… ¡Mantente fuerte! 
+https://quitxt.org/sites/quitxt/files/gifs/q25_7pm_norindas_esp.gif 
+Quit Day 26 = Q26 
+Intermittent Messaging  
+Q26IM11am: 
+Think about how awesome it is that you're quitting smoking and getting healthier. 
+Piensa en lo maravilloso que es que no estés fumando y que cada día estés más saludable.
+Q26IM1pm: 
+Tell people around you that you have quit smoking. They will respect your decision. 
+Diles a las personas a tu alrededor que has dejado de fumar. Ellos respetarán tu decisión.
+Q26IM3pm: 
+Do not substitute unhealthy snacks for cigarettes. Try grapes, apples or carrots if you need to keep your mouth busy. 
+No sustituyas la comida chatarra por los cigarrillos. Prueba comer Come uvas, manzanas o zanahorias si necesitas mantener tu boca ocupada. 
+Updated message:
+No sustituyas la comida chatarra por los cigarrillos. Come uvas, manzanas o zanahorias si necesitas mantener tu boca ocupada. 
+Q26IM5pm: 
+You're doing great! When you have cravings, think of how strong you have been so far. https://quitxt.org/sites/quitxt/files/gifs/q26_5pm.gif
+¡Lo estás haciendo muy bien! Cuando tengas antojos de fumar piensa en lo fuerte que has sido hasta ahora. https://quitxt.org/sites/quitxt/files/gifs/q26_5pm.gif
+Q26IM7pm: 
+Be careful when you go to a party, event, or bar – don’t let yourself slip. You've already come this far, so keep going. Stay smokefree. You got this! And you will thank yourself later. Insert updated gif link
+Ten cuidado cuando vayas a una fiesta, un evento o al bar. No te dejes deslizar. Has llegado tan lejos, asi que sigue adelante y sin fumar. ¡Tú puedes lograrlo! Y te lo agradecerás más tarde. https://quitxt.org/sites/quitxt/files/gifs/q26_7pm_situ_esp.gif 
+Quit Day 27 = Q27 
+Intermittent Messaging 
+Q27IM11am: 
+Talk about what you are going through with someone who supports your decision to quit. Remember, your feelings matter. 
+Habla con alguien que apoye tu decisión de no fumar y dile cómo te sientes. Recuerda que tus sentimientos son importantes.
+ Q27IM1pm: 
+YOU CAN DO IT! Make your family proud, and keep smokefree! https://quitxt.org/sites/quitxt/files/gifs/q27_1pm.gif
+¡TÚ PUEDES HACERLO! Haz sentir orgullosa a tu familia y ¡sigue sin fumar! https://quitxt.org/sites/quitxt/files/gifs/q27_1pm_proudfam_esp.gif 
+Q27IM3pm: 
+Enjoy healthy snacks like carrots and celery, fruits, and sugar-free snacks. 
+Disfruta bocadillos saludables como zanahorias y apio, frutas y bocadillos sin azúcar.
+Q27IM5pm: 
+Give your partner a smokefree kiss. They will love your fresh breath & be glad you quit. https://quitxt.org/sites/quitxt/files/gifs/q27_5pm.gif
+Dale a tu pareja un beso libre de tabaco. Le encantará tu aliento fresco y se alegrará que dejaste de fumar. https://quitxt.org/sites/quitxt/files/gifs/q27_5pm.gif
+Q27IM7pm: 
+Great job! There is a lot to be proud of… you are staying smokefree. https://quitxt.org/sites/quitxt/files/gifs/q27_7pm.gif
+¡Genial! Hay mucho de que estar orgulloso… te has mantenido libre de cigarrillos. https://quitxt.org/sites/quitxt/files/gifs/q27_7pm.gif
+Quit Day 28 = Q28
+Basic Message Sequence 
+(Timed as requested, DEFAULT 8:00 AM): 
+Congratulations you have saved $XX since you quit smoking!!! You've made amazing strides. See how it's paying off in other ways: https://youtu.be/pazM-pO1Vw8
+¡Felicitaciones, has ahorrado $XX desde que dejaste de fumar!!! Has progresado tanto. Mira otros frutos a tu esfuerzo: https://youtu.be/XSofjGA-J5w 
+Q28REASONS Messaging:  
+Remind yourself of the reasons you are quitting: Your family, your health... Tap pic below https://quitxt.org/reasons
+(No Delay)
+Recuerda las razones por las que estás dejando de fumar: Tu familia, tu salud... Clic el pic abajo https://quitxt.org/spanish/razones
+(No Delay)
+Q28PP (Predict & PLAN) messaging: 
+Remember, to really quit for good, you'll need to be prepared to cope with some tough situations. Tap pic below for ideas https://quitxt.org/predict-and-plan
+(2 Minute Delay) 
+Recuerda, para dejar de fumar para siempre necesitas prepararte para enfrentar situaciones difíciles. Para ideas Clic el pic abajo https://quitxt.org/spanish/predecir-y-planear
+ (2 Minute Delay) 
+Q28HELPNOW: 
+Like a chiropractor, we got your back! Text HELPNOW if you are having a hard time.
+Como un quiropráctico te cuida la espalda, ¡nosotros te respaldamos! Envía AYUDAYA y te responderemos.
+END OF MESSAGING SESSION 
+Intermittent Messaging 
+Q28IM1pm: 
+You are AWESOME! Congrats! A WHOLE MONTH SMOKEFREE! Major milestone & cause for celebration. https://quitxt.org/sites/quitxt/files/gifs/q28_1pm.gif
+TÚ ERES INCREIBLE! ¡Felicidades! ¡Un MES ENTERO SIN FUMAR! Un gran logro y motivo de celebración. https://quitxt.org/sites/quitxt/files/gifs/q28_1pm.gif
+Q28IM4pm: 
+Don't forget to reward yourself for staying smokefree! Use a non-food reward, such as going to the movies or to the mall. Insert updated gif link
+Recuerda premiarte por mantenerte ¡sin fumar! Usa premios que no sean comida, como ir al cine, o al mall. Insert updated gif link
+Q28IM7pm: 
+Today is a big day. Make it count and be proud! 
+Hoy es un gran día. ¡Haz que cuente y siéntete orgulloso de tus logros!
+The Checkout Question was DELETED and moved to Q30
+Quit Day 29 = Q29 
+Intermittent Messaging  
+The eCig question was deleted. It will be included in the surveys
+Q29 	Smoking stains your teeth, affects your gums, and causes bad breath; make your way to the dentist, and get a quick touch up on your pearly whites. Insert updated gif link
+Fumar mancha tus dientes, afecta tus encías y te causa mal aliento; visita al dentista y dales un retoque a tus dientes. Insert updated gif link
+Q29	We are with you all the way! If you are having a hard time, text HELPNOW
+¡Estamos contigo hasta el final! Si estás pasando por un momento difícil, envía AYUDAYA
+Q29 	Keep smokefree! You are adding years to your life… healthier years!
+¡Mantente sin fumar! Estás añadiendo años a tu vida… ¡años más saludables!  
+Q29	Reminding yourself of your reasons for quitting can help keep you on track and smokefree! Keep your reasons handy! https://quitxt.org/sites/quitxt/files/gifs/q29_dont_forget_5pm.gif
+Recordar a menudo tus razones para dejar de fumar te puede ayudar a ¡mantener el rumbo y a no fumar! Mantén tus razones cerca de ti. https://quitxt.org/sites/quitxt/files/gifs/q29_reasons_esp.gif  
+Quit Day 30 = Q30 
+Intermittent Messaging  
+Q30 	Bad days happen but adding smoking to a bad day makes it even worse. Don't let stress undo all your hard work. You can deal without smoking.
+  	 	Los malos días suceden. Pero si fumas es peor. No dejes que el estrés dañe tu esfuerzo. Puedes enfrentar los malos días sin fumar. 
+Q30	Do a little therapeutic home cleaning… clean the garage, or the yard, it will help you take your mind off cigarettes when you have a craving. https://quitxt.org/sites/quitxt/files/gifs/q30_1pm.gif
+Haz un poco de limpieza de hogar terapéutica… limpia el garaje o la yarda, te ayudará a quitarte de la mente los cigarrillos cuando tengas un antojo. https://quitxt.org/sites/quitxt/files/gifs/q30_1pm.gif
+Q30 	There's nothing wrong with being in love with fresh air… it's pretty amazing! https://quitxt.org/sites/quitxt/files/gifs/q30_3pm.gif
+No hay nada malo en estar enamorado del aire fresco… es ¡realmente increíble! https://quitxt.org/sites/quitxt/files/gifs/q30_3pm.gif
+Q30 	Keep going. YOU ARE creating a new healthy smokefree life. 
+Sigue adelante. Estás creando una nueva vida saludable libre de cigarrillos.
+8 PM – Q30checkout
+During the past 7 days, have you smoked a cigarette, even a puff? Text Y or N
+(Response “Y”):   Remember this is the Slip Routine (Appendix 2)
+That's OK. Remember, it takes practice. What caused you to start smoking again? Text one of these reasons: 
+Badmood 
+Stress
+Smokers
+Alcohol
+Other
+(Response “N”): 
+CONGRATULATIONS! You rule! Another smokefree day awaits, let's talk again tomorrow https://quitxt.org/sites/quitxt/files/gifs/q28_8pm.gif
+Durante los últimos 7 días, ¿has fumado cigarrillos de tabaco aunque fuera una sola fumada? Envía S o N
+(Response: “S”):	Remember this is the Slip Routine (Appendix 2)
+Es OK. Recuerda, toma práctica. ¿Qué te hizo fumar de nuevo? Envía una de estas razones: 
+Malhumor
+Estrés
+Fumadores
+Alcohol
+Otra
+ (Response: “N”): 
+¡FELICITACIONES! ¡Qué cool! Te espera otro día sin fumar, hablamos mañana… https://quitxt.org/sites/quitxt/files/gifs/q28_8pm.gif 
+(No Response):
+If no response after the second time the question is sent, continue with next day
+Quit Day 31 = Q31 
+Intermittent Messaging  
+Q31 	Smokers face an increased risk of sexual problems, such as erectile dysfunction, decreased sex drive and infertility. Talk about a mood killer. Stay smokefree. https://quitxt.org/sites/quitxt/files/gifs/q31_1.gif 
+Los fumadores tienen un mayor riesgo de problemas sexuales, como disfunción eréctil, disminución del deseo sexual e infertilidad. Hablando de un mata pasiones. Sigue libre de tabaco. https://quitxt.org/sites/quitxt/files/gifs/q31_1.gif
+Q31 	You have done a great thing by quitting, and now you are creating a healthier you. https://quitxt.org/sites/quitxt/files/gifs/q31_2.gif
+Has hecho una gran cosa al dejar de fumar y ahora estás creando una vida más saludable.
+https://quitxt.org/sites/quitxt/files/gifs/q31_2_healthier_esp.gif
+Q31 	Tell yourself: I'm awesome and I deserve a smokefree life. 
+   		Repítete a ti mismo: Soy increíble y merezco tener una vida libre de cigarrillos. 
+Q31 	Alcohol is the kryptonite for even the strongest quitter. Make the right choices… your decisions, your health.
+El alcohol es la kriptonita aun para el exfumador más fuerte. Toma las decisiones correctas... tus decisiones, tu salud.
+Quit Day 32 = Q32 
+Intermittent Messaging  
+Q32
+Quitting smoking is the best decision you made. You’re improving your health, your family’s health & your wallet’s health! WTG champ! Insert updated gif link
+Dejar de fumar es la mejor decisión que has tomado. ¡Estas mejorando tu salud, la de tu familia y la de tu bolsillo! ¡WTG campeón(a)! Insert updated gif link
+Q32	Get your body moving: Walk during your lunch break, walk while on the phone, or take the stairs. Every move counts and helps you stay away from tobacco.
+Mueve tu cuerpo: Camina durante el almuerzo o mientras hablas por teléfono. Todo movimiento cuenta y te ayuda a seguir sin fumar.
+Q32	Saving money by not smoking… check! Saving your life by not smoking… double check! Reward yourself for a job well done! https://quitxt.org/sites/quitxt/files/gifs/q32_3pm.gif
+Ahorrar dinero al no fumar... ¡Listo! Salvar tu vida al no fumar...  ¡doblemente listo! ¡Prémiate por un trabajo bien hecho! https://quitxt.org/sites/quitxt/files/gifs/q32_3pm.gif
+ Q32 	Remember you are not alone! If you are having a hard time, message HELPNOW and we will answer! 
+¡Recuerda que no estás solo! Si estás pasando por un mal momento envía AYUDAYA y ¡te responderemos! 
+Quit Day 33 = Q33
+Intermittent Messaging  
+Q33 	Move, move, move. It will help you stay on track for quitting smoking and avoiding weight gain. https://quitxt.org/sites/quitxt/files/gifs/q33.gif
+Muévete, muévete, muévete. Te ayudará a mantener el camino para dejar de fumar y evitar el aumento de peso. https://quitxt.org/sites/quitxt/files/gifs/q33.gif 
+Q33	Make staying smokefree your #1 goal for a successful, healthy life.
+Que el estar libre el tabaco sea tu meta #1 para tener una vida exitosa y saludable.
+Q33	Think about those who live with you… you are protecting them by staying smokefree.
+Piensa en las personas que viven contigo... las estás protegiendo al permanecer sin fumar.
+Q33	Text your friends, try a new dance on TikTok, dive into your favorite Netflix series... keep busy and stay strong – anything but smoking!
+Chatea con tus amigos, trata un nuevo baile en TikTok, sumérgete en tu serie favorita de Netflix... Sigue fuerte, ¡todo menos fumar!
+Quit Day 34 = Q34 
+Intermittent Messaging  
+Q34 	Congratulations! By quitting smoking you have taken the most important step to improve your health! Keep going! https://quitxt.org/sites/quitxt/files/gifs/q34.gif
+¡Felicidades! Al dejar de fumar has dado ¡el paso más importante para mejorar tu salud! ¡Sigue adelante!  https://quitxt.org/sites/quitxt/files/gifs/q34_adelante_esp.gif 
+Q34	Did you kow that light cigarettes don't lower your risk of heart attacks or lung cancer? There is NO safe cigarette.   
+¿Sabías que los cigarrillos light no reducen el riesgo de ataques al corazón o de cáncer de pulmón? NO hay cigarrillo seguro.
+Q34 	Stress may not kill you, but smoking may. To relax, do some reading, deep breathing, or go for a walk… do anything – just do not smoke.
+https://quitxt.org/sites/quitxt/files/gifs/q34_Loki_reading_esp.gif  
+El estrés no te mata, pero fumar puede matarte sí. Para relajarte lee un libro, respira profundo, o da un paseo... haz lo que sea, pero no fumes.  https://quitxt.org/sites/quitxt/files/gifs/q34_Loki_reading_esp.gif
+Updated message:
+El estrés no te mata, pero fumar sí. Para relajarte lee un libro, respira profundo, o da un paseo... haz lo que sea, pero no fumes.  https://quitxt.org/sites/quitxt/files/gifs/q34_Loki_reading_esp.gif
+Q34 	Like Bon Jovi sings in Livin’ on a Prayer, “We’ve gotta hold on to what we’ve got.” You only have one life. Don’t waste it smoking.
+Como canta Bon Jovi en Livin’ on a Prayer, “Tenemos que aferrarnos a lo que tenemos”. Solo tienes una vida. No la desperdicies fumando. 
+Quit Day 35 = Q35 
+Intermittent Messaging 
+Q35 	Even when you have come this far, triggers can still sneak up on you! Use the skills you have learned to get through your cravings without smoking.
+Aunque has llegado lejos ¡las tentaciones pueden todavía sorprenderte! Usa las habilidades aprendidas y enfrenta los antojos sin fumar.
+Q35 	Staying positive is a powerful tool to keep smokefree! If you need help, text HELPNOW
+Tener una actitud positiva es una herramienta poderosa para permanecer sin fumar. Si necesitas ayuda, envía AYUDAYA
+Q35 	There is no safe level of smoking. Every single cigarette may cause harm to your body and to others around you.
+No hay nivel seguro de fumar. Cada cigarrillo que fumas le causa daño a tu cuerpo y a las personas que te rodean. 	 	 
+Quit Day 36 = Q36
+Intermittent Messaging 
+Q36	A smoke-free home and car are the best ways to protect your family from the effects of secondhand smoke.
+Un hogar y carro libre del humo de cigarrillos son la mejor manera de proteger a tu familia de los efectos dañinos del humo de segunda mano.
+Q36 	Breathe! Your brain needs oxygen and deep breaths help. Inhale slowly through your nose and exhale through your mouth. Repeat 10 times. https://quitxt.org/sites/quitxt/files/gifs/q36_deepbreathing_esp.gif  
+¡Respira! Tu cerebro necesita oxígeno y respirar profundo ayuda. Inhala lentamente por la nariz y exhala por la boca. Repite 10 veces. https://quitxt.org/sites/quitxt/files/gifs/q36_deepbreathing_esp.gif  
+Q36 	Secondhand smoke is the paparazzi that invades your loved ones' lives, hurting them the same way smoking does to you. Think again before you smoke.
+El humo de segunda mano es el paparazzi que invade la vida de tus seres queridos. Los hiere tanto como a ti. Piénsalo bien antes de fumar.
+Quit Day 37 = Q37 
+Intermittent Messaging 
+Q37 	Remember, quitting smoking happens one day at a time. Celebrate your quit milestones (big and small); you deserve it! Insert updated gif link
+Recuerda, dejar de fumar pasa un día a la vez. Celebra tus logros dejando de fumar (pequeños y grandes); ¡tú te lo mereces! Insert updated gif link
+Q37 	There will be some tough moments ahead, but you can do it! Don't forget you have support. Message HELPNOW if you need help. 
+Habrá algunos momentos difíciles, pero ¡tú puedes hacerlo! No olvides que tienes apoyo. Envía AYUDAYA si necesitas ayuda.   
+Quit Day 38 = Q38 
+Intermittent Messaging 
+Q38 	Arguments may trigger cravings. For stress relief, practice breathing exercises. Inhale slowly through your nose and exhale slowly out your mouth.  Do it 3 times.
+Los disgustos pueden causarte antojos. Para aliviar el estrés practica ejercicios de respiración. Inhala lentamente por la nariz y exhala lentamente por la boca. Hazlo 3 veces.
+ Q38 	Stay strong and keep on your guard for temptations. You know now how to deal with them. 
+Permanece fuerte y mantén la guardia en alto para evitar las tentaciones. Ya sabes cómo lidiar con ellas. 
+Quit Day 39 = Q39 
+Intermittent Messaging 
+Q39	You are no longer at the mercy of nicotine. Keep it up! You will continue to feel healthier and happier and so will your wallet!   	 
+Ya no estás a la merced de la nicotina. ¡Sigue así! Te seguirás sintiendo más saludable y más feliz… y ¡tu billetera también!   	
+ Q39 	Get your body moving: Try a new hiking trail & bring a friend or your pet. Just 30 minutes a day will help you stay away from tobacco.
+Mueve tu cuerpo: Prueba una nueva ruta para caminar e invita un amigo o amiga, o sal con tu mascota. Solo 30 minutos al día te ayuda a seguir alejado de fumar.
+Quit Day 40 = Q40 
+Intermittent Messaging 
+Q40 	Reward the progress you've made! Spend time with friends & family who have supported you. Go to a smokefree place like the movies, the mall or a sporting event. https://quitxt.org/sites/quitxt/files/gifs/q40_12pm.gif
+¡Prémiate por el progreso logrado! Pasa tiempo con familia y amigos que te apoyan. Ve a un lugar libre de humo de cigarrillos como el cine o el mall.  https://quitxt.org/sites/quitxt/files/gifs/q40_12pm.gif
+ Q40 	Female smokers lose 13+ years of their life. Now that you are smokefree, encourage a woman close to you to go smokefree too! 
+Las mujeres que fuman pierden 13+ años de su vida. Ahora que estás libre del tabaco, anima a una mujer cercana a ti para que ¡deje de fumar!
+Quit Day 41 = Q41 
+Intermittent Messaging 
+Q41 	Be strong. This is the beginning of a new you. It may be hard to stay quit but now you have tools to succeed. Message HELPNOW if you need help. 
+Sé fuerte. Puede ser difícil seguir sin fumar, pero ya tienes las herramientas para triunfar. Envía AYUDAYA si necesitas ayuda. 
+Q41 	Be careful when you go to a party, game, or bar. Do not let yourself slip. You have come too far! https://quitxt.org/sites/quitxt/files/gifs/q41_dont_give_up_esp.gif
+Ten cuidado cuando vayas a una fiesta, a un partido o a un bar. No te dejes deslizar. ¡Has llegado muy lejos! https://quitxt.org/sites/quitxt/files/gifs/q41_dont_give_up_esp.gif 
+Quit Day 42 = Q42 
+Intermittent Messaging  
+Q42 	Remember, quitting isn't one big challenge. It's a series of small ones. Take it one minute, one hour, and one day at a time.
+		Recuerda, dejar de fumar no es simplemente un gran reto. Es una serie de retos pequeños. Toma un minuto, una hora y un día a la vez. 
+Q42 	Your friends will be impressed by your strength and determination to quit. You may even inspire a few of your friends to quit as well. 
+Tus amigos estarán impresionados con tu fuerza y determinación para dejar de fumar. Tal vez puedas inspirarlos para que también lo hagan.
+Quit Day 43 = Q43 
+Intermittent Messaging 
+Q43 	Put the ball in your court and away from tobacco companies. It's all about choices! You choose, you make the rules. https://quitxt.org/sites/quitxt/files/gifs/q43_1pm.gif
+Pon la pelota en tu cancha y lejos de las compañías de tabaco. ¡Siempre hay opciones! Tú eliges, tú haces las reglas. https://quitxt.org/sites/quitxt/files/gifs/q43_you_choose_esp.gif  
+Q43 	Changing your routine can help you create new habits that are not associated with smoking. If coffee reminds you of smoking, switch to tea.  	 
+ 		Cambiar tu rutina puede ayudarte a crear nuevos hábitos que no estén asociados con el fumar. Si el café te recuerda fumar, cambia a té.  	 
+Quit Day 44 = Q44 
+Intermittent Messaging 
+Q44 	Our greatest glory is not in never failing, but in rising up every time we fail. Keep going! 
+	https://quitxt.org/sites/quitxt/files/gifs/q44.gif
+Nuestra mayor gloria no está en nunca fallar, sino en levantarnos cada vez que fallamos. ¡Sigue adelante! https://quitxt.org/sites/quitxt/files/gifs/q44_keepgoing_esp.gif  
+Q44 	You're making a good change by quitting smoking. Be proud of yourself. 
+		Estás haciendo un buen cambio al dejar de fumar. Siéntete orgulloso de ti mismo.
+Quit Day 45 = Q45 
+Intermittent Messaging 
+Q45 	It takes a bit of time to heal but you are getting healthier and stronger every day! 
+		Sanar toma un poco de tiempo, pero ¡cada día estas más sano y más fuerte!
+Q45 	Get your body moving: Try working out with a friend or biking in your neighborhood. Just 30 minutes a day will help you stay away from tobacco.
+Mueve tu cuerpo: Haz ejercicio con amigos o anda en bicicleta en tu barrio. Solo 30 minutos por dia te ayuda a seguir alejado de fumar. 
+Quit Day 46 = Q46
+Intermittent Messaging 
+Q46	Make your mouth feel different. Snack on carrots, chew sugarless gum or drink water. 	  
+Haz que tu boca se sienta diferente. Come zanahorias, mastica chicle sin azúcar o bebe agua. 
+Q46	Be sure to reward yourself! Every day you're smokefree, say or do something nice for yourself. https://quitxt.org/sites/quitxt/files/gifs/q46.gif
+¡Asegúrate de premiarte! Cada día sin fumar haz algo que te agrade.
+https://quitxt.org/sites/quitxt/files/gifs/q46.gif
+Quit Day 47 = Q47 
+Intermittent Messaging 
+Q47 	Unfriend those naysayers and surround yourself with people who make you feel good and want you to succeed. 
+ 		Deja los amigos negativos y rodéate de personas que te hagan sentir bien y que desean que triunfes.
+Q47 	Remember, you are a non-smoker. You do not smoke. Make this your first and last thought of the day. Remind yourself of this every time you see someone with a cigarette. 
+		Recuerda, eres un no fumador. Tú no fumas. Haz que este sea tu primer y último pensamiento del día. Recuérdalo si ves a alguien fumando. 
+Quit Day 48 = Q48 
+Intermittent Messaging 
+Q48 	Whenever you feel stressed, try some deep breathing, listen to calming music, or groove to the beat of a catchy tune like “Levitating” by Dua Lipa! Insert updated gif link
+Cuando te sientas estresado, practica respiración profunda, oye música relajante, o ¡muévete al ritmo de “Levitating” por Dua Lipa! Insert updated gif link
+Q48 	Review your reasons for quitting and your strategies for coping with urges. Avoid doing any of the things you strongly associate with smoking. 
+ 		Revisa tus razones para no fumar y tus estrategias para enfrentar los antojos. Evita hacer las cosas que asocias fuertemente con fumar. 
+Quit Day 49 = Q49 
+Intermittent Messaging 
+Q49 	If anyone offers you a cigarette, say: "No thanks, I don't smoke." And mean it! 
+ 	 	Si alguien te ofrece un cigarrillo, di: "No gracias, yo no fumo". ¡Dilo con seguridad!  
+ Q49 	Keep your body moving. Don't have time? Go up and down the stairs a few times or walk the hallway- just get on your feet! 	  
+https://quitxt.org/sites/quitxt/files/gifs/q49_keep_moving_esp.gif 
+Mueve tu cuerpo. ¿No tienes tiempo? Sube y baja las escaleras un par de veces, camina por el pasillo ¡solo ponte de pie y muévete! 	  
+https://quitxt.org/sites/quitxt/files/gifs/q49_keep_moving_esp.gif 
+Quit Day 50 = Q50 
+Intermittent Messaging 
+Q50 	Confidence and success come from good preparation, a positive attitude, and firm commitment. 
+ 	  	La seguridad en sí mismo y el éxito vienen de tener una buena preparación, una actitud positiva y un compromiso firme.
+Q50 	Stay upbeat! Think about how awesome you are for quitting smoking, and how much better you feel being smokefree. 
+¡Mantente optimista! Piensa en lo maravilloso que eres por dejar de fumar y lo bien que se siente estar libre del tabaco.
+Quit Day 51 = Q51 
+Intermittent Messaging 
+Q51 	Feeling stressed after a long day at work and craving a cigarette? Tell a friend and ask them to help plan a smokefree night out to distract you.  
+¿Estás estresado después del trabajo y se te antoja fumar? Llama a un amigo y planea una salida libre de tabaco para distraerte.
+ Q51 	Quitting smoking is a challenge and you've succeeded so far. Keep living a smokefree life!
+Dejar de fumar es un reto y tú has tenido éxito hasta ahora. ¡Sigue viviendo una vida libre de cigarrillos!
+Quit Day 52 = Q52 
+Intermittent Messaging 
+Q52 	Lean on someone for support. Even after you've been smokefree for a while, you can still be triggered to smoke.  
+		Apóyate en alguien si lo necesitas. Aunque hayas estado sin fumar por un tiempo, todavía puedes sentir la tentación de fumar.  
+Q52 	You are doing great! Stay on track and smokefree! https://quitxt.org/sites/quitxt/files/gifs/q52.gif
+¡Lo estás haciendo muy bien! ¡Mantén el rumbo y no fumes! https://quitxt.org/sites/quitxt/files/gifs/q52.gif
+Quit Day 53 = Q53 
+Intermittent Messaging 
+Q53 	Keep your guard up! Urges to smoke can happen even years after quitting. Use the skills you learned and stay smokefree. 
+¡Mantén tu guardia en alto! Los antojos de fumar pueden venir sin esperarlo. Usa las habilidades que has aprendido y sigue sin fumar.
+ Q53 	You are creating a healthier life for you and your loved ones. Keep moving forward to a smokefree future. 
+Estás creando una vida más saludable para ti y tus seres queridos. Sigue avanzando hacia un futuro libre de cigarrillos.
+Quit Day 54 = Q54 
+Intermittent Messaging 
+Q54 	Believe in yourself. There is something inside you that is greater than any obstacle. 
+Cree en ti mismo. Hay algo dentro de ti que es más grande que cualquier obstáculo. 
+Q54 	Keep your body moving. Walking for 30 minutes will reduce your stress, and the feeling of breathing in fresh air is AWESOME! 
+Mueve tu cuerpo. Caminar por 30 minutos reducirá tu estrés y la sensación de respirar aire fresco ¡es MARAVILLOSA!
+Quit Day 55 = Q55 
+Intermittent Messaging 
+Q55 	Several times a day, repeat to yourself the affirmation, "I am a nonsmoker" and "I am smokefree."   
+Varias veces al día, repítete a ti mismo esta afirmación: "Yo no soy un fumador" y "Yo estoy libre del tabaco".   
+Q55 	Becoming a nonsmoker is a journey and a learning process. Practice dealing with cravings and be prepared for things that make you want to smoke. 
+Convertirse en un no fumador es un proceso de aprendizaje. Practica cómo lidiar con los antojos y será más fácil hacerlo.
+Quit Day 56 = Q56 
+Intermittent Messaging 
+Q56 	CONGRATS! 8 weeks without smoking. You rock!
+https://quitxt.org/sites/quitxt/files/gifs/q56_1pm.gif 
+¡Felicitaciones! 8 semanas sin fumar. ¡Eres genial! 
+https://quitxt.org/sites/quitxt/files/gifs/q56_1_proud_esp.gif
+Q56 	Today is a major accomplishment! Reward yourself, spend time with family & friends who have supported you, and have a celebration! https://quitxt.org/sites/quitxt/files/gifs/q56_4pm.gif
+¡Hoy es un gran logro! Prémiate, pasa tiempo con familia y amigos que te han apoyado, y ¡celebra! https://quitxt.org/sites/quitxt/files/gifs/q56_4pm.gif
+Quit Day 57-98 
+Intermittent Messaging 
+Starting in Q57 we send 3 messages per week
+Q57	Enjoy having a clean mouth taste and maintain it by brushing your teeth frequently, flossing and using mouthwash.
+Disfruta tener el sabor de una boca limpia cepillándote los dientes con frecuencia y usando enjuague bucal y seda dental.
+Q60	Remind your family and friends that you still need their support to keep smokefree. Create some code words if you need that extra support.
+Recuérdales a tu familia y amigos que todavía necesitas su apoyo para mantenerte sin fumar. Crea una palabra de código si necesitas ese apoyo extra.
+Q63 	Exercise offers a powerful distraction from craving. Even walking just 30 minutes a day will help your 		mood and ease your stress.
+El ejercicio te distrae de los antojos. Caminar solo 30 minutos al día ayudará tu estado de ánimo y aliviara tu estrés. 
+Q65	Think about your future self: Healthy, energized, and proud of how far you’ve come. Stay committed to that version of you! 
+Visualiza la versión futura de ti mismo: Saludable, con energía y orgullo de lo que has logrado. ¡Mantente firme con esa versión tuya!
+Q67	Remember, you're stronger than your cravings. Cravings are like waves—they rise and fall. Ride them out, and you'll come out stronger. 
+Recuerda, eres más fuerte que tus antojos. Los antojos son como olas: Suben y bajan. ¡Resistelos y saldrás más fuerte!
+Q69	Quitting isn’t just about giving up smoking; it’s about gaining health, freedom, and control. Stay focused on the benefits! 
+Dejar de fumar no es solo renunciar a un hábito, es ganar salud, libertad y control. ¡Enfócate en los beneficios!
+Q72 	The checkout question was DELETED and moved to Q90
+Q72 	If you are stressed, experience the calming effects of calm yourself with deep breathing. Inhale slowly through your nose and exhale slowly out your mouth. Do it 3 times.  
+Updated message:
+If you are stressed, calm yourself with deep breathing. Inhale slowly through your nose and exhale slowly out your mouth. Do it 3 times.  
+Si estás estresado, relájate con respiración profunda. Inhala lentamente por la nariz y exhala lentamente por la boca. Hazlo 3 veces.
+Q74	Take a quick walk – Changing your environment can distract you from cravings and give you a mental reset.
+Haz una caminata rápida – Cambiar tu entorno puede distraerte de los antojos y ayudarte a despejar la mente.
+Q76	Your loved ones care about your health. Keep them updated on your progress— they’ll be proud of you! We are!
+Tus seres queridos se preocupan por tu salud. Manténlos informados de tu progreso—¡se sentirán orgullosos de ti! ¡Nosotros lo estamos!
+Q79 	Your body is still adjusting, and that’s okay. If you feel restless or emotional sometimes, remind yourself that healing takes time. Be patient and kind to yourself.
+Tu cuerpo sigue ajustándose, y eso está bien. Si a veces te sientes inquieto o emocional, recuérdate que sanar lleva tiempo. Sé paciente y amable contigo mismo.
+Q81	You are rewriting your story. Every smoke-free day is a new chapter in a healthier, happier life. Keep believing in yourself, you are capable of amazing things! 
+Estás reescribiendo tu historia. Cada día sin fumar es un nuevo capítulo en una vida más saludable y feliz. ¡Cree en ti mismo, eres capaz de cosas increíbles! 
+Q83	Reward yourself for staying smoke-free – Celebrate milestones by treating yourself to something you enjoy, like a small gift or a favorite meal.
+Recompénsate por no fumar – Celebra tus logros con algo que te guste, como un pequeño regalo o tu comida favorita.
+Q86 	Repeat to yourself: "Stress happens and I CAN handle it without smoking." 
+ 	 	Repítete a ti mismo: "El estrés ocurre y YO PUEDO controlarlo sin fumar".
+Q88	Look at how far you’ve come! Your body is healing, your energy is increasing, and you’re proving to yourself that you are stronger every day. Keep going—your future is bright! 
+Mira lo lejos que has llegado! Tu cuerpo se está sanando, tu energía está aumentando y cada día demuestras lo fuerte que eres. ¡Sigue adelante, tu futuro es brillante!
+Quit Day 90 = Q90
+Intermittent Messaging 
+Q90	Hi, it is Quitxt, just checking in. We would like to know how you are doing.  
+During the past 7 days, have you smoked a cigarette, even a puff? Text Y or N
+(Response: Y):   Remember this is the Slip Routine (Appendix 2)
+That's OK. Sometimes it takes a few tries. Keep trying. What caused you to smoke again? Text one of these reasons: 
+Badmood 
+Stress
+Smokers
+Alcohol
+Other
+(Response: “N”): 
+CONGRATULATIONS! 3 months without smoking!  Keep staying strong & smokefree, you can do it! https://quitxt.org/sites/quitxt/files/gifs/q72_checkout.gif
+Hola, es Quitxt para saber cómo vas. 
+Durante los últimos 7 días, ¿has fumado cigarrillos de tabaco aunque fuera una sola fumada? Envía S o N
+(Response: “S”): Remember this is the Slip Routine (Appendix 2)	
+Está bien. A veces se necesitan varios intentos. Continúa tratando. ¿Qué te hizo fumar? Envía una de estas razones: 
+Malhumor
+Estrés
+Fumadores
+Alcohol
+Otra
+(Response: “N”): 
+¡FELICITACIONES! ¡3 meses libre del tabaco! Permanece fuerte y sin fumar. ¡Tú puedes hacerlo!
+https://quitxt.org/sites/quitxt/files/gifs/q72_checkin_congrats_esp.gif 
+(No Response):
+(No response to checkout routine in Appendix 5). If no response after the second time the question is sent, continue with next day
+Q93	¡Felicidades! You’ve made it this far! Your strength and determination are incredible. Keep going; you’re proving to yourself that you can do this.
+¡Felicidades! ¡Has llegado lejos! Tu fuerza y determinación son increíbles. Sigue adelante; te estás demostrando a ti mismo que puedes lograrlo.
+Q95	Your family and loved ones are rooting for you. They see your effort, and they’re proud of the healthier choices you’re making. Keep going!
+Tu familia y seres queridos están apoyándote. Ven tu esfuerzo y están orgullosos de las decisiones saludables que estás tomando. ¡Sigue adelante!
+Q98 	Stressful days may come, but smoking won’t solve them. Practice deep breathing, take a short walk, or listen to music instead. Find what works for you!
+Habrá días estresantes, pero fumar no es la solución. En lugar de fumar, practica respiración profunda, sal a caminar o escucha música. ¡Lo que mejor te funcione!
+Quit Day Q101-Q180
+Intermittent Messaging 
+Q101  You are investing in your future. Every breath is cleaner, your heart is stronger, and your body is thanking you. Keep moving forward—your best days are ahead! 
+Estás invirtiendo en tu futuro. Cada respiración es más limpia, tu corazón es más fuerte y tu cuerpo te lo agradece. ¡Sigue avanzando, lo mejor está por venir! 
+Q104 By now, your lungs are healing, your breathing is better, and your energy is up. Keep enjoying these benefits—you’ve worked hard for them!
+Tus pulmones se están sanando, tu respiración ha mejorado y tienes más energía. Sigue disfrutando de estos beneficios: ¡Te los has ganado con esfuerzo!
+Q109 You deserve a life full of energy, health, and happiness. And that’s exactly what you’re creating! Celebrate your progress, and keep building the life you deserve. 
+Mereces una vida llena de energía, salud y felicidad. Y eso es exactamente lo que estás creando. Celebra tu progreso y sigue construyendo la vida que te mereces.
+Q112 	You are protecting your loved ones by staying smokefree. Now they do not have to breathe your smoke.  
+Estás protegiendo a tus seres queridos al mantenerte sin fumar. Ya no tienen que respirar el humo de tus cigarrillos.
+Q115   You’ve worked hard to get here. Don’t let a temporary craving make you forget your long-term goal. Stay focused—your future self will thank you!
+Has trabajado duro para llegar hasta aquí. No dejes que un antojo pasajero te haga olvidar tu meta a largo plazo. Mantente enfocado: ¡Tu futuro yo te lo agradecerá!
+Q118 Remember, slip-ups can happen. What matters is getting back on track. Every day is a fresh start! 
+Recuerda, los deslices pueden ocurrir. Lo que importa es volver a enfocarte. ¡Cada día es un nuevo comienzo!
+Q122 You’re not alone in this journey. Connect with friends or family who support your decision. Let them remind you why quitting is one of the best choices you’ve made.
+No estás solo en esta jornada. Habla con amigos o familiares que apoyan tu decisión. Deja que te recuerden por qué dejar de fumar es una de las mejores decisiones que has tomado.
+Q126 	Remember why you started this journey. Whether it’s for your health, family, or future, your progress is worth celebrating. ¡Sigue adelante! Insert updated gif link
+Recuerda por qué iniciaste este camino. Ya sea por tu salud, tu familia o tu futuro, tu progreso merece ser celebrado. ¡Sigue adelante! Insert updated gif link
+ Q129 In our culture, we value resilience and strength. Quitting smoking takes both, and you’re showing that every day. ¡Eres fuerte y capaz!
+En nuestra cultura, valoramos la resistencia y la fortaleza. Dejar de fumar requiere ambas, y tú lo estás demostrando cada día. ¡Eres fuerte y capaz!
+Q132:  Checkout message was Deleted
+Q132	Your body, your mind, and your future are thriving. Stay committed to this journey without smoking, and embrace the healthier person you are becoming. Keep shining! 
+Tu cuerpo, tu mente y tu futuro están floreciendo. Sigue comprometido con tu decisión de no fumar y disfruta de la persona saludable en la que te estás convirtiendo. ¡Sigue brillando! 
+Q136 Your decision to quit is a gift to yourself and your loved ones. You are showing strength, determination, and self-love. Stay proud of your journey—you're doing something incredible! 
+Tu decisión de dejar de fumar es un regalo para ti y para quienes te rodean. Estás demostrando fortaleza, determinación y amor propio. ¡Siéntete orgulloso de tu camino, estás logrando algo increíble! 
+Q139 If someone offers you a cigarette, say, “No, gracias.” You’ve come too far to let one moment set you back. Own your decision—you’re in control!
+Si alguien te ofrece un cigarro, di: "No, gracias." Has llegado demasiado lejos para que un solo momento te haga retroceder. Toma el control: ¡Tú decides!
+Q143 Consider the example you’re setting for younger siblings, cousins, or friends. You’re inspiring others with your journey. That’s something to be proud of!
+Piensa en el ejemplo que estás dando a tus hermanos, primos o amigos. Tu camino está inspirando a otros. ¡Esto es algo para estar sentirse muy orgulloso!
+Updated Message:
+Piensa en el ejemplo que estás dando a tus hermanos, primos o amigos. Tu camino está inspirando a otros. ¡Esto es algo para sentirse muy orgulloso!
+Q146	Avoid or limit alcohol. Urges may be stronger when you drink and alcohol may affect your willpower, so be prepared and use your coping skills. 
+Evita o limita el consumo de alcohol. Los antojos pueden ser más fuertes cuando bebes y el alcohol puede afectar tu fuerza de voluntad. 
+Q150	Look how far you’ve come! 5 months ago, smoking was part of your routine. Now, you’re breaking free from it every day. This is amazing! Well done!
+¡Mira todo lo que has logrado! Hace 5 meses, fumar era parte de tu rutina. Ahora, cada día te liberas más de ese hábito. ¡Esto es increíble! ¡Bien hecho!
+Q154	Every day without smoking is a victory. On tough days, remind yourself: I’ve already done this for months—I can keep going!
+Cada día sin fumar es una victoria. En los días difíciles, recuérdate: Ya lo he hecho durante meses, ¡yo puedo seguir adelante!
+Q157	Certain places or people might trigger old habits. Plan ahead! Have a game plan for what to do when cravings hit—call a friend, chew gum, or keep your hands busy.
+Ciertos lugares o personas pueden activar viejos hábitos. ¡Prepárate! Ten un plan listo para cuando tengas antojos: Llama a un amigo, mastica chicle o mantén tus manos ocupadas.
+Q160 	Be proud of yourself for taking steps toward a healthier and longer life. Almost there. You are nearing the end of the program! 
+https://quitxt.org/sites/quitxt/files/gifs/nearing_the_end_almost_there.gif   
+Siéntete orgulloso de ti mismo por crear una vida más saludable y más larga. Ya falta poco. ¡Te estás acercando al final del programa!
+https://quitxt.org/sites/quitxt/files/gifs/q51_almost_esp.gif 
+Q164	The hardest part is behind you, but staying smoke-free is a daily choice. Keep reminding yourself: I am not a smoker anymore.
+La parte más difícil ya quedó atrás, pero seguir sin fumar es una elección diaria. Recuérdate constantemente: Ya no soy fumador.
+Q168	You are creating a new, healthier future—one where smoking doesn’t control you. Stay committed and keep believing in yourself. ¡Lo estás logrando!
+Estás creando un futuro nuevo y más saludable– uno en el que el tabaco ya no tiene poder sobre ti. 
+Mantente firme y sigue creyendo en ti. ¡Lo estás logrando!
+Q171	You are your own hero! Quitting smoking is your superpower to protect yourself from health villains like cancer and heart disease.
+¡Eres tu propio héroe! Dejar de fumar es tu superpoder y te protege de villanos como el cáncer y las enfermedades del corazón.
+Q174 	Remember to celebrate the amazing job you're doing. Be grateful for your new smokefree life! 
+Recuerda celebrar el trabajo increíble que estás haciendo. ¡Agradece tu nueva vida libre del tabaco!
+Q177	You are proof that change is possible! Your strength and perseverance inspire others, even if you don’t realize it. Keep pushing forward—you are unstoppable! 
+¡Eres la prueba de que el cambio es posible! Tu fortaleza y perseverancia inspiran a otros, aunque no te des cuenta. ¡Sigue adelante, eres imparable! 
+Quit Day 180 
+Intermittent Messaging 
+Q180 	Hi, it is Quitxt checking in for the LAST time! It has been 6 months. 
+During the past 7 days, have you smoked a cigarette, even a puff? Text Y or N
+(Response: “Y”):  
+Sometimes it takes a few tries. Don’t get discouraged and try again. Think about why you slipped and plan to avoid or manage those triggers.
+Thank you for completing the program and for being part of the Quitxt study. 
+(Response: “N”): 
+CONGRATULATIONS! You did it! Keep staying strong & smokefree, you deserve it! 
+https://quitxt.org/sites/quitxt/files/gifs/q222_checkin_yeah_esp.gif 
+Thank you for being part of the Quitxt study. Best wishes for your continued success and your new healthy life!
+(No Response) Repeat question after 1 hour (Appendix 5)
+If no response after repeated question:
+You completed the program. Thank you for being part of the Quitxt study.
+Hola, es Quitxt por última vez. Nos gustaría saber cómo estás. Han pasado 6 meses.
+Durante los últimos 7 días, ¿has fumado cigarrillos de tabaco, aunque fuera una sola fumada?  Envía S o N.
+(Response: “S”):	
+A veces se necesitan varios intentos. ¡No te desanimes! ¡Sigue tratando! Piensa qué causó el desliz y planea cómo evitar o manejar esas situaciones. 
+¡Gracias por completar el programa y por participar en el estudio Quitxt!
+(Response: “N”): 
+¡FELICITACIONES! ¡Lo lograste! Permanece fuerte y sin fumar ¡te lo mereces! 
+https://quitxt.org/sites/quitxt/files/gifs/q222_checkin_yeah_esp.gif
+Gracias por ser parte del estudio Quitxt. ¡Nuestros mejores deseos por tus continuos éxitos y tu nueva vida más saludable!
+(No Response): Haz completado el programa. ¡Gracias por participar en el estudio Quitxt!
+List of Appendices
+Appendix 1: Helpnow Messaging
+Appendix 2: Slip Messaging
+Appendix 3: TalkOut Messaging 
+Appendix 4: Predict & Plan Messaging
+Appendix 5: Routine for Nonrespondents to Checkout Questions
+Appendix 1
+Helpnow Messaging (When Users Text Helpnow) 
+*HELPNOW: What's the problem? 
+If you are having a bad craving to smoke text CRAVE.
+If you have a craving because of stress, other smokers, or alcohol text STRESS, SMOKERS or ALCOHOL
+(NO DELAY)
+If you are in a bad mood text BADMOOD.
+If you have slipped and smoked text SLIP
+Remember, when you need help, you can text CRAVE, BADMOOD, STRESS, SMOKERS, ALCOHOL or SLIP anytime.
+AYUDAYA: ¿Cuál es el problema? 
+Si tienes muchos antojos de fumar envía ANTOJOS.
+Si tienes antojos debido a estrés, por otros fumadores o por alcohol envía ESTRÉS, FUMADORES o ALCOHOL
+(NO DELAY)
+Si te sientes de mal humor envía MALHUMOR.
+Si tuviste un desliz y fumaste envía DESLIZ
+Recuerda, cuando necesites ayuda, puedes enviar ANTOJO, MALHUMOR, ESTRÉS, FUMADORES, ALCOHOL o DESLIZ en cualquier momento.
+Note: 
+CRAVE/ANTOJO: rotate through menu of 23 messages below  
+STRESS/ESTRÉS: rotate through menu of 13 messages below
+SMOKERS/FUMADORES: rotate through menu of 20 messages below 
+ALCOHOL/ALCOHOL: rotate through menu of 12 messages below
+BADMOOD/MALHUMOR: rotate through  menu of 24 messages below)  
+SLIP/DELIZ: SLIP messages / mensajes de DESLIZ (Appendix 2) 
+Crave Messages
+Let's help you lighten the craving; take deep breaths to relax, or if you need a pick-me-up, try fast breathing. TAP here https://goo.gl/SNxLk0
+Te ayudaremos a reducir el antojo; respira profundo para relajarte, o si necesitas animarte, respira rápidamente. Clic https://goo.gl/jyX9P9
+Think of your craving like traffic, both are annoying, and both will go away if you just wait it out. https://goo.gl/vvwJFh 
+Piensa de tu antojo como el tráfico, ambos son fastidiosos y ambos desaparecen si esperas a que pasen. Clic https://goo.gl/bzPXY1
+Hit up Youtube for new cat videos or epic fails to help you cope - anything that gets your mind off cigarettes. TAP here https://youtu.be/gc_EoPJ1m3E
+Busca en YouTube los nuevos videos de gatos o de Epic Fails - cualquier cosa para alejar tu mente de los cigarrillos. Clic https://youtu.be/gc_EoPJ1m3E
+Cravings are proof your body is healing. Embrace the discomfort—it’s progress.
+Los antojos son prueba de que tu cuerpo está sanando. Abraza la incomodidad—es progreso.
+Talk to yourself… say "I can handle this" over and over again 10 times. Or 20.
+Convéncete a ti mismo… di "Yo puedo dominar esto" una y otra vez 10 veces. O 20.
+Call or text friends who know and support you quitting smoking. Tell them the crave is there, and let them talk and squash it. TAP here https://goo.gl/YAlViH  
+Llama a tus amigos y pídeles apoyo. Diles que los antojos son fuertes y déjalos que te ayuden a eliminarlos. Clic https://goo.gl/lWkVWo
+Think about the $. All that green you're saving by not smoking might be enough to splurge on some overpriced phone.
+Piensa en el $ que te ahorras al no fumar; podría ser suficiente para gastarlo en un teléfono nuevo y más costoso.
+Feeling the urge to smoke? Call or text a friend. A quick chat can help you shift your focus and stay on track.
+¿Tienes antojos de fumar? Llama o envía un mensaje a un amigo. Una conversación rápida puede ayudarte a cambiar el enfoque y mantenerte firme.
+Take a moment to visualize your healthier, smoke-free future. Hold on to that image. You can do this!
+Tómate un momento para visualizar tu futuro más saludable y libre de humo. Enfócate en esa imagen. ¡Puedes lograrlo!
+Like a video game, each craving you beat is a level passed! Keep going to reach the ultimate goal: smoke-free living! 
+Como en un videojuego, cada antojo que superas es un nivel ganado. ¡Sigue avanzando hasta alcanzar la meta final: vivir libre de humo!
+Sip a glass of cold water—refresh your mind and reset your focus.
+Toma un vaso de agua fría—refresca tu mente y reinicia tu enfoque.
+You’ve overcome so much already. This craving is just another step on your journey, it will pass in a few minutes. Stay strong!
+Ya has superado mucho. Este antojo es solo otro paso en tu camino, pasará en unos minutos. ¡Mantenete fuerte!
+Chew some gum or munch on a snack to keep your hands and mouth busy.
+Mastica un chicle o come un snack para mantener tus manos y boca ocupadas.
+Take a brisk walk—let nature remind you how good fresh air feels in your lungs.
+Da una caminata rápida—deja que la naturaleza te recuerde lo bien que se siente el aire fresco en tus pulmones.
+Write down 5 reasons why you chose to quit. Focus on those reasons right now.
+Escribe 5 razones por las que decidiste dejar de fumar. Concéntrate en esas razones ahora mismo.
+Deep breathing isn’t just for stress—it’s for victory too. Inhale calm, exhale cravings.
+La respiración profunda no es solo para el estrés, también es para la victoria. Inhala calma, exhala los antojos.
+Hit "play" on your favorite music or podcast and dance those cravings away.
+Clic o presiona “play” oye tu música o podcast favorito y baila esos antojos.
+Feeling tempted? Remind yourself why you started this journey. Your reasons for quitting are stronger than any craving. 
+¿Tienes antojos? Recuerda por qué comenzaste esta jornada. Tus razones para dejar de fumar son más fuertes que cualquier antojo.
+Repeat this mantra: "I am stronger than my cravings. I choose health."
+Repite esta mantra: "Soy más fuerte que mis antojos. Elijo la salud”.
+Watch a funny video or read something that makes you laugh. Joy is the best distraction.
+Mira un video divertido o lee algo que te haga reír. La alegría es la mejor distracción.
+Count backward from 100. By the time you’re done, the craving will have faded.
+Cuenta hacia atrás desde 100. Para cuando termines, el antojo habrá desaparecido.
+Remember, cravings last only a few minutes, but the benefits of quitting last a lifetime. Stay strong, you can do it! 
+Recuerda que los antojos duran solo unos minutos, pero los beneficios de dejar de fumar duran toda la vida. ¡Permanece fuerte, tú puedes lograrlo! 
+Think of all the loved ones who are cheering you on—they believe in you!
+Piensa en todos tus seres queridos que te están animando—¡ellos creen en ti!
+BadMood Messages
+You know that relief you feel at the end of a bad movie? That's how you'll feel once smoking is behind you.
+¿Sabes ese alivio que sientes al final de una mala película? Así es como te sentirás cuando dejes atrás el cigarrillo.
+Talk to yourself… say, "I'll feel even worse if I smoke" over and over again 10 times.
+Convéncete a ti mismo... di, "Me voy a sentir aún peor si fumo" una y otra vez... 10 veces.
+Buddha says: "Don't live in the past or in dreams of the future… concentrate on the present, right now!"
+Buda dice: No vivas en el pasado o en los sueños del futuro... concéntrate en el presente, ¡ahora mismo!
+Sometimes it's hard to realize that everything is temporary. Things change & you won't feel this way forever.
+A veces es difícil darse cuenta de que todo es pasajero. Las cosas cambian y no te sentirás así para siempre.
+To feel happier in seconds, let the sunlight stream in when you first wake up, play with your pets or turn up the music. 
+Para sentirte feliz en segundos, deja entrar la luz del sol cuando te despiertas, juega con tus mascotas o súbele el volumen a la música.
+Have you ever tried "laughter yoga"? It works! Check this out https://youtu.be/4p4dZ0afivk  
+¿Alguna vez has tratado la "yoga de risa"? ¡Funciona! Mira esto: https://youtu.be/iDVp-7i9k0o 
+It’s OK to feel frustrated. Write down what’s bothering you instead of smoking. Get it out on paper and let it go.
+Está bien sentir frustración. Escribe lo que te molesta en lugar de fumar. Sácalo en papel y déjalo ir. 
+Remember your reasons for quitting. A bad day doesn’t erase your goals. Keep going—your future self will thank you!
+Recuerda tus razones para dejar de fumar. Un mal día no borra tus metas. Sigue adelante, tu persona futura te lo agradecerá.
+Cravings hit hardest when emotions run high. Try deep breathing exercises—breathe in calm, breathe out stress.
+Los antojos son más fuertes cuando las emociones están a flor de piel. Prueba ejercicios de respiración profunda: inhala calma, exhala estrés.
+Every storm runs out of rain. Hang in there. Take a deep breath and imagine a place where you feel completely at peace.
+Toda tormenta termina. Permanece firme. Respira profundo e imagina un lugar donde te sientas completamente en paz.
+Step outside and feel the fresh clean air on your face and lungs. Nature is a natural mood booster.
+Sal afuera y siente el aire fresco en tu rostro y pulmones. La naturaleza es un estimulante natural del estado de ánimo.
+Instead of smoking, treat yourself to a moment of calm: a warm drink, your favorite song, or a comforting scent.
+En lugar de fumar, disfruta un momento de completa calma: con una bebida caliente, tu canción favorita o un aroma reconfortante.
+Write down three things you’re grateful for today, no matter how small. Then, repeat to yourself: "I’m grateful for..." and name each one. Let gratitude fill your thoughts.
+Escribe tres cosas por las que estás agradecido hoy, sin importar lo pequeñas que sean. Repite: "Estoy agradecido por..." y nombra cada una. Deja que la gratitud llene tus pensamientos.
+To relax, play your favorite playlist and let the music lift your spirits and fill you with positive energy.
+Para relajarte, escucha tu música favorita y deja que el ritmo te llene de energía positiva y eleve tu ánimo.
+A smile, even a forced one, can trick your brain into feeling happier. Try it! You can control the craving. 
+Una sonrisa, aunque sea forzada, puede ayudar a tu cerebro para sentirte más feliz. ¡Inténtalo! Tú puedes controlar el antojo.
+Call a loved one who always knows how to brighten your day. They will help you stay strong and smoke-free.
+Llama a un ser querido que siempre sabe cómo alegrarte el día. Te ayudará a permanecer fuerte y libre de humo.
+Laughter is medicine, watch a comedy clip, movie or read a funny story.
+La risa es un remedio natural y medicinal. Mira un video corto o película de comedia o lee una historia graciosa.
+Acknowledge your feelings—they’re valid—but remind yourself they won’t last forever. Stay strong!
+Reconoce tus estados de ánimo, pero no olvides que son pasajeros, y como los antojos de fumar pasarán pronto. ¡Mantente firme!
+Focus on something small you can accomplish right now. Success fuels positivity and keeps you from smoking.
+Enfócate en una tarea pequeña que puedas completar ahora. La satisfacción de cumplirla te elevará el ánimo y te ayudará con los antojos.
+Take a moment and play with your pet or hug a loved one. Connection heals, you will feel energized to control your cravings.
+Tómate un momento para jugar con tu mascota o abrazar a alguien querido. La conexión sana y te sentirás con energía para controlar los antojos.
+You’ve overcome tough times before. Trust in your resilience. You can do it!
+Recuerda que ya has superado retos antes. Confía en tu capacidad para mantenerte firme y seguir adelante. ¡Puedes lograrlo!
+Compliment someone or do a small act of kindness. It will boost your mood to remain smokefree.
+Dale un cumplido a alguien, o realiza un acto de amabilidad. Tu ánimo se reforzará para seguir sin fumar.
+Practice the “5-4-3-2-1” technique to ground yourself in the present moment and calm your mind and your body. Link to PDF 
+Practica la técnica "5-4-3-2-1" de los cinco sentidos para conectarte con el momento presente y calmar tu mente y tu cuerpo. [Haz clic aquí para ver la guía] (link to the PDF guide)
+Remind yourself: "I am worthy of good things, even on hard days, I deserve to be smokefree.
+Di en voz alta: "Merezco cosas buenas, incluso en los días difíciles, y estoy firme en lograr una vida libre de humo."
+Stress Messages
+Stress happens, but smoking doesn’t have to be your solution. Next time, take a moment to breathe slowly and deeply several times. 
+El estrés puede causar antojos, pero fumar no es la solución. La próxima vez, toma un momento para respirar despacio y profundo varias veces.
+Stressful moments are tough, but smoking won’t solve them. Take control. You can do this, compa!
+Los momentos de estrés son difíciles, pero fumar resuelve nada. Toma el control, ¡tú puedes con esto, compa!
+Feeling stressed? Take a moment to breathe slowly and deeply and think of one thing you're truly grateful for: your family, your health, your dreams. Gratitude grounds you.        
+¿Tienes estrés? Respira profundo y piensa en las cosas que agradeces: tu familia, tu salud, tus sueños. La gratitud te da fuerza. 
+Cravings during stress are normal, but smoking won’t make it better. Try the box breathing technique to reset and calm the stress: 
+(NO DELAY)
+Slowly breathe in for 4 seconds…
+Hold your breath for 4 seconds…
+Slowly exhale for 4 seconds…
+Hold your breath for 4 seconds… 
+Repeat several times during the day. Feel your body slow down. The force is with you. Trust it.
+Tener antojos durante el estrés es normal, pero fumar no lo va a mejorar. Prueba la técnica de respiración en caja para reiniciarte y calmar el estrés:
+(NO DELAY)
+Inhala despacio durante 4 segundos…
+Mantén la respiración durante 4 segundos…
+Exhala lentamente durante 4 segundos…
+Mantén la respiración durante 4 segundos…
+Repite varias veces al día. Siente cómo tu cuerpo se calma. La fuerza está contigo. Confía en ella.
+When stress builds up, pause and remind yourself why you started this journey. You’ve got the tools to handle it without smoking.
+Cuando el estrés se acumule, toma una pausa y recuérdate por qué dejaste de fumar. Ya tienes las herramientas para manejarlo sin fumar.
+Stress can hit hard, and the cravings that come with it feel just as real. You’re not alone. 
+Practice the “5-4-3-2-1” technique to ground yourself in the present moment and calm your mind and your body. Link to PDF. [Click here for the guide] (link to the PDF guide)
+El estrés puede ser fuerte, y los antojos de fumar se sienten muy reales. No estás solo/a. 
+Practica la técnica "5-4-3-2-1" de los cinco sentidos para conectarte con el momento presente y calmar tu mente y tu cuerpo. [Haz clic aquí para ver la guía] (link to the PDF guide)
+Take it one moment at a time. When stress feels overwhelming, stop and breathe slowly with this technique: put your hand on your chest and feel how it relaxes you. https://goo.gl/SNxLk0.
+Toma un momento a la vez. Cuando el estrés sea abrumador, para, respira despacio con esta técnica: pon tu mano en el pecho y siente cómo se relaja. Spanish link
+You’ve made it so far! When stress feels overwhelming, focus on what you can control, like taking a walk and breathing clean air, is very helpful!
+¡Ya has llegado tan lejos! Cuando el estrés te abrume, salir a caminar y respirar aire puro ¡ayuda mucho!
+It’s okay to feel stressed; it happens to everyone. Remember, smoking won’t solve the stress, but a few moments of deep breathing can. Inhale calm, exhale stress. 
+Es OK. El estrés nos pasa a todos. Recuerda, fumar no lo resolverá. En su lugar practica respiración profunda: inhala calma, exhala el estrés.
+You are stronger than you think. Choose to call a friend or listen to your favorite songs when you feel stress building up.
+Eres más fuerte de lo que crees. Elige llamar a una amiga o amigo o escuchar tus canciones favoritas cuando sientas que el estrés aumenta.
+Next time stress hits, close your eyes, take five deep and slow breaths, and remind yourself of your commitment to stay smoke-free.
+La próxima vez que el estrés se acumule, cierra los ojos, respira profunda y lentamente 5 veces y recuerda tu compromiso de mantenerte libre de tabaco.
+Stress is temporary, but your health is for life. Don’t smoke. When you feel overwhelmed, refocus, take a walk, and breathe deeply.
+El estrés es pasajero, pero tu salud es para toda la vida. No fumes. Cuando el estrés te abrume, cambia el enfoque, da un paseo y respira profundo.
+Every time you handle stress without smoking, you’re teaching your brain a new pattern, one that leads to real freedom from tobacco.
+Cada vez que manejas el estrés sin fumar, estás enseñándole a tu cerebro un nuevo camino. Y ese camino te lleva a liberarte del tabaco.
+Smokers Messages
+Your health comes first. When others smoke near you, cravings increase.  Politely excuse yourself and stay away from tobacco smoke.
+Tu salud está primero. Cuando otros fuman cerca de ti, las ganas de fumar aumentan. Aléjate con cortesía y evita el humo del tabaco. 
+Stay focused on your reasons for quitting. They are stronger than any temptation.
+Mantente enfocado en tus razones para dejar de fumar. Son más fuertes que cualquier tentación.
+Carry a reminder of your quit journey, like a note or a photo, to stay motivated.
+Lleva contigo un recordatorio de tu proceso, como una nota o una foto, para mantenerte motivado.
+Practice mentally to say 'no, thank you' confidently when offered a cigarette.
+Practica mentalmente para decir con firmeza: "no, gracias" si te ofrecen un cigarrillo.
+Find a non-smoking buddy to hang out with in social situations.
+En situaciones sociales, júntate con un amigo que no fume. 
+Think ahead about how you’d deal with smoking environments.
+Ten con anticipación un plan para enfrentar situaciones donde hay fumadores.
+Remember, IT IS OK to leave situations that threaten your progress.
+Recuerda, ESTA BIEN alejarte de situaciones que pongan en peligro tu progreso.
+Focus on the long-term benefits of quitting, like better health and more energy.
+Concéntrate en los beneficios a largo plazo de dejar de fumar, como tener más energía y mejor salud. 
+Keep a list of your reasons for quitting in your wallet or phone to remind yourself why you're on this journey.
+Lleva una lista de tus razones para dejar de fumar en tu cartera o celular para recordarte la razón de tu esfuerzo.
+Remind yourself that cravings are temporary, but the benefits of quitting are lasting.
+Recuerda que los antojos son pasajeros, pero los beneficios de dejar de fumar son duraderos.
+Stay connected with your support network, like your family and friends, for encouragement and advice.
+Mantente conectado con tu red de apoyo como tu familia y amigos, para recibir ánimo y consejos.
+You have strength and resilience! You’ve done many hard things before. You've got this!
+Tú tienes fortaleza y resistencia. Haz hecho muchas cosas difíciles antes. ¡Tú puedes con esto!
+Stay strong and remember that every time you resist the urge to smoke is a victory! 
+Mantente fuerte y recuerda que cada vez que resistes la tentación de fumar ¡es una victoria!
+Avoiding smoking environments helps you stay on track. You’ve got this!
+Evitar lugares donde se fuma te ayuda a mantener el rumbo. ¡Tú tienes esto bajo control!
+Tell your friends about your quit journey. Their support makes a big difference.
+Cuéntales a tus amigos sobre tu esfuerzo de dejar de fumar. Su apoyo hace una gran diferencia.
+Visualize your smoke-free future. It’s closer than you think.
+Visualiza tu futuro libre de tabaco. Está más cerca de lo que crees. 
+Avoid places where you used to smoke to reduce temptation.
+Evita los lugares donde solías fumar para reducir la tentación.
+Keep going and remember that every step you take is a step towards a healthier you!
+¡Sigue adelante y recuerda que cada paso que das es un paso hacia una versión más sana      de ti!
+Seeing someone smoke? That’s their choice. Yours is staying strong. Step away, chew gum, or call someone who gets it.
+¿Viste a alguien fumar? Esa es su decisión. La tuya es seguir firme. Aléjate, mastica chicle o llama a alguien que te entienda.
+Craving 'cause someone lit up? That urge will pass. You’ve made it this far—don’t let someone else’s smoke cloud your progress.
+¿Te dio el antojo porque alguien prendió un cigarro? El impulso pasa. No dejes que el humo de otro nuble tu avance.
+Alcohol Messages
+Alcohol can weaken your resolve. Consider cutting back to stay strong in your quit journey.
+El alcohol puede debilitar tu determinación. Considera reducir su consumo para mantenerte fuerte en tu proceso de dejar de fumar.
+Remember, reducing alcohol can help you avoid smoking triggers.
+Recuerda que reducir el alcohol puede ayudarte a evitar las situaciones que te llevan a fumar.
+Stay mindful of your drinking habits. They can impact your smoking cessation efforts.
+Sé consciente de tus hábitos de consumo de alcohol. Pueden afectar tu esfuerzo para dejar de fumar.
+While you are quitting smoking, try to avoid situations where alcohol is present to reduce temptations.
+Mientras estás dejando de fumar trata de evitar situaciones donde haya alcohol para reducir tentaciones.
+Focus on activities that don't involve drinking to support your quit goals.
+Concéntrate en actividades que no incluyan el consumo de alcohol para apoyar tus objetivos.
+Stay hydrated and choose non-alcoholic beverages to help manage cravings.
+Hidrátate bien y elige bebidas sin alcohol para ayudarte a controlar los antojos.
+Stay aware of how alcohol can lower your inhibitions and lead to smoking.
+Ten presente que el alcohol puede bajar tus inhibiciones y llevarte a fumar.
+Remember, reducing your alcohol consumption can also improve your overall health.
+Recuerda que reducir el alcohol también puede mejorar tu salud en general.
+Stay focused on your reasons for quitting smoking, even when drinking.
+Mantente enfocado en tus razones para dejar de fumar, incluso cuando estés bebiendo.
+Plan ahead and have a strategy for managing social situations involving alcohol.
+Planea con anticipación y ten una estrategia para manejar situaciones sociales donde haya alcohol.
+Alcohol can blur your quit goals. Be intentional. Know your limits, and have a plan.
+El alcohol puede nublar tus metas. Sé intencional. Conoce tus límites y ten un plan.
+You can enjoy the night without giving in. Move to a smoke-free spot, or step out with a friend who’s got your back.
+Puedes disfrutar la noche sin ceder. Aléjate del humo o sal un momento afuera con un amigo que te apoye.
+Appendix 2
+Slip Messaging
+(Responses to texted SLIP/DESLIZ in Q1-N or SLIP/DESLIZ reply at checkout)
+You made a good try, and most ex-smokers need a few tries before they quit for good. Treat this as a learning experience.
+Hiciste un buen intento. La mayoría de los fumadores necesitan varios intentos antes de dejar de fumar para siempre. Tómalo como un aprendizaje.
+(NO DELAY)
+What caused you to start smoking again? Text one of these reasons: 
+For badmood, text 1
+For stress, text 2
+For other smokers, text 3
+For alcohol, text 4
+For other reason, text 5
+¿Qué te hizo fumar de nuevo? Envía una de estas razones: 
+Por malhumor envía 1
+Por estrés envía 2
+Por otros fumadores, envía 3
+Por alcohol, envía 4
+Por otra razón, envía 5
+If Reply 1 (BADMOOD/MALHUMOR):	
+OK - it's normal to get in a bad mood, slip up and smoke. Next time, instead of smoking, text BADMOOD for help!
+Es normal estar de mal humor y fumar de nuevo. Tú puedes aprender a manejarlo. La próxima vez no fumes. Envía MALHUMOR para recibir ayuda. 
+If Reply 2 (STRESS/ESTRÉS)
+Stress causes lots of ex-smokers to slip. If you are feeling stressed, don't smoke and try this breathing exercise instead: https://goo.gl/SNxLk0 
+Next time, instead of smoking, text STRESS for help!
+El estrés puede causar que tengas un desliz. Cuando sientas estrés no fumes y prueba este ejercicio de respiración https://goo.gl/jyX9P9
+La próxima vez no fumes. Envía ESTRÉS para recibir ayuda. 
+(2 MINUTE DELAY)
+Another great way to handle stress is to talk to someone who is glad you quit smoking, share how you are feeling and why. Tap https://goo.gl/YAlViH
+También puedes hablar con alguien que se alegra porque dejaste de fumar. Dile cómo te sientes y por qué. Clic https://goo.gl/lWkVWo
+If Reply 3 (SMOKERS/FUMADORES): 
+It's common for ex-smokers to slip up when they are around smokers, you need to stay away from smokers for a week or more.
+Next time, instead of smoking, text SMOKERS for help!
+Es común que los exfumadores tengan un desliz cuando están con fumadores. Necesitas estar alejado de los fumadores por una semana o más.
+La próxima vez no fumes. Envía FUMADORES para recibir ayuda. 
+(NO DELAY)
+If you are around friends who smoke, tell them right away that you quit and ask them NOT to offer you a cigarette! Tap https://goo.gl/4uJShf
+Cuando estés con amigos que fuman, diles pronto que dejaste de fumar y pídeles que ¡NO te ofrezcan cigarrillos! clic https://goo.gl/c3Ul6m
+If Reply 4 (ALCOHOL):
+Drinking has lots of dangers and you know now it can make you smoke. Stop for a while or at least cut back. Tap: https://goo.gl/ut8tdk 
+Next time, instead of smoking, text ALCOHOL for help!
+Beber es peligroso y ya sabes que te puede hacer fumar. Deja de beber por un tiempo o al menos reduce tu consumo. Clic https://goo.gl/aqi4Su
+La próxima vez no fumes. Envía ALCOHOL para recibir ayuda. 
+If Reply 5 (OTHER/OTRA): 
+Think about what made you slip & how you can handle it better next time. Make a plan to do something else instead. Tap: https://goo.gl/vvwJFh
+Piensa en qué te hizo deslizar y cómo lo puedes manejar. Planea hacer otras cosas en lugar de fumar. Clic https://goo.gl/bzPXY1
+NOTE: For participants who send SLIP/DELIZ for the first or second time but did not  reply to the pool question:
+What caused you to start smoking again? Text one of these reasons: 
+For badmood, text 1
+For stress, text 2
+For other smokers, text 3
+For alcohol, text 4
+For other reason, text 5
+¿Qué te hizo fumar de nuevo? Envía una de estas razones: 
+Por malhumor envía 1
+Por estrés envía 2
+Por otros fumadores, envía 3
+Por alcohol, envía 4
+Por otra razón, envía 5
+If NO response AFTER 5 MINUTES, send the message:
+Slipping is part of the journey, not the end. Each slip is a chance to learn. Take a deep breath, reset, and get back on track.
+Tener un desliz es parte del camino, no es el final. Cada desliz es una oportunidad para aprender. Respira profundo, reinicia y vuelve a encaminarte.
+NOTE: ONLY for the third time (or more) that participants send the SLIP/DESLIZ codeword. AFTER messaging above ADD this Message:
+To avoid slipping again try using nicotine gum or lozenges - you won't want to smoke so much if you do!
+You can also use the nicotine patch, but just don't use the patch and gum or lozenges at the same time! TAP here: https://goo.gl/6t7uT4 
+Para evitar un nuevo desliz trata de usar chicle o pastillas de nicotina. No vas a desear fumar tanto si lo haces.
+También puedes usar el parche de nicotina, pero no uses el parche y el chicle o las pastillas al mismo tiempo. Clic https://goo.gl/gi6NMj
+NOTE: ONLY for the third time (or more) that participants send the SLIP codeword. 
+IF the participant DOES NOT respond to the poll question below. 
+What caused you to start smoking again? Text one of these reasons: 
+For badmood, text 1
+For stress, text 2
+For other smokers, text 3
+For alcohol, text 4
+For other reason, text 5
+¿Qué te hizo fumar de nuevo? Envía una de estas razones: 
+Por malhumor envía 1
+Por estrés envía 2
+Por otros fumadores, envía 3
+Por alcohol, envía 4
+Por otra razón, envía 5
+If NO response AFTER 5 MINUTES, send the message:
+To avoid slipping again try using nicotine gum or lozenges - you won't want to smoke so much if you do!
+You can also use the nicotine patch, but just don't use the patch and gum or lozenges at the same time! TAP here: https://goo.gl/6t7uT4 
+Para evitar un nuevo desliz trata de usar chicle o pastillas de nicotina. No vas a desear fumar tanto si lo haces.
+También puedes usar el parche de nicotina, pero no uses el parche y el chicle o las pastillas al mismo tiempo. Clic https://goo.gl/gi6NMj
+Appendix 3
+TalkOut Messaging
+You need to be ready to talk yourself out of smoking. You might tell yourself: I can have just one cigarette, that won't hurt.
+Necesitas estar listo para convencerte a ti mismo de no fumar. Podrías decirte: Fumarme solo un cigarrillo, no me hará daño. 
+(NO DELAY)
+You SHOULD tell yourself: If I have one I will just want another one…and that's no good! TAP https://goo.gl/XJKbcK
+Debes decirte: Si me fumo uno, voy a querer otro…y eso ¡no es bueno! Clic https://goo.gl/8IM0po
+(2 MINUTE DELAY)
+Be ready to talk yourself out of smoking. You might tell yourself: I feel terrible and just don't care…why not have a cigarette?
+(NO DELAY)
+You SHOULD tell yourself: That might help for a minute but later I'll feel worse if I start smoking again. TAP https://goo.gl/XJKbcK
+(2 MINUTE DELAY)
+Prepárate para convencerte de no fumar. Podrías decirte: Me siento mal y simplemente no me importa... ¿por qué no fumarme un cigarrillo?
+(NO DELAY)
+Debes decirte: Eso me ayudaría por un minuto, pero más tarde me voy a sentir peor si comienzo a fumar de nuevo. Clic https://goo.gl/8IM0po
+(2 MINUTE DELAY)
+Be ready to talk yourself out of smoking. You might tell yourself: I've proved I can quit, so I can go on smoking now and quit for good later.
+(NO DELAY)
+You SHOULD tell yourself: The longer I smoke the harder it will be to quit. Better just not start again. TAP https://goo.gl/XJKbcK 
+(2 MINUTE DELAY)
+Prepárate para convencerte de no fumar. Podrías decirte: He comprobado que puedo dejar de fumar
+(NO DELAY)
+De modo que puedo seguir fumando ahora y dejarlo para siempre después.
+(NO DELAY)
+Debes decirte: Entre más tiempo fume será más difícil dejar de fumar. Es mejor no empezar de nuevo. Clic https://goo.gl/8IM0po
+(2 MINUTE DELAY)
+Appendix 4
+Predict & Plan (PP) Messaging
+To quit for good you need to be prepared to cope with some tough situations: If you get yelled at by your boss, get stressed, and feel the need 4 a cigarette…
+(NO DELAY)
+Take a walk, call a friend, use breathing exercises… you'll feel even worse if you start smoking again. Tap: https://goo.gl/4uJShf
+Para dejar de fumar debes prepararte para enfrentar situaciones difíciles: Si tu jefe te regaña, te estresas y sientes la necesidad de fumar…
+(NO DELAY)
+Sal a caminar, llama a un amigo, haz ejercicios de respiración… te sentirás peor si empiezas a fumar de nuevo. Clic https://goo.gl/c3Ul6m
+Be prepared to cope with some tough situations. If you get in a fight with a loved one and are so upset you want to smoke a cigarette…
+(NO DELAY)
+Call your best friend or family and tell them how you are feeling, you'll feel better—especially if you don't start smoking again. TAP https://goo.gl/4uJShf
+(2 MINUTE DELAY)
+Prepárate para manejar situaciones difíciles: si peleas con tu pareja y estás tan molesto que quieres fumar un cigarrillo…
+(NO DELAY)
+Llama a tu mejor amigo y dile cómo te sientes, te sentirás mejor – especialmente si no empiezas a fumar de nuevo. CLIC https://goo.gl/c3Ul6m
+(2 MINUTE DELAY)
+Be prepared to cope with some tough situations. If you are around a lot of old friends who smoke and someone offers you a cigarette, you might feel tempted.
+(NO DELAY)
+Tell them you just quit and to please not offer you cigarettes, even if you ask for one later! TAP https://goo.gl/4uJShf
+(2 MINUTE DELAY)
+Prepárate para manejar situaciones difíciles: si estás con amigos que fuman y te ofrecen un cigarrillo, podrías tener la tentación de fumar.
+(NO DELAY)
+Diles que dejaste de fumar y que por favor no te ofrezcan cigarrillos, aunque seas tú quien les pida uno más tarde. Clic https://goo.gl/c3Ul6m
+Remember, to really quit for good, you'll need to be prepared to cope with some tough situations. Tap here for ideas https://goo.gl/4uJShf
+(2 MINUTE DELAY)
+Recuerda, para dejar de fumar para siempre necesitas prepararte para enfrentar situaciones difíciles. Para ideas Clic https://goo.gl/c3Ul6m
+(2 MINUTE DELAY)
+Appendix 5
+Routine for Nonrespondents to Checkout Questions
+IF NO RESPONSE TO CHECKOUT, REPEAT QUESTION AFTER 1 HOUR
+Q1 
+During the day, did you smoke a tobacco cigarette, even a puff? Text Y or N
+Durante el día de hoy, ¿fumaste cigarrillos de tabaco, aunque fuera una fumada? Envía S o N
+[Follow the specified routine according to the response]
+IF NO RESPONSE AFTER REPEATED QUESTION, CONTINUE WITH MESSAGING AS PER PROTOCOL.
+Q7, 30 and 90
+During the past 7 days, have you smoked a cigarette, even a puff? Text Y or N
+Durante los últimos 7 días, ¿has fumado cigarrillos de tabaco, aunque fuera una sola fumada?  Envía S o N
+[Follow the specified routine according to the response]
+IF NO RESPONSE AFTER REPEATED QUESTION, CONTINUE WITH MESSAGING AS PER PROTOCOL.
+Q180 
+During the past 7 days, have you smoked a cigarette, even a puff? Text Y or N
+Durante los últimos 7 días, ¿has fumado cigarrillos de tabaco, aunque fuera una sola fumada?  Envía S o N
+[Follow the specified routine according to the response]
+IF NO RESPONSE AFTER REPEATED QUESTION
+This message is included in Q180
+You completed the program. Thank you for being part of the Quitxt study.
+Haz completado el programa. ¡Gracias por participar en el estudio Quitxt!
