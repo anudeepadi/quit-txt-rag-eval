@@ -330,6 +330,33 @@ python api_server.py
 - Add authentication to API endpoints
 - Validate and sanitize all user inputs
 
+## 🔬 RAG Configuration Evaluation
+
+**NEW** (Nov 2025): The system now supports evaluation of 4 different RAG configurations for research comparison:
+
+1. **Baseline Gemini** - No RAG
+2. **QA Only** - Curated knowledge base
+3. **Protocol + QA** - Hybrid approach (default)
+4. **Web RAG** - Vertex AI Search with web sources
+
+### Quick Start for Evaluation
+
+```bash
+# Test your setup
+python test_rag_setup.py
+
+# Run full evaluation
+python evaluate_rag_configurations.py
+
+# Review results
+open evaluation_summary.md
+```
+
+**Documentation**:
+- 📘 **[QUICKSTART_EVALUATION.md](QUICKSTART_EVALUATION.md)** - Step-by-step evaluation guide
+- 📗 **[VERTEX_AI_INTEGRATION_GUIDE.md](VERTEX_AI_INTEGRATION_GUIDE.md)** - Complete Vertex AI setup
+- 📕 **[INTEGRATION_SUMMARY.md](INTEGRATION_SUMMARY.md)** - Implementation overview
+
 ## 📝 Next Steps
 
 1. **Test thoroughly** with various scenarios
@@ -351,3 +378,4 @@ For issues or questions:
 
 **Built for QuitTxt Research Study**
 *Helping people quit smoking through AI-powered, protocol-guided support*
+# laughing-memory
