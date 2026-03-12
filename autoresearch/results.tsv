@@ -1,0 +1,2 @@
+experiment_id	timestamp	hypothesis	target_config	faithfulness_proxy	avg_words	min_words	max_words	temperature	max_tokens	top_k	verdict
+1	2026-03-11 15:50:08	Baseline concise config from manual experimentation	human_rag	0.8850	40.0	17	56	0.3	150	3	KEEP

@@ -1,0 +1,186 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{ulem}
+
+\title{\textbf{Comprehensive RAG Comparison Report}\\
+\large QuitTxt Protocol-Guided AI Smoking Cessation System\\
+\normalsize \textcolor{red}{REVISED - Rigorous Methodology}}
+\author{Research Team}
+\date{January 6, 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Executive Summary}
+
+This report presents \textbf{rigorously validated} results using fair methodology. All approaches were tested under \textbf{identical conditions}: same 15 test questions, same LLM (GPT-4o-mini), same retrieval method (ChromaDB with cosine similarity).
+
+\noindent\textbf{Key Results (5 runs, 95\% CI):}
+\begin{itemize}
+    \item AI-Generated achieves \textbf{96.9\%} of Human-Curated performance (ROUGE-L)
+    \item Unexpectedly, \textbf{Raw Sources outperform processed datasets}
+    \item Domain saturation effect: LLM already knows smoking cessation well
+\end{itemize}
+
+\section{Methodology}
+
+\subsection{Fair Comparison Protocol}
+\begin{itemize}
+    \item \textbf{Test Questions}: 15 held-out questions (same for all approaches)
+    \item \textbf{Runs}: 5 independent trials for statistical significance
+    \item \textbf{Retrieval}: ChromaDB with cosine similarity embeddings
+    \item \textbf{LLM}: GPT-4o-mini (temperature=0.3)
+    \item \textbf{Primary Metric}: ROUGE-L (semantic similarity)
+\end{itemize}
+
+\subsection{Approaches Compared}
+\begin{enumerate}
+    \item \textbf{Baseline (No RAG)} -- LLM answers from internal knowledge only
+    \item \textbf{Raw Sources RAG} -- Using unprocessed web content snippets
+    \item \textbf{AI-Generated RAG} -- Synthetic Q\&A pairs from Gemini 2.0 Flash
+    \item \textbf{Human-Curated RAG} -- Expert-created Q\&A pairs (4,847 pairs)
+\end{enumerate}
+
+\section{Results}
+
+\subsection{Primary Metric: ROUGE-L (Semantic Similarity)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Approach} & \textbf{Mean} & \textbf{95\% CI} & \textbf{Rank} \\
+\midrule
+\cellcolor{green!20}\textbf{Raw Sources RAG} & \cellcolor{green!20}\textbf{0.254} & \cellcolor{green!20}$\pm$0.004 & \cellcolor{green!20}\textbf{\#1} \\
+Human-Curated RAG & 0.244 & $\pm$0.004 & \#2 \\
+Baseline (No RAG) & 0.244 & $\pm$0.005 & \#2 (tie) \\
+AI-Generated RAG & 0.237 & $\pm$0.007 & \#4 \\
+\bottomrule
+\end{tabular}
+\caption{ROUGE-L results showing Raw Sources performs best}
+\end{table}
+
+\subsection{Secondary Metric: BLEU (Lexical Similarity)}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Approach} & \textbf{Mean} & \textbf{95\% CI} & \textbf{Rank} \\
+\midrule
+\cellcolor{green!20}\textbf{Raw Sources RAG} & \cellcolor{green!20}\textbf{0.100} & \cellcolor{green!20}$\pm$0.003 & \cellcolor{green!20}\textbf{\#1} \\
+Human-Curated RAG & 0.085 & $\pm$0.003 & \#2 \\
+AI-Generated RAG & 0.081 & $\pm$0.005 & \#3 \\
+Baseline (No RAG) & 0.071 & $\pm$0.004 & \#4 \\
+\bottomrule
+\end{tabular}
+\caption{BLEU results confirming Raw Sources performs best}
+\end{table}
+
+\subsection{Key Comparisons}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Comparison} & \textbf{ROUGE-L} & \textbf{BLEU} \\
+\midrule
+AI \% of Human & \cellcolor{green!20}\textbf{96.9\%} & 95.4\% \\
+AI vs Raw & \cellcolor{red!20}-6.8\% & -19.2\% \\
+Human vs Raw & \cellcolor{red!20}-3.8\% & -15.3\% \\
+\bottomrule
+\end{tabular}
+\caption{AI achieves near-human performance, but both underperform Raw}
+\end{table}
+
+\section{Target Validation}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Target (from Meeting)} & \textbf{Expected} & \textbf{Actual} & \textbf{Status} \\
+\midrule
+AI achieves 84\% of Human (ROUGE-L) & 84\% & \textbf{96.9\%} & \cellcolor{green!20}MET \\
+AI 40\% better than Raw & +40\% & -6.8\% & \cellcolor{red!20}NOT MET \\
+\bottomrule
+\end{tabular}
+\caption{Professor's targets assessment}
+\end{table}
+
+\section{Important Findings}
+
+\subsection{Unexpected Result: Raw Outperforms Processed}
+
+The expected hierarchy was: Raw $<$ AI $<$ Human
+
+The actual hierarchy is: \textbf{Raw $>$ Human $\approx$ Baseline $>$ AI}
+
+\noindent\textbf{Possible explanations:}
+\begin{itemize}
+    \item Q\&A formatting may constrain retrieval
+    \item Raw text provides more flexible context
+    \item Domain is well-known to the LLM (saturation effect)
+\end{itemize}
+
+\subsection{Vocabulary Alignment Hypothesis: NOT Supported}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Dataset} & \textbf{Overlap with LLM} \\
+\midrule
+Human-curated & 96.2\% \\
+AI-generated & 92.2\% \\
+\bottomrule
+\end{tabular}
+\caption{Human content has MORE LLM vocabulary overlap}
+\end{table}
+
+\subsection{Methodological Note}
+
+\textbf{Previous reports contained invalid comparisons.} The earlier claimed improvements (149\%, 254\%) compared different experiments with different test questions. BLEU/ROUGE scores cannot be compared across different test sets.
+
+\section{Conclusions}
+
+\begin{enumerate}
+    \item \textbf{AI-Generated is viable}: Achieves \textbf{96.9\%} of human-curated semantic performance
+
+    \item \textbf{Simpler may be better}: Raw sources unexpectedly outperform processed datasets
+
+    \item \textbf{Domain matters}: Smoking cessation is well-covered in LLM training data
+
+    \item \textbf{Methodology is critical}: Fair comparisons require identical test conditions
+
+    \item \textbf{Q\&A formatting has costs}: Converting to Q\&A format may lose information
+\end{enumerate}
+
+\section{What Can Be Claimed}
+
+\noindent\textbf{Valid claims:}
+\begin{itemize}
+    \item AI-generated achieves near-human quality (97\%)
+    \item All approaches perform similarly for this domain
+    \item Domain knowledge saturation reduces RAG benefit
+\end{itemize}
+
+\noindent\textbf{Invalid claims (do not use):}
+\begin{itemize}
+    \item \sout{Structured preprocessing improves performance}
+    \item \sout{149\% or 254\% improvements}
+    \item \sout{Human-curated is gold standard}
+\end{itemize}
+
+\vfill
+\noindent\rule{\textwidth}{0.4pt}\\
+\textit{Generated: January 6, 2026 \quad | \quad 5 runs $\times$ 15 questions \quad | \quad Model: GPT-4o-mini}
+
+\end{document}

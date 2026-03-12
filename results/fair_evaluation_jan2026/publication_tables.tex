@@ -1,0 +1,15 @@
+\begin{table}[h]
+\centering
+\caption{RAG Comparison Results with 95\% Confidence Intervals (n=5)}
+\label{tab:rag_comparison}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+\textbf{Approach} & \textbf{BLEU} & \textbf{ROUGE-1} & \textbf{ROUGE-2} & \textbf{ROUGE-L} \\
+\midrule
+Baseline (No RAG) & 0.071$\pm$0.004 & 0.317$\pm$0.009 & 0.116$\pm$0.003 & 0.244$\pm$0.004 \\
+Raw Sources RAG & 0.100$\pm$0.003 & 0.329$\pm$0.007 & 0.137$\pm$0.005 & 0.254$\pm$0.004 \\
+AI-Generated RAG & 0.081$\pm$0.005 & 0.314$\pm$0.006 & 0.121$\pm$0.003 & 0.237$\pm$0.007 \\
+Human-Curated RAG & 0.085$\pm$0.003 & 0.331$\pm$0.008 & 0.120$\pm$0.003 & 0.244$\pm$0.004 \\
+\bottomrule
+\end{tabular}
+\end{table}

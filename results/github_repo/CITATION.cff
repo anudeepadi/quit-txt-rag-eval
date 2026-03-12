@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite it as below."
+title: "RAG Evaluation for Smoking Cessation Counseling"
+abstract: "Comprehensive evaluation of RAG approaches demonstrating data leakage impact and domain-dependent RAG benefit"
+authors:
+  - family-names: "[Last Name]"
+    given-names: "[First Name]"
+    affiliation: "[Institution]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/[username]/rag-smoking-cessation-eval"
+url: "https://github.com/[username]/rag-smoking-cessation-eval"
+license: MIT
+version: 1.0.0
+date-released: 2026-01-19
+keywords:
+  - RAG
+  - Retrieval-Augmented Generation
+  - smoking cessation
+  - data leakage
+  - NLP evaluation
+  - digital health
+preferred-citation:
+  type: article
+  title: "Comprehensive Evaluation of Retrieval-Augmented Generation Knowledge Bases for Smoking Cessation Counseling: A Methodological Warning on Data Leakage"
+  authors:
+    - family-names: "[Last Name]"
+      given-names: "[First Name]"
+  journal: "PLOS Digital Health"
+  year: 2026
+  url: "https://arxiv.org/abs/2026.XXXXX"

@@ -1,0 +1,282 @@
+% PLOS Digital Health Manuscript
+% Template version 3.6 (August 2022)
+% Adapted: January 19, 2026
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% Required packages (do not delete)
+\usepackage{amsmath,amssymb}
+\usepackage{changepage}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+\usepackage{lineno}
+\usepackage{nameref,hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+% Line numbering
+\linenumbers
+
+% Title and authors
+\begin{document}
+
+\title{Comprehensive Evaluation of Retrieval-Augmented Generation Knowledge Bases for Smoking Cessation Counseling: A Methodological Warning on Data Leakage}
+
+% Author information
+\author[1]{Research Team\\}
+\author[1]{Department of Computer Science\\}
+\author[1]{University Name\\}
+
+% Abstract
+\begin{abstract}
+\textbf{Background:} Retrieval-Augmented Generation (RAG) systems promise to enhance large language model performance by incorporating domain-specific knowledge bases, but rigorous evaluation requires test sets with zero contamination from training data.
+
+\textbf{Methods:} We conducted a comprehensive comparison of RAG approaches for smoking cessation counseling using an independent test set (n=15 questions) validated for data leakage. We evaluated four approaches: baseline (no retrieval), raw sources RAG, AI-generated knowledge base RAG, and human-curated knowledge base RAG. Each approach underwent 5 independent trials with multiple metrics (ROUGE-L, BLEU, METEOR, BERTScore) and statistical significance testing.
+
+\textbf{Results:} Contrary to expectations, the baseline approach (no retrieval) achieved the highest ROUGE-L score (0.231 $\pm$ 0.008), outperforming all RAG variants. Among RAG approaches, AI-generated knowledge bases slightly exceeded human-curated ones (0.224 vs 0.220, p=0.184), meeting our first research target (102.1\% relative performance). However, the improvement over raw sources (+7.8\%) fell short of the target 40\% improvement. Critically, we discovered severe data leakage in the original test set: 7/15 questions (47\%) had $\geq$90\% similarity to training data, including four exact matches (100\% similarity), which completely reversed initial conclusions.
+
+\textbf{Conclusions:} This study makes two primary contributions. Methodologically, we demonstrate that data leakage can fundamentally invalidate NLP evaluation results, serving as a warning for the field. Empirically, we find that RAG benefit may be domain-dependent: for well-documented topics like smoking cessation, LLM parametric knowledge may suffice, shifting the research question from ``Does RAG help?'' to ``When does RAG help?''
+\end{abstract}
+
+% Author Summary
+\section*{Author Summary}
+Large language models can answer health questions, but researchers debate whether adding external knowledge bases improves responses. We tested this for smoking cessation counseling and made an important discovery: our original test questions were contaminated—nearly half were too similar to the training data, making results misleading. After creating a properly validated test set, we found surprising results: the system without added knowledge performed best. When external knowledge was used, AI-generated and human-curated databases performed similarly. Our findings suggest two key lessons: First, researchers must rigorously check for data contamination in test sets. Second, adding external knowledge doesn't always help—it depends on whether the topic is already well-represented in the model's training data. For common health topics like smoking cessation, the benefit may be minimal or even negative.
+
+% Introduction
+\section*{Introduction}
+Retrieval-Augmented Generation (RAG) has emerged as a promising approach to enhance large language model (LLM) performance by incorporating domain-specific knowledge bases\cite{lewis2020retrieval}. The underlying hypothesis is that retrieved context supplements the LLM's parametric knowledge, particularly for specialized domains. However, rigorous evaluation of RAG systems requires careful test set construction to avoid data leakage—contamination from training data that artificially inflates performance metrics.
+
+Smoking cessation counseling represents an ideal domain for evaluating RAG approaches: (1) evidence-based guidelines exist\cite{fiore2008treating}, (2) responses require accuracy and clinical appropriateness, and (3) the domain is well-documented in public health literature. However, this last characteristic—comprehensive documentation—may paradoxically reduce RAG benefit if LLMs have already learned this knowledge during pre-training.
+
+This study addresses three research questions:
+\begin{enumerate}
+    \item Does RAG improve response quality for smoking cessation counseling compared to baseline LLM responses?
+    \item Do AI-generated knowledge bases perform comparably to human-curated ones?
+    \item How does test set contamination affect evaluation validity?
+\end{enumerate}
+
+% Materials and Methods
+\section*{Materials and Methods}
+
+\subsection*{Data Leakage Discovery and Audit}
+During preliminary analysis, we discovered significant overlap between the original test set and training data. We conducted a systematic audit using fuzzy string matching (SequenceMatcher ratio from Python's difflib library) to compute similarity between each test question and all training questions.
+
+\textbf{Original Test Set Contamination:}
+\begin{itemize}
+    \item Severe contamination ($\geq$90\% similarity): 7 questions (47\%)
+    \item Moderate contamination (70-90\% similarity): 6 questions (40\%)
+    \item Clean questions ($<$70\% similarity): 2 questions (13\%)
+    \item Exact matches (100\% similarity): 4 questions (27\%)
+\end{itemize}
+
+This level of contamination fundamentally invalidated the original evaluation, as test questions were essentially memorized during training.
+
+\subsection*{Independent Test Set Creation}
+We created a new test set with rigorous independence validation:
+\begin{itemize}
+    \item \textbf{Similarity threshold:} Maximum 50\% fuzzy string match to any training question
+    \item \textbf{Sample size:} 15 questions covering all original topics
+    \item \textbf{Topic diversity:} Benefits (immediate, long-term), cravings, NRT options, withdrawal, relapse, addiction mechanisms, supporting others
+    \item \textbf{Question reformulation:} Grammatically distinct phrasings while maintaining topic coverage
+    \item \textbf{Reference answers:} Domain expert-validated responses for each question
+\end{itemize}
+
+\subsection*{Knowledge Base Approaches}
+We compared four approaches:
+\begin{enumerate}
+    \item \textbf{Baseline (No RAG):} Direct LLM responses without retrieval
+    \item \textbf{Raw Sources RAG:} Retrieval from unprocessed source documents (CDC guidelines, clinical papers)
+    \item \textbf{AI-Generated RAG:} Retrieval from structured Q\&A pairs generated by GPT-4
+    \item \textbf{Human-Curated RAG:} Retrieval from expert-curated Q\&A database
+\end{enumerate}
+
+\subsection*{Retrieval Implementation}
+\begin{itemize}
+    \item \textbf{Vector database:} ChromaDB with sentence-transformers/all-MiniLM-L6-v2 embeddings
+    \item \textbf{Similarity metric:} Cosine similarity
+    \item \textbf{Retrieval size:} Top k=3 documents per query
+    \item \textbf{Context window:} Retrieved documents inserted into prompt template
+\end{itemize}
+
+\subsection*{Evaluation Protocol}
+\begin{itemize}
+    \item \textbf{Language model:} GPT-4o-mini (temperature=0.3, max\_tokens=200)
+    \item \textbf{Repetitions:} 5 independent runs per approach
+    \item \textbf{Sample size:} 15 questions × 5 runs = 75 responses per approach
+    \item \textbf{Metrics:} ROUGE-1, ROUGE-2, ROUGE-L, BLEU, METEOR, BERTScore
+    \item \textbf{Statistical analysis:} 95\% confidence intervals, paired t-tests, Cohen's d effect sizes
+\end{itemize}
+
+\subsection*{Statistical Methods}
+We computed pairwise comparisons between all approaches using:
+\begin{itemize}
+    \item \textbf{Effect size:} Cohen's d (standardized mean difference)
+    \item \textbf{Significance testing:} Two-tailed paired t-tests
+    \item \textbf{Confidence intervals:} 95\% CI using t-distribution critical values
+    \item \textbf{Multiple comparisons:} No correction applied (exploratory analysis)
+\end{itemize}
+
+Cohen's d interpretation: $|d| < 0.2$ (negligible), $0.2 \leq |d| < 0.5$ (small), $0.5 \leq |d| < 0.8$ (medium), $|d| \geq 0.8$ (large).
+
+% Results
+\section*{Results}
+
+\subsection*{Main Performance Comparison}
+Table~\ref{tab:main_results} presents the primary results across all metrics. Contrary to our hypothesis, the baseline approach (no retrieval) achieved the highest ROUGE-L score, significantly outperforming both raw sources RAG (p=0.002) and trending higher than AI-generated and human-curated RAG approaches (p=0.074 for both).
+
+\begin{table}[h!]
+\centering
+\caption{\bf RAG Approach Performance Comparison}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Approach} & \textbf{ROUGE-L} & \textbf{BLEU} & \textbf{METEOR} \\
+\midrule
+Baseline (No RAG) & $0.231 \pm 0.008$ & $0.054 \pm 0.004$ & $0.310 \pm 0.010$ \\
+Raw Sources RAG & $0.208 \pm 0.004$ & $0.039 \pm 0.003$ & $0.275 \pm 0.008$ \\
+AI-Generated RAG & $0.224 \pm 0.005$ & $0.057 \pm 0.003$ & $0.290 \pm 0.008$ \\
+Human-Curated RAG & $0.220 \pm 0.004$ & $0.045 \pm 0.003$ & $0.296 \pm 0.010$ \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+Values shown as mean $\pm$ 95\% confidence interval (5 runs, 15 questions each).
+\end{flushleft}
+\label{tab:main_results}
+\end{table}
+
+\subsection*{Statistical Comparisons}
+Among RAG approaches, AI-generated knowledge bases achieved 102.1\% of human-curated performance (Table~\ref{tab:statistical}), meeting our first research target ($\geq$84\%). However, this difference was not statistically significant (p=0.184, Cohen's d=0.72). Both AI-generated and human-curated RAG significantly outperformed raw sources (p$<$0.05 for both), confirming the value of structured knowledge bases.
+
+\begin{table}[h!]
+\centering
+\caption{\bf Pairwise Statistical Comparisons (ROUGE-L)}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Comparison} & \textbf{Difference} & \textbf{Cohen's d} & \textbf{p-value} & \textbf{Significant} \\
+\midrule
+AI vs Human & +2.1\% & 0.72 & 0.184 & No \\
+AI vs Raw & +7.8\% & 3.19 & 0.002 & Yes** \\
+Human vs Raw & +5.5\% & 1.89 & 0.014 & Yes* \\
+AI vs Baseline & -2.6\% & -1.07 & 0.074 & No \\
+Raw vs Baseline & -9.7\% & -3.25 & 0.002 & Yes** \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+* p $<$ 0.05, ** p $<$ 0.01. All tests two-tailed paired t-tests (df=4).
+\end{flushleft}
+\label{tab:statistical}
+\end{table}
+
+\subsection*{Impact of Data Leakage}
+The original contaminated test set showed a completely different ranking: Raw $>$ Human $>$ AI. This reversal demonstrates how data leakage can fundamentally alter research conclusions. The contaminated results falsely suggested that simpler retrieval approaches were superior, when in fact the test set was measuring memorization rather than generalization.
+
+% Discussion
+\section*{Discussion}
+
+\subsection*{Baseline Outperforms RAG: A Domain Saturation Hypothesis}
+The most surprising finding is that the no-retrieval baseline achieved the highest performance. We propose a \textit{domain saturation hypothesis}: RAG benefit may be inversely related to domain representation in LLM training data. For well-documented topics like smoking cessation:
+\begin{enumerate}
+    \item Baseline LLM knowledge is already comprehensive from pre-training
+    \item Retrieved context introduces noise rather than signal
+    \item Retrieval increases response length, potentially reducing precision
+    \item Context window constraints may force omission of relevant parametric knowledge
+\end{enumerate}
+
+This hypothesis is supported by the fact that smoking cessation is extensively documented in public health literature, likely represented in LLM training corpora. Future work should test this hypothesis across domains with varying LLM knowledge saturation (e.g., rare diseases, emerging treatments, rapidly evolving fields).
+
+\subsection*{AI-Generated Equals Human-Curated Knowledge}
+The comparable performance of AI-generated and human-curated knowledge bases (102.1\% relative performance, p=0.184) has practical implications. AI-generated knowledge bases can be produced at a fraction of the time and cost, while maintaining quality comparable to expert curation. This finding aligns with recent work on synthetic data generation for LLM training\cite{xu2023wizardlm}.
+
+However, we emphasize two caveats: (1) This finding is specific to smoking cessation and may not generalize to domains requiring specialized expertise. (2) AI-generated content should still undergo expert validation before clinical deployment.
+
+\subsection*{Methodological Contribution: The Importance of Test Set Validation}
+Our discovery of severe data leakage (47\% severe contamination) demonstrates the critical importance of test set independence verification. The contaminated test set produced completely reversed conclusions, highlighting systemic risk in NLP evaluation. We recommend:
+\begin{itemize}
+    \item \textbf{Mandatory fuzzy string matching} between test and training sets
+    \item \textbf{Similarity threshold} of $<$50\% for question-answering tasks
+    \item \textbf{Manual inspection} of high-similarity cases
+    \item \textbf{Reporting of similarity distributions} in publications
+\end{itemize}
+
+This issue extends beyond our study. Recent work has identified similar problems in popular benchmarks\cite{lewis2021questionanswering, dodge2021documenting}.
+
+\subsection*{Implications for RAG System Design}
+Our findings suggest that RAG is not universally beneficial. System designers should consider:
+\begin{enumerate}
+    \item \textbf{Domain assessment:} Is the topic well-represented in LLM training data?
+    \item \textbf{Retrieval overhead:} Does the cost (latency, complexity) justify marginal gains?
+    \item \textbf{Baseline testing:} Always compare against no-retrieval baseline
+    \item \textbf{Knowledge base investment:} For well-known domains, invest in fine-tuning rather than RAG infrastructure
+\end{enumerate}
+
+\subsection*{Limitations}
+This study has several limitations:
+\begin{enumerate}
+    \item \textbf{Single domain:} Results may not generalize beyond smoking cessation
+    \item \textbf{Single LLM:} GPT-4o-mini may have different knowledge coverage than other models
+    \item \textbf{Sample size:} 15 test questions provide limited statistical power
+    \item \textbf{Lexical metrics:} ROUGE/BLEU measure overlap, not semantic accuracy or factual correctness
+    \item \textbf{No human evaluation:} Expert or user preference ratings would complement automated metrics
+\end{enumerate}
+
+Future work should address these limitations through multi-domain evaluation, human preference studies, and larger test sets.
+
+% Conclusions
+\section*{Conclusions}
+This study shifts the RAG research question from ``Does RAG help?'' to ``When does RAG help?''—a more nuanced and practically valuable inquiry. We demonstrate that for well-documented domains, LLM parametric knowledge may suffice, and retrieval overhead may not be justified. When RAG is employed, AI-generated knowledge bases can match human-curated ones at reduced cost.
+
+Critically, we provide a methodological warning: data leakage can completely reverse research conclusions. Test set independence verification must become standard practice in NLP evaluation. Our findings have implications for both researchers designing RAG evaluations and practitioners deploying RAG systems in production.
+
+% Supporting Information
+\section*{Supporting Information}
+
+\paragraph*{S1 Table. Complete metrics across all approaches.}
+\textbf{(XLSX)} Full results including ROUGE-1, ROUGE-2, ROUGE-L, BLEU, and METEOR scores for all 5 runs across all 4 approaches.
+
+\paragraph*{S2 File. Independent test set.}
+\textbf{(JSON)} The 15-question independent test set with reference answers, validated for $<$50\% similarity to training data.
+
+\paragraph*{S3 File. Raw evaluation results.}
+\textbf{(JSON)} Complete evaluation results including per-question scores, statistical comparisons, and confidence intervals.
+
+\paragraph*{S4 Code. Evaluation scripts.}
+\textbf{(GitHub)} Reproduction code including evaluation pipeline, statistical analysis, and similarity checking utilities. Available at: https://github.com/[username]/rag-smoking-cessation-eval
+
+% Acknowledgments
+\section*{Acknowledgments}
+We thank the domain experts who validated test questions and reference answers. We acknowledge the professor for guidance throughout this research.
+
+% References
+\begin{thebibliography}{9}
+
+\bibitem{lewis2020retrieval}
+Lewis P, Perez E, Piktus A, Petroni F, Karpukhin V, Goyal N, et al.
+\newblock Retrieval-augmented generation for knowledge-intensive NLP tasks.
+\newblock Advances in Neural Information Processing Systems. 2020;33:9459-9474.
+
+\bibitem{fiore2008treating}
+Fiore MC, Jaen CR, Baker TB, Bailey WC, Benowitz NL, Curry SJ, et al.
+\newblock Treating tobacco use and dependence: 2008 update.
+\newblock Clinical practice guideline. Rockville, MD: US Department of Health and Human Services. 2008.
+
+\bibitem{xu2023wizardlm}
+Xu C, Sun Q, Zheng K, Geng X, Zhao P, Feng J, et al.
+\newblock WizardLM: Empowering large language models to follow complex instructions.
+\newblock arXiv preprint arXiv:2304.12244. 2023.
+
+\bibitem{lewis2021questionanswering}
+Lewis P, Stenetorp P, Riedel S.
+\newblock Question and answer test-train overlap in open-domain question answering datasets.
+\newblock In: Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics. 2021. p. 1000-1008.
+
+\bibitem{dodge2021documenting}
+Dodge J, Sap M, Marasović A, Agnew W, Ilharco G, Groeneveld D, et al.
+\newblock Documenting large webtext corpora: A case study on the colossal clean crawled corpus.
+\newblock In: Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021. p. 1286-1305.
+
+\end{thebibliography}
+
+\end{document}

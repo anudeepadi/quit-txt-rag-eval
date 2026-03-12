@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-25T23:41:23.311062",
+    "model": "gpt-4o-mini",
+    "num_questions": 5,
+    "dataset": "human_rag",
+    "skip_cold": true,
+    "source_urls": [
+      "https://smokefree.gov/challenges-when-quitting/withdrawal/managing-nicotine-withdrawal",
+      "https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/7-common-withdrawal-symptoms/index.html",
+      "https://www.mayoclinic.org/diseases-conditions/nicotine-dependence/diagnosis-treatment/drc-20351590",
+      "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking/nicotine-replacement-therapy.html",
+      "https://www.lung.org/quit-smoking/i-want-to-quit/what-to-expect"
+    ],
+    "cold_scrape_total_s": 5.2414,
+    "successful_url_fetches": 5
+  },
+  "url_timings": [
+    {
+      "url": "https://smokefree.gov/challenges-when-quitting/withdrawal/managing-nicotine-withdrawal",
+      "fetch_time_s": 0.2787,
+      "success": true
+    },
+    {
+      "url": "https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/7-common-withdrawal-symptoms/index.html",
+      "fetch_time_s": 0.1292,
+      "success": true
+    },
+    {
+      "url": "https://www.mayoclinic.org/diseases-conditions/nicotine-dependence/diagnosis-treatment/drc-20351590",
+      "fetch_time_s": 0.3351,
+      "success": true
+    },
+    {
+      "url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking/nicotine-replacement-therapy.html",
+      "fetch_time_s": 0.1531,
+      "success": true
+    },
+    {
+      "url": "https://www.lung.org/quit-smoking/i-want-to-quit/what-to-expect",
+      "fetch_time_s": 0.3259,
+      "success": true
+    }
+  ],
+  "warm_web_rag": {
+    "per_question": [
+      {
+        "q_idx": 0,
+        "assembly_time_s": 0.0,
+        "generation_time_s": 5.355,
+        "total_time_s": 5.355
+      },
+      {
+        "q_idx": 1,
+        "assembly_time_s": 0.0,
+        "generation_time_s": 5.459,
+        "total_time_s": 5.459
+      },
+      {
+        "q_idx": 2,
+        "assembly_time_s": 0.0,
+        "generation_time_s": 6.5452,
+        "total_time_s": 6.5452
+      },
+      {
+        "q_idx": 3,
+        "assembly_time_s": 0.0,
+        "generation_time_s": 2.2716,
+        "total_time_s": 2.2716
+      },
+      {
+        "q_idx": 4,
+        "assembly_time_s": 0.0,
+        "generation_time_s": 3.4335,
+        "total_time_s": 3.4335
+      }
+    ],
+    "stats": {
+      "mean": 4.6129,
+      "median": 5.355,
+      "sd": 1.7229,
+      "min": 2.2716,
+      "max": 6.5452,
+      "p95": 6.5452,
+      "n": 5
+    }
+  },
+  "cold_web_rag": {
+    "per_question": [],
+    "stats": {
+      "mean": NaN,
+      "median": NaN,
+      "sd": NaN,
+      "min": NaN,
+      "max": NaN,
+      "p95": NaN,
+      "n": 0
+    }
+  },
+  "dataset_rag": {
+    "per_question": [
+      {
+        "q_idx": 0,
+        "retrieval_time_s": 0.157,
+        "generation_time_s": 5.7397,
+        "total_time_s": 5.8967
+      },
+      {
+        "q_idx": 1,
+        "retrieval_time_s": 0.3141,
+        "generation_time_s": 4.488,
+        "total_time_s": 4.8021
+      },
+      {
+        "q_idx": 2,
+        "retrieval_time_s": 0.1866,
+        "generation_time_s": 4.6249,
+        "total_time_s": 4.8115
+      },
+      {
+        "q_idx": 3,
+        "retrieval_time_s": 0.1433,
+        "generation_time_s": 2.1553,
+        "total_time_s": 2.2987
+      },
+      {
+        "q_idx": 4,
+        "retrieval_time_s": 0.1248,
+        "generation_time_s": 4.9862,
+        "total_time_s": 5.111
+      }
+    ],
+    "stats": {
+      "mean": 4.584,
+      "median": 4.8115,
+      "sd": 1.353,
+      "min": 2.2987,
+      "max": 5.8967,
+      "p95": 5.8967,
+      "n": 5
+    }
+  },
+  "speedup_dataset_vs_warm": 1.01,
+  "speedup_dataset_vs_cold": null
+}

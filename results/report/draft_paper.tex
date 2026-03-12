@@ -1,0 +1,361 @@
+\documentclass[11pt,a4paper]{article}
+
+%% ─── Packages ────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{setspace}
+
+\geometry{margin=1in}
+\onehalfspacing
+
+%% ─── Metadata ─────────────────────────────────────────────────────────────────
+\title{\textbf{Protocol-Guided AI Smoking Cessation Counselor:\\
+Comparing AI-Generated and Human-Curated Retrieval-Augmented Generation}}
+
+\author{
+  Adi [Last Name]\textsuperscript{1} \and
+  Ibrahim [Last Name]\textsuperscript{1} \\[0.5em]
+  \textsuperscript{1}[Institution / Department]
+}
+
+\date{\today}
+
+%% ═══════════════════════════════════════════════════════════════════════════════
+\begin{document}
+\maketitle
+
+%% ─── Abstract ─────────────────────────────────────────────────────────────────
+\begin{abstract}
+Retrieval-Augmented Generation (RAG) has emerged as a promising approach
+for grounding large language model (LLM) outputs in domain-specific evidence,
+reducing hallucination in high-stakes clinical applications.
+This paper evaluates two RAG configurations for a protocol-guided AI smoking
+cessation counselor: (1) an \emph{AI-generated} question-answer dataset
+($n=5{,}936$ pairs) and (2) a \emph{human-curated} dataset ($n=4{,}847$ pairs).
+We assess faithfulness, answer relevancy, context precision, and context recall
+using the RAGAS 0.4.x evaluation framework on a 100-question clinician-reviewed
+test set.
+Human-curated RAG achieves a mean faithfulness of $0.657 \pm 0.334$,
+outperforming AI-generated RAG ($0.531 \pm 0.320$) by 24\% relative improvement,
+and reducing the high-risk hallucination rate from 43\% to 34\%.
+Compared to a web-scraping RAG baseline (WebRAG), dataset RAG is
+$2.41\times$ faster at cold-start and $1.44\times$ faster when web content is
+pre-cached, demonstrating a clear latency advantage for real-time deployment.
+These results underscore the clinical value of professional dataset curation
+and the practical benefits of vector-indexed retrieval over live web scraping
+in time-sensitive counseling contexts.
+\end{abstract}
+
+\textbf{Keywords:} Retrieval-Augmented Generation, smoking cessation,
+RAGAS, faithfulness, hallucination, LLM evaluation, clinical AI
+
+%% ─── 1. Introduction ──────────────────────────────────────────────────────────
+\section{Introduction}
+
+Smoking remains one of the leading causes of preventable death worldwide,
+and evidence-based cessation counseling is critical for reducing tobacco-related
+morbidity~\citep{who2023tobacco}.
+AI-powered counseling assistants have shown promise in extending access to
+behavioral support, yet their clinical deployment raises important questions
+about factual accuracy and reliability of generated responses~\citep{thirunavukarasu2023}.
+
+Retrieval-Augmented Generation (RAG) addresses hallucination by grounding
+LLM outputs in a domain-specific knowledge base~\citep{lewis2020rag}.
+However, the quality of that knowledge base—whether compiled by AI or by
+human experts—fundamentally determines the system's reliability.
+Prior work by Ibrahim et al.\ established a WebRAG baseline achieving a mean
+faithfulness of $0.86$ by retrieving live content from authoritative web sources.
+Our study extends this by asking: \emph{does the origin and curation quality of
+the underlying dataset matter, and at what latency cost?}
+
+We compare three configurations evaluated against the Gemini Protocol—a
+structured smoking cessation framework developed by Dr.\ Louis Willis:
+\begin{enumerate}
+  \item \textbf{Baseline LLM}: GPT-4o-mini without any retrieved context.
+  \item \textbf{AI-Generated RAG}: Vector retrieval from a 5,936-pair
+        AI-generated Q\&A dataset indexed in ChromaDB.
+  \item \textbf{Human-Curated RAG}: Vector retrieval from a 4,847-pair
+        professionally curated Q\&A dataset.
+\end{enumerate}
+
+%% ─── 2. Related Work ──────────────────────────────────────────────────────────
+\section{Related Work}
+
+\paragraph{Hallucination in clinical LLMs.}
+LLMs are prone to generating plausible-sounding but factually incorrect
+statements, a phenomenon termed hallucination~\citep{ji2023survey}.
+In clinical settings, hallucination can mislead patients and undermine trust,
+making faithfulness evaluation essential~\citep{singhal2023}.
+
+\paragraph{Retrieval-Augmented Generation.}
+RAG~\citep{lewis2020rag} conditions LLM generation on retrieved documents,
+substantially reducing hallucination rates compared to generation-only baselines.
+Dense retrieval using vector databases such as ChromaDB enables efficient
+semantic matching at inference time.
+
+\paragraph{RAGAS evaluation framework.}
+RAGAS~\citep{es2023ragas} provides reference-free and reference-based metrics
+for evaluating RAG pipelines: faithfulness (are claims supported by context?),
+answer relevancy (does the answer address the question?), context precision
+(is retrieved context relevant?), and context recall (are reference answers
+covered by retrieved context?).
+
+\paragraph{Smoking cessation AI.}
+Prior work has demonstrated that LLM-based counseling assistants can
+deliver evidence-consistent advice~\citep{eapen2023},
+with RAG improving adherence to clinical guidelines.
+
+%% ─── 3. Methods ───────────────────────────────────────────────────────────────
+\section{Methods}
+
+\subsection{Test Set}
+
+We used the LFV-reviewed subset of Dr.\ Willis's 150-question smoking cessation
+test set, excluding 23 questions flagged by a clinical reviewer, yielding
+$n = 127$ clean questions. We report results on the first $n = 100$ questions.
+
+\subsection{RAG Datasets}
+
+\textbf{AI-Generated dataset}: 5,936 question-answer pairs generated by
+GPT-4o-mini from the Gemini Protocol documentation.
+
+\textbf{Human-Curated dataset}: 4,847 question-answer pairs professionally
+curated and verified against the Gemini Protocol.
+
+Both datasets were indexed in an ephemeral ChromaDB collection using
+cosine similarity. Retrieval used top-$k = 3$ nearest neighbours.
+
+\subsection{WebRAG Baseline}
+
+Following Ibrahim et al., we also measure a web-scraping approach that
+fetches content from five authoritative sources at query time:
+\texttt{smokefree.gov}, CDC, Mayo Clinic, American Cancer Society,
+and the American Lung Association.
+
+\subsection{Answer Generation}
+
+All configurations used GPT-4o-mini (temperature $= 0.3$, max\_tokens $= 300$)
+with a smoking cessation counselor system prompt.
+RAG configurations prepended retrieved context to the system prompt.
+
+\subsection{Evaluation Metrics}
+
+We report four RAGAS 0.4.x metrics:
+\begin{itemize}
+  \item \textbf{Faithfulness} ($F$): fraction of claims in the response
+        that are entailed by the retrieved context $\in [0, 1]$.
+        Hallucination rate $= 1 - F$.
+  \item \textbf{Answer Relevancy}: semantic similarity between the response
+        and a set of hypothetical questions generated from it.
+  \item \textbf{Context Precision}: proportion of retrieved context chunks
+        that are relevant to the ground-truth answer.
+  \item \textbf{Context Recall}: coverage of the ground-truth answer by
+        retrieved context.
+\end{itemize}
+
+\subsection{Latency Measurement}
+
+Per-question wall-clock latency was measured using \texttt{time.perf\_counter()}.
+Three conditions were timed: Dataset RAG (retrieval + generation),
+WebRAG warm (cached web content + generation), and WebRAG cold
+(fresh URL fetch per question + generation).
+
+%% ─── 4. Results ───────────────────────────────────────────────────────────────
+\section{Results}
+
+\subsection{Faithfulness and Hallucination}
+
+Table~\ref{tab:faithfulness} presents faithfulness statistics for all
+configurations alongside Ibrahim et al.'s reference results.
+
+\begin{table}[ht]
+\centering
+\caption{Faithfulness Comparison. Mean faithfulness $\in [0,1]$,
+higher is better; hallucination rate $= 1 - \text{Mean}$;
+\% High-Risk = proportion with faithfulness $< 0.5$.
+}
+\label{tab:faithfulness}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccr}
+\toprule
+\textbf{Configuration} & \textbf{Mean} & \textbf{SD} & \textbf{Median}
+  & \textbf{95\% CI} & \textbf{Halluc.\ Rate} & \textbf{\% High-Risk} & \textbf{n} \\
+\midrule
+Ibrahim et al.: Base LLM & 0.58 & 0.22 & 0.61 & {[}0.42--0.74{]} & 0.40 & 20\% & 10 \\
+Ibrahim et al.: WebRAG   & \textbf{0.86} & 0.11 & 0.88 & {[}0.84--0.88{]} & 0.14 & 4\% & 100 \\
+\midrule
+Ours: AI-Generated RAG   & 0.53 & 0.32 & 0.58 & {[}0.47--0.59{]} & 0.47 & 43\% & 100 \\
+Ours: Human-Curated RAG  & \textbf{0.66} & 0.33 & 0.70 & {[}0.59--0.72{]} & 0.34 & 34\% & 100 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
+
+Human-curated RAG ($\bar{F} = 0.657$) outperforms AI-generated RAG
+($\bar{F} = 0.531$), a difference of $\Delta = 0.126$ ($24\%$ relative improvement).
+Both systems exhibit substantially higher variance than Ibrahim et al.'s
+WebRAG ($\sigma = 0.33$ vs.\ $0.11$), reflecting the heterogeneous nature of
+the static dataset compared to targeted live retrieval.
+
+\subsection{Full RAGAS Metrics}
+
+Table~\ref{tab:ragas} presents all four RAGAS metrics.
+
+\begin{table}[ht]
+\centering
+\caption{Full RAGAS Metrics (mean $\pm$ SD). N/A: metric not applicable
+or evaluation not completed.}
+\label{tab:ragas}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Configuration} & \textbf{Faithfulness} & \textbf{Answer Relevancy}
+  & \textbf{Context Precision} & \textbf{Context Recall} \\
+\midrule
+Baseline LLM        & N/A            & $0.871 \pm 0.187$ & N/A              & N/A \\
+AI-Generated RAG    & $0.531 \pm 0.320$ & $0.781 \pm 0.338$ & $0.463 \pm 0.476$ & $0.262 \pm 0.330$ \\
+Human-Curated RAG   & $0.657 \pm 0.334$ & $0.822 \pm 0.289$ & N/A              & $0.395 \pm 0.368$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The baseline LLM achieves the highest answer relevancy ($0.871$),
+likely because its responses are unconstrained by retrieved context and
+optimised for question-answering fluency.
+Human-curated RAG shows higher answer relevancy ($0.822$) than
+AI-generated RAG ($0.781$), suggesting that higher-quality context
+also improves response quality.
+
+\subsection{Latency Comparison}
+
+Table~\ref{tab:latency} reports per-question wall-clock latency across conditions.
+
+\begin{table}[ht]
+\centering
+\caption{Latency Comparison (seconds per question, $n=100$).
+Dataset RAG uses human-curated data.}
+\label{tab:latency}
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{Method} & \textbf{Mean (s)} & \textbf{Median (s)} & \textbf{SD}
+  & \textbf{p95 (s)} & \textbf{n} \\
+\midrule
+WebRAG (cold, per-Q scrape) & 7.697 & 7.595 & 2.245 & 12.362 & 100 \\
+WebRAG (warm, cached)       & 4.620 & 4.275 & 2.571 &  9.572 & 100 \\
+Dataset RAG (human-curated) & \textbf{3.198} & \textbf{2.866} & 1.605 & 6.316 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Dataset RAG is $2.41\times$ faster than cold WebRAG and $1.44\times$ faster
+than warm (pre-cached) WebRAG. This advantage stems from ChromaDB's
+sub-second vector retrieval ($\bar{t}_\text{retrieval} \approx 0.15$\,s),
+compared to URL fetching which averages $\approx 3$--5\,s even with cached content.
+
+%% ─── 5. Discussion ────────────────────────────────────────────────────────────
+\section{Discussion}
+
+\paragraph{Faithfulness gap relative to WebRAG.}
+Both of our RAG systems achieve lower faithfulness than Ibrahim et al.'s
+WebRAG ($0.86$).
+This gap reflects a fundamental architectural difference: WebRAG retrieves
+targeted, query-specific content from authoritative live sources, while our
+systems retrieve from a fixed indexed corpus.
+We expect that supplementing our dataset with periodic content updates
+from authoritative sources, or adopting a hybrid retrieval strategy
+(dataset + WebRAG fallback), would narrow this gap substantially.
+
+\paragraph{Value of human curation.}
+The 24\% relative improvement in faithfulness from AI-generated to human-curated
+RAG, and the 9-percentage-point reduction in high-risk hallucination rate
+(43\%~$\to$~34\%), quantify the clinical value of professional dataset curation.
+Given the sensitivity of smoking cessation counseling—where inaccurate advice
+may undermine quit attempts or patient trust—this quality improvement
+justifies the curation cost.
+
+\paragraph{Latency implications.}
+Dataset RAG's latency advantage ($2.41\times$ vs.\ cold WebRAG) is
+practically significant for real-time chatbot applications where
+response times above 5--10\,s degrade user experience.
+Even in a warm-cache scenario, Dataset RAG maintains a $1.44\times$ advantage,
+making it preferable for high-throughput deployment without requiring
+per-session web scraping infrastructure.
+
+\paragraph{Limitations.}
+(1) Context precision for human-curated RAG was not obtained due to
+OpenAI API rate limits during evaluation; a rerun is scheduled.
+(2) The test set ($n=100$) is drawn from a single clinical protocol,
+limiting generalisability to other smoking cessation frameworks.
+(3) GPT-4o-mini was used for both answer generation and RAGAS scoring,
+which may introduce model-specific biases.
+
+%% ─── 6. Conclusion ────────────────────────────────────────────────────────────
+\section{Conclusion}
+
+We present a comprehensive evaluation of AI-generated versus human-curated RAG
+for a protocol-guided smoking cessation counseling system.
+Human curation provides a meaningful improvement in faithfulness (0.53~$\to$~0.66)
+and reduces high-risk hallucination rates (43\%~$\to$~34\%) compared to
+AI-generated datasets.
+Both systems are substantially faster than live WebRAG approaches,
+with Dataset RAG achieving $2.41\times$ the speed of cold WebRAG and
+$1.44\times$ the speed of warm WebRAG.
+Future work will explore hybrid retrieval (dataset + live web sources),
+expand the evaluation corpus beyond a single protocol, and investigate
+fine-tuned embeddings for domain-specific semantic matching.
+
+%% ─── Acknowledgements ─────────────────────────────────────────────────────────
+\section*{Acknowledgements}
+The authors thank Dr.\ Louis Willis for providing the clinician-reviewed
+test set and the Gemini Protocol documentation.
+
+%% ─── References ───────────────────────────────────────────────────────────────
+\bibliographystyle{plainnat}
+
+%% Replace with your .bib file or expand inline references:
+\begin{thebibliography}{9}
+
+\bibitem{who2023tobacco}
+World Health Organization (2023).
+\textit{Tobacco Fact Sheet}.
+\url{https://www.who.int/news-room/fact-sheets/detail/tobacco}
+
+\bibitem{thirunavukarasu2023}
+Thirunavukarasu, A.J., et al.\ (2023).
+Large language models in medicine.
+\textit{Nature Medicine}, 29, 1930--1940.
+
+\bibitem{lewis2020rag}
+Lewis, P., et al.\ (2020).
+Retrieval-augmented generation for knowledge-intensive NLP tasks.
+\textit{Advances in Neural Information Processing Systems}, 33, 9459--9474.
+
+\bibitem{es2023ragas}
+Es, S., et al.\ (2023).
+RAGAS: Automated evaluation of retrieval augmented generation.
+\textit{arXiv preprint arXiv:2309.15217}.
+
+\bibitem{ji2023survey}
+Ji, Z., et al.\ (2023).
+Survey of hallucination in natural language generation.
+\textit{ACM Computing Surveys}, 55(12), 1--38.
+
+\bibitem{singhal2023}
+Singhal, K., et al.\ (2023).
+Large language models encode clinical knowledge.
+\textit{Nature}, 620, 172--180.
+
+\bibitem{eapen2023}
+Eapen, B.R., et al.\ (2023).
+Proof of concept for using multimedia AI for patient education: ChatGPT and
+YouTube.
+\textit{Cureus}, 15(2), e35511.
+
+\end{thebibliography}
+
+\end{document}

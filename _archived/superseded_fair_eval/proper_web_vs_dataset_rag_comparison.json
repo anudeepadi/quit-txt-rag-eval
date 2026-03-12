@@ -1,0 +1,1261 @@
+{
+  "date": "2025-11-23T19:29:00.240165",
+  "purpose": "Demonstrate value of Dataset RAG preprocessing vs raw Web RAG",
+  "description": "Web RAG fetches actual content from 5 authoritative sources",
+  "web_sources": [
+    "https://smokefree.gov/challenges-when-quitting/withdrawal/managing-nicotine-withdrawal",
+    "https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/7-common-withdrawal-symptoms/index.html",
+    "https://www.mayoclinic.org/diseases-conditions/nicotine-dependence/diagnosis-treatment/drc-20351590",
+    "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking/nicotine-replacement-therapy.html",
+    "https://www.lung.org/quit-smoking/i-want-to-quit/what-to-expect"
+  ],
+  "web_rag": {
+    "approach": "Web RAG (Real Content)",
+    "model": "gpt-4o-mini",
+    "results": [
+      {
+        "query": "How does smoking affect skin oxygenation and circulation?",
+        "response": "Smoking negatively impacts skin oxygenation and circulation by constricting blood vessels, which reduces blood flow and limits the delivery of oxygen and essential nutrients to the skin. This impaired circulation can lead to premature aging, skin discoloration, and a dull complexion, as well as impairing the skin's ability to heal and regenerate effectively. Over time, the accumulated damage can result in visible signs of aging and various skin conditions.",
+        "reference": "With every puff your blood vessels immediately become thinner and spasm. This reduces circulation and the oxygen level in your blood \u2013 in a sense you give your skin the inability to breathe.",
+        "response_time": 3.7527639865875244
+      },
+      {
+        "query": "I've recently quit smoking and have been experiencing persistent coughing and cold-like symptoms. Is this normal?",
+        "response": "Yes, experiencing persistent coughing and cold-like symptoms after quitting smoking is normal. When you stop smoking, your body begins to heal and clear out mucus and toxins from your lungs, which can lead to temporary respiratory symptoms as your airways adjust. However, if these symptoms persist or worsen, it's advisable to consult a healthcare professional for further evaluation.",
+        "reference": "Yes, it's common to experience coughing and cold-like symptoms after quitting smoking. This occurs because your lungs are clearing out mucus and toxins accumulated from smoking. These symptoms are typically temporary and indicate that your respiratory system is healing.",
+        "response_time": 2.1080880165100098
+      },
+      {
+        "query": "What strategies can help manage hot flushes while quitting smoking?",
+        "response": "While the reference material primarily discusses nicotine withdrawal symptoms such as cravings, irritability, and restlessness, managing hot flushes specifically is not directly addressed. However, general strategies for managing withdrawal symptoms can be helpful, such as staying active, practicing relaxation techniques, and maintaining a healthy diet, which can also aid in regulating body temperature. Additionally, consulting a healthcare professional about potential medications or therapies may provide targeted relief for hot flushes during the quitting process.",
+        "reference": "Managing hot flushes during smoking cessation includes keeping the environment cool, dressing in breathable layers, staying hydrated, practicing deep breathing, and avoiding triggers like caffeine and alcohol.",
+        "response_time": 2.1703312397003174
+      },
+      {
+        "query": "How does psychological stability relate to smoking prevention in youth?",
+        "response": "Psychological stability in youth plays a crucial role in smoking prevention, as adolescents with better emotional regulation and coping skills are less likely to engage in smoking as a means to manage stress or peer pressure. Research indicates that mental health challenges, such as anxiety and depression, can increase the likelihood of tobacco use; thus, promoting psychological well-being can help reduce the risk of smoking initiation among young people. Programs that focus on developing resilience and healthy coping mechanisms are essential for effective smoking prevention strategies.",
+        "reference": "Developing psychological stability\u2014skills to manage stress and maintain emotional balance\u2014can reduce smoking initiation. Adolescents with higher psychological resilience are less likely to use smoking as a coping strategy, highlighting the importance of fostering these traits early on.",
+        "response_time": 2.653798818588257
+      },
+      {
+        "query": "Do all parents implement measures to reduce infants' exposure to tobacco smoke?",
+        "response": "Not all parents implement measures to reduce infants' exposure to tobacco smoke. While many parents are aware of the harmful effects of secondhand smoke on children, including increased risks of respiratory issues and sudden infant death syndrome (SIDS), some may still smoke or allow smoking in their presence due to addiction or lack of resources and support for quitting. Comprehensive smoking cessation programs and education can help increase awareness and encourage parents to take steps to protect their infants from tobacco smoke exposure.",
+        "reference": "No, 10% of parents were either unaware of measures or reported using none to protect their infants from tobacco smoke exposure.",
+        "response_time": 2.0681028366088867
+      },
+      {
+        "query": "How does individual counseling compare to self-help materials in promoting smoking cessation?",
+        "response": "Individual counseling is generally more effective than self-help materials in promoting smoking cessation, as it provides personalized support and strategies tailored to an individual's specific needs and triggers. Research shows that combining counseling with pharmacotherapy significantly increases the chances of successfully quitting smoking, as it helps individuals develop coping skills and maintain motivation throughout their quit journey (Mayo Clinic). Self-help materials can be beneficial but often lack the interactive and adaptive elements that professional counseling offers.",
+        "reference": "Individual counseling is more effective than self-help materials in promoting smoking cessation. The review indicated that face-to-face counseling sessions led by trained professionals result in higher quit rates than interventions relying solely on self-help resources.",
+        "response_time": 2.4146199226379395
+      },
+      {
+        "query": "How does secondhand smoke impact non-smokers' heart health?",
+        "response": "Secondhand smoke can significantly harm non-smokers' heart health by increasing their risk of developing heart disease and stroke. Exposure to the toxic chemicals in secondhand smoke can lead to damage in the cardiovascular system, causing inflammation and impaired blood vessel function. Studies indicate that even brief exposure to secondhand smoke can result in immediate harm to the heart and blood vessels.",
+        "reference": "Secondhand smoke exposure increases the risk of heart disease and stroke in non-smokers. Even brief exposure can damage blood vessels, make blood more prone to clotting, and elevate the likelihood of a heart attack or stroke.",
+        "response_time": 1.9358808994293213
+      },
+      {
+        "query": "Are there benefits to combining nicotine replacement products?",
+        "response": "Yes, combining nicotine replacement products, such as using a nicotine patch along with nicotine gum or lozenges, can enhance the likelihood of successfully quitting smoking. This approach allows for both a steady release of nicotine through the patch and the ability to manage cravings more effectively with the fast-acting gum or lozenge, addressing both withdrawal symptoms and cravings (Mayo Clinic). Using multiple methods can lead to better results in managing nicotine dependence (American Cancer Society).",
+        "reference": "Yes, combining products like the nicotine patch with gum or lozenges can increase success rates, as it provides both a steady nicotine level and quick relief from cravings.",
+        "response_time": 2.2320940494537354
+      },
+      {
+        "query": "I've been thinking about quitting smoking, but I'm not sure where to start.",
+        "response": "To start your journey to quitting smoking, consider creating a personalized quit plan that includes setting a quit date and identifying your triggers. Utilize quit-smoking medications, such as nicotine replacement therapy, which can help reduce withdrawal symptoms and cravings. Counseling, whether individual or group, can also provide the support and strategies needed to successfully quit.",
+        "reference": "It's great that you're considering quitting! Having a plan and the right support can make the process easier. Many people find it challenging to quit with willpower alone, so preparing ahead and using stop-smoking products or seeking expert help can significantly boost your chances of quitting for good.",
+        "response_time": 1.5477430820465088
+      },
+      {
+        "query": "How does nicotine in cigarettes impact skin cells?",
+        "response": "Nicotine in cigarettes can impair blood flow and reduce oxygen delivery to skin cells, leading to a decrease in collagen and elastin production, which are essential for skin elasticity and firmness. This can result in premature aging, increased wrinkles, and a dull complexion. Additionally, nicotine can contribute to the narrowing of blood vessels, further compromising skin health and healing.",
+        "reference": "Nicotine promotes apoptosis \u2014 cell death \u2014 in skin cells, damages blood vessels in the skin, and reduces blood flow.",
+        "response_time": 1.9505910873413086
+      },
+      {
+        "query": "Does smoking affect ovarian cysts?",
+        "response": "While the reference material provided does not directly address the relationship between smoking and ovarian cysts, research indicates that smoking can negatively impact overall reproductive health and may contribute to various gynecological conditions. Smokers tend to have higher incidences of complications related to ovarian function. Therefore, quitting smoking can be beneficial for overall reproductive health, potentially reducing the risk of ovarian cysts and other related issues.",
+        "reference": "A study published in the International Journal of Fertility investigated the relationship between smoking and ovarian cysts. The researchers found that women who smoked had a higher prevalence of ovarian cysts compared to non-smokers. The study suggested that smoking may influence hormonal balance, potentially leading to the development of ovarian cysts.",
+        "response_time": 1.3630008697509766
+      },
+      {
+        "query": "How does smoking affect nerve function in the hands?",
+        "response": "Smoking can negatively impact nerve function in the hands by impairing blood circulation and reducing oxygen supply to nerve tissues. This can lead to peripheral neuropathy, characterized by symptoms such as numbness, tingling, and weakness in the hands. Additionally, the toxins in cigarettes can damage nerve fibers and disrupt normal nerve signaling.",
+        "reference": "Smoking can exacerbate nerve problems in the hands, leading to symptoms such as tingling, numbness, and pain. Smokers, especially those with conditions like diabetes, often report more severe symptoms prior to surgeries like carpal tunnel release and may experience continued nerve pain even after the surgery.",
+        "response_time": 1.4121770858764648
+      },
+      {
+        "query": "Are there medications that can aid in quitting smoking?",
+        "response": "Yes, there are several medications that can aid in quitting smoking, including nicotine replacement therapy (NRT) products such as patches, gums, and lozenges, which help reduce cravings and withdrawal symptoms. Additionally, prescription medications like bupropion (Wellbutrin SR) and varenicline (Chantix) can also support smoking cessation by affecting brain chemistry related to nicotine addiction. Combining these medications with counseling increases the likelihood of successfully quitting.",
+        "reference": "Yes, there are both nicotine replacement therapies (like patches and gum) and non-nicotine prescription medications (such as bupropion and varenicline) that can help reduce cravings and withdrawal symptoms. Consult with your healthcare provider to determine the best option for you.",
+        "response_time": 1.822249174118042
+      },
+      {
+        "query": "Can quitting smoking reduce the risk of lymphoma?",
+        "response": "Yes, quitting smoking can reduce the risk of lymphoma. Research indicates that smoking is a significant risk factor for various cancers, including lymphoma, and cessation can lead to improvements in overall health and a decreased risk of developing cancer over time. By quitting, individuals can enhance their immune system and lower their exposure to harmful carcinogens present in tobacco smoke.",
+        "reference": "Yes, quitting smoking can reduce the risk of developing lymphoma. While the risk may not return to that of a never-smoker, cessation leads to improvements in immune system function and decreases chronic inflammation, thereby lowering the likelihood of lymphoma development over time.",
+        "response_time": 1.7367770671844482
+      },
+      {
+        "query": "What are some proven ways to help me quit smoking?",
+        "response": "Proven ways to help you quit smoking include using nicotine replacement therapies (such as patches, gums, or lozenges) to ease withdrawal symptoms and cravings, as well as engaging in counseling to develop coping strategies and skills for maintaining abstinence. Additionally, staying active, finding distractions, and surrounding yourself with supportive friends can significantly improve your chances of successfully quitting smoking.",
+        "reference": "Proven treatments, such as medication and counseling, are available, but less than one third of people trying to quit use them. Using counseling and medications together more than doubles your chances of quitting successfully.",
+        "response_time": 1.3615210056304932
+      },
+      {
+        "query": "How does smoking cessation affect the risk of atrial fibrillation?",
+        "response": "Quitting smoking significantly reduces the risk of atrial fibrillation (AF) as smoking is a known risk factor for the condition. Studies show that cessation leads to improvements in cardiovascular health, including reduced inflammation and better heart function, which can lower the likelihood of developing AF. Additionally, the benefits of quitting smoking on overall heart health can contribute to a decreased risk of various cardiovascular diseases.",
+        "reference": "The study indicates that smoking cessation leads to a reduced risk of developing atrial fibrillation. Individuals who quit smoking have a lower prevalence of AF compared to those who continue smoking, suggesting that cessation has a protective effect on heart health.",
+        "response_time": 1.5421700477600098
+      },
+      {
+        "query": "Can quitting smoking improve PCOS management?",
+        "response": "Quitting smoking can significantly improve the management of Polycystic Ovary Syndrome (PCOS). Smoking is associated with worsening insulin resistance and hormonal imbalances, which are key issues in PCOS. By quitting, individuals may experience improved insulin sensitivity, better hormonal regulation, and a reduction in associated health risks, potentially leading to better overall management of PCOS symptoms.",
+        "reference": "Yes, quitting smoking can aid in managing PCOS by restoring hormonal balance, improving lipid profiles, and reducing the risk of cardiovascular complications. Lifestyle changes, including smoking cessation, are crucial for effective PCOS management.",
+        "response_time": 2.418098211288452
+      },
+      {
+        "query": "How often do smokers attempt to quit?",
+        "response": "Many smokers make multiple attempts to quit before achieving long-term cessation. It is noted that it is rare to stop smoking on the first attempt, especially without assistance; thus, most individuals will attempt to quit several times throughout their smoking journey. Support from medications and counseling significantly increases the likelihood of successfully quitting.",
+        "reference": "Smokers typically try to quit only once every 2 to 3 years, with about 40% attempting each year and 4% to 6% succeeding.",
+        "response_time": 1.4088308811187744
+      },
+      {
+        "query": "How can I maintain my social life while quitting smoking?",
+        "response": "Maintaining your social life while quitting smoking is important for your success. Surround yourself with supportive friends who don't smoke and engage in activities that don't trigger cravings, such as exercising or attending smoke-free events. Additionally, communicate your goals to friends and family, so they can help you stay accountable and encourage you during challenging moments (Smokefree.gov; CDC).",
+        "reference": "Communicate your decision to quit smoking to your friends and family, and ask for their support. Suggest alternative activities that don't involve smoking, such as going to the movies or dining out. If you have friends who smoke, kindly request that they refrain from smoking around you to help you stay on track.",
+        "response_time": 2.0394890308380127
+      },
+      {
+        "query": "How can I manage cravings to smoke?",
+        "response": "To manage cravings to smoke, consider using quit-smoking medications such as nicotine replacement therapy (e.g., patches, gum, lozenges) to reduce withdrawal symptoms. Additionally, keep yourself busy with activities, engage in physical exercise, and avoid triggers associated with smoking, such as certain places or situations that remind you of smoking. Remember that cravings will pass, and reminding yourself of your reasons for quitting can also help during these moments.",
+        "reference": "To manage cravings, remind yourself that they are a natural part of withdrawal. Take deep breaths, distract yourself with activities, and focus on your reasons for quitting to help overcome the urge.",
+        "response_time": 2.3457658290863037
+      },
+      {
+        "query": "What strategies can help improve my mood during this period?",
+        "response": "To improve your mood during nicotine withdrawal, engage in physical activity, as exercise can help reduce feelings of irritability and restlessness. Additionally, practicing deep breathing exercises and reminding yourself of the reasons you chose to quit can provide emotional support and help stabilize your mood. Connecting with supportive friends or family members can also enhance your emotional well-being during this challenging time.",
+        "reference": "Engaging in regular physical activity, practicing relaxation techniques like deep breathing or meditation, and maintaining a healthy diet can help boost your mood and alleviate stress during this time.",
+        "response_time": 1.8704190254211426
+      },
+      {
+        "query": "What should I do if my child has already started using tobacco?",
+        "response": "If your child has already started using tobacco, it's crucial to approach the situation with support and understanding. Encourage open communication about the risks of tobacco use and the challenges of addiction, as nicotine dependence can lead to withdrawal symptoms that are uncomfortable. Consider seeking professional help or counseling, as using medications and counseling together significantly increases the chances of successful quitting (Mayo Clinic).",
+        "reference": "If your child has begun using tobacco, approach the situation with understanding. Ask questions to understand their reasons, avoid threats, and show support. Sharing your own experiences and quitting together can be beneficial.",
+        "response_time": 1.4662268161773682
+      },
+      {
+        "query": "What are the specific skin conditions linked to smoking?",
+        "response": "Smoking is linked to a variety of skin conditions, including premature aging, wrinkles, and a dull complexion due to reduced blood flow and oxygen to the skin. Additionally, smokers may experience increased risk of psoriasis and delayed wound healing. These effects are primarily due to the harmful chemicals in tobacco that damage collagen and elastin, essential components for maintaining skin health.",
+        "reference": "Smoking may lead to skin diseases like psoriasis, acne, eczema, and skin cancer.",
+        "response_time": 1.6013450622558594
+      },
+      {
+        "query": "How does smoking during pregnancy affect a baby's birth weight?",
+        "response": "Smoking during pregnancy can significantly reduce a baby's birth weight, increasing the risk of low birth weight, which is defined as less than 5.5 pounds (2,500 grams). Research indicates that nicotine and other harmful substances in cigarettes can impair fetal growth and development, leading to complications such as preterm birth and increased risk of health issues for the newborn. It is crucial for pregnant individuals to quit smoking to promote healthier outcomes for both themselves and their babies.",
+        "reference": "People that smoke during pregnancy have a higher risk of having a baby with a low birth weight \u2014 less than 5 pounds, 8 ounces (2.49 kilograms).",
+        "response_time": 2.4059410095214844
+      },
+      {
+        "query": "Steps to Manage Quit Day",
+        "response": "To effectively manage your quit day, prepare by removing all tobacco products from your environment and identify your triggers to avoid them. Consider using quit-smoking medications, such as nicotine replacement therapy, to help ease withdrawal symptoms, and plan distractions or activities to keep yourself busy. Finally, remind yourself of your reasons for quitting and seek support from friends, family, or counseling services to reinforce your commitment.",
+        "reference": "Today is your quit day, be proud! Start strong by knowing what to expect and how to manage difficult moments on your first smokefree day.",
+        "response_time": 1.6894299983978271
+      },
+      {
+        "query": "How does smoking affect cognitive function in older adults?",
+        "response": "Smoking has been shown to negatively impact cognitive function in older adults by increasing the risk of cognitive decline and dementia. The harmful substances in tobacco can lead to vascular damage and inflammation, which impair blood flow to the brain and contribute to cognitive deficits. Additionally, nicotine dependence can exacerbate issues related to attention, memory, and overall mental clarity.",
+        "reference": "Smoking is associated with lower cognitive performance in older adults. A study involving individuals aged 70 found that current smokers had reduced cognitive abilities compared to non-smokers. This relationship persisted even after accounting for childhood intelligence, suggesting that smoking contributes to cognitive decline beyond early-life cognitive abilities.",
+        "response_time": 1.4489760398864746
+      },
+      {
+        "query": "Can smoking cause seizures?",
+        "response": "Yes, smoking can increase the risk of seizures. Nicotine and other substances in cigarettes can affect brain activity and may lead to neurochemical changes, potentially triggering seizures in susceptible individuals. Additionally, withdrawal from nicotine in smokers who abruptly quit can also result in seizures, particularly in those with a history of seizures or those who consume large amounts of nicotine.",
+        "reference": "Smoking may increase seizure frequency in people with epilepsy.",
+        "response_time": 1.6640071868896484
+      },
+      {
+        "query": "How does secondhand smoke affect community health?",
+        "response": "Secondhand smoke significantly impacts community health by increasing the risk of serious health issues such as respiratory infections, heart disease, and lung cancer among non-smokers, including children and pregnant women. According to the CDC, exposure to secondhand smoke can lead to approximately 41,000 deaths among non-smoking adults and 400 deaths in infants each year in the United States, highlighting its detrimental effects on public health. Reducing exposure to secondhand smoke is crucial in promoting a healthier community and preventing tobacco-related diseases.",
+        "reference": "Secondhand smoke exposure can cause coronary heart disease, stroke, lung cancer in adults, and respiratory infections, ear infections, asthma attacks, and sudden infant death syndrome in children.",
+        "response_time": 2.3794620037078857
+      },
+      {
+        "query": "When should someone seek professional help for mood changes after quitting?",
+        "response": "Someone should seek professional help for mood changes after quitting smoking if they experience persistent irritability, anxiety, or depression that interferes with daily functioning or lasts longer than a few weeks. While mood changes are common during nicotine withdrawal, ongoing or severe symptoms may indicate a need for additional support, such as counseling or medication, to help manage these feelings effectively (CDC, Mayo Clinic). It's essential to address these issues to enhance the chances of a successful quit attempt and overall well-being.",
+        "reference": "If mood changes persist beyond a few weeks or worsen, it may be a sign of depression or another mental health condition. It's important to consult a healthcare provider in such cases.",
+        "response_time": 2.5680360794067383
+      },
+      {
+        "query": "What are effective strategies for managing nicotine withdrawal symptoms?",
+        "response": "Effective strategies for managing nicotine withdrawal symptoms include using quit-smoking medications, such as nicotine replacement therapy (patches, gum, lozenges) and prescription medications like bupropion or varenicline, which can help reduce cravings and discomfort. Additionally, staying busy, engaging in physical activity, and practicing stress-relief techniques can help mitigate irritability and restlessness associated with withdrawal (Smokefree.gov; CDC). Remember, cravings are temporary and will pass, so employing coping strategies and seeking support can significantly enhance your chances of successfully quitting (Mayo Clinic).",
+        "reference": "Managing nicotine withdrawal involves a combination of behavioral strategies and, if necessary, pharmacological support. Behavioral strategies include: 1. **Distraction Techniques**: Engage in activities like walking, chewing gum, or deep breathing exercises to divert attention from cravings. 2. **Avoiding Triggers**: Steer clear of situations or substances that prompt the urge to smoke, such as alcohol or caffeine. 3. **Routine Changes**: Establish new habits to replace smoking routines, like taking a different route to work or changing your coffee break habits. 4. **Support Systems**: Utilize support groups or counseling to share experiences and gain encouragement. Pharmacological aids include: 1. **Nicotine Replacement Therapy (NRT)**: Products like patches, gum, or lozenges can help reduce withdrawal symptoms by providing a controlled dose of nicotine. 2. **Prescription Medications**: Medications such as bupropion or varenicline may be prescribed to alleviate withdrawal symptoms and reduce cravings. It's essential to consult with a healthcare provider to determine the most appropriate strategy tailored to individual needs.",
+        "response_time": 2.1302430629730225
+      },
+      {
+        "query": "How can I manage weight gain after quitting smoking?",
+        "response": "Managing weight gain after quitting smoking can be achieved through a combination of healthy eating and regular physical activity. Staying physically active helps burn calories and can reduce cravings, while focusing on a balanced diet with portion control can help mitigate weight gain often associated with nicotine withdrawal. Additionally, using quit-smoking medications may assist in managing cravings and withdrawal symptoms, making it easier to maintain a healthy lifestyle during this transition.",
+        "reference": "To manage weight gain after quitting smoking, engage in regular physical activity, eat balanced meals, stay hydrated, and practice mindful eating to distinguish between hunger and cravings.",
+        "response_time": 1.5460999011993408
+      },
+      {
+        "query": "How does thinking of myself as a non-smoker help me quit?",
+        "response": "Thinking of yourself as a non-smoker can significantly bolster your commitment to quitting by reinforcing a positive self-identity. This mindset helps reduce cravings and withdrawal symptoms by framing your quit journey in a more empowering light, making it easier to resist the urge to smoke when faced with triggers. By consistently reminding yourself of your identity as a non-smoker, you can strengthen your resolve and improve your chances of long-term success in quitting.",
+        "reference": "Thinking of yourself as a non-smoker can increase your chances of staying quit, as it aligns your identity with your quit goals.",
+        "response_time": 2.1858861446380615
+      },
+      {
+        "query": "Are cigars addictive?",
+        "response": "Yes, cigars are addictive because they contain nicotine, the same addictive substance found in cigarettes. When smoked, nicotine is absorbed into the bloodstream, leading to dependence and withdrawal symptoms similar to those experienced by cigarette smokers. Regular cigar smoking can also pose significant health risks, including increased likelihood of developing cancers and other tobacco-related diseases.",
+        "reference": "Yes. Cigars contain nicotine, the same addictive drug found in cigarettes and other tobacco products. Nicotine is absorbed through the lining of the mouth even if the smoke is not inhaled.",
+        "response_time": 1.4816608428955078
+      },
+      {
+        "query": "Why is it important to address smoking cessation in cancer treatment?",
+        "response": "Addressing smoking cessation in cancer treatment is crucial because continued tobacco use can significantly impair treatment efficacy and worsen health outcomes, as it increases the risk of treatment complications and recurrence. Quitting smoking not only enhances the effectiveness of cancer therapies but also improves overall survival rates and quality of life for cancer patients. Integrating smoking cessation support into cancer care can lead to better patient outcomes and long-term health benefits.",
+        "reference": "Addressing smoking cessation is crucial because continued smoking can reduce treatment efficacy, increase the risk of recurrence, and negatively impact overall survival rates in cancer patients.",
+        "response_time": 1.5804150104522705
+      },
+      {
+        "query": "What behavioral therapies can help me quit smoking?",
+        "response": "Behavioral therapies, such as individual or group counseling, can significantly enhance your chances of quitting smoking by helping you develop coping strategies and skills to manage cravings and withdrawal symptoms. Techniques like cognitive-behavioral therapy (CBT) focus on changing smoking-related thoughts and behaviors, while support groups provide social encouragement and accountability. Research shows that combining behavioral therapies with medications can lead to higher success rates in quitting smoking.",
+        "reference": "Behavioral therapies are effective tools for smoking cessation, providing strategies to manage cravings, identify triggers, and develop healthier habits. At Recovery Ranch, several behavioral therapies are utilized to assist individuals in quitting smoking: 1.Cognitive Behavioral Therapy (CBT): CBT helps individuals recognize and change negative thought patterns and behaviors associated with smoking. By identifying triggers and developing coping strategies, CBT supports long-term cessation efforts. 2.Dialectical Behavior Therapy (DBT):** DBT focuses on managing intense emotions and reducing self-destructive behaviors. It combines mindfulness practices with behavioral techniques to help individuals resist the urge to smoke, especially in response to stress or emotional distress. 3.Motivational Interviewing (MI): MI is a client-centered approach that enhances motivation to quit smoking by exploring and resolving ambivalence. It empowers individuals to set and achieve their cessation goals. 4.12-Step Programs: These programs provide a structured framework for recovery, emphasizing personal accountability, peer support, and spiritual growth. Participation in 12-step groups can offer encouragement and a sense of community during the quitting process. 5.Individual and Group Therapy:** Engaging in therapy sessions, both one-on-one and in groups, allows individuals to share experiences, gain insights, and receive support from peers and professionals. Combining these therapies with other treatments, such as medication or nicotine replacement therapy, can increase the likelihood of successful smoking cessation. Recovery Ranch offers personalized treatment plans to address the unique needs of each individual on their journey to quit smoking.",
+        "response_time": 2.1384828090667725
+      },
+      {
+        "query": "Does quitting tobacco affect breathing and oxygen delivery during exercise?",
+        "response": "Quitting tobacco leads to improved lung function and oxygen delivery over time, which can significantly enhance breathing during exercise. As the body begins to heal from the effects of nicotine and other harmful substances in tobacco, individuals often experience less shortness of breath and increased exercise capacity, contributing to better overall physical performance and health.",
+        "reference": "Yes, quitting tobacco reduces lung inflammation and tar buildup, resulting in better breathing and increased oxygen delivery to muscles during exercise. This improvement supports higher-intensity workouts and better overall performance.",
+        "response_time": 1.7290370464324951
+      },
+      {
+        "query": "How does smoking cessation affect sleep, specifically nightmares?",
+        "response": "Smoking cessation can disrupt sleep patterns, especially in the initial stages, as the body adjusts to the absence of nicotine. Many individuals experience increased irritability, anxiety, and restlessness, which can lead to difficulties in falling asleep or staying asleep, and may contribute to vivid dreams or nightmares (CDC, Smokefree). These sleep disturbances are typically temporary and tend to improve over time as the withdrawal symptoms diminish (Mayo Clinic).",
+        "reference": "Smoking cessation can affect sleep, especially during the initial withdrawal phase. Many individuals report experiencing vivid dreams or nightmares, which can be unsettling. This is often a result of the body's adjustment to the absence of nicotine and the associated changes in brain chemistry. While these disturbances can be temporary, they tend to subside as the body adjusts to life without nicotine.",
+        "response_time": 1.7878310680389404
+      },
+      {
+        "query": "Nicotine Withdrawal",
+        "response": "Nicotine withdrawal occurs when the body adjusts to the absence of nicotine after quitting smoking, leading to various symptoms such as cravings, irritability, restlessness, and difficulty concentrating. While these symptoms can be uncomfortable, they are not harmful and typically peak in intensity during the first few days to weeks, gradually diminishing over time. Utilizing quit-smoking medications, engaging in physical activity, and employing coping strategies can effectively help manage withdrawal symptoms and support long-term cessation efforts.",
+        "reference": "Nicotine withdrawal is challenging, but knowing what to expect and being prepared can help.",
+        "response_time": 2.6113080978393555
+      },
+      {
+        "query": "How can I prevent heart palpitations related to smoking?",
+        "response": "To prevent heart palpitations related to smoking, it is essential to quit smoking altogether, as nicotine can cause an increase in heart rate and lead to palpitations. Engaging in regular physical activity, managing stress through relaxation techniques, and avoiding stimulants like caffeine can also help reduce the frequency of palpitations. If you experience persistent palpitations, consult a healthcare professional for personalized advice and support.",
+        "reference": "Quitting smoking is the most effective way to prevent smoking-induced heart palpitations and improve overall cardiovascular health.",
+        "response_time": 1.9164352416992188
+      },
+      {
+        "query": "Is smoking after exercising more harmful than smoking before?",
+        "response": "Smoking after exercising can be particularly harmful because the body is in a heightened state of oxygen demand and recovery. This means that when you smoke afterward, the harmful chemicals from tobacco can interfere with the body\u2019s ability to heal and recover, exacerbating the negative effects on lung function and overall cardiovascular health. Additionally, smoking before exercising can impair performance, but smoking afterward poses significant risks during a time when the body is trying to repair itself.",
+        "reference": "Smoking after a workout might seem counterintuitive, but exercise is helpful if you're addicted to cigarettes. Although it cannot cancel out the effects of smoking, it will make you healthier and may even help you kick this habit.",
+        "response_time": 2.4437949657440186
+      },
+      {
+        "query": "Why is secondhand smoke considered a serious health threat?",
+        "response": "Secondhand smoke is considered a serious health threat because it contains over 7,000 chemicals, many of which are toxic and can cause cancer. Exposure to secondhand smoke can lead to a variety of health issues, including respiratory infections, heart disease, and lung cancer, particularly in children and non-smoking adults. According to the CDC, there is no safe level of exposure to secondhand smoke, making it a significant public health concern.",
+        "reference": "Secondhand smoke contains over 4,000 chemicals, many of which are toxic or cancer-causing, making it a major health hazard.It increases the risk of serious illnesses like lung cancer, heart disease, and stroke in non-smokers.Children are especially vulnerable, often suffering from asthma, infections, and developmental problems.",
+        "response_time": 2.703077793121338
+      },
+      {
+        "query": "What are common withdrawal symptoms after quitting smoking?",
+        "response": "Common withdrawal symptoms after quitting smoking include cravings for nicotine, irritability, restlessness, and difficulty concentrating. Other symptoms may involve mood changes such as anxiety or depression, and physical discomfort like sleep disturbances. These symptoms typically peak in the first few days or weeks after quitting and gradually diminish over time as the body adjusts to the absence of nicotine.",
+        "reference": "Common withdrawal symptoms include increased coughing, dizziness, tingling sensations, heightened appetite, mood changes such as anxiety and irritability, sleep disturbances, sore tongue or mouth ulcers, bowel changes, and intense nicotine cravings.",
+        "response_time": 1.5419909954071045
+      },
+      {
+        "query": "What measures can be taken to reduce the risk of placental abruption related to smoking?",
+        "response": "To reduce the risk of placental abruption related to smoking, it is crucial to quit smoking before and during pregnancy. Smoking cessation can diminish the likelihood of complications such as placental abruption, as tobacco use is associated with increased risks to both maternal and fetal health. Utilizing quit-smoking medications, counseling, and support programs can enhance the chances of successfully stopping smoking.",
+        "reference": "To reduce the risk of placental abruption associated with smoking, it is crucial for pregnant women to avoid both active smoking and exposure to second-hand smoke. Implementing smoking cessation programs and promoting smoke-free environments can significantly lower the incidence of this complication. Healthcare providers should counsel expectant mothers on the risks of smoking and provide resources to support quitting.",
+        "response_time": 1.8138809204101562
+      },
+      {
+        "query": "How does smoking affect back pain?",
+        "response": "Smoking can exacerbate back pain by impairing blood flow and oxygen delivery to spinal tissues, which can hinder healing and contribute to chronic pain conditions. Additionally, nicotine may interfere with the body\u2019s ability to absorb essential nutrients necessary for bone and joint health, further increasing the risk of back pain and degeneration. Quitting smoking can improve overall health and potentially alleviate some of the pain associated with spinal issues.",
+        "reference": "Smoking impairs blood flow to spinal tissues, contributes to disc degeneration, and increases inflammation, all of which can lead to or exacerbate back pain.",
+        "response_time": 4.122081756591797
+      },
+      {
+        "query": "That\u2019s concerning. If e-cigarettes aren\u2019t a good quitting aid, what actually works?",
+        "response": "E-cigarettes are not a recommended quitting aid due to their unclear long-term effects and the risk of continued tobacco use. Evidence shows that combining medications, such as nicotine replacement therapy (patches, gums, lozenges) with counseling significantly increases the chances of successfully quitting smoking. These methods help alleviate withdrawal symptoms and cravings while providing support for behavior change (Mayo Clinic, American Cancer Society).",
+        "reference": "The best methods include brief advice from health professionals, national quit lines, mobile cessation apps, and approved therapies like nicotine replacement products or prescription medications.",
+        "response_time": 1.628943681716919
+      },
+      {
+        "query": "What are the common symptoms experienced during nicotine withdrawal?",
+        "response": "Common symptoms experienced during nicotine withdrawal include cravings for cigarettes, irritability, restlessness, difficulty concentrating, and mood changes such as anxiety or depression. These symptoms usually peak in the first few days or weeks after quitting and gradually lessen over time as the body adjusts to being without nicotine. Managing these symptoms can be aided by using quit-smoking medications and engaging in physical activities or distractions.",
+        "reference": "Common nicotine withdrawal symptoms include cravings, difficulty concentrating, restlessness, depression, frustration, anger, irritability, insomnia, anxiety, increased appetite, headaches, dizziness, fatigue, coughing, constipation, and mouth ulcers. The intensity and duration of these symptoms can vary among individuals.",
+        "response_time": 1.8462800979614258
+      },
+      {
+        "query": "Does smoking impair the healing of gastric ulcers?",
+        "response": "Yes, smoking can impair the healing of gastric ulcers. Nicotine and other harmful substances in cigarettes can reduce blood flow to the stomach lining, hinder the healing process, and increase the production of stomach acid, which can exacerbate ulcer symptoms. Quitting smoking is crucial for promoting ulcer healing and reducing the risk of complications.",
+        "reference": "Yes, smoking impairs ulcer healing by reducing mucosal blood flow, prostaglandin production, and epithelial cell proliferation, all of which are essential for the repair process.",
+        "response_time": 1.3190460205078125
+      },
+      {
+        "query": "How can social smokers quit?",
+        "response": "Social smokers can successfully quit by recognizing their triggers and finding alternative activities that do not involve smoking, such as engaging in hobbies or spending time with nonsmokers. Utilizing quit-smoking medications, such as nicotine replacement therapies or prescription medications, can help manage cravings and withdrawal symptoms. Additionally, seeking support through counseling or support groups can enhance their chances of quitting long-term.",
+        "reference": "To quit, identify triggers, set clear boundaries, seek support from non-smoking friends, and consider professional resources like counseling or quitlines.",
+        "response_time": 1.7056548595428467
+      },
+      {
+        "query": "How does this compare to smoking cessation rates among cancer survivors?",
+        "response": "Cancer survivors often face unique challenges when quitting smoking, but their cessation rates can be higher than those of the general population due to increased motivation stemming from their health status. According to various studies, approximately 50-70% of cancer survivors who smoke express a desire to quit, and those receiving support and counseling have better success rates. Utilizing nicotine replacement therapies and counseling, as highlighted in the sources, significantly enhances their chances of successfully quitting compared to those who attempt to quit without assistance.",
+        "reference": "Stroke survivors are less likely to quit smoking compared to cancer survivors; the latter group shows higher cessation rates.",
+        "response_time": 2.1842422485351562
+      },
+      {
+        "query": "Who smokes more, men or women?",
+        "response": "Historically, men have smoked more than women, though the gap has narrowed in recent years. According to various health studies and reports, including those from the CDC, smoking rates among men are generally higher compared to women, but smoking prevalence among women has increased in some regions and age groups. Overall trends indicate that while men still smoke at higher rates, women's smoking rates have shown concerning increases, especially among younger demographics.",
+        "reference": "Globally, men are more likely to smoke than women. More than one-third of men smoke, while just over 8% of women do. This pattern is consistent across nearly all countries, with very few exceptions.",
+        "response_time": 1.5580239295959473
+      },
+      {
+        "query": "What is varenicline and how does it help quit tobacco?",
+        "response": "Varenicline, marketed as Chantix, is a prescription medication designed to help individuals quit smoking by reducing cravings and withdrawal symptoms associated with nicotine dependence. It works by partially stimulating nicotine receptors in the brain, which decreases the pleasurable effects of smoking while also alleviating withdrawal symptoms, thereby making it easier for individuals to stop using tobacco.",
+        "reference": "Varenicline is an FDA-approved prescription drug that contains no nicotine. It helps you quit tobacco by cutting the pleasure your brain gets from using tobacco and reducing the withdrawal symptoms.",
+        "response_time": 1.4772090911865234
+      },
+      {
+        "query": "Does smoking increase the risk of lymphoma?",
+        "response": "Yes, smoking increases the risk of lymphoma, including both Hodgkin and non-Hodgkin lymphoma. Research has shown that tobacco smoke contains carcinogens that can damage the immune system and increase the likelihood of developing lymphatic cancers. Quitting smoking can significantly reduce this risk over time.",
+        "reference": "Yes, smoking is linked to an increased risk of lymphoma, particularly Hodgkin lymphoma (HL) and T-cell non-Hodgkin lymphoma (NHL). Depending on how much someone has smoked, it can increase the risk of lymphoma by as much as 45 percent.",
+        "response_time": 1.6941051483154297
+      },
+      {
+        "query": "What are the long-term effects of smoking on vocal health?",
+        "response": "Long-term smoking can lead to significant vocal health issues, including chronic hoarseness, vocal cord nodules, and an increased risk of throat and laryngeal cancers. The harmful chemicals in tobacco smoke cause inflammation and damage to the vocal cords, resulting in altered voice quality and potential loss of vocal function over time. Quitting smoking can improve vocal health and reduce these risks, making it essential for anyone concerned about their voice to consider cessation.",
+        "reference": "Long-term smoking can lead to structural changes in the larynx, increasing the risk of laryngeal diseases and cancers such as oral, pharyngeal, and laryngeal cancer. It also causes the vocal cords to become heavier, lowering the fundamental frequency and altering voice characteristics.",
+        "response_time": 1.7097580432891846
+      },
+      {
+        "query": "What was the methodology used to assess the impact of smoking on cervical cancer outcomes?",
+        "response": "The reference material provided does not include specific information regarding the methodology used to assess the impact of smoking on cervical cancer outcomes. To obtain data on this topic, one would typically look for studies published in medical journals that utilize cohort, case-control, or cross-sectional study designs, analyzing the correlation between smoking habits and cervical cancer incidence or survival rates. These studies often control for confounding factors such as age, sexual behavior, and HPV infection status to determine the independent effect of smoking on cervical cancer outcomes.",
+        "reference": "The study analyzed 96 patients with locally advanced cervical cancer who underwent definitive radiation or chemoradiation followed by brachytherapy. Smoking status was determined through intake questionnaires and quantified by pack-years. Outcomes such as pelvic control, disease-free survival, and overall survival were evaluated using multivariable Cox proportional hazards models.",
+        "response_time": 2.3697218894958496
+      },
+      {
+        "query": "What percentage of adolescents whose parents are non-smokers have ever smoked?",
+        "response": "The reference material provided does not contain specific statistics regarding the percentage of adolescents whose parents are non-smokers that have ever smoked. However, it is well-documented in public health research that parental smoking status can significantly influence adolescent smoking behaviors. Adolescents with non-smoking parents are generally at a lower risk of initiating smoking compared to those with smoking parents. For exact figures, consulting specific studies or surveys on adolescent smoking behaviors would be necessary.",
+        "reference": "According to the study, 13% of adolescents whose parents never smoked reported having ever smoked at least one cigarette.",
+        "response_time": 1.61773681640625
+      },
+      {
+        "query": "What strategies can help individuals with anxiety disorders quit smoking successfully?",
+        "response": "Individuals with anxiety disorders can successfully quit smoking by utilizing a combination of nicotine replacement therapies (such as patches, gums, or lozenges) to manage withdrawal symptoms and cravings, which can exacerbate anxiety. Additionally, counseling, such as cognitive-behavioral therapy, can provide effective coping strategies and support tailored to their anxiety, helping them address both their smoking cessation and mental health needs (Mayo Clinic, Smokefree). Engaging in physical activity and mindfulness techniques can also help reduce anxiety and distract from cravings during the quitting process (CDC).",
+        "reference": "Effective strategies include seeking professional support from therapists experienced in anxiety disorders, engaging in regular physical activity to manage stress, practicing relaxation techniques such as deep breathing and meditation, and gradually reducing nicotine intake to minimize withdrawal symptoms. It's also beneficial to develop healthy coping mechanisms to replace the temporary relief previously provided by nicotine.",
+        "response_time": 3.1107850074768066
+      },
+      {
+        "query": "How does smoking affect memory and sleep quality?",
+        "response": "Smoking can negatively impact both memory and sleep quality. Nicotine affects brain function, which can lead to difficulties in concentration and memory recall, particularly during withdrawal. Additionally, smoking is associated with poorer sleep quality, as nicotine can disrupt sleep patterns and lead to insomnia, making it harder for individuals to achieve restorative sleep.",
+        "reference": "Smoking negatively impacts both memory and sleep quality. It can damage the endothelium, leading to atherosclerosis and inflammation, which in turn may impair neuronal function and cognitive abilities. Additionally, smoking is associated with reduced sleep quality, potentially due to nicotine's stimulating effects and withdrawal symptoms during sleep.",
+        "response_time": 1.5365197658538818
+      },
+      {
+        "query": "How does trauma exposure relate to cigarette smoking?",
+        "response": "Trauma exposure is associated with an increased risk of cigarette smoking, as individuals who have experienced trauma may use smoking as a coping mechanism to manage emotional distress. Research indicates that trauma can lead to higher levels of anxiety and stress, which may trigger cravings for nicotine as a temporary relief from these symptoms. Addressing trauma in smoking cessation programs can enhance the effectiveness of quitting strategies and support long-term recovery from both trauma and nicotine dependence.",
+        "reference": "Trauma survivors often use smoking as a coping mechanism to manage stress, anxiety, and negative emotions. Smoking activates reward pathways in the brain, providing temporary relief from distressing feelings associated with trauma.",
+        "response_time": 1.7053539752960205
+      },
+      {
+        "query": "Can smoking cause stomach pain?",
+        "response": "Yes, smoking can cause stomach pain as it negatively affects the digestive system. The chemicals in cigarettes can lead to an increased risk of gastrointestinal issues such as acid reflux, ulcers, and inflammatory bowel disease. Additionally, smoking can impair the functioning of the digestive tract and reduce blood flow to the stomach, which can contribute to discomfort and pain.",
+        "reference": "Smoking can produce multiple negative effects on the stomach and other organs of the digestive tract, leading to pain and discomfort in the abdomen.",
+        "response_time": 1.8386859893798828
+      },
+      {
+        "query": "Are there specific foods that help cleanse the lungs?",
+        "response": "While no specific foods can \"cleanse\" the lungs, a healthy diet rich in fruits and vegetables can support overall lung health and improve respiratory function. Foods high in antioxidants, such as berries, apples, and leafy greens, can help reduce inflammation and oxidative stress in the body. Additionally, staying hydrated and consuming foods rich in omega-3 fatty acids, like fish and flaxseeds, may contribute to better lung function.",
+        "reference": "If you want to clean and improve your lung health, there are some foods and products that you should avoid and others you should consume more often: Say No To- Fast Food, Processed Foods & Meats, Dairy Products, Frozen Convenience Foods, Candies and Sweets, Caffeine. Say Yes To: Pineapples, which contain bromelain, a compound that helps reduce inflammation, Citrus fruits and berries, such as blueberries, limes, lemons, oranges, and blackberries, Leafy green vegetables, such as spinach, kale, arugula, collard greens, lettuce, and broccoli, Fresh meats and fish, Foods with high chlorophyll, such as parsley, sprouts, wheatgrass, asparagus, celery, and grapes help oxygenate the body",
+        "response_time": 1.7229750156402588
+      },
+      {
+        "query": "What recommendations can be made for individuals who have quit smoking regarding FSG and NAFLD?",
+        "response": "For individuals who have quit smoking, it is essential to focus on maintaining a healthy lifestyle to support liver health, particularly in relation to fatty liver disease (NAFLD) and metabolic syndrome (FSG). Engaging in regular physical activity, maintaining a balanced diet rich in fruits, vegetables, and whole grains, and avoiding excessive alcohol consumption can help reduce the risk of NAFLD and improve overall health. Additionally, staying smoke-free can positively impact liver function and overall metabolic health, aiding in the prevention of conditions associated with smoking cessation.",
+        "reference": "For individuals who have quit smoking, it's recommended to monitor fasting serum glucose (FSG) levels to assess and manage the risk of non-alcoholic fatty liver disease (NAFLD). Maintaining stable or reduced FSG levels post-cessation may lower the risk of developing NAFLD. Healthcare providers should consider regular screening and lifestyle interventions aimed at controlling blood glucose levels to mitigate potential metabolic complications associated with smoking cessation.",
+        "response_time": 2.5700340270996094
+      },
+      {
+        "query": "Is there a link between childhood trauma and smoking addiction?",
+        "response": "Yes, research indicates a link between childhood trauma and smoking addiction. Individuals who experience childhood adversity, such as abuse or neglect, may be more likely to develop nicotine dependence and smoke as a coping mechanism for emotional distress. This relationship highlights the importance of addressing underlying psychological factors in smoking cessation efforts.",
+        "reference": "A study involving 216 adults found no direct correlation between adverse childhood experiences and smoking addiction levels. However, a significant negative correlation was observed between nicotine dependence and scores related to emotional abuse, physical neglect, and emotional neglect, suggesting that the relationship may vary based on specific trauma types and cultural contexts.",
+        "response_time": 1.1012730598449707
+      },
+      {
+        "query": "Are there reproductive health risks associated with smoking for women?",
+        "response": "Yes, smoking poses significant reproductive health risks for women, including reduced fertility, increased risk of miscarriage, and complications during pregnancy such as preterm birth and low birth weight. Additionally, smoking can affect the health of the baby, leading to developmental issues and increased risk of sudden infant death syndrome (SIDS). Quitting smoking can greatly improve reproductive health outcomes.",
+        "reference": "Yes, smoking adversely affects women's reproductive health, leading to increased risks of infertility, miscarriages, and pregnancy complications such as preterm birth and low birth weight. Women who smoke are also more likely to experience complications during pregnancy, posing risks to both maternal and fetal health.",
+        "response_time": 1.7450721263885498
+      },
+      {
+        "query": "What are the long-term effects of smoking?",
+        "response": "Long-term smoking can lead to a variety of serious health issues, including chronic obstructive pulmonary disease (COPD), heart disease, stroke, and various cancers, particularly lung cancer. Additionally, smoking can cause long-term damage to the respiratory and cardiovascular systems, significantly reducing life expectancy and quality of life. Quitting smoking can greatly reduce these risks and improve overall health outcomes over time.",
+        "reference": "Long-term smoking increases the risk of developing chronic diseases like heart disease, lung cancer, and stroke. It also leads to respiratory issues, a weakened immune system, and reduced life expectancy.",
+        "response_time": 1.6436548233032227
+      },
+      {
+        "query": "How does diet influence lung recovery after smoking?",
+        "response": "A healthy diet can significantly influence lung recovery after quitting smoking by providing essential nutrients that support lung function and overall health. Foods rich in antioxidants, such as fruits and vegetables, can help reduce inflammation and combat oxidative stress caused by smoking. Additionally, maintaining a balanced diet may aid in the healing process and improve respiratory health post-cessation.",
+        "reference": "Diet plays a crucial role in lung recovery. Consuming anti-inflammatory foods like pineapples, citrus fruits, berries, leafy greens, and foods high in chlorophyll can aid in reducing inflammation and improving lung function. Conversely, avoiding processed foods, dairy products, and caffeine can prevent further respiratory issues.",
+        "response_time": 1.3790781497955322
+      },
+      {
+        "query": "What are the global smoking rates among men and women?",
+        "response": "As of my last knowledge update in October 2023, global smoking rates vary significantly between men and women. According to the World Health Organization (WHO), approximately 35% of men and 6% of women worldwide were reported to smoke tobacco. These figures highlight a persistent gender disparity in smoking prevalence, with men being more likely to use tobacco products than women.",
+        "reference": "Nearly one-in-four adults in the world smokes tobacco. More than one-third of men, but just over 8% of women do.",
+        "response_time": 1.9740591049194336
+      },
+      {
+        "query": "What are common withdrawal symptoms when quitting smoking?",
+        "response": "Common withdrawal symptoms when quitting smoking include cravings for cigarettes, irritability, anxiety, restlessness, difficulty concentrating, and changes in sleep patterns. These symptoms occur as the body adjusts to the absence of nicotine and typically peak within the first few days or weeks, gradually decreasing over time. While uncomfortable, these symptoms are not harmful and can be managed with various strategies, including nicotine replacement therapy and counseling.",
+        "reference": "Common withdrawal symptoms include cigarette cravings, mood changes such as anxiety, irritability, and depression, as well as physical symptoms like increased appetite, insomnia, headaches, and coughing. These symptoms are part of the body's adjustment to the absence of nicotine.",
+        "response_time": 2.156280994415283
+      },
+      {
+        "query": "What is the author's attitude towards medical advice on smoking?",
+        "response": "The author's attitude towards medical advice on smoking is supportive and emphasizes its importance in successfully quitting. The references consistently highlight that combining medications, such as nicotine replacement therapy and prescription options like bupropion and varenicline, with counseling improves the chances of quitting smoking effectively. This is evident from the statements that \"using medicines and counseling together\" enhances treatment outcomes and that healthcare professionals can help individuals explore suitable quit-smoking products.",
+        "reference": "The author adopts a dismissive and sarcastic tone towards medical warnings, even mocking the potential need for a laryngectomy by joking about sounding like a robot, indicating a prioritization of perceived coolness over health concerns.",
+        "response_time": 1.7001640796661377
+      },
+      {
+        "query": "Why is it so hard to quit smoking?",
+        "response": "Quitting smoking is challenging primarily due to nicotine dependence, which creates physical and psychological withdrawal symptoms when a person stops using tobacco. Common symptoms include intense cravings, irritability, anxiety, and difficulty concentrating, which can make the quitting process uncomfortable and lead individuals to relapse. Additionally, the habits and routines associated with smoking can trigger cravings, making it harder to resist the urge to smoke.",
+        "reference": "Quitting is difficult because smoking is both a chemical addiction to nicotine and a behavioral habit. The brain craves nicotine, and the routine of smoking becomes deeply ingrained.",
+        "response_time": 1.5572631359100342
+      },
+      {
+        "query": "Why do I feel mentally foggy after quitting smoking?",
+        "response": "Feeling mentally foggy after quitting smoking is a common withdrawal symptom due to your brain adjusting to the absence of nicotine, which affects neurotransmitter activity. As your body detoxifies, cognitive functions like concentration and memory may temporarily decline, but these symptoms typically improve as your body adapts to being nicotine-free (CDC, Smokefree). Engaging in physical activity and staying mentally stimulated can help alleviate this foggy feeling.",
+        "reference": "Experiencing brain fog after quitting smoking is a common withdrawal symptom. Nicotine affects neurotransmitters in the brain, and its absence can temporarily impair cognitive functions like focus and memory. This foggy feeling is typically most noticeable in the first week or two after quitting.",
+        "response_time": 2.1500160694122314
+      },
+      {
+        "query": "What types of exercise are recommended for those attempting to quit smoking?",
+        "response": "Engaging in physical activity is highly recommended for those attempting to quit smoking, as it can help alleviate withdrawal symptoms such as restlessness and irritability. Activities like walking, jogging, cycling, or yoga can serve as effective distractions from cravings and improve mood. Even short bursts of physical activity can be beneficial, making it easier to manage the challenges of quitting.",
+        "reference": "Both cardiovascular exercises, such as walking or cycling, and resistance training have been explored for their potential benefits in smoking cessation. Engaging in regular physical activity may help manage withdrawal symptoms and reduce cravings during quit attempts.",
+        "response_time": 1.3425650596618652
+      },
+      {
+        "query": "Can quitting smoking improve musculoskeletal health?",
+        "response": "Yes, quitting smoking can improve musculoskeletal health. Smoking has been linked to decreased bone density and increased risk of fractures, as well as impaired healing of musculoskeletal injuries. By quitting, individuals can enhance their overall bone health, reduce inflammation, and promote better healing and recovery from musculoskeletal conditions.",
+        "reference": "Smoking cessation is highly advisable, with positive effects on bone metabolism in the long term. More immediate benefits can be observed in patients undergoing orthopedic surgery, including improved healing processes, reduced frequency of complications, and shortened hospital stays.",
+        "response_time": 1.716670036315918
+      },
+      {
+        "query": "How does quitting tobacco contribute to a healthier diet?",
+        "response": "Quitting tobacco can contribute to a healthier diet by reducing cravings for unhealthy foods often associated with smoking, such as high-calorie snacks. Additionally, many individuals experience changes in taste and smell after quitting, which can enhance their enjoyment of healthier foods and encourage better dietary choices. This positive shift can lead to improved overall nutrition and health outcomes.",
+        "reference": "When you\u2019re no longer using tobacco, there are more opportunities to fuel your body with nutritious food instead (think \u2013 grabbing an apple or sliced peppers instead of a cigarette when you\u2019re on the go).",
+        "response_time": 1.5483269691467285
+      },
+      {
+        "query": "Can smoking cause sinus infections?",
+        "response": "Yes, smoking can increase the risk of sinus infections. It irritates the nasal passages and sinuses, leading to inflammation and making it easier for infections to occur. Additionally, the harmful substances in cigarette smoke can impair the immune system, further increasing susceptibility to respiratory infections, including sinusitis.",
+        "reference": "Yes, smoking can increase the risk of developing sinus infections. Tobacco smoke is a common irritant that can damage the cilia\u2014tiny hair-like structures in the nasal passages responsible for clearing mucus and pathogens. When these cilia are impaired, it can lead to mucus buildup and create an environment conducive to infections such as sinusitis. Additionally, exposure to secondhand smoke can have similar effects on sinus health.",
+        "response_time": 1.7817108631134033
+      },
+      {
+        "query": "What is the best way to protect my family from secondhand smoke?",
+        "response": "The best way to protect your family from secondhand smoke is to create a completely smoke-free environment at home and in your car. This means not smoking indoors or in enclosed spaces where family members, especially children and pets, can be exposed to harmful secondhand smoke. Additionally, encourage family members who smoke to quit or seek support to reduce exposure to secondhand smoke altogether.",
+        "reference": "The most effective way to protect your family is to quit smoking completely. If you're not ready to quit, always smoke outside and never indoors or in the car.",
+        "response_time": 1.6161730289459229
+      },
+      {
+        "query": "What role does Motivational Interviewing (MI) play in quitting smoking?",
+        "response": "Motivational Interviewing (MI) plays a crucial role in quitting smoking by enhancing a person's intrinsic motivation to change and addressing ambivalence towards quitting. This client-centered counseling approach helps individuals explore their reasons for smoking and the benefits of quitting, thereby increasing their commitment to the cessation process. Research shows that incorporating MI with other cessation strategies, such as counseling and medication, significantly improves the likelihood of successfully quitting smoking.",
+        "reference": "Motivational Interviewing (MI) plays a crucial role in quitting smoking by enhancing an individual's motivation to change. MI is a client-centered approach that explores and resolves ambivalence toward quitting. It empowers individuals to set personal goals and develop a commitment to change, thereby increasing the likelihood of successful smoking cessation.",
+        "response_time": 2.0764353275299072
+      },
+      {
+        "query": "What can I do to alleviate brain fog after quitting smoking?",
+        "response": "To alleviate brain fog after quitting smoking, engage in regular physical activity, which can help improve concentration and reduce restlessness. Staying hydrated, eating a balanced diet, and getting adequate sleep can also support cognitive function during the withdrawal period. Additionally, consider using nicotine replacement therapies or non-nicotine medications, as they can ease withdrawal symptoms, including difficulty concentrating (Mayo Clinic; CDC).",
+        "reference": "To alleviate brain fog, stay hydrated, engage in regular physical activity, get adequate sleep, eat a balanced diet rich in fruits and vegetables, and practice stress-reducing techniques like meditation or deep breathing exercises. These habits support overall brain health and can expedite recovery from nicotine withdrawal.",
+        "response_time": 1.8759708404541016
+      },
+      {
+        "query": "What are common symptoms of nicotine withdrawal when I try to quit smoking?",
+        "response": "Common symptoms of nicotine withdrawal when quitting smoking include cravings for cigarettes, irritability, restlessness, difficulty concentrating, and mood changes such as anxiety or depression. These symptoms can be uncomfortable but are temporary; they typically peak in the first few days or weeks after quitting and gradually diminish over time. Managing these symptoms with support, counseling, and possibly nicotine replacement therapies can significantly help in the quitting process.",
+        "reference": "Common symptoms of nicotine withdrawal include strong cravings, anxiety, irritability, restlessness, trouble focusing or sleeping, depression, frustration, anger, increased hunger, and constipation.",
+        "response_time": 2.277667999267578
+      },
+      {
+        "query": "What are the benefits of using stop-smoking products?",
+        "response": "Using stop-smoking products, such as nicotine replacement therapies (patches, gums, lozenges) and prescription medications (like bupropion and varenicline), can significantly ease withdrawal symptoms and cravings, making it easier for individuals to quit smoking. Research shows that combining these products with counseling increases the likelihood of successfully quitting for good, as they help manage both the physical and psychological aspects of nicotine dependence.",
+        "reference": "Stop-smoking products, such as nicotine replacement therapies (NRTs) and nicotine-free medications, can alleviate withdrawal symptoms and reduce cravings. Combining these products with behavioral support increases the likelihood of quitting successfully compared to using willpower alone.",
+        "response_time": 2.1278750896453857
+      },
+      {
+        "query": "What are some coping strategies to manage cravings?",
+        "response": "To manage cravings when quitting smoking, you can utilize several effective coping strategies. Keeping busy and distracting yourself with activities, engaging in physical exercise, and spending time with non-smoking friends can significantly help. Additionally, using quit-smoking medications, such as nicotine replacement therapy, can reduce cravings and withdrawal symptoms, making it easier to stay smoke-free (Smokefree.gov; CDC).",
+        "reference": "Coping strategies include practicing deep breathing exercises, engaging in physical activity, chewing sugar-free gum, drinking water, and using relaxation techniques like meditation or yoga. These can help distract you and reduce the urge to smoke.",
+        "response_time": 1.9549129009246826
+      },
+      {
+        "query": "How can I manage nicotine withdrawal symptoms?",
+        "response": "To manage nicotine withdrawal symptoms, consider using quit-smoking medications such as nicotine replacement therapy (patches, gum, or lozenges) or prescription medications like bupropion or varenicline, which can help alleviate cravings and withdrawal effects. Additionally, staying busy, engaging in physical activity, and practicing deep breathing can help distract you from cravings and improve your mood during this challenging period (CDC, Mayo Clinic). Remember that withdrawal symptoms are temporary and will decrease over time as you remain smokefree.",
+        "reference": "Using stop smoking products like nicotine replacement therapies (patches, gum, nasal sprays) or nicotine-free medicines can help reduce cravings and make it easier to manage withdrawal symptoms.",
+        "response_time": 2.197923183441162
+      },
+      {
+        "query": "Is the intention to quit smoking necessary for mindfulness meditation to be effective?",
+        "response": "The intention to quit smoking can enhance the effectiveness of mindfulness meditation by fostering greater commitment and focus during the practice. While mindfulness meditation can help manage cravings and withdrawal symptoms, as outlined in various resources on nicotine withdrawal, having a clear intention to quit can provide motivation and a stronger framework for addressing the challenges associated with cessation. Ultimately, combining mindfulness with a dedicated intention to quit may lead to better outcomes in managing addiction.",
+        "reference": "No, a smoker's intention to quit is not always needed to reduce cigarette cravings through mindfulness meditation. The practice can enhance self-control and reduce cravings even without a prior desire to quit.",
+        "response_time": 2.082336902618408
+      },
+      {
+        "query": "Are ex-smokers free from long-term lung damage?",
+        "response": "Ex-smokers may still experience long-term lung damage even after quitting, as smoking can cause irreversible changes to lung tissue and function. However, quitting smoking significantly reduces the risk of further damage and improves overall lung health over time, with many benefits seen within a few months to years after cessation. It's important for ex-smokers to engage in regular health check-ups and adopt a healthy lifestyle to support their lung recovery.",
+        "reference": "People who quit smoking decades ago are still at risk for lung diseases like chronic obstructive pulmonary disease (COPD), according to a study published online Oct. 9, 2019, by The Lancet Respiratory Medicine.",
+        "response_time": 1.7452270984649658
+      },
+      {
+        "query": "How long should someone wait after smoking before holding a baby?",
+        "response": "It is recommended that individuals avoid smoking around children and infants, as secondhand smoke can be harmful to their health. If someone has smoked, it is advisable to wait at least 30 minutes to an hour before holding a baby to help reduce the risk of exposing them to residual nicotine and other harmful substances. However, the best practice is to refrain from smoking altogether to ensure a safe environment for the child.",
+        "reference": "It's recommended that individuals wait at least 30 minutes after smoking before holding a baby. This allows time for some of the harmful chemicals from the smoke to dissipate.",
+        "response_time": 1.5883760452270508
+      },
+      {
+        "query": "Are these alternative methods effective for everyone?",
+        "response": "Alternative methods, such as nicotine replacement therapy (NRT) and prescription medications, can be effective for many people trying to quit smoking, but they are not universally effective for everyone. Individual responses to these treatments vary based on factors like the level of nicotine dependence, personal circumstances, and concurrent use of counseling support, which significantly enhances the chances of success. Therefore, it\u2019s important to work closely with a healthcare professional to tailor a quit plan that suits individual needs.",
+        "reference": "No single smoking cessation technique works for everyone. The success of alternative methods like acupuncture and hypnosis can differ among individuals, and many people may need to try multiple approaches before finding one that helps them quit.",
+        "response_time": 2.1321651935577393
+      },
+      {
+        "query": "What is passive smoking?",
+        "response": "Passive smoking, also known as secondhand smoke, occurs when non-smokers inhale smoke that is exhaled by smokers or that comes from the burning end of a cigarette, cigar, or pipe. This exposure can lead to harmful health effects, as secondhand smoke contains many of the same toxic chemicals as direct smoking. It poses serious health risks, particularly to vulnerable groups such as children and individuals with pre-existing health conditions.",
+        "reference": "Passive smoking, also known as secondhand smoke, occurs when non-smokers inhale smoke exhaled by smokers or from the burning end of cigarettes, which can harm their health.",
+        "response_time": 2.82857608795166
+      },
+      {
+        "query": "Is quitting smoking abruptly more effective than gradually reducing cigarette consumption?",
+        "response": "Quitting smoking abruptly, often referred to as \"cold turkey,\" can be as effective as gradually reducing cigarette consumption, but it varies by individual. Many people find that quitting suddenly leads to a stronger commitment and quicker cessation of nicotine withdrawal symptoms, while others may prefer a gradual approach to manage cravings and anxiety. Evidence suggests that using quit-smoking medications and counseling can enhance success rates regardless of the method chosen.",
+        "reference": "Yes, according to a meta-analysis published in Tobacco Induced Diseases, smokers who quit abruptly have higher prolonged abstinence rates compared to those who quit gradually. The study found that the gradual cessation group had a significantly lower quit rate (relative risk, RR=0.77) compared to the abrupt cessation group.",
+        "response_time": 1.7898969650268555
+      },
+      {
+        "query": "What barriers do families face in supporting smoking cessation?",
+        "response": "Families may face several barriers in supporting smoking cessation, including a lack of understanding of withdrawal symptoms and the challenges associated with nicotine addiction, which can lead to frustration when a loved one experiences irritability or cravings. Additionally, family members might feel helpless or unsure about how to provide effective support, especially if they have not experienced quitting themselves, which can hinder their ability to encourage and motivate the individual attempting to quit.",
+        "reference": "Families may encounter challenges such as lack of knowledge about cessation strategies, conflicting attitudes towards smoking, and inadequate communication, which can hinder their ability to effectively support a member's decision to quit smoking.",
+        "response_time": 1.6926641464233398
+      },
+      {
+        "query": "What should I do if I feel overwhelmed by the idea of quitting?",
+        "response": "Feeling overwhelmed by the idea of quitting is common, and it's important to remember that you're not alone. Break the process into smaller, manageable steps, and consider using quit-smoking medications to ease withdrawal symptoms and cravings. Additionally, seeking support from friends, family, or a counselor can provide encouragement and help you stay focused on your goal.",
+        "reference": "It's normal to feel overwhelmed when thinking about quitting. Instead of quitting all at once, try to gradually cut back on smoking as you approach your quit date. This can make the process feel more manageable.",
+        "response_time": 1.8186721801757812
+      },
+      {
+        "query": "How does smoking affect leg pain?",
+        "response": "Smoking can exacerbate leg pain by impairing blood circulation and reducing oxygen supply to the muscles and tissues. Nicotine and other harmful substances in tobacco can damage blood vessels, leading to conditions like peripheral artery disease, which can cause pain during physical activity due to reduced blood flow. Additionally, smoking is associated with increased inflammation and can worsen conditions like arthritis, contributing to overall leg discomfort.",
+        "reference": "Smoking can cause leg pain in a number of ways. One of the primary mechanisms is through the development of Peripheral Artery Disease (PAD), where smoking damages blood vessels, leading to narrowed or blocked arteries in the legs. This reduced blood flow can result in symptoms such as leg pain, especially when walking or climbing stairs. Other conditions related to smoking that can cause leg pain include Raynaud\u2019s disease, neuropathy, osteoporosis, and chronic obstructive pulmonary disease (COPD). Treatment for leg pain caused by smoking-related vascular issues may involve lifestyle changes, medications, and in some cases, surgical interventions.",
+        "response_time": 1.6859221458435059
+      },
+      {
+        "query": "What are the benefits of mindfulness and acceptance in smoking cessation?",
+        "response": "Mindfulness and acceptance practices can greatly benefit individuals in smoking cessation by enhancing awareness of cravings and withdrawal symptoms without judgment, helping them respond to these urges more effectively. Research indicates that mindfulness can reduce stress and anxiety, which are common triggers for relapse, while acceptance allows individuals to acknowledge their cravings as temporary feelings rather than signals to smoke, thus increasing the likelihood of maintaining long-term abstinence from tobacco.",
+        "reference": "The benefits of mindfulness and acceptance in smoking cessation include improved emotional regulation, reduced stress and anxiety, enhanced self-awareness, and better coping strategies for managing cravings. These approaches help individuals develop a non-reactive awareness of their thoughts and feelings, enabling them to break the cycle of automatic smoking behavior and make healthier choices.",
+        "response_time": 2.0306761264801025
+      },
+      {
+        "query": "Can changing my environment help reduce smoking urges?",
+        "response": "Yes, changing your environment can significantly help reduce smoking urges. Cravings are often triggered by specific people, places, or activities associated with smoking; by avoiding these triggers and creating a smoke-free environment, you can lessen the likelihood of experiencing cravings and improve your chances of successfully quitting. Engaging in new activities or spending time in places where smoking is not permitted can further distract you from urges to smoke.",
+        "reference": "Yes, changing your environment can help reduce smoking urges. Moving to a smoke-free area or altering your routine can remove triggers associated with smoking, making it easier to resist cravings.",
+        "response_time": 1.7313859462738037
+      },
+      {
+        "query": "What role do healthcare providers play in adolescent smoking cessation?",
+        "response": "Healthcare providers play a crucial role in adolescent smoking cessation by offering guidance, support, and tailored treatment plans that may include counseling and medications such as nicotine replacement therapy. They can help adolescents understand the risks associated with smoking, identify triggers, and develop coping strategies, ultimately increasing the likelihood of successful quitting. Engaging with healthcare providers can provide adolescents with the necessary resources and encouragement to overcome addiction and maintain a smoke-free lifestyle.",
+        "reference": "Healthcare providers should screen for tobacco use, offer brief counseling, and discuss cessation options, creating a supportive environment for adolescents to quit.",
+        "response_time": 1.8240132331848145
+      },
+      {
+        "query": "I'm concerned about tobacco use in different communities. How does tobacco use vary among different racial and ethnic groups?",
+        "response": "Tobacco use varies significantly among different racial and ethnic groups in the United States, influenced by factors such as cultural norms, socioeconomic status, and access to cessation resources. For instance, while smoking rates have declined among White and African American populations, certain groups like Native Americans and some Hispanic communities may still show higher prevalence rates. Additionally, disparities in access to healthcare and cessation support can further impact these trends, underscoring the need for targeted prevention and treatment strategies in diverse communities.",
+        "reference": "Tobacco use rates differ significantly among various racial and ethnic groups. For instance, American Indians and Alaska Natives have the highest smoking rate at approximately 21.9%, followed by African-Americans at 11.7%. Asian-Americans and Hispanics have lower rates, with 5.4% and 7.7% respectively. Non-Hispanic Whites have a rate of 12.9%. Additionally, menthol cigarette use is notably higher among African-American smokers, with 84% of adolescent Black smokers preferring menthols.",
+        "response_time": 2.30895733833313
+      },
+      {
+        "query": "How does smoking impact chronic pain?",
+        "response": "Smoking can exacerbate chronic pain by reducing blood flow and oxygen delivery to tissues, which can hinder healing and increase discomfort. Additionally, nicotine can interfere with pain medication effectiveness and may lead to increased sensitivity to pain. Quitting smoking has been shown to improve pain management and overall health outcomes for individuals suffering from chronic pain conditions.",
+        "reference": "Smoking can worsen chronic pain by interfering with pain medications and increasing sensitivity to pain. Conditions like back pain, fibromyalgia, tooth and gum pain, migraines, and rheumatoid arthritis may improve when smoking is stopped.",
+        "response_time": 1.7201440334320068
+      },
+      {
+        "query": "How does smoking affect the health of family members?",
+        "response": "Smoking can significantly impact the health of family members through secondhand smoke exposure, which is known to cause a variety of health issues, including respiratory infections, asthma, and an increased risk of heart disease and cancer. Children are particularly vulnerable, as secondhand smoke can lead to developmental problems and exacerbate existing health conditions. Additionally, living with a smoker can increase the likelihood of family members becoming smokers themselves due to social and environmental influences.",
+        "reference": "Smoking harms family members by exposing them to secondhand smoke, increasing their risk of cancer, heart disease, and respiratory issues, especially in children who are more susceptible to ear infections, pneumonia, bronchitis, and sudden infant death syndrome (SIDS).",
+        "response_time": 1.8541641235351562
+      },
+      {
+        "query": "What mechanisms underlie the effects of smoking on peripheral nerves?",
+        "response": "Smoking affects peripheral nerves primarily through the neurotoxic effects of nicotine and other harmful chemicals present in tobacco smoke. Nicotine can lead to the release of neurotransmitters that alter nerve signaling, while other toxic substances may cause inflammation and oxidative stress, damaging nerve fibers and impacting their function. This combination can contribute to peripheral neuropathy and other sensory disturbances associated with smoking.",
+        "reference": "The study suggests that both acute and chronic smoking can lead to changes in blood pH, resulting in acidosis. This shift in pH modifies the excitability properties of peripheral nerves, potentially disturbing their function. Additionally, substances in cigarette smoke may directly affect ion channels in nerve cells, further impacting nerve excitability.",
+        "response_time": 2.2512319087982178
+      },
+      {
+        "query": "What are tobacco triggers?",
+        "response": "Tobacco triggers are specific situations, people, or feelings that prompt an urge to smoke. Common triggers include being in places where you used to smoke, socializing with other smokers, or experiencing stress and negative emotions. Recognizing these triggers is essential for developing strategies to manage cravings and successfully quit smoking.",
+        "reference": "Tobacco triggers are certain activities, people, feelings, or situations that can make you want to use tobacco products. There are four kinds of triggers: emotional, pattern, social, and withdrawal. Identifying your triggers before you quit and throughout your quit journey can help you create a stronger quit plan to live tobacco-free.",
+        "response_time": 1.9767651557922363
+      },
+      {
+        "query": "What are the benefits of quitting tobacco after a cancer diagnosis?",
+        "response": "Quitting tobacco after a cancer diagnosis can significantly improve treatment outcomes and reduce the risk of cancer recurrence. It enhances overall health, decreases the likelihood of developing secondary cancers, and improves the effectiveness of cancer treatments, such as chemotherapy and radiation. Additionally, quitting tobacco can lead to better recovery rates and improved quality of life.",
+        "reference": "Quitting tobacco after a cancer diagnosis can lead to better responses to treatment, fewer and less serious side effects, faster recovery, lower risk of infection, easier breathing, and more energy. Additionally, it reduces the likelihood of developing a second cancer in the future.",
+        "response_time": 1.7548511028289795
+      },
+      {
+        "query": "Can smoking affect sleep quality related to sinus issues?",
+        "response": "Yes, smoking can negatively affect sleep quality, particularly in individuals with sinus issues. Nicotine and other chemicals in cigarettes can cause inflammation and congestion in the nasal passages, leading to breathing difficulties during sleep, which can result in disrupted sleep patterns and overall poorer sleep quality. Additionally, smoking can exacerbate respiratory conditions, further impacting the ability to achieve restful sleep.",
+        "reference": "Smoking can lead to nasal congestion and mucus buildup, which may cause coughing and difficulty sleeping at night. Additionally, smokers have higher rates of obstructive sleep apnea compared to non-smokers, further impacting sleep quality.",
+        "response_time": 2.1170670986175537
+      }
+    ],
+    "total_time": 193.56362509727478,
+    "avg_response_time": 1.9356142330169677,
+    "num_queries": 100,
+    "context_size": 12024
+  },
+  "dataset_rag": {
+    "approach": "Dataset RAG (Preprocessed)",
+    "model": "gpt-4o-mini",
+    "results": [
+      {
+        "query": "How does smoking affect skin oxygenation and circulation?",
+        "response": "Smoking negatively impacts skin oxygenation and circulation by causing blood vessels to constrict and spasm with each puff, leading to reduced blood flow and lower oxygen levels in the skin. This impaired circulation compromises the skin's ability to receive vital nutrients and oxygen, ultimately affecting its overall health and appearance.",
+        "reference": "With every puff your blood vessels immediately become thinner and spasm. This reduces circulation and the oxygen level in your blood \u2013 in a sense you give your skin the inability to breathe.",
+        "response_time": 1.3921079635620117
+      },
+      {
+        "query": "I've recently quit smoking and have been experiencing persistent coughing and cold-like symptoms. Is this normal?",
+        "response": "Yes, it's normal to experience persistent coughing and cold-like symptoms after quitting smoking. This is a sign that your lungs are clearing out mucus and toxins accumulated from smoking, and these symptoms are typically temporary as your respiratory system begins to heal.",
+        "reference": "Yes, it's common to experience coughing and cold-like symptoms after quitting smoking. This occurs because your lungs are clearing out mucus and toxins accumulated from smoking. These symptoms are typically temporary and indicate that your respiratory system is healing.",
+        "response_time": 1.3930010795593262
+      },
+      {
+        "query": "What strategies can help manage hot flushes while quitting smoking?",
+        "response": "To manage hot flushes while quitting smoking, keep your environment cool and dress in breathable layers to enhance comfort. Staying hydrated, practicing deep breathing, and avoiding triggers such as caffeine and alcohol can also help reduce the frequency and intensity of hot flushes during this transition.",
+        "reference": "Managing hot flushes during smoking cessation includes keeping the environment cool, dressing in breathable layers, staying hydrated, practicing deep breathing, and avoiding triggers like caffeine and alcohol.",
+        "response_time": 1.355785846710205
+      },
+      {
+        "query": "How does psychological stability relate to smoking prevention in youth?",
+        "response": "Psychological stability plays a crucial role in smoking prevention among youth, as it equips adolescents with the skills to manage stress and maintain emotional balance. Those with higher psychological resilience are less likely to resort to smoking as a coping mechanism, underscoring the importance of fostering emotional health and resilience early on to reduce the likelihood of smoking initiation.",
+        "reference": "Developing psychological stability\u2014skills to manage stress and maintain emotional balance\u2014can reduce smoking initiation. Adolescents with higher psychological resilience are less likely to use smoking as a coping strategy, highlighting the importance of fostering these traits early on.",
+        "response_time": 1.6156861782073975
+      },
+      {
+        "query": "Do all parents implement measures to reduce infants' exposure to tobacco smoke?",
+        "response": "No, not all parents implement measures to reduce their infants' exposure to tobacco smoke. Research indicates that about 10% of parents are either unaware of protective measures or do not use any strategies to shield their infants from secondhand smoke, highlighting the need for increased awareness and targeted smoking cessation programs.",
+        "reference": "No, 10% of parents were either unaware of measures or reported using none to protect their infants from tobacco smoke exposure.",
+        "response_time": 1.5697569847106934
+      },
+      {
+        "query": "How does individual counseling compare to self-help materials in promoting smoking cessation?",
+        "response": "Individual counseling is more effective than self-help materials in promoting smoking cessation. Research shows that face-to-face counseling sessions led by trained professionals result in higher quit rates compared to interventions that rely solely on self-help resources. This suggests that personalized support significantly enhances the likelihood of successfully quitting smoking.",
+        "reference": "Individual counseling is more effective than self-help materials in promoting smoking cessation. The review indicated that face-to-face counseling sessions led by trained professionals result in higher quit rates than interventions relying solely on self-help resources.",
+        "response_time": 1.52252197265625
+      },
+      {
+        "query": "How does secondhand smoke impact non-smokers' heart health?",
+        "response": "Secondhand smoke significantly increases the risk of heart disease and stroke in non-smokers. Even brief exposure can damage blood vessels, make blood more prone to clotting, and elevate the likelihood of heart attacks and strokes. Long-term exposure contributes to the development of atherosclerosis, further compromising cardiovascular health.",
+        "reference": "Secondhand smoke exposure increases the risk of heart disease and stroke in non-smokers. Even brief exposure can damage blood vessels, make blood more prone to clotting, and elevate the likelihood of a heart attack or stroke.",
+        "response_time": 1.3416271209716797
+      },
+      {
+        "query": "Are there benefits to combining nicotine replacement products?",
+        "response": "Yes, combining nicotine replacement products, such as using a nicotine patch alongside gum or lozenges, can enhance the chances of successfully quitting smoking. This approach provides a steady level of nicotine to manage withdrawal symptoms while also offering quick relief from cravings, making it a more effective strategy for many individuals.",
+        "reference": "Yes, combining products like the nicotine patch with gum or lozenges can increase success rates, as it provides both a steady nicotine level and quick relief from cravings.",
+        "response_time": 1.3610732555389404
+      },
+      {
+        "query": "I've been thinking about quitting smoking, but I'm not sure where to start.",
+        "response": "It's fantastic that you're considering quitting! Start by setting a quit date and developing a plan that includes using stop-smoking products or seeking support from a healthcare professional or a cessation program. Preparing for the journey ahead can significantly increase your chances of success.",
+        "reference": "It's great that you're considering quitting! Having a plan and the right support can make the process easier. Many people find it challenging to quit with willpower alone, so preparing ahead and using stop-smoking products or seeking expert help can significantly boost your chances of quitting for good.",
+        "response_time": 1.75779128074646
+      },
+      {
+        "query": "How does nicotine in cigarettes impact skin cells?",
+        "response": "Nicotine in cigarettes promotes apoptosis, or cell death, in skin cells, which can lead to premature aging and skin damage. Additionally, it damages blood vessels in the skin and reduces blood flow, resulting in a diminished supply of oxygen and nutrients essential for healthy skin.",
+        "reference": "Nicotine promotes apoptosis \u2014 cell death \u2014 in skin cells, damages blood vessels in the skin, and reduces blood flow.",
+        "response_time": 1.2690091133117676
+      },
+      {
+        "query": "Does smoking affect ovarian cysts?",
+        "response": "Yes, smoking does affect ovarian cysts. Research published in the International Journal of Fertility indicates that women who smoke have a higher prevalence of ovarian cysts compared to non-smokers, potentially due to smoking's influence on hormonal balance. Quitting smoking may help improve reproductive health and reduce the risk of developing ovarian cysts.",
+        "reference": "A study published in the International Journal of Fertility investigated the relationship between smoking and ovarian cysts. The researchers found that women who smoked had a higher prevalence of ovarian cysts compared to non-smokers. The study suggested that smoking may influence hormonal balance, potentially leading to the development of ovarian cysts.",
+        "response_time": 2.0554189682006836
+      },
+      {
+        "query": "How does smoking affect nerve function in the hands?",
+        "response": "Smoking can worsen nerve function in the hands, leading to symptoms such as tingling, numbness, and pain. This is particularly pronounced in individuals with underlying conditions like diabetes, who may experience more severe symptoms and ongoing nerve pain even after surgical interventions.",
+        "reference": "Smoking can exacerbate nerve problems in the hands, leading to symptoms such as tingling, numbness, and pain. Smokers, especially those with conditions like diabetes, often report more severe symptoms prior to surgeries like carpal tunnel release and may experience continued nerve pain even after the surgery.",
+        "response_time": 1.1534628868103027
+      },
+      {
+        "query": "Are there medications that can aid in quitting smoking?",
+        "response": "Yes, there are effective medications that can aid in quitting smoking. Nicotine replacement therapies, such as patches and gum, help alleviate cravings and withdrawal symptoms, while non-nicotine prescription medications like bupropion and varenicline can also be beneficial. It\u2019s advisable to consult with a healthcare provider to find the best option tailored to individual needs.",
+        "reference": "Yes, there are both nicotine replacement therapies (like patches and gum) and non-nicotine prescription medications (such as bupropion and varenicline) that can help reduce cravings and withdrawal symptoms. Consult with your healthcare provider to determine the best option for you.",
+        "response_time": 1.8685011863708496
+      },
+      {
+        "query": "Can quitting smoking reduce the risk of lymphoma?",
+        "response": "Yes, quitting smoking can reduce the risk of developing lymphoma. While the risk may not return to that of a never-smoker, cessation leads to improvements in immune system function and decreases chronic inflammation, which lowers the likelihood of lymphoma over time.",
+        "reference": "Yes, quitting smoking can reduce the risk of developing lymphoma. While the risk may not return to that of a never-smoker, cessation leads to improvements in immune system function and decreases chronic inflammation, thereby lowering the likelihood of lymphoma development over time.",
+        "response_time": 1.0895421504974365
+      },
+      {
+        "query": "What are some proven ways to help me quit smoking?",
+        "response": "Proven ways to help you quit smoking include using a combination of counseling and medications, such as nicotine replacement therapy or prescription medications, which significantly increase your chances of success. Engaging in social support and behavioral interventions can also enhance your quitting efforts. Utilizing these evidence-based strategies together can more than double your likelihood of quitting successfully.",
+        "reference": "Proven treatments, such as medication and counseling, are available, but less than one third of people trying to quit use them. Using counseling and medications together more than doubles your chances of quitting successfully.",
+        "response_time": 1.2746350765228271
+      },
+      {
+        "query": "How does smoking cessation affect the risk of atrial fibrillation?",
+        "response": "Smoking cessation significantly reduces the risk of developing atrial fibrillation (AF). Studies indicate that former smokers have a 13% lower risk of AF compared to current smokers, and those who quit during the study experienced an 18% reduction in risk, highlighting the protective effects of quitting smoking on heart health.",
+        "reference": "The study indicates that smoking cessation leads to a reduced risk of developing atrial fibrillation. Individuals who quit smoking have a lower prevalence of AF compared to those who continue smoking, suggesting that cessation has a protective effect on heart health.",
+        "response_time": 1.3218889236450195
+      },
+      {
+        "query": "Can quitting smoking improve PCOS management?",
+        "response": "Yes, quitting smoking can improve PCOS management by helping to restore hormonal balance and improve lipid profiles. Additionally, it reduces the risk of cardiovascular complications, making lifestyle changes, including smoking cessation, essential for effective management of PCOS.",
+        "reference": "Yes, quitting smoking can aid in managing PCOS by restoring hormonal balance, improving lipid profiles, and reducing the risk of cardiovascular complications. Lifestyle changes, including smoking cessation, are crucial for effective PCOS management.",
+        "response_time": 2.1917378902435303
+      },
+      {
+        "query": "How often do smokers attempt to quit?",
+        "response": "Smokers typically attempt to quit only once every 2 to 3 years, with about 40% making an attempt each year. However, only about 4% to 6% of those who try are successful in quitting long-term.",
+        "reference": "Smokers typically try to quit only once every 2 to 3 years, with about 40% attempting each year and 4% to 6% succeeding.",
+        "response_time": 1.4093928337097168
+      },
+      {
+        "query": "How can I maintain my social life while quitting smoking?",
+        "response": "To maintain your social life while quitting smoking, communicate your decision to friends and family and ask for their support. Suggest alternative smokefree activities, such as going to the movies or dining out, and if you have smoking friends, kindly request that they refrain from smoking around you to help you stay on track.",
+        "reference": "Communicate your decision to quit smoking to your friends and family, and ask for their support. Suggest alternative activities that don't involve smoking, such as going to the movies or dining out. If you have friends who smoke, kindly request that they refrain from smoking around you to help you stay on track.",
+        "response_time": 1.9620931148529053
+      },
+      {
+        "query": "How can I manage cravings to smoke?",
+        "response": "To manage cravings to smoke, remind yourself that cravings are a natural part of the withdrawal process. Use techniques like deep breathing, engaging in physical activities, or distracting yourself with hobbies. Additionally, focusing on your personal reasons for quitting can help reinforce your commitment to stay smoke-free.",
+        "reference": "To manage cravings, remind yourself that they are a natural part of withdrawal. Take deep breaths, distract yourself with activities, and focus on your reasons for quitting to help overcome the urge.",
+        "response_time": 1.5411250591278076
+      },
+      {
+        "query": "What strategies can help improve my mood during this period?",
+        "response": "To improve your mood during smoking cessation, engage in regular physical activity and practice relaxation techniques such as deep breathing or meditation. Additionally, maintaining a healthy diet can help alleviate stress and enhance your overall well-being during this challenging time.",
+        "reference": "Engaging in regular physical activity, practicing relaxation techniques like deep breathing or meditation, and maintaining a healthy diet can help boost your mood and alleviate stress during this time.",
+        "response_time": 1.2887251377105713
+      },
+      {
+        "query": "What should I do if my child has already started using tobacco?",
+        "response": "If your child has started using tobacco, approach the situation with empathy and understanding. Engage in open conversations to explore their reasons for using tobacco, and provide your support while encouraging healthier choices. Consider seeking resources or professional help to assist your child in quitting.",
+        "reference": "If your child has begun using tobacco, approach the situation with understanding. Ask questions to understand their reasons, avoid threats, and show support. Sharing your own experiences and quitting together can be beneficial.",
+        "response_time": 2.1612389087677
+      },
+      {
+        "query": "What are the specific skin conditions linked to smoking?",
+        "response": "Smoking is linked to several skin conditions, including psoriasis, hidradenitis suppurativa, and cutaneous lupus erythematosus, often worsening their severity. Additionally, smoking contributes to skin aging by decreasing collagen content and impairing elasticity, leading to wrinkles and sagging skin.",
+        "reference": "Smoking may lead to skin diseases like psoriasis, acne, eczema, and skin cancer.",
+        "response_time": 2.0273890495300293
+      },
+      {
+        "query": "How does smoking during pregnancy affect a baby's birth weight?",
+        "response": "Smoking during pregnancy significantly increases the risk of having a baby with low birth weight, defined as less than 5 pounds, 8 ounces (2.49 kilograms). The harmful chemicals in cigarettes reduce the oxygen supply to the fetus, impairing its growth and development, which can lead to complications such as low birth weight.",
+        "reference": "People that smoke during pregnancy have a higher risk of having a baby with a low birth weight \u2014 less than 5 pounds, 8 ounces (2.49 kilograms).",
+        "response_time": 1.2455108165740967
+      },
+      {
+        "query": "Steps to Manage Quit Day",
+        "response": "Today is your quit day\u2014be proud of your decision! To manage the day effectively, prepare for cravings and triggers by identifying your coping strategies, such as deep breathing or engaging in a distracting activity. Stay connected with supportive friends or resources to help you through difficult moments as you embrace your smokefree journey.",
+        "reference": "Today is your quit day, be proud! Start strong by knowing what to expect and how to manage difficult moments on your first smokefree day.",
+        "response_time": 1.3301022052764893
+      },
+      {
+        "query": "How does smoking affect cognitive function in older adults?",
+        "response": "Smoking negatively impacts cognitive function in older adults, as studies have shown that current smokers exhibit lower cognitive performance compared to non-smokers. This decline in cognitive abilities persists even when accounting for early-life intelligence, indicating that smoking contributes to cognitive deterioration in later life.",
+        "reference": "Smoking is associated with lower cognitive performance in older adults. A study involving individuals aged 70 found that current smokers had reduced cognitive abilities compared to non-smokers. This relationship persisted even after accounting for childhood intelligence, suggesting that smoking contributes to cognitive decline beyond early-life cognitive abilities.",
+        "response_time": 1.2566978931427002
+      },
+      {
+        "query": "Can smoking cause seizures?",
+        "response": "Yes, smoking can potentially cause seizures. It exposes the brain to nicotine and other chemicals that may promote seizure activity, and research indicates that smokers may have a higher likelihood of developing epilepsy compared to nonsmokers. However, the exact relationship between smoking and seizures is not fully understood, so it's important to consult with a healthcare provider for personalized advice.",
+        "reference": "Smoking may increase seizure frequency in people with epilepsy.",
+        "response_time": 1.735598087310791
+      },
+      {
+        "query": "How does secondhand smoke affect community health?",
+        "response": "Secondhand smoke significantly impacts community health by increasing the risk of serious health conditions such as coronary heart disease, stroke, and lung cancer in adults. Additionally, it contributes to respiratory infections and asthma attacks in children, highlighting the importance of reducing exposure to protect the overall health of the community.",
+        "reference": "Secondhand smoke exposure can cause coronary heart disease, stroke, lung cancer in adults, and respiratory infections, ear infections, asthma attacks, and sudden infant death syndrome in children.",
+        "response_time": 2.1205639839172363
+      },
+      {
+        "query": "When should someone seek professional help for mood changes after quitting?",
+        "response": "Someone should seek professional help for mood changes after quitting smoking if these changes persist beyond a few weeks or if they worsen over time. These could be indicators of depression or another mental health condition, and consulting a healthcare provider is important for proper assessment and support.",
+        "reference": "If mood changes persist beyond a few weeks or worsen, it may be a sign of depression or another mental health condition. It's important to consult a healthcare provider in such cases.",
+        "response_time": 1.1322031021118164
+      },
+      {
+        "query": "What are effective strategies for managing nicotine withdrawal symptoms?",
+        "response": "Effective strategies for managing nicotine withdrawal symptoms include utilizing nicotine replacement therapies (such as patches or gum), engaging in physical activity, and practicing relaxation techniques like deep breathing or mindfulness. Additionally, establishing a supportive network through counseling or support groups can provide encouragement and help individuals cope with cravings and withdrawal challenges.",
+        "reference": "Managing nicotine withdrawal involves a combination of behavioral strategies and, if necessary, pharmacological support. Behavioral strategies include: 1. **Distraction Techniques**: Engage in activities like walking, chewing gum, or deep breathing exercises to divert attention from cravings. 2. **Avoiding Triggers**: Steer clear of situations or substances that prompt the urge to smoke, such as alcohol or caffeine. 3. **Routine Changes**: Establish new habits to replace smoking routines, like taking a different route to work or changing your coffee break habits. 4. **Support Systems**: Utilize support groups or counseling to share experiences and gain encouragement. Pharmacological aids include: 1. **Nicotine Replacement Therapy (NRT)**: Products like patches, gum, or lozenges can help reduce withdrawal symptoms by providing a controlled dose of nicotine. 2. **Prescription Medications**: Medications such as bupropion or varenicline may be prescribed to alleviate withdrawal symptoms and reduce cravings. It's essential to consult with a healthcare provider to determine the most appropriate strategy tailored to individual needs.",
+        "response_time": 1.7390930652618408
+      },
+      {
+        "query": "How can I manage weight gain after quitting smoking?",
+        "response": "To manage weight gain after quitting smoking, focus on a balanced diet rich in fruits, vegetables, and whole grains while engaging in regular physical activity such as walking or cycling. Stay hydrated, practice mindful eating to differentiate between hunger and cravings, and consider healthy snacks like sliced fruits or vegetables to keep your hands busy. Remember, the health benefits of quitting smoking far outweigh any modest weight gain you may experience.",
+        "reference": "To manage weight gain after quitting smoking, engage in regular physical activity, eat balanced meals, stay hydrated, and practice mindful eating to distinguish between hunger and cravings.",
+        "response_time": 1.9332621097564697
+      },
+      {
+        "query": "How does thinking of myself as a non-smoker help me quit?",
+        "response": "Thinking of yourself as a non-smoker helps reinforce your commitment to quitting by aligning your identity with your quit goals. This positive self-image can enhance your motivation and resilience, making it easier to resist cravings and stay focused on the benefits of a smoke-free life.",
+        "reference": "Thinking of yourself as a non-smoker can increase your chances of staying quit, as it aligns your identity with your quit goals.",
+        "response_time": 1.6199181079864502
+      },
+      {
+        "query": "Are cigars addictive?",
+        "response": "Yes, cigars are addictive because they contain nicotine, the same addictive substance found in cigarettes and other tobacco products. Nicotine can be absorbed through the lining of the mouth, even if the smoke is not inhaled, contributing to dependence.",
+        "reference": "Yes. Cigars contain nicotine, the same addictive drug found in cigarettes and other tobacco products. Nicotine is absorbed through the lining of the mouth even if the smoke is not inhaled.",
+        "response_time": 1.0165228843688965
+      },
+      {
+        "query": "Why is it important to address smoking cessation in cancer treatment?",
+        "response": "Addressing smoking cessation in cancer treatment is vital because continued smoking can significantly reduce the effectiveness of cancer therapies, increase the risk of cancer recurrence, and negatively impact overall survival rates. Quitting smoking not only enhances treatment outcomes but also improves the quality of life for cancer patients, making it an essential aspect of comprehensive cancer care.",
+        "reference": "Addressing smoking cessation is crucial because continued smoking can reduce treatment efficacy, increase the risk of recurrence, and negatively impact overall survival rates in cancer patients.",
+        "response_time": 1.422489881515503
+      },
+      {
+        "query": "What behavioral therapies can help me quit smoking?",
+        "response": "Behavioral therapies such as Cognitive Behavioral Therapy (CBT) and Dialectical Behavior Therapy (DBT) can effectively support smoking cessation by helping individuals identify triggers, manage cravings, and develop healthier coping strategies. Additionally, Motivational Interviewing (MI) enhances motivation to quit, while participation in individual and group therapy offers valuable support and accountability. Combining these therapies with other treatments can significantly increase the chances of successfully quitting smoking.",
+        "reference": "Behavioral therapies are effective tools for smoking cessation, providing strategies to manage cravings, identify triggers, and develop healthier habits. At Recovery Ranch, several behavioral therapies are utilized to assist individuals in quitting smoking: 1.Cognitive Behavioral Therapy (CBT): CBT helps individuals recognize and change negative thought patterns and behaviors associated with smoking. By identifying triggers and developing coping strategies, CBT supports long-term cessation efforts. 2.Dialectical Behavior Therapy (DBT):** DBT focuses on managing intense emotions and reducing self-destructive behaviors. It combines mindfulness practices with behavioral techniques to help individuals resist the urge to smoke, especially in response to stress or emotional distress. 3.Motivational Interviewing (MI): MI is a client-centered approach that enhances motivation to quit smoking by exploring and resolving ambivalence. It empowers individuals to set and achieve their cessation goals. 4.12-Step Programs: These programs provide a structured framework for recovery, emphasizing personal accountability, peer support, and spiritual growth. Participation in 12-step groups can offer encouragement and a sense of community during the quitting process. 5.Individual and Group Therapy:** Engaging in therapy sessions, both one-on-one and in groups, allows individuals to share experiences, gain insights, and receive support from peers and professionals. Combining these therapies with other treatments, such as medication or nicotine replacement therapy, can increase the likelihood of successful smoking cessation. Recovery Ranch offers personalized treatment plans to address the unique needs of each individual on their journey to quit smoking.",
+        "response_time": 2.6819679737091064
+      },
+      {
+        "query": "Does quitting tobacco affect breathing and oxygen delivery during exercise?",
+        "response": "Yes, quitting tobacco significantly improves breathing and oxygen delivery during exercise. This is due to reduced lung inflammation and tar buildup, leading to better lung function and increased oxygen supply to the muscles, which enhances overall exercise performance.",
+        "reference": "Yes, quitting tobacco reduces lung inflammation and tar buildup, resulting in better breathing and increased oxygen delivery to muscles during exercise. This improvement supports higher-intensity workouts and better overall performance.",
+        "response_time": 1.5962591171264648
+      },
+      {
+        "query": "How does smoking cessation affect sleep, specifically nightmares?",
+        "response": "Smoking cessation can lead to disturbances in sleep, particularly during the initial withdrawal phase, where individuals may experience vivid dreams or nightmares. This is largely due to the body's adjustment to the absence of nicotine and changes in brain chemistry. While these sleep disturbances can be unsettling, they are typically temporary and tend to subside as the body acclimates to life without smoking.",
+        "reference": "Smoking cessation can affect sleep, especially during the initial withdrawal phase. Many individuals report experiencing vivid dreams or nightmares, which can be unsettling. This is often a result of the body's adjustment to the absence of nicotine and the associated changes in brain chemistry. While these disturbances can be temporary, they tend to subside as the body adjusts to life without nicotine.",
+        "response_time": 4.535313844680786
+      },
+      {
+        "query": "Nicotine Withdrawal",
+        "response": "Nicotine withdrawal can lead to symptoms such as irritability, cravings, difficulty concentrating, and increased appetite. These symptoms typically begin within a few hours after quitting, peak during the first week, and can last for 3 to 4 weeks. To manage withdrawal, consider using nicotine replacement therapies, engaging in physical activity, and seeking support from friends, family, or support groups.",
+        "reference": "Nicotine withdrawal is challenging, but knowing what to expect and being prepared can help.",
+        "response_time": 1.8864657878875732
+      },
+      {
+        "query": "How can I prevent heart palpitations related to smoking?",
+        "response": "Quitting smoking is the most effective way to prevent heart palpitations associated with tobacco use. By eliminating nicotine and other harmful substances found in cigarettes, you can significantly improve your cardiovascular health and reduce the occurrence of heart palpitations. Consider seeking support through counseling, cessation programs, or medications to help you quit successfully.",
+        "reference": "Quitting smoking is the most effective way to prevent smoking-induced heart palpitations and improve overall cardiovascular health.",
+        "response_time": 1.943033218383789
+      },
+      {
+        "query": "Is smoking after exercising more harmful than smoking before?",
+        "response": "Smoking after exercising is not necessarily more harmful than smoking before; however, it undermines the health benefits gained from the workout. While exercise can help mitigate some effects of smoking, it does not negate the harm caused by smoking itself. Ultimately, both scenarios are detrimental to your health, and quitting smoking is the best option for improving overall well-being.",
+        "reference": "Smoking after a workout might seem counterintuitive, but exercise is helpful if you're addicted to cigarettes. Although it cannot cancel out the effects of smoking, it will make you healthier and may even help you kick this habit.",
+        "response_time": 1.88944411277771
+      },
+      {
+        "query": "Why is secondhand smoke considered a serious health threat?",
+        "response": "Secondhand smoke is considered a serious health threat because it contains over 4,000 chemicals, many of which are toxic or cancer-causing. Exposure increases the risk of serious illnesses such as lung cancer, heart disease, and stroke in non-smokers, with children being particularly vulnerable to health issues like asthma and developmental problems. There is no safe level of exposure, making it a significant public health concern.",
+        "reference": "Secondhand smoke contains over 4,000 chemicals, many of which are toxic or cancer-causing, making it a major health hazard.It increases the risk of serious illnesses like lung cancer, heart disease, and stroke in non-smokers.Children are especially vulnerable, often suffering from asthma, infections, and developmental problems.",
+        "response_time": 2.47505521774292
+      },
+      {
+        "query": "What are common withdrawal symptoms after quitting smoking?",
+        "response": "Common withdrawal symptoms after quitting smoking include intense cravings for nicotine, increased appetite, irritability, anxiety, and difficulty concentrating. Physical symptoms may also include coughing, headaches, and sleep disturbances. These symptoms typically peak within the first few days and can subside over two to four weeks.",
+        "reference": "Common withdrawal symptoms include increased coughing, dizziness, tingling sensations, heightened appetite, mood changes such as anxiety and irritability, sleep disturbances, sore tongue or mouth ulcers, bowel changes, and intense nicotine cravings.",
+        "response_time": 3.977576971054077
+      },
+      {
+        "query": "What measures can be taken to reduce the risk of placental abruption related to smoking?",
+        "response": "To reduce the risk of placental abruption related to smoking, pregnant women should completely avoid both active smoking and exposure to second-hand smoke. Engaging in smoking cessation programs and creating smoke-free environments can significantly decrease the likelihood of this complication. Healthcare providers should actively counsel expectant mothers about the risks of smoking and offer resources to support quitting.",
+        "reference": "To reduce the risk of placental abruption associated with smoking, it is crucial for pregnant women to avoid both active smoking and exposure to second-hand smoke. Implementing smoking cessation programs and promoting smoke-free environments can significantly lower the incidence of this complication. Healthcare providers should counsel expectant mothers on the risks of smoking and provide resources to support quitting.",
+        "response_time": 2.095264196395874
+      },
+      {
+        "query": "How does smoking affect back pain?",
+        "response": "Smoking negatively impacts back pain by impairing blood flow to spinal tissues, which can lead to disc degeneration and increased inflammation. These factors contribute to the development and exacerbation of back pain, making it more difficult for individuals to manage their symptoms effectively. Quitting smoking can help alleviate some of these issues and improve overall spinal health.",
+        "reference": "Smoking impairs blood flow to spinal tissues, contributes to disc degeneration, and increases inflammation, all of which can lead to or exacerbate back pain.",
+        "response_time": 1.6411609649658203
+      },
+      {
+        "query": "That\u2019s concerning. If e-cigarettes aren\u2019t a good quitting aid, what actually works?",
+        "response": "The most effective methods for quitting smoking include receiving brief advice from healthcare professionals, utilizing national quit lines, and using mobile cessation apps. Additionally, approved therapies such as nicotine replacement products and prescription medications have been shown to significantly aid in the quitting process.",
+        "reference": "The best methods include brief advice from health professionals, national quit lines, mobile cessation apps, and approved therapies like nicotine replacement products or prescription medications.",
+        "response_time": 1.1767079830169678
+      },
+      {
+        "query": "What are the common symptoms experienced during nicotine withdrawal?",
+        "response": "Common symptoms experienced during nicotine withdrawal include cravings, irritability, anxiety, restlessness, difficulty concentrating, mood swings, insomnia, and increased appetite. These symptoms are typically most intense during the first few days after quitting but generally decrease in severity over time as the body adjusts to the absence of nicotine.",
+        "reference": "Common nicotine withdrawal symptoms include cravings, difficulty concentrating, restlessness, depression, frustration, anger, irritability, insomnia, anxiety, increased appetite, headaches, dizziness, fatigue, coughing, constipation, and mouth ulcers. The intensity and duration of these symptoms can vary among individuals.",
+        "response_time": 1.1904761791229248
+      },
+      {
+        "query": "Does smoking impair the healing of gastric ulcers?",
+        "response": "Yes, smoking impairs the healing of gastric ulcers by reducing mucosal blood flow, decreasing prostaglandin production, and inhibiting epithelial cell proliferation, all of which are critical for the repair process. This can lead to prolonged healing times and increased risk of complications associated with gastric ulcers.",
+        "reference": "Yes, smoking impairs ulcer healing by reducing mucosal blood flow, prostaglandin production, and epithelial cell proliferation, all of which are essential for the repair process.",
+        "response_time": 1.5608057975769043
+      },
+      {
+        "query": "How can social smokers quit?",
+        "response": "Social smokers can quit by identifying their specific triggers and setting clear boundaries around situations where they might be tempted to smoke. Seeking support from non-smoking friends and utilizing professional resources like counseling or quitlines can also enhance their chances of success.",
+        "reference": "To quit, identify triggers, set clear boundaries, seek support from non-smoking friends, and consider professional resources like counseling or quitlines.",
+        "response_time": 1.240441083908081
+      },
+      {
+        "query": "How does this compare to smoking cessation rates among cancer survivors?",
+        "response": "Smoking cessation rates among stroke survivors are generally lower than those observed in cancer survivors. Research indicates that cancer survivors tend to have higher cessation rates, highlighting a potential area for targeted support and intervention for stroke survivors who may struggle to quit smoking.",
+        "reference": "Stroke survivors are less likely to quit smoking compared to cancer survivors; the latter group shows higher cessation rates.",
+        "response_time": 2.300261974334717
+      },
+      {
+        "query": "Who smokes more, men or women?",
+        "response": "Men are more likely to smoke than women, with more than one-third of men globally engaging in smoking compared to just over 8% of women. This pattern is consistent across nearly all countries, highlighting a significant gender disparity in smoking rates.",
+        "reference": "Globally, men are more likely to smoke than women. More than one-third of men smoke, while just over 8% of women do. This pattern is consistent across nearly all countries, with very few exceptions.",
+        "response_time": 2.533447027206421
+      },
+      {
+        "query": "What is varenicline and how does it help quit tobacco?",
+        "response": "Varenicline is an FDA-approved prescription medication that aids in smoking cessation by targeting nicotine receptors in the brain. It reduces the pleasurable effects of tobacco, which diminishes cravings and withdrawal symptoms, making it easier for individuals to quit smoking.",
+        "reference": "Varenicline is an FDA-approved prescription drug that contains no nicotine. It helps you quit tobacco by cutting the pleasure your brain gets from using tobacco and reducing the withdrawal symptoms.",
+        "response_time": 1.507781982421875
+      },
+      {
+        "query": "Does smoking increase the risk of lymphoma?",
+        "response": "Yes, smoking increases the risk of lymphoma, particularly Hodgkin lymphoma (HL) and T-cell non-Hodgkin lymphoma (NHL). Research indicates that smoking can raise the risk of NHL by as much as 45%, and the relationship appears to be dose-dependent, with heavier smoking correlating to a greater likelihood of developing these types of lymphoma.",
+        "reference": "Yes, smoking is linked to an increased risk of lymphoma, particularly Hodgkin lymphoma (HL) and T-cell non-Hodgkin lymphoma (NHL). Depending on how much someone has smoked, it can increase the risk of lymphoma by as much as 45 percent.",
+        "response_time": 1.5563950538635254
+      },
+      {
+        "query": "What are the long-term effects of smoking on vocal health?",
+        "response": "Long-term smoking can lead to serious vocal health issues, including chronic laryngitis, vocal fold polyps, and an increased risk of cancers of the larynx and surrounding areas. It also causes structural changes in the vocal cords, resulting in a deeper, hoarse voice and diminished vocal control, which can significantly impact vocal performance.",
+        "reference": "Long-term smoking can lead to structural changes in the larynx, increasing the risk of laryngeal diseases and cancers such as oral, pharyngeal, and laryngeal cancer. It also causes the vocal cords to become heavier, lowering the fundamental frequency and altering voice characteristics.",
+        "response_time": 1.8305609226226807
+      },
+      {
+        "query": "What was the methodology used to assess the impact of smoking on cervical cancer outcomes?",
+        "response": "The methodology used to assess the impact of smoking on cervical cancer outcomes involved analyzing 96 patients with locally advanced cervical cancer who received definitive radiation or chemoradiation followed by brachytherapy. Smoking status was determined through intake questionnaires and quantified by pack-years, while outcomes such as pelvic control, disease-free survival, and overall survival were evaluated using multivariable Cox proportional hazards models.",
+        "reference": "The study analyzed 96 patients with locally advanced cervical cancer who underwent definitive radiation or chemoradiation followed by brachytherapy. Smoking status was determined through intake questionnaires and quantified by pack-years. Outcomes such as pelvic control, disease-free survival, and overall survival were evaluated using multivariable Cox proportional hazards models.",
+        "response_time": 1.4013819694519043
+      },
+      {
+        "query": "What percentage of adolescents whose parents are non-smokers have ever smoked?",
+        "response": "According to research, 13% of adolescents whose parents are non-smokers have reported having ever smoked at least one cigarette. This statistic highlights the influence of parental smoking behavior on adolescent smoking habits.",
+        "reference": "According to the study, 13% of adolescents whose parents never smoked reported having ever smoked at least one cigarette.",
+        "response_time": 1.0013587474822998
+      },
+      {
+        "query": "What strategies can help individuals with anxiety disorders quit smoking successfully?",
+        "response": "Individuals with anxiety disorders can successfully quit smoking by seeking professional support from therapists who specialize in anxiety management, engaging in regular physical activity to alleviate stress, and practicing relaxation techniques like deep breathing and meditation. Gradually reducing nicotine intake can help minimize withdrawal symptoms, while developing healthy coping mechanisms to replace the temporary relief provided by nicotine is also beneficial.",
+        "reference": "Effective strategies include seeking professional support from therapists experienced in anxiety disorders, engaging in regular physical activity to manage stress, practicing relaxation techniques such as deep breathing and meditation, and gradually reducing nicotine intake to minimize withdrawal symptoms. It's also beneficial to develop healthy coping mechanisms to replace the temporary relief previously provided by nicotine.",
+        "response_time": 1.581554889678955
+      },
+      {
+        "query": "How does smoking affect memory and sleep quality?",
+        "response": "Smoking negatively affects both memory and sleep quality. It impairs cognitive function by disrupting working memory and concentration, while also leading to shallower sleep and increased disturbances due to the stimulating effects of nicotine and withdrawal symptoms. Overall, smokers experience reduced sleep quality and increased daytime fatigue compared to non-smokers.",
+        "reference": "Smoking negatively impacts both memory and sleep quality. It can damage the endothelium, leading to atherosclerosis and inflammation, which in turn may impair neuronal function and cognitive abilities. Additionally, smoking is associated with reduced sleep quality, potentially due to nicotine's stimulating effects and withdrawal symptoms during sleep.",
+        "response_time": 1.7006189823150635
+      },
+      {
+        "query": "How does trauma exposure relate to cigarette smoking?",
+        "response": "Trauma exposure often leads individuals to use cigarette smoking as a coping mechanism to manage stress, anxiety, and negative emotions. The act of smoking activates reward pathways in the brain, providing temporary relief from the distressing feelings associated with trauma. This can create a cycle where individuals rely on smoking to cope with their trauma-related symptoms.",
+        "reference": "Trauma survivors often use smoking as a coping mechanism to manage stress, anxiety, and negative emotions. Smoking activates reward pathways in the brain, providing temporary relief from distressing feelings associated with trauma.",
+        "response_time": 2.798185110092163
+      },
+      {
+        "query": "Can smoking cause stomach pain?",
+        "response": "Yes, smoking can cause stomach pain as it introduces harmful chemicals that disrupt the normal functioning of the digestive system. These chemicals can lead to various digestive issues and discomfort in the abdomen. Quitting smoking can help alleviate these symptoms and promote healing in the digestive tract.",
+        "reference": "Smoking can produce multiple negative effects on the stomach and other organs of the digestive tract, leading to pain and discomfort in the abdomen.",
+        "response_time": 1.2222509384155273
+      },
+      {
+        "query": "Are there specific foods that help cleanse the lungs?",
+        "response": "Yes, certain foods can help cleanse and improve lung health. It's beneficial to consume foods high in antioxidants, such as berries and leafy green vegetables, which combat inflammation, while foods rich in bromelain like pineapples can also aid in reducing inflammation. Staying hydrated with water is essential for thinning mucus in the lungs, promoting easier breathing.",
+        "reference": "If you want to clean and improve your lung health, there are some foods and products that you should avoid and others you should consume more often: Say No To- Fast Food, Processed Foods & Meats, Dairy Products, Frozen Convenience Foods, Candies and Sweets, Caffeine. Say Yes To: Pineapples, which contain bromelain, a compound that helps reduce inflammation, Citrus fruits and berries, such as blueberries, limes, lemons, oranges, and blackberries, Leafy green vegetables, such as spinach, kale, arugula, collard greens, lettuce, and broccoli, Fresh meats and fish, Foods with high chlorophyll, such as parsley, sprouts, wheatgrass, asparagus, celery, and grapes help oxygenate the body",
+        "response_time": 1.6606981754302979
+      },
+      {
+        "query": "What recommendations can be made for individuals who have quit smoking regarding FSG and NAFLD?",
+        "response": "For individuals who have quit smoking, it is advisable to monitor fasting serum glucose (FSG) levels to mitigate the risk of non-alcoholic fatty liver disease (NAFLD). Maintaining stable or reduced FSG levels through regular screening and lifestyle interventions can help manage potential metabolic complications following smoking cessation. Engaging with healthcare providers for tailored guidance is also recommended.",
+        "reference": "For individuals who have quit smoking, it's recommended to monitor fasting serum glucose (FSG) levels to assess and manage the risk of non-alcoholic fatty liver disease (NAFLD). Maintaining stable or reduced FSG levels post-cessation may lower the risk of developing NAFLD. Healthcare providers should consider regular screening and lifestyle interventions aimed at controlling blood glucose levels to mitigate potential metabolic complications associated with smoking cessation.",
+        "response_time": 1.6320867538452148
+      },
+      {
+        "query": "Is there a link between childhood trauma and smoking addiction?",
+        "response": "While a study involving 216 adults found no direct correlation between adverse childhood experiences and smoking addiction levels overall, there was a significant negative correlation between nicotine dependence and specific types of trauma, such as emotional abuse, physical neglect, and emotional neglect. This suggests that the relationship may vary depending on the type of childhood trauma experienced and cultural contexts.",
+        "reference": "A study involving 216 adults found no direct correlation between adverse childhood experiences and smoking addiction levels. However, a significant negative correlation was observed between nicotine dependence and scores related to emotional abuse, physical neglect, and emotional neglect, suggesting that the relationship may vary based on specific trauma types and cultural contexts.",
+        "response_time": 1.6584720611572266
+      },
+      {
+        "query": "Are there reproductive health risks associated with smoking for women?",
+        "response": "Yes, smoking poses significant reproductive health risks for women, including increased chances of infertility, miscarriages, and pregnancy complications such as preterm birth and low birth weight. Additionally, smoking during pregnancy can lead to serious health issues for both the mother and the developing fetus.",
+        "reference": "Yes, smoking adversely affects women's reproductive health, leading to increased risks of infertility, miscarriages, and pregnancy complications such as preterm birth and low birth weight. Women who smoke are also more likely to experience complications during pregnancy, posing risks to both maternal and fetal health.",
+        "response_time": 1.8270642757415771
+      },
+      {
+        "query": "What are the long-term effects of smoking?",
+        "response": "Long-term smoking significantly increases the risk of developing chronic diseases such as heart disease, stroke, and various cancers, including lung and throat cancer. It also leads to respiratory issues like chronic bronchitis and emphysema, reduces overall health, and can shorten life expectancy. Additionally, smoking harms nearly every organ in the body, contributing to a wide range of health problems.",
+        "reference": "Long-term smoking increases the risk of developing chronic diseases like heart disease, lung cancer, and stroke. It also leads to respiratory issues, a weakened immune system, and reduced life expectancy.",
+        "response_time": 1.5115489959716797
+      },
+      {
+        "query": "How does diet influence lung recovery after smoking?",
+        "response": "Diet significantly influences lung recovery after smoking by incorporating anti-inflammatory foods such as pineapples, citrus fruits, berries, and leafy greens, which help reduce inflammation and improve lung function. It's also important to avoid processed foods, dairy products, and caffeine to prevent further respiratory issues and support overall lung health.",
+        "reference": "Diet plays a crucial role in lung recovery. Consuming anti-inflammatory foods like pineapples, citrus fruits, berries, leafy greens, and foods high in chlorophyll can aid in reducing inflammation and improving lung function. Conversely, avoiding processed foods, dairy products, and caffeine can prevent further respiratory issues.",
+        "response_time": 1.325822114944458
+      },
+      {
+        "query": "What are the global smoking rates among men and women?",
+        "response": "Nearly one-in-four adults globally smoke tobacco, with more than one-third of men (approximately 33%) engaging in this habit compared to just over 8% of women. This significant gender disparity highlights the need for targeted smoking cessation efforts and prevention strategies.",
+        "reference": "Nearly one-in-four adults in the world smokes tobacco. More than one-third of men, but just over 8% of women do.",
+        "response_time": 1.1648807525634766
+      },
+      {
+        "query": "What are common withdrawal symptoms when quitting smoking?",
+        "response": "When quitting smoking, individuals commonly experience withdrawal symptoms such as irritability, anxiety, difficulty concentrating, increased appetite, and insomnia. Physical symptoms may include cravings, cough, headaches, and fatigue. These symptoms typically peak within the first few days and gradually subside over two to four weeks.",
+        "reference": "Common withdrawal symptoms include cigarette cravings, mood changes such as anxiety, irritability, and depression, as well as physical symptoms like increased appetite, insomnia, headaches, and coughing. These symptoms are part of the body's adjustment to the absence of nicotine.",
+        "response_time": 1.5704751014709473
+      },
+      {
+        "query": "What is the author's attitude towards medical advice on smoking?",
+        "response": "The author exhibits a dismissive and sarcastic attitude towards medical advice on smoking, often mocking the severity of health warnings. This suggests a prioritization of perceived coolness over genuine health concerns, as evidenced by jokes about potential consequences like a laryngectomy.",
+        "reference": "The author adopts a dismissive and sarcastic tone towards medical warnings, even mocking the potential need for a laryngectomy by joking about sounding like a robot, indicating a prioritization of perceived coolness over health concerns.",
+        "response_time": 2.3275551795959473
+      },
+      {
+        "query": "Why is it so hard to quit smoking?",
+        "response": "Quitting smoking is challenging due to the dual nature of addiction: it involves both a chemical dependence on nicotine and deeply ingrained behavioral habits. Nicotine withdrawal can lead to cravings and negative emotions, making it difficult for individuals to resist the urge to smoke.",
+        "reference": "Quitting is difficult because smoking is both a chemical addiction to nicotine and a behavioral habit. The brain craves nicotine, and the routine of smoking becomes deeply ingrained.",
+        "response_time": 3.1407837867736816
+      },
+      {
+        "query": "Why do I feel mentally foggy after quitting smoking?",
+        "response": "Experiencing mental fog after quitting smoking is a common withdrawal symptom, as nicotine impacts neurotransmitters in the brain. The absence of nicotine can temporarily impair cognitive functions like focus and memory, with this foggy feeling typically most noticeable during the first week or two after quitting.",
+        "reference": "Experiencing brain fog after quitting smoking is a common withdrawal symptom. Nicotine affects neurotransmitters in the brain, and its absence can temporarily impair cognitive functions like focus and memory. This foggy feeling is typically most noticeable in the first week or two after quitting.",
+        "response_time": 1.2678768634796143
+      },
+      {
+        "query": "What types of exercise are recommended for those attempting to quit smoking?",
+        "response": "For those attempting to quit smoking, cardiovascular exercises such as walking, cycling, swimming, and jogging are highly recommended, as they can help manage withdrawal symptoms and reduce cravings. Engaging in moderate-intensity activities for at least 30 minutes most days can also improve mood and overall well-being, supporting the cessation process.",
+        "reference": "Both cardiovascular exercises, such as walking or cycling, and resistance training have been explored for their potential benefits in smoking cessation. Engaging in regular physical activity may help manage withdrawal symptoms and reduce cravings during quit attempts.",
+        "response_time": 1.9251670837402344
+      },
+      {
+        "query": "Can quitting smoking improve musculoskeletal health?",
+        "response": "Yes, quitting smoking can significantly improve musculoskeletal health. It positively affects bone metabolism in the long term and is particularly beneficial for individuals undergoing orthopedic surgery, as it enhances healing processes, reduces complications, and shortens hospital stays.",
+        "reference": "Smoking cessation is highly advisable, with positive effects on bone metabolism in the long term. More immediate benefits can be observed in patients undergoing orthopedic surgery, including improved healing processes, reduced frequency of complications, and shortened hospital stays.",
+        "response_time": 1.5066759586334229
+      },
+      {
+        "query": "How does quitting tobacco contribute to a healthier diet?",
+        "response": "Quitting tobacco opens up more opportunities to nourish your body with nutritious foods, as you may find yourself reaching for healthier snacks like fruits and vegetables instead of cigarettes. Additionally, without the appetite-suppressing effects of nicotine, many former smokers may experience an increased interest in eating a balanced diet, which can further enhance their overall health.",
+        "reference": "When you\u2019re no longer using tobacco, there are more opportunities to fuel your body with nutritious food instead (think \u2013 grabbing an apple or sliced peppers instead of a cigarette when you\u2019re on the go).",
+        "response_time": 1.952336072921753
+      },
+      {
+        "query": "Can smoking cause sinus infections?",
+        "response": "Yes, smoking can cause sinus infections. Tobacco smoke irritates the nasal passages and damages the cilia, which are crucial for clearing mucus and pathogens. This impairment can lead to mucus buildup and create an environment that increases the risk of sinusitis.",
+        "reference": "Yes, smoking can increase the risk of developing sinus infections. Tobacco smoke is a common irritant that can damage the cilia\u2014tiny hair-like structures in the nasal passages responsible for clearing mucus and pathogens. When these cilia are impaired, it can lead to mucus buildup and create an environment conducive to infections such as sinusitis. Additionally, exposure to secondhand smoke can have similar effects on sinus health.",
+        "response_time": 1.6044270992279053
+      },
+      {
+        "query": "What is the best way to protect my family from secondhand smoke?",
+        "response": "The best way to protect your family from secondhand smoke is to quit smoking completely. If quitting isn\u2019t an option for you right now, ensure that you smoke only outdoors, away from loved ones, and establish smoke-free zones in your home and car to minimize their exposure.",
+        "reference": "The most effective way to protect your family is to quit smoking completely. If you're not ready to quit, always smoke outside and never indoors or in the car.",
+        "response_time": 1.389674186706543
+      },
+      {
+        "query": "What role does Motivational Interviewing (MI) play in quitting smoking?",
+        "response": "Motivational Interviewing (MI) plays a vital role in quitting smoking by enhancing an individual's intrinsic motivation to change behavior. It provides a supportive environment where individuals can explore their ambivalence about quitting, articulate their personal reasons for wanting to stop, and build confidence in their ability to succeed, ultimately increasing the likelihood of successful smoking cessation.",
+        "reference": "Motivational Interviewing (MI) plays a crucial role in quitting smoking by enhancing an individual's motivation to change. MI is a client-centered approach that explores and resolves ambivalence toward quitting. It empowers individuals to set personal goals and develop a commitment to change, thereby increasing the likelihood of successful smoking cessation.",
+        "response_time": 1.5482878684997559
+      },
+      {
+        "query": "What can I do to alleviate brain fog after quitting smoking?",
+        "response": "To alleviate brain fog after quitting smoking, focus on staying hydrated, eating a balanced diet rich in fruits and vegetables, and engaging in regular physical activity. Additionally, ensure you get adequate sleep and practice stress-reducing techniques like meditation or deep breathing exercises to support overall brain health and improve mental clarity.",
+        "reference": "To alleviate brain fog, stay hydrated, engage in regular physical activity, get adequate sleep, eat a balanced diet rich in fruits and vegetables, and practice stress-reducing techniques like meditation or deep breathing exercises. These habits support overall brain health and can expedite recovery from nicotine withdrawal.",
+        "response_time": 1.2832701206207275
+      },
+      {
+        "query": "What are common symptoms of nicotine withdrawal when I try to quit smoking?",
+        "response": "Common symptoms of nicotine withdrawal when quitting smoking include strong cravings, irritability, anxiety, restlessness, trouble concentrating or sleeping, and increased appetite. Many individuals also experience mood changes such as frustration or anger. These symptoms typically peak within the first week and may subside significantly within two to four weeks.",
+        "reference": "Common symptoms of nicotine withdrawal include strong cravings, anxiety, irritability, restlessness, trouble focusing or sleeping, depression, frustration, anger, increased hunger, and constipation.",
+        "response_time": 1.3176920413970947
+      },
+      {
+        "query": "What are the benefits of using stop-smoking products?",
+        "response": "Using stop-smoking products, such as nicotine replacement therapies (NRTs) and medications, can significantly alleviate withdrawal symptoms and reduce cravings, making it easier to quit smoking. When combined with behavioral support, these products increase the chances of successfully quitting compared to relying solely on willpower.",
+        "reference": "Stop-smoking products, such as nicotine replacement therapies (NRTs) and nicotine-free medications, can alleviate withdrawal symptoms and reduce cravings. Combining these products with behavioral support increases the likelihood of quitting successfully compared to using willpower alone.",
+        "response_time": 1.2389068603515625
+      },
+      {
+        "query": "What are some coping strategies to manage cravings?",
+        "response": "To manage cravings effectively, consider practicing deep breathing exercises, engaging in physical activities, or chewing sugar-free gum to keep your mouth busy. Additionally, using nicotine replacement therapy and distracting yourself with hobbies or mindful practices can help reduce the urge to smoke.",
+        "reference": "Coping strategies include practicing deep breathing exercises, engaging in physical activity, chewing sugar-free gum, drinking water, and using relaxation techniques like meditation or yoga. These can help distract you and reduce the urge to smoke.",
+        "response_time": 1.2602119445800781
+      },
+      {
+        "query": "How can I manage nicotine withdrawal symptoms?",
+        "response": "To manage nicotine withdrawal symptoms effectively, consider using nicotine replacement therapies such as patches or gum, which can help reduce cravings. Additionally, engage in physical activities, practice relaxation techniques like deep breathing, and seek support from friends, family, or support groups to stay motivated during your quit journey.",
+        "reference": "Using stop smoking products like nicotine replacement therapies (patches, gum, nasal sprays) or nicotine-free medicines can help reduce cravings and make it easier to manage withdrawal symptoms.",
+        "response_time": 1.4214320182800293
+      },
+      {
+        "query": "Is the intention to quit smoking necessary for mindfulness meditation to be effective?",
+        "response": "No, the intention to quit smoking is not necessary for mindfulness meditation to be effective. Mindfulness meditation can enhance self-control and help reduce cigarette cravings, even in individuals who do not have a prior desire to quit.",
+        "reference": "No, a smoker's intention to quit is not always needed to reduce cigarette cravings through mindfulness meditation. The practice can enhance self-control and reduce cravings even without a prior desire to quit.",
+        "response_time": 1.1194050312042236
+      },
+      {
+        "query": "Are ex-smokers free from long-term lung damage?",
+        "response": "Ex-smokers are not entirely free from long-term lung damage, as those who quit smoking decades ago may still be at risk for lung diseases like chronic obstructive pulmonary disease (COPD). While quitting smoking leads to significant improvements in lung health and reduces the risk of related diseases, the effects of long-term smoking can persist.",
+        "reference": "People who quit smoking decades ago are still at risk for lung diseases like chronic obstructive pulmonary disease (COPD), according to a study published online Oct. 9, 2019, by The Lancet Respiratory Medicine.",
+        "response_time": 1.276198148727417
+      },
+      {
+        "query": "How long should someone wait after smoking before holding a baby?",
+        "response": "It is recommended that individuals wait at least 30 minutes after smoking before holding a baby. This waiting period allows some of the harmful chemicals from the smoke to dissipate, reducing the risk of exposure to the baby. Additionally, it's important to consider that residues from smoke can linger on clothing and skin, so taking precautions is advisable.",
+        "reference": "It's recommended that individuals wait at least 30 minutes after smoking before holding a baby. This allows time for some of the harmful chemicals from the smoke to dissipate.",
+        "response_time": 1.3964300155639648
+      },
+      {
+        "query": "Are these alternative methods effective for everyone?",
+        "response": "No, alternative methods for quitting smoking, such as acupuncture and hypnosis, are not effective for everyone. Individual responses to these techniques can vary significantly, and many people may need to explore multiple approaches to find one that works for them. Combining pharmacological treatments with behavioral interventions is often the most effective strategy for smoking cessation.",
+        "reference": "No single smoking cessation technique works for everyone. The success of alternative methods like acupuncture and hypnosis can differ among individuals, and many people may need to try multiple approaches before finding one that helps them quit.",
+        "response_time": 2.445291042327881
+      },
+      {
+        "query": "What is passive smoking?",
+        "response": "Passive smoking, also known as secondhand smoke, occurs when non-smokers inhale smoke exhaled by smokers or from the burning end of cigarettes. It contains the same harmful chemicals as active smoking and can pose significant health risks, including increased chances of respiratory issues, cardiovascular diseases, and cancer.",
+        "reference": "Passive smoking, also known as secondhand smoke, occurs when non-smokers inhale smoke exhaled by smokers or from the burning end of cigarettes, which can harm their health.",
+        "response_time": 3.0396270751953125
+      },
+      {
+        "query": "Is quitting smoking abruptly more effective than gradually reducing cigarette consumption?",
+        "response": "Yes, quitting smoking abruptly is generally more effective than gradually reducing cigarette consumption. A meta-analysis published in *Tobacco Induced Diseases* found that individuals who quit abruptly had significantly higher prolonged abstinence rates compared to those who quit gradually, with a relative risk of 0.77 for the gradual cessation group, indicating lower success rates.",
+        "reference": "Yes, according to a meta-analysis published in Tobacco Induced Diseases, smokers who quit abruptly have higher prolonged abstinence rates compared to those who quit gradually. The study found that the gradual cessation group had a significantly lower quit rate (relative risk, RR=0.77) compared to the abrupt cessation group.",
+        "response_time": 1.8071229457855225
+      },
+      {
+        "query": "What barriers do families face in supporting smoking cessation?",
+        "response": "Families may face several barriers in supporting a loved one's smoking cessation, including a lack of knowledge about effective cessation strategies and conflicting attitudes towards smoking within the family. Additionally, inadequate communication can hinder their ability to provide the necessary emotional and practical support, making it more challenging for the individual trying to quit.",
+        "reference": "Families may encounter challenges such as lack of knowledge about cessation strategies, conflicting attitudes towards smoking, and inadequate communication, which can hinder their ability to effectively support a member's decision to quit smoking.",
+        "response_time": 1.5354900360107422
+      },
+      {
+        "query": "What should I do if I feel overwhelmed by the idea of quitting?",
+        "response": "It's completely normal to feel overwhelmed when thinking about quitting smoking. To make the process more manageable, consider gradually cutting back on your smoking rather than quitting all at once, which can help ease the transition and reduce feelings of pressure. Remember, taking small steps can lead to significant progress over time.",
+        "reference": "It's normal to feel overwhelmed when thinking about quitting. Instead of quitting all at once, try to gradually cut back on smoking as you approach your quit date. This can make the process feel more manageable.",
+        "response_time": 1.4678828716278076
+      },
+      {
+        "query": "How does smoking affect leg pain?",
+        "response": "Smoking negatively impacts leg pain primarily by contributing to Peripheral Artery Disease (PAD), which narrows or blocks arteries in the legs, resulting in reduced blood flow and pain during activities like walking. Additionally, smoking can lead to other conditions such as neuropathy and inflammation, further exacerbating leg pain. Quitting smoking can improve circulation and alleviate these symptoms over time.",
+        "reference": "Smoking can cause leg pain in a number of ways. One of the primary mechanisms is through the development of Peripheral Artery Disease (PAD), where smoking damages blood vessels, leading to narrowed or blocked arteries in the legs. This reduced blood flow can result in symptoms such as leg pain, especially when walking or climbing stairs. Other conditions related to smoking that can cause leg pain include Raynaud\u2019s disease, neuropathy, osteoporosis, and chronic obstructive pulmonary disease (COPD). Treatment for leg pain caused by smoking-related vascular issues may involve lifestyle changes, medications, and in some cases, surgical interventions.",
+        "response_time": 1.603567123413086
+      },
+      {
+        "query": "What are the benefits of mindfulness and acceptance in smoking cessation?",
+        "response": "Mindfulness and acceptance in smoking cessation enhance emotional regulation and reduce stress and anxiety, allowing individuals to develop a non-reactive awareness of their thoughts and cravings. This approach fosters greater self-awareness and equips individuals with effective coping strategies to manage cravings, ultimately supporting healthier choices and breaking the cycle of automatic smoking behavior.",
+        "reference": "The benefits of mindfulness and acceptance in smoking cessation include improved emotional regulation, reduced stress and anxiety, enhanced self-awareness, and better coping strategies for managing cravings. These approaches help individuals develop a non-reactive awareness of their thoughts and feelings, enabling them to break the cycle of automatic smoking behavior and make healthier choices.",
+        "response_time": 1.3753468990325928
+      },
+      {
+        "query": "Can changing my environment help reduce smoking urges?",
+        "response": "Yes, changing your environment can help reduce smoking urges. By moving to a smoke-free area or altering your daily routine, you can eliminate triggers associated with smoking, making it easier to manage cravings and resist the urge to smoke. Creating a supportive, smoke-free space is an effective strategy in the journey to quit smoking.",
+        "reference": "Yes, changing your environment can help reduce smoking urges. Moving to a smoke-free area or altering your routine can remove triggers associated with smoking, making it easier to resist cravings.",
+        "response_time": 1.646390676498413
+      },
+      {
+        "query": "What role do healthcare providers play in adolescent smoking cessation?",
+        "response": "Healthcare providers play a vital role in adolescent smoking cessation by routinely screening for tobacco use, advising patients to quit, and offering brief counseling tailored to their readiness to change. They create a supportive environment that respects adolescents' confidentiality while discussing cessation options and motivational interventions to encourage quitting.",
+        "reference": "Healthcare providers should screen for tobacco use, offer brief counseling, and discuss cessation options, creating a supportive environment for adolescents to quit.",
+        "response_time": 1.0141098499298096
+      },
+      {
+        "query": "I'm concerned about tobacco use in different communities. How does tobacco use vary among different racial and ethnic groups?",
+        "response": "Tobacco use rates vary significantly among racial and ethnic groups, with American Indians and Alaska Natives exhibiting the highest prevalence at approximately 21.9%, followed by African-Americans at 11.7%. In contrast, Asian-Americans and Hispanics have lower smoking rates, at 5.4% and 7.7% respectively, while non-Hispanic Whites have a rate of 12.9%. Notably, menthol cigarette use is particularly high among African-American smokers, with 84% of adolescent Black smokers preferring menthols.",
+        "reference": "Tobacco use rates differ significantly among various racial and ethnic groups. For instance, American Indians and Alaska Natives have the highest smoking rate at approximately 21.9%, followed by African-Americans at 11.7%. Asian-Americans and Hispanics have lower rates, with 5.4% and 7.7% respectively. Non-Hispanic Whites have a rate of 12.9%. Additionally, menthol cigarette use is notably higher among African-American smokers, with 84% of adolescent Black smokers preferring menthols.",
+        "response_time": 3.5920822620391846
+      },
+      {
+        "query": "How does smoking impact chronic pain?",
+        "response": "Smoking can exacerbate chronic pain by increasing sensitivity to pain and interfering with the effectiveness of pain medications. Conditions such as back pain, fibromyalgia, and migraines may improve when an individual quits smoking, highlighting the importance of cessation in managing chronic pain effectively.",
+        "reference": "Smoking can worsen chronic pain by interfering with pain medications and increasing sensitivity to pain. Conditions like back pain, fibromyalgia, tooth and gum pain, migraines, and rheumatoid arthritis may improve when smoking is stopped.",
+        "response_time": 1.7101941108703613
+      },
+      {
+        "query": "How does smoking affect the health of family members?",
+        "response": "Smoking adversely affects the health of family members by exposing them to secondhand smoke, which significantly increases their risk of serious health issues such as cancer, heart disease, and respiratory problems. Children are particularly vulnerable, facing heightened risks for conditions like ear infections, pneumonia, bronchitis, and sudden infant death syndrome (SIDS).",
+        "reference": "Smoking harms family members by exposing them to secondhand smoke, increasing their risk of cancer, heart disease, and respiratory issues, especially in children who are more susceptible to ear infections, pneumonia, bronchitis, and sudden infant death syndrome (SIDS).",
+        "response_time": 3.860384941101074
+      },
+      {
+        "query": "What mechanisms underlie the effects of smoking on peripheral nerves?",
+        "response": "Smoking affects peripheral nerves primarily through changes in blood pH, leading to acidosis, which alters nerve excitability and function. Additionally, harmful substances in cigarette smoke can directly impact ion channels in nerve cells, further disrupting normal nerve activity and contributing to conditions like sensory polyneuropathy.",
+        "reference": "The study suggests that both acute and chronic smoking can lead to changes in blood pH, resulting in acidosis. This shift in pH modifies the excitability properties of peripheral nerves, potentially disturbing their function. Additionally, substances in cigarette smoke may directly affect ion channels in nerve cells, further impacting nerve excitability.",
+        "response_time": 1.251507043838501
+      },
+      {
+        "query": "What are tobacco triggers?",
+        "response": "Tobacco triggers are specific activities, emotions, social situations, or patterns that can prompt a desire to use tobacco products. They are categorized into four types: emotional, pattern, social, and withdrawal triggers. Identifying these triggers is crucial for developing an effective quit plan and maintaining a tobacco-free lifestyle.",
+        "reference": "Tobacco triggers are certain activities, people, feelings, or situations that can make you want to use tobacco products. There are four kinds of triggers: emotional, pattern, social, and withdrawal. Identifying your triggers before you quit and throughout your quit journey can help you create a stronger quit plan to live tobacco-free.",
+        "response_time": 1.4445953369140625
+      },
+      {
+        "query": "What are the benefits of quitting tobacco after a cancer diagnosis?",
+        "response": "Quitting tobacco after a cancer diagnosis significantly improves treatment outcomes, leading to better responses to therapy, fewer side effects, and a faster recovery. Additionally, it reduces the risk of developing a second cancer and can add an average of two years to a patient's life. Overall, quitting tobacco enhances overall health and increases the chances of survival.",
+        "reference": "Quitting tobacco after a cancer diagnosis can lead to better responses to treatment, fewer and less serious side effects, faster recovery, lower risk of infection, easier breathing, and more energy. Additionally, it reduces the likelihood of developing a second cancer in the future.",
+        "response_time": 1.7083966732025146
+      },
+      {
+        "query": "Can smoking affect sleep quality related to sinus issues?",
+        "response": "Yes, smoking can negatively impact sleep quality due to sinus issues, as it often leads to nasal congestion and mucus buildup. This can result in coughing and difficulty sleeping at night, and smokers are also at a higher risk for obstructive sleep apnea, further compromising sleep quality.",
+        "reference": "Smoking can lead to nasal congestion and mucus buildup, which may cause coughing and difficulty sleeping at night. Additionally, smokers have higher rates of obstructive sleep apnea compared to non-smokers, further impacting sleep quality.",
+        "response_time": 1.20359206199646
+      }
+    ],
+    "total_time": 173.0129930973053,
+    "avg_response_time": 1.718322036266327,
+    "num_queries": 100
+  },
+  "comparison": {
+    "web_rag": {
+      "metrics": {
+        "bleu": 0.07842662889014758,
+        "chrf": 0.41473185324704204,
+        "rouge1": 0.36745224471932736,
+        "rouge2": 0.13299619713243013,
+        "rougeL": 0.25827000875869527
+      },
+      "avg_time": 1.9356142330169677,
+      "vs_ebrahim": 40.488708771372
+    },
+    "dataset_rag": {
+      "metrics": {
+        "bleu": 0.2914618714422908,
+        "chrf": 0.5977019210471846,
+        "rouge1": 0.6079255619494282,
+        "rouge2": 0.3920028940989789,
+        "rougeL": 0.5197195313666116
+      },
+      "avg_time": 1.718322036266327,
+      "vs_ebrahim": 150.47076481274692
+    },
+    "improvements": {
+      "bleu_pct": 271.63636326960113,
+      "rouge1_pct": 65.4434203861736,
+      "time_pct": -11.226007385363959,
+      "gap_closed": 109.98205604137492
+    }
+  }
+}

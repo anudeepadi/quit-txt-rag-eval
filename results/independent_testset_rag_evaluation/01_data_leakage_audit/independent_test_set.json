@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "created": "2026-01-10",
+    "method": "Fuzzy match validation with 50% similarity threshold",
+    "num_questions": 8,
+    "topics_covered": [
+      "late_benefits",
+      "thirdhand_smoke",
+      "nrt_options",
+      "quitting_method",
+      "withdrawal_timeline",
+      "managing_urges",
+      "immediate_changes",
+      "supporting_quitter"
+    ]
+  },
+  "test_data": [
+    {
+      "id": "test_01",
+      "question": "My doctor says my lungs are already damaged from decades of cigarettes. What's the point of stopping now?",
+      "topic": "late_benefits",
+      "reference": "Even with lung damage, quitting brings significant benefits. Blood pressure improves within hours, carbon monoxide clears in a day, and heart attack risk drops substantially within a year. Your body continues healing for years after your last cigarette.",
+      "max_training_similarity": 0.488
+    },
+    {
+      "id": "test_02",
+      "question": "I just put out my last cigarette an hour ago. What changes are already happening inside my body?",
+      "topic": "immediate_changes",
+      "reference": "Within 20 minutes of your last cigarette, your heart rate and blood pressure begin dropping toward normal. After 8-12 hours, oxygen levels increase as carbon monoxide decreases. These are the first steps in your body's remarkable healing process.",
+      "max_training_similarity": 0.494
+    },
+    {
+      "id": "test_04",
+      "question": "I get overwhelming urges to smoke during my morning coffee break. What techniques can interrupt these sudden impulses?",
+      "topic": "managing_urges",
+      "reference": "For sudden urges, try the delay technique - wait 5 minutes as cravings typically pass quickly. Take slow deep breaths, drink cold water, or redirect your attention with a quick walk or activity. Breaking the coffee-cigarette association by changing your routine also helps.",
+      "max_training_similarity": 0.477
+    },
+    {
+      "id": "test_05",
+      "question": "My pharmacist mentioned several over-the-counter nicotine products. Can you describe the different delivery methods and when each works best?",
+      "topic": "nrt_options",
+      "reference": "Nicotine patches provide steady background relief throughout the day. Gum and lozenges offer quick relief for breakthrough cravings. Inhalers mimic the hand-to-mouth action. Nasal sprays deliver the fastest nicotine absorption for intense cravings. Many people combine patches with a faster-acting form.",
+      "max_training_similarity": 0.463
+    },
+    {
+      "id": "test_10",
+      "question": "My spouse announced they want to quit but gets irritable whenever I try to encourage them. What's the right way to be supportive without being pushy?",
+      "topic": "supporting_quitter",
+      "reference": "Offer support without nagging or monitoring their behavior. Celebrate their milestones, help remove triggers from the home, and be patient with mood swings. If they slip, avoid criticism - instead, offer to help them try again when ready.",
+      "max_training_similarity": 0.495
+    },
+    {
+      "id": "test_12",
+      "question": "We have a newborn at home. How dangerous is it if grandparents who smoke hold the baby after coming in from outside?",
+      "topic": "thirdhand_smoke",
+      "reference": "Even after smoking outside, toxins cling to clothes, skin, and hair - this is called thirdhand smoke. Infants are especially vulnerable to respiratory infections, SIDS, and asthma from smoke exposure. Ask smokers to change clothes and wash hands before holding the baby.",
+      "max_training_similarity": 0.479
+    },
+    {
+      "id": "test_14",
+      "question": "The first few days without cigarettes were brutal. When will these awful physical symptoms finally go away?",
+      "topic": "withdrawal_timeline",
+      "reference": "Physical withdrawal symptoms like headaches, irritability, and intense cravings typically peak within the first 3 days and significantly improve within 2-4 weeks. Psychological cravings may persist longer but become less frequent and easier to manage over time.",
+      "max_training_similarity": 0.467
+    },
+    {
+      "id": "test_15",
+      "question": "Some people say to set a quit date and stop completely, while others recommend slowly cutting down. Which approach has better research support?",
+      "topic": "quitting_method",
+      "reference": "Research generally favors setting a firm quit date and stopping completely rather than gradual reduction. Cutting down often prolongs the addiction. However, the best method is whichever one you'll actually follow through with - some people succeed with gradual reduction.",
+      "max_training_similarity": 0.427
+    }
+  ]
+}

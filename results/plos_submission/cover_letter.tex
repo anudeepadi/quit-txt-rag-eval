@@ -1,0 +1,100 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\signature{[Author Name]\\[Institution]\\[Email]}
+\address{[Author Name]\\Department of Computer Science\\[Institution Name]\\[City, State, ZIP]}
+
+\begin{document}
+
+\begin{letter}{%
+Editor-in-Chief\\
+PLOS Digital Health\\
+Public Library of Science\\
+1160 Battery Street, Suite 225\\
+San Francisco, CA 94111}
+
+\opening{Dear Editor:}
+
+I am writing to submit our manuscript titled \textit{``Comprehensive Evaluation of Retrieval-Augmented Generation Knowledge Bases for Smoking Cessation Counseling: A Methodological Warning on Data Leakage''} for consideration as a Research Article in PLOS Digital Health.
+
+\textbf{Key Contribution: A Critical Methodological Discovery}
+
+Our study makes a significant methodological contribution to the natural language processing and digital health communities: we discovered that 47\% of questions in our original test set were severely contaminated (≥90\% similarity to training data), including four exact matches (100\% similarity). This data leakage completely reversed our initial conclusions about RAG system performance, serving as a stark warning about the importance of rigorous test set validation in NLP research.
+
+Data leakage is a systemic problem in AI evaluation that can lead to false conclusions and wasted research investments. Our findings demonstrate that even carefully constructed test sets require systematic similarity checking against training data—a practice that is not yet standard in the field. This methodological contribution alone warrants publication in PLOS Digital Health, which emphasizes open science and reproducible research.
+
+\textbf{Empirical Findings: When Does RAG Help?}
+
+Beyond the methodological warning, our rigorous evaluation (5 independent runs, 15 validated questions, comprehensive statistical testing) reveals surprising empirical findings:
+
+\begin{enumerate}
+    \item \textbf{Baseline outperforms RAG:} Contrary to expectations, the no-retrieval baseline achieved the highest ROUGE-L score (0.231 vs 0.224 for best RAG, p=0.074), suggesting that for well-documented domains like smoking cessation, LLM parametric knowledge may be sufficient.
+
+    \item \textbf{AI-generated equals human-curated knowledge:} AI-generated knowledge bases performed comparably to expert-curated ones (102.1\% relative performance, p=0.184), offering a cost-effective alternative for knowledge base construction.
+
+    \item \textbf{Domain-dependency hypothesis:} We propose that RAG benefit is inversely related to domain representation in LLM training data, shifting the research question from ``Does RAG help?'' to ``When does RAG help?''
+\end{enumerate}
+
+\textbf{Why PLOS Digital Health?}
+
+This manuscript is an excellent fit for PLOS Digital Health for several reasons:
+
+\begin{itemize}
+    \item \textbf{Digital health application:} Evaluates AI systems for smoking cessation counseling, directly relevant to digital health interventions
+    \item \textbf{Methodological rigor:} Emphasizes reproducibility with open data, code, and comprehensive statistical analysis
+    \item \textbf{Open science values:} All materials (test set, evaluation results, code) will be publicly available on GitHub
+    \item \textbf{Practical impact:} Provides guidance for practitioners deploying RAG systems in healthcare settings
+    \item \textbf{Warning for the field:} Addresses a critical evaluation challenge that affects multiple digital health AI research projects
+\end{itemize}
+
+PLOS Digital Health's commitment to open access will ensure maximum visibility for this methodological warning, potentially preventing other researchers from making similar evaluation errors.
+
+\textbf{Study Design and Rigor}
+
+Our evaluation employed best practices for reproducible research:
+\begin{itemize}
+    \item \textbf{Multiple runs:} 5 independent trials per approach (75 responses per condition)
+    \item \textbf{Statistical testing:} Paired t-tests, effect sizes (Cohen's d), 95\% confidence intervals
+    \item \textbf{Multiple metrics:} ROUGE-L (primary), ROUGE-1/2, BLEU, METEOR, BERTScore
+    \item \textbf{Independent validation:} Fuzzy string matching with <50\% similarity threshold
+    \item \textbf{Open materials:} All data, code, and results publicly available for reproduction
+\end{itemize}
+
+\textbf{Author Contributions and Conflicts}
+
+All authors have approved this manuscript for submission. We have no conflicts of interest to declare. [Author 1] designed the study and conducted the analysis. [Author 2] validated the test set and provided domain expertise. All authors contributed to manuscript preparation.
+
+\textbf{Data Availability}
+
+In accordance with PLOS's data availability policy, all materials supporting this publication will be made publicly available:
+\begin{itemize}
+    \item Independent test set (JSON): 15 questions with reference answers
+    \item Complete evaluation results (JSON): All metrics, statistical tests, confidence intervals
+    \item Reproduction code (Python): Evaluation pipeline, statistical analysis, similarity checking
+    \item GitHub repository: \url{https://github.com/[username]/rag-smoking-cessation-eval}
+\end{itemize}
+
+\textbf{Suggested Reviewers}
+
+We suggest the following reviewers with expertise in RAG systems, NLP evaluation, and digital health:
+
+\begin{enumerate}
+    \item Dr. [Name], [Institution] - Expert in RAG evaluation methodologies
+    \item Dr. [Name], [Institution] - Specialist in digital health AI applications
+    \item Dr. [Name], [Institution] - Authority on test set construction and data leakage
+\end{enumerate}
+
+\textbf{Conclusion}
+
+This manuscript addresses a critical methodological gap in AI evaluation that has broad implications for digital health research. Our discovery that data leakage completely reversed research conclusions serves as an urgent warning for the field. Combined with our empirical findings on domain-dependent RAG benefit, this work makes significant contributions to both methodology and practice.
+
+We believe this manuscript's emphasis on open science, reproducibility, and practical impact aligns perfectly with PLOS Digital Health's mission. We look forward to your editorial decision and the opportunity to contribute to the digital health literature.
+
+Thank you for considering our manuscript.
+
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}

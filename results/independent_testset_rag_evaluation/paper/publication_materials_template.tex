@@ -1,0 +1,148 @@
+% Publication Materials for RAG Comparison Research
+% Generated: January 10, 2026
+% Note: Values marked with {{PLACEHOLDER}} will be filled after experiments complete
+
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Comprehensive Evaluation of RAG Knowledge Bases for\\Smoking Cessation Counseling}
+\author{Research Team}
+\date{January 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a rigorous comparison of Retrieval-Augmented Generation (RAG) approaches for smoking cessation counseling, using a novel independent test set validated for zero data leakage. Our analysis includes multiple metrics (ROUGE-L, BLEU, METEOR) across five independent trials with statistical significance testing.
+
+\textbf{Key Finding:} [To be filled after experiments]
+
+\textbf{Methodological Contribution:} We discovered severe data leakage in the original test set (7/15 questions with $\geq$90\% similarity to training data), invalidating previous results. This highlights the critical importance of test set independence verification in NLP research.
+\end{abstract}
+
+\section{Methodology}
+
+\subsection{Data Leakage Discovery}
+During our audit, we discovered that the original test set had significant overlap with training data:
+
+\begin{table}[h]
+\centering
+\caption{Original Test Set Data Leakage Analysis}
+\begin{tabular}{lcc}
+\toprule
+Severity Level & Count & Percentage \\
+\midrule
+Severe ($\geq$90\% similarity) & 7 & 47\% \\
+Moderate (70--90\% similarity) & 6 & 40\% \\
+Clean ($<$70\% similarity) & 2 & 13\% \\
+\bottomrule
+\end{tabular}
+\label{tab:leakage}
+\end{table}
+
+Four test questions were \textit{exact matches} (100\% similarity) to questions in the training data, fundamentally invalidating the evaluation.
+
+\subsection{Independent Test Set Creation}
+We created a new 15-question test set with:
+\begin{itemize}
+    \item Maximum 50\% similarity to any training question (fuzzy string matching)
+    \item Coverage of all original topics (benefits, cravings, NRT, relapse, etc.)
+    \item Grammatically distinct formulations
+    \item Domain expert-validated reference answers
+\end{itemize}
+
+\subsection{Evaluation Protocol}
+\begin{itemize}
+    \item \textbf{Model:} GPT-4o-mini (temperature=0.3, max\_tokens=200)
+    \item \textbf{Retrieval:} ChromaDB with cosine similarity, k=3 documents
+    \item \textbf{Runs:} 5 independent trials
+    \item \textbf{Statistical Analysis:} 95\% confidence intervals, paired t-tests, Cohen's d
+\end{itemize}
+
+\section{Results}
+
+\subsection{Main Results}
+
+\begin{table}[h]
+\centering
+\caption{RAG Approach Comparison (5 runs, 15 questions each)}
+\begin{tabular}{lcccc}
+\toprule
+Approach & ROUGE-L & BLEU & METEOR \\
+\midrule
+Baseline (No RAG) & {{BASELINE_ROUGEL}} & {{BASELINE_BLEU}} & {{BASELINE_METEOR}} \\
+Raw Sources RAG & {{RAW_ROUGEL}} & {{RAW_BLEU}} & {{RAW_METEOR}} \\
+AI-Generated RAG & {{AI_ROUGEL}} & {{AI_BLEU}} & {{AI_METEOR}} \\
+Human-Curated RAG & {{HUMAN_ROUGEL}} & {{HUMAN_BLEU}} & {{HUMAN_METEOR}} \\
+\bottomrule
+\end{tabular}
+\label{tab:main_results}
+\end{table}
+
+Values shown as mean $\pm$ 95\% CI.
+
+\subsection{Statistical Comparisons (ROUGE-L)}
+
+\begin{table}[h]
+\centering
+\caption{Pairwise Statistical Comparisons}
+\begin{tabular}{lcccc}
+\toprule
+Comparison & Difference & Cohen's d & p-value & Significant \\
+\midrule
+AI vs Human & {{AI_VS_HUMAN_DIFF}}\% & {{AI_VS_HUMAN_D}} & {{AI_VS_HUMAN_P}} & {{AI_VS_HUMAN_SIG}} \\
+AI vs Raw & {{AI_VS_RAW_DIFF}}\% & {{AI_VS_RAW_D}} & {{AI_VS_RAW_P}} & {{AI_VS_RAW_SIG}} \\
+Human vs Raw & {{HUMAN_VS_RAW_DIFF}}\% & {{HUMAN_VS_RAW_D}} & {{HUMAN_VS_RAW_P}} & {{HUMAN_VS_RAW_SIG}} \\
+\bottomrule
+\end{tabular}
+\label{tab:statistical}
+\end{table}
+
+\subsection{Professor's Targets Assessment}
+
+\begin{table}[h]
+\centering
+\caption{Research Target Evaluation}
+\begin{tabular}{lccc}
+\toprule
+Target & Expected & Actual & Status \\
+\midrule
+AI achieves 84\% of Human & $\geq$84\% & {{AI_HUMAN_RATIO}}\% & {{TARGET1_STATUS}} \\
+AI 40\% better than Raw & $\geq$+40\% & {{AI_RAW_DIFF}}\% & {{TARGET2_STATUS}} \\
+\bottomrule
+\end{tabular}
+\label{tab:targets}
+\end{table}
+
+\section{Discussion}
+
+\subsection{Key Findings}
+[To be filled after experiments]
+
+\subsection{Why This Matters}
+The discovery of data leakage in the original test set demonstrates:
+\begin{enumerate}
+    \item The importance of rigorous test set validation in NLP research
+    \item That high performance scores may be artifacts of data contamination
+    \item The need for fuzzy string matching during test set creation
+\end{enumerate}
+
+\subsection{Limitations}
+\begin{itemize}
+    \item Single domain (smoking cessation) - results may not generalize
+    \item Single LLM (GPT-4o-mini) - other models may show different patterns
+    \item 15 test questions - larger test sets would provide more statistical power
+    \item Domain is well-covered in LLM training data - may reduce RAG benefit
+\end{itemize}
+
+\section{Conclusion}
+[To be filled after experiments]
+
+\section*{Acknowledgments}
+We thank the professor for guidance and the research team for data curation efforts.
+
+\end{document}

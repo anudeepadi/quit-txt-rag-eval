@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-06T12:32:09.627153",
+    "num_runs": 5,
+    "num_questions": 15,
+    "model": "gpt-4o-mini",
+    "primary_metric": "ROUGE-L (semantic similarity)",
+    "methodology_notes": [
+      "All approaches tested with IDENTICAL test questions",
+      "Same LLM (GPT-4o-mini) for all conditions",
+      "Same ChromaDB retrieval with cosine similarity",
+      "Previous comparisons were methodologically flawed (different test sets)"
+    ]
+  },
+  "statistical_summary": {
+    "baseline": {
+      "bleu": {
+        "mean": 0.07132676329488465,
+        "std": 0.004356999602932429,
+        "ci_95_lower": 0.06750768475716681,
+        "ci_95_upper": 0.07514584183260248
+      },
+      "rouge1": {
+        "mean": 0.3168839949302336,
+        "std": 0.010434169475148775,
+        "ci_95_lower": 0.3077380421340407,
+        "ci_95_upper": 0.3260299477264265
+      },
+      "rouge2": {
+        "mean": 0.11583641145978434,
+        "std": 0.0033070715231941026,
+        "ci_95_lower": 0.11293763546071654,
+        "ci_95_upper": 0.11873518745885213
+      },
+      "rougeL": {
+        "mean": 0.24377724824347752,
+        "std": 0.004648918954158465,
+        "ci_95_lower": 0.23970229111255037,
+        "ci_95_upper": 0.24785220537440467
+      }
+    },
+    "raw_rag": {
+      "bleu": {
+        "mean": 0.10009740914876808,
+        "std": 0.003574416882288406,
+        "ci_95_lower": 0.09696429461030995,
+        "ci_95_upper": 0.10323052368722621
+      },
+      "rouge1": {
+        "mean": 0.3285371513528686,
+        "std": 0.008288820702943138,
+        "ci_95_lower": 0.32127167966719394,
+        "ci_95_upper": 0.33580262303854325
+      },
+      "rouge2": {
+        "mean": 0.1365468956274397,
+        "std": 0.005207874986992034,
+        "ci_95_lower": 0.13198199193165958,
+        "ci_95_upper": 0.14111179932321985
+      },
+      "rougeL": {
+        "mean": 0.25394399373448684,
+        "std": 0.004235744526994349,
+        "ci_95_lower": 0.2502311999569955,
+        "ci_95_upper": 0.2576567875119782
+      }
+    },
+    "ai_rag": {
+      "bleu": {
+        "mean": 0.08085468405821808,
+        "std": 0.0059528298297662745,
+        "ci_95_lower": 0.07563679865234249,
+        "ci_95_upper": 0.08607256946409367
+      },
+      "rouge1": {
+        "mean": 0.3137025450263701,
+        "std": 0.007405861885716894,
+        "ci_95_lower": 0.3072110208678625,
+        "ci_95_upper": 0.32019406918487775
+      },
+      "rouge2": {
+        "mean": 0.12062593631425897,
+        "std": 0.003242283307096023,
+        "ci_95_lower": 0.11778394969048299,
+        "ci_95_upper": 0.12346792293803495
+      },
+      "rougeL": {
+        "mean": 0.2366951868182635,
+        "std": 0.007488565414054941,
+        "ci_95_lower": 0.23013116982090945,
+        "ci_95_upper": 0.24325920381561753
+      }
+    },
+    "human_rag": {
+      "bleu": {
+        "mean": 0.08478924498866494,
+        "std": 0.00364613028729695,
+        "ci_95_lower": 0.08159327087919595,
+        "ci_95_upper": 0.08798521909813393
+      },
+      "rouge1": {
+        "mean": 0.3312581164285401,
+        "std": 0.009468242307610281,
+        "ci_95_lower": 0.3229588361250557,
+        "ci_95_upper": 0.33955739673202445
+      },
+      "rouge2": {
+        "mean": 0.11965151227007793,
+        "std": 0.0034930450440580282,
+        "ci_95_lower": 0.1165897232926208,
+        "ci_95_upper": 0.12271330124753507
+      },
+      "rougeL": {
+        "mean": 0.24425496628468424,
+        "std": 0.004227535756155194,
+        "ci_95_lower": 0.24054936781207922,
+        "ci_95_upper": 0.24796056475728925
+      }
+    }
+  },
+  "vocabulary_analysis": {
+    "human_vocab_size": 3125,
+    "ai_vocab_size": 2419,
+    "llm_response_vocab_size": 399,
+    "human_llm_overlap_pct": 96.2406015037594,
+    "ai_llm_overlap_pct": 92.23057644110276,
+    "hypothesis_supported": false
+  },
+  "key_findings": {
+    "rougeL": {
+      "ai_vs_human_pct": 96.90496386566419,
+      "ai_vs_raw_improvement_pct": -6.792366561840395,
+      "human_vs_raw_improvement_pct": -3.8154190250047972
+    },
+    "bleu": {
+      "ai_vs_human_pct": 95.35959904941616,
+      "ai_vs_raw_improvement_pct": -19.22399915661236,
+      "human_vs_raw_improvement_pct": -15.293267118783902
+    }
+  },
+  "domain_limitation_note": "Smoking cessation is well-covered in LLM training data, which may reduce the incremental value of RAG for this specific domain."
+}

@@ -1,0 +1,228 @@
+% ACL BioNLP 2026 Workshop Submission
+% 8-page limit (excluding references)
+% Template: ACL 2026
+
+\documentclass[11pt]{article}
+\usepackage[hyperref]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Evaluation of RAG Knowledge Bases for Smoking Cessation Counseling: A Data Leakage Warning}
+
+\author{Research Team \\
+  Department of Computer Science \\
+  University Name \\
+  \texttt{email@university.edu}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We present a rigorous evaluation of Retrieval-Augmented Generation (RAG) approaches for smoking cessation counseling, discovering severe test set contamination that completely reversed initial conclusions. After creating an independent test set validated for zero data leakage (n=15 questions, <50\% similarity threshold), we found that: (1) baseline LLM outperformed all RAG variants (ROUGE-L: 0.231 vs 0.224 best RAG), (2) AI-generated knowledge bases matched human-curated ones (102\% relative performance, p=0.184), and (3) 47\% of the original test set was severely contaminated ($\geq$90\% similarity to training data). These findings demonstrate the critical importance of test set independence verification and suggest RAG benefit is domain-dependent.
+\end{abstract}
+
+\section{Introduction}
+
+Retrieval-Augmented Generation (RAG) has emerged as a promising approach to enhance LLM performance by incorporating external knowledge bases \cite{lewis2020retrieval}. However, rigorous evaluation requires test sets with zero contamination from training data.
+
+We evaluate RAG for smoking cessation counseling—a well-documented domain with established clinical guidelines \cite{fiore2008treating}. While seemingly ideal for RAG, this comprehensive documentation may paradoxically reduce benefit if LLMs have already learned this knowledge during pre-training.
+
+\textbf{Key Contributions:}
+\begin{itemize}
+    \item \textbf{Methodological warning:} Discovery of severe test set contamination (47\% of questions $\geq$90\% similar to training data) that completely reversed conclusions
+    \item \textbf{Rigorous evaluation:} Independent test set with <50\% similarity validation, 5 runs, comprehensive statistical testing
+    \item \textbf{Surprising finding:} Baseline outperforms RAG for well-documented domains, proposing a domain saturation hypothesis
+    \item \textbf{Cost-effective alternative:} AI-generated knowledge bases match human-curated performance
+\end{itemize}
+
+\section{Related Work}
+
+\textbf{RAG Systems.} RAG enhances LLMs by retrieving relevant documents at inference time \cite{lewis2020retrieval}. Recent work explores dense retrieval, hybrid search, and domain adaptation.
+
+\textbf{Data Leakage in NLP.} Test-train overlap has been identified in QA datasets \cite{lewis2021questionanswering}, benchmark contamination in language models \cite{dodge2021documenting}, and memorization in neural networks. Our work demonstrates how leakage can reverse evaluation conclusions.
+
+\textbf{Health NLP.} Prior work applies NLP to clinical text, patient education, and health question answering. We extend this to smoking cessation counseling with rigorous evaluation methodology.
+
+\section{Data Leakage Discovery}
+
+During preliminary analysis, we discovered significant overlap between the original test set and training data using fuzzy string matching (Python's \texttt{SequenceMatcher}):
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcc}
+\toprule
+\textbf{Severity} & \textbf{Count} & \textbf{\%} \\
+\midrule
+Severe ($\geq$90\%) & 7 & 47\% \\
+Moderate (70-90\%) & 6 & 40\% \\
+Clean (<70\%) & 2 & 13\% \\
+\textbf{Exact matches (100\%)} & \textbf{4} & \textbf{27\%} \\
+\bottomrule
+\end{tabular}
+\caption{Original test set contamination analysis}
+\label{tab:leakage}
+\end{table}
+
+This contamination fundamentally invalidated the original evaluation, as test questions were essentially memorized during training. \textbf{Critically, the contaminated test set showed a completely different ranking}: Raw $>$ Human $>$ AI (wrong), versus the true ranking: Baseline $>$ AI $>$ Human $>$ Raw (correct).
+
+\section{Methodology}
+
+\subsection{Independent Test Set Creation}
+
+We created a new test set with rigorous independence validation:
+
+\begin{itemize}
+    \item \textbf{Similarity threshold:} <50\% fuzzy string match to any training question
+    \item \textbf{Sample size:} 15 questions covering diverse topics (benefits, cravings, NRT, withdrawal, relapse, mechanisms)
+    \item \textbf{Validation:} Domain expert-reviewed reference answers
+    \item \textbf{Grammatical diversity:} Distinct phrasings while maintaining topic coverage
+\end{itemize}
+
+\subsection{RAG Approaches}
+
+We compared four approaches:
+
+\begin{enumerate}
+    \item \textbf{Baseline:} No retrieval, direct LLM responses
+    \item \textbf{Raw Sources:} Retrieval from unprocessed CDC guidelines and clinical papers
+    \item \textbf{AI-Generated:} Retrieval from GPT-4-generated Q\&A pairs
+    \item \textbf{Human-Curated:} Retrieval from expert-curated Q\&A database
+\end{enumerate}
+
+\subsection{Evaluation Protocol}
+
+\begin{itemize}
+    \item \textbf{Model:} GPT-4o-mini (temperature=0.3, max\_tokens=200)
+    \item \textbf{Retrieval:} ChromaDB, cosine similarity, k=3 documents
+    \item \textbf{Runs:} 5 independent trials (75 responses per approach)
+    \item \textbf{Metrics:} ROUGE-L (primary), ROUGE-1/2, BLEU, METEOR
+    \item \textbf{Statistics:} 95\% CI, paired t-tests, Cohen's d
+\end{itemize}
+
+\section{Results}
+
+\subsection{Main Performance Comparison}
+
+Table \ref{tab:main_results} presents results across all metrics. Contrary to our hypothesis, baseline (no retrieval) achieved the highest ROUGE-L score.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lccc}
+\toprule
+\textbf{Approach} & \textbf{R-L} & \textbf{BLEU} & \textbf{MET} \\
+\midrule
+\textbf{Baseline} & \textbf{.231} & .054 & \textbf{.310} \\
+AI-Generated & .224 & \textbf{.057} & .290 \\
+Human-Curated & .220 & .045 & .296 \\
+Raw Sources & .208 & .039 & .275 \\
+\bottomrule
+\end{tabular}
+\caption{Performance comparison (mean, 5 runs). R-L=ROUGE-L, MET=METEOR. All values $\pm$ 0.004-0.010 (95\% CI).}
+\label{tab:main_results}
+\end{table}
+
+\subsection{Statistical Significance}
+
+Table \ref{tab:statistical} shows pairwise comparisons. AI-generated achieved 102\% of human-curated performance (p=0.184, ns). Both significantly outperformed raw sources (p<0.05).
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Comparison} & \textbf{Diff} & \textbf{d} & \textbf{p} & \textbf{Sig} \\
+\midrule
+AI vs Human & +2.1\% & 0.72 & .184 & No \\
+AI vs Raw & +7.8\% & 3.19 & .002 & ** \\
+Human vs Raw & +5.5\% & 1.89 & .014 & * \\
+AI vs Baseline & -2.6\% & -1.07 & .074 & No \\
+\bottomrule
+\end{tabular}
+\caption{Statistical comparisons (ROUGE-L). * p<.05, ** p<.01}
+\label{tab:statistical}
+\end{table}
+
+\section{Discussion}
+
+\subsection{Why Does Baseline Outperform RAG?}
+
+We propose a \textbf{domain saturation hypothesis}: RAG benefit is inversely related to domain representation in LLM training data. For well-documented topics like smoking cessation:
+
+\begin{enumerate}
+    \item Baseline LLM knowledge is comprehensive from pre-training
+    \item Retrieved context introduces noise rather than signal
+    \item Context window constraints force omission of parametric knowledge
+\end{enumerate}
+
+This shifts the research question from ``Does RAG help?'' to ``\textit{When} does RAG help?''—a more nuanced and practically valuable inquiry.
+
+\subsection{AI-Generated = Human-Curated}
+
+The comparable performance (102\%, p=0.184) has practical implications: AI-generated knowledge bases can be produced at lower cost while maintaining quality. However, this is specific to smoking cessation and may not generalize to specialized domains requiring expert knowledge.
+
+\subsection{Methodological Implications}
+
+Our data leakage discovery demonstrates systemic risk in NLP evaluation. The contaminated test set produced completely reversed conclusions. We recommend:
+
+\begin{itemize}
+    \item Mandatory fuzzy string matching (<50\% threshold)
+    \item Manual inspection of high-similarity cases
+    \item Reporting similarity distributions in publications
+\end{itemize}
+
+Recent work has identified similar issues in popular benchmarks \cite{lewis2021questionanswering, dodge2021documenting}, suggesting this is a widespread problem.
+
+\section{Limitations and Future Work}
+
+\textbf{Limitations:}
+\begin{itemize}
+    \item Single domain (smoking cessation)
+    \item Single LLM (GPT-4o-mini)
+    \item Small test set (15 questions)
+    \item Lexical metrics (not semantic accuracy)
+    \item No human evaluation
+\end{itemize}
+
+\textbf{Future work:}
+\begin{itemize}
+    \item Test domain saturation hypothesis across domains with varying LLM knowledge coverage (rare diseases, emerging treatments)
+    \item Human preference studies with smoking cessation counselors
+    \item Larger test sets with increased statistical power
+    \item Semantic metrics and factual accuracy evaluation
+\end{itemize}
+
+\section{Conclusion}
+
+This study makes two primary contributions. \textbf{Methodologically}, we demonstrate that data leakage can fundamentally reverse research conclusions, serving as a critical warning for NLP evaluation. \textbf{Empirically}, we find that RAG benefit is domain-dependent: for well-documented topics, LLM parametric knowledge may suffice, and RAG overhead may not be justified.
+
+When RAG is employed, AI-generated knowledge bases can match human-curated ones at reduced cost. These findings have implications for both researchers designing evaluations and practitioners deploying RAG systems in production.
+
+Our materials (test set, results, code) are publicly available to support reproducibility and future research.
+
+\section*{Acknowledgments}
+
+We thank domain experts who validated test questions and the professor for guidance throughout this research.
+
+\bibliography{custom}
+\bibliographystyle{acl_natbib}
+
+\appendix
+
+\section{Complete Metrics}
+
+Full ROUGE-1, ROUGE-2 results and per-question breakdowns are available in supplementary materials at: \url{https://github.com/[username]/rag-smoking-cessation-eval}
+
+\section{Example Test Questions}
+
+\begin{enumerate}
+    \item ``My doctor says my lungs are already damaged from decades of cigarettes. What's the point of stopping now?''
+    \item ``After avoiding tobacco for a full calendar year, which organs show the most significant recovery?''
+    \item ``From a neuroscience perspective, explain the chemical chain reaction that occurs in the brain within seconds of nicotine inhalation.''
+\end{enumerate}
+
+\end{document}

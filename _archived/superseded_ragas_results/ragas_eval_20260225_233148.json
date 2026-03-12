@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-25T23:35:06.213365",
+    "model": "gpt-4o-mini",
+    "num_questions": 5,
+    "max_questions_cap": 5,
+    "configs_run": [
+      "ai_rag"
+    ],
+    "ai_dataset_size": 5936,
+    "human_dataset_size": 4847,
+    "top_k": 3,
+    "ragas_metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "context_precision",
+      "context_recall"
+    ]
+  },
+  "faithfulness_stats": {
+    "ai_rag": {
+      "mean": 0.7892,
+      "sd": 0.2279,
+      "median": 0.7857,
+      "ci_lower": 0.5894,
+      "ci_upper": 0.989,
+      "hallucination_rate": 0.2108,
+      "pct_high_risk": 20.0,
+      "n": 5
+    }
+  },
+  "all_scores": {
+    "ai_rag": {
+      "faithfulness": [
+        0.7857142857142857,
+        0.7058823529411765,
+        1.0,
+        0.45454545454545453,
+        1.0
+      ],
+      "answer_relevancy": [
+        0.9046864714445699,
+        0.9851007034272955,
+        0.6445040428192129,
+        0.9088564829781264,
+        0.9654260751374899
+      ],
+      "context_precision": [
+        0.9999999999666667,
+        0.9999999999666667,
+        0.8333333332916666,
+        0.0,
+        0.3333333333
+      ],
+      "context_recall": [
+        1.0,
+        0.3333333333333333,
+        0.5,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "ebrahim_reference": [
+    {
+      "config": "Ibrahim: Base LLM",
+      "mean": 0.58,
+      "sd": 0.22,
+      "median": 0.61,
+      "ci_lower": 0.42,
+      "ci_upper": 0.74,
+      "hallucination_rate": 0.4,
+      "pct_high_risk": 20,
+      "n": 10
+    },
+    {
+      "config": "Ibrahim: WebRAG",
+      "mean": 0.86,
+      "sd": 0.11,
+      "median": 0.88,
+      "ci_lower": 0.84,
+      "ci_upper": 0.88,
+      "hallucination_rate": 0.14,
+      "pct_high_risk": 4,
+      "n": 100
+    }
+  ]
+}

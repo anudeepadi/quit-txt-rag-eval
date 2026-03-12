@@ -1,0 +1,205 @@
+% Publication Materials for RAG Comparison Research
+% Generated: January 10, 2026
+% FINAL VERSION WITH ACTUAL RESULTS
+
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Comprehensive Evaluation of RAG Knowledge Bases for\\Smoking Cessation Counseling}
+\author{Research Team}
+\date{January 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a rigorous comparison of Retrieval-Augmented Generation (RAG) approaches for smoking cessation counseling, using a novel independent test set validated for zero data leakage. Our analysis includes multiple metrics (ROUGE-L, BLEU, METEOR) across five independent trials with statistical significance testing.
+
+\textbf{Key Finding:} Contrary to expectations, the baseline approach (no retrieval) outperformed all RAG variants (ROUGE-L: 0.231 vs 0.224 for best RAG). Among RAG approaches, AI-generated knowledge bases slightly exceeded human-curated ones (102.1\% relative performance), meeting the first research target. However, the improvement over raw sources (+7.8\%) fell short of the 40\% target.
+
+\textbf{Methodological Contribution:} We discovered severe data leakage in the original test set (7/15 questions with $\geq$90\% similarity to training data), invalidating previous results. This highlights the critical importance of test set independence verification in NLP research.
+\end{abstract}
+
+\section{Methodology}
+
+\subsection{Data Leakage Discovery}
+During our audit, we discovered that the original test set had significant overlap with training data:
+
+\begin{table}[h]
+\centering
+\caption{Original Test Set Data Leakage Analysis}
+\begin{tabular}{lcc}
+\toprule
+Severity Level & Count & Percentage \\
+\midrule
+Severe ($\geq$90\% similarity) & 7 & 47\% \\
+Moderate (70--90\% similarity) & 6 & 40\% \\
+Clean ($<$70\% similarity) & 2 & 13\% \\
+\bottomrule
+\end{tabular}
+\label{tab:leakage}
+\end{table}
+
+Four test questions were \textit{exact matches} (100\% similarity) to questions in the training data, fundamentally invalidating the evaluation.
+
+\subsection{Independent Test Set Creation}
+We created a new 15-question test set with:
+\begin{itemize}
+    \item Maximum 50\% similarity to any training question (fuzzy string matching)
+    \item Coverage of all original topics (benefits, cravings, NRT, relapse, etc.)
+    \item Grammatically distinct formulations
+    \item Domain expert-validated reference answers
+\end{itemize}
+
+\subsection{Evaluation Protocol}
+\begin{itemize}
+    \item \textbf{Model:} GPT-4o-mini (temperature=0.3, max\_tokens=200)
+    \item \textbf{Retrieval:} ChromaDB with cosine similarity, k=3 documents
+    \item \textbf{Runs:} 5 independent trials
+    \item \textbf{Statistical Analysis:} 95\% confidence intervals, paired t-tests, Cohen's d
+\end{itemize}
+
+\section{Results}
+
+\subsection{Main Results}
+
+\begin{table}[h]
+\centering
+\caption{RAG Approach Comparison (5 runs, 15 questions each)}
+\begin{tabular}{lcccc}
+\toprule
+Approach & ROUGE-L & BLEU & METEOR \\
+\midrule
+Baseline (No RAG) & $0.231 \pm 0.008$ & $0.054 \pm 0.004$ & $0.310 \pm 0.010$ \\
+Raw Sources RAG & $0.208 \pm 0.004$ & $0.039 \pm 0.003$ & $0.275 \pm 0.008$ \\
+AI-Generated RAG & $0.224 \pm 0.005$ & $0.057 \pm 0.003$ & $0.290 \pm 0.008$ \\
+Human-Curated RAG & $0.220 \pm 0.004$ & $0.045 \pm 0.003$ & $0.296 \pm 0.010$ \\
+\bottomrule
+\end{tabular}
+\label{tab:main_results}
+\end{table}
+
+Values shown as mean $\pm$ 95\% CI.
+
+\subsection{Statistical Comparisons (ROUGE-L)}
+
+\begin{table}[h]
+\centering
+\caption{Pairwise Statistical Comparisons}
+\begin{tabular}{lcccc}
+\toprule
+Comparison & Difference & Cohen's d & p-value & Significant \\
+\midrule
+AI vs Human & +2.1\% & 0.72 & 0.184 & No \\
+AI vs Raw & +7.8\% & 3.19 & 0.002 & Yes** \\
+Human vs Raw & +5.5\% & 1.89 & 0.014 & Yes* \\
+\bottomrule
+\end{tabular}
+\label{tab:statistical}
+\end{table}
+
+* $p < 0.05$, ** $p < 0.01$
+
+\subsection{Professor's Targets Assessment}
+
+\begin{table}[h]
+\centering
+\caption{Research Target Evaluation}
+\begin{tabular}{lccc}
+\toprule
+Target & Expected & Actual & Status \\
+\midrule
+AI achieves 84\% of Human & $\geq$84\% & 102.1\% & \textbf{MET} \\
+AI 40\% better than Raw & $\geq$+40\% & +7.8\% & NOT MET \\
+\bottomrule
+\end{tabular}
+\label{tab:targets}
+\end{table}
+
+\section{Discussion}
+
+\subsection{Key Findings}
+
+\textbf{1. Baseline outperforms RAG:} The most surprising result is that the no-retrieval baseline achieved the highest ROUGE-L score (0.231), suggesting that for well-documented domains like smoking cessation, the LLM's parametric knowledge may be sufficient.
+
+\textbf{2. AI-generated matches human-curated:} AI-generated knowledge bases performed comparably to human-curated ones (102.1\% relative performance), with no statistically significant difference ($p = 0.184$).
+
+\textbf{3. Processed data beats raw sources:} Both AI-generated and human-curated RAG significantly outperformed raw sources ($p < 0.05$), confirming the value of structured knowledge bases.
+
+\textbf{4. Data leakage reversed conclusions:} The original test set showed Raw $>$ Human $>$ AI, which completely reversed with proper independence validation.
+
+\subsection{Why This Matters}
+The discovery of data leakage in the original test set demonstrates:
+\begin{enumerate}
+    \item The importance of rigorous test set validation in NLP research
+    \item That high performance scores may be artifacts of data contamination
+    \item The need for fuzzy string matching during test set creation
+\end{enumerate}
+
+\subsection{Implications for RAG Research}
+
+Our findings suggest a domain-dependency hypothesis: RAG benefit may be \textit{inversely related} to domain representation in LLM training data. For well-documented topics:
+\begin{itemize}
+    \item Baseline LLM knowledge may be comprehensive
+    \item Retrieved context may introduce noise rather than signal
+    \item RAG overhead may not justify marginal improvements
+\end{itemize}
+
+Future work should test this hypothesis across domains with varying LLM knowledge saturation.
+
+\subsection{Limitations}
+\begin{itemize}
+    \item Single domain (smoking cessation) - results may not generalize
+    \item Single LLM (GPT-4o-mini) - other models may show different patterns
+    \item 15 test questions - larger test sets would provide more statistical power
+    \item Domain is well-covered in LLM training data - may reduce RAG benefit
+    \item Metrics measure lexical overlap, not semantic accuracy or factual correctness
+\end{itemize}
+
+\section{Conclusion}
+
+This study makes two primary contributions:
+
+\textbf{Methodological:} We demonstrate the critical importance of test set independence verification. Data leakage completely reversed our conclusions, serving as a warning for NLP researchers.
+
+\textbf{Empirical:} We find that RAG does not universally improve performance. For well-known domains, LLM parametric knowledge may suffice. When RAG is used, AI-generated knowledge bases perform comparably to human-curated ones at a fraction of the cost.
+
+These findings shift the research question from ``Does RAG help?'' to ``When does RAG help?'' - a more nuanced and practically valuable inquiry.
+
+\section*{Acknowledgments}
+We thank the professor for guidance and the research team for data curation efforts.
+
+\appendix
+\section{Effect Size Reference}
+
+Cohen's d interpretation:
+\begin{itemize}
+    \item $|d| < 0.2$: Negligible
+    \item $0.2 \leq |d| < 0.5$: Small
+    \item $0.5 \leq |d| < 0.8$: Medium
+    \item $|d| \geq 0.8$: Large
+\end{itemize}
+
+\section{Complete Metrics by Approach}
+
+\begin{table}[h]
+\centering
+\caption{Complete Metrics (Mean $\pm$ 95\% CI)}
+\begin{tabular}{lccccc}
+\toprule
+Approach & ROUGE-1 & ROUGE-2 & ROUGE-L & BLEU & METEOR \\
+\midrule
+Baseline & $0.342 \pm 0.010$ & $0.097 \pm 0.012$ & $0.231 \pm 0.008$ & $0.054 \pm 0.004$ & $0.310 \pm 0.010$ \\
+Raw & $0.316 \pm 0.005$ & $0.068 \pm 0.004$ & $0.208 \pm 0.004$ & $0.039 \pm 0.003$ & $0.275 \pm 0.008$ \\
+AI & $0.325 \pm 0.004$ & $0.086 \pm 0.004$ & $0.224 \pm 0.005$ & $0.057 \pm 0.003$ & $0.290 \pm 0.008$ \\
+Human & $0.334 \pm 0.007$ & $0.079 \pm 0.005$ & $0.220 \pm 0.004$ & $0.045 \pm 0.003$ & $0.296 \pm 0.010$ \\
+\bottomrule
+\end{tabular}
+\label{tab:complete}
+\end{table}
+
+\end{document}

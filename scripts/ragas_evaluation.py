@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""RAGAS Evaluation: AI-Generated vs Human-Curated RAG.
+"""RAGAS Evaluation: Baseline vs AI-Generated vs Human-Curated vs Web-Scraped RAG.
 
-Evaluates three configurations using RAGAS faithfulness, answer relevancy,
+Evaluates four configurations using RAGAS faithfulness, answer relevancy,
 context precision, and context recall metrics against the 127-question LFV
 test set (Dr. Louis Willis's 150-question set, 23 flagged by reviewer).
 
@@ -9,7 +9,7 @@ Produces a results table comparable to Ebrahim's n=20 benchmark.
 
 Usage:
     python scripts/ragas_evaluation.py                         # all 127 questions
-    python scripts/ragas_evaluation.py --max-questions 20      # sanity check n=20
+    python scripts/ragas_evaluation.py --max-questions 100     # paper run (100q)
     python scripts/ragas_evaluation.py --configs baseline ai_rag
 """
 
@@ -74,7 +74,7 @@ MAX_TOKENS = 300
 TOP_K = 3
 RATE_LIMIT_SLEEP = 1.0  # seconds between answer-generation calls
 
-TEST_SET_PATH = _ROOT / "data" / "test_set" / "150_qa_testset.xlsx"
+TEST_SET_PATH = _ROOT / "data" / "test_set" / "test_set_150q.xlsx"
 RESULTS_DIR = _ROOT / "results" / "ragas_evaluation"
 
 SYSTEM_PROMPT = (
@@ -474,7 +474,7 @@ def run_evaluation(
     """Run the full evaluation pipeline.
 
     Args:
-        configs: Subset of ['baseline', 'ai_rag', 'human_rag'] to run.
+        configs: Subset of ['baseline', 'ai_rag', 'human_rag', 'web_rag'] to run.
         max_questions: Optional cap on test questions (None = all 127).
         resume: If True, load existing per-config checkpoints and skip
                 already-answered questions.
@@ -498,14 +498,17 @@ def run_evaluation(
     test_rows = load_test_set(TEST_SET_PATH, max_rows=max_questions)
     print(f"  Loaded {len(test_rows)} questions")
 
-    # --- Load RAG datasets ---
+    # --- Load RAG datasets (only what's needed) ---
     print("\nLoading RAG datasets...")
-    ai_data = load_ai_generated()
-    human_data = load_human_curated()
-    web_data = load_web_scraped()
-    print(f"  AI-generated:  {len(ai_data):,} pairs")
-    print(f"  Human-curated: {len(human_data):,} pairs")
-    print(f"  Web-scraped:   {len(web_data):,} pairs")
+    ai_data = load_ai_generated() if "ai_rag" in configs else []
+    human_data = load_human_curated() if "human_rag" in configs else []
+    web_data = load_web_scraped() if "web_rag" in configs else []
+    if ai_data:
+        print(f"  AI-generated:  {len(ai_data):,} pairs")
+    if human_data:
+        print(f"  Human-curated: {len(human_data):,} pairs")
+    if web_data:
+        print(f"  Web-scraped:   {len(web_data):,} pairs")
 
     # --- Build ChromaDB collections ---
     print("\nBuilding ChromaDB collections...")
@@ -701,8 +704,8 @@ def run_evaluation(
             "num_questions": len(test_rows),
             "max_questions_cap": max_questions,
             "configs_run": configs,
-            "ai_dataset_size": len(ai_data),
-            "human_dataset_size": len(human_data),
+            "ai_dataset_size": len(ai_data) if ai_data else None,
+            "human_dataset_size": len(human_data) if human_data else None,
             "top_k": TOP_K,
             "ragas_metrics": ["faithfulness", "answer_relevancy", "context_precision", "context_recall"],
             "concise_mode": concise,

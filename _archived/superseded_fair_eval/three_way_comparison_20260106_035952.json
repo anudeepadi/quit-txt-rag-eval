@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-06T03:59:52.543593",
+    "model": "gpt-4o-mini",
+    "num_test_questions": 15,
+    "human_dataset_size": 4847,
+    "ai_dataset_size": 5936,
+    "method": "THREE-WAY FAIR COMPARISON - Same test questions for all approaches"
+  },
+  "metrics": {
+    "baseline": {
+      "bleu": 0.1670515635012818,
+      "rouge1": 0.32057518837191523,
+      "rouge2": 0.12962334100067752,
+      "rougeL": 0.25928548270527446
+    },
+    "raw_rag": {
+      "bleu": 0.18504078260175447,
+      "rouge1": 0.35703611803004764,
+      "rouge2": 0.12572925874765523,
+      "rougeL": 0.25613826782150956
+    },
+    "ai_rag": {
+      "bleu": 0.32919936203743533,
+      "rouge1": 0.3135093810129339,
+      "rouge2": 0.11641665109665575,
+      "rougeL": 0.2359671302470898
+    },
+    "human_rag": {
+      "bleu": 0.2418068126014415,
+      "rouge1": 0.31692390103926066,
+      "rouge2": 0.11052333092068349,
+      "rougeL": 0.24145792077656136
+    }
+  },
+  "improvements": {
+    "ai_vs_raw_bleu_pct": 77.90638226273586,
+    "human_vs_raw_bleu_pct": 30.677577775845826,
+    "ai_pct_of_human_bleu": 136.14147529417988,
+    "raw_pct_of_human_bleu": 76.52422221318812
+  },
+  "detailed_results": {
+    "baseline": {
+      "responses": [
+        "It's never too late to quit smoking! Quitting can significantly improve your health and reduce the risk of smoking-related diseases, regardless of how long you've been smoking. Many people experience health benefits shortly after quitting, so it's definitely worth it to take that step.",
+        "In the first 24 hours after quitting smoking, your heart rate and blood pressure begin to drop to healthier levels. Carbon monoxide levels in your blood decrease, allowing oxygen levels to rise, which improves circulation and overall bodily function. You may also start to experience withdrawal symptoms as your body begins to adjust to the absence of nicotine.",
+        "When cravings strike, try deep breathing exercises or engage in physical activity to distract yourself. Drinking water or chewing gum can also help, as can reaching out to a friend or support group for encouragement. Remember that cravings typically last only a few minutes, so finding a way to occupy your mind during that time can be effective.",
+        "The best nicotine replacement therapy (NRT) options include nicotine patches, gum, lozenges, inhalers, and nasal sprays. The choice depends on personal preference, smoking habits, and any underlying health conditions. It's often beneficial to combine different NRTs for better effectiveness.",
+        "It's common to gain a small amount of weight after quitting smoking, often due to increased appetite and changes in metabolism. However, the health benefits of quitting far outweigh the potential for weight gain. With proper strategies, such as healthy eating and regular exercise, you can manage your weight effectively while quitting.",
+        "Smoking significantly increases the risk of cardiovascular diseases by damaging blood vessels, raising blood pressure, and reducing oxygen flow to the heart. It contributes to the buildup of plaque in arteries, leading to atherosclerosis, heart attacks, and strokes. Quitting smoking can greatly improve your heart health and reduce these risks.",
+        "If you relapse after quitting, don't be too hard on yourself; it's a common part of the journey. Reflect on what triggered the relapse, learn from the experience, and use it to strengthen your resolve. Consider reaching out to a support group or counselor for additional guidance and encouragement.",
+        "Nicotine addiction occurs when nicotine binds to nicotinic acetylcholine receptors in the brain, leading to the release of neurotransmitters like dopamine, which reinforces pleasurable feelings. Over time, the brain adapts to the presence of nicotine, requiring more of it to achieve the same effects, resulting in dependence and withdrawal symptoms when not using it. This cycle makes quitting challenging, as the brain craves the substance to restore its altered state.",
+        "After one year of quitting smoking, the risk of coronary heart disease is significantly reduced, dropping to about half that of a smoker. Additionally, lung function improves, and the risk of stroke decreases, leading to overall better health and increased life expectancy. Quitting also enhances quality of life, including improved breathing and increased energy levels.",
+        "Encourage your family member by providing emotional support and understanding their challenges. Help them set a quit date, explore cessation resources like counseling or nicotine replacement therapies, and celebrate their progress, no matter how small. Being patient and non-judgmental is key to their success.",
+        "Medications that can aid in smoking cessation include nicotine replacement therapies (like patches, gum, and lozenges), bupropion (Zyban), and varenicline (Chantix). These options help reduce withdrawal symptoms and cravings, making it easier to quit smoking. Always consult a healthcare provider to determine the best choice for your situation.",
+        "Secondhand smoke can significantly harm children's health, increasing their risk of respiratory infections, asthma, and sudden infant death syndrome (SIDS). It can also affect their cognitive development and lead to long-term health issues, including cardiovascular disease. Protecting children from exposure is crucial for their overall well-being.",
+        "When trying to quit smoking, avoid triggers such as places where you used to smoke, social situations with other smokers, and stress-inducing environments. Additionally, be mindful of certain activities or routines that you associate with smoking, as they can prompt cravings. Identifying and managing these triggers is key to your success.",
+        "Withdrawal symptoms from nicotine typically peak within the first few days after quitting and can last for 1 to 3 weeks. However, some individuals may experience cravings and psychological symptoms for several months. It's important to seek support during this time to manage symptoms effectively.",
+        "Both methods can be effective, but the best approach varies by individual. Cold turkey may work well for those who prefer a decisive break, while gradual reduction can help others manage cravings and withdrawal symptoms more comfortably. It's important to choose the method that feels right for you and seek support if needed."
+      ],
+      "references": [
+        "It's never too late to quit smoking. Even after 20 years, your body can begin to heal. Within 20 minutes of quitting, your heart rate drops. Within 12 hours, carbon monoxide levels normalize.",
+        "In the first 24 hours: Within 20 minutes, heart rate and blood pressure drop. At 8 hours, carbon monoxide levels decrease. At 24 hours, your risk of heart attack begins to decrease.",
+        "To manage cravings, try the 4 Ds: Delay acting on the craving, Deep breathe, Drink water, and Do something else. Cravings typically last 3-5 minutes.",
+        "NRT options include patches, gum, lozenges, inhalers, and nasal sprays. Patches provide steady nicotine release, while gum and lozenges help sudden urges.",
+        "Some weight gain is common (5-10 pounds) because nicotine suppresses appetite. To minimize gain: exercise regularly, choose healthy snacks, drink water.",
+        "Smoking damages blood vessels, raises blood pressure, reduces oxygen in blood, and increases heart rate. It significantly increases risk of heart attack and stroke.",
+        "A slip doesn't mean failure. Most successful quitters try multiple times. Identify what triggered the relapse, learn from it, and recommit immediately.",
+        "Nicotine reaches the brain within seconds, triggering dopamine release. Over time, the brain develops tolerance and needs more nicotine. Withdrawal causes cravings.",
+        "After 1 year: heart disease risk drops by half, lung function improves, circulation is better, and risk of various cancers decreases.",
+        "Be supportive without nagging. Offer encouragement, celebrate milestones, help identify triggers. Don't criticize slips. Be patient.",
+        "Prescription options include Varenicline (Chantix) which blocks nicotine receptors, and Bupropion (Wellbutrin/Zyban) which reduces withdrawal symptoms.",
+        "Children exposed to secondhand smoke have higher rates of ear infections, asthma, and respiratory infections. Never smoke indoors or in cars with children.",
+        "Common triggers include alcohol, coffee, stress, other smokers, and specific routines. Change routines, limit alcohol initially, find new stress management.",
+        "Most physical withdrawal symptoms peak within 2-3 days and subside within 2-4 weeks. Psychological cravings may persist but become less frequent.",
+        "Both methods can work. Cold turkey works for some who prefer a clean break. Research suggests setting a quit date and stopping completely often has better success."
+      ]
+    },
+    "raw_rag": {
+      "responses": [
+        "It's never too late to quit smoking! Regardless of how long you've been smoking, quitting can lead to significant health benefits, including a decrease in heart disease risk and improved lung function. Many people successfully quit after years of smoking, and you can too!",
+        "In the first 24 hours after quitting smoking, your heart rate drops within 20 minutes, and by 12 hours, the carbon monoxide levels in your blood return to normal. These changes mark the beginning of significant health improvements as your body starts to recover from the effects of smoking.",
+        "When cravings hit, try waiting it out for 3-5 minutes, as they typically pass. You can also practice deep breathing exercises, drink water, distract yourself with an activity, or call a supportive friend for help.",
+        "The best nicotine replacement therapy (NRT) options include nicotine patches for a steady dose, nicotine gum for fast relief during cravings, and nicotine lozenges that dissolve in the mouth. Additionally, nicotine inhalers and nasal sprays are available by prescription for those who may need alternative methods.",
+        "It's common to gain weight after quitting smoking, with the average increase being 5-10 pounds. This is partly because nicotine suppresses appetite and increases metabolism, so when you quit, your body may respond by increasing appetite. Regular exercise and healthy snacking can help manage this weight gain.",
+        "Smoking significantly harms cardiovascular health by increasing heart rate and blood pressure, leading to a higher risk of heart disease. After quitting, your heart rate drops within 20 minutes, and after one year, your risk of coronary heart disease is reduced to half that of a smoker.",
+        "If you relapse, remember that a slip is not a failure. Reflect on what triggered the relapse, learn from the experience, and get back on track immediately by recommitting to your cessation plan. It's common for people to try quitting multiple times before succeeding, so don't be discouraged.",
+        "Nicotine addiction occurs when nicotine binds to receptors in the brain, primarily the nicotinic acetylcholine receptors, leading to the release of neurotransmitters like dopamine. This release creates pleasurable sensations, reinforcing the behavior of smoking. Over time, the brain becomes dependent on nicotine to maintain these feelings, making quitting challenging.",
+        "After one year of quitting smoking, your risk of coronary heart disease is reduced to half that of a smoker. Additionally, you may experience improved overall health, increased energy levels, and a better quality of life.",
+        "Support your family member by encouraging them to set a quit date and helping them create a plan. Offer to be there for them during cravings, and discuss potential triggers they may face. Additionally, suggest nicotine replacement therapy options, such as patches or gum, to help manage withdrawal symptoms.",
+        "Medications that can help with smoking cessation include nicotine replacement therapy (NRT) products such as nicotine patches, gum, lozenges, inhalers, and nasal spray. Additionally, prescription medications like bupropion (Zyban) and varenicline (Chantix) can also aid in quitting by reducing cravings and withdrawal symptoms.",
+        "Children exposed to secondhand smoke are at increased risk for several serious health issues, including sudden infant death syndrome (SIDS), acute respiratory infections, ear problems, and more severe asthma. These risks highlight the importance of protecting children from exposure to tobacco smoke.",
+        "Common triggers to avoid when trying to quit smoking include situations where you typically smoked, such as drinking alcohol or coffee, being around other smokers, and experiencing stress. It's important to identify your personal triggers and develop strategies to cope with them, as learning from these triggers can help prevent relapse.",
+        "Withdrawal symptoms can vary in duration but generally peak within the first week after quitting and may last for several weeks. Most people find that symptoms gradually decrease over time, with significant improvement often seen within the first month.",
+        "Both methods can be effective, and the best choice depends on the individual. Some people find success with the cold turkey approach, while others prefer gradual reduction to ease the transition. It's important to choose a method that feels right for you and to stay committed to your goal."
+      ],
+      "references": [
+        "It's never too late to quit smoking. Even after 20 years, your body can begin to heal. Within 20 minutes of quitting, your heart rate drops. Within 12 hours, carbon monoxide levels normalize.",
+        "In the first 24 hours: Within 20 minutes, heart rate and blood pressure drop. At 8 hours, carbon monoxide levels decrease. At 24 hours, your risk of heart attack begins to decrease.",
+        "To manage cravings, try the 4 Ds: Delay acting on the craving, Deep breathe, Drink water, and Do something else. Cravings typically last 3-5 minutes.",
+        "NRT options include patches, gum, lozenges, inhalers, and nasal sprays. Patches provide steady nicotine release, while gum and lozenges help sudden urges.",
+        "Some weight gain is common (5-10 pounds) because nicotine suppresses appetite. To minimize gain: exercise regularly, choose healthy snacks, drink water.",
+        "Smoking damages blood vessels, raises blood pressure, reduces oxygen in blood, and increases heart rate. It significantly increases risk of heart attack and stroke.",
+        "A slip doesn't mean failure. Most successful quitters try multiple times. Identify what triggered the relapse, learn from it, and recommit immediately.",
+        "Nicotine reaches the brain within seconds, triggering dopamine release. Over time, the brain develops tolerance and needs more nicotine. Withdrawal causes cravings.",
+        "After 1 year: heart disease risk drops by half, lung function improves, circulation is better, and risk of various cancers decreases.",
+        "Be supportive without nagging. Offer encouragement, celebrate milestones, help identify triggers. Don't criticize slips. Be patient.",
+        "Prescription options include Varenicline (Chantix) which blocks nicotine receptors, and Bupropion (Wellbutrin/Zyban) which reduces withdrawal symptoms.",
+        "Children exposed to secondhand smoke have higher rates of ear infections, asthma, and respiratory infections. Never smoke indoors or in cars with children.",
+        "Common triggers include alcohol, coffee, stress, other smokers, and specific routines. Change routines, limit alcohol initially, find new stress management.",
+        "Most physical withdrawal symptoms peak within 2-3 days and subside within 2-4 weeks. Psychological cravings may persist but become less frequent.",
+        "Both methods can work. Cold turkey works for some who prefer a clean break. Research suggests setting a quit date and stopping completely often has better success."
+      ]
+    },
+    "ai_rag": {
+      "responses": [
+        "No, it's not too late for you to quit smoking. Even after 20 years, your body will still benefit from quitting, and the sooner you stop, the greater the health improvements you'll experience.",
+        "In the first 24 hours after quitting smoking, your heart rate drops to a normal level within 20 minutes, and within 12-24 hours, the carbon monoxide level in your blood returns to normal. This reduces your risk of a heart attack and marks the beginning of your body's recovery process.",
+        "To deal with nicotine cravings, use nicotine replacement therapy as directed to help manage withdrawal symptoms. Additionally, engage in healthy distractions like exercise, hobbies, or spending time with friends and family, and remember that cravings are temporary and will pass.",
+        "The best nicotine replacement therapy (NRT) options include nicotine patches, gum, lozenges, inhalers, and nasal sprays. The choice of the best option depends on your personal preferences, lifestyle, and how you respond to different forms of nicotine delivery. It's advisable to consult with your doctor or pharmacist to determine which option is most suitable for you.",
+        "You might gain some weight after quitting smoking, as many people do experience this. However, it's not inevitable; maintaining a healthy diet and regular exercise can help manage your weight during this transition.",
+        "Smoking negatively impacts your cardiovascular health by damaging your heart and blood vessels, which increases the risk of heart disease, heart attack, and stroke. The chemicals in cigarette smoke harm the lining of arteries, while nicotine raises blood pressure and heart rate. Quitting smoking can lead to significant improvements in your cardiovascular health.",
+        "If you relapse after quitting, don't despair; it's a common part of the quitting process. Take time to reflect on what triggered the relapse, learn from the experience, and develop a plan to avoid those triggers in the future. Get back on track as soon as possible and remember that your progress is not lost.",
+        "Nicotine addiction works in the brain by stimulating the release of dopamine, a neurotransmitter that produces feelings of pleasure and reward. This creates a reinforcing cycle where the brain craves more nicotine to maintain those pleasurable feelings, leading to dependence. Over time, the brain adapts to the presence of nicotine, resulting in cravings and withdrawal symptoms when trying to quit.",
+        "After one year of quitting smoking, you can expect a significant reduction in the risk of heart disease, with the risk being about half that of a smoker. Additionally, your lung function will improve, and you'll likely experience increased energy levels and better overall health.",
+        "You can help by offering your support and encouragement, being patient and understanding throughout their journey. Create a smoke-free environment by avoiding smoking around them, and celebrate their successes while helping them navigate any setbacks they may encounter.",
+        "Medications that can help with smoking cessation include nicotine replacement therapies (like patches, gum, lozenges, inhalers, and nasal sprays) and prescription medications such as bupropion and varenicline. These medications can help reduce withdrawal symptoms and cravings, making it easier to quit smoking. Always consult your doctor to find the best option for you.",
+        "Secondhand smoke adversely affects children by increasing their risk of respiratory infections, ear infections, and asthma attacks. It can also impair lung development and contribute to emotional issues such as anxiety and irritability, negatively impacting their overall health and social interactions.",
+        "When trying to quit smoking, it's important to avoid triggers such as stressful situations, places where you used to smoke, and social gatherings where others are smoking. Additionally, steer clear of activities that you associate with smoking, and consider changing your routines to minimize exposure to these triggers.",
+        "Withdrawal symptoms typically peak within the first few days or weeks after quitting and gradually subside over time. While some symptoms may linger longer, they are temporary and will eventually pass.",
+        "The best approach varies by individual. Some people succeed with quitting cold turkey, while others find gradual reduction more manageable. It's important to consider your past experiences and consult with your doctor to find the right method for you."
+      ],
+      "references": [
+        "It's never too late to quit smoking. Even after 20 years, your body can begin to heal. Within 20 minutes of quitting, your heart rate drops. Within 12 hours, carbon monoxide levels normalize.",
+        "In the first 24 hours: Within 20 minutes, heart rate and blood pressure drop. At 8 hours, carbon monoxide levels decrease. At 24 hours, your risk of heart attack begins to decrease.",
+        "To manage cravings, try the 4 Ds: Delay acting on the craving, Deep breathe, Drink water, and Do something else. Cravings typically last 3-5 minutes.",
+        "NRT options include patches, gum, lozenges, inhalers, and nasal sprays. Patches provide steady nicotine release, while gum and lozenges help sudden urges.",
+        "Some weight gain is common (5-10 pounds) because nicotine suppresses appetite. To minimize gain: exercise regularly, choose healthy snacks, drink water.",
+        "Smoking damages blood vessels, raises blood pressure, reduces oxygen in blood, and increases heart rate. It significantly increases risk of heart attack and stroke.",
+        "A slip doesn't mean failure. Most successful quitters try multiple times. Identify what triggered the relapse, learn from it, and recommit immediately.",
+        "Nicotine reaches the brain within seconds, triggering dopamine release. Over time, the brain develops tolerance and needs more nicotine. Withdrawal causes cravings.",
+        "After 1 year: heart disease risk drops by half, lung function improves, circulation is better, and risk of various cancers decreases.",
+        "Be supportive without nagging. Offer encouragement, celebrate milestones, help identify triggers. Don't criticize slips. Be patient.",
+        "Prescription options include Varenicline (Chantix) which blocks nicotine receptors, and Bupropion (Wellbutrin/Zyban) which reduces withdrawal symptoms.",
+        "Children exposed to secondhand smoke have higher rates of ear infections, asthma, and respiratory infections. Never smoke indoors or in cars with children.",
+        "Common triggers include alcohol, coffee, stress, other smokers, and specific routines. Change routines, limit alcohol initially, find new stress management.",
+        "Most physical withdrawal symptoms peak within 2-3 days and subside within 2-4 weeks. Psychological cravings may persist but become less frequent.",
+        "Both methods can work. Cold turkey works for some who prefer a clean break. Research suggests setting a quit date and stopping completely often has better success."
+      ]
+    },
+    "human_rag": {
+      "responses": [
+        "No, it's never too late to quit smoking. Quitting can lead to immediate and long-term health benefits, regardless of how long you've been smoking.",
+        "In the first 24 hours after quitting smoking, your body starts to experience significant improvements. Within 20 minutes, your heart rate and blood pressure begin to normalize, and after 8 hours, carbon monoxide levels in your blood decrease by half while oxygen levels return to normal. These changes mark the beginning of your body's healing process.",
+        "When nicotine cravings hit, try to distract yourself with an enjoyable activity and set a timer for 10 minutes, as cravings usually pass within that time. You can also use the '7 D's' strategy: Delay, Deep breathe, Drink water, Don't buy or accept cigarettes, and Discuss your feelings with someone supportive.",
+        "The best nicotine replacement therapy (NRT) options include patches for a steady release of nicotine, gum and lozenges for quick relief from cravings, and nasal sprays or inhalators for immediate effects. The choice of NRT can depend on individual preferences and needs, and combining different products may enhance effectiveness in managing withdrawal symptoms.",
+        "Some individuals may gain a few pounds after quitting due to changes in metabolism and eating habits. However, the health benefits of quitting far outweigh the potential weight gain, and staying active along with being mindful of your diet can help manage this.",
+        "Smoking significantly increases the risk of cardiovascular diseases, contributing to nearly one-third of deaths from coronary heart disease. It damages the lining of arteries, leading to atherosclerosis, and raises blood pressure and heart rate, which puts additional strain on the heart.",
+        "If you relapse after quitting, don't view it as a failure; see it as a temporary setback. Revisit your quit plan, remind yourself of your reasons for quitting, identify the triggers that led to the relapse, and develop strategies to cope with them. Seeking support from friends, family, or a healthcare professional can also help you get back on track.",
+        "Nicotine addiction works in the brain by stimulating the release of dopamine, a neurotransmitter linked to pleasure and reward. This release reinforces the act of smoking, creating a habit loop that leads to repeated behavior. Over time, the brain adapts to the increased dopamine levels, resulting in tolerance and dependence, making it difficult to quit.",
+        "After one year of quitting smoking, the risk of heart attack or stroke is halved compared to that of a smoker. Additionally, lung function continues to improve, and the overall quality of life enhances, contributing to better health and well-being.",
+        "You can help a family member who wants to quit smoking by providing encouragement and understanding throughout their journey. Offer to assist them in setting a quit date, and be supportive of their feelings and challenges during the process. Additionally, help create a smoke-free environment and celebrate their successes, no matter how small, to keep them motivated.",
+        "Medications that can help with smoking cessation include nicotine replacement therapies (NRTs) such as patches, gum, and lozenges, which provide controlled doses of nicotine. Additionally, prescription medications like bupropion (Zyban) and varenicline are effective in reducing cravings and withdrawal symptoms.",
+        "Secondhand smoke significantly harms children by increasing their risk of respiratory infections, asthma attacks, ear infections, and sudden infant death syndrome (SIDS). It can also lead to delayed lung development and worsen existing respiratory conditions.",
+        "When trying to quit, it's important to avoid triggers such as alcohol, which can weaken your resolve, and situations or routines that you associate with smoking, like certain social gatherings or breaks. Additionally, managing stress and avoiding environments where smoking is prevalent can help reduce cravings and support your quitting efforts.",
+        "Withdrawal symptoms typically last a few days to a few weeks, with most symptoms subsiding within 2 to 4 weeks. However, the duration can vary from person to person.",
+        "Quitting cold turkey can be more effective than gradual reduction, with some studies showing higher success rates in the short and long term. However, individual experiences vary, and the best approach depends on personal preferences and circumstances. Combining counseling with medications generally increases the likelihood of remaining smoke-free."
+      ],
+      "references": [
+        "It's never too late to quit smoking. Even after 20 years, your body can begin to heal. Within 20 minutes of quitting, your heart rate drops. Within 12 hours, carbon monoxide levels normalize.",
+        "In the first 24 hours: Within 20 minutes, heart rate and blood pressure drop. At 8 hours, carbon monoxide levels decrease. At 24 hours, your risk of heart attack begins to decrease.",
+        "To manage cravings, try the 4 Ds: Delay acting on the craving, Deep breathe, Drink water, and Do something else. Cravings typically last 3-5 minutes.",
+        "NRT options include patches, gum, lozenges, inhalers, and nasal sprays. Patches provide steady nicotine release, while gum and lozenges help sudden urges.",
+        "Some weight gain is common (5-10 pounds) because nicotine suppresses appetite. To minimize gain: exercise regularly, choose healthy snacks, drink water.",
+        "Smoking damages blood vessels, raises blood pressure, reduces oxygen in blood, and increases heart rate. It significantly increases risk of heart attack and stroke.",
+        "A slip doesn't mean failure. Most successful quitters try multiple times. Identify what triggered the relapse, learn from it, and recommit immediately.",
+        "Nicotine reaches the brain within seconds, triggering dopamine release. Over time, the brain develops tolerance and needs more nicotine. Withdrawal causes cravings.",
+        "After 1 year: heart disease risk drops by half, lung function improves, circulation is better, and risk of various cancers decreases.",
+        "Be supportive without nagging. Offer encouragement, celebrate milestones, help identify triggers. Don't criticize slips. Be patient.",
+        "Prescription options include Varenicline (Chantix) which blocks nicotine receptors, and Bupropion (Wellbutrin/Zyban) which reduces withdrawal symptoms.",
+        "Children exposed to secondhand smoke have higher rates of ear infections, asthma, and respiratory infections. Never smoke indoors or in cars with children.",
+        "Common triggers include alcohol, coffee, stress, other smokers, and specific routines. Change routines, limit alcohol initially, find new stress management.",
+        "Most physical withdrawal symptoms peak within 2-3 days and subside within 2-4 weeks. Psychological cravings may persist but become less frequent.",
+        "Both methods can work. Cold turkey works for some who prefer a clean break. Research suggests setting a quit date and stopping completely often has better success."
+      ]
+    }
+  }
+}
