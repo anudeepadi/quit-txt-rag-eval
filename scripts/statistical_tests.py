@@ -44,29 +44,51 @@ METRICS = ["faithfulness", "answer_relevancy", "context_precision", "context_rec
 
 
 def load_ragas_scores(results_json: Path | None = None) -> dict[str, dict[str, list[float]]]:
-    """Load per-question RAGAS scores from the latest results JSON.
+    """Load per-question RAGAS scores, merging across result files if needed.
+
+    When results are split across multiple files (e.g. baseline in one run,
+    RAG configs in another), this merges all recent concise result files to
+    build a complete picture.
 
     Args:
-        results_json: Explicit path to results JSON. If None, finds latest.
+        results_json: Explicit path to results JSON. If None, merges all
+            recent concise result files.
 
     Returns:
         Dict mapping config -> metric -> list of per-question scores.
     """
-    if results_json is None:
-        # Find the latest concise results file
-        candidates = sorted(RESULTS_DIR.glob("ragas_eval_concise_*.json"))
-        if not candidates:
-            candidates = sorted(RESULTS_DIR.glob("ragas_eval_*.json"))
-        if not candidates:
-            raise FileNotFoundError(f"No RAGAS results found in {RESULTS_DIR}")
-        results_json = candidates[-1]
+    if results_json is not None:
+        print(f"Loading RAGAS scores from: {results_json.name}")
+        with open(results_json, encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("all_scores", {})
 
-    print(f"Loading RAGAS scores from: {results_json.name}")
+    # Merge scores from all concise result files
+    candidates = sorted(RESULTS_DIR.glob("ragas_eval_concise_*.json"))
+    if not candidates:
+        candidates = sorted(RESULTS_DIR.glob("ragas_eval_*.json"))
+    if not candidates:
+        raise FileNotFoundError(f"No RAGAS results found in {RESULTS_DIR}")
 
-    with open(results_json, encoding="utf-8") as f:
-        data = json.load(f)
+    merged: dict[str, dict[str, list[float]]] = {}
+    for path in candidates:
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        file_scores = data.get("all_scores", {})
+        for config, metrics in file_scores.items():
+            # Only keep configs with real data (skip all-NaN entries)
+            has_data = any(
+                any(v == v for v in vals)  # v != v means NaN
+                for vals in metrics.values()
+            )
+            if has_data and config not in merged:
+                merged[config] = metrics
+                print(f"  Loaded {config} from {path.name}")
 
-    return data.get("all_scores", {})
+    if not merged:
+        raise FileNotFoundError("No valid RAGAS scores found across result files")
+
+    return merged
 
 
 def load_bertscore_results() -> dict[str, list[float]]:

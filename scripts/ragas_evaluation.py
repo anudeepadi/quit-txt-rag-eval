@@ -219,6 +219,10 @@ def generate_baseline_answer(oai_client: OpenAI, question: str, concise: bool = 
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
+        err_str = str(e)
+        if "401" in err_str or "account_deactivated" in err_str or "invalid_api_key" in err_str:
+            print(f"  [FATAL] Authentication error — aborting: {e}")
+            raise SystemExit(1)
         print(f"  [WARN] Baseline generation error: {e}")
         return ""
 
@@ -263,6 +267,10 @@ def generate_rag_answer(
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
+        err_str = str(e)
+        if "401" in err_str or "account_deactivated" in err_str or "invalid_api_key" in err_str:
+            print(f"  [FATAL] Authentication error — aborting: {e}")
+            raise SystemExit(1)
         print(f"  [WARN] RAG generation error: {e}")
         return ""
 
@@ -338,9 +346,6 @@ def run_ragas_evaluation(
         }
         for s in samples
     ]
-    # Flag which rows had empty contexts so we can NaN them out
-    empty_ctx_mask = [not bool(s.retrieved_contexts) for s in samples]
-
     # AnswerRelevancy: user_input, response
     relevancy_inputs = [
         {"user_input": s.user_input, "response": s.response}
@@ -353,10 +358,6 @@ def run_ragas_evaluation(
 
     print("    Scoring: faithfulness...")
     faith_scores = _safe_batch_score(faith_metric, faith_inputs)
-    # Override with NaN where contexts were empty (baseline)
-    faith_scores = [
-        nan if empty_ctx_mask[i] else v for i, v in enumerate(faith_scores)
-    ]
 
     print(f"    [rate-limit cooldown] sleeping {_METRIC_COOLDOWN}s...")
     time.sleep(_METRIC_COOLDOWN)

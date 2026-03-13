@@ -1,0 +1,560 @@
+{
+  "metadata": {
+    "generated_at": "2026-03-13T00:56:14.051086",
+    "configs": [
+      "baseline",
+      "ai_rag",
+      "human_rag",
+      "web_rag"
+    ],
+    "metrics": [
+      "faithfulness",
+      "answer_relevancy",
+      "context_precision",
+      "context_recall",
+      "bertscore_f1"
+    ],
+    "test": "Wilcoxon signed-rank (two-sided)",
+    "effect_size": "Cliff's delta",
+    "confidence_intervals": "Bootstrap 95% (10000 samples)"
+  },
+  "confidence_intervals": {
+    "baseline": {
+      "faithfulness": {
+        "mean": null,
+        "ci_lower": null,
+        "ci_upper": null
+      },
+      "answer_relevancy": {
+        "mean": 0.8411,
+        "ci_lower": 0.7843,
+        "ci_upper": 0.8915,
+        "n": 100
+      },
+      "context_precision": {
+        "mean": null,
+        "ci_lower": null,
+        "ci_upper": null
+      },
+      "context_recall": {
+        "mean": null,
+        "ci_lower": null,
+        "ci_upper": null
+      },
+      "bertscore_f1": {
+        "mean": 0.8977,
+        "ci_lower": 0.8938,
+        "ci_upper": 0.9016,
+        "n": 100
+      }
+    },
+    "ai_rag": {
+      "faithfulness": {
+        "mean": 0.7237,
+        "ci_lower": 0.6503,
+        "ci_upper": 0.797,
+        "n": 100
+      },
+      "answer_relevancy": {
+        "mean": 0.5635,
+        "ci_lower": 0.4789,
+        "ci_upper": 0.6465,
+        "n": 100
+      },
+      "context_precision": {
+        "mean": 0.4808,
+        "ci_lower": 0.3867,
+        "ci_upper": 0.5717,
+        "n": 100
+      },
+      "context_recall": {
+        "mean": 0.259,
+        "ci_lower": 0.1947,
+        "ci_upper": 0.326,
+        "n": 100
+      },
+      "bertscore_f1": {
+        "mean": 0.8848,
+        "ci_lower": 0.8809,
+        "ci_upper": 0.8887,
+        "n": 100
+      }
+    },
+    "human_rag": {
+      "faithfulness": {
+        "mean": 0.7888,
+        "ci_lower": 0.7183,
+        "ci_upper": 0.8555,
+        "n": 100
+      },
+      "answer_relevancy": {
+        "mean": 0.7075,
+        "ci_lower": 0.6334,
+        "ci_upper": 0.7786,
+        "n": 100
+      },
+      "context_precision": {
+        "mean": null,
+        "ci_lower": null,
+        "ci_upper": null
+      },
+      "context_recall": {
+        "mean": 0.4231,
+        "ci_lower": 0.3508,
+        "ci_upper": 0.4973,
+        "n": 100
+      },
+      "bertscore_f1": {
+        "mean": 0.8891,
+        "ci_lower": 0.885,
+        "ci_upper": 0.893,
+        "n": 100
+      }
+    },
+    "web_rag": {
+      "faithfulness": {
+        "mean": 0.7187,
+        "ci_lower": 0.642,
+        "ci_upper": 0.791,
+        "n": 100
+      },
+      "answer_relevancy": {
+        "mean": 0.526,
+        "ci_lower": 0.4403,
+        "ci_upper": 0.6086,
+        "n": 100
+      },
+      "context_precision": {
+        "mean": null,
+        "ci_lower": null,
+        "ci_upper": null
+      },
+      "context_recall": {
+        "mean": 0.3054,
+        "ci_lower": 0.2342,
+        "ci_upper": 0.378,
+        "n": 100
+      },
+      "bertscore_f1": {
+        "mean": 0.8831,
+        "ci_lower": 0.8791,
+        "ci_upper": 0.8872,
+        "n": 100
+      }
+    }
+  },
+  "pairwise_tests": {
+    "faithfulness": {
+      "baseline_vs_ai_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "baseline_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "baseline_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "ai_rag_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 516.5,
+          "p_value": 0.1156319250295437,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": -0.12,
+          "magnitude": "negligible"
+        }
+      },
+      "ai_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 577.5,
+          "p_value": 0.9141277813390485,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": -0.04,
+          "magnitude": "negligible"
+        }
+      },
+      "human_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 470.5,
+          "p_value": 0.07061115831097133,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": 0.13,
+          "magnitude": "negligible"
+        }
+      }
+    },
+    "answer_relevancy": {
+      "baseline_vs_ai_rag": {
+        "wilcoxon": {
+          "statistic": 777.0,
+          "p_value": 3.1859409374084447e-07,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.4,
+          "magnitude": "medium"
+        }
+      },
+      "baseline_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 1455.0,
+          "p_value": 0.003368906704115834,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.18,
+          "magnitude": "small"
+        }
+      },
+      "baseline_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 818.0,
+          "p_value": 5.738562458838627e-08,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.41,
+          "magnitude": "medium"
+        }
+      },
+      "ai_rag_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 1016.0,
+          "p_value": 0.0037680084004823537,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": -0.2,
+          "magnitude": "small"
+        }
+      },
+      "ai_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 1006.0,
+          "p_value": 0.40608442634070374,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": 0.05,
+          "magnitude": "negligible"
+        }
+      },
+      "human_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 823.0,
+          "p_value": 4.88112200917008e-05,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.3,
+          "magnitude": "small"
+        }
+      }
+    },
+    "context_precision": {
+      "baseline_vs_ai_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "baseline_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "baseline_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "ai_rag_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "ai_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "human_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      }
+    },
+    "context_recall": {
+      "baseline_vs_ai_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "baseline_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "baseline_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": null,
+          "p_value": null,
+          "n_valid": 0,
+          "significant_005": null,
+          "significant_001": null,
+          "note": "Too few valid pairs for test"
+        },
+        "cliffs_delta": {
+          "delta": null,
+          "magnitude": "insufficient data"
+        }
+      },
+      "ai_rag_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 238.0,
+          "p_value": 7.890860339165397e-06,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": -0.31,
+          "magnitude": "small"
+        }
+      },
+      "ai_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 509.5,
+          "p_value": 0.2158389929054716,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": -0.06,
+          "magnitude": "negligible"
+        }
+      },
+      "human_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 300.0,
+          "p_value": 0.000647857929216461,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.21,
+          "magnitude": "small"
+        }
+      }
+    },
+    "bertscore_f1": {
+      "baseline_vs_ai_rag": {
+        "wilcoxon": {
+          "statistic": 839.0,
+          "p_value": 6.7505379341364984e-09,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.54,
+          "magnitude": "large"
+        }
+      },
+      "baseline_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 982.0,
+          "p_value": 1.1246611482457751e-07,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.48,
+          "magnitude": "large"
+        }
+      },
+      "baseline_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 738.0,
+          "p_value": 8.032375048416748e-10,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.58,
+          "magnitude": "large"
+        }
+      },
+      "ai_rag_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 2039.0,
+          "p_value": 0.09471656727210129,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": -0.12,
+          "magnitude": "negligible"
+        }
+      },
+      "ai_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 1923.0,
+          "p_value": 0.13887434662951825,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": 0.2,
+          "magnitude": "small"
+        }
+      },
+      "human_rag_vs_web_rag": {
+        "wilcoxon": {
+          "statistic": 1708.0,
+          "p_value": 0.007427304909893699,
+          "n_valid": 100,
+          "significant_005": "True",
+          "significant_001": "True"
+        },
+        "cliffs_delta": {
+          "delta": 0.25,
+          "magnitude": "small"
+        }
+      }
+    }
+  }
+}
