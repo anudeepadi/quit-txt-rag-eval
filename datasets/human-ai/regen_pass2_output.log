@@ -1,0 +1,703 @@
+23:23:22 [INFO] Loading source excerpts from: /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/backups/ai_generated_qa_pre_regen_20260402_033005.jsonl
+23:23:22 [INFO] Loaded 5936 pairs from backup
+23:23:22 [INFO] Pairs with answer_source_excerpt: 5841 / 5936 (98.4%)
+23:23:22 [INFO] ======================================================================
+23:23:22 [INFO] AI DATASET REGENERATION — Autoresearch Exp5 Optimized Prompt
+23:23:22 [INFO] ======================================================================
+23:23:22 [INFO]   Source backup: /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/backups/ai_generated_qa_pre_regen_20260402_033005.jsonl
+23:23:22 [INFO]   Output:        /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/pass2_temp0.2.jsonl
+23:23:22 [INFO]   Model:         gpt-4o-mini
+23:23:22 [INFO]   Temperature:   0.2
+23:23:22 [INFO]   Prompt:        Two-pass fact extraction (source-preserving)
+23:23:22 [INFO]   QA/chunk:      12
+23:23:22 [INFO]   Chunk size:    500 chars
+23:23:22 [INFO]   Dedup thresh:  0.90
+23:23:22 [INFO]   Sources:       7 (from original dataset excerpts)
+23:23:22 [INFO]   Resume:        False
+23:23:22 [INFO]   Dry run:       False
+23:23:22 [INFO] 
+23:23:22 [INFO]   [1] ALA - Benefits of Quitting: 57 excerpts, 9,928 chars, ~22 chunks (from 394 original pairs)
+23:23:22 [INFO]   [2] ACS - Guide to Quitting: 12 excerpts, 1,430 chars, ~3 chunks (from 75 original pairs)
+23:23:22 [INFO]   [3] ACS - Health Risks: 14 excerpts, 1,202 chars, ~3 chunks (from 868 original pairs)
+23:23:22 [INFO]   [4] NHS - Quit Smoking: 11 excerpts, 551 chars, ~2 chunks (from 30 original pairs)
+23:23:22 [INFO]   [5] Smokefree - Challenges: 1080 excerpts, 85,992 chars, ~172 chunks (from 1644 original pairs)
+23:23:22 [INFO]   [6] Smokefree - Main: 64 excerpts, 5,945 chars, ~13 chunks (from 2072 original pairs)
+23:23:22 [INFO]   [7] Smokefree - Tools: 569 excerpts, 45,282 chars, ~92 chunks (from 853 original pairs)
+23:23:22 [INFO] 
+23:23:22 [INFO]   TOTAL: 150,330 chars source, ~307 chunks, ~3684 pairs before dedup
+23:23:22 [INFO] 
+23:23:22 [INFO] [1/7] ALA - Benefits of Quitting
+23:23:22 [INFO]   URL: https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting
+23:23:22 [INFO]   Reconstructed: 9,928 chars from 57 unique excerpts
+23:23:22 [INFO]   Split into 22 chunks
+23:23:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:29 [INFO]     Chunk [1/22]: 6 pairs | 7.0s | 715 tokens | 505 chars input
+23:23:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:34 [INFO]     Chunk [2/22]: 4 pairs | 4.4s | 661 tokens | 495 chars input
+23:23:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:38 [INFO]     Chunk [3/22]: 4 pairs | 3.9s | 671 tokens | 591 chars input
+23:23:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:43 [INFO]     Chunk [4/22]: 6 pairs | 4.6s | 702 tokens | 500 chars input
+23:23:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:46 [INFO]     Chunk [5/22]: 1 pairs | 2.1s | 492 tokens | 538 chars input
+23:23:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:51 [INFO]     Chunk [6/22]: 6 pairs | 5.0s | 702 tokens | 552 chars input
+23:23:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:55 [INFO]     Chunk [7/22]: 4 pairs | 3.5s | 618 tokens | 295 chars input
+23:23:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:23:59 [INFO]     Chunk [8/22]: 4 pairs | 4.1s | 634 tokens | 505 chars input
+23:24:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:07 [INFO]     Chunk [9/22]: 12 pairs | 7.8s | 1036 tokens | 553 chars input
+23:24:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:11 [INFO]     Chunk [10/22]: 4 pairs | 3.0s | 620 tokens | 500 chars input
+23:24:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:13 [INFO]     Chunk [11/22]: 3 pairs | 2.5s | 607 tokens | 499 chars input
+23:24:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:17 [INFO]     Chunk [12/22]: 4 pairs | 3.3s | 640 tokens | 530 chars input
+23:24:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:23 [INFO]     Chunk [13/22]: 5 pairs | 5.5s | 642 tokens | 409 chars input
+23:24:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:27 [INFO]     Chunk [14/22]: 5 pairs | 3.4s | 667 tokens | 509 chars input
+23:24:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:36 [INFO]     Chunk [15/22]: 12 pairs | 8.7s | 1087 tokens | 596 chars input
+23:24:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:39 [INFO]     Chunk [16/22]: 3 pairs | 3.4s | 591 tokens | 500 chars input
+23:24:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:43 [INFO]     Chunk [17/22]: 5 pairs | 3.7s | 677 tokens | 522 chars input
+23:24:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:48 [INFO]     Chunk [18/22]: 4 pairs | 4.3s | 615 tokens | 457 chars input
+23:24:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:53 [INFO]     Chunk [19/22]: 6 pairs | 4.5s | 697 tokens | 523 chars input
+23:24:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:24:57 [INFO]     Chunk [20/22]: 4 pairs | 4.1s | 667 tokens | 558 chars input
+23:25:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:01 [INFO]     Chunk [21/22]: 4 pairs | 3.4s | 604 tokens | 406 chars input
+23:25:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:04 [INFO]     Chunk [22/22]: 5 pairs | 3.1s | 643 tokens | 416 chars input
+23:25:05 [INFO]   Total for URL: 111 pairs
+23:25:06 [INFO] 
+23:25:06 [INFO] [2/7] ACS - Guide to Quitting
+23:25:06 [INFO]   URL: https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html
+23:25:06 [INFO]   Reconstructed: 1,430 chars from 12 unique excerpts
+23:25:06 [INFO]   Split into 3 chunks
+23:25:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:10 [INFO]     Chunk [1/3]: 6 pairs | 4.2s | 699 tokens | 533 chars input
+23:25:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:13 [INFO]     Chunk [2/3]: 4 pairs | 3.3s | 618 tokens | 531 chars input
+23:25:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:16 [INFO]     Chunk [3/3]: 2 pairs | 2.5s | 514 tokens | 464 chars input
+23:25:17 [INFO]   Total for URL: 12 pairs
+23:25:18 [INFO] 
+23:25:18 [INFO] [3/7] ACS - Health Risks
+23:25:18 [INFO]   URL: https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html
+23:25:18 [INFO]   Reconstructed: 1,202 chars from 14 unique excerpts
+23:25:18 [INFO]   Split into 3 chunks
+23:25:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:23 [INFO]     Chunk [1/3]: 7 pairs | 5.4s | 785 tokens | 598 chars input
+23:25:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:32 [INFO]     Chunk [2/3]: 12 pairs | 8.2s | 952 tokens | 426 chars input
+23:25:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:41 [INFO]     Chunk [3/3]: 12 pairs | 9.2s | 1022 tokens | 276 chars input
+23:25:41 [INFO]   Total for URL: 31 pairs
+23:25:42 [INFO] 
+23:25:42 [INFO] [4/7] NHS - Quit Smoking
+23:25:42 [INFO]   URL: https://www.nhs.uk/live-well/quit-smoking/
+23:25:42 [INFO]   Reconstructed: 551 chars from 11 unique excerpts
+23:25:42 [INFO]   Split into 2 chunks
+23:25:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:50 [INFO]     Chunk [1/2]: 10 pairs | 7.5s | 914 tokens | 517 chars input
+23:25:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:25:52 [INFO]     Chunk [2/2]: 3 pairs | 2.2s | 492 tokens | 82 chars input
+23:25:53 [INFO]   Total for URL: 13 pairs
+23:25:54 [INFO] 
+23:25:54 [INFO] [5/7] Smokefree - Challenges
+23:25:54 [INFO]   URL: https://smokefree.gov/challenges-when-quitting
+23:25:54 [INFO]   Reconstructed: 85,992 chars from 1080 unique excerpts
+23:25:54 [INFO]   Split into 172 chunks
+23:26:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:00 [INFO]     Chunk [1/172]: 12 pairs | 6.6s | 902 tokens | 530 chars input
+23:26:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:07 [INFO]     Chunk [2/172]: 11 pairs | 6.2s | 846 tokens | 467 chars input
+23:26:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:17 [INFO]     Chunk [3/172]: 12 pairs | 10.2s | 1091 tokens | 576 chars input
+23:26:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:21 [INFO]     Chunk [4/172]: 4 pairs | 3.3s | 617 tokens | 559 chars input
+23:26:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:29 [INFO]     Chunk [5/172]: 12 pairs | 7.6s | 1005 tokens | 541 chars input
+23:26:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:32 [INFO]     Chunk [6/172]: 4 pairs | 2.8s | 582 tokens | 467 chars input
+23:26:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:36 [INFO]     Chunk [7/172]: 7 pairs | 4.1s | 718 tokens | 582 chars input
+23:26:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:44 [INFO]     Chunk [8/172]: 10 pairs | 7.1s | 913 tokens | 571 chars input
+23:26:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:26:48 [INFO]     Chunk [9/172]: 4 pairs | 3.7s | 619 tokens | 414 chars input
+23:27:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:00 [INFO]     Chunk [10/172]: 12 pairs | 11.9s | 1134 tokens | 534 chars input
+23:27:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:04 [INFO]     Chunk [11/172]: 5 pairs | 3.7s | 641 tokens | 443 chars input
+23:27:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:09 [INFO]     Chunk [12/172]: 5 pairs | 4.6s | 677 tokens | 526 chars input
+23:27:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:14 [INFO]     Chunk [13/172]: 5 pairs | 4.3s | 707 tokens | 568 chars input
+23:27:20 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:20 [INFO]     Chunk [14/172]: 6 pairs | 5.9s | 761 tokens | 599 chars input
+23:27:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:24 [INFO]     Chunk [15/172]: 5 pairs | 4.0s | 664 tokens | 513 chars input
+23:27:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:29 [INFO]     Chunk [16/172]: 6 pairs | 4.8s | 722 tokens | 583 chars input
+23:27:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:34 [INFO]     Chunk [17/172]: 5 pairs | 4.1s | 689 tokens | 509 chars input
+23:27:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:38 [INFO]     Chunk [18/172]: 6 pairs | 4.0s | 733 tokens | 566 chars input
+23:27:45 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:45 [INFO]     Chunk [19/172]: 12 pairs | 6.6s | 923 tokens | 562 chars input
+23:27:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:27:55 [INFO]     Chunk [20/172]: 13 pairs | 9.6s | 1041 tokens | 580 chars input
+23:28:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:03 [INFO]     Chunk [21/172]: 12 pairs | 7.8s | 954 tokens | 579 chars input
+23:28:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:11 [INFO]     Chunk [22/172]: 13 pairs | 8.2s | 1020 tokens | 576 chars input
+23:28:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:21 [INFO]     Chunk [23/172]: 11 pairs | 9.6s | 974 tokens | 569 chars input
+23:28:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:29 [INFO]     Chunk [24/172]: 11 pairs | 7.4s | 949 tokens | 543 chars input
+23:28:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:38 [INFO]     Chunk [25/172]: 10 pairs | 9.0s | 922 tokens | 595 chars input
+23:28:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:48 [INFO]     Chunk [26/172]: 11 pairs | 9.1s | 988 tokens | 575 chars input
+23:28:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:28:56 [INFO]     Chunk [27/172]: 11 pairs | 8.0s | 966 tokens | 594 chars input
+23:29:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:01 [INFO]     Chunk [28/172]: 8 pairs | 5.0s | 737 tokens | 555 chars input
+23:29:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:06 [INFO]     Chunk [29/172]: 6 pairs | 4.6s | 724 tokens | 551 chars input
+23:29:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:10 [INFO]     Chunk [30/172]: 5 pairs | 3.8s | 646 tokens | 553 chars input
+23:29:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:13 [INFO]     Chunk [31/172]: 3 pairs | 2.7s | 572 tokens | 495 chars input
+23:29:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:17 [INFO]     Chunk [32/172]: 5 pairs | 3.4s | 634 tokens | 574 chars input
+23:29:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:22 [INFO]     Chunk [33/172]: 5 pairs | 4.2s | 628 tokens | 503 chars input
+23:29:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:26 [INFO]     Chunk [34/172]: 5 pairs | 3.6s | 658 tokens | 546 chars input
+23:29:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:30 [INFO]     Chunk [35/172]: 5 pairs | 3.6s | 673 tokens | 489 chars input
+23:29:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:39 [INFO]     Chunk [36/172]: 12 pairs | 9.7s | 967 tokens | 455 chars input
+23:29:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:43 [INFO]     Chunk [37/172]: 4 pairs | 3.2s | 622 tokens | 556 chars input
+23:29:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:48 [INFO]     Chunk [38/172]: 7 pairs | 5.2s | 744 tokens | 590 chars input
+23:29:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:54 [INFO]     Chunk [39/172]: 6 pairs | 4.7s | 670 tokens | 525 chars input
+23:29:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:29:57 [INFO]     Chunk [40/172]: 5 pairs | 3.7s | 662 tokens | 566 chars input
+23:30:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:02 [INFO]     Chunk [41/172]: 6 pairs | 4.5s | 706 tokens | 573 chars input
+23:30:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:11 [INFO]     Chunk [42/172]: 12 pairs | 8.4s | 958 tokens | 496 chars input
+23:30:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:15 [INFO]     Chunk [43/172]: 4 pairs | 3.6s | 635 tokens | 504 chars input
+23:30:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:25 [INFO]     Chunk [44/172]: 12 pairs | 9.4s | 1026 tokens | 551 chars input
+23:30:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:29 [INFO]     Chunk [45/172]: 4 pairs | 3.9s | 652 tokens | 598 chars input
+23:30:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:36 [INFO]     Chunk [46/172]: 6 pairs | 6.9s | 703 tokens | 556 chars input
+23:30:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:41 [INFO]     Chunk [47/172]: 4 pairs | 4.5s | 634 tokens | 518 chars input
+23:30:45 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:45 [INFO]     Chunk [48/172]: 3 pairs | 4.2s | 596 tokens | 464 chars input
+23:30:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:30:50 [INFO]     Chunk [49/172]: 4 pairs | 4.4s | 656 tokens | 540 chars input
+23:31:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:31:17 [INFO]     Chunk [50/172]: 12 pairs | 26.1s | 1110 tokens | 451 chars input
+23:31:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:31:28 [INFO]     Chunk [51/172]: 12 pairs | 11.2s | 1095 tokens | 562 chars input
+23:31:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:31:40 [INFO]     Chunk [52/172]: 12 pairs | 11.7s | 1085 tokens | 559 chars input
+23:31:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:31:50 [INFO]     Chunk [53/172]: 12 pairs | 9.4s | 1000 tokens | 583 chars input
+23:31:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:31:55 [INFO]     Chunk [54/172]: 5 pairs | 5.2s | 687 tokens | 495 chars input
+23:32:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:00 [INFO]     Chunk [55/172]: 6 pairs | 4.8s | 669 tokens | 434 chars input
+23:32:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:06 [INFO]     Chunk [56/172]: 7 pairs | 5.7s | 735 tokens | 551 chars input
+23:32:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:11 [INFO]     Chunk [57/172]: 5 pairs | 4.6s | 633 tokens | 427 chars input
+23:32:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:22 [INFO]     Chunk [58/172]: 12 pairs | 10.2s | 937 tokens | 554 chars input
+23:32:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:31 [INFO]     Chunk [59/172]: 9 pairs | 8.4s | 875 tokens | 555 chars input
+23:32:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:37 [INFO]     Chunk [60/172]: 5 pairs | 5.6s | 693 tokens | 561 chars input
+23:32:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:47 [INFO]     Chunk [61/172]: 12 pairs | 10.2s | 1069 tokens | 521 chars input
+23:32:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:32:58 [INFO]     Chunk [62/172]: 12 pairs | 10.4s | 959 tokens | 515 chars input
+23:33:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:03 [INFO]     Chunk [63/172]: 5 pairs | 5.1s | 685 tokens | 487 chars input
+23:33:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:09 [INFO]     Chunk [64/172]: 6 pairs | 5.1s | 732 tokens | 535 chars input
+23:33:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:13 [INFO]     Chunk [65/172]: 6 pairs | 4.4s | 661 tokens | 577 chars input
+23:33:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:19 [INFO]     Chunk [66/172]: 6 pairs | 4.8s | 681 tokens | 573 chars input
+23:33:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:29 [INFO]     Chunk [67/172]: 12 pairs | 9.8s | 966 tokens | 567 chars input
+23:33:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:34 [INFO]     Chunk [68/172]: 6 pairs | 5.5s | 752 tokens | 543 chars input
+23:33:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:39 [INFO]     Chunk [69/172]: 5 pairs | 4.1s | 693 tokens | 592 chars input
+23:33:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:44 [INFO]     Chunk [70/172]: 6 pairs | 4.7s | 692 tokens | 564 chars input
+23:33:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:49 [INFO]     Chunk [71/172]: 6 pairs | 4.5s | 656 tokens | 508 chars input
+23:33:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:54 [INFO]     Chunk [72/172]: 6 pairs | 5.3s | 752 tokens | 598 chars input
+23:33:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:33:59 [INFO]     Chunk [73/172]: 8 pairs | 4.3s | 749 tokens | 553 chars input
+23:34:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:05 [INFO]     Chunk [74/172]: 7 pairs | 5.3s | 815 tokens | 580 chars input
+23:34:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:10 [INFO]     Chunk [75/172]: 8 pairs | 5.0s | 740 tokens | 577 chars input
+23:34:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:16 [INFO]     Chunk [76/172]: 7 pairs | 5.3s | 791 tokens | 586 chars input
+23:34:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:21 [INFO]     Chunk [77/172]: 6 pairs | 5.0s | 743 tokens | 552 chars input
+23:34:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:27 [INFO]     Chunk [78/172]: 6 pairs | 5.9s | 752 tokens | 570 chars input
+23:34:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:33 [INFO]     Chunk [79/172]: 6 pairs | 5.5s | 683 tokens | 563 chars input
+23:34:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:38 [INFO]     Chunk [80/172]: 6 pairs | 4.7s | 680 tokens | 535 chars input
+23:34:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:42 [INFO]     Chunk [81/172]: 7 pairs | 4.1s | 682 tokens | 548 chars input
+23:34:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:52 [INFO]     Chunk [82/172]: 12 pairs | 9.6s | 1109 tokens | 563 chars input
+23:34:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:34:59 [INFO]     Chunk [83/172]: 10 pairs | 6.5s | 950 tokens | 587 chars input
+23:35:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:08 [INFO]     Chunk [84/172]: 9 pairs | 8.7s | 863 tokens | 595 chars input
+23:35:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:19 [INFO]     Chunk [85/172]: 12 pairs | 10.2s | 987 tokens | 569 chars input
+23:35:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:24 [INFO]     Chunk [86/172]: 8 pairs | 5.2s | 751 tokens | 568 chars input
+23:35:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:32 [INFO]     Chunk [87/172]: 9 pairs | 7.7s | 855 tokens | 588 chars input
+23:35:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:39 [INFO]     Chunk [88/172]: 11 pairs | 6.7s | 959 tokens | 585 chars input
+23:35:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:44 [INFO]     Chunk [89/172]: 9 pairs | 4.9s | 759 tokens | 587 chars input
+23:35:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:52 [INFO]     Chunk [90/172]: 12 pairs | 7.7s | 1002 tokens | 570 chars input
+23:35:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:35:59 [INFO]     Chunk [91/172]: 11 pairs | 6.7s | 911 tokens | 537 chars input
+23:36:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:08 [INFO]     Chunk [92/172]: 11 pairs | 7.9s | 935 tokens | 563 chars input
+23:36:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:17 [INFO]     Chunk [93/172]: 10 pairs | 9.4s | 968 tokens | 585 chars input
+23:36:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:27 [INFO]     Chunk [94/172]: 12 pairs | 9.5s | 1066 tokens | 581 chars input
+23:36:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:33 [INFO]     Chunk [95/172]: 7 pairs | 5.8s | 775 tokens | 579 chars input
+23:36:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:40 [INFO]     Chunk [96/172]: 6 pairs | 6.2s | 730 tokens | 521 chars input
+23:36:45 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:45 [INFO]     Chunk [97/172]: 7 pairs | 4.7s | 698 tokens | 567 chars input
+23:36:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:36:50 [INFO]     Chunk [98/172]: 7 pairs | 5.1s | 714 tokens | 596 chars input
+23:37:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:00 [INFO]     Chunk [99/172]: 12 pairs | 9.3s | 1026 tokens | 505 chars input
+23:37:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:06 [INFO]     Chunk [100/172]: 9 pairs | 5.9s | 897 tokens | 554 chars input
+23:37:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:12 [INFO]     Chunk [101/172]: 6 pairs | 5.0s | 739 tokens | 552 chars input
+23:37:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:16 [INFO]     Chunk [102/172]: 6 pairs | 3.9s | 704 tokens | 570 chars input
+23:37:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:22 [INFO]     Chunk [103/172]: 8 pairs | 5.6s | 791 tokens | 508 chars input
+23:37:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:26 [INFO]     Chunk [104/172]: 6 pairs | 3.8s | 677 tokens | 593 chars input
+23:37:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:33 [INFO]     Chunk [105/172]: 9 pairs | 6.4s | 854 tokens | 570 chars input
+23:37:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:41 [INFO]     Chunk [106/172]: 7 pairs | 8.0s | 807 tokens | 522 chars input
+23:37:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:51 [INFO]     Chunk [107/172]: 12 pairs | 9.4s | 1067 tokens | 533 chars input
+23:37:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:55 [INFO]     Chunk [108/172]: 6 pairs | 4.0s | 705 tokens | 592 chars input
+23:37:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:37:59 [INFO]     Chunk [109/172]: 5 pairs | 3.4s | 623 tokens | 489 chars input
+23:38:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:07 [INFO]     Chunk [110/172]: 12 pairs | 7.7s | 930 tokens | 501 chars input
+23:38:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:12 [INFO]     Chunk [111/172]: 6 pairs | 5.0s | 749 tokens | 553 chars input
+23:38:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:22 [INFO]     Chunk [112/172]: 9 pairs | 9.2s | 896 tokens | 570 chars input
+23:38:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:28 [INFO]     Chunk [113/172]: 7 pairs | 6.0s | 806 tokens | 599 chars input
+23:38:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:39 [INFO]     Chunk [114/172]: 12 pairs | 10.4s | 1041 tokens | 575 chars input
+23:38:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:49 [INFO]     Chunk [115/172]: 12 pairs | 10.3s | 1084 tokens | 580 chars input
+23:38:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:38:57 [INFO]     Chunk [116/172]: 11 pairs | 7.5s | 912 tokens | 582 chars input
+23:39:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:03 [INFO]     Chunk [117/172]: 9 pairs | 5.8s | 867 tokens | 589 chars input
+23:39:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:09 [INFO]     Chunk [118/172]: 8 pairs | 5.7s | 826 tokens | 549 chars input
+23:39:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:16 [INFO]     Chunk [119/172]: 10 pairs | 6.6s | 930 tokens | 566 chars input
+23:39:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:27 [INFO]     Chunk [120/172]: 12 pairs | 10.8s | 1107 tokens | 571 chars input
+23:39:35 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:35 [INFO]     Chunk [121/172]: 11 pairs | 7.4s | 915 tokens | 538 chars input
+23:39:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:43 [INFO]     Chunk [122/172]: 8 pairs | 7.5s | 821 tokens | 595 chars input
+23:39:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:49 [INFO]     Chunk [123/172]: 7 pairs | 5.4s | 786 tokens | 527 chars input
+23:39:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:53 [INFO]     Chunk [124/172]: 8 pairs | 4.5s | 742 tokens | 577 chars input
+23:39:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:39:59 [INFO]     Chunk [125/172]: 8 pairs | 5.8s | 868 tokens | 587 chars input
+23:40:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:04 [INFO]     Chunk [126/172]: 6 pairs | 4.6s | 740 tokens | 543 chars input
+23:40:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:11 [INFO]     Chunk [127/172]: 10 pairs | 6.4s | 788 tokens | 537 chars input
+23:40:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:18 [INFO]     Chunk [128/172]: 8 pairs | 6.2s | 791 tokens | 569 chars input
+23:40:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:24 [INFO]     Chunk [129/172]: 9 pairs | 6.4s | 887 tokens | 594 chars input
+23:40:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:32 [INFO]     Chunk [130/172]: 9 pairs | 7.9s | 891 tokens | 595 chars input
+23:40:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:37 [INFO]     Chunk [131/172]: 7 pairs | 4.1s | 717 tokens | 579 chars input
+23:40:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:47 [INFO]     Chunk [132/172]: 12 pairs | 9.3s | 1046 tokens | 516 chars input
+23:40:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:51 [INFO]     Chunk [133/172]: 6 pairs | 4.1s | 716 tokens | 534 chars input
+23:40:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:40:54 [INFO]     Chunk [134/172]: 6 pairs | 3.2s | 655 tokens | 547 chars input
+23:41:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:00 [INFO]     Chunk [135/172]: 6 pairs | 4.9s | 730 tokens | 573 chars input
+23:41:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:06 [INFO]     Chunk [136/172]: 6 pairs | 6.4s | 745 tokens | 521 chars input
+23:41:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:12 [INFO]     Chunk [137/172]: 7 pairs | 5.6s | 753 tokens | 564 chars input
+23:41:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:17 [INFO]     Chunk [138/172]: 5 pairs | 4.0s | 680 tokens | 521 chars input
+23:41:20 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:20 [INFO]     Chunk [139/172]: 4 pairs | 3.6s | 654 tokens | 513 chars input
+23:41:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:27 [INFO]     Chunk [140/172]: 7 pairs | 6.6s | 859 tokens | 577 chars input
+23:41:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:37 [INFO]     Chunk [141/172]: 12 pairs | 8.8s | 993 tokens | 528 chars input
+23:41:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:42 [INFO]     Chunk [142/172]: 6 pairs | 4.6s | 720 tokens | 581 chars input
+23:41:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:47 [INFO]     Chunk [143/172]: 10 pairs | 5.3s | 863 tokens | 581 chars input
+23:41:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:53 [INFO]     Chunk [144/172]: 8 pairs | 5.5s | 837 tokens | 523 chars input
+23:41:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:41:59 [INFO]     Chunk [145/172]: 7 pairs | 5.3s | 780 tokens | 546 chars input
+23:42:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:07 [INFO]     Chunk [146/172]: 9 pairs | 7.6s | 862 tokens | 578 chars input
+23:42:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:13 [INFO]     Chunk [147/172]: 7 pairs | 5.8s | 735 tokens | 541 chars input
+23:42:20 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:20 [INFO]     Chunk [148/172]: 11 pairs | 6.9s | 902 tokens | 554 chars input
+23:42:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:29 [INFO]     Chunk [149/172]: 10 pairs | 9.1s | 894 tokens | 592 chars input
+23:42:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:36 [INFO]     Chunk [150/172]: 8 pairs | 6.0s | 814 tokens | 555 chars input
+23:42:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:41 [INFO]     Chunk [151/172]: 8 pairs | 5.5s | 826 tokens | 551 chars input
+23:42:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:47 [INFO]     Chunk [152/172]: 8 pairs | 5.0s | 802 tokens | 516 chars input
+23:42:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:42:54 [INFO]     Chunk [153/172]: 10 pairs | 6.8s | 888 tokens | 555 chars input
+23:43:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:01 [INFO]     Chunk [154/172]: 8 pairs | 6.3s | 843 tokens | 560 chars input
+23:43:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:09 [INFO]     Chunk [155/172]: 11 pairs | 8.2s | 943 tokens | 582 chars input
+23:43:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:15 [INFO]     Chunk [156/172]: 9 pairs | 6.1s | 881 tokens | 579 chars input
+23:43:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:22 [INFO]     Chunk [157/172]: 9 pairs | 6.5s | 855 tokens | 577 chars input
+23:43:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:30 [INFO]     Chunk [158/172]: 7 pairs | 7.4s | 807 tokens | 566 chars input
+23:43:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:39 [INFO]     Chunk [159/172]: 10 pairs | 8.5s | 912 tokens | 565 chars input
+23:43:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:46 [INFO]     Chunk [160/172]: 10 pairs | 6.6s | 905 tokens | 573 chars input
+23:43:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:52 [INFO]     Chunk [161/172]: 9 pairs | 6.0s | 865 tokens | 568 chars input
+23:43:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:43:57 [INFO]     Chunk [162/172]: 7 pairs | 4.4s | 791 tokens | 565 chars input
+23:44:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:09 [INFO]     Chunk [163/172]: 12 pairs | 12.1s | 1004 tokens | 473 chars input
+23:44:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:18 [INFO]     Chunk [164/172]: 12 pairs | 8.5s | 940 tokens | 550 chars input
+23:44:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:24 [INFO]     Chunk [165/172]: 7 pairs | 6.0s | 785 tokens | 547 chars input
+23:44:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:30 [INFO]     Chunk [166/172]: 6 pairs | 5.1s | 721 tokens | 563 chars input
+23:44:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:34 [INFO]     Chunk [167/172]: 6 pairs | 4.3s | 686 tokens | 527 chars input
+23:44:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:40 [INFO]     Chunk [168/172]: 7 pairs | 5.0s | 720 tokens | 598 chars input
+23:44:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:49 [INFO]     Chunk [169/172]: 7 pairs | 8.7s | 800 tokens | 556 chars input
+23:44:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:44:54 [INFO]     Chunk [170/172]: 8 pairs | 4.8s | 789 tokens | 576 chars input
+23:45:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:00 [INFO]     Chunk [171/172]: 7 pairs | 5.4s | 823 tokens | 587 chars input
+23:45:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:01 [INFO]     Chunk [172/172]: 0 pairs | 0.8s | 347 tokens | 108 chars input
+23:45:01 [INFO]   Total for URL: 1385 pairs
+23:45:02 [INFO] 
+23:45:02 [INFO] [6/7] Smokefree - Main
+23:45:02 [INFO]   URL: https://smokefree.gov/quit-smoking
+23:45:02 [INFO]   Reconstructed: 5,945 chars from 64 unique excerpts
+23:45:02 [INFO]   Split into 13 chunks
+23:45:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:05 [INFO]     Chunk [1/13]: 4 pairs | 3.3s | 626 tokens | 532 chars input
+23:45:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:16 [INFO]     Chunk [2/13]: 12 pairs | 10.8s | 1105 tokens | 585 chars input
+23:45:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:26 [INFO]     Chunk [3/13]: 11 pairs | 9.6s | 1015 tokens | 537 chars input
+23:45:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:38 [INFO]     Chunk [4/13]: 12 pairs | 10.9s | 1086 tokens | 528 chars input
+23:45:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:46 [INFO]     Chunk [5/13]: 12 pairs | 8.3s | 1004 tokens | 557 chars input
+23:45:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:45:57 [INFO]     Chunk [6/13]: 12 pairs | 10.1s | 1088 tokens | 579 chars input
+23:46:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:07 [INFO]     Chunk [7/13]: 12 pairs | 9.6s | 1061 tokens | 538 chars input
+23:46:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:09 [INFO]     Chunk [8/13]: 2 pairs | 2.5s | 544 tokens | 585 chars input
+23:46:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:10 [INFO]     Chunk [9/13]: 0 pairs | 0.5s | 439 tokens | 563 chars input
+23:46:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:11 [INFO]     Chunk [10/13]: 0 pairs | 0.8s | 410 tokens | 419 chars input
+23:46:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:22 [INFO]     Chunk [11/13]: 12 pairs | 10.5s | 1058 tokens | 511 chars input
+23:46:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:26 [INFO]     Chunk [12/13]: 5 pairs | 3.4s | 615 tokens | 380 chars input
+23:46:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:27 [INFO]     Chunk [13/13]: 0 pairs | 0.4s | 377 tokens | 218 chars input
+23:46:27 [INFO]   Total for URL: 94 pairs
+23:46:28 [INFO] 
+23:46:28 [INFO] [7/7] Smokefree - Tools
+23:46:28 [INFO]   URL: https://smokefree.gov/tools-tips
+23:46:28 [INFO]   Reconstructed: 45,282 chars from 569 unique excerpts
+23:46:28 [INFO]   Split into 92 chunks
+23:46:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:36 [INFO]     Chunk [1/92]: 11 pairs | 7.8s | 974 tokens | 581 chars input
+23:46:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:44 [INFO]     Chunk [2/92]: 12 pairs | 8.1s | 979 tokens | 574 chars input
+23:46:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:46:52 [INFO]     Chunk [3/92]: 12 pairs | 7.3s | 962 tokens | 573 chars input
+23:47:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:00 [INFO]     Chunk [4/92]: 12 pairs | 8.1s | 1002 tokens | 589 chars input
+23:47:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:09 [INFO]     Chunk [5/92]: 11 pairs | 8.7s | 967 tokens | 569 chars input
+23:47:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:16 [INFO]     Chunk [6/92]: 12 pairs | 7.0s | 941 tokens | 586 chars input
+23:47:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:28 [INFO]     Chunk [7/92]: 12 pairs | 10.8s | 1018 tokens | 564 chars input
+23:47:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:37 [INFO]     Chunk [8/92]: 11 pairs | 9.1s | 966 tokens | 534 chars input
+23:47:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:43 [INFO]     Chunk [9/92]: 8 pairs | 5.9s | 757 tokens | 598 chars input
+23:47:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:49 [INFO]     Chunk [10/92]: 6 pairs | 5.8s | 712 tokens | 527 chars input
+23:47:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:47:56 [INFO]     Chunk [11/92]: 8 pairs | 6.6s | 783 tokens | 549 chars input
+23:48:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:03 [INFO]     Chunk [12/92]: 8 pairs | 6.4s | 800 tokens | 569 chars input
+23:48:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:11 [INFO]     Chunk [13/92]: 9 pairs | 8.1s | 868 tokens | 589 chars input
+23:48:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:21 [INFO]     Chunk [14/92]: 10 pairs | 9.4s | 958 tokens | 595 chars input
+23:48:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:31 [INFO]     Chunk [15/92]: 12 pairs | 9.4s | 1035 tokens | 515 chars input
+23:48:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:42 [INFO]     Chunk [16/92]: 12 pairs | 10.9s | 1018 tokens | 535 chars input
+23:48:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:48 [INFO]     Chunk [17/92]: 6 pairs | 5.4s | 723 tokens | 541 chars input
+23:48:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:48:55 [INFO]     Chunk [18/92]: 7 pairs | 7.0s | 811 tokens | 563 chars input
+23:49:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:00 [INFO]     Chunk [19/92]: 5 pairs | 4.9s | 662 tokens | 525 chars input
+23:49:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:05 [INFO]     Chunk [20/92]: 6 pairs | 5.0s | 693 tokens | 523 chars input
+23:49:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:16 [INFO]     Chunk [21/92]: 12 pairs | 10.1s | 996 tokens | 538 chars input
+23:49:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:23 [INFO]     Chunk [22/92]: 12 pairs | 7.2s | 973 tokens | 479 chars input
+23:49:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:29 [INFO]     Chunk [23/92]: 7 pairs | 5.4s | 774 tokens | 523 chars input
+23:49:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:40 [INFO]     Chunk [24/92]: 12 pairs | 11.1s | 1027 tokens | 434 chars input
+23:49:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:49:49 [INFO]     Chunk [25/92]: 12 pairs | 8.4s | 1037 tokens | 545 chars input
+23:50:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:00 [INFO]     Chunk [26/92]: 12 pairs | 10.2s | 1033 tokens | 548 chars input
+23:50:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:12 [INFO]     Chunk [27/92]: 12 pairs | 12.0s | 1042 tokens | 555 chars input
+23:50:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:21 [INFO]     Chunk [28/92]: 12 pairs | 8.7s | 967 tokens | 580 chars input
+23:50:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:31 [INFO]     Chunk [29/92]: 12 pairs | 9.6s | 1025 tokens | 500 chars input
+23:50:35 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:35 [INFO]     Chunk [30/92]: 4 pairs | 3.7s | 611 tokens | 409 chars input
+23:50:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:44 [INFO]     Chunk [31/92]: 12 pairs | 8.8s | 1010 tokens | 468 chars input
+23:50:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:49 [INFO]     Chunk [32/92]: 5 pairs | 5.0s | 696 tokens | 558 chars input
+23:50:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:50:59 [INFO]     Chunk [33/92]: 12 pairs | 8.7s | 1014 tokens | 459 chars input
+23:51:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:51:05 [INFO]     Chunk [34/92]: 7 pairs | 6.0s | 768 tokens | 554 chars input
+23:51:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:51:15 [INFO]     Chunk [35/92]: 12 pairs | 10.2s | 1043 tokens | 560 chars input
+23:51:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:51:26 [INFO]     Chunk [36/92]: 12 pairs | 10.3s | 1021 tokens | 524 chars input
+23:51:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:51:36 [INFO]     Chunk [37/92]: 12 pairs | 10.0s | 1017 tokens | 490 chars input
+23:51:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:51:42 [INFO]     Chunk [38/92]: 9 pairs | 5.6s | 781 tokens | 570 chars input
+23:51:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:51:51 [INFO]     Chunk [39/92]: 12 pairs | 8.8s | 1018 tokens | 563 chars input
+23:52:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:00 [INFO]     Chunk [40/92]: 12 pairs | 8.7s | 1018 tokens | 520 chars input
+23:52:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:12 [INFO]     Chunk [41/92]: 12 pairs | 11.5s | 1054 tokens | 562 chars input
+23:52:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:16 [INFO]     Chunk [42/92]: 4 pairs | 3.4s | 583 tokens | 315 chars input
+23:52:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:25 [INFO]     Chunk [43/92]: 10 pairs | 9.0s | 927 tokens | 597 chars input
+23:52:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:38 [INFO]     Chunk [44/92]: 12 pairs | 12.6s | 1065 tokens | 580 chars input
+23:52:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:43 [INFO]     Chunk [45/92]: 5 pairs | 4.6s | 649 tokens | 339 chars input
+23:52:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:48 [INFO]     Chunk [46/92]: 6 pairs | 4.9s | 685 tokens | 348 chars input
+23:52:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:52:58 [INFO]     Chunk [47/92]: 12 pairs | 9.4s | 999 tokens | 320 chars input
+23:53:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:09 [INFO]     Chunk [48/92]: 12 pairs | 11.2s | 1079 tokens | 557 chars input
+23:53:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:19 [INFO]     Chunk [49/92]: 12 pairs | 8.9s | 986 tokens | 586 chars input
+23:53:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:27 [INFO]     Chunk [50/92]: 11 pairs | 7.9s | 961 tokens | 596 chars input
+23:53:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:33 [INFO]     Chunk [51/92]: 9 pairs | 6.3s | 816 tokens | 561 chars input
+23:53:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:41 [INFO]     Chunk [52/92]: 10 pairs | 6.8s | 907 tokens | 542 chars input
+23:53:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:48 [INFO]     Chunk [53/92]: 11 pairs | 6.9s | 958 tokens | 586 chars input
+23:53:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:53:56 [INFO]     Chunk [54/92]: 12 pairs | 7.6s | 982 tokens | 599 chars input
+23:54:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:01 [INFO]     Chunk [55/92]: 7 pairs | 4.9s | 749 tokens | 582 chars input
+23:54:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:09 [INFO]     Chunk [56/92]: 12 pairs | 8.3s | 958 tokens | 504 chars input
+23:54:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:14 [INFO]     Chunk [57/92]: 4 pairs | 4.0s | 650 tokens | 513 chars input
+23:54:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:18 [INFO]     Chunk [58/92]: 6 pairs | 4.3s | 700 tokens | 537 chars input
+23:54:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:23 [INFO]     Chunk [59/92]: 5 pairs | 4.4s | 604 tokens | 446 chars input
+23:54:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:29 [INFO]     Chunk [60/92]: 5 pairs | 5.5s | 690 tokens | 581 chars input
+23:54:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:34 [INFO]     Chunk [61/92]: 5 pairs | 4.9s | 719 tokens | 593 chars input
+23:54:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:44 [INFO]     Chunk [62/92]: 12 pairs | 9.4s | 1061 tokens | 578 chars input
+23:54:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:47 [INFO]     Chunk [63/92]: 4 pairs | 3.0s | 633 tokens | 587 chars input
+23:54:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:52 [INFO]     Chunk [64/92]: 6 pairs | 4.3s | 675 tokens | 457 chars input
+23:54:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:55 [INFO]     Chunk [65/92]: 5 pairs | 3.2s | 644 tokens | 599 chars input
+23:54:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:54:59 [INFO]     Chunk [66/92]: 5 pairs | 3.2s | 619 tokens | 525 chars input
+23:55:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:04 [INFO]     Chunk [67/92]: 6 pairs | 5.3s | 727 tokens | 554 chars input
+23:55:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:08 [INFO]     Chunk [68/92]: 5 pairs | 3.4s | 632 tokens | 598 chars input
+23:55:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:13 [INFO]     Chunk [69/92]: 6 pairs | 5.2s | 739 tokens | 541 chars input
+23:55:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:18 [INFO]     Chunk [70/92]: 5 pairs | 4.3s | 628 tokens | 531 chars input
+23:55:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:24 [INFO]     Chunk [71/92]: 8 pairs | 5.7s | 816 tokens | 499 chars input
+23:55:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:32 [INFO]     Chunk [72/92]: 10 pairs | 7.4s | 947 tokens | 594 chars input
+23:55:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:43 [INFO]     Chunk [73/92]: 12 pairs | 10.8s | 1070 tokens | 587 chars input
+23:55:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:55:53 [INFO]     Chunk [74/92]: 12 pairs | 9.6s | 1146 tokens | 596 chars input
+23:56:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:04 [INFO]     Chunk [75/92]: 13 pairs | 10.9s | 1069 tokens | 558 chars input
+23:56:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:13 [INFO]     Chunk [76/92]: 11 pairs | 8.6s | 931 tokens | 537 chars input
+23:56:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:23 [INFO]     Chunk [77/92]: 12 pairs | 9.7s | 1099 tokens | 550 chars input
+23:56:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:34 [INFO]     Chunk [78/92]: 13 pairs | 11.5s | 1120 tokens | 590 chars input
+23:56:45 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:45 [INFO]     Chunk [79/92]: 11 pairs | 9.9s | 1028 tokens | 584 chars input
+23:56:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:50 [INFO]     Chunk [80/92]: 7 pairs | 4.9s | 780 tokens | 580 chars input
+23:56:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:56:55 [INFO]     Chunk [81/92]: 8 pairs | 4.7s | 734 tokens | 594 chars input
+23:57:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:01 [INFO]     Chunk [82/92]: 7 pairs | 6.0s | 813 tokens | 593 chars input
+23:57:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:05 [INFO]     Chunk [83/92]: 7 pairs | 3.9s | 719 tokens | 572 chars input
+23:57:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:15 [INFO]     Chunk [84/92]: 12 pairs | 9.7s | 1058 tokens | 570 chars input
+23:57:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:21 [INFO]     Chunk [85/92]: 7 pairs | 5.2s | 746 tokens | 461 chars input
+23:57:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:25 [INFO]     Chunk [86/92]: 7 pairs | 3.7s | 692 tokens | 561 chars input
+23:57:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:31 [INFO]     Chunk [87/92]: 7 pairs | 5.9s | 807 tokens | 573 chars input
+23:57:35 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:35 [INFO]     Chunk [88/92]: 5 pairs | 4.0s | 699 tokens | 585 chars input
+23:57:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:40 [INFO]     Chunk [89/92]: 6 pairs | 4.6s | 652 tokens | 556 chars input
+23:57:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:44 [INFO]     Chunk [90/92]: 5 pairs | 3.2s | 635 tokens | 528 chars input
+23:57:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:48 [INFO]     Chunk [91/92]: 5 pairs | 3.9s | 687 tokens | 589 chars input
+23:57:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+23:57:51 [INFO]     Chunk [92/92]: 4 pairs | 2.6s | 569 tokens | 476 chars input
+23:57:52 [INFO]   Total for URL: 827 pairs
+23:57:53 [INFO] 
+23:57:53 [INFO] Deduplication: 2473 → 1960 pairs (513 removed, 20.7%)
+23:57:53 [INFO] 
+23:57:53 [INFO] ======================================================================
+23:57:53 [INFO] REGENERATION COMPLETE
+23:57:53 [INFO] ======================================================================
+23:57:53 [INFO]   Time elapsed:    34.5 min
+23:57:53 [INFO]   URLs processed:  7
+23:57:53 [INFO]   URLs cached:     0
+23:57:53 [INFO]   URLs resumed:    0
+23:57:53 [INFO]   Total chunks:    307
+23:57:53 [INFO]   API calls:       307
+23:57:53 [INFO]   Errors:          4
+23:57:53 [INFO]   Total QA pairs:  1960 (before dedup: 2473)
+23:57:53 [INFO]   Avg answer len:  20.2 words
+23:57:53 [INFO]   Saved to:        /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/pass2_temp0.2.jsonl
+23:57:53 [INFO]   RAGAS copy:      /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/code/data/ai_generated/ai_generated_qa.jsonl
+23:57:53 [INFO] 
+23:57:53 [INFO] Next step: run the full RAGAS evaluation:
+23:57:53 [INFO]   cd /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/code && python3 scripts/ragas_evaluation.py --concise

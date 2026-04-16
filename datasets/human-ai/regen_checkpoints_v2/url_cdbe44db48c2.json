@@ -1,0 +1,959 @@
+{
+  "url": "https://smokefree.gov/quit-smoking",
+  "completed_chunks": 13,
+  "total_chunks": 13,
+  "n_pairs": 95,
+  "pairs": [
+    {
+      "question": "What is the best way to quit tobacco?",
+      "answer": "For most people, the best way to quit tobacco is a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:09.530917"
+    },
+    {
+      "question": "What did the US Surgeon General say about stopping smoking?",
+      "answer": "The US Surgeon General has said stopping smoking is 'the single most important step that people who smoke can take to enhance the length and quality of their lives.'",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:09.530917"
+    },
+    {
+      "question": "How does social support affect quitting smoking?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:09.530917"
+    },
+    {
+      "question": "What should I learn about tobacco products?",
+      "answer": "Get the facts about tobacco products. Find out how using tobacco affects your body, and learn more about the health benefits of quitting.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:09.530917"
+    },
+    {
+      "question": "What are some health benefits of quitting smoking?",
+      "answer": "Quitting smoking can lead to numerous health benefits, including improved lung function and reduced risk of heart disease. It also positively impacts mental health.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What is Varenicline?",
+      "answer": "Varenicline is a medicine designed to help you quit smoking. It works by affecting nicotine receptors in the brain to reduce cravings and withdrawal symptoms.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "Is it safe to stop smoking during pregnancy?",
+      "answer": "Yes, it is important to stop smoking in pregnancy. Quitting smoking can significantly improve the health of both the mother and the baby.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What is passive smoking?",
+      "answer": "Passive smoking refers to the inhalation of smoke by non-smokers who are near smokers. It poses health risks to those exposed, including children and pregnant women.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "How can stopping smoking benefit my mental health?",
+      "answer": "Stopping smoking can have a positive impact on your mental health. It can reduce anxiety and improve overall mood, contributing to better emotional well-being.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What services does the NHS offer to help people quit smoking?",
+      "answer": "The NHS stop smoking services provide support and resources to help you quit. They offer personalized advice and access to medications like Varenicline.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What are some tips for helping someone quit tobacco?",
+      "answer": "You can help someone quit tobacco by providing support, encouragement, and understanding. Being there for them during their quitting journey can make a significant difference.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What resources are available for quitting smoking?",
+      "answer": "There are many resources available for quitting smoking, including guides, support groups, and medications. Utilizing these tools can enhance your chances of quitting successfully.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What is the importance of planning when quitting smoking?",
+      "answer": "Planning is an important part of quitting for good. It helps you prepare for challenges and increases your chances of successfully stopping smoking.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What tools can I use to help me quit smoking?",
+      "answer": "The right tools can include medications like Varenicline, support groups, and quit plans. These resources are essential for a successful quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "How can I prepare to quit smoking?",
+      "answer": "Preparing to quit smoking involves setting a quit date, identifying triggers, and seeking support. This preparation can help you stay committed to your goal.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "What should I know about quitting tobacco?",
+      "answer": "Quitting tobacco involves understanding the challenges and having the right support. It's important to utilize available resources and stay motivated throughout the process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:18.702120"
+    },
+    {
+      "question": "Why should I quit smoking?",
+      "answer": "The US Surgeon General has said stopping smoking is 'the single most important step that people who smoke can take to enhance the length and quality of their lives.' Quitting smoking can significantly improve your health.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What are the health benefits of quitting smoking?",
+      "answer": "Quitting smoking leads to better health and can help you live longer. It also enhances the quality of your life by reducing the risk of tobacco-related diseases.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "Can I get help to quit smoking?",
+      "answer": "Yes, with help, you can increase your chances of success in quitting smoking. There are various resources available to support you in your quitting journey.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What does tobacco use do to my body?",
+      "answer": "Using tobacco affects your body in many harmful ways. It's important to get the facts about tobacco products to understand these effects.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What should I do to prepare to quit smoking?",
+      "answer": "Preparing to quit is an important step. You can find resources that guide you through the process and help you plan for your quit day.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What can I do to help others quit smoking?",
+      "answer": "You can support others in their quitting journey by sharing resources and encouraging them. Helping others quit can also contribute to better health overall.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What is the significance of my quit day?",
+      "answer": "Your quit day is a crucial milestone in your journey to stop smoking. It's the day you commit to being smoke-free and start reaping the health benefits.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "Are e-cigarettes a good option to stop smoking?",
+      "answer": "Using e-cigarettes to stop smoking is one of the methods people consider. It's important to weigh the pros and cons and seek guidance on this approach.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "How can I enhance my chances of quitting successfully?",
+      "answer": "You can enhance your chances of quitting successfully by seeking help and utilizing available resources. Support systems can make a significant difference.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What does the Surgeon General say about smoking cessation?",
+      "answer": "The US Surgeon General emphasizes that stopping smoking is the most important step for smokers to improve their health. This highlights the critical nature of quitting.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What resources are available for quitting smoking?",
+      "answer": "There are many resources available to help you quit smoking, including counseling, support groups, and informational materials. These can guide you through the quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What is the impact of tobacco on my health?",
+      "answer": "Tobacco use has a negative impact on your health, contributing to various diseases and health issues. Understanding these effects is vital for making the decision to quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:27.894083"
+    },
+    {
+      "question": "What should I consider for my Quit Day?",
+      "answer": "Your Quit Day is an important milestone in your journey to stop smoking. It's essential to prepare for it by planning how you will handle cravings and triggers.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "Can e-cigarettes help me stop smoking?",
+      "answer": "Using e-cigarettes to stop smoking is a method some people consider. However, it's important to evaluate all options and find what works best for you.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "How can social support help me quit smoking?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit. Having friends or family who encourage you can make a significant difference.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What are some tools I can use to quit smoking?",
+      "answer": "There are various tools and support systems available to help you quit smoking. These can include medications, counseling, and support groups.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What types of tobacco products should I be aware of?",
+      "answer": "Paan, bidi, and shisha are types of tobacco products that people may use. It's important to recognize all forms of tobacco when considering quitting.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What are the steps to quitting smoking?",
+      "answer": "Smoking cessation typically involves three steps: preparing to quit, quitting, and maintaining your smoke-free status. Each step is crucial for long-term success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What health benefits can I expect from quitting smoking?",
+      "answer": "Quitting smoking leads to better health outcomes. You can expect improvements in your overall well-being and a reduced risk of smoking-related diseases.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What is tobacco addiction like?",
+      "answer": "Tobacco addiction is both mental and physical. It often requires a combination of medicine, personal habit changes, and emotional support to overcome.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "Do I need medication to quit smoking?",
+      "answer": "Most people need a combination of medicine to help with cravings and withdrawal symptoms. It's advisable to discuss medication options with a healthcare provider.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "How important is emotional support when quitting smoking?",
+      "answer": "Emotional support is a critical component of quitting smoking. It can help you cope with the challenges and stress that come with the quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What methods can I use to change my personal habits related to smoking?",
+      "answer": "Changing personal habits is essential for quitting smoking. This can involve identifying triggers and developing new routines that support a smoke-free lifestyle.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What should I do if I know someone trying to quit smoking?",
+      "answer": "If someone you know is trying to quit smoking, there are many things you can do to help. Offering support and encouragement can significantly aid their journey.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:38.662549"
+    },
+    {
+      "question": "What should I prepare before I quit smoking?",
+      "answer": "Preparing to quit involves having the right tools, support, and planning. These elements are important for quitting for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "Is quitting smoking really that hard?",
+      "answer": "Yes, quitting is hard. However, with help, you can increase your chances of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "How can I help someone else quit tobacco?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit. Providing emotional support can be crucial in their quitting journey.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "What is the best way to quit tobacco?",
+      "answer": "For most people, the best way to quit tobacco is a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "Why is emotional support important when quitting smoking?",
+      "answer": "Emotional support is important because it can significantly increase the chances of successfully quitting. It helps individuals cope with the challenges of quitting.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "What role do personal habits play in quitting smoking?",
+      "answer": "Changing personal habits is a key part of quitting smoking. It is essential to combine this with other methods for a higher chance of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "Can I quit smoking without support?",
+      "answer": "While it is possible to quit smoking without support, having help can significantly increase your chances of success. Support systems are beneficial.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "What are smoke-free communities?",
+      "answer": "Smoke-free communities are environments where smoking is prohibited. They can provide a supportive atmosphere for individuals trying to quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "What tools can help me quit smoking?",
+      "answer": "The right tools for quitting smoking include medications and methods to change personal habits. These tools, along with emotional support, can aid in the quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "How does planning help in quitting smoking?",
+      "answer": "Planning is an important part of quitting for good. It helps you prepare for the challenges you may face during the quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "What is the impact of social support on quitting smoking?",
+      "answer": "Social support has a positive impact on quitting smoking. People with strong social support are more likely to quit and stay quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "What combination is most effective for quitting tobacco?",
+      "answer": "The most effective combination for quitting tobacco includes medicine, changing personal habits, and emotional support. This multifaceted approach increases the likelihood of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:21:49.818693"
+    },
+    {
+      "question": "How can social support help me quit smoking?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit. Having friends and family who encourage you can make a significant difference in your quitting journey.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What kind of screening is mentioned for lung cancer?",
+      "answer": "The source mentions lung cancer screening with low-dose computed tomography (low-dose LDCT). This screening can be an important part of your health plan if you're a smoker.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What should I prepare before I quit smoking?",
+      "answer": "Preparing to quit involves having the right tools, support, and planning. These elements are an important part of quitting for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "Is quitting smoking easy?",
+      "answer": "Quitting is hard. But with help, you can increase your chances of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What resources can I find to help me quit smoking?",
+      "answer": "In this guide to quitting tobacco, you'll find tips, tools, and resources to get started. These resources are designed to support you throughout your quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What role does emotional support play in quitting smoking?",
+      "answer": "Emotional support is crucial when trying to change personal habits like smoking. It can help you cope with the challenges of quitting.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "Can I watch a video to help me quit smoking?",
+      "answer": "Yes, there is a how-to quit smoking video that includes information about lung cancer screening. This can provide you with valuable insights and motivation.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What is the importance of planning in quitting smoking?",
+      "answer": "Planning is an important part of quitting for good. It helps you set goals and prepare for the challenges you may face.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What can increase my chances of quitting successfully?",
+      "answer": "With help, you can increase your chances of success in quitting smoking. Utilizing support systems and resources can make a significant difference.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What types of support can I seek when quitting smoking?",
+      "answer": "You can seek various types of support, including emotional support from friends and family, as well as professional resources. Strong social support is key to staying quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "What is the main focus of the guide to quitting tobacco?",
+      "answer": "The guide to quitting tobacco focuses on providing tips, tools, and resources to help you get started on your quitting journey.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "How does social support affect quitting tobacco?",
+      "answer": "Social support significantly affects quitting tobacco, as studies show that those with strong support are more likely to quit and stay quit. It can provide motivation and encouragement.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:00.040061"
+    },
+    {
+      "question": "Why should I quit smoking?",
+      "answer": "The US Surgeon General has said stopping smoking is 'the single most important step that people who smoke can take to enhance the length and quality of their lives.' Quitting can significantly improve your health.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "Is quitting tobacco easy?",
+      "answer": "Quitting tobacco isn't easy, but it can be done. Many people find it challenging, but with the right support and tools, you can increase your chances of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What do I need to prepare for quitting?",
+      "answer": "Preparing to quit involves having the right tools, support, and planning. These elements are an important part of quitting for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "Can I get help to quit smoking?",
+      "answer": "Yes, with help, you can increase your chances of success in quitting smoking. Support from friends, family, or professional resources can make a significant difference.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What is the most important step for smokers?",
+      "answer": "According to the US Surgeon General, stopping smoking is 'the single most important step that people who smoke can take to enhance the length and quality of their lives.'",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What should I focus on when quitting?",
+      "answer": "When quitting, focus on having the right tools, support, and planning. These factors are crucial for successfully quitting tobacco for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "How can I increase my chances of quitting successfully?",
+      "answer": "You can increase your chances of success by seeking help and utilizing the right tools and support. Planning ahead is also essential.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "Is it possible to quit smoking?",
+      "answer": "Yes, quitting smoking is possible. While it may be hard, many people have successfully quit with the right support and resources.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What does the Surgeon General say about quitting smoking?",
+      "answer": "The US Surgeon General has emphasized that stopping smoking is 'the single most important step that people who smoke can take to enhance the length and quality of their lives.'",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What role does support play in quitting smoking?",
+      "answer": "Support plays a crucial role in quitting smoking. With help, you can significantly increase your chances of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What are the challenges of quitting tobacco?",
+      "answer": "Quitting tobacco can be very challenging. Many people struggle with the process, but it is achievable with the right tools and support.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What is the key to quitting for good?",
+      "answer": "The key to quitting for good is having the right tools, support, and planning. These elements are essential for a successful quit attempt.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:09.115010"
+    },
+    {
+      "question": "What should I do to prepare for quitting smoking?",
+      "answer": "Preparing to quit involves having the right tools, support, and planning. These elements are important for quitting for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:11.612806"
+    },
+    {
+      "question": "How can social support help me quit smoking?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit. Having friends or family who support your decision can significantly increase your chances of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:11.612806"
+    },
+    {
+      "question": "What are the steps I can take to quit smoking for good?",
+      "answer": "In the video, you can learn 3 steps that can lead to quitting smoking for good. These steps include making a plan, getting support, and staying quit for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "Is tobacco addiction just a physical issue?",
+      "answer": "No, tobacco addiction is both mental and physical. This means that overcoming it requires addressing both aspects.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "How important is social support when trying to quit smoking?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit. Having a support system can significantly enhance your chances of success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What type of lung cancer screening is mentioned?",
+      "answer": "The video includes information about lung cancer screening with low-dose computed tomography, also known as low-dose LDCT.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What should I focus on when making a plan to quit smoking?",
+      "answer": "When making a plan to quit smoking, focus on creating a structured approach that includes setting a quit date and identifying triggers. This is part of the steps mentioned in the video.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "Can I quit smoking without support?",
+      "answer": "While it is possible to quit smoking without support, studies indicate that having strong social support increases the likelihood of quitting and staying quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What is the role of mental health in quitting smoking?",
+      "answer": "Since tobacco addiction is both mental and physical, addressing mental health is crucial in the quitting process. This can involve strategies to cope with cravings and stress.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What resources can help me stay quit for good?",
+      "answer": "Resources that can help you stay quit for good include support groups, counseling, and educational materials. These are part of the support mentioned in the video.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What is low-dose LDCT used for?",
+      "answer": "Low-dose LDCT is used for lung cancer screening. It is a method mentioned in the video that can help detect lung cancer early.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What are some common triggers I should identify when quitting?",
+      "answer": "Common triggers can include stress, social situations, or certain activities that you associate with smoking. Identifying these is part of making a solid quitting plan.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "How can I ensure I stay quit after I stop smoking?",
+      "answer": "To ensure you stay quit after stopping smoking, it's important to have a plan and seek support. This is emphasized in the video as a key step in the quitting process.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What does the video suggest about quitting smoking?",
+      "answer": "The video suggests that quitting smoking involves 3 steps: making a plan, getting support, and staying quit for good. These steps are essential for long-term success.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:22.328203"
+    },
+    {
+      "question": "What do I need to quit smoking successfully?",
+      "answer": "Most people need a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:25.816951"
+    },
+    {
+      "question": "How does emotional support help with quitting smoking?",
+      "answer": "Emotional support is crucial because individuals who receive emotional support are more likely to quit and stay quit.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:25.816951"
+    },
+    {
+      "question": "What should I learn about tobacco products?",
+      "answer": "It's important to get the facts about tobacco products and understand how using tobacco affects your body.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:25.816951"
+    },
+    {
+      "question": "What are the health benefits of quitting smoking?",
+      "answer": "Learning more about the health benefits of quitting is essential as it can motivate you to stop using tobacco.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:25.816951"
+    },
+    {
+      "question": "What role do tools and planning play in quitting smoking?",
+      "answer": "The right tools, support, and planning are an important part of quitting for good.",
+      "source": "Smokefree - Main",
+      "source_url": "https://smokefree.gov/quit-smoking",
+      "category": "nrt",
+      "topic": "nrt",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:22:25.816951"
+    }
+  ],
+  "updated_at": "2026-04-04T21:22:26.893244"
+}

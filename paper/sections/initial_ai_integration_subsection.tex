@@ -1,0 +1,18 @@
+% Subsection: Initial AI Integration (before Section VI-A)
+% Describes the evolution from Gemini Protocol to Dataset RAG
+
+\subsection{Initial AI Integration: From Gemini Protocol to Dataset RAG}
+
+The initial AI integration in Quitxt leveraged the \textit{Gemini Protocol}, a structured communication framework that enabled the mobile application to interact with Google's Gemini model through a custom backend service. This architecture provided real-time conversational support for users seeking smoking cessation guidance.
+
+However, early testing revealed significant limitations in response accuracy and consistency. Without access to a curated knowledge base, the model frequently generated responses that lacked specificity to evidence-based cessation strategies, occasionally contradicted established medical guidance, or failed to reference authoritative sources in the smoking cessation domain.
+
+To address these quality concerns, we transitioned to a \textit{Retrieval-Augmented Generation (RAG)} approach using a human-curated dataset. This dataset was compiled from five authoritative sources: smokefree.gov, CDC, Mayo Clinic, American Cancer Society, and the American Lung Association. The knowledge base was indexed in a ChromaDB vector store, enabling semantic retrieval of relevant context before generation.
+
+Table~\ref{tab:dataset_web_rag_comparison} demonstrates the dual benefits of this transition. Dataset RAG achieved:
+\begin{itemize}
+    \item \textbf{Latency optimization}: 2.61× faster than web-scraping RAG (cold start) and 1.47× faster than cached web RAG
+    \item \textbf{Quality improvement}: Faithfulness score of 0.778 (vs. 0.58 for base LLM), with hallucination rate reduced to 22\% and only 16\% of responses classified as high-risk (<0.5 faithfulness)
+\end{itemize}
+
+This architecture shift established the foundation for the subsequent AI sidebar interface (Section~\ref{sec:ai_sidebar}) and informed our evaluation of both technical performance and clinical safety metrics (Section~\ref{sec:evaluation}).

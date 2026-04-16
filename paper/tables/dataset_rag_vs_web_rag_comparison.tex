@@ -1,0 +1,34 @@
+% Table: Dataset RAG vs Web RAG Comparison
+% Combines latency metrics with RAGAS performance metrics
+% n=100 questions for all configurations
+
+\begin{table}[!t]
+\centering
+\caption{Dataset RAG vs Web RAG: Latency and Performance Comparison}
+\label{tab:dataset_web_rag_comparison}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Metric} & \textbf{Dataset RAG} & \textbf{Web RAG (Warm)} & \textbf{Web RAG (Cold)} \\
+\hline
+\hline
+\multicolumn{4}{|l|}{\textbf{Latency (n=100 questions)}} \\
+\hline
+Mean Response Time & 3.03 ± 1.57s & 4.44 ± 2.08s & 7.91 ± 2.43s \\
+Median Response Time & 2.66s & 4.36s & 7.48s \\
+Speedup Factor & \textbf{1.0×} (baseline) & \textbf{1.47×} faster & \textbf{2.61×} faster \\
+\hline
+\hline
+\multicolumn{4}{|l|}{\textbf{RAGAS Performance (n=100 questions)}} \\
+\hline
+Faithfulness & \textbf{0.778 ± 0.342} & — & — \\
+Answer Relevancy & \textbf{0.693 ± 0.390} & — & — \\
+Context Recall & \textbf{0.425 ± 0.371} & — & — \\
+Hallucination Rate & \textbf{22\%} & — & — \\
+High-Risk Rate (<0.5) & \textbf{16\%} & — & — \\
+\hline
+\end{tabular}
+
+\vspace{0.1cm}
+\footnotesize
+\textit{Note: Web RAG performance metrics not measured in this evaluation. Dataset RAG uses human-curated knowledge base with ChromaDB vector store. Latency includes both retrieval and generation time using gpt-4o-mini.}
+\end{table}

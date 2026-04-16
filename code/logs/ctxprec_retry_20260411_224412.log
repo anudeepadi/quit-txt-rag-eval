@@ -1,0 +1,61 @@
+Source:  results/ragas_evaluation/ragas_eval_concise_20260411_210513.json
+Output:  results/ragas_evaluation/ragas_eval_concise_20260411_210513.ctxprec_patched.json
+Configs: ['human_rag', 'web_rag']
+Sleep:   3.0s between samples
+Test set: 100 questions
+
+=== human_rag ===
+  [human_rag   1/100] ERROR: TypeError: float has no len()
+  [human_rag   1/100] NaN
+  [human_rag   2/100] ERROR: TypeError: float has no len()
+  [human_rag   2/100] NaN
+  [human_rag   3/100] ERROR: TypeError: float has no len()
+  [human_rag   3/100] NaN
+  [human_rag   4/100] ERROR: TypeError: float has no len()
+  [human_rag   4/100] NaN
+  [human_rag   5/100] ERROR: TypeError: float has no len()
+  [human_rag   5/100] NaN
+  [human_rag   6/100] ERROR: TypeError: float has no len()
+  [human_rag   6/100] NaN
+  [human_rag   7/100] ERROR: TypeError: float has no len()
+  [human_rag   7/100] NaN
+  [human_rag   8/100] ERROR: TypeError: float has no len()
+  [human_rag   8/100] NaN
+  [human_rag   9/100] ERROR: TypeError: float has no len()
+  [human_rag   9/100] NaN
+  [human_rag  10/100] ERROR: TypeError: float has no len()
+  [human_rag  10/100] NaN
+  [human_rag  11/100] ERROR: TypeError: float has no len()
+  [human_rag  11/100] NaN
+  [human_rag  12/100] ERROR: TypeError: float has no len()
+  [human_rag  12/100] NaN
+  [human_rag  13/100] ERROR: TypeError: float has no len()
+  [human_rag  13/100] NaN
+  [human_rag  14/100] ERROR: TypeError: float has no len()
+  [human_rag  14/100] NaN
+  [human_rag  15/100] ERROR: TypeError: float has no len()
+  [human_rag  15/100] NaN
+  [human_rag  16/100] ERROR: TypeError: float has no len()
+  [human_rag  16/100] NaN
+  [human_rag  17/100] ERROR: TypeError: float has no len()
+  [human_rag  17/100] NaN
+  [human_rag  18/100] ERROR: TypeError: float has no len()
+  [human_rag  18/100] NaN
+  [human_rag  19/100] ERROR: TypeError: float has no len()
+  [human_rag  19/100] NaN
+  [human_rag  20/100] ERROR: TypeError: float has no len()
+  [human_rag  20/100] NaN
+  [human_rag  21/100] ERROR: TypeError: float has no len()
+  [human_rag  21/100] NaN
+  [human_rag  22/100] ERROR: TypeError: float has no len()
+  [human_rag  22/100] NaN
+  [human_rag  23/100] ERROR: TypeError: float has no len()
+  [human_rag  23/100] NaN
+  [human_rag  24/100] ERROR: TypeError: float has no len()
+  [human_rag  24/100] NaN
+  [human_rag  25/100] ERROR: TypeError: float has no len()
+  [human_rag  25/100] NaN
+  [human_rag  26/100] ERROR: TypeError: float has no len()
+  [human_rag  26/100] NaN
+  [human_rag  27/100] ERROR: TypeError: float has no len()
+  [human_rag  27/100] NaN

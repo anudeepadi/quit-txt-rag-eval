@@ -1,0 +1,139 @@
+{
+  "url": "https://www.nhs.uk/live-well/quit-smoking/",
+  "completed_chunks": 2,
+  "total_chunks": 2,
+  "n_pairs": 13,
+  "pairs": [
+    {
+      "question": "How can NHS stop smoking services help me quit?",
+      "answer": "NHS stop smoking services provide support and resources to help you quit smoking. They offer personalized advice and can guide you through the quitting process.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "Can e-cigarettes help me stop smoking?",
+      "answer": "Yes, using e-cigarettes can be a method to help you stop smoking. They are often considered as a less harmful alternative to traditional cigarettes.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "How does stopping smoking benefit my mental health?",
+      "answer": "Stopping smoking can significantly improve your mental health. It can lead to reduced anxiety and depression, contributing to an overall better mood.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "What are some alternatives to traditional smoking like paan, bidi, and shisha?",
+      "answer": "Paan, bidi, and shisha are alternatives to traditional smoking. However, they also carry health risks and should be approached with caution.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "What information is available to help me stop smoking?",
+      "answer": "There is a wealth of information and advice available to help you stop smoking. This includes resources from healthcare providers and support groups.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "Is it safe to stop smoking during pregnancy?",
+      "answer": "Yes, it is important to stop smoking during pregnancy for the health of both the mother and the baby. There are specific resources available to support pregnant women in quitting.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "What is Varenicline and how can it help me quit smoking?",
+      "answer": "Varenicline is a medicine that can help you quit smoking. It works by reducing withdrawal symptoms and cravings.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "What does 'Ready to quit smoking' mean?",
+      "answer": "'Ready to quit smoking' refers to the mindset and preparation needed to successfully stop smoking. It involves being mentally prepared to make the change.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "How can I stay smoke-free after quitting?",
+      "answer": "Staying smoke-free involves ongoing support and strategies to manage cravings. Utilizing resources and support systems can help maintain your smoke-free status.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "How can I help others quit smoking?",
+      "answer": "You can help others quit smoking by providing support and sharing resources. Encouragement and understanding can make a significant difference in their quitting journey.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:13.104690"
+    },
+    {
+      "question": "What are the benefits of quitting smoking?",
+      "answer": "Quitting smoking leads to better health. It not only improves your own health but can also help others quit.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:16.875373"
+    },
+    {
+      "question": "How does staying smoke-free affect my health?",
+      "answer": "Staying smoke-free contributes to better health overall. It reduces the risks associated with smoking-related diseases.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:16.875373"
+    },
+    {
+      "question": "Can quitting smoking help others?",
+      "answer": "Yes, when you quit smoking, you can help others quit as well. Your decision to stay smoke-free can inspire those around you.",
+      "source": "NHS - Quit Smoking",
+      "source_url": "https://www.nhs.uk/live-well/quit-smoking/",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T21:01:16.875373"
+    }
+  ],
+  "updated_at": "2026-04-04T21:01:16.875551"
+}

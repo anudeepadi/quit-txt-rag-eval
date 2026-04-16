@@ -1,0 +1,95 @@
+% Hallucination Taxonomy for QuitTxt RAG Evaluation
+% For inclusion in the paper as a section or supplementary material
+
+\section{Hallucination Taxonomy}
+\label{sec:hallucination_taxonomy}
+
+To systematically characterize errors in LLM-generated smoking cessation responses, we developed a six-category hallucination taxonomy based on analysis of 400 response pairs (100 questions $\times$ 4 configurations). Each category captures a distinct failure mode observed when comparing generated answers against ground-truth references and retrieved contexts.
+
+\subsection{Taxonomy Categories}
+
+\begin{enumerate}
+
+\item \textbf{Fabricated Statistics (Type~I: Factual Fabrication)} \\
+The model introduces specific numerical claims---percentages, timeframes, or statistics---that do not appear in the ground truth or retrieved context. This is the highest-risk category in health counseling, as fabricated statistics can mislead patients about treatment efficacy or health outcomes.
+
+\textit{Example:} When asked about secondhand smoke exposure among children, the baseline model cited specific prevalence figures (e.g., ``4 million children'') and a year (``2023'') absent from any source material.
+
+\textit{Prevalence:} Baseline: 3/100; AI RAG: 0/100; Human RAG: 0/100; Web RAG: 0/100.
+
+\item \textbf{Unsupported Specifics (Type~II: Entity Hallucination)} \\
+The model names specific medications, products, organizations, or treatments not mentioned in the source material. While often clinically plausible, these specifics are ungrounded and may not align with evidence-based guidelines for the target population.
+
+\textit{Example:} When asked whether quitting cold turkey is effective, the baseline model recommended ``nicotine replacement therapy'' despite the ground truth discussing cold turkey specifically without mentioning NRT.
+
+\textit{Prevalence:} Baseline: 4/100; AI RAG: 1/100; Human RAG: 0/100; Web RAG: 0/100.
+
+\item \textbf{Ungrounded Authority Claims (Type~III: Attribution Fabrication)} \\
+The model invokes vague appeals to research or expert consensus (e.g., ``studies have shown,'' ``experts recommend'') without these claims appearing in the source material. This creates a false sense of evidence-backed authority.
+
+\textit{Example:} Responses prefaced with ``research shows that...'' when the source material made no such attribution, lending unwarranted scientific authority to general advice.
+
+\textit{Prevalence:} Low across all configurations ($<$2/100), but notable because it inflates perceived credibility.
+
+\item \textbf{Significant Omission (Type~IV: Incomplete Faithfulness)} \\
+The generated answer diverges substantially from the ground truth, covering different aspects of the topic or missing critical information. Measured as $<$15\% word overlap with the reference answer, this category captures cases where the model generates topically relevant but substantively different content.
+
+\textit{Example:} When asked about teen smoking motivations, AI RAG and Web RAG responses focused on peer pressure and stress, while the ground truth emphasized advertising, flavored products, and family influence---achieving only 12\% lexical overlap.
+
+\textit{Prevalence:} Baseline: 3/100; AI RAG: 20/100; Human RAG: 8/100; Web RAG: 20/100.
+
+\item \textbf{Context Disconnection (Type~V: Retrieval-Generation Misalignment)} \\
+In RAG configurations, the model retrieves context documents but generates an answer with minimal connection to the retrieved content ($<$5\% context utilization). This indicates a failure in the retrieval-augmented generation pipeline where the model defaults to parametric knowledge despite having relevant context available.
+
+\textit{Example:} For questions about erectile function and smoking, retrieved contexts discussed cardiovascular benefits of quitting, but the generated answer drew primarily on the model's pre-trained knowledge rather than the provided passages.
+
+\textit{Prevalence:} AI RAG: 4/100; Human RAG: 3/100; Web RAG: 16/100.
+
+\item \textbf{Benign Elaboration (Type~VI: Unsourced but Harmless Advice)} \\
+The model adds advisory language and practical suggestions (e.g., ``you might consider,'' ``it may help to try'') beyond what the source material states. While not factually incorrect, this content is ungrounded and represents a mild form of hallucination where the model supplements retrieved facts with generic counseling patterns.
+
+\textit{Example:} Responses containing three or more advisory phrases not present in source material, typically appending practical tips to factual answers.
+
+\textit{Prevalence:} Low across all configurations, but represents the boundary between helpful elaboration and unfaithful generation.
+
+\end{enumerate}
+
+\subsection{Distribution Across Configurations}
+
+Table~\ref{tab:hallucination_distribution} summarizes the prevalence of each hallucination type across experimental configurations (n=100 per configuration).
+
+\begin{table}[h]
+\centering
+\caption{Hallucination type distribution across RAG configurations (per 100 questions)}
+\label{tab:hallucination_distribution}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Hallucination Type} & \textbf{Baseline} & \textbf{AI RAG} & \textbf{Human RAG} & \textbf{Web RAG} \\
+\hline
+I. Fabricated Statistics     & 3  & 0  & 0  & 0  \\
+II. Unsupported Specifics    & 4  & 1  & 0  & 0  \\
+III. Ungrounded Authority    & $<$2 & $<$2 & $<$2 & $<$2 \\
+IV. Significant Omission     & 3  & 20 & 8  & 20 \\
+V. Context Disconnection     & --- & 4  & 3  & 16 \\
+VI. Benign Elaboration       & $<$2 & $<$2 & $<$2 & $<$2 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Key Findings}
+
+\begin{enumerate}
+\item \textbf{RAG eliminates high-risk fabrication.} Types~I and~II (fabricated statistics and unsupported specifics) occur almost exclusively in the baseline configuration. All three RAG approaches effectively suppress the most dangerous hallucination categories, reducing fabricated statistics from 3\% to 0\%.
+
+\item \textbf{RAG introduces omission-type errors.} Type~IV (significant omission) is paradoxically more prevalent in RAG configurations (8--20\%) than baseline (3\%). This occurs because RAG constrains the model to retrieved content, which may not cover all aspects of the ground-truth answer. The concise prompt template (``answer using ONLY facts from the knowledge base'') amplifies this effect.
+
+\item \textbf{Human-curated RAG shows best overall profile.} Human RAG achieves the lowest rates across all hallucination types: zero fabrication, zero unsupported specifics, moderate omission (8\%), and minimal context disconnection (3\%).
+
+\item \textbf{Web RAG suffers from retrieval quality.} Web RAG shows the highest context disconnection rate (16\%), indicating that its smaller corpus (278 pairs vs.\ 4,431--5,936) frequently retrieves tangentially related content, forcing the model to fall back on parametric knowledge.
+
+\item \textbf{Risk severity varies by type.} In a health counseling context, Types~I--III pose direct patient safety risks (misinformation), while Types~IV--VI represent quality-of-response issues. RAG's primary value is eliminating the former, even at the cost of increased Type~IV errors.
+\end{enumerate}
+
+\subsection{Implications for Smoking Cessation AI Systems}
+
+This taxonomy suggests a \textit{safety-completeness tradeoff} in RAG-augmented health counseling: stricter grounding in retrieved content reduces dangerous fabrications but increases omission of relevant information. System designers should consider hybrid approaches that use RAG for factual grounding while allowing controlled parametric elaboration for comprehensive coverage. The taxonomy also provides a framework for targeted evaluation of future smoking cessation AI systems beyond aggregate faithfulness scores.

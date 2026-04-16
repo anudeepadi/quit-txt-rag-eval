@@ -1,0 +1,860 @@
+20:58:21 [INFO] Loading source excerpts from: /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/backups/ai_generated_qa_pre_regen_20260402_033005.jsonl
+20:58:21 [INFO] Loaded 5936 pairs from backup
+20:58:21 [INFO] Pairs with answer_source_excerpt: 5841 / 5936 (98.4%)
+20:58:21 [INFO] ======================================================================
+20:58:21 [INFO] AI DATASET REGENERATION — Autoresearch Exp5 Optimized Prompt
+20:58:21 [INFO] ======================================================================
+20:58:21 [INFO]   Source backup: /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/backups/ai_generated_qa_pre_regen_20260402_033005.jsonl
+20:58:21 [INFO]   Output:        /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/ai_generated_qa.jsonl
+20:58:21 [INFO]   Model:         gpt-4o-mini
+20:58:21 [INFO]   Temperature:   0.0
+20:58:21 [INFO]   Prompt:        Two-pass fact extraction (source-preserving)
+20:58:21 [INFO]   QA/chunk:      12
+20:58:21 [INFO]   Chunk size:    500 chars
+20:58:21 [INFO]   Dedup thresh:  0.85
+20:58:21 [INFO]   Sources:       7 (from original dataset excerpts)
+20:58:21 [INFO]   Resume:        False
+20:58:21 [INFO]   Dry run:       False
+20:58:21 [INFO] 
+20:58:21 [INFO]   [1] ALA - Benefits of Quitting: 57 excerpts, 9,928 chars, ~22 chunks (from 394 original pairs)
+20:58:21 [INFO]   [2] ACS - Guide to Quitting: 12 excerpts, 1,430 chars, ~3 chunks (from 75 original pairs)
+20:58:21 [INFO]   [3] ACS - Health Risks: 14 excerpts, 1,202 chars, ~3 chunks (from 868 original pairs)
+20:58:21 [INFO]   [4] NHS - Quit Smoking: 11 excerpts, 551 chars, ~2 chunks (from 30 original pairs)
+20:58:21 [INFO]   [5] Smokefree - Challenges: 1080 excerpts, 85,992 chars, ~172 chunks (from 1644 original pairs)
+20:58:21 [INFO]   [6] Smokefree - Main: 64 excerpts, 5,945 chars, ~13 chunks (from 2072 original pairs)
+20:58:21 [INFO]   [7] Smokefree - Tools: 569 excerpts, 45,282 chars, ~92 chunks (from 853 original pairs)
+20:58:21 [INFO] 
+20:58:21 [INFO]   TOTAL: 150,330 chars source, ~307 chunks, ~3684 pairs before dedup
+20:58:21 [INFO]   Backed up current file to: /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/backups/ai_generated_qa_pre_regen_20260404_205821.jsonl
+20:58:21 [INFO] 
+20:58:21 [INFO] [1/7] ALA - Benefits of Quitting
+20:58:21 [INFO]   URL: https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting
+20:58:21 [INFO]   Reconstructed: 9,928 chars from 57 unique excerpts
+20:58:21 [INFO]   Split into 22 chunks
+20:58:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:27 [INFO]     Chunk [1/22]: 6 pairs | 5.6s | 706 tokens | 505 chars input
+20:58:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:31 [INFO]     Chunk [2/22]: 4 pairs | 4.0s | 655 tokens | 495 chars input
+20:58:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:39 [INFO]     Chunk [3/22]: 4 pairs | 7.1s | 672 tokens | 591 chars input
+20:58:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:44 [INFO]     Chunk [4/22]: 6 pairs | 4.8s | 693 tokens | 500 chars input
+20:58:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:46 [INFO]     Chunk [5/22]: 1 pairs | 1.5s | 492 tokens | 538 chars input
+20:58:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:51 [INFO]     Chunk [6/22]: 6 pairs | 5.0s | 702 tokens | 552 chars input
+20:58:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:55 [INFO]     Chunk [7/22]: 4 pairs | 3.4s | 591 tokens | 295 chars input
+20:58:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:58:58 [INFO]     Chunk [8/22]: 4 pairs | 3.0s | 624 tokens | 505 chars input
+20:59:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:07 [INFO]     Chunk [9/22]: 12 pairs | 8.6s | 1033 tokens | 553 chars input
+20:59:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:10 [INFO]     Chunk [10/22]: 4 pairs | 2.9s | 626 tokens | 500 chars input
+20:59:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:14 [INFO]     Chunk [11/22]: 3 pairs | 3.1s | 607 tokens | 499 chars input
+20:59:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:18 [INFO]     Chunk [12/22]: 4 pairs | 3.7s | 641 tokens | 530 chars input
+20:59:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:23 [INFO]     Chunk [13/22]: 5 pairs | 5.1s | 641 tokens | 409 chars input
+20:59:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:27 [INFO]     Chunk [14/22]: 5 pairs | 3.6s | 668 tokens | 509 chars input
+20:59:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:40 [INFO]     Chunk [15/22]: 12 pairs | 13.0s | 1103 tokens | 596 chars input
+20:59:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:49 [INFO]     Chunk [16/22]: 12 pairs | 8.7s | 1061 tokens | 500 chars input
+20:59:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:54 [INFO]     Chunk [17/22]: 4 pairs | 4.0s | 652 tokens | 522 chars input
+20:59:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+20:59:58 [INFO]     Chunk [18/22]: 4 pairs | 3.8s | 616 tokens | 457 chars input
+21:00:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:02 [INFO]     Chunk [19/22]: 6 pairs | 4.1s | 694 tokens | 523 chars input
+21:00:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:06 [INFO]     Chunk [20/22]: 4 pairs | 4.0s | 667 tokens | 558 chars input
+21:00:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:11 [INFO]     Chunk [21/22]: 4 pairs | 4.3s | 602 tokens | 406 chars input
+21:00:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:16 [INFO]     Chunk [22/22]: 5 pairs | 4.7s | 643 tokens | 416 chars input
+21:00:16 [INFO]   Total for URL: 119 pairs
+21:00:17 [INFO] 
+21:00:17 [INFO] [2/7] ACS - Guide to Quitting
+21:00:17 [INFO]   URL: https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html
+21:00:17 [INFO]   Reconstructed: 1,430 chars from 12 unique excerpts
+21:00:17 [INFO]   Split into 3 chunks
+21:00:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:23 [INFO]     Chunk [1/3]: 6 pairs | 5.5s | 698 tokens | 533 chars input
+21:00:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:27 [INFO]     Chunk [2/3]: 3 pairs | 3.8s | 592 tokens | 531 chars input
+21:00:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:30 [INFO]     Chunk [3/3]: 2 pairs | 2.9s | 514 tokens | 464 chars input
+21:00:30 [INFO]   Total for URL: 11 pairs
+21:00:31 [INFO] 
+21:00:31 [INFO] [3/7] ACS - Health Risks
+21:00:31 [INFO]   URL: https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html
+21:00:31 [INFO]   Reconstructed: 1,202 chars from 14 unique excerpts
+21:00:31 [INFO]   Split into 3 chunks
+21:00:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:40 [INFO]     Chunk [1/3]: 7 pairs | 8.2s | 780 tokens | 598 chars input
+21:00:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:00:49 [INFO]     Chunk [2/3]: 12 pairs | 8.7s | 934 tokens | 426 chars input
+21:01:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:00 [INFO]     Chunk [3/3]: 12 pairs | 10.8s | 1006 tokens | 276 chars input
+21:01:00 [INFO]   Total for URL: 31 pairs
+21:01:01 [INFO] 
+21:01:01 [INFO] [4/7] NHS - Quit Smoking
+21:01:01 [INFO]   URL: https://www.nhs.uk/live-well/quit-smoking/
+21:01:01 [INFO]   Reconstructed: 551 chars from 11 unique excerpts
+21:01:01 [INFO]   Split into 2 chunks
+21:01:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:13 [INFO]     Chunk [1/2]: 10 pairs | 11.4s | 955 tokens | 517 chars input
+21:01:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:16 [INFO]     Chunk [2/2]: 3 pairs | 3.4s | 480 tokens | 82 chars input
+21:01:17 [INFO]   Total for URL: 13 pairs
+21:01:18 [INFO] 
+21:01:18 [INFO] [5/7] Smokefree - Challenges
+21:01:18 [INFO]   URL: https://smokefree.gov/challenges-when-quitting
+21:01:18 [INFO]   Reconstructed: 85,992 chars from 1080 unique excerpts
+21:01:18 [INFO]   Split into 172 chunks
+21:01:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:30 [INFO]     Chunk [1/172]: 12 pairs | 12.3s | 908 tokens | 530 chars input
+21:01:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:43 [INFO]     Chunk [2/172]: 12 pairs | 13.0s | 1050 tokens | 467 chars input
+21:01:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:50 [INFO]     Chunk [3/172]: 4 pairs | 6.5s | 659 tokens | 576 chars input
+21:01:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:01:54 [INFO]     Chunk [4/172]: 4 pairs | 4.0s | 617 tokens | 559 chars input
+21:02:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:01 [INFO]     Chunk [5/172]: 6 pairs | 5.8s | 717 tokens | 541 chars input
+21:02:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:06 [INFO]     Chunk [6/172]: 5 pairs | 4.8s | 622 tokens | 467 chars input
+21:02:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:11 [INFO]     Chunk [7/172]: 7 pairs | 4.9s | 722 tokens | 582 chars input
+21:02:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:26 [INFO]     Chunk [8/172]: 10 pairs | 14.4s | 916 tokens | 571 chars input
+21:02:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:30 [INFO]     Chunk [9/172]: 4 pairs | 4.0s | 595 tokens | 414 chars input
+21:02:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:40 [INFO]     Chunk [10/172]: 12 pairs | 10.1s | 1127 tokens | 534 chars input
+21:02:45 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:45 [INFO]     Chunk [11/172]: 5 pairs | 4.4s | 641 tokens | 443 chars input
+21:02:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:50 [INFO]     Chunk [12/172]: 4 pairs | 4.3s | 652 tokens | 526 chars input
+21:02:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:02:55 [INFO]     Chunk [13/172]: 5 pairs | 5.3s | 699 tokens | 568 chars input
+21:03:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:01 [INFO]     Chunk [14/172]: 6 pairs | 5.7s | 734 tokens | 599 chars input
+21:03:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:06 [INFO]     Chunk [15/172]: 5 pairs | 4.2s | 664 tokens | 513 chars input
+21:03:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:12 [INFO]     Chunk [16/172]: 6 pairs | 6.0s | 705 tokens | 583 chars input
+21:03:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:17 [INFO]     Chunk [17/172]: 5 pairs | 5.0s | 691 tokens | 509 chars input
+21:03:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:23 [INFO]     Chunk [18/172]: 6 pairs | 4.9s | 731 tokens | 566 chars input
+21:03:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:32 [INFO]     Chunk [19/172]: 12 pairs | 8.8s | 942 tokens | 562 chars input
+21:03:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:40 [INFO]     Chunk [20/172]: 13 pairs | 8.0s | 1035 tokens | 580 chars input
+21:03:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:03:50 [INFO]     Chunk [21/172]: 13 pairs | 9.9s | 1007 tokens | 579 chars input
+21:04:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:05 [INFO]     Chunk [22/172]: 13 pairs | 14.2s | 1036 tokens | 576 chars input
+21:04:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:14 [INFO]     Chunk [23/172]: 10 pairs | 8.9s | 928 tokens | 569 chars input
+21:04:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:23 [INFO]     Chunk [24/172]: 11 pairs | 8.3s | 890 tokens | 543 chars input
+21:04:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:31 [INFO]     Chunk [25/172]: 10 pairs | 8.2s | 934 tokens | 595 chars input
+21:04:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:40 [INFO]     Chunk [26/172]: 11 pairs | 8.4s | 979 tokens | 575 chars input
+21:04:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:48 [INFO]     Chunk [27/172]: 10 pairs | 8.3s | 893 tokens | 594 chars input
+21:04:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:04:56 [INFO]     Chunk [28/172]: 8 pairs | 7.0s | 810 tokens | 555 chars input
+21:05:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:05 [INFO]     Chunk [29/172]: 12 pairs | 8.9s | 1019 tokens | 551 chars input
+21:05:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:10 [INFO]     Chunk [30/172]: 5 pairs | 4.8s | 699 tokens | 553 chars input
+21:05:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:14 [INFO]     Chunk [31/172]: 3 pairs | 3.4s | 572 tokens | 495 chars input
+21:05:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:19 [INFO]     Chunk [32/172]: 5 pairs | 5.0s | 638 tokens | 574 chars input
+21:05:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:25 [INFO]     Chunk [33/172]: 5 pairs | 5.8s | 628 tokens | 503 chars input
+21:05:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:30 [INFO]     Chunk [34/172]: 5 pairs | 4.3s | 659 tokens | 546 chars input
+21:05:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:42 [INFO]     Chunk [35/172]: 12 pairs | 11.7s | 1066 tokens | 489 chars input
+21:05:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:50 [INFO]     Chunk [36/172]: 12 pairs | 8.0s | 1007 tokens | 455 chars input
+21:05:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:54 [INFO]     Chunk [37/172]: 4 pairs | 3.3s | 618 tokens | 556 chars input
+21:05:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:05:59 [INFO]     Chunk [38/172]: 6 pairs | 4.4s | 705 tokens | 590 chars input
+21:06:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:10 [INFO]     Chunk [39/172]: 12 pairs | 10.6s | 1038 tokens | 525 chars input
+21:06:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:13 [INFO]     Chunk [40/172]: 5 pairs | 3.1s | 660 tokens | 566 chars input
+21:06:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:17 [INFO]     Chunk [41/172]: 6 pairs | 3.4s | 705 tokens | 573 chars input
+21:06:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 400 Bad Request"
+21:06:25 [ERROR]     Chunk [42/172] GENERATION ERROR: Error code: 400 - {'error': {'message': "We could not parse the JSON body of your request. (HINT: This likely means you aren't using your HTTP library correctly. The OpenAI API expects a JSON payload, but what was sent was not valid JSON. If you have trouble figuring out how to fix this, please contact us through our help center at help.openai.com.)", 'type': 'invalid_request_error', 'param': None, 'code': None}}
+21:06:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:30 [INFO]     Chunk [43/172]: 4 pairs | 4.0s | 628 tokens | 504 chars input
+21:06:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:39 [INFO]     Chunk [44/172]: 12 pairs | 8.9s | 1018 tokens | 551 chars input
+21:06:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:44 [INFO]     Chunk [45/172]: 4 pairs | 4.4s | 660 tokens | 598 chars input
+21:06:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:49 [INFO]     Chunk [46/172]: 6 pairs | 5.2s | 710 tokens | 556 chars input
+21:06:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:53 [INFO]     Chunk [47/172]: 4 pairs | 3.8s | 634 tokens | 518 chars input
+21:06:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:06:58 [INFO]     Chunk [48/172]: 3 pairs | 4.3s | 585 tokens | 464 chars input
+21:07:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:03 [INFO]     Chunk [49/172]: 6 pairs | 5.0s | 707 tokens | 540 chars input
+21:07:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:16 [INFO]     Chunk [50/172]: 12 pairs | 12.3s | 1093 tokens | 451 chars input
+21:07:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:28 [INFO]     Chunk [51/172]: 12 pairs | 12.0s | 1144 tokens | 562 chars input
+21:07:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:36 [INFO]     Chunk [52/172]: 12 pairs | 7.8s | 1045 tokens | 559 chars input
+21:07:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:46 [INFO]     Chunk [53/172]: 12 pairs | 9.6s | 1002 tokens | 583 chars input
+21:07:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:52 [INFO]     Chunk [54/172]: 5 pairs | 5.1s | 683 tokens | 495 chars input
+21:07:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:07:55 [INFO]     Chunk [55/172]: 4 pairs | 3.6s | 620 tokens | 434 chars input
+21:08:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:05 [INFO]     Chunk [56/172]: 12 pairs | 9.1s | 940 tokens | 551 chars input
+21:08:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:09 [INFO]     Chunk [57/172]: 5 pairs | 4.2s | 625 tokens | 427 chars input
+21:08:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:16 [INFO]     Chunk [58/172]: 12 pairs | 6.6s | 928 tokens | 554 chars input
+21:08:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:24 [INFO]     Chunk [59/172]: 9 pairs | 7.2s | 884 tokens | 555 chars input
+21:08:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:30 [INFO]     Chunk [60/172]: 6 pairs | 6.2s | 744 tokens | 561 chars input
+21:08:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:42 [INFO]     Chunk [61/172]: 12 pairs | 11.2s | 1040 tokens | 521 chars input
+21:08:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:53 [INFO]     Chunk [62/172]: 12 pairs | 10.6s | 952 tokens | 515 chars input
+21:08:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:08:58 [INFO]     Chunk [63/172]: 5 pairs | 4.5s | 685 tokens | 487 chars input
+21:09:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:04 [INFO]     Chunk [64/172]: 6 pairs | 6.3s | 730 tokens | 535 chars input
+21:09:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:08 [INFO]     Chunk [65/172]: 6 pairs | 3.5s | 655 tokens | 577 chars input
+21:09:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:13 [INFO]     Chunk [66/172]: 6 pairs | 4.7s | 663 tokens | 573 chars input
+21:09:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:24 [INFO]     Chunk [67/172]: 12 pairs | 11.0s | 962 tokens | 567 chars input
+21:09:29 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:29 [INFO]     Chunk [68/172]: 6 pairs | 4.5s | 675 tokens | 543 chars input
+21:09:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:33 [INFO]     Chunk [69/172]: 5 pairs | 3.8s | 684 tokens | 592 chars input
+21:09:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:38 [INFO]     Chunk [70/172]: 6 pairs | 4.4s | 691 tokens | 564 chars input
+21:09:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:43 [INFO]     Chunk [71/172]: 6 pairs | 4.3s | 656 tokens | 508 chars input
+21:09:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:49 [INFO]     Chunk [72/172]: 6 pairs | 5.9s | 752 tokens | 598 chars input
+21:09:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:09:58 [INFO]     Chunk [73/172]: 8 pairs | 8.8s | 746 tokens | 553 chars input
+21:10:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:04 [INFO]     Chunk [74/172]: 7 pairs | 5.4s | 813 tokens | 580 chars input
+21:10:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:10 [INFO]     Chunk [75/172]: 8 pairs | 5.7s | 740 tokens | 577 chars input
+21:10:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:15 [INFO]     Chunk [76/172]: 7 pairs | 5.1s | 784 tokens | 586 chars input
+21:10:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:25 [INFO]     Chunk [77/172]: 12 pairs | 9.5s | 1020 tokens | 552 chars input
+21:10:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:32 [INFO]     Chunk [78/172]: 8 pairs | 6.2s | 833 tokens | 570 chars input
+21:10:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:37 [INFO]     Chunk [79/172]: 6 pairs | 5.3s | 692 tokens | 563 chars input
+21:10:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:41 [INFO]     Chunk [80/172]: 6 pairs | 3.4s | 677 tokens | 535 chars input
+21:10:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:47 [INFO]     Chunk [81/172]: 7 pairs | 5.3s | 680 tokens | 548 chars input
+21:10:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:10:53 [INFO]     Chunk [82/172]: 6 pairs | 5.7s | 785 tokens | 563 chars input
+21:11:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:03 [INFO]     Chunk [83/172]: 10 pairs | 10.2s | 934 tokens | 587 chars input
+21:11:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:09 [INFO]     Chunk [84/172]: 9 pairs | 5.8s | 867 tokens | 595 chars input
+21:11:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:19 [INFO]     Chunk [85/172]: 12 pairs | 9.2s | 1005 tokens | 569 chars input
+21:11:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:23 [INFO]     Chunk [86/172]: 8 pairs | 4.1s | 716 tokens | 568 chars input
+21:11:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:31 [INFO]     Chunk [87/172]: 9 pairs | 7.9s | 886 tokens | 588 chars input
+21:11:39 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:39 [INFO]     Chunk [88/172]: 11 pairs | 7.4s | 957 tokens | 585 chars input
+21:11:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:46 [INFO]     Chunk [89/172]: 9 pairs | 6.4s | 828 tokens | 587 chars input
+21:11:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:11:53 [INFO]     Chunk [90/172]: 12 pairs | 6.9s | 1010 tokens | 570 chars input
+21:12:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:01 [INFO]     Chunk [91/172]: 11 pairs | 7.2s | 905 tokens | 537 chars input
+21:12:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:09 [INFO]     Chunk [92/172]: 11 pairs | 8.2s | 945 tokens | 563 chars input
+21:12:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:18 [INFO]     Chunk [93/172]: 12 pairs | 9.0s | 1090 tokens | 585 chars input
+21:12:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:28 [INFO]     Chunk [94/172]: 12 pairs | 9.0s | 1094 tokens | 581 chars input
+21:12:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:33 [INFO]     Chunk [95/172]: 8 pairs | 4.7s | 776 tokens | 579 chars input
+21:12:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:42 [INFO]     Chunk [96/172]: 12 pairs | 8.9s | 1055 tokens | 521 chars input
+21:12:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:47 [INFO]     Chunk [97/172]: 7 pairs | 5.2s | 698 tokens | 567 chars input
+21:12:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:12:52 [INFO]     Chunk [98/172]: 7 pairs | 4.6s | 716 tokens | 596 chars input
+21:13:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:01 [INFO]     Chunk [99/172]: 12 pairs | 8.0s | 1030 tokens | 505 chars input
+21:13:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:07 [INFO]     Chunk [100/172]: 9 pairs | 6.4s | 911 tokens | 554 chars input
+21:13:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:13 [INFO]     Chunk [101/172]: 6 pairs | 4.8s | 745 tokens | 552 chars input
+21:13:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:22 [INFO]     Chunk [102/172]: 12 pairs | 9.0s | 998 tokens | 570 chars input
+21:13:28 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:28 [INFO]     Chunk [103/172]: 8 pairs | 5.8s | 781 tokens | 508 chars input
+21:13:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:32 [INFO]     Chunk [104/172]: 6 pairs | 4.0s | 677 tokens | 593 chars input
+21:13:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:40 [INFO]     Chunk [105/172]: 9 pairs | 7.0s | 846 tokens | 570 chars input
+21:13:46 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:46 [INFO]     Chunk [106/172]: 7 pairs | 5.8s | 800 tokens | 522 chars input
+21:13:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:52 [INFO]     Chunk [107/172]: 8 pairs | 6.1s | 830 tokens | 533 chars input
+21:13:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:13:56 [INFO]     Chunk [108/172]: 6 pairs | 3.5s | 719 tokens | 592 chars input
+21:14:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:13 [INFO]     Chunk [109/172]: 5 pairs | 17.1s | 623 tokens | 489 chars input
+21:14:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:21 [INFO]     Chunk [110/172]: 12 pairs | 7.5s | 932 tokens | 501 chars input
+21:14:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:27 [INFO]     Chunk [111/172]: 6 pairs | 4.9s | 742 tokens | 553 chars input
+21:14:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:38 [INFO]     Chunk [112/172]: 9 pairs | 10.7s | 890 tokens | 570 chars input
+21:14:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:44 [INFO]     Chunk [113/172]: 8 pairs | 6.3s | 859 tokens | 599 chars input
+21:14:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:14:53 [INFO]     Chunk [114/172]: 12 pairs | 8.4s | 1050 tokens | 575 chars input
+21:15:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:00 [INFO]     Chunk [115/172]: 8 pairs | 7.1s | 884 tokens | 580 chars input
+21:15:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:11 [INFO]     Chunk [116/172]: 12 pairs | 10.0s | 1038 tokens | 582 chars input
+21:15:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:19 [INFO]     Chunk [117/172]: 9 pairs | 7.7s | 879 tokens | 589 chars input
+21:15:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:26 [INFO]     Chunk [118/172]: 8 pairs | 6.9s | 823 tokens | 549 chars input
+21:15:35 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:35 [INFO]     Chunk [119/172]: 12 pairs | 8.5s | 996 tokens | 566 chars input
+21:15:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:41 [INFO]     Chunk [120/172]: 9 pairs | 5.8s | 851 tokens | 571 chars input
+21:15:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:47 [INFO]     Chunk [121/172]: 11 pairs | 5.9s | 946 tokens | 538 chars input
+21:15:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:52 [INFO]     Chunk [122/172]: 8 pairs | 4.4s | 836 tokens | 595 chars input
+21:15:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:15:57 [INFO]     Chunk [123/172]: 7 pairs | 5.3s | 784 tokens | 527 chars input
+21:16:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:02 [INFO]     Chunk [124/172]: 8 pairs | 4.6s | 747 tokens | 577 chars input
+21:16:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:09 [INFO]     Chunk [125/172]: 8 pairs | 6.0s | 858 tokens | 587 chars input
+21:16:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:13 [INFO]     Chunk [126/172]: 5 pairs | 4.0s | 672 tokens | 543 chars input
+21:16:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:18 [INFO]     Chunk [127/172]: 8 pairs | 5.1s | 718 tokens | 537 chars input
+21:16:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:25 [INFO]     Chunk [128/172]: 8 pairs | 5.8s | 856 tokens | 569 chars input
+21:16:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:31 [INFO]     Chunk [129/172]: 9 pairs | 6.0s | 888 tokens | 594 chars input
+21:16:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:37 [INFO]     Chunk [130/172]: 9 pairs | 5.6s | 889 tokens | 595 chars input
+21:16:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:41 [INFO]     Chunk [131/172]: 7 pairs | 4.1s | 714 tokens | 579 chars input
+21:16:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:51 [INFO]     Chunk [132/172]: 12 pairs | 9.3s | 1056 tokens | 516 chars input
+21:16:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:55 [INFO]     Chunk [133/172]: 6 pairs | 3.9s | 721 tokens | 534 chars input
+21:16:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:16:59 [INFO]     Chunk [134/172]: 6 pairs | 3.7s | 659 tokens | 547 chars input
+21:17:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:03 [INFO]     Chunk [135/172]: 6 pairs | 4.2s | 700 tokens | 573 chars input
+21:17:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:08 [INFO]     Chunk [136/172]: 6 pairs | 4.6s | 750 tokens | 521 chars input
+21:17:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:14 [INFO]     Chunk [137/172]: 7 pairs | 5.6s | 744 tokens | 564 chars input
+21:17:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:18 [INFO]     Chunk [138/172]: 5 pairs | 3.3s | 664 tokens | 521 chars input
+21:17:21 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:21 [INFO]     Chunk [139/172]: 4 pairs | 2.9s | 661 tokens | 513 chars input
+21:17:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:27 [INFO]     Chunk [140/172]: 8 pairs | 5.7s | 875 tokens | 577 chars input
+21:17:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:32 [INFO]     Chunk [141/172]: 5 pairs | 4.3s | 672 tokens | 528 chars input
+21:17:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:36 [INFO]     Chunk [142/172]: 6 pairs | 4.4s | 709 tokens | 581 chars input
+21:17:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:47 [INFO]     Chunk [143/172]: 10 pairs | 10.0s | 854 tokens | 581 chars input
+21:17:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:54 [INFO]     Chunk [144/172]: 8 pairs | 6.8s | 826 tokens | 523 chars input
+21:17:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:17:59 [INFO]     Chunk [145/172]: 7 pairs | 5.1s | 781 tokens | 546 chars input
+21:18:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:06 [INFO]     Chunk [146/172]: 9 pairs | 6.2s | 872 tokens | 578 chars input
+21:18:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:10 [INFO]     Chunk [147/172]: 7 pairs | 4.2s | 734 tokens | 541 chars input
+21:18:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:23 [INFO]     Chunk [148/172]: 12 pairs | 12.0s | 1129 tokens | 554 chars input
+21:18:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:30 [INFO]     Chunk [149/172]: 10 pairs | 7.2s | 904 tokens | 592 chars input
+21:18:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:36 [INFO]     Chunk [150/172]: 8 pairs | 5.7s | 812 tokens | 555 chars input
+21:18:41 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:41 [INFO]     Chunk [151/172]: 8 pairs | 4.7s | 811 tokens | 551 chars input
+21:18:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:50 [INFO]     Chunk [152/172]: 12 pairs | 8.3s | 986 tokens | 516 chars input
+21:18:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:18:59 [INFO]     Chunk [153/172]: 12 pairs | 9.0s | 1062 tokens | 555 chars input
+21:19:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:07 [INFO]     Chunk [154/172]: 8 pairs | 7.6s | 828 tokens | 560 chars input
+21:19:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:15 [INFO]     Chunk [155/172]: 12 pairs | 7.5s | 995 tokens | 582 chars input
+21:19:24 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:24 [INFO]     Chunk [156/172]: 8 pairs | 8.8s | 728 tokens | 579 chars input
+21:19:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:31 [INFO]     Chunk [157/172]: 10 pairs | 6.4s | 933 tokens | 577 chars input
+21:19:36 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:36 [INFO]     Chunk [158/172]: 7 pairs | 5.0s | 813 tokens | 566 chars input
+21:19:45 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:45 [INFO]     Chunk [159/172]: 10 pairs | 8.6s | 937 tokens | 565 chars input
+21:19:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:19:54 [INFO]     Chunk [160/172]: 10 pairs | 8.8s | 900 tokens | 573 chars input
+21:20:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:01 [INFO]     Chunk [161/172]: 9 pairs | 6.9s | 861 tokens | 568 chars input
+21:20:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:07 [INFO]     Chunk [162/172]: 6 pairs | 5.7s | 748 tokens | 565 chars input
+21:20:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:14 [INFO]     Chunk [163/172]: 7 pairs | 6.7s | 765 tokens | 473 chars input
+21:20:19 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:19 [INFO]     Chunk [164/172]: 5 pairs | 4.1s | 640 tokens | 550 chars input
+21:20:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:25 [INFO]     Chunk [165/172]: 7 pairs | 5.6s | 784 tokens | 547 chars input
+21:20:30 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:30 [INFO]     Chunk [166/172]: 6 pairs | 4.7s | 728 tokens | 563 chars input
+21:20:40 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:40 [INFO]     Chunk [167/172]: 7 pairs | 10.0s | 795 tokens | 527 chars input
+21:20:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:44 [INFO]     Chunk [168/172]: 7 pairs | 3.6s | 719 tokens | 598 chars input
+21:20:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:50 [INFO]     Chunk [169/172]: 7 pairs | 6.1s | 794 tokens | 556 chars input
+21:20:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:20:56 [INFO]     Chunk [170/172]: 8 pairs | 5.4s | 795 tokens | 576 chars input
+21:21:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:03 [INFO]     Chunk [171/172]: 7 pairs | 6.5s | 743 tokens | 587 chars input
+21:21:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:04 [INFO]     Chunk [172/172]: 0 pairs | 0.8s | 347 tokens | 108 chars input
+21:21:04 [INFO]   Total for URL: 1380 pairs
+21:21:05 [INFO] 
+21:21:05 [INFO] [6/7] Smokefree - Main
+21:21:05 [INFO]   URL: https://smokefree.gov/quit-smoking
+21:21:05 [INFO]   Reconstructed: 5,945 chars from 64 unique excerpts
+21:21:05 [INFO]   Split into 13 chunks
+21:21:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:09 [INFO]     Chunk [1/13]: 4 pairs | 3.5s | 624 tokens | 532 chars input
+21:21:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:18 [INFO]     Chunk [2/13]: 12 pairs | 8.8s | 1061 tokens | 585 chars input
+21:21:27 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:27 [INFO]     Chunk [3/13]: 12 pairs | 8.9s | 1065 tokens | 537 chars input
+21:21:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:38 [INFO]     Chunk [4/13]: 12 pairs | 10.5s | 1066 tokens | 528 chars input
+21:21:49 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:21:49 [INFO]     Chunk [5/13]: 12 pairs | 10.8s | 1012 tokens | 557 chars input
+21:22:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:00 [INFO]     Chunk [6/13]: 12 pairs | 9.9s | 1051 tokens | 579 chars input
+21:22:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:09 [INFO]     Chunk [7/13]: 12 pairs | 8.7s | 1054 tokens | 538 chars input
+21:22:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:11 [INFO]     Chunk [8/13]: 2 pairs | 2.2s | 547 tokens | 585 chars input
+21:22:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:12 [INFO]     Chunk [9/13]: 0 pairs | 0.4s | 439 tokens | 563 chars input
+21:22:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:13 [INFO]     Chunk [10/13]: 0 pairs | 0.5s | 410 tokens | 419 chars input
+21:22:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:22 [INFO]     Chunk [11/13]: 12 pairs | 8.9s | 1069 tokens | 511 chars input
+21:22:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:25 [INFO]     Chunk [12/13]: 5 pairs | 3.2s | 614 tokens | 380 chars input
+21:22:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:26 [INFO]     Chunk [13/13]: 0 pairs | 0.8s | 377 tokens | 218 chars input
+21:22:27 [INFO]   Total for URL: 95 pairs
+21:22:28 [INFO] 
+21:22:28 [INFO] [7/7] Smokefree - Tools
+21:22:28 [INFO]   URL: https://smokefree.gov/tools-tips
+21:22:28 [INFO]   Reconstructed: 45,282 chars from 569 unique excerpts
+21:22:28 [INFO]   Split into 92 chunks
+21:22:34 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:34 [INFO]     Chunk [1/92]: 11 pairs | 6.6s | 990 tokens | 581 chars input
+21:22:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:43 [INFO]     Chunk [2/92]: 13 pairs | 7.9s | 1027 tokens | 574 chars input
+21:22:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:22:51 [INFO]     Chunk [3/92]: 12 pairs | 8.2s | 988 tokens | 573 chars input
+21:23:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:01 [INFO]     Chunk [4/92]: 12 pairs | 9.6s | 1017 tokens | 589 chars input
+21:23:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:08 [INFO]     Chunk [5/92]: 11 pairs | 6.6s | 965 tokens | 569 chars input
+21:23:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:16 [INFO]     Chunk [6/92]: 12 pairs | 7.9s | 947 tokens | 586 chars input
+21:23:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:23 [INFO]     Chunk [7/92]: 12 pairs | 6.7s | 1051 tokens | 564 chars input
+21:23:32 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:32 [INFO]     Chunk [8/92]: 11 pairs | 7.9s | 962 tokens | 534 chars input
+21:23:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:37 [INFO]     Chunk [9/92]: 8 pairs | 5.1s | 765 tokens | 598 chars input
+21:23:43 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:43 [INFO]     Chunk [10/92]: 8 pairs | 5.4s | 813 tokens | 527 chars input
+21:23:48 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:48 [INFO]     Chunk [11/92]: 8 pairs | 5.2s | 820 tokens | 549 chars input
+21:23:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:23:54 [INFO]     Chunk [12/92]: 8 pairs | 5.6s | 809 tokens | 569 chars input
+21:24:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:01 [INFO]     Chunk [13/92]: 9 pairs | 7.0s | 861 tokens | 589 chars input
+21:24:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:09 [INFO]     Chunk [14/92]: 10 pairs | 7.1s | 951 tokens | 595 chars input
+21:24:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:13 [INFO]     Chunk [15/92]: 5 pairs | 3.6s | 681 tokens | 515 chars input
+21:24:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:22 [INFO]     Chunk [16/92]: 11 pairs | 8.6s | 1003 tokens | 535 chars input
+21:24:26 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:26 [INFO]     Chunk [17/92]: 6 pairs | 4.1s | 696 tokens | 541 chars input
+21:24:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:31 [INFO]     Chunk [18/92]: 7 pairs | 5.0s | 827 tokens | 563 chars input
+21:24:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:37 [INFO]     Chunk [19/92]: 6 pairs | 5.9s | 765 tokens | 525 chars input
+21:24:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:42 [INFO]     Chunk [20/92]: 7 pairs | 4.6s | 730 tokens | 523 chars input
+21:24:50 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:50 [INFO]     Chunk [21/92]: 12 pairs | 7.2s | 1015 tokens | 538 chars input
+21:24:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:24:58 [INFO]     Chunk [22/92]: 12 pairs | 8.0s | 1008 tokens | 479 chars input
+21:25:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:03 [INFO]     Chunk [23/92]: 6 pairs | 5.0s | 733 tokens | 523 chars input
+21:25:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:09 [INFO]     Chunk [24/92]: 7 pairs | 4.8s | 758 tokens | 434 chars input
+21:25:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:13 [INFO]     Chunk [25/92]: 6 pairs | 4.4s | 730 tokens | 545 chars input
+21:25:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:23 [INFO]     Chunk [26/92]: 12 pairs | 9.7s | 1011 tokens | 548 chars input
+21:25:33 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:34 [INFO]     Chunk [27/92]: 12 pairs | 9.9s | 1062 tokens | 555 chars input
+21:25:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:42 [INFO]     Chunk [28/92]: 12 pairs | 7.8s | 976 tokens | 580 chars input
+21:25:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:52 [INFO]     Chunk [29/92]: 12 pairs | 9.6s | 1048 tokens | 500 chars input
+21:25:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:25:56 [INFO]     Chunk [30/92]: 4 pairs | 3.5s | 609 tokens | 409 chars input
+21:26:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:01 [INFO]     Chunk [31/92]: 6 pairs | 4.8s | 704 tokens | 468 chars input
+21:26:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:05 [INFO]     Chunk [32/92]: 5 pairs | 4.2s | 696 tokens | 558 chars input
+21:26:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:17 [INFO]     Chunk [33/92]: 12 pairs | 12.0s | 1012 tokens | 459 chars input
+21:26:23 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:23 [INFO]     Chunk [34/92]: 6 pairs | 5.6s | 709 tokens | 554 chars input
+21:26:35 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:35 [INFO]     Chunk [35/92]: 12 pairs | 11.1s | 1072 tokens | 560 chars input
+21:26:44 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:44 [INFO]     Chunk [36/92]: 12 pairs | 9.2s | 1017 tokens | 524 chars input
+21:26:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:26:51 [INFO]     Chunk [37/92]: 6 pairs | 6.5s | 714 tokens | 490 chars input
+21:26:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:52 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:26:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:52 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:26:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:52 [ERROR]     Chunk [38/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 504. Please try again in 151ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:52 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:52 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:26:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:53 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:26:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:53 [ERROR]     Chunk [39/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 502. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:53 [INFO] Retrying request to /chat/completions in 0.147000 seconds
+21:26:53 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:53 [INFO] Retrying request to /chat/completions in 0.147000 seconds
+21:26:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:54 [ERROR]     Chunk [40/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 491. Please try again in 147ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:54 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:26:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:54 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:26:54 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:54 [ERROR]     Chunk [41/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 502. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:55 [INFO] Retrying request to /chat/completions in 0.132000 seconds
+21:26:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:55 [INFO] Retrying request to /chat/completions in 0.132000 seconds
+21:26:55 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:55 [ERROR]     Chunk [42/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 440. Please try again in 132ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:56 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:26:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:56 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:26:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:56 [ERROR]     Chunk [43/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 511. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:56 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:26:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:57 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:26:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:57 [ERROR]     Chunk [44/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 506. Please try again in 151ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:57 [INFO] Retrying request to /chat/completions in 0.133000 seconds
+21:26:57 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:57 [INFO] Retrying request to /chat/completions in 0.133000 seconds
+21:26:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:58 [ERROR]     Chunk [45/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 446. Please try again in 133ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:58 [INFO] Retrying request to /chat/completions in 0.134000 seconds
+21:26:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:58 [INFO] Retrying request to /chat/completions in 0.134000 seconds
+21:26:58 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:58 [ERROR]     Chunk [46/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 448. Please try again in 134ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:59 [INFO] Retrying request to /chat/completions in 0.132000 seconds
+21:26:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:59 [INFO] Retrying request to /chat/completions in 0.132000 seconds
+21:26:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:59 [ERROR]     Chunk [47/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 441. Please try again in 132ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:26:59 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:26:59 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:27:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:00 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:27:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:00 [ERROR]     Chunk [48/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 501. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:00 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:00 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:00 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:01 [ERROR]     Chunk [49/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 508. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:01 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:01 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:01 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:01 [ERROR]     Chunk [50/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 510. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:02 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:27:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:02 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:27:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:02 [ERROR]     Chunk [51/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 502. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:03 [INFO] Retrying request to /chat/completions in 0.149000 seconds
+21:27:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:03 [INFO] Retrying request to /chat/completions in 0.149000 seconds
+21:27:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:03 [ERROR]     Chunk [52/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 497. Please try again in 149ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:03 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:03 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:04 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:04 [ERROR]     Chunk [53/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 508. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:04 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:04 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:04 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:05 [ERROR]     Chunk [54/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 511. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:05 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:05 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:05 [ERROR]     Chunk [55/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 507. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:06 [INFO] Retrying request to /chat/completions in 0.146000 seconds
+21:27:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:06 [INFO] Retrying request to /chat/completions in 0.146000 seconds
+21:27:06 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:06 [ERROR]     Chunk [56/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 487. Please try again in 146ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:07 [INFO] Retrying request to /chat/completions in 0.147000 seconds
+21:27:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:07 [INFO] Retrying request to /chat/completions in 0.147000 seconds
+21:27:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:07 [ERROR]     Chunk [57/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 490. Please try again in 147ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:07 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:07 [INFO] Retrying request to /chat/completions in 0.148000 seconds
+21:27:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:08 [INFO] Retrying request to /chat/completions in 0.148000 seconds
+21:27:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:08 [ERROR]     Chunk [58/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 496. Please try again in 148ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:08 [INFO] Retrying request to /chat/completions in 0.141000 seconds
+21:27:08 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:08 [INFO] Retrying request to /chat/completions in 0.141000 seconds
+21:27:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:09 [ERROR]     Chunk [59/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 473. Please try again in 141ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:09 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:09 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:09 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:09 [ERROR]     Chunk [60/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 507. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:10 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:10 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:10 [ERROR]     Chunk [61/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 510. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:11 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:27:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:11 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:27:11 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:11 [ERROR]     Chunk [62/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 506. Please try again in 151ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:12 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:12 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:27:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:12 [ERROR]     Chunk [63/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 508. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:12 [INFO] Retrying request to /chat/completions in 0.142000 seconds
+21:27:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:13 [INFO] Retrying request to /chat/completions in 0.142000 seconds
+21:27:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:13 [ERROR]     Chunk [64/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 476. Please try again in 142ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:13 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:13 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:14 [ERROR]     Chunk [65/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 511. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:14 [INFO] Retrying request to /chat/completions in 0.147000 seconds
+21:27:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:14 [INFO] Retrying request to /chat/completions in 0.147000 seconds
+21:27:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:14 [ERROR]     Chunk [66/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 493. Please try again in 147ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:15 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:27:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:15 [INFO] Retrying request to /chat/completions in 0.150000 seconds
+21:27:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:15 [ERROR]     Chunk [67/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 500. Please try again in 150ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:16 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:16 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:27:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:16 [ERROR]     Chunk [68/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 511. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:16 [INFO] Retrying request to /chat/completions in 0.149000 seconds
+21:27:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:17 [INFO] Retrying request to /chat/completions in 0.149000 seconds
+21:27:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:27:17 [ERROR]     Chunk [69/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 497. Please try again in 149ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:27:20 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:20 [INFO]     Chunk [70/92]: 5 pairs | 2.6s | 629 tokens | 531 chars input
+21:27:25 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:25 [INFO]     Chunk [71/92]: 8 pairs | 4.9s | 818 tokens | 499 chars input
+21:27:38 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:38 [INFO]     Chunk [72/92]: 10 pairs | 13.1s | 952 tokens | 594 chars input
+21:27:47 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:47 [INFO]     Chunk [73/92]: 12 pairs | 8.6s | 1023 tokens | 587 chars input
+21:27:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:27:56 [INFO]     Chunk [74/92]: 12 pairs | 8.9s | 1111 tokens | 596 chars input
+21:28:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:12 [INFO]     Chunk [75/92]: 13 pairs | 15.0s | 1103 tokens | 558 chars input
+21:28:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:12 [INFO] Retrying request to /chat/completions in 0.148000 seconds
+21:28:12 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:12 [INFO] Retrying request to /chat/completions in 0.148000 seconds
+21:28:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:13 [ERROR]     Chunk [76/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 496. Please try again in 148ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:13 [INFO] Retrying request to /chat/completions in 0.149000 seconds
+21:28:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:13 [INFO] Retrying request to /chat/completions in 0.149000 seconds
+21:28:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:13 [ERROR]     Chunk [77/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 499. Please try again in 149ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:14 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:28:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:14 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:28:14 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:14 [ERROR]     Chunk [78/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 509. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:15 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:28:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:15 [INFO] Retrying request to /chat/completions in 0.152000 seconds
+21:28:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:15 [ERROR]     Chunk [79/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 507. Please try again in 152ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:15 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:15 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:28:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:16 [INFO] Retrying request to /chat/completions in 0.151000 seconds
+21:28:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:16 [ERROR]     Chunk [80/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 506. Please try again in 151ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:16 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:16 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:28:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:17 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:28:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:17 [ERROR]     Chunk [81/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 510. Please try again in 153ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:17 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:28:17 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:17 [INFO] Retrying request to /chat/completions in 0.153000 seconds
+21:28:18 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+21:28:18 [ERROR]     Chunk [82/92] GENERATION ERROR: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 199563, Requested 510. Please try again in 21ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+21:28:22 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:22 [INFO]     Chunk [83/92]: 6 pairs | 4.2s | 683 tokens | 572 chars input
+21:28:31 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:31 [INFO]     Chunk [84/92]: 12 pairs | 9.1s | 1058 tokens | 570 chars input
+21:28:37 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:37 [INFO]     Chunk [85/92]: 6 pairs | 5.4s | 729 tokens | 461 chars input
+21:28:42 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:42 [INFO]     Chunk [86/92]: 7 pairs | 4.6s | 691 tokens | 561 chars input
+21:28:51 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:51 [INFO]     Chunk [87/92]: 12 pairs | 9.1s | 1074 tokens | 573 chars input
+21:28:56 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:28:56 [INFO]     Chunk [88/92]: 5 pairs | 4.2s | 704 tokens | 585 chars input
+21:29:02 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:02 [INFO]     Chunk [89/92]: 6 pairs | 5.2s | 739 tokens | 556 chars input
+21:29:05 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:05 [INFO]     Chunk [90/92]: 5 pairs | 3.1s | 628 tokens | 528 chars input
+21:29:10 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:10 [INFO]     Chunk [91/92]: 5 pairs | 4.5s | 688 tokens | 589 chars input
+21:29:13 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+21:29:13 [INFO]     Chunk [92/92]: 4 pairs | 3.3s | 571 tokens | 476 chars input
+21:29:14 [INFO]   Total for URL: 469 pairs
+21:29:15 [INFO] 
+21:29:15 [INFO] Deduplication: 2118 → 1478 pairs (640 removed, 30.2%)
+21:29:15 [INFO] 
+21:29:15 [INFO] ======================================================================
+21:29:15 [INFO] REGENERATION COMPLETE
+21:29:15 [INFO] ======================================================================
+21:29:15 [INFO]   Time elapsed:    30.9 min
+21:29:15 [INFO]   URLs processed:  7
+21:29:15 [INFO]   URLs cached:     0
+21:29:15 [INFO]   URLs resumed:    0
+21:29:15 [INFO]   Total chunks:    307
+21:29:15 [INFO]   API calls:       307
+21:29:15 [INFO]   Errors:          44
+21:29:15 [INFO]   Total QA pairs:  1478 (before dedup: 2118)
+21:29:15 [INFO]   Avg answer len:  20.3 words
+21:29:15 [INFO]   Saved to:        /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/datasets/human-ai/ai_generated_qa.jsonl
+21:29:15 [INFO]   RAGAS copy:      /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/code/data/ai_generated/ai_generated_qa.jsonl
+21:29:15 [INFO] 
+21:29:15 [INFO] Next step: run the full RAGAS evaluation:
+21:29:15 [INFO]   cd /Users/vuc229/Documents/Development/Active-Projects/ai-ml/gemini-protocol/code && python3 scripts/ragas_evaluation.py --concise

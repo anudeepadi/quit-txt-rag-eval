@@ -1,0 +1,482 @@
+======================================================================
+RAGAS EVALUATION: AI-Generated vs Human-Curated RAG
+Configs: ['baseline', 'ai_rag', 'human_rag', 'web_rag']  |  Questions: 100  |  Mode: CONCISE  |  Resume: True
+======================================================================
+
+Loading test set from test_set_150q.xlsx...
+  Loaded 100 questions
+
+Loading RAG datasets...
+  AI-generated:  2,599 pairs
+  Human-curated: 4,431 pairs
+  Web-scraped:   278 pairs
+
+Building ChromaDB collections...
+  ai_generated: 2599 docs
+  human_curated: 4431 docs
+  web_scraped: 278 docs
+
+Loading checkpoints...
+  baseline: 0 questions already done
+  ai_rag: 100 questions already done
+  human_rag: 0 questions already done
+  web_rag: 0 questions already done
+
+Generating answers for 100 questions × 4 configs...
+----------------------------------------------------------------------
+[  1/100] How can I manage stress without turning to tobacco?...
+  [SKIP ai_rag] (checkpoint)
+[  2/100] What are some healthy ways to deal with bad moods instead of...
+  [SKIP ai_rag] (checkpoint)
+[  3/100] What are common reasons for relapse, and how can I avoid the...
+  [SKIP ai_rag] (checkpoint)
+[  4/100] Can quitting smoking improve erectile function?...
+  [SKIP ai_rag] (checkpoint)
+[  5/100] Are there mental health effects associated with secondhand s...
+  [SKIP ai_rag] (checkpoint)
+[  6/100] What is secondhand smoke and how is it formed?...
+  [SKIP ai_rag] (checkpoint)
+[  7/100] What usually pushes teens to try smoking in the first place?...
+  [SKIP ai_rag] (checkpoint)
+[  8/100] Is smoking harmful to brain health even if I don't have othe...
+  [SKIP ai_rag] (checkpoint)
+[  9/100] What can be done to prevent kids from picking up smoking ear...
+  [SKIP ai_rag] (checkpoint)
+[ 10/100] How prevalent is secondhand smoke exposure among children in...
+  [SKIP ai_rag] (checkpoint)
+[ 11/100] Which groups of children are most affected by secondhand smo...
+  [SKIP ai_rag] (checkpoint)
+[ 12/100] How much money can I save by quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 13/100] What are some surprising benefits of quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 14/100] Is smoking cessation beneficial for people with psychiatric ...
+  [SKIP ai_rag] (checkpoint)
+[ 15/100] What are some additional advantages of quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 16/100] How does smoking influence the company's costs?...
+  [SKIP ai_rag] (checkpoint)
+[ 17/100] Will I gain a lot of weight if I quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 18/100] What does a typical Deep TMS treatment session involve?...
+  [SKIP ai_rag] (checkpoint)
+[ 19/100] What are the side effects of quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 20/100] How can I maintain my social life while quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 21/100] Where can I get help if I'm feeling overwhelmed or depressed...
+  [SKIP ai_rag] (checkpoint)
+[ 22/100] Can financial incentives help people quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 23/100] Are there personalized approaches to quitting smoking based ...
+  [SKIP ai_rag] (checkpoint)
+[ 24/100] How does quitting smoking affect my life insurance premiums?...
+  [SKIP ai_rag] (checkpoint)
+[ 25/100] How do income and education levels influence smoking prevale...
+  [SKIP ai_rag] (checkpoint)
+[ 26/100] What role did research play in addressing smoking as a publi...
+  [SKIP ai_rag] (checkpoint)
+[ 27/100] Which demographic groups among adults with mental health con...
+  [SKIP ai_rag] (checkpoint)
+[ 28/100] How can my social life affect my decision to smoke?...
+  [SKIP ai_rag] (checkpoint)
+[ 29/100] Why do some people prefer to quit smoking gradually?...
+  [SKIP ai_rag] (checkpoint)
+[ 30/100] Who can support me during a gradual quit plan?...
+  [SKIP ai_rag] (checkpoint)
+[ 31/100] What should I do if I slip and smoke again?...
+  [SKIP ai_rag] (checkpoint)
+[ 32/100] Is quitting cold turkey a good strategy?...
+  [SKIP ai_rag] (checkpoint)
+[ 33/100] How can teens resist peer pressure to smoke?...
+  [SKIP ai_rag] (checkpoint)
+[ 34/100] Can I become addicted if I only smoke once in a while?...
+  [SKIP ai_rag] (checkpoint)
+[ 35/100] Why might smokers of light cigarettes inhale more deeply?...
+  [SKIP ai_rag] (checkpoint)
+[ 36/100] What strategies can help during the hardest stage?...
+  [SKIP ai_rag] (checkpoint)
+[ 37/100] Why is it important to remove smoking-related items when try...
+  [SKIP ai_rag] (checkpoint)
+[ 38/100] How can teens protect themselves from secondhand smoke?...
+  [SKIP ai_rag] (checkpoint)
+[ 39/100] Is it safe to smoke only occasionally or socially?...
+  [SKIP ai_rag] (checkpoint)
+[ 40/100] Is social smoking less harmful than regular smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 41/100] How does smoking contribute to erectile dysfunction?...
+  [SKIP ai_rag] (checkpoint)
+[ 42/100] What are the long-term financial benefits of quitting smokin...
+  [SKIP ai_rag] (checkpoint)
+[ 43/100] What are the first steps I should take when deciding to quit...
+  [SKIP ai_rag] (checkpoint)
+[ 44/100] How can I manage cravings and withdrawal symptoms after quit...
+  [SKIP ai_rag] (checkpoint)
+[ 45/100] What steps can I take to slowly quit smoking without feeling...
+  [SKIP ai_rag] (checkpoint)
+[ 46/100] How can I prevent smoking relapse?...
+  [SKIP ai_rag] (checkpoint)
+[ 47/100] How can I minimize weight gain when quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 48/100] Is social smoking common among teens?...
+  [SKIP ai_rag] (checkpoint)
+[ 49/100] Does heavy smoking affect the intention to quit?...
+  [SKIP ai_rag] (checkpoint)
+[ 50/100] Why should someone concerned about kidney health avoid smoki...
+  [SKIP ai_rag] (checkpoint)
+[ 51/100] Are light cigarettes a safer option when trying to quit smok...
+  [SKIP ai_rag] (checkpoint)
+[ 52/100] How does brain activity influence the ability to quit smokin...
+  [SKIP ai_rag] (checkpoint)
+[ 53/100] What is a gradual way to quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 54/100] How long should tapering off smoking take?...
+  [SKIP ai_rag] (checkpoint)
+[ 55/100] Can expressive writing help young adults quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 56/100] Why should I get my teeth cleaned after quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 57/100] Are there treatments available for smokers experiencing erec...
+  [SKIP ai_rag] (checkpoint)
+[ 58/100] How does quitting smoking benefit daily life?...
+  [SKIP ai_rag] (checkpoint)
+[ 59/100] Are there any disparities in smoking-related lupus skin dama...
+  [SKIP ai_rag] (checkpoint)
+[ 60/100] Is it true that light smoking causes minimal harm to the lun...
+  [SKIP ai_rag] (checkpoint)
+[ 61/100] How can I support my partner in quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 62/100] How does occasional smoking affect life expectancy?...
+  [SKIP ai_rag] (checkpoint)
+[ 63/100] What should I do if my partner relapses?...
+  [SKIP ai_rag] (checkpoint)
+[ 64/100] What is the goal for reducing secondhand smoke exposure by 2...
+  [SKIP ai_rag] (checkpoint)
+[ 65/100] What factors contribute to the initiation of smoking among a...
+  [SKIP ai_rag] (checkpoint)
+[ 66/100] What are common causes of smoking relapse?...
+  [SKIP ai_rag] (checkpoint)
+[ 67/100] How do smoke-free workplace policies compare to tax increase...
+  [SKIP ai_rag] (checkpoint)
+[ 68/100] Are there any side effects associated with Deep TMS for smok...
+  [SKIP ai_rag] (checkpoint)
+[ 69/100] Do lungs fully recover after quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 70/100] How can I help my partner quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 71/100] Why is smoking cessation a persistent problem in patients wi...
+  [SKIP ai_rag] (checkpoint)
+[ 72/100] What is the 'Don't Quit Quitting' approach to handling slips...
+  [SKIP ai_rag] (checkpoint)
+[ 73/100] What are the challenges in implementing smoking cessation pr...
+  [SKIP ai_rag] (checkpoint)
+[ 74/100] Why is it important to address weight gain when promoting sm...
+  [SKIP ai_rag] (checkpoint)
+[ 75/100] What factors were analyzed to assess the relationship betwee...
+  [SKIP ai_rag] (checkpoint)
+[ 76/100] What is the hardest stage of quitting smoking?...Task exception was never retrieved
+future: <Task finished name='Task-515' coro=<AsyncClient.aclose() done, defined at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/ragas/metrics/collections/base.py", line 102, in batch_score
+    asyncio.get_running_loop()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_client.py", line 1985, in aclose
+    await self._transport.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_transports/default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/anyio/streams/tls.py", line 241, in aclose
+    await self.transport_stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 1329, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py", line 1205, in close
+    super().close()
+    ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py", line 865, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 833, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 556, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+Task exception was never retrieved
+future: <Task finished name='Task-827' coro=<AsyncClient.aclose() done, defined at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/ragas/metrics/collections/base.py", line 102, in batch_score
+    asyncio.get_running_loop()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_client.py", line 1985, in aclose
+    await self._transport.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_transports/default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/anyio/streams/tls.py", line 241, in aclose
+    await self.transport_stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 1329, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py", line 1205, in close
+    super().close()
+    ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py", line 865, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 833, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 556, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+Task exception was never retrieved
+future: <Task finished name='Task-1142' coro=<AsyncClient.aclose() done, defined at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_client.py:1978> exception=RuntimeError('Event loop is closed')>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/ragas/metrics/collections/base.py", line 102, in batch_score
+    asyncio.get_running_loop()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: no running event loop
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_client.py", line 1985, in aclose
+    await self._transport.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpx/_transports/default.py", line 406, in aclose
+    await self._pool.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 353, in aclose
+    await self._close_connections(closing_connections)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection_pool.py", line 345, in _close_connections
+    await connection.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/connection.py", line 173, in aclose
+    await self._connection.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_async/http11.py", line 258, in aclose
+    await self._network_stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/httpcore/_backends/anyio.py", line 53, in aclose
+    await self._stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/anyio/streams/tls.py", line 241, in aclose
+    await self.transport_stream.aclose()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/anyio/_backends/_asyncio.py", line 1329, in aclose
+    self._transport.close()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py", line 1205, in close
+    super().close()
+    ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/selector_events.py", line 865, in close
+    self._loop.call_soon(self._call_connection_lost, None)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 833, in call_soon
+    self._check_closed()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 556, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+
+  [SKIP ai_rag] (checkpoint)
+[ 77/100] Can smoking cause rheumatoid arthritis?...
+  [SKIP ai_rag] (checkpoint)
+[ 78/100] What are the most effective treatments to quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 79/100] What are some effective alternatives to smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 80/100] How can healthcare providers improve smoking cessation rates...
+  [SKIP ai_rag] (checkpoint)
+[ 81/100] What are the benefits of implementing smokefree workplace po...
+  [SKIP ai_rag] (checkpoint)
+[ 82/100] What is the Traditional Chinese Medicine perspective on smok...
+  [SKIP ai_rag] (checkpoint)
+[ 83/100] What factors were identified as significant predictors of sm...
+  [SKIP ai_rag] (checkpoint)
+[ 84/100] How can mindfulness help me quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 85/100] How can quitting smoking improve my finances?...
+  [SKIP ai_rag] (checkpoint)
+[ 86/100] What was the study design used to assess the effects of smok...
+  [SKIP ai_rag] (checkpoint)
+[ 87/100] What motivates dual users to use e-cigarettes alongside trad...
+  [SKIP ai_rag] (checkpoint)
+[ 88/100] Are there specific products recommended to help with the ora...
+  [SKIP ai_rag] (checkpoint)
+[ 89/100] Are light cigarettes less harmful than regular ones?...
+  [SKIP ai_rag] (checkpoint)
+[ 90/100] How can Nicotine Replacement Therapy (NRT) assist in quittin...
+  [SKIP ai_rag] (checkpoint)
+[ 91/100] How can I stay motivated to quit smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 92/100] Are herbal cigarettes truly safer than traditional tobacco c...
+  [SKIP ai_rag] (checkpoint)
+[ 93/100] What social benefits come from quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 94/100] How does smoking affect breast milk and breastfeeding?...
+  [SKIP ai_rag] (checkpoint)
+[ 95/100] What are some mindfulness techniques to cope with cravings?...
+  [SKIP ai_rag] (checkpoint)
+[ 96/100] What are some lifestyle benefits of quitting smoking?...
+  [SKIP ai_rag] (checkpoint)
+[ 97/100] What types of counseling formats are effective for smoking c...
+  [SKIP ai_rag] (checkpoint)
+[ 98/100] How do dual users compare e-cigarettes to traditional cigare...
+  [SKIP ai_rag] (checkpoint)
+[ 99/100] How is Harmless Cigarette used, and does it require any main...
+  [SKIP ai_rag] (checkpoint)
+[100/100] Do light cigarettes reduce the risk of cancer?...
+  [SKIP ai_rag] (checkpoint)
+
+======================================================================
+RUNNING RAGAS EVALUATION
+======================================================================
+
+  Running RAGAS evaluation for: baseline
+  Samples: 100
+    Scoring: faithfulness...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: answer_relevancy...
+
+  [inter-config cooldown] sleeping 120s before ai_rag...
+
+  Running RAGAS evaluation for: ai_rag
+  Samples: 100
+    Scoring: faithfulness...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: answer_relevancy...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: context_precision...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: context_recall...
+
+  [inter-config cooldown] sleeping 120s before human_rag...
+
+  Running RAGAS evaluation for: human_rag
+  Samples: 100
+    Scoring: faithfulness...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: answer_relevancy...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: context_precision...
+    [WARN] batch_score error for ContextPrecision: <failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 199790, Requested 1407. Please try again in 359ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1407. Please try again in 422ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1407. Please try again in 422ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1407. Please try again in 422ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</last_exception>
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: context_recall...
+
+  [inter-config cooldown] sleeping 120s before web_rag...
+
+  Running RAGAS evaluation for: web_rag
+  Samples: 100
+    Scoring: faithfulness...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: answer_relevancy...
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: context_precision...
+    [WARN] batch_score error for ContextPrecision: <failed_attempts>
+
+<generation number="1">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1319. Please try again in 395ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="2">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1319. Please try again in 395ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+<generation number="3">
+<exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1319. Please try again in 395ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</exception>
+<completion>
+    None
+</completion>
+</generation>
+
+</failed_attempts>
+
+<last_exception>
+    Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o-mini in organization org-7JYtZtTdueQoVMTFcMv6XsUo on tokens per min (TPM): Limit 200000, Used 200000, Requested 1319. Please try again in 395ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+</last_exception>
+    [rate-limit cooldown] sleeping 65s...
+    Scoring: context_recall...
+
+======================================================================
+RESULTS
+======================================================================
+
+Config                         Mean     SD   Median   HallucinRate  HighRisk%     n
+--------------------------------------------------------------------------------
+Baseline                      0.130  0.304    0.000          0.870      86.0%   100
+Ai Rag                        0.666  0.420    1.000          0.334      28.0%   100
+Human Rag                     0.778  0.342    1.000          0.222      16.0%   100
+Web Rag                       0.730  0.367    1.000          0.270      17.0%   100
+
+======================================================================
+JSON saved: /Users/vuc229/Documents/Projects/Active-Dev-Projects/ai-ml/gemini-protocol/code/results/ragas_evaluation/ragas_eval_concise_20260411_210513.json
+MD  saved:  /Users/vuc229/Documents/Projects/Active-Dev-Projects/ai-ml/gemini-protocol/code/results/ragas_evaluation/ragas_eval_concise_20260411_210513.md
+======================================================================

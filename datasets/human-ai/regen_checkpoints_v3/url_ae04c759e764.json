@@ -1,0 +1,319 @@
+{
+  "url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+  "completed_chunks": 3,
+  "total_chunks": 3,
+  "n_pairs": 31,
+  "pairs": [
+    {
+      "question": "What types of tobacco can I quit?",
+      "answer": "You can quit cigarettes, smokeless tobacco, or help a friend or loved one who is trying to quit. The information provided here is relevant for all types of tobacco use.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "Is quitting tobacco easy?",
+      "answer": "Quitting tobacco isn't easy, but it can be done. Many people successfully quit with the right support and methods.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "What kind of addiction is tobacco?",
+      "answer": "Tobacco addiction is both mental and physical. This dual nature means that quitting often requires addressing both aspects.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "What do most people need to quit tobacco?",
+      "answer": "Most people need a combination of medicine, a method to change personal habits, and emotional support to successfully quit tobacco.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "How can I make a plan to quit smoking?",
+      "answer": "You can learn more about making a plan to quit by exploring resources that provide guidance on setting goals and strategies for quitting.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "What kind of support can I get while quitting?",
+      "answer": "Getting support is crucial when quitting tobacco. You can seek emotional support from friends, family, or support groups.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "What should I focus on to stay quit for good?",
+      "answer": "To stay quit for good, it's important to focus on making a plan, getting support, and changing personal habits that contribute to tobacco use.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:23.599281"
+    },
+    {
+      "question": "What do I need to quit smoking successfully?",
+      "answer": "Most people need a combination of medicine, a method to change personal habits, and emotional support to quit smoking successfully.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Is tobacco addiction just a physical issue?",
+      "answer": "No, tobacco addiction is both mental and physical. This means that addressing both aspects is important for successful cessation.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Can I find support in my community to quit smoking?",
+      "answer": "Yes, there are smoke-free communities that can provide support for individuals trying to quit smoking.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Is quitting tobacco easy?",
+      "answer": "Quitting tobacco isn't easy, but it can be done. Many people find it challenging but achievable with the right support and methods.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "What are some methods to help me quit using tobacco?",
+      "answer": "There are various methods to help you quit using tobacco, including behavioral strategies and support systems.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "How important is emotional support when quitting smoking?",
+      "answer": "Emotional support is crucial when quitting smoking, as it helps address the mental aspects of tobacco addiction.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "What role does changing personal habits play in quitting smoking?",
+      "answer": "Changing personal habits is a key component in the process of quitting smoking, as it helps break the cycle of addiction.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Are there resources available to help me quit tobacco?",
+      "answer": "Yes, there are many resources and support systems available to help individuals quit tobacco.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "What is the first step I should take to quit smoking?",
+      "answer": "The first step to quitting smoking is to create a plan that includes getting support and identifying methods to change your habits.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "What does it mean to be part of a smoke-free community?",
+      "answer": "Being part of a smoke-free community means you are in an environment that supports quitting tobacco and promotes healthy living.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Why is it important to understand the health effects of tobacco?",
+      "answer": "Understanding the health effects of tobacco is important because it can motivate individuals to quit and seek help.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Can I quit smoking without medication?",
+      "answer": "While some people may quit smoking without medication, most people benefit from a combination of medicine and support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:32.124096"
+    },
+    {
+      "question": "Is tobacco addiction just a physical thing?",
+      "answer": "No, tobacco addiction is both mental and physical. Most people need a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "What do I need to quit smoking successfully?",
+      "answer": "To quit smoking successfully, most people need a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "Can I quit smoking without support?",
+      "answer": "While it's possible to quit smoking on your own, most people benefit from emotional support. Having a support system can significantly increase your chances of staying quit for good.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "What should I consider when making a quit plan?",
+      "answer": "When making a quit plan, consider incorporating medicine, methods to change personal habits, and emotional support to enhance your chances of success.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "Is it common to need help when quitting smoking?",
+      "answer": "Yes, it is common for most people to need a combination of medicine, methods to change personal habits, and emotional support when quitting smoking.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "What are the components of a successful quit-smoking strategy?",
+      "answer": "A successful quit-smoking strategy typically includes a combination of medicine, methods to change personal habits, and emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "Why is emotional support important when quitting smoking?",
+      "answer": "Emotional support is important when quitting smoking because it helps individuals cope with the challenges of addiction. Most people find that having support increases their chances of staying quit for good.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "Do I need to change my habits to quit smoking?",
+      "answer": "Yes, changing personal habits is a key component of quitting smoking. Most people need a combination of medicine, methods to change these habits, and emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "Can I quit smoking without medication?",
+      "answer": "While some people may quit smoking without medication, most individuals find that a combination of medicine, methods to change personal habits, and emotional support is more effective.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "What does it mean to have a combination approach to quitting smoking?",
+      "answer": "A combination approach to quitting smoking means using medicine, changing personal habits, and seeking emotional support. This multifaceted strategy is often necessary for success.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "How can I stay quit for good?",
+      "answer": "To stay quit for good, it's important to have a plan that includes medicine, methods to change personal habits, and emotional support. These elements work together to help maintain your quit status.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    },
+    {
+      "question": "Is quitting smoking a simple process?",
+      "answer": "No, quitting smoking is not a simple process. It involves both mental and physical aspects, and most people require a combination of medicine, methods to change personal habits, and emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:41.587720"
+    }
+  ],
+  "updated_at": "2026-04-04T23:25:41.588004"
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/vuc229/Documents/Projects/Active-Dev-Projects/ai-ml/gemini-protocol/code/scripts/ragas_evaluation.py", line 43, in <module>
+    raise ValueError("OPENAI_API_KEY not set. Add it to .env or export it.")
+ValueError: OPENAI_API_KEY not set. Add it to .env or export it.

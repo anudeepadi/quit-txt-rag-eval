@@ -1,0 +1,2826 @@
+{
+  "url": "https://smokefree.gov/challenges-when-quitting",
+  "n_pairs": 282,
+  "pairs": [
+    {
+      "question": "What happens when I suddenly stop using nicotine?",
+      "answer": "Nicotine withdrawal occurs when someone who is addicted to nicotine suddenly stops using it. This can lead to various symptoms that can be quite uncomfortable.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "What are some common symptoms of nicotine withdrawal?",
+      "answer": "Symptoms of nicotine withdrawal can include irritability, strong cravings, depressed mood, anxiety, trouble concentrating, restlessness, difficulty sleeping, increased appetite, headaches, fatigue, and gastrointestinal problems.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "When are withdrawal symptoms usually the worst?",
+      "answer": "Withdrawal symptoms are usually the worst during the first few days or weeks after quitting. They gradually improve over the next several weeks.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "What can help reduce cravings and withdrawal symptoms?",
+      "answer": "Nicotine replacement therapy (NRT), such as patches, gum, lozenges, inhalers, and nasal sprays, can help reduce cravings and withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "What should I do if I experience cravings?",
+      "answer": "Other strategies for coping with withdrawal symptoms include staying hydrated, exercising regularly, practicing relaxation techniques, and seeking support from friends, family, or a support group.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "What medications can help with nicotine withdrawal?",
+      "answer": "Medications that can help with nicotine withdrawal include nicotine replacement therapy (NRT), bupropion, and varenicline. Bupropion is a prescription medication that helps reduce cravings and withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "What are the health benefits of quitting smoking?",
+      "answer": "Quitting smoking has numerous health benefits, including improved cardiovascular health, reduced risk of cancer, and better lung function.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "Is secondhand smoke harmful?",
+      "answer": "Yes, secondhand smoke is harmful because it contains many of the same toxic chemicals as the smoke inhaled by smokers, increasing the risk of cancer and respiratory problems in nonsmokers.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:43.083778"
+    },
+    {
+      "question": "Are e-cigarettes a safe alternative to smoking?",
+      "answer": "E-cigarettes are not considered a safe alternative to smoking. The effectiveness of e-cigarettes as a smoking cessation tool is still debated.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "What resources can help me quit smoking?",
+      "answer": "There are many resources available to help you quit smoking, including your doctor, quitlines, support groups, online programs, and mobile apps.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "What are quitlines?",
+      "answer": "Quitlines are telephone-based counseling services that provide support and guidance to people who are trying to quit smoking. They can be a valuable resource during your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "How can I manage cravings when I feel them?",
+      "answer": "You can use the 4 D's: Delay, Distract, Drink water, Deep breathe. Cravings usually last only a few minutes, so remind yourself that the craving will pass and that you don't have to give in to it.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "What are some common symptoms of nicotine withdrawal?",
+      "answer": "Fatigue, trouble concentrating, and restlessness are common symptoms of nicotine withdrawal. Nicotine withdrawal can cause uncomfortable symptoms such as cravings, anxiety, and irritability.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "What should I do to avoid triggers that make me want to smoke?",
+      "answer": "Identify your triggers, which are the people, places, and things that make you want to smoke. Once you know your triggers, you can start to avoid them or develop coping strategies for when you can't avoid them.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "How can I manage stress while trying to quit smoking?",
+      "answer": "Managing stress is important because it can trigger cravings. Healthy ways to manage stress include exercise, yoga, or meditation.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "What can I do to make my home safer for my family?",
+      "answer": "Make your home smoke-free to protect your family from secondhand smoke. Additionally, making your car smoke-free is also important for the same reason.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:53.559254"
+    },
+    {
+      "question": "What can I do to manage stress while trying to quit smoking?",
+      "answer": "It's important to find healthy ways to manage stress, as it can trigger cravings. This could include exercise, yoga, or meditation.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "What is nicotine replacement therapy and how can it help me quit smoking?",
+      "answer": "Nicotine replacement therapy (NRT) can help reduce cravings and withdrawal symptoms. NRT is available in a variety of forms, including patches, gum, lozenges, and inhalers.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "Is it better to use one NRT product or a combination?",
+      "answer": "Some people find that using a combination of NRT products is more effective than using a single product. For example, you might use a nicotine patch for long-lasting relief and nicotine gum for breakthrough cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "What should I do if I slip up while trying to quit?",
+      "answer": "Don't get discouraged if you slip up. It's a common part of the quitting process. Just learn from it and try again.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "What are some prescription medications that can help me quit smoking?",
+      "answer": "There are also prescription medications that can help you quit smoking. These medications work by reducing cravings and withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "How can I avoid triggers that make me want to smoke?",
+      "answer": "Avoid triggers, which are the people, places, and things that make you want to smoke. Once you know your triggers, you can start to avoid them or develop coping strategies for when you can't avoid them.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "How can exercise help me while quitting smoking?",
+      "answer": "Exercise can help reduce cravings and withdrawal symptoms. Even a short walk can make a difference.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "What should I do to prepare for social situations where I might be tempted to smoke?",
+      "answer": "Be prepared for social situations where you might be tempted to smoke. Have a plan for how you will deal with cravings in these situations.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:01.672158"
+    },
+    {
+      "question": "What can I do to manage my cravings when I quit smoking?",
+      "answer": "You can find substitutes for cigarettes, such as chewing gum or holding a pen. Additionally, healthy snacks can help manage cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "How can I prepare my environment to help me quit smoking?",
+      "answer": "Get rid of all cigarettes, lighters, and ashtrays in your home, car, and workplace. This will help reduce the temptation to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "What should I do to reward myself while quitting smoking?",
+      "answer": "Reward yourself for reaching milestones. This could be anything from buying yourself a new book to taking a weekend trip.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "How can I stay motivated to quit smoking?",
+      "answer": "Stay motivated by reminding yourself why you want to quit smoking and focusing on the benefits of quitting. Visualizing yourself succeeding can also be helpful.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "What should I avoid to help with cravings?",
+      "answer": "Avoid alcohol, as it can trigger cravings and make it harder to quit smoking. It's important to have a plan for how you will deal with cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "What are some common effects after quitting smoking?",
+      "answer": "Mood changes are common after quitting, and weight gain is also a possibility. The average weight gain is less than 10 pounds.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "How can I manage my weight after quitting smoking?",
+      "answer": "Healthy diet and exercise are important for weight management. Aim for 30 minutes of moderate-intensity exercise to help burn calories and reduce cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "What resources are available to help me quit smoking?",
+      "answer": "There are many resources available, including quitlines, support groups, and online programs. Consulting a doctor or nutritionist for personalized advice can also be beneficial.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:10.481193"
+    },
+    {
+      "question": "What should I do to help with cravings when I'm stressed?",
+      "answer": "Stress can increase cravings. To manage this, you can drink a glass of water or brush your teeth to help distract yourself.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "Can quitting smoking affect my weight?",
+      "answer": "Some medications can cause weight gain. However, it's possible to lose weight while quitting, and it can take several weeks to a few months for metabolism to adjust.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "What are some healthy meal options I can consider?",
+      "answer": "Oatmeal with fruit and nuts is a healthy option. You should also include a protein source, a whole grain, a fruit, and a vegetable in your meals.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "How can I make sure I eat healthy while quitting smoking?",
+      "answer": "Plan your meals for the week in advance and keep healthy snacks at your desk. It's also helpful to bring healthy snacks with you and pack them for trips.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "What should I do if I slip up while trying to quit smoking?",
+      "answer": "Don't give up after a slip-up. Focus on the positive aspects of quitting smoking and remind yourself of the reasons why you want to quit.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "How can I stay motivated to exercise?",
+      "answer": "Find an activity that you enjoy and schedule exercise into your day like any other appointment. Remind yourself of the benefits of exercise to keep your motivation high.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "What are some tips for making healthy changes?",
+      "answer": "Set realistic goals and find a support system. Focus on making small, gradual changes to ensure long-term success.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "How can I improve my eating habits while quitting smoking?",
+      "answer": "Eat plenty of fruits, vegetables, whole grains, and lean protein sources. Aim for at least five servings of fruits and vegetables per day to maintain a balanced diet.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:18.990310"
+    },
+    {
+      "question": "What are some common symptoms of nicotine withdrawal?",
+      "answer": "Nicotine withdrawal symptoms include irritability, depressed mood, increased appetite, cravings, sleep disturbances, and headaches. These symptoms typically last for a few weeks, with the first week being the most challenging.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "How can I manage my withdrawal symptoms?",
+      "answer": "Relaxation techniques can help manage withdrawal symptoms. Additionally, establishing a regular sleep schedule, creating a relaxing bedtime routine, and avoiding caffeine and alcohol before bed can be beneficial.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "What medications can help with quitting smoking?",
+      "answer": "Nicotine replacement therapy (NRT) like patches, gum, lozenges, inhalers, and nasal sprays are effective. Non-nicotine medications like bupropion and varenicline are also effective options.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "What should I do to prepare for quitting smoking?",
+      "answer": "Plan ahead by identifying potential triggers and developing strategies to cope with them. Stay motivated by reminding yourself of the benefits of quitting and setting realistic goals.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "How long do nicotine withdrawal symptoms last?",
+      "answer": "Nicotine withdrawal symptoms typically last for a few weeks. They usually peak within the first few days to a week and then gradually decrease in intensity.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "What can I do to relieve headaches during withdrawal?",
+      "answer": "To relieve headaches, drink plenty of water, get enough rest, and consider using over-the-counter pain relievers. Staying hydrated and well-rested can help alleviate this common symptom.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "What are some healthy eating tips to support my quitting journey?",
+      "answer": "Focus on a healthy diet by including dairy products, leafy green vegetables, and fortified foods. Keep healthy snacks readily available and prepare meals in advance to support your healthy lifestyle choices.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "How can I stay motivated while quitting smoking?",
+      "answer": "Stay motivated by reminding yourself of the benefits of quitting, setting realistic goals, rewarding yourself for milestones achieved, and seeking support from others. Surrounding yourself with supportive people can also help.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:27.404029"
+    },
+    {
+      "question": "What are some strategies to stay motivated while quitting smoking?",
+      "answer": "You can stay motivated by reminding yourself of the benefits of quitting, setting realistic goals, rewarding yourself for milestones achieved, and seeking support from others.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What should I do if I slip up and smoke a cigarette?",
+      "answer": "If you slip up and have a cigarette, don't get discouraged. It's important to learn from the experience, identify what triggered the slip-up, and recommit to quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What are common triggers that make people want to smoke?",
+      "answer": "Common triggers include stress, social situations where others are smoking, alcohol consumption, and certain activities or places associated with smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "How can I avoid triggers that make me want to smoke?",
+      "answer": "You can avoid triggers by changing your routine, avoiding places where you used to smoke, and finding new activities to replace smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What are the health benefits of quitting smoking?",
+      "answer": "Quitting smoking at any age has significant health benefits, including reduced risk of heart disease, lung cancer, stroke, and other smoking-related illnesses.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What are some symptoms of nicotine withdrawal?",
+      "answer": "Anxiety is a common symptom of nicotine withdrawal, and difficulty concentrating is also a common withdrawal symptom.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What are some coping strategies for managing anxiety during withdrawal?",
+      "answer": "You can manage anxiety by practicing relaxation techniques, engaging in physical activity, and seeking support from friends, family, or a therapist.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What is nicotine replacement therapy (NRT) and what forms does it come in?",
+      "answer": "Nicotine replacement therapy (NRT) includes patches, gum, lozenges, inhalers, and nasal sprays. These can help manage withdrawal symptoms as you quit smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:36.309006"
+    },
+    {
+      "question": "What are some options for nicotine replacement therapy?",
+      "answer": "Nicotine replacement therapy (NRT) includes patches, gum, lozenges, inhalers, and nasal sprays. These options can help manage cravings and withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What should I do if I feel cravings?",
+      "answer": "You can cope with cravings by using nicotine replacement therapy (NRT), practicing relaxation techniques, distracting yourself with activities you enjoy, and seeking support from friends, family, or a support group.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What are common triggers for smoking?",
+      "answer": "Common triggers include alcohol consumption. Identifying and avoiding these triggers can help reduce cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What are some withdrawal symptoms I might experience?",
+      "answer": "Nicotine withdrawal symptoms include irritability, difficulty concentrating, increased appetite, cravings, depressed mood, and sleep disturbances.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What medications can help with quitting smoking?",
+      "answer": "Non-nicotine medications like bupropion and varenicline are also effective in helping people quit smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "How can I stay motivated to quit smoking?",
+      "answer": "Stay motivated by reminding yourself of the benefits of quitting. Long-term benefits include improved overall health and well-being.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What should I do if I relapse?",
+      "answer": "Many people who try to quit smoking relapse at some point. If you relapse, don't give up. Learn from your experience and try again.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What can I do to manage stress while quitting?",
+      "answer": "Manage stress in healthy ways, such as exercise, relaxation techniques, or spending time with loved ones. These strategies can help you cope during the quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:44.419290"
+    },
+    {
+      "question": "What are some withdrawal symptoms I might experience when I quit smoking?",
+      "answer": "Withdrawal symptoms can include difficulty sleeping, irritability, and anxiety. It's important to let your friends and family know that you are quitting and that you may be irritable or anxious.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "Can medications help me when I quit smoking?",
+      "answer": "Yes, medications can help reduce cravings and withdrawal symptoms. Nicotine Replacement Therapy (NRT) can help manage cravings and withdrawal symptoms, which may indirectly help with weight management.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "What should I do to manage my weight while quitting smoking?",
+      "answer": "Weight gain is a common concern when quitting smoking, but it's not a certainty. With planning and effort, you can manage your weight while enjoying the benefits of a smoke-free life.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "How can I cope with cravings without gaining weight?",
+      "answer": "Choose healthy snacks like fruits, vegetables, nuts, and yogurt to help manage cravings and avoid unhealthy weight gain. Be aware of the tendency to replace cigarettes with food and find alternative activities to distract yourself from cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "What exercise should I do to help manage my weight after quitting?",
+      "answer": "Combine aerobic exercise with strength training for optimal weight management. Aim for at least 150 minutes of moderate-intensity aerobic exercise per week.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "What are the 4 D's I can use to manage cravings?",
+      "answer": "Use the 4 D's: Delay, Distract, Drink water, and Deep breathe to manage cravings for cigarettes and unhealthy foods. These techniques can help you cope with the urge to smoke or eat unhealthy snacks.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "Is it okay to go on a restrictive diet while quitting smoking?",
+      "answer": "Avoid restrictive diets while quitting smoking. Focus on making healthy food choices and increasing physical activity, but avoid drastic calorie restriction.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "What should I do if I'm worried about weight gain when quitting smoking?",
+      "answer": "Talk to your doctor about your weight gain concerns before quitting smoking. They can provide personalized advice and support to help you manage your weight effectively.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:06:53.668860"
+    },
+    {
+      "question": "What should I do if I'm worried about gaining weight after quitting smoking?",
+      "answer": "Talk to your doctor about your weight gain concerns before quitting smoking. They can provide personalized advice and support.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "How can I practice mindful eating?",
+      "answer": "Practice mindful eating by paying attention to your hunger cues, eating slowly, and savoring each bite. Avoid distractions while eating.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "What are some positive health benefits of quitting smoking?",
+      "answer": "Focus on the many positive health benefits of quitting smoking. Celebrate your successes along the way, and seek support from friends, family, or a support group.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "How does lack of sleep affect my cravings?",
+      "answer": "Lack of sleep can increase cravings for unhealthy foods and disrupt hormones that regulate appetite, contributing to weight gain. Establish a regular sleep schedule and create a relaxing bedtime routine.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "What should I limit in my diet while quitting smoking?",
+      "answer": "Limit your intake of processed foods, sugary drinks, and unhealthy fats. Focus on eating whole, unprocessed foods.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "What are some easy ways to stay active?",
+      "answer": "Take the stairs instead of the elevator, walk or bike to work or errands, and do household chores like gardening or cleaning. Even small amounts of activity can make a difference.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "How can I stay on track with healthy eating?",
+      "answer": "Meal prepping can help you stay on track with your healthy eating goals. Spend some time each week planning and preparing healthy meals and snacks.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "What should I do if I have a slip-up while quitting?",
+      "answer": "Don't beat yourself up over a slip-up. It's a normal part of the quitting process. Acknowledge it, learn from it, and move on.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:01.303074"
+    },
+    {
+      "question": "What can I do to manage stress while quitting smoking?",
+      "answer": "You can try deep breathing exercises, meditation, yoga, or spending time in nature. Engaging in hobbies that you enjoy, such as reading, listening to music, or painting, can also help.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "Is weight gain a concern when I quit smoking?",
+      "answer": "Yes, weight gain is a common side effect of quitting smoking, and it's not a reflection of your willpower or character. It's important to remind yourself that quitting smoking is the most important thing you can do for your health.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "How can I make healthy eating more enjoyable?",
+      "answer": "You can experiment with new recipes and flavors to make healthy eating more enjoyable. Finding healthy versions of your favorite foods and involving your friends and family in meal planning and preparation can also help.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "What should I keep at my desk to stay healthy?",
+      "answer": "Keep healthy snacks at your desk, such as fruits, vegetables, or nuts. It's also beneficial to take short breaks to walk around and stretch, and to drink plenty of water throughout the day.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "How does exercise help when quitting smoking?",
+      "answer": "Exercise releases endorphins, which have mood-boosting effects and can help reduce cravings and withdrawal symptoms. Even a short walk can make a difference.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "What should I do to track my progress while quitting?",
+      "answer": "Set realistic goals and track your progress. Focus on making small, sustainable changes to your diet and exercise routine, and celebrate your successes without getting discouraged by setbacks.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "What should I remove from my home to support my quitting efforts?",
+      "answer": "Remove all cigarettes and unhealthy foods from your home. Stock your kitchen with healthy snacks and ingredients, and ask your family to support your efforts by not smoking or eating unhealthy foods around you.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "What should I focus on instead of weight when quitting smoking?",
+      "answer": "Shift your focus from weight to overall health and well-being. Remind yourself of all the positive benefits of quitting smoking, such as improved breathing, increased energy levels, and reduced risk of disease.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:10.590764"
+    },
+    {
+      "question": "How can journaling help me while I'm trying to quit smoking?",
+      "answer": "Journaling can help you track your progress, identify triggers, and process your emotions. Write about your cravings, your successes, and your challenges.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "What should I drink to help me feel full before meals?",
+      "answer": "Carry a water bottle with you throughout the day and refill it regularly. Drink water before meals to help you feel full and choose water over sugary drinks.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "Who can I talk to for support in quitting smoking?",
+      "answer": "Talk to your doctor or healthcare provider. They can refer you to a registered dietitian, a therapist, or a smoking cessation specialist for personalized guidance and support.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "What are some sustainable habits I should focus on?",
+      "answer": "Focus on building sustainable habits that you can maintain for the long term. This includes eating a balanced diet, getting regular exercise, managing stress, and getting enough sleep.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "How can I replace negative thoughts while quitting?",
+      "answer": "Replace negative thoughts with positive affirmations. Remind yourself of your strengths and your goals, and celebrate your successes without dwelling on your failures.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "What can I do to establish a relaxing bedtime routine?",
+      "answer": "Establish a relaxing bedtime routine by avoiding screen time before bed. You can drink herbal tea or warm milk, and if you're feeling hungry, have a light, healthy snack.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "How can I visualize my success in quitting smoking?",
+      "answer": "Visualize yourself succeeding in your goals. Imagine yourself feeling healthy, strong, and confident, and see yourself resisting cravings and making healthy choices.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "What should I do if I experience setbacks while quitting?",
+      "answer": "Recognize that setbacks are a normal part of the quitting process. Don't let fear of failure prevent you from trying; focus on your progress and celebrate your successes.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:19.022473"
+    },
+    {
+      "question": "What should I do if I feel overwhelmed and want to smoke?",
+      "answer": "Take a break and step away from the situation. Practice relaxation techniques, such as deep breathing or meditation, to help manage your feelings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "How can I cope with cravings when I quit smoking?",
+      "answer": "Distraction techniques can help you cope with cravings. You can also engage in physical activities or talk to a friend or therapist for support.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "Is it normal to feel anxious after quitting smoking?",
+      "answer": "Yes, withdrawal symptoms, including anxiety, can be intense in the first few weeks after quitting. It's important to acknowledge these feelings and find healthy coping mechanisms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "What are some healthy ways to manage stress instead of smoking?",
+      "answer": "Healthy stress management techniques include exercise, meditation, and spending time with loved ones. Smoking does not reduce stress in the long term; it can actually worsen anxiety and depression.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "What should I do if I have a slip-up while trying to quit?",
+      "answer": "A single slip-up does not mean you have failed. Learn from it and continue your quit journey. It's important to treat yourself with kindness and understanding.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "Can quitting smoking affect my weight?",
+      "answer": "Weight gain is a potential side effect of quitting smoking. Healthy eating and exercise can help manage weight during this transition.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "What are some common withdrawal symptoms I might experience?",
+      "answer": "Common withdrawal symptoms include irritability, mood swings, and sleep disturbances. It's important to recognize these symptoms and take care of yourself during this time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "How can I set goals for my quitting journey?",
+      "answer": "Set realistic and achievable goals by breaking them down into smaller, more manageable steps. Write down your goals and track your progress to stay motivated.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:26.719543"
+    },
+    {
+      "question": "What should I do if I have trouble sleeping while quitting smoking?",
+      "answer": "Sleep disturbances are common during nicotine withdrawal. Establish a relaxing bedtime routine to help improve your sleep.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "What can I do to manage cravings when I want to smoke?",
+      "answer": "Use a combination of strategies to manage cravings, including distraction, relaxation, and nicotine replacement therapy. Techniques like deep breathing and progressive muscle relaxation can also help reduce stress and cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "Is it normal to have slip-ups while trying to quit smoking?",
+      "answer": "Yes, don't be discouraged by slip-ups. Learn from them and continue your quit journey, as relapse is a common part of the quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "How can I prevent weight gain after quitting smoking?",
+      "answer": "Healthy eating and exercise can help manage weight gain during smoking cessation. Exercise releases endorphins, which have mood-boosting effects and can help reduce stress and anxiety.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "What are some forms of nicotine replacement therapy (NRT)?",
+      "answer": "Nicotine replacement therapy (NRT) comes in different forms, including patches, gum, lozenges, inhalers, and nasal sprays. NRT provides a controlled dose of nicotine without the harmful chemicals found in cigarettes.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "What medication can help reduce cravings when quitting smoking?",
+      "answer": "Bupropion is a non-nicotine medication that helps reduce cravings and withdrawal symptoms. Another option is Varenicline, which works by partially stimulating nicotine receptors in the brain.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "How can I stay motivated while quitting smoking?",
+      "answer": "Stay motivated by reminding yourself of your reasons for quitting and celebrating your successes. Set realistic goals and reward yourself for milestones along the way.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "What should I do to cope with cravings when they hit?",
+      "answer": "Distract yourself, delay acting on the urge, drink water, and take deep breaths. These techniques can help you cope with cravings effectively.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:36.438191"
+    },
+    {
+      "question": "How does quitting smoking help my loved ones?",
+      "answer": "Quitting smoking protects your loved ones from secondhand smoke, which can cause serious health problems.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What can I do to help calm my nerves while quitting?",
+      "answer": "Take deep breaths to help calm your nervous system. This technique can be very effective in managing stress during your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What should I drink to help flush nicotine out of my system?",
+      "answer": "Drink plenty of water to help flush nicotine out of your system. Staying hydrated is important while you quit smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What are some healthy snacks I can choose while quitting?",
+      "answer": "Choose healthy, low-calorie snacks like fruits, vegetables, nuts, or yogurt. These options can help satisfy cravings without adding too many calories.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What should I do if I have cravings?",
+      "answer": "Have a plan in place for dealing with sudden cravings. Anticipating challenging situations and developing coping strategies can make a big difference.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What are some common symptoms of nicotine withdrawal?",
+      "answer": "Difficulty concentrating and mood swings are common symptoms of nicotine withdrawal. Being aware of these can help you prepare for the challenges of quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "How can quitting smoking affect my health?",
+      "answer": "Quitting smoking can improve your lung function and make it easier to breathe. It can also significantly reduce your risk of lung cancer and other types of cancer.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What should I do to celebrate my progress in quitting?",
+      "answer": "Treat yourself to something special to celebrate your smoke-free anniversaries. Setting goals and rewarding yourself for milestones can keep you motivated.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:45.985448"
+    },
+    {
+      "question": "What should I do to prepare for holiday gatherings when trying to quit smoking?",
+      "answer": "Plan ahead for holiday gatherings and develop a strategy for dealing with triggers. This can help you stay focused on your goal of quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "How can I manage cravings when they hit?",
+      "answer": "Cravings usually decrease in intensity and frequency over time. It's important to remind yourself that cravings are temporary and will pass.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "What are some effective coping mechanisms I can use?",
+      "answer": "Develop healthy coping mechanisms for emotional triggers, such as exercise, meditation, or talking to a therapist. Engaging in creative activities can also distract you from cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "Can you suggest any techniques to help me stay focused on my quitting goals?",
+      "answer": "Set goals, track your progress, and reward yourself for milestones. Visualizing yourself as a non-smoker and writing down your reasons for quitting can also be very helpful.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "What should I do if I'm offered a cigarette?",
+      "answer": "Prepare a response in advance for when you are offered a cigarette. This can help you stay committed to your decision to quit.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "How can physical activity help me while quitting smoking?",
+      "answer": "Physical activity can help distract you from cravings. Regular exercise is also part of a healthy lifestyle that can support your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "What role does my support system play in quitting smoking?",
+      "answer": "Connect with friends, family, or support groups who understand your goals and can provide encouragement. Joining a support group or quitting with a friend or family member can be very beneficial.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "Are there any medications I can use to help with cravings?",
+      "answer": "NRT can be used strategically to manage breakthrough cravings. It's important to plan ahead and pack nicotine replacement therapy or other medications when you anticipate triggers.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:07:54.672604"
+    },
+    {
+      "question": "What should I do to distract myself when I have cravings?",
+      "answer": "You can engage in activities you enjoy to distract yourself. Additionally, consider distracting yourself with a different activity when cravings feel overwhelming.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "How can I cope with emotional triggers while quitting smoking?",
+      "answer": "Develop healthy coping mechanisms for emotional triggers, such as exercise, meditation, or talking to a therapist. These strategies can help you manage your feelings without turning to smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "What can I do to avoid weight gain after quitting smoking?",
+      "answer": "Focus on eating a healthy diet and getting regular exercise to avoid weight gain. Many people gain weight after quitting smoking, but it's not inevitable.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "What should I do if alcohol triggers my cravings?",
+      "answer": "If alcohol triggers cravings, consider reducing or eliminating your alcohol consumption. This can help you manage your cravings more effectively.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "What are the '4 Ds' I can use to manage cravings?",
+      "answer": "Use the '4 Ds' to manage cravings: Delay, Distract, Drink water, and Deep breathe. These techniques can help you cope with the urge to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "How can I remind myself of the reasons to quit smoking?",
+      "answer": "Remind yourself of the reasons why you quit and focus on the positive outcomes. This can reinforce your commitment to staying smoke-free.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "What are some ways to celebrate my progress in quitting smoking?",
+      "answer": "Turn quitting into a game by tracking your progress and rewarding yourself for reaching milestones. Celebrate your progress and reward yourself for your achievements.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "How can mindfulness help me while quitting smoking?",
+      "answer": "Practice mindfulness meditation to reduce stress and cravings. This technique can help you stay focused and calm during your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:03.196405"
+    },
+    {
+      "question": "Will I gain weight after quitting smoking?",
+      "answer": "Many people gain weight after quitting smoking, but it's not inevitable. Weight gain after quitting smoking is not necessarily permanent.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "What can I do to manage my appetite during nicotine withdrawal?",
+      "answer": "Nicotine withdrawal can increase appetite. To manage this, choose healthy snacks like fruits, vegetables, and nuts.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "How can I prevent weight gain after quitting smoking?",
+      "answer": "Incorporate more physical activity into your daily routine. Exercise can help burn calories and reduce stress.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "What should I focus on first when quitting smoking?",
+      "answer": "Focus on quitting smoking first, then gradually incorporate healthier eating habits. It's important to prioritize your smoking cessation.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "What are some coping mechanisms I can use instead of eating?",
+      "answer": "Develop alternative coping mechanisms for stress and boredom. You can practice deep breathing exercises, meditation, or yoga.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "How does quitting smoking affect my health?",
+      "answer": "Quitting smoking improves your cardiovascular health and reduces your risk of cancer. The health risks of smoking far outweigh the risks of moderate weight gain.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "What can I do to track my progress after quitting smoking?",
+      "answer": "Weighing yourself regularly can help you track your progress. You can also use apps to track your smoking habits, food intake, and exercise.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "What resources are available for smoking cessation?",
+      "answer": "The CDC, Mayo Clinic, and American Lung Association offer resources on smoking cessation. You can also talk to your doctor about your options for weight management medications.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:12.353837"
+    },
+    {
+      "question": "What should I do to help manage my anxiety and depression while trying to quit smoking?",
+      "answer": "Anxiety and depression can lead to emotional eating. It's important to identify your emotions and develop healthy ways to cope with them.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "How can I control my portion sizes when I eat?",
+      "answer": "Use smaller plates and measure your food. This can help you manage your portions and avoid overeating.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "What are some good drink options to stay hydrated?",
+      "answer": "You can drink water, unsweetened tea, or sparkling water. These options are great for staying hydrated without added sugars.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "What should I include in my meals to make them healthier?",
+      "answer": "Focus on eating a variety of fruits, vegetables, lean proteins, and whole grains. Good choices include oatmeal with fruit and nuts, yogurt with berries, or eggs with whole-wheat toast.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "How can I keep my hands busy to avoid cravings?",
+      "answer": "Keep your hands busy with other activities. This can help distract you from cravings and reduce the urge to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "What are some ways to reward myself without using food?",
+      "answer": "Treat yourself to a non-food reward. This could be anything that makes you feel good and reinforces your progress.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "What should I do if I feel overwhelmed by negative thoughts?",
+      "answer": "Challenge your thoughts and replace them with positive affirmations. This practice can help shift your mindset and improve your emotional well-being.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "What types of meals should I plan to support my health?",
+      "answer": "Include lean protein sources in every meal. Salads with lean protein, whole-wheat sandwiches with vegetables, or soup with a side of fruit are all good choices.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:21.390215"
+    },
+    {
+      "question": "What should I eat to stay healthy while quitting smoking?",
+      "answer": "Eat plenty of fruits, vegetables, and whole grains. Grilled chicken or fish with roasted vegetables, lentil soup, or a stir-fry with brown rice are all good choices.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "How can I manage anxiety when I quit smoking?",
+      "answer": "Nicotine withdrawal can cause increased anxiety and irritability. Consider activities like yoga, meditation, spending time in nature, or engaging in a hobby you enjoy.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "What are some techniques to help reduce stress quickly?",
+      "answer": "Deep breathing exercises, progressive muscle relaxation, and guided imagery can help you quickly reduce stress. Practicing mindfulness can also help you become more aware of your stress triggers and cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "What should I do with my smoking-related items?",
+      "answer": "Remove all smoking-related items from your home and workplace. This can help reduce triggers and temptations to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "How can I reward myself after quitting smoking?",
+      "answer": "Reward yourself with non-food and non-smoking related treats. This can help reinforce your commitment to quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "What role does exercise play in quitting smoking?",
+      "answer": "Prioritize regular exercise, a healthy diet, and sufficient sleep. Aerobic exercises like running, swimming, or cycling can release endorphins, which help improve your mood.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "What should I do if I feel cravings?",
+      "answer": "Have a plan for handling cravings and social pressure. Find distractions and healthy coping mechanisms to ride them out.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "What can I do to track my progress while quitting?",
+      "answer": "Journaling can help you identify stress triggers, process emotions, and track your cravings and coping strategies. This can provide insight into your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:29.482038"
+    },
+    {
+      "question": "What should I do to manage stress while quitting smoking?",
+      "answer": "Quitting smoking and managing stress are both challenging, but you can succeed by breaking down the process into smaller steps and seeking support.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "What are some healthy snacks I can choose while trying to quit?",
+      "answer": "Choose healthy snacks like fruits, vegetables, nuts, and yogurt to help you stay on track while quitting smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "How can I practice deep breathing?",
+      "answer": "Inhale deeply through your nose, hold for a few seconds, and exhale slowly through your mouth. This technique can help you relax.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "What can I do to keep my mind occupied?",
+      "answer": "Engage in activities that occupy your mind and hands. Finding activities that you enjoy and that fit into your lifestyle is important.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "What are some ways to express my anger healthily?",
+      "answer": "Find healthy ways to express your anger, such as talking to a friend or writing in a journal. This can help you manage your emotions during the quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "What are common nicotine withdrawal symptoms?",
+      "answer": "Nicotine withdrawal symptoms can include irritability, anxiety, difficulty concentrating, restlessness, increased appetite, and sleep disturbances.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "When do withdrawal symptoms peak?",
+      "answer": "Withdrawal symptoms usually peak within the first few days to a week and gradually decrease in intensity over a few weeks.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "How do cravings change over time?",
+      "answer": "Cravings become less frequent and less intense over time as you progress in your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:37.673557"
+    },
+    {
+      "question": "What should I expect in terms of emotional changes when I quit smoking?",
+      "answer": "Emotional changes, such as irritability and anxiety, are common during nicotine withdrawal. It's important to be prepared for these feelings as they may occur.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "How can I manage cravings when I quit smoking?",
+      "answer": "Nicotine replacement therapy, distractions, deep breathing exercises, and avoiding triggers can help manage cravings. These techniques can significantly reduce withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "Is it normal to have trouble sleeping after quitting smoking?",
+      "answer": "Yes, sleep disturbances are common during nicotine withdrawal. Many people experience changes in their sleep patterns as they adjust to being smoke-free.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "What are some common withdrawal symptoms I might experience?",
+      "answer": "Common withdrawal symptoms include anxiety, difficulty concentrating, and increased coughing as your lungs begin to clear out accumulated mucus and debris from smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "Will I gain weight after quitting smoking?",
+      "answer": "Some people do gain weight after quitting. It's important to focus on a balanced diet with plenty of fruits, vegetables, and whole grains to help manage this.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "What can I do to help reduce anxiety during withdrawal?",
+      "answer": "Relaxation techniques, meditation, yoga, and regular exercise can help reduce anxiety. These methods can be beneficial in managing your emotional state during this time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "How quickly will my body start to heal after I quit smoking?",
+      "answer": "Your lungs will begin to heal almost immediately after you quit smoking. Additionally, your heart will start to recover almost immediately as well.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "What are some side effects of nicotine replacement therapy?",
+      "answer": "Common side effects of NRT include skin irritation from patches, mouth soreness from gum or lozenges, and nausea. It's important to be aware of these potential effects when using NRT.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:50.063977"
+    },
+    {
+      "question": "How quickly will my heart start to recover after I quit smoking?",
+      "answer": "Your heart will start to recover almost immediately after you quit smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "Can quitting smoking improve my skin?",
+      "answer": "Yes, quitting smoking can improve your skin's appearance by increasing blood flow and reducing wrinkles.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "What should I do when I face a challenging situation that makes me want to smoke?",
+      "answer": "Anticipate challenging situations and develop a plan for how you'll cope without smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "What are some activities I can do to distract myself from cravings?",
+      "answer": "Try exercising, spending time in nature, engaging in hobbies, reading, listening to music, or spending time with loved ones.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "How can my doctor help me quit smoking?",
+      "answer": "Your doctor can provide valuable support and resources, including medications, counseling, and referrals to support groups.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "What are some common triggers that make people want to smoke?",
+      "answer": "Common triggers include stress, alcohol, coffee, being around other smokers, and certain places or situations associated with smoking.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "What should I do if I have a slip-up and smoke again?",
+      "answer": "A slip-up doesn't mean you've failed. It's important to learn from it, identify what triggered it, and get back on track immediately.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "How can I manage cravings when they hit?",
+      "answer": "Distractions and deep breathing exercises can help manage cravings. Cravings usually only last for a few minutes.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:08:56.836603"
+    },
+    {
+      "question": "What are some relaxation techniques I can use to help quit smoking?",
+      "answer": "You can practice relaxation techniques such as deep breathing, meditation, or yoga. These methods can help manage stress and reduce cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "How important is my support system when I decide to quit smoking?",
+      "answer": "Having a strong support system is crucial when you decide to quit smoking. Be honest with your friends about your decision to quit and explain that you need their support.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "Are there any apps that can help me quit smoking?",
+      "answer": "Yes, there are apps available that offer tools for tracking cravings and providing motivational support. These can be very helpful in your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "What should I do with my cigarettes and smoking supplies?",
+      "answer": "You should remove all cigarettes, lighters, and ashtrays from your home. This helps eliminate temptation and makes it easier to stick to your decision to quit.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "How can I manage my cravings when they hit?",
+      "answer": "Pay attention to your cravings without judgment and find healthy replacements for smoking. Keeping your hands occupied can also help distract you from cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "What are some small goals I can set for myself while quitting?",
+      "answer": "Set small, achievable goals and reward yourself when you reach them. For example, you can track your progress and celebrate your successes along the way.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "How can staying hydrated help me quit smoking?",
+      "answer": "Drinking plenty of water can help flush out nicotine and reduce cravings. Staying hydrated is an important part of your quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "What activities can I do to keep myself distracted from smoking?",
+      "answer": "Plan activities that will keep you busy and distracted. Engaging in hobbies you enjoy or taking frequent breaks can help you focus and reduce the urge to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:06.244213"
+    },
+    {
+      "question": "What can I do to distract myself when I feel a craving?",
+      "answer": "You can distract yourself immediately with a quick activity, listen to upbeat music or an audiobook, or take a break from the situation and do something to calm yourself down.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "How can I manage cravings when I'm around smokers?",
+      "answer": "You can ask your partner to smoke outside and away from you, which helps create a smoke-free environment that supports your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "Is there anything I can drink to help with cravings?",
+      "answer": "Drinking plenty of water can help flush out nicotine and reduce cravings, making it easier for you to stay smoke-free.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "What should I focus on while quitting smoking?",
+      "answer": "Focus on the things you can control, connect your quitting journey to your personal values, and remind yourself of your reasons for quitting and the positive benefits of staying smoke-free.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "What are some healthy snacks I can keep at my desk?",
+      "answer": "You can choose fruits, vegetables, nuts, and yogurt for healthy snacks. These options can help you manage cravings and maintain a healthy diet.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "How much exercise should I aim for after quitting smoking?",
+      "answer": "Aim for at least 150 minutes of moderate-intensity aerobic exercise or 75 minutes of vigorous-intensity exercise per week to support your health during your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "What should I do if I'm worried about gaining weight after quitting?",
+      "answer": "Discuss your concerns with your doctor, who can help you explore options and which medications might be right for you to manage weight during your quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "How long does weight gain last after quitting smoking?",
+      "answer": "Weight gain typically stabilizes within the first year after quitting, so it's important to focus on healthy habits during this time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:15.254025"
+    },
+    {
+      "question": "What can I do to manage cravings when I feel the urge to smoke?",
+      "answer": "You can find alternative activities to occupy your hands and mind when you feel the urge to smoke. Engaging in activities that keep you busy can help distract you from cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "How long does weight gain last after quitting smoking?",
+      "answer": "Weight gain typically stabilizes within the first year after quitting. It's important to focus on the many health benefits of quitting smoking, regardless of weight gain.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "What kind of exercise should I do after quitting smoking?",
+      "answer": "A combination of aerobic exercise and strength training is ideal. This can help you manage your weight and improve your overall health.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "How can I stay motivated while trying to quit smoking?",
+      "answer": "There are many apps available that can help you track your progress, set goals, and stay motivated. Joining a support group can also provide you with valuable support and encouragement.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "What should I focus on when I quit smoking?",
+      "answer": "It's generally recommended to focus on quitting smoking first. Many people try to quit several times before they are successful, so persistence is key.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "What are some common mistakes people make when trying to quit smoking?",
+      "answer": "Common mistakes include trying to do too much too soon, not having a support system, relying on willpower alone, and not addressing underlying emotional issues. It's important to plan and prepare for your quit journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "How can I manage stress while quitting smoking?",
+      "answer": "You can practice relaxation techniques, such as deep breathing, to manage stress. Developing coping mechanisms, such as exercise or meditation, can also be beneficial.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "What should I eat to stay healthy after quitting smoking?",
+      "answer": "Focus on eating nutrient-dense foods, such as fruits, vegetables, lean protein, and whole grains. It's also helpful to plan your meals ahead of time and shop with a list.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:25.371098"
+    },
+    {
+      "question": "What are some coping mechanisms I can use to help quit smoking?",
+      "answer": "You can develop coping mechanisms such as exercise, meditation, or talking to a friend. Surrounding yourself with supportive people and joining a support group or online forum can also be beneficial.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "How can I manage my cravings after quitting smoking?",
+      "answer": "The 4 D's can help manage cravings: Delay, Distract, Drink water, and Deep breathe. Additionally, distraction techniques, deep breathing exercises, and physical activity can help manage stress.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "What should I focus on when it comes to my diet after quitting smoking?",
+      "answer": "Focus on whole, unprocessed foods like fruits, vegetables, lean protein, and whole grains. A balanced diet rich in vitamins and minerals is important for overall health.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "What are some healthy snack options I can choose?",
+      "answer": "Fruits like berries, apples, and pears are naturally sweet and low in calories. You can also chew sugar-free gum, suck on hard candies, or use a straw to drink water.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "How can I keep my blood sugar stable while quitting smoking?",
+      "answer": "Keeping your blood sugar stable can be achieved by eating regular, balanced meals and snacks. Include lean protein sources in every meal, as protein helps you feel full and satisfied.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "What are some effective stress relief methods I can try?",
+      "answer": "Yoga, meditation, spending time in nature, and therapy are effective stress relief methods. Anxiety is a common withdrawal symptom when quitting smoking, but it is likely to improve significantly in the long run.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "How can I set goals for my smoking cessation journey?",
+      "answer": "Start by setting small, achievable goals and break them down into smaller, more manageable steps. Focus on making small, sustainable changes and celebrate your successes.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "What activities can I do to keep myself busy after quitting smoking?",
+      "answer": "Find activities you enjoy, such as dancing, swimming, or hiking. Keeping yourself busy and engaged can help distract you from cravings and withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:34.199296"
+    },
+    {
+      "question": "What can I do to manage my cravings when I want to smoke?",
+      "answer": "Drinking water and practicing deep breathing can help manage cravings. These techniques can provide immediate relief when you're feeling the urge to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "How can exercise help me while I'm trying to quit smoking?",
+      "answer": "Aerobic exercises can release endorphins, which have mood-boosting effects. This can be particularly beneficial as you navigate the challenges of quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "What should I do if I feel really anxious while quitting?",
+      "answer": "If anxiety feels unbearable or is interfering with daily life, talk to a doctor. They can provide guidance and support tailored to your needs.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "Can I use any medications to help with withdrawal symptoms?",
+      "answer": "NRT can help manage nicotine withdrawal symptoms, including anxiety. It's important to discuss this option with your healthcare provider.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "How can support groups help me quit smoking?",
+      "answer": "Support groups can provide valuable support for people quitting smoking and dealing with anxiety. Connecting with others who understand your journey can be very helpful.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "What are some relaxation techniques I can use in public?",
+      "answer": "Deep breathing, progressive muscle relaxation, or visualization can be used in public. These techniques can help you stay calm and focused when you're feeling stressed.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "What should I do to prepare for potential stressors while quitting?",
+      "answer": "Anticipate potential stressors and plan ahead with coping strategies. Identifying your stress triggers and having a plan can make a significant difference.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "How can journaling help me during my quit-smoking journey?",
+      "answer": "Journaling can help you process your thoughts and feelings, identify triggers, and track your progress. It's a useful tool for self-reflection and motivation.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:43.476677"
+    },
+    {
+      "question": "What can I do to help manage my anxiety while quitting smoking?",
+      "answer": "You can practice relaxation techniques like deep breathing, progressive muscle relaxation, or yoga. These methods can help manage anxiety during your quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "How can I celebrate my progress while quitting smoking?",
+      "answer": "Focus on your successes, celebrate your progress, and remind yourself of the benefits of a smoke-free life. It's important to acknowledge the steps you've taken towards quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "What are some techniques I can use to relax?",
+      "answer": "You can practice diaphragmatic breathing, which involves breathing deeply from your belly. Additionally, progressive muscle relaxation involves tensing and releasing different muscle groups in your body.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "What should I do if I experience depression after quitting smoking?",
+      "answer": "Depression is a possible symptom of nicotine withdrawal. If depression persists, seek professional help to address your mental health needs.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "How can I create a supportive environment while quitting?",
+      "answer": "Reach out to your family, friends, or support group when you're feeling anxious or having cravings. Connecting with others can provide the support you need during this challenging time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "What are some activities I can do to nourish my mind and body?",
+      "answer": "Prioritize activities that nourish your mind, body, and soul. Engaging in creative activities like painting, drawing, or spending time outdoors can be beneficial.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "What should I know about withdrawal symptoms?",
+      "answer": "Withdrawal symptoms typically peak within the first week or two of quitting. It's important to be prepared for these symptoms as you work towards a smoke-free life.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "How can I use essential oils to help with relaxation?",
+      "answer": "You can use essential oils like lavender, chamomile, or bergamot in a diffuser, bath, or massage oil. These scents can promote relaxation and help ease anxiety.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:09:51.401082"
+    },
+    {
+      "question": "What are some common withdrawal symptoms I might experience after quitting smoking?",
+      "answer": "Restlessness and difficulty concentrating are common withdrawal symptoms. Withdrawal can temporarily affect your mood, and cravings are a normal part of nicotine withdrawal.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "How can I manage my cravings when I quit smoking?",
+      "answer": "You can use the 4 D's: Delay, Distract, Drink water, and Deep breathe. These techniques can help you cope with cravings during your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "What medications can help with nicotine withdrawal?",
+      "answer": "Bupropion (Zyban) and varenicline (Chantix) can help reduce cravings and withdrawal symptoms. Nicotine replacement therapy (NRT) is also effective in managing withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "What should I do if I feel depressed after quitting smoking?",
+      "answer": "Depression is a possible symptom of nicotine withdrawal. If depression persists, seek professional help to address your mental health needs.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "How long does it take for withdrawal symptoms to subside?",
+      "answer": "Most physical withdrawal symptoms subside within a few weeks, but psychological symptoms may last longer. It's important to be patient with yourself during this process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "What can I do to improve my sleep quality while quitting?",
+      "answer": "Establish a relaxing bedtime routine to improve sleep quality. This can help you manage the changes in your sleep patterns during withdrawal.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "How can I prevent weight gain after quitting smoking?",
+      "answer": "To prevent weight gain, focus on eating a healthy diet and engaging in regular physical activity. This will help you maintain a healthy lifestyle while quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "What should I do if I feel overwhelmed by my quitting journey?",
+      "answer": "Reach out to your support network for support. Be open and honest with your family and friends about your quitting journey to help you cope with the challenges.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:01.223179"
+    },
+    {
+      "question": "What medication can help reduce cravings and withdrawal symptoms when I quit smoking?",
+      "answer": "Varenicline helps by reducing cravings and withdrawal symptoms. It is important to talk to your doctor before starting this medication.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "What are some side effects of Varenicline I should be aware of?",
+      "answer": "Varenicline can have some side effects, including nausea, headache, insomnia, and abnormal dreams. It's essential to discuss these with your doctor.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "How can I prepare for my quitting journey?",
+      "answer": "Write down your smoking history and be open and honest with your doctor about your smoking habits and your desire to quit. Ask about the different treatment options available.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "What should I do if I feel a craving coming on?",
+      "answer": "When you feel a craving coming on, try to distract yourself. You could read a book, listen to music, or call a friend.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "What are some common triggers for cravings?",
+      "answer": "Common triggers include stress, boredom, and social situations. It's important to plan ahead and avoid these triggers as much as possible.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "How long do cravings usually last?",
+      "answer": "Cravings usually last only a few minutes. They will become less frequent and intense over time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "What should I do to support my quitting goals while traveling?",
+      "answer": "Have an open conversation with your travel companions about your quitting goals. Plan activities that don't involve smoking and pack NRT or other medications.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "What can I do to reward myself for staying smoke-free?",
+      "answer": "Reward yourself for staying smoke-free by focusing on the gains you're making in terms of health and well-being. Set realistic expectations and visualize yourself succeeding.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:09.389228"
+    },
+    {
+      "question": "What can I do to manage my cravings when I feel stressed?",
+      "answer": "Identify the sources of stress and develop coping mechanisms. You can also practice relaxation techniques and reach out to your support system.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "How can I keep myself busy to avoid smoking?",
+      "answer": "You can keep your hands busy with a hobby or distract yourself with a new activity. Engaging in a relaxing activity can also help.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "What should I do if I feel the urge to smoke?",
+      "answer": "Anticipate situations where you might crave a cigarette and plan ahead. Bring a support person and let them know you're quitting and have a plan for managing cravings.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "Is there a way to reduce my cravings with medication?",
+      "answer": "NRT provides a controlled dose of nicotine to help reduce cravings and withdrawal symptoms. It can be an effective tool in your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "How can I change my routine to help quit smoking?",
+      "answer": "Change your routine to avoid triggers and plan ahead to identify smoke-free areas. This can help you stay focused on your goal of quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "What role does support play in quitting smoking?",
+      "answer": "Seek support from friends, family, or a therapist. Joining a support group can connect you with others who are quitting and provide encouragement.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "What are some healthy snacks I can eat while quitting?",
+      "answer": "Choose healthy, low-calorie snacks to help manage cravings. This can keep you satisfied and reduce the temptation to smoke.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "How can I track my progress while quitting?",
+      "answer": "Track your progress and celebrate your achievements. This can help you stay motivated and focused on the benefits of quitting.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:21.104513"
+    },
+    {
+      "question": "What should I do if I'm worried about gaining weight after quitting smoking?",
+      "answer": "Many people worry about gaining weight after quitting, and this anxiety can be a significant barrier to quitting for some. It's important to focus on the positive health benefits of quitting and identify healthier coping strategies, like exercise.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "How can I improve my mood while quitting smoking?",
+      "answer": "Exercise can also help improve your mood and reduce cravings. Regular exercise, especially strength training, can help boost your metabolism, which is beneficial during the quitting process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "What are some healthy snacks I can have while quitting?",
+      "answer": "Choose snacks that are high in fiber and protein. Healthy options include fruits, yogurt, or a small piece of dark chocolate, and it's a good idea to have healthy snacks readily available.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "What should I focus on first when trying to quit smoking?",
+      "answer": "It's often best to focus on quitting smoking first. Plan ahead and have strategies for dealing with temptation, and remember to take things one day at a time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "How can mindfulness help me while quitting smoking?",
+      "answer": "Mindfulness meditation can help you become more aware of your emotions. Practicing relaxation techniques like deep breathing, yoga, or meditation can also support your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "What should I do if I experience cravings after quitting?",
+      "answer": "Try taking a walk, listening to music, chewing gum, or using a stress ball to manage cravings. It's important to have strategies in place for dealing with temptation.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "Is it normal to have digestive issues after quitting smoking?",
+      "answer": "Some people experience constipation or other digestive issues after quitting. To help manage this, drink plenty of water, eat a high-fiber diet, and exercise regularly.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "How can I celebrate my progress while quitting smoking?",
+      "answer": "Celebrate your milestones with non-food rewards. Focus on making progress, not perfection, and remember that relapses are common but don't mean you've failed.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:31.156922"
+    },
+    {
+      "question": "What are some healthy snack options I can pack?",
+      "answer": "You can pack fruits, vegetables, nuts, seeds, yogurt, and hard-boiled eggs as healthy and convenient snack options.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "How can I manage cravings and withdrawal symptoms when quitting smoking?",
+      "answer": "Exercise, meditation, spending time with loved ones, engaging in hobbies, and practicing deep breathing exercises can all help manage cravings and withdrawal symptoms.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "Is it possible to quit smoking without gaining weight?",
+      "answer": "Yes, it's possible to quit smoking without gaining weight. Nicotine can suppress appetite and slightly increase metabolism.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "What should I do to track my eating habits?",
+      "answer": "Keep a food journal to track what you eat, when you eat, and how you're feeling. Tracking your food intake can help you become more aware of your eating habits.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "What kind of exercise is ideal for maintaining a healthy lifestyle?",
+      "answer": "A combination of cardiovascular exercise and strength training is ideal. Choose activities you genuinely enjoy and set realistic goals.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "How can I celebrate my progress while quitting smoking?",
+      "answer": "Focus on the positive aspects of quitting, celebrate your progress, practice self-compassion, and surround yourself with supportive people.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "What are some strategies for setting realistic goals?",
+      "answer": "Set realistic goals for yourself and break them down into smaller, achievable steps. Focus on making small, sustainable changes.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "What can I do to help reduce cravings?",
+      "answer": "Drinking water can help you feel full, reduce cravings, and flush out toxins from your body. It's a simple yet effective strategy.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:40.202075"
+    },
+    {
+      "question": "What are some long-term benefits of quitting smoking?",
+      "answer": "The long-term benefits of quitting far outweigh this risk. Quitting smoking can lead to improved health and well-being over time.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "How can I maintain a healthy weight while quitting smoking?",
+      "answer": "To maintain a healthy weight, focus on eating a balanced diet, exercising regularly, and getting enough sleep. These lifestyle changes can help you manage your weight effectively.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "What should I focus on when trying to change my eating habits?",
+      "answer": "Focus on making sustainable lifestyle changes, rather than quick fixes. This includes eating a variety of fruits, vegetables, whole grains, lean protein, and healthy fats.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "What are some strategies to manage cravings?",
+      "answer": "Develop strategies for managing cravings, such as eating smaller, more frequent meals, and choosing healthy snacks. This can help you stay on track during your quit journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "How can I celebrate my successes while quitting?",
+      "answer": "Celebrate your successes with non-food rewards. This can help reinforce positive behavior and keep you motivated.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "What should I do if I experience setbacks?",
+      "answer": "Remember that setbacks are a normal part of the process. It's important to acknowledge them and continue focusing on your progress.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "How can I seek support while quitting smoking?",
+      "answer": "Join a support group, talk to your friends and family. Having a support system can make a significant difference in your quitting journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "What techniques can I use to manage stress while quitting?",
+      "answer": "Practice meditation, yoga, or other relaxation techniques. These can help you manage stress and stay focused on your goals.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:48.958880"
+    },
+    {
+      "question": "How can I track my progress while quitting smoking?",
+      "answer": "You can focus on your own progress and celebrate your own successes. Keeping a journal or using an app can help you monitor your journey.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:52.533706"
+    },
+    {
+      "question": "What should I prioritize while trying to quit smoking?",
+      "answer": "Your health and well-being are the most important things. Make sure to take care of yourself during this process.",
+      "source": "Smokefree - Challenges",
+      "source_url": "https://smokefree.gov/challenges-when-quitting",
+      "category": "nicotine_withdrawal",
+      "topic": "nicotine_withdrawal",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:10:52.533706"
+    }
+  ]
+}

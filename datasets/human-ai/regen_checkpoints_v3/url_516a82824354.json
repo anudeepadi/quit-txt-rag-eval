@@ -1,0 +1,129 @@
+{
+  "url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+  "completed_chunks": 3,
+  "total_chunks": 3,
+  "n_pairs": 12,
+  "pairs": [
+    {
+      "question": "Why is quitting smoking so important?",
+      "answer": "The US Surgeon General has said stopping smoking is 'the single most important step that people who smoke can take to enhance the length and quality of their lives.'",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:10.314006"
+    },
+    {
+      "question": "Is quitting smoking easy?",
+      "answer": "Quitting is hard. But with help, you can increase your chances of success.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:10.314006"
+    },
+    {
+      "question": "What resources can I find to help me quit smoking?",
+      "answer": "In this guide to quitting tobacco, you'll find the tips, tools, and resources to get started.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:10.314006"
+    },
+    {
+      "question": "Can I really increase my chances of quitting successfully?",
+      "answer": "Yes, with help, you can increase your chances of success.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:10.314006"
+    },
+    {
+      "question": "What should I know about tobacco products?",
+      "answer": "Get the facts about tobacco products. Find out how using tobacco affects your body, and learn more about the health benefits of quitting.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:10.314006"
+    },
+    {
+      "question": "What are the health benefits of quitting smoking?",
+      "answer": "Learn more about the health benefits of quitting. Quitting smoking can enhance the length and quality of your life.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:10.314006"
+    },
+    {
+      "question": "What are the best ways to quit smoking?",
+      "answer": "For most people, the best way to quit tobacco is a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:13.969916"
+    },
+    {
+      "question": "Is there a video that can help me quit smoking?",
+      "answer": "Yes, there is a short video that teaches 3 steps that can lead to quitting smoking for good.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:13.969916"
+    },
+    {
+      "question": "Does the quitting smoking video mention anything about lung cancer?",
+      "answer": "Yes, the how-to quit smoking video includes information about lung cancer screening with low-dose computed tomography (low-dose LDCT).",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:13.969916"
+    },
+    {
+      "question": "What are the health benefits of quitting smoking?",
+      "answer": "You can learn more about the health benefits of quitting by getting the facts about tobacco products.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:13.969916"
+    },
+    {
+      "question": "How important is social support when trying to quit smoking?",
+      "answer": "Studies show that people with strong social support are more likely to quit and stay quit.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:16.867797"
+    },
+    {
+      "question": "What can I do to help someone who is trying to quit smoking?",
+      "answer": "If someone you know is trying to quit smoking or other tobacco products, there are many things you can do to help.",
+      "source": "ACS - Guide to Quitting",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking.html",
+      "category": "quit_methods",
+      "topic": "quit_methods",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-04T23:25:16.867797"
+    }
+  ],
+  "updated_at": "2026-04-04T23:25:16.868049"
+}

@@ -1,0 +1,406 @@
+{
+  "url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+  "n_pairs": 40,
+  "pairs": [
+    {
+      "question": "What happens to my heart rate right after I quit smoking?",
+      "answer": "20 minutes after quitting, your heart rate drops to a normal level.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "How long after quitting does the carbon monoxide level in my blood return to normal?",
+      "answer": "12 to 24 hours after quitting, the carbon monoxide level in your blood drops to normal.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "When does my risk of having a heart attack start to decrease after quitting?",
+      "answer": "Your risk of having a heart attack begins to drop 2 weeks to 3 months after quitting.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "How long does it take for my lung function to start improving after I quit?",
+      "answer": "Your lung function begins to improve 2 weeks to 3 months after quitting.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "What happens to my risk of coronary heart disease one year after quitting?",
+      "answer": "1 year after quitting, your added risk of coronary heart disease is half that of someone who uses cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "How does quitting smoking affect my risk of having a stroke?",
+      "answer": "5 to 15 years after quitting, your risk of having a stroke is reduced to that of someone who does not smoke or use other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "What is the impact on my cancer risk 10 years after quitting smoking?",
+      "answer": "10 years after quitting, your risk of dying from lung cancer is about half that of someone who uses cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "What happens to my risk of coronary heart disease 15 years after quitting?",
+      "answer": "15 years after quitting, your risk of coronary heart disease is the same as that of someone who does not use cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:06.125203"
+    },
+    {
+      "question": "What happens to my risk of heart attack after I quit smoking?",
+      "answer": "The risk of heart attack is significantly reduced. One year after quitting, your added risk of coronary heart disease is half that of someone who uses cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "How does quitting smoking affect my cancer risk?",
+      "answer": "Your risk of getting cancer of the mouth, throat, or esophagus is half that of someone who uses cigarettes or other tobacco products. Additionally, your risk of dying from lung cancer is about half that of someone who uses cigarettes.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "What support do I need to quit smoking successfully?",
+      "answer": "Most people need a combination of medicine, a method to change personal habits, and emotional support. Joining a program like Freedom From Smoking\u00ae can help you start your smokefree future.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "What improvements can I expect in my lung function after quitting?",
+      "answer": "Your lung function begins to improve 2 weeks to 3 months after quitting. Additionally, 1 to 9 months after quitting, your coughing and shortness of breath decrease.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "How does quitting smoking affect my risk of bladder cancer?",
+      "answer": "Your risk of getting bladder cancer is half that of someone who uses cigarettes or other tobacco products. This reduction in risk is part of the overall health benefits of quitting smoking.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "What happens to my risk of coronary heart disease after 15 years of quitting?",
+      "answer": "Fifteen years after quitting, your risk of coronary heart disease is the same as that of someone who does not use cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "Does quitting smoking reduce my risk of cervical cancer?",
+      "answer": "Yes, your risk of getting cervical cancer or cancer of the larynx, kidney, or pancreas decreases after quitting smoking. This is part of the overall decrease in cancer risk associated with quitting.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "What is the importance of emotional support in quitting smoking?",
+      "answer": "Tobacco addiction is both mental and physical, which is why emotional support is crucial. Most people find that a combination of medicine, personal habit changes, and emotional support helps them quit successfully.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:17.404698"
+    },
+    {
+      "question": "What happens to my heart rate just after I quit smoking?",
+      "answer": "20 minutes after quitting, your heart rate drops to a normal level. This is one of the immediate benefits of quitting tobacco.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "How long after quitting does the carbon monoxide level in my blood return to normal?",
+      "answer": "12 to 24 hours after quitting, the carbon monoxide level in your blood drops to normal. This helps significantly reduce the risk of heart attack.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "When will I notice improvements in my lung function after quitting?",
+      "answer": "Your lung function begins to improve 2 weeks to 3 months after quitting. This is a key milestone in your recovery from tobacco use.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "How does quitting smoking affect my risk of stroke?",
+      "answer": "5 to 15 years after quitting, your risk of having a stroke is reduced to that of someone who does not smoke or use other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "What is my risk of dying from lung cancer 10 years after quitting?",
+      "answer": "10 years after quitting, your risk of dying from lung cancer is about half that of someone who uses cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "What happens to my risk of coronary heart disease after quitting for 1 year?",
+      "answer": "1 year after quitting, your added risk of coronary heart disease is half that of someone who uses cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "How does quitting smoking affect my risk of cancer in the mouth, throat, or esophagus?",
+      "answer": "5 to 15 years after quitting, your risk of getting cancer of the mouth, throat, or esophagus is half that of someone who uses cigarettes or other tobacco products.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "What do I need to successfully quit smoking?",
+      "answer": "Most people need a combination of medicine, a method to change personal habits, and emotional support to quit smoking successfully. Quitting tobacco isn't easy, but it can be done.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:27.095482"
+    },
+    {
+      "question": "What happens to my heart rate just after I quit smoking?",
+      "answer": "20 minutes after quitting, your heart rate drops to a normal level. This is one of the first benefits your body experiences after you stop smoking.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "How long after quitting will I notice improvements in my lung function?",
+      "answer": "Your lung function begins to improve within 2 weeks to 3 months after quitting. This improvement is a significant step towards better respiratory health.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "What is my risk of dying from lung cancer 10 years after quitting?",
+      "answer": "10 years after quitting, your risk of dying from lung cancer is about half that of someone who uses cigarettes or other tobacco products. This reduction highlights the long-term benefits of quitting.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "How does quitting affect my risk of bladder cancer?",
+      "answer": "10 years after quitting, your risk of getting bladder cancer is half that of someone who uses cigarettes or other tobacco products. This decrease is part of the overall reduction in cancer risk after quitting.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "What changes can I expect in my coughing and shortness of breath after quitting?",
+      "answer": "1 to 9 months after quitting, your coughing and shortness of breath decrease. This improvement is a sign that your lungs are starting to heal.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "What happens to my risk of heart attack after I quit smoking?",
+      "answer": "2 weeks to 3 months after quitting, your risk of having a heart attack begins to drop. This is an important step towards better cardiovascular health.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "How does quitting smoking affect my risk of cancer in the long term?",
+      "answer": "5 to 15 years after quitting, your risk of getting cancer of the mouth, throat, or esophagus is half that of someone who uses cigarettes or other tobacco products. This significant reduction shows the long-term health benefits of quitting.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "What support options are available for quitting smoking?",
+      "answer": "Joining Freedom From Smoking\u00ae can be beneficial. Tobacco addiction is both mental and physical, and most people need a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T21:54:37.873108"
+    },
+    {
+      "question": "What happens to my heart rate right after I quit smoking?",
+      "answer": "20 minutes after quitting, your heart rate drops to a normal level. This is one of the first benefits your body experiences after you stop smoking.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "How long does it take for carbon monoxide levels in my blood to return to normal after quitting?",
+      "answer": "The carbon monoxide level in your blood drops to normal within 12 to 24 hours after quitting. This is a significant step in your body's recovery process.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "When does my risk of having a heart attack start to decrease after quitting?",
+      "answer": "Your risk of having a heart attack begins to drop 2 weeks to 3 months after quitting. This reduction in risk is part of the healing process your body undergoes after you stop smoking.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "How long does my body continue to repair itself after I quit smoking?",
+      "answer": "Your body begins to repair the damage as soon as you quit and continues to repair itself for many years. This ongoing recovery highlights the long-term benefits of quitting smoking.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "What are some health benefits I can expect after quitting smoking?",
+      "answer": "You can see health benefits as soon as 20 minutes to 15 years after quitting. These benefits include improvements in heart rate, carbon monoxide levels, and reduced risk of heart attack.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "Is there a program I can join to help me quit smoking?",
+      "answer": "Yes, you can join Freedom From Smoking\u00ae. This program is designed to support you in your journey to quit smoking.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "What happens to my body 20 minutes after I quit smoking?",
+      "answer": "20 minutes after quitting, your heart rate drops to a normal level. This is an immediate positive change in your body.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    },
+    {
+      "question": "What is the timeframe for my carbon monoxide levels to normalize after quitting?",
+      "answer": "Your carbon monoxide level in your blood drops to normal within 12 to 24 hours after quitting. This is an important step in your recovery.",
+      "source": "ALA - Benefits of Quitting",
+      "source_url": "https://www.lung.org/quit-smoking/i-want-to-quit/benefits-of-quitting",
+      "category": "benefits",
+      "topic": "benefits",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:04:47.029124"
+    }
+  ]
+}

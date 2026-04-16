@@ -1,0 +1,86 @@
+{
+  "url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+  "n_pairs": 8,
+  "pairs": [
+    {
+      "question": "Why is quitting tobacco so difficult?",
+      "answer": "Quitting tobacco isn't easy, but it can be done. Tobacco addiction is both mental and physical.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "What do most people need to quit tobacco successfully?",
+      "answer": "Most people need a combination of medicine, a method to change personal habits, and emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "Can I find support for quitting tobacco?",
+      "answer": "Yes, you can find information and resources to help you quit tobacco. Learn more about making a plan, getting support, and staying quit for good.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "Is tobacco addiction only physical?",
+      "answer": "No, tobacco addiction is both mental and physical. This means that addressing both aspects is important for successful quitting.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "What should I focus on when trying to quit tobacco?",
+      "answer": "When trying to quit tobacco, focus on a combination of medicine, changing personal habits, and seeking emotional support.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "Are there resources available for quitting tobacco?",
+      "answer": "Yes, there are more resources and support available for quitting tobacco. You can learn more about how to quit using tobacco.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "What is the first step in quitting tobacco?",
+      "answer": "The first step in quitting tobacco is to recognize that it isn't easy, but it can be done. Understanding that tobacco addiction is both mental and physical is crucial.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    },
+    {
+      "question": "How can I stay quit for good?",
+      "answer": "To stay quit for good, it's important to learn more about making a plan, getting support, and addressing both the mental and physical aspects of tobacco addiction.",
+      "source": "ACS - Health Risks",
+      "source_url": "https://www.cancer.org/cancer/risk-prevention/tobacco/health-risks-of-tobacco.html",
+      "category": "health",
+      "topic": "health",
+      "generation_method": "autoresearch_exp5_two_pass",
+      "created_at": "2026-04-02T22:05:21.827429"
+    }
+  ]
+}

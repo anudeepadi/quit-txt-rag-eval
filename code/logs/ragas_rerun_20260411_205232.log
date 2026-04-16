@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/Users/vuc229/Documents/Projects/Active-Dev-Projects/ai-ml/gemini-protocol/code/scripts/ragas_evaluation.py", line 48, in <module>
+    import chromadb
+  File "/opt/anaconda3/lib/python3.12/site-packages/chromadb/__init__.py", line 3, in <module>
+    from chromadb.api.client import Client as ClientCreator
+  File "/opt/anaconda3/lib/python3.12/site-packages/chromadb/api/__init__.py", line 7, in <module>
+    from chromadb.api.models.Collection import Collection
+  File "/opt/anaconda3/lib/python3.12/site-packages/chromadb/api/models/Collection.py", line 7, in <module>
+    import chromadb.utils.embedding_functions as ef
+  File "/opt/anaconda3/lib/python3.12/site-packages/chromadb/utils/embedding_functions.py", line 6, in <module>
+    from chromadb.api.types import (
+  File "/opt/anaconda3/lib/python3.12/site-packages/chromadb/api/types.py", line 101, in <module>
+    ImageDType = Union[np.uint, np.int_, np.float_]
+                                         ^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/numpy/__init__.py", line 400, in __getattr__
+    raise AttributeError(
+AttributeError: `np.float_` was removed in the NumPy 2.0 release. Use `np.float64` instead.
