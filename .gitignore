@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 .claude/
+.venv/
+*.log
+# root-level artifact (old pre-autoresearch AI dataset; use datasets/human-ai/ instead)
+/ai_generated_qa.jsonl

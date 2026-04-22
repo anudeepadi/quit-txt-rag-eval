@@ -7,7 +7,9 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
 # --- Hypothesis (describe what you're testing) ---
 HYPOTHESIS = (
     "BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, "
-    "2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96."
+    "2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. "
+    "Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be "
+    "a judge-rubric ceiling, not a generator-side lever."
 )
 
 # --- Generation model ---

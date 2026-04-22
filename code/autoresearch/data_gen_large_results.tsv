@@ -1,0 +1,2 @@
+timestamp	hypothesis	gen_model	n_eval	n_source_chunks	n_pairs_generated	avg_answer_words	rag_faithfulness	qa_specificity	qa_tone	qa_groundedness	qa_clinical	combined_score	human_baseline	relative_pct	elapsed_s
+2026-04-20 14:16:59	Large-dataset scale of Exp5 winning config: two-pass fact extraction, gpt-4o-mini, temp=0.0, 2-3 sentences. N_EVAL=150, N_SOURCE_CHUNKS=20.	gpt-4o-mini	150	20	160	30.6	0.7187	0.7133	0.6667	0.9733	0.9333	0.7828	0.8607	83.5	873.8
