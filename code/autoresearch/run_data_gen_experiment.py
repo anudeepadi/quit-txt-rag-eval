@@ -43,6 +43,7 @@ from data_gen_prepare import (
 
 import chromadb
 from chromadb.config import Settings
+from evo_agent import Run
 from openai import OpenAI
 
 
@@ -84,7 +85,9 @@ def run_one_experiment() -> None:
     print("=" * 70)
 
     t0 = time.time()
-    oai_client = OpenAI(api_key=OPENAI_API_KEY)
+    run = Run()
+    # max_retries: transport errors (429/5xx) must not count as task failures
+    oai_client = OpenAI(api_key=OPENAI_API_KEY, max_retries=5)
     chroma_client = chromadb.Client(Settings(anonymized_telemetry=False))
 
     # ── 2. Load source content ────────────────────────────────
@@ -108,13 +111,15 @@ def run_one_experiment() -> None:
             max_tokens=gen_max_tokens,
         )
         print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
+        run.log(f"gen_chunk_{i:02d}", {"n_pairs": len(pairs),
+                                       "source_excerpt": chunk["content"][:300]})
         for p in pairs:
             p["_source_content"] = chunk["content"]  # for quality scoring
         all_generated.extend(pairs)
 
     if not all_generated:
         print("\n✗ NO PAIRS GENERATED — prompt may be broken. Fix and retry.")
-        return
+        raise RuntimeError("no QA pairs generated — generation prompt broken")
 
     n_pairs = len(all_generated)
     avg_answer_words = sum(len(p["answer"].split()) for p in all_generated) / n_pairs
@@ -133,6 +138,17 @@ def run_one_experiment() -> None:
         )
         for k in quality_scores:
             quality_scores[k].append(qs[k])
+        pair_avg = sum(qs.values()) / len(qs)
+        run.report(
+            f"qa_pair_{i:02d}",
+            score=pair_avg,
+            summary=(f"spec={qs['specificity']:.2f} tone={qs['conversational_tone']:.2f} "
+                     f"ground={qs['groundedness']:.2f} clin={qs['clinical_accuracy']:.2f}"),
+            question=pair["question"],
+            answer=pair["answer"][:500],
+            source_excerpt=pair.get("_source_content", "")[:300],
+            **qs,
+        )
         if i % 5 == 0:
             print(f"  [{i}/{len(sample)}] scored")
 
@@ -188,7 +204,18 @@ def run_one_experiment() -> None:
             score = score_faithfulness(oai_client, question, answer, contexts)
             rag_scores.append(score)
         else:
+            score = 0.0
             rag_scores.append(0.0)
+
+        run.report(
+            f"rag_q_{i:02d}",
+            score=score,
+            summary=f"faithfulness={score:.2f} ({len(answer.split())}w)",
+            failure_reason=None if answer else "empty_answer_after_retries",
+            question=question,
+            answer=answer[:500],
+            n_contexts=len(contexts),
+        )
 
         if i % 5 == 0:
             print(f"  [{i}/{len(test_questions)}] evaluated")
@@ -219,6 +246,24 @@ def run_one_experiment() -> None:
     verdict = "KEEP" if improved else "DISCARD"
 
     elapsed = time.time() - t0
+
+    # Combined score is a weighted composite, not a mean of task scores —
+    # pass it to finish() explicitly. run_meta trace carries the breakdown
+    # for future readers (orchestrator / verifier / ideator).
+    run.log("run_meta", {
+        "combined_score": combined,
+        "rag_faithfulness": avg_rag_faithfulness,
+        "qa_quality": avg_quality,
+        "human_baseline": human_baseline,
+        "relative_pct": relative_pct,
+        "n_pairs_generated": n_pairs,
+        "avg_answer_words": avg_answer_words,
+        "hypothesis": hypothesis,
+        "gen_model": gen_model,
+        "gen_temperature": gen_temp,
+        "qa_per_source": qa_per_source,
+    })
+    run.finish(score=combined)
 
     # ── 8. Log result ─────────────────────────────────────────
     log_result(
