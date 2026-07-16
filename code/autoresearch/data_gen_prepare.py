@@ -58,7 +58,7 @@ WEB_KB_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "web_scraped_qa.jsonl"
 TEST_SET_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "test_set_150q.xlsx"
 
 RESULTS_FILE = _AUTORESEARCH_DIR / "data_gen_results.tsv"
-N_EVAL = 20              # test questions per experiment
+N_EVAL = 150             # FULL test set (finalist validation run; iteration used 20)
 N_SOURCE_CHUNKS = 10**9  # all chunks (source parity with human arm; epoch 3)
 RANDOM_SEED = 42         # deterministic source selection
 
@@ -457,6 +457,8 @@ def score_human_baseline(
             scores.append(score)
         else:
             scores.append(0.0)
+        # Per-question human-arm scores for validation decomposition
+        print(f"  HUMAN_ARM q{len(scores):03d} {scores[-1]:.2f} {question[:60]}")
 
     return sum(scores) / len(scores) if scores else 0.0
 
