@@ -99,6 +99,7 @@ def run_one_experiment() -> None:
     print("\nGenerating QA pairs with agent's prompt...")
     all_generated = []
     chunk_sources = []  # track which source each pair came from
+    chunk_stats = []    # per-chunk generation counts, attached to run_meta trace
 
     for i, chunk in enumerate(source_chunks, 1):
         pairs = generate_qa_pairs(
@@ -111,8 +112,8 @@ def run_one_experiment() -> None:
             max_tokens=gen_max_tokens,
         )
         print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
-        run.log(f"gen_chunk_{i:02d}", {"n_pairs": len(pairs),
-                                       "source_excerpt": chunk["content"][:300]})
+        chunk_stats.append({"chunk": i, "n_pairs": len(pairs),
+                            "source_excerpt": chunk["content"][:300]})
         for p in pairs:
             p["_source_content"] = chunk["content"]  # for quality scoring
         all_generated.extend(pairs)
@@ -249,20 +250,25 @@ def run_one_experiment() -> None:
 
     # Combined score is a weighted composite, not a mean of task scores —
     # pass it to finish() explicitly. run_meta trace carries the breakdown
-    # for future readers (orchestrator / verifier / ideator).
-    run.log("run_meta", {
-        "combined_score": combined,
-        "rag_faithfulness": avg_rag_faithfulness,
-        "qa_quality": avg_quality,
-        "human_baseline": human_baseline,
-        "relative_pct": relative_pct,
-        "n_pairs_generated": n_pairs,
-        "avg_answer_words": avg_answer_words,
-        "hypothesis": hypothesis,
-        "gen_model": gen_model,
-        "gen_temperature": gen_temp,
-        "qa_per_source": qa_per_source,
-    })
+    # for future readers (orchestrator / verifier / ideator); report() is
+    # required because log()-only tasks are never flushed to trace files.
+    run.report(
+        "run_meta",
+        score=combined,
+        summary=(f"combined={combined:.4f} human={human_baseline:.4f} "
+                 f"relative={relative_pct:.1f}%"),
+        rag_faithfulness=avg_rag_faithfulness,
+        qa_quality=avg_quality,
+        human_baseline=human_baseline,
+        relative_pct=relative_pct,
+        n_pairs_generated=n_pairs,
+        avg_answer_words=avg_answer_words,
+        hypothesis=hypothesis,
+        gen_model=gen_model,
+        gen_temperature=gen_temp,
+        qa_per_source=qa_per_source,
+        chunk_stats=chunk_stats,
+    )
     run.finish(score=combined)
 
     # ── 8. Log result ─────────────────────────────────────────
