@@ -6,10 +6,15 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
 
 # --- Hypothesis (describe what you're testing) ---
 HYPOTHESIS = (
-    "BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, "
-    "2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. "
-    "Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be "
-    "a judge-rubric ceiling, not a generator-side lever."
+    "PASS-1 additive enumerated/secondary-fact extraction (epoch 3, parent "
+    "exp_0019). Current 'most important distinct facts' + 'no repeated themes' "
+    "skips list items and side-mentions that exist in-source: rag_q_05 (erectile, "
+    "buried in id00284's 9-condition list) and rag_q_08 (secondhand behavioral/ADHD "
+    "effects, id00853) both refuse because extraction never made them pairs. "
+    "Additive fix: each enumerated list item + each secondary side-mention is its "
+    "own extractable fact; Rule 2 softened from no-repeated-themes to no-duplicate-"
+    "facts. Funded with QA_PER_SOURCE 8->10 so headline extraction is not displaced. "
+    "Invention guard retained (must be literally in-source)."
 )
 
 # --- Generation model ---
@@ -19,7 +24,7 @@ GEN_MODEL = "gpt-4o-mini"
 # --- Generation parameters ---
 GEN_TEMPERATURE = 0.0       # maximum determinism — zero creative extrapolation
 GEN_MAX_TOKENS = 2500
-QA_PER_SOURCE = 8
+QA_PER_SOURCE = 10
 
 # --- Generation prompt ---
 # Must contain {n} placeholder for number of pairs to generate.
@@ -35,7 +40,17 @@ GEN_SYSTEM_PROMPT = (
     "PASS 1 — FACT EXTRACTION:\n"
     "First, read the source and mentally identify the {n} most important distinct "
     "facts, statistics, medication names, techniques, or clinical findings. Each "
-    "fact must be directly stated in the source text.\n\n"
+    "fact must be directly stated in the source text.\n"
+    "ALSO capture enumerated and secondary facts, not just headline ones:\n"
+    "- When a source sentence lists multiple conditions, effects, affected groups, "
+    "or items (e.g. a list of health conditions, several benefits, a set of "
+    "symptoms), treat EACH listed item as its own extractable fact worth a distinct "
+    "pair — do not collapse the list into one summary fact.\n"
+    "- A fact stated as a secondary or side mention inside an answer about a broader "
+    "topic is itself extractable, even when the broader topic is already covered by "
+    "another pair.\n"
+    "Every such fact must still be directly stated in the source text — never invent "
+    "or infer an item that is not literally present.\n\n"
     "PASS 2 — QA PAIR COMPOSITION:\n"
     "For each extracted fact, compose one question-answer pair:\n"
     "- Question: conversational, first-person, like texting a quit-smoking chatbot\n"
@@ -44,7 +59,10 @@ GEN_SYSTEM_PROMPT = (
     "the source. Do NOT paraphrase clinical terms or numbers.\n\n"
     "RULES:\n"
     "1. Every claim in every answer must trace to a specific sentence in the source.\n"
-    "2. Cover {n} DIFFERENT topics — no repeated themes.\n"
+    "2. Cover {n} DIFFERENT facts — no two pairs may state the same fact. Distinct "
+    "facts that fall under the same broad subject (e.g. two different conditions from "
+    "one health-effects list) are allowed and encouraged; only restating the same "
+    "fact is disallowed.\n"
     "3. No disclaimers, hedging, or generic advice unless the source says it.\n"
     "4. If the source doesn't contain {n} distinct facts, generate fewer pairs.\n\n"
     "Return a JSON object with key \"qa_pairs\" containing an array of objects, "
