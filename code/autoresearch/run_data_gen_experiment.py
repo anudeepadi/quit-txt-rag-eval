@@ -19,8 +19,10 @@ Usage:
 """
 
 import importlib
+import random
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 # Ensure imports work from project root
@@ -29,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from data_gen_prepare import (
     OPENAI_API_KEY,
+    RANDOM_SEED,
     build_collection,
     generate_qa_pairs,
     get_best_score,
@@ -101,8 +104,11 @@ def run_one_experiment() -> None:
     chunk_sources = []  # track which source each pair came from
     chunk_stats = []    # per-chunk generation counts, attached to run_meta trace
 
-    for i, chunk in enumerate(source_chunks, 1):
-        pairs = generate_qa_pairs(
+    # Chunks are independent — generate in parallel (444 chunks at full
+    # source parity would take ~45 min serially). Results are collected
+    # in chunk order so KB construction stays deterministic.
+    def _gen_for_chunk(chunk):
+        return generate_qa_pairs(
             oai_client=oai_client,
             source_content=chunk["content"],
             system_prompt=gen_prompt,
@@ -111,7 +117,13 @@ def run_one_experiment() -> None:
             temperature=gen_temp,
             max_tokens=gen_max_tokens,
         )
-        print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        per_chunk_pairs = list(pool.map(_gen_for_chunk, source_chunks))
+
+    for i, (chunk, pairs) in enumerate(zip(source_chunks, per_chunk_pairs), 1):
+        if i % 50 == 0 or i == len(source_chunks):
+            print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
         chunk_stats.append({"chunk": i, "n_pairs": len(pairs),
                             "source_excerpt": chunk["content"][:300]})
         for p in pairs:
@@ -130,8 +142,10 @@ def run_one_experiment() -> None:
     print("\nScoring QA pair quality (specificity, tone, groundedness, clinical)...")
     quality_scores = {"specificity": [], "conversational_tone": [], "groundedness": [], "clinical_accuracy": []}
 
-    # Score a sample (up to 15 pairs for speed)
-    sample = all_generated[:15]
+    # Score a seeded random sample of 15 (first-N sampling let weak pairs
+    # hide past the cutoff when pair counts grew — epoch-3 fix)
+    _rng = random.Random(RANDOM_SEED)
+    sample = _rng.sample(all_generated, min(15, len(all_generated)))
     for i, pair in enumerate(sample, 1):
         qs = score_qa_quality(
             oai_client, pair["question"], pair["answer"],

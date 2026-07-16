@@ -59,7 +59,7 @@ TEST_SET_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "test_set_150q.xlsx"
 
 RESULTS_FILE = _AUTORESEARCH_DIR / "data_gen_results.tsv"
 N_EVAL = 20              # test questions per experiment
-N_SOURCE_CHUNKS = 5      # source content chunks to generate from
+N_SOURCE_CHUNKS = 10**9  # all chunks (source parity with human arm; epoch 3)
 RANDOM_SEED = 42         # deterministic source selection
 
 # ---------------------------------------------------------------------------
