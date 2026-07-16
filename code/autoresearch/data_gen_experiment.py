@@ -6,6 +6,15 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
 
 # --- Hypothesis (describe what you're testing) ---
 HYPOTHESIS = (
+    "Exp18 (verified-8 x prove-by-quote, parent exp_0013): same prove-by-quote gate "
+    "as exp_0017 but emit ceiling {n}=8 (QA_PER_SOURCE=8) not 10. exp_0016 (self-"
+    "audit) and exp_0017 (prove-by-quote) both left the pre-existing teen-initiation "
+    "invention (rag_q_11) standing at count=10. This tests the mechanism: if a lower "
+    "emit target finally drops it, invention is COUNT-PRESSURE-driven; if rag_q_11 "
+    "survives at 8, it is CONFIDENCE-driven and unfixable by any GEN prompt. CLEAN "
+    "SIGNAL = rag_q_11 invention survival; combined/faith are RETRIEVAL-CONFOUNDED "
+    "(count=8 x top_k=6 = exp_0012 which regressed faith 0.34->0.305), so do NOT read "
+    "combined as the result. top_k=6/3-pass register UNCHANGED. Inherited note: "
     "Exp13 (retrieval-depth x breadth combo, parent exp_0009): QA_PER_SOURCE 8->10 "
     "(50 pairs) + RAG_TOP_K 3->6, both applied symmetrically. Tests whether deeper "
     "retrieval rescues the headline pair that 50-pair crowding displaced out of top-3 "
@@ -28,8 +37,8 @@ GEN_MODEL = "gpt-4o-mini"
 
 # --- Generation parameters ---
 GEN_TEMPERATURE = 0.0       # maximum determinism — zero creative extrapolation
-GEN_MAX_TOKENS = 2500
-QA_PER_SOURCE = 10
+GEN_MAX_TOKENS = 3600       # room for the candidate pool + PASS-4 verbatim-quote gate
+QA_PER_SOURCE = 8
 
 # --- Generation prompt ---
 # Must contain {n} placeholder for number of pairs to generate.
@@ -37,16 +46,21 @@ QA_PER_SOURCE = 10
 GEN_SYSTEM_PROMPT = (
     "You are a smoking cessation counseling expert generating training data "
     "for a medical AI chatbot used in a healthcare setting.\n\n"
-    "TASK: From the provided source content, generate exactly {n} question-answer "
-    "pairs using a THREE-PASS approach.\n\n"
+    "TASK: From the provided source content, produce AT MOST {n} question-answer "
+    "pairs using a FOUR-PASS approach. {n} is a CEILING, never a quota: a pair is "
+    "emitted ONLY if you can point to the exact words in the source that state it. "
+    "Emitting 7 fully-sourced pairs is BETTER than 10 that include any unsourced "
+    "claim.\n\n"
     "CRITICAL CONSTRAINT — HEALTHCARE SAFETY:\n"
     "This is a health domain. Do NOT add, infer, or invent FACTS beyond what the "
     "source explicitly states. Numbers, medication names, dosages, timeframes, and "
     "percentages are LOCKED — they must appear exactly as written in the source.\n\n"
-    "PASS 1 — FACT EXTRACTION:\n"
-    "First, read the source and mentally identify the {n} most important distinct "
-    "facts, statistics, medication names, techniques, or clinical findings. Each "
-    "fact must be directly stated in the source text.\n\n"
+    "PASS 1 — FACT EXTRACTION (build a candidate pool):\n"
+    "First, read the source and mentally identify a pool of up to {n}+4 candidate "
+    "facts, statistics, medication names, techniques, or clinical findings. For each "
+    "candidate, note the exact phrase in the source that states it. Some candidates "
+    "will be weaker than others — that is expected; PASS 4 will drop the ones you "
+    "cannot fully source, so you are NOT committed to keeping all of them.\n\n"
     "PASS 2 — GROUNDED DRAFT (internal scaffolding, NOT in the output):\n"
     "For each extracted fact, mentally write one plain clinical sentence that "
     "captures the fact with every number, dose, timeframe, and percentage from the "
@@ -82,6 +96,27 @@ GEN_SYSTEM_PROMPT = (
     "people to quit, or is that just me?' / A \"The share of people quitting because "
     "of cost jumped from 38% in 2007 to 57% by 2019, and it's been the top reason "
     "since 2013 — so you're definitely not the only one feeling that.\"\n\n"
+    "PASS 4 — PROVE-BY-QUOTE GATE (this decides what is emitted):\n"
+    "Register translation (PASS 3) may reword, but it must NOT have introduced "
+    "anything the source does not literally contain. Audit each candidate ONE AT A "
+    "TIME against this single test:\n"
+    "  Can you copy a VERBATIM contiguous span of words FROM THE SOURCE that states "
+    "the answer's core claim (its specific number, name, finding, or statement)?\n"
+    "- If YES: keep the pair. The register wording can differ, but the fact it "
+    "carries must be present word-for-word in that quoted span.\n"
+    "- If NO — because the answer rests on general knowledge, common sense, medical "
+    "training, or plausible inference rather than words ACTUALLY PRESENT in this "
+    "source — the pair is UNVERIFIED. DROP it. Do not soften it into a partial "
+    "answer; drop the whole pair.\n"
+    "FORBIDDEN even when factually true in the real world: any claim you cannot quote "
+    "from THIS source. Watch especially for these invention patterns and DROP them "
+    "unless the source literally spells them out: answering a 'why does X happen' "
+    "question with a plausible list of causes, reasons, or motivations the source "
+    "never states; giving generic best-practice or 'how to' advice; asserting a "
+    "well-known medical fact that this particular source simply does not mention.\n"
+    "Emit only the pairs that pass this gate, up to the {n} ceiling. If fewer than "
+    "{n} pass, emit only those — returning 6-8 fully-quoted pairs is the correct "
+    "outcome; NEVER add an unquotable pair to reach {n}.\n\n"
     "RULES:\n"
     "1. Every fact in every answer must trace to a specific sentence in the source; "
     "only the wording is translated, never the clinical content.\n"
@@ -89,7 +124,8 @@ GEN_SYSTEM_PROMPT = (
     "fact, reassurance, or claim the source does not support.\n"
     "3. Cover {n} DIFFERENT topics — no repeated themes.\n"
     "4. No disclaimers, hedging, or generic advice unless the source says it.\n"
-    "5. If the source doesn't contain {n} distinct facts, generate fewer pairs.\n\n"
+    "5. Emit only pairs that pass the PASS-4 prove-by-quote gate. Fewer fully-sourced "
+    "pairs beats {n} padded with an unquotable one. Never invent to reach the count.\n\n"
     "Return a JSON object with key \"qa_pairs\" containing an array of objects, "
     "each with \"question\" (string) and \"answer\" (string) fields only."
 )
