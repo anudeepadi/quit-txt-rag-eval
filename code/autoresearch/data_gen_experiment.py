@@ -6,6 +6,10 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
 
 # --- Hypothesis (describe what you're testing) ---
 HYPOTHESIS = (
+    "Exp15 (retrieval-depth refinement, parent exp_0013): RAG_TOP_K 6->5, keep "
+    "QA_PER_SOURCE=10. Cuts one context of top_k=6 dilution to try to recover "
+    "exp_0013's rag_q_01/12 losses while retaining the grounded savings-pair "
+    "conversion. Inherited note: "
     "Exp13 (retrieval-depth x breadth combo, parent exp_0009): QA_PER_SOURCE 8->10 "
     "(50 pairs) + RAG_TOP_K 3->6, both applied symmetrically. Tests whether deeper "
     "retrieval rescues the headline pair that 50-pair crowding displaced out of top-3 "
@@ -106,4 +110,4 @@ RAG_TEMPLATE = (
 )
 RAG_TEMPERATURE = 0.3
 RAG_MAX_TOKENS = 150
-RAG_TOP_K = 6
+RAG_TOP_K = 5
