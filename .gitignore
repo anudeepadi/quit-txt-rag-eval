@@ -7,3 +7,6 @@ __pycache__/
 *.log
 # root-level artifact (old pre-autoresearch AI dataset; use datasets/human-ai/ instead)
 /ai_generated_qa.jsonl
+
+# test-set data is supplied separately (code-only repo); never commit it
+code/data/test_set/*.xlsx

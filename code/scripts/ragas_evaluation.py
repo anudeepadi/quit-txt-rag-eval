@@ -16,6 +16,7 @@ Usage:
 import argparse
 import json
 import os
+import subprocess
 import sys
 import time
 from datetime import datetime
@@ -58,6 +59,12 @@ from ragas.metrics.collections import (
     Faithfulness,
 )
 
+from shared.answer_quality import (
+    RefusalKind,
+    classify_refusal,
+    is_refusal,
+    score_completeness,
+)
 from shared.data_loader import load_ai_generated, load_human_curated, load_web_scraped
 from shared.ragas_utils import (
     compute_faithfulness_stats,
@@ -280,26 +287,49 @@ def generate_rag_answer(
 # ---------------------------------------------------------------------------
 
 
-def _safe_batch_score(metric, inputs: list[dict]) -> list[float]:
-    """Call metric.batch_score() and extract float values, returning NaN on error.
+_WORKER_PATH = Path(__file__).parent / "_ragas_score_worker.py"
+_WORKER_TIMEOUT = 1800  # seconds per metric; a wedged worker is killed and retried
+
+
+def _safe_batch_score(metric_name: str, inputs: list[dict]) -> list[float]:
+    """Score one metric in an isolated subprocess with a hard timeout.
+
+    ragas 0.4.3's async scoring wedges its connection pool in long-lived
+    processes on Python 3.13 (frozen CPU, idle sockets — reproducibly in
+    the embeddings-backed metrics). Process isolation makes the OS the
+    cleanup mechanism: a hung metric is killed after _WORKER_TIMEOUT and
+    retried once, instead of hanging the whole evaluation.
 
     Args:
-        metric: A ragas.metrics.collections metric instance.
+        metric_name: One of faithfulness, answer_relevancy,
+            context_precision, context_recall.
         inputs: List of dicts matching the metric's ascore() kwargs.
 
     Returns:
         List of float scores (NaN where scoring failed).
     """
     nan = float("nan")
-    try:
-        results = metric.batch_score(inputs)
-        return [
-            float(r.value) if r is not None and r.value is not None else nan
-            for r in results
-        ]
-    except Exception as e:
-        print(f"    [WARN] batch_score error for {type(metric).__name__}: {e}")
-        return [nan] * len(inputs)
+    payload = json.dumps({"metric": metric_name, "model": MODEL_NAME, "inputs": inputs})
+    for attempt in (1, 2):
+        try:
+            # stderr inherits the parent's stream so per-chunk progress
+            # stays visible in the run log; only stdout (scores) is captured.
+            proc = subprocess.run(
+                [sys.executable, "-u", str(_WORKER_PATH)],
+                input=payload, stdout=subprocess.PIPE, text=True,
+                timeout=_WORKER_TIMEOUT,
+            )
+            if proc.returncode == 0:
+                return [nan if v is None else float(v) for v in json.loads(proc.stdout)]
+            print(f"    [WARN] {metric_name} worker exited {proc.returncode} "
+                  f"(attempt {attempt})", flush=True)
+        except subprocess.TimeoutExpired:
+            print(f"    [WARN] {metric_name} worker killed after {_WORKER_TIMEOUT}s "
+                  f"(attempt {attempt})", flush=True)
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"    [WARN] {metric_name} worker output unparseable "
+                  f"(attempt {attempt}): {e}", flush=True)
+    return [nan] * len(inputs)
 
 
 def run_ragas_evaluation(
@@ -327,14 +357,8 @@ def run_ragas_evaluation(
     nan = float("nan")
     n = len(samples)
 
-    # RAGAS collections metrics require AsyncOpenAI for their async scoring pipeline.
-    # max_tokens=8192 prevents truncation in Faithfulness's verbose statement-by-statement JSON.
-    async_oai = AsyncOpenAI(api_key=_OPENAI_API_KEY)
-    ragas_llm = llm_factory(MODEL_NAME, provider="openai", client=async_oai, max_tokens=8192)
-    ragas_emb = RagasOpenAIEmbeddings(client=async_oai)
-
-    faith_metric = Faithfulness(llm=ragas_llm)
-    relevancy_metric = AnswerRelevancy(llm=ragas_llm, embeddings=ragas_emb)
+    # Metrics are scored in isolated subprocesses (see _safe_batch_score);
+    # this function only assembles per-metric inputs and sequences the calls.
 
     # --- Build per-metric input dicts ---
     # Faithfulness: user_input, response, retrieved_contexts (non-empty required)
@@ -357,13 +381,13 @@ def run_ragas_evaluation(
     _METRIC_COOLDOWN = 65  # seconds
 
     print("    Scoring: faithfulness...")
-    faith_scores = _safe_batch_score(faith_metric, faith_inputs)
+    faith_scores = _safe_batch_score("faithfulness", faith_inputs)
 
     print(f"    [rate-limit cooldown] sleeping {_METRIC_COOLDOWN}s...")
     time.sleep(_METRIC_COOLDOWN)
 
     print("    Scoring: answer_relevancy...")
-    relevancy_scores = _safe_batch_score(relevancy_metric, relevancy_inputs)
+    relevancy_scores = _safe_batch_score("answer_relevancy", relevancy_inputs)
 
     scores: dict[str, list[float]] = {
         "faithfulness": faith_scores,
@@ -373,8 +397,6 @@ def run_ragas_evaluation(
     }
 
     if not is_baseline:
-        precision_metric = ContextPrecision(llm=ragas_llm)
-        recall_metric = ContextRecall(llm=ragas_llm)
 
         # ContextPrecision: user_input, reference, retrieved_contexts
         precision_inputs = [
@@ -398,14 +420,76 @@ def run_ragas_evaluation(
         print(f"    [rate-limit cooldown] sleeping {_METRIC_COOLDOWN}s...")
         time.sleep(_METRIC_COOLDOWN)
         print("    Scoring: context_precision...")
-        scores["context_precision"] = _safe_batch_score(precision_metric, precision_inputs)
+        scores["context_precision"] = _safe_batch_score("context_precision", precision_inputs)
 
         print(f"    [rate-limit cooldown] sleeping {_METRIC_COOLDOWN}s...")
         time.sleep(_METRIC_COOLDOWN)
         print("    Scoring: context_recall...")
-        scores["context_recall"] = _safe_batch_score(recall_metric, recall_inputs)
+        scores["context_recall"] = _safe_batch_score("context_recall", recall_inputs)
 
     return scores
+
+
+def score_answer_quality(
+    samples: list[SingleTurnSample],
+    oai_client: OpenAI,
+    config_name: str,
+) -> dict[str, list[float]]:
+    """Completeness and refusal metrics, which RAGAS does not provide.
+
+    Refusals are the reason this exists. A refusal makes few context-grounded
+    claims, so faithfulness scores it as though it were a hallucination, even
+    though declining is often the correct clinical behaviour. Measured on real
+    runs, refusals score ~0.46-0.55 faithfulness against ~0.82-0.89 for
+    substantive answers, and refusal rates differ sharply between knowledge
+    bases (21% for the human and AI KBs, 36% for the web-source KB). Left
+    unseparated, that difference is silently read as a hallucination gap.
+
+    Returns per-question lists so the existing stats machinery applies:
+      answer_completeness — coverage of the reference answer's key points
+      is_refusal          — 1.0 refusal, 0.0 substantive
+      appropriate_refusal — 1.0 appropriate, 0.0 inappropriate, NaN if not a refusal
+    """
+    nan = float("nan")
+    print(f"\n  Scoring answer quality for: {config_name}")
+
+    completeness: list[float] = []
+    refusal_flags: list[float] = []
+    appropriate: list[float] = []
+
+    for i, s in enumerate(samples):
+        answer = s.response or ""
+        contexts = list(s.retrieved_contexts or [])
+
+        refused = is_refusal(answer)
+        refusal_flags.append(1.0 if refused else 0.0)
+
+        if refused:
+            verdict = classify_refusal(oai_client, s.user_input, answer, contexts)
+            appropriate.append(1.0 if verdict.kind is RefusalKind.APPROPRIATE else 0.0)
+            # A refusal has nothing to be complete about; NaN keeps it out of
+            # the completeness mean rather than dragging it down with a zero.
+            completeness.append(nan)
+        else:
+            appropriate.append(nan)
+            completeness.append(
+                score_completeness(oai_client, s.user_input, answer, s.reference or "")
+            )
+
+        if (i + 1) % 25 == 0:
+            print(f"    {i + 1}/{len(samples)} scored", flush=True)
+        time.sleep(RATE_LIMIT_SLEEP / 2)
+
+    n_ref = int(sum(refusal_flags))
+    n_ok = int(sum(a for a in appropriate if a == a))
+    print(f"    refusals: {n_ref}/{len(samples)} ({n_ref / len(samples):.0%}), "
+          f"appropriate: {n_ok}/{n_ref}" if n_ref else "    refusals: 0")
+
+    return {
+        "answer_completeness": completeness,
+        "is_refusal": refusal_flags,
+        "appropriate_refusal": appropriate,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -413,11 +497,17 @@ def run_ragas_evaluation(
 # ---------------------------------------------------------------------------
 
 
+# Split of the currently running evaluation. Folded into checkpoint filenames
+# so a `test`-split run never resumes from a `full`-split cache (they answer
+# different question sets, so a shared cache would misalign scores).
+_ACTIVE_SPLIT = "test"
+
+
 def _checkpoint_path(config: str, n: Optional[int], concise: bool = False) -> Path:
-    """Return checkpoint file path for a given config and question cap."""
+    """Return checkpoint file path for a given config, split, and question cap."""
     label = str(n) if n is not None else "all"
     prefix = "checkpoint_concise" if concise else "checkpoint"
-    return RESULTS_DIR / f"{prefix}_{config}_{label}.jsonl"
+    return RESULTS_DIR / f"{prefix}_{_ACTIVE_SPLIT}_{config}_{label}.jsonl"
 
 
 def _load_checkpoint(config: str, n: Optional[int], concise: bool = False) -> list[dict]:
@@ -428,22 +518,33 @@ def _load_checkpoint(config: str, n: Optional[int], concise: bool = False) -> li
         n: The max_questions cap used for this run.
         concise: Whether to use concise checkpoint prefix.
 
+    Records are deduplicated on q_idx, last write winning, and returned in
+    q_idx order. The file is append-only, so an interrupted run that is later
+    resumed appends a second record for questions it had already answered:
+    one observed file held 104 rows for a 100-question run, with q_idx 0-3
+    duplicated. Any consumer that trusted file order would then misalign
+    answers against the per-question score arrays.
+
     Returns:
-        List of checkpoint record dicts, one per completed question.
+        List of checkpoint record dicts, one per completed question, q_idx-ordered.
     """
     path = _checkpoint_path(config, n, concise=concise)
     if not path.exists():
         return []
-    records = []
+    by_idx: dict[int, dict] = {}
     with open(path, encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if line:
                 try:
-                    records.append(json.loads(line))
+                    record = json.loads(line)
                 except json.JSONDecodeError:
-                    pass
-    return records
+                    continue
+                try:
+                    by_idx[int(record["q_idx"])] = record
+                except (KeyError, TypeError, ValueError):
+                    continue
+    return [by_idx[k] for k in sorted(by_idx)]
 
 
 def _append_checkpoint(config: str, n: Optional[int], record: dict, concise: bool = False) -> None:
@@ -471,33 +572,53 @@ def run_evaluation(
     max_questions: int | None,
     resume: bool = False,
     concise: bool = False,
+    split: str = "test",
 ) -> dict:
     """Run the full evaluation pipeline.
 
     Args:
         configs: Subset of ['baseline', 'ai_rag', 'human_rag', 'web_rag'] to run.
-        max_questions: Optional cap on test questions (None = all 127).
+        max_questions: Optional cap on test questions (None = the whole split).
         resume: If True, load existing per-config checkpoints and skip
                 already-answered questions.
         concise: If True, use strict concise prompts and lower max_tokens
                  to reduce response verbosity and improve faithfulness.
+        split: Which question set to report on:
+               'test' (default) = the 77 frozen held-out questions, none of
+                   which the optimization loop ever saw. This is the number to
+                   report; the loop-seen questions are excluded by construction.
+               'dev'  = the 50 optimization-visible questions (diagnostics only).
+               'full' = all 127 clean questions, including the 16 loop-seen ones.
+                   Contaminated; only for reproducing pre-freeze results.
 
     Returns:
         Full results dict for JSON output.
     """
-    n_cap = max_questions or 127
+    global _ACTIVE_SPLIT
+    _ACTIVE_SPLIT = split
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     mode_label = "CONCISE" if concise else "VERBOSE"
 
+    # --- Load test set for the requested split ---
+    if split == "full":
+        test_rows = load_test_set(TEST_SET_PATH, max_rows=max_questions)
+        split_note = f"all {len(test_rows)} clean questions (CONTAMINATED: includes 16 loop-seen)"
+    else:
+        from shared.question_split import load_dev_questions, load_test_questions_frozen
+
+        questions = load_dev_questions() if split == "dev" else load_test_questions_frozen()
+        if max_questions is not None:
+            questions = questions[:max_questions]
+        test_rows = [{"question": q.question, "ground_truth": q.ground_truth} for q in questions]
+        split_note = f"{len(test_rows)} {split.upper()} questions (frozen split)"
+
+    n_cap = len(test_rows)
+
     print("=" * 70)
     print("RAGAS EVALUATION: AI-Generated vs Human-Curated RAG")
-    print(f"Configs: {configs}  |  Questions: {n_cap}  |  Mode: {mode_label}  |  Resume: {resume}")
+    print(f"Configs: {configs}  |  Split: {split} ({n_cap}q)  |  Mode: {mode_label}  |  Resume: {resume}")
     print("=" * 70)
-
-    # --- Load test set ---
-    print(f"\nLoading test set from {TEST_SET_PATH.name}...")
-    test_rows = load_test_set(TEST_SET_PATH, max_rows=max_questions)
-    print(f"  Loaded {len(test_rows)} questions")
+    print(f"\nTest questions: {split_note}")
 
     # --- Load RAG datasets (only what's needed) ---
     print("\nLoading RAG datasets...")
@@ -664,6 +785,7 @@ def run_evaluation(
             time.sleep(_INTER_CONFIG_COOLDOWN)
         is_baseline = config == "baseline"
         all_scores[config] = run_ragas_evaluation(samples, config, is_baseline)
+        all_scores[config].update(score_answer_quality(samples, oai_client, config))
 
     # --- Compute faithfulness stats ---
     config_stats: dict[str, dict] = {}
@@ -709,6 +831,7 @@ def run_evaluation(
             "human_dataset_size": len(human_data) if human_data else None,
             "top_k": TOP_K,
             "ragas_metrics": ["faithfulness", "answer_relevancy", "context_precision", "context_recall"],
+            "answer_quality_metrics": ["answer_completeness", "is_refusal", "appropriate_refusal"],
             "concise_mode": concise,
         },
         "faithfulness_stats": config_stats,
@@ -772,6 +895,14 @@ def _parse_args() -> argparse.Namespace:
         default=False,
         help="Use strict concise prompts (2-3 sentences, grounded only) to reduce verbosity",
     )
+    parser.add_argument(
+        "--split",
+        choices=["test", "dev", "full"],
+        default="test",
+        help="Question set: 'test' (77 frozen held-out, default, report this), "
+             "'dev' (50 loop-visible, diagnostics), "
+             "'full' (all 127, contaminated, pre-freeze reproduction only)",
+    )
     return parser.parse_args()
 
 
@@ -782,4 +913,5 @@ if __name__ == "__main__":
         max_questions=args.max_questions,
         resume=args.resume,
         concise=args.concise,
+        split=args.split,
     )

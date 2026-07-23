@@ -1,0 +1,21 @@
+{
+  "source_file": "test_set_150q.xlsx",
+  "n_clean": 127,
+  "dev": {
+    "n": 50,
+    "range": [
+      0,
+      50
+    ],
+    "sha256_16": "a6e045dc9f0957d9"
+  },
+  "test": {
+    "n": 77,
+    "range": [
+      50,
+      127
+    ],
+    "sha256_16": "8666ccf57f5b035f"
+  },
+  "note": "DEV is optimization-visible. TEST is frozen. The 16 questions burned by the pre-split evo loop fall inside DEV by construction."
+}
