@@ -19,9 +19,15 @@ Usage:
 """
 
 import importlib
+import os
 import sys
 import time
 from pathlib import Path
+
+# Mark this process as an optimization run BEFORE any project import. Anything
+# that reaches for the frozen test questions from here raises TestSetLeakError
+# instead of silently contaminating the benchmark (shared.question_split).
+os.environ["EVO_OPTIMIZING"] = "1"
 
 # Ensure imports work from project root
 sys.path.insert(0, str(Path(__file__).parent.parent))

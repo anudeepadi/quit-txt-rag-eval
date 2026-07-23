@@ -1,6 +1,7 @@
 """Data loading utilities for QA datasets."""
 
 import json
+import os
 from pathlib import Path
 
 # Default data directory
@@ -54,6 +55,9 @@ def load_ai_generated(data_dir: Path | None = None) -> list[dict]:
     Returns:
         List of QA pairs with 'question' and 'answer' keys
     """
+    env_path = os.getenv("AI_QA_JSONL")
+    if env_path:
+        return load_qa_jsonl(Path(env_path))
     data_dir = data_dir or DATA_DIR
     jsonl_path = data_dir / "ai_generated" / "ai_generated_qa.jsonl"
     if jsonl_path.exists():

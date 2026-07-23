@@ -1,29 +1,28 @@
-fastapi
-uvicorn
-streamlit
-plotly
-pandas
-google-generativeai
-python-dotenv
-pydantic
-requests
-python-multipart
-pinecone
-sentence-transformers
-openai
-anthropic
-google-cloud-aiplatform
-google-cloud-discoveryengine
-nltk
-rouge-score
-sacrebleu
-scipy
-bert-score
-torch
-chromadb>=0.4.0
-ragas>=0.4.0
-datasets>=2.0.0
-langchain-openai>=0.1.0
-langchain>=0.2.0
-openpyxl>=3.1.0
-numpy
+# QuitTxt RAG evaluation + data-generation autoresearch.
+# Pinned to the versions the results were produced with. Python 3.13.
+#
+# ragas is pinned hard: 0.4.3's async scoring wedges its connection pool in a
+# long-lived process on Python 3.13, which is why scoring runs in an isolated
+# subprocess worker (code/scripts/_ragas_score_worker.py) and telemetry is
+# disabled via RAGAS_DO_NOT_TRACK. A different ragas will hit that wedge or
+# change the metric APIs.
+
+# --- Core evaluation pipeline ---
+ragas==0.4.3
+chromadb==1.5.1
+openai==2.21.0
+openpyxl==3.1.5          # reads the 150-question test set
+scipy==1.17.0            # non-inferiority / TOST statistics
+
+# --- ragas runtime dependencies (pinned for reproducibility) ---
+instructor==1.14.5
+tiktoken==0.12.0
+pydantic==2.13.4
+numpy==2.4.2
+
+# --- web-source corpus builder (build_web_dataset.py) ---
+requests==2.32.5
+beautifulsoup4==4.14.3
+
+# --- config ---
+python-dotenv==1.2.1

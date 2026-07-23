@@ -54,10 +54,14 @@ if not OPENAI_API_KEY:
 HUMAN_KB_PATH = _PROJECT_ROOT / "datasets" / "human-rag" / "human_curated_qa.jsonl"
 AI_KB_PATH = _PROJECT_ROOT / "datasets" / "human-ai" / "ai_generated_qa.jsonl"
 WEB_KB_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "web_scraped_qa.jsonl"
+WEB_SOURCE_CORPUS_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "web_source_documents.jsonl"
 TEST_SET_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "test_set_150q.xlsx"
 
 RESULTS_FILE = _AUTORESEARCH_DIR / "data_gen_results.tsv"
-N_EVAL = 20              # test questions per experiment
+# Superseded by the dev/test freeze: the loop now scores against the full DEV
+# split (shared.question_split.load_dev_questions), not a fixed 20-row slice of
+# the test sheet. Kept only so older result rows remain interpretable.
+N_EVAL = 20
 N_SOURCE_CHUNKS = 5      # source content chunks to generate from
 RANDOM_SEED = 42         # deterministic source selection
 
@@ -88,30 +92,40 @@ def load_human_kb() -> list[dict]:
     return load_jsonl(HUMAN_KB_PATH)
 
 
-def load_test_questions(max_rows: int = N_EVAL) -> list[dict]:
-    """Load test questions from the 150q Excel test set."""
-    try:
-        import openpyxl
-        wb = openpyxl.load_workbook(TEST_SET_PATH, read_only=True)
-        ws = wb.active
-        rows = list(ws.iter_rows(min_row=2, values_only=True))
-        wb.close()
+def load_test_questions(max_rows: int | None = None) -> list[dict]:
+    """Load the DEV questions the optimization loop is allowed to score against.
 
-        questions = []
-        for row in rows[:max_rows]:
-            if row and row[0]:
-                q = str(row[0]).strip()
-                # Try to get reference answer from column B
-                ref = str(row[1]).strip() if len(row) > 1 and row[1] else ""
-                if q:
-                    questions.append({"question": q, "reference_answer": ref})
-        return questions
-    except ImportError:
-        # Fallback: hardcoded subset of test questions
-        return _FALLBACK_QUESTIONS[:max_rows]
+    Previously this read ``rows[:20]`` straight off the 150-question sheet, so
+    every experiment was scored on the same 20 questions that later appeared in
+    the reported test set (16 of them survived clinical filtering into the
+    evaluated 100). That made the headline number partly a measure of fit to
+    those items. See ``shared.question_split`` for the freeze.
+
+    The dev set is fixed rather than resampled per experiment: KEEP/DISCARD
+    compares scores across experiments, so the question set must be constant or
+    the comparison is noise.
+
+    Args:
+        max_rows: Optionally cap the dev questions used. Defaults to all of them.
+
+    Returns:
+        Dicts with 'question' and 'reference_answer', matching the previous shape.
+    """
+    sys.path.insert(0, str(_CODE_ROOT))
+    from shared.question_split import load_dev_questions
+
+    dev = load_dev_questions()
+    if max_rows is not None:
+        dev = dev[:max_rows]
+    return [
+        {"question": q.question, "reference_answer": q.ground_truth}
+        for q in dev
+    ]
 
 
-# Fallback test questions if openpyxl isn't available
+# Retained for reference only. Deliberately NOT used as a fallback: silently
+# swapping in a different question set would make scores incomparable across
+# experiments, and these paraphrase real test items.
 _FALLBACK_QUESTIONS = [
     {"question": "What medications can help me quit smoking?", "reference_answer": ""},
     {"question": "How do I deal with nicotine withdrawal symptoms?", "reference_answer": ""},
@@ -171,32 +185,29 @@ def get_source_content_from_human_kb(n_chunks: int = N_SOURCE_CHUNKS) -> list[di
     return selected
 
 
-def get_source_content_from_web() -> list[dict]:
-    """Load existing web-scraped content as source material.
+def get_source_content_from_web(n_chunks: int = N_SOURCE_CHUNKS) -> list[dict]:
+    """Sample persisted primary web-page text for non-circular generation.
 
-    Uses the web-scraped QA pairs as proxy source documents.
+    The corpus is created by ``build_web_dataset.py --source-only``.  We do
+    not use the earlier LLM-generated web Q&A pairs here: doing so would make
+    this arm a rephrasing experiment rather than web-source generation.
     """
-    web_pairs = load_jsonl(WEB_KB_PATH)
-    random.seed(RANDOM_SEED)
-
-    # Group by source URL
-    by_url: dict[str, list[dict]] = {}
-    for p in web_pairs:
-        url = p.get("url", p.get("source", "unknown"))
-        by_url.setdefault(url, []).append(p)
-
-    chunks = []
-    for url, pairs in by_url.items():
-        content = "\n\n".join(
-            f"Topic: {p['question']}\n{p['answer']}" for p in pairs
+    if not WEB_SOURCE_CORPUS_PATH.exists():
+        raise FileNotFoundError(
+            f"Web source corpus is missing: {WEB_SOURCE_CORPUS_PATH}. Run "
+            "python code/scripts/build_web_dataset.py --source-only first."
         )
-        chunks.append({
-            "content": content,
-            "source": url,
-            "reference_pairs": pairs,
-        })
 
-    return random.sample(chunks, min(N_SOURCE_CHUNKS, len(chunks)))
+    documents = load_jsonl(WEB_SOURCE_CORPUS_PATH)
+    random.seed(RANDOM_SEED)
+    valid_documents = [
+        document for document in documents
+        if isinstance(document.get("url"), str) and isinstance(document.get("content"), str)
+    ]
+    if not valid_documents:
+        raise ValueError(f"No usable source documents in {WEB_SOURCE_CORPUS_PATH}")
+
+    return random.sample(valid_documents, min(n_chunks, len(valid_documents)))
 
 
 # ---------------------------------------------------------------------------

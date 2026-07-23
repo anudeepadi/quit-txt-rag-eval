@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build a web-scraped Q&A dataset from authoritative smoking cessation sources.
+"""Build a web-source corpus and Q&A dataset from authority sources.
 
 Pipeline:
-  1. Load URLs from data/source_web_links.json (skip PDFs)
-  2. Fetch full page content (up to 10,000 chars per page)
+  1. Recover URLs from the existing web Q&A dataset when the original list is absent
+  2. Fetch and persist cleaned primary-page content (up to 10,000 chars per page)
   3. Use GPT-4o-mini to generate 8 specific, detailed Q&A pairs per page
   4. Save per-URL checkpoints to avoid re-scraping on restart
   5. Merge, deduplicate, and save to data/web_scraped_qa.jsonl
@@ -12,6 +12,7 @@ Usage:
   python3 scripts/build_web_dataset.py               # full run
   python3 scripts/build_web_dataset.py --max-urls 5  # test with 5 URLs
   python3 scripts/build_web_dataset.py --resume       # skip already-done URLs
+  python3 scripts/build_web_dataset.py --source-only  # rebuild raw source corpus only
 """
 
 import argparse
@@ -34,9 +35,12 @@ from openai import OpenAI
 # ---------------------------------------------------------------------------
 
 _ROOT = Path(__file__).parent.parent
+_PROJECT_ROOT = _ROOT.parent
 _URLS_FILE = _ROOT / "data" / "source_web_links.json"
 _CHECKPOINT_DIR = _ROOT / "data" / "web_scraped_dataset" / "checkpoints"
 _OUTPUT_FILE = _ROOT / "data" / "web_scraped_qa.jsonl"
+_EXISTING_WEB_QA_FILE = _PROJECT_ROOT / "datasets" / "eval-rag" / "web_scraped_qa.jsonl"
+_RAW_SOURCE_OUTPUT_FILE = _PROJECT_ROOT / "datasets" / "eval-rag" / "web_source_documents.jsonl"
 
 # ---------------------------------------------------------------------------
 # Config
@@ -46,6 +50,7 @@ _MAX_CHARS = 10_000          # characters per page kept for GPT context
 _QA_PER_PAGE = 8             # Q&A pairs to generate per page
 _SLEEP_BETWEEN_URLS = 2.5    # seconds between HTTP requests (polite)
 _REQUEST_TIMEOUT = 15        # seconds
+_BROWSER_TIMEOUT_MS = 30_000 # browser fallback navigation timeout
 
 _HEADERS = {
     "User-Agent": (
@@ -87,8 +92,29 @@ each with "question" (string) and "answer" (string) fields only."""
 # ---------------------------------------------------------------------------
 
 def _load_urls(max_urls: int | None = None) -> list[str]:
-    data = json.loads(_URLS_FILE.read_text())
-    urls = data.get("urls", data) if isinstance(data, dict) else data
+    """Load source URLs, recovering them from existing QA data if necessary."""
+    if _URLS_FILE.exists():
+        data = json.loads(_URLS_FILE.read_text())
+        urls = data.get("urls", data) if isinstance(data, dict) else data
+    elif _EXISTING_WEB_QA_FILE.exists():
+        urls = []
+        seen: set[str] = set()
+        with _EXISTING_WEB_QA_FILE.open(encoding="utf-8") as handle:
+            for line in handle:
+                if not line.strip():
+                    continue
+                record = json.loads(line)
+                url = record.get("url")
+                if isinstance(url, str) and url and url not in seen:
+                    seen.add(url)
+                    urls.append(url)
+        if not urls:
+            raise ValueError(f"No URLs found in {_EXISTING_WEB_QA_FILE}")
+        print(f"  Recovered {len(urls)} URLs from {_EXISTING_WEB_QA_FILE}")
+    else:
+        raise FileNotFoundError(
+            f"Neither {_URLS_FILE} nor {_EXISTING_WEB_QA_FILE} is available"
+        )
     # Drop PDFs — can't extract clean text from binary PDF with requests+BS4
     html_urls = [u for u in urls if not u.lower().endswith(".pdf")]
     dropped = len(urls) - len(html_urls)
@@ -99,40 +125,140 @@ def _load_urls(max_urls: int | None = None) -> list[str]:
     return html_urls
 
 
+def _load_source_documents() -> dict[str, dict]:
+    """Return prior source records indexed by URL, if a corpus already exists."""
+    if not _RAW_SOURCE_OUTPUT_FILE.exists():
+        return {}
+    records: dict[str, dict] = {}
+    with _RAW_SOURCE_OUTPUT_FILE.open(encoding="utf-8") as handle:
+        for line in handle:
+            if line.strip():
+                record = json.loads(line)
+                if isinstance(record.get("url"), str):
+                    # Corpus format before browser fallback did not record this;
+                    # those records were necessarily fetched by requests.
+                    record.setdefault("fetch_method", "requests")
+                    records[record["url"]] = record
+    return records
+
+
+def _write_source_documents(records: list[dict]) -> Path:
+    """Persist raw source records deterministically for reproducible generation."""
+    _RAW_SOURCE_OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with _RAW_SOURCE_OUTPUT_FILE.open("w", encoding="utf-8") as handle:
+        for record in records:
+            handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    return _RAW_SOURCE_OUTPUT_FILE
+
+
+def build_source_corpus(max_urls: int | None = None, resume: bool = False) -> Path:
+    """Fetch authority pages and save the raw generation corpus with provenance.
+
+    This deliberately makes no model calls.  Each record contains only the
+    cleaned primary-source text and metadata needed to trace generated content
+    back to a public URL.
+    """
+    urls = _load_urls(max_urls)
+    prior_records = _load_source_documents() if resume else {}
+    records: list[dict] = []
+    fetched = cached = failed = 0
+
+    for index, url in enumerate(urls, 1):
+        print(f"[{index}/{len(urls)}] {url}")
+        cached_record = prior_records.get(url)
+        if cached_record and cached_record.get("content"):
+            records.append(cached_record)
+            cached += 1
+            continue
+
+        fetch = _fetch_page(url)
+        if not fetch["success"]:
+            print(f"  FETCH FAIL — {fetch['error']}")
+            failed += 1
+        else:
+            content = fetch["content"]
+            records.append({
+                "url": url,
+                "content": content,
+                "char_count": len(content),
+                "content_sha256": hashlib.sha256(content.encode("utf-8")).hexdigest(),
+                "fetch_method": fetch["fetch_method"],
+            })
+            fetched += 1
+            print(f"  Saved {len(content):,} chars")
+
+        if index < len(urls):
+            time.sleep(_SLEEP_BETWEEN_URLS)
+
+    output = _write_source_documents(records)
+    print(f"Done. fetched={fetched} cached={cached} failed={failed}")
+    print(f"Source pages: {len(records)}")
+    print(f"Saved to: {output}")
+    return output
+
+
 # ---------------------------------------------------------------------------
 # Step 2: Content fetching (higher limit than shared/web_scraper.py)
 # ---------------------------------------------------------------------------
 
-def _fetch_page(url: str) -> dict:
-    """Fetch and clean HTML content from a single URL.
+def _clean_page_content(html: str) -> str:
+    """Remove boilerplate from HTML and retain the bounded article text."""
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "nav", "footer", "header",
+                     "aside", "form", "noscript"]):
+        tag.decompose()
+    raw = soup.get_text(separator="\n", strip=True)
+    lines = [line.strip() for line in raw.splitlines() if len(line.strip()) > 30]
+    return "\n".join(lines)[:_MAX_CHARS]
 
-    Returns a dict with keys: url, content, success, error.
-    Content is stripped of boilerplate and truncated to _MAX_CHARS.
-    """
+
+def _fetch_page_in_browser(url: str) -> dict:
+    """Render a public page in stealth Chromium after a plain HTTP failure."""
     try:
-        resp = requests.get(url, headers=_HEADERS, timeout=_REQUEST_TIMEOUT)
-        resp.raise_for_status()
+        from cloakbrowser import launch_context
 
-        soup = BeautifulSoup(resp.content, "html.parser")
-        for tag in soup(["script", "style", "nav", "footer", "header",
-                         "aside", "form", "noscript"]):
-            tag.decompose()
-
-        raw = soup.get_text(separator="\n", strip=True)
-        lines = [l.strip() for l in raw.splitlines() if len(l.strip()) > 30]
-        content = "\n".join(lines)
-
-        if len(content) > _MAX_CHARS:
-            content = content[:_MAX_CHARS]
+        context = launch_context(
+            headless=True,
+            locale="en-US",
+            timezone="America/Chicago",
+        )
+        try:
+            page = context.new_page()
+            response = page.goto(url, wait_until="domcontentloaded", timeout=_BROWSER_TIMEOUT_MS)
+            page.wait_for_timeout(1_000)
+            if response is not None and response.status >= 400:
+                raise requests.HTTPError(f"Browser received HTTP {response.status}")
+            content = _clean_page_content(page.content())
+        finally:
+            context.close()
 
         if len(content) < 200:
             return {"url": url, "content": None, "success": False,
-                    "error": "Content too short after cleaning"}
-
-        return {"url": url, "content": content, "success": True, "error": None}
-
+                    "error": "Browser-rendered content too short after cleaning"}
+        return {"url": url, "content": content, "success": True, "error": None,
+                "fetch_method": "cloakbrowser"}
     except Exception as exc:
-        return {"url": url, "content": None, "success": False, "error": str(exc)}
+        return {"url": url, "content": None, "success": False,
+                "error": f"browser fallback failed: {exc}"}
+
+
+def _fetch_page(url: str) -> dict:
+    """Fetch and clean a public page, with browser rendering as a fallback."""
+    try:
+        resp = requests.get(url, headers=_HEADERS, timeout=_REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        content = _clean_page_content(resp.text)
+        if len(content) < 200:
+            return {"url": url, "content": None, "success": False,
+                    "error": "Content too short after cleaning"}
+        return {"url": url, "content": content, "success": True, "error": None,
+                "fetch_method": "requests"}
+    except Exception as exc:
+        browser_result = _fetch_page_in_browser(url)
+        if browser_result["success"]:
+            return browser_result
+        return {"url": url, "content": None, "success": False,
+                "error": f"requests failed: {exc}; {browser_result['error']}"}
 
 
 # ---------------------------------------------------------------------------
@@ -310,9 +436,14 @@ def _parse_args() -> argparse.Namespace:
                    help="Process only the first N URLs (useful for testing)")
     p.add_argument("--resume", action="store_true",
                    help="Skip URLs that already have a checkpoint file")
+    p.add_argument("--source-only", action="store_true",
+                   help="Fetch and persist raw source pages without generating Q&A")
     return p.parse_args()
 
 
 if __name__ == "__main__":
     args = _parse_args()
-    build(max_urls=args.max_urls, resume=args.resume)
+    if args.source_only:
+        build_source_corpus(max_urls=args.max_urls, resume=args.resume)
+    else:
+        build(max_urls=args.max_urls, resume=args.resume)
