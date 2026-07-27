@@ -20,8 +20,10 @@ Usage:
 
 import importlib
 import os
+import random
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 # Mark this process as an optimization run BEFORE any project import. Anything
@@ -35,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from data_gen_prepare import (
     OPENAI_API_KEY,
+    RANDOM_SEED,
     build_collection,
     generate_qa_pairs,
     get_best_score,
@@ -49,6 +52,7 @@ from data_gen_prepare import (
 
 import chromadb
 from chromadb.config import Settings
+from evo_agent import Run
 from openai import OpenAI
 
 
@@ -90,7 +94,9 @@ def run_one_experiment() -> None:
     print("=" * 70)
 
     t0 = time.time()
-    oai_client = OpenAI(api_key=OPENAI_API_KEY)
+    run = Run()
+    # max_retries: transport errors (429/5xx) must not count as task failures
+    oai_client = OpenAI(api_key=OPENAI_API_KEY, max_retries=5)
     chroma_client = chromadb.Client(Settings(anonymized_telemetry=False))
 
     # ── 2. Load source content ────────────────────────────────
@@ -102,9 +108,13 @@ def run_one_experiment() -> None:
     print("\nGenerating QA pairs with agent's prompt...")
     all_generated = []
     chunk_sources = []  # track which source each pair came from
+    chunk_stats = []    # per-chunk generation counts, attached to run_meta trace
 
-    for i, chunk in enumerate(source_chunks, 1):
-        pairs = generate_qa_pairs(
+    # Chunks are independent — generate in parallel (444 chunks at full
+    # source parity would take ~45 min serially). Results are collected
+    # in chunk order so KB construction stays deterministic.
+    def _gen_for_chunk(chunk):
+        return generate_qa_pairs(
             oai_client=oai_client,
             source_content=chunk["content"],
             system_prompt=gen_prompt,
@@ -113,14 +123,22 @@ def run_one_experiment() -> None:
             temperature=gen_temp,
             max_tokens=gen_max_tokens,
         )
-        print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        per_chunk_pairs = list(pool.map(_gen_for_chunk, source_chunks))
+
+    for i, (chunk, pairs) in enumerate(zip(source_chunks, per_chunk_pairs), 1):
+        if i % 50 == 0 or i == len(source_chunks):
+            print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
+        chunk_stats.append({"chunk": i, "n_pairs": len(pairs),
+                            "source_excerpt": chunk["content"][:300]})
         for p in pairs:
             p["_source_content"] = chunk["content"]  # for quality scoring
         all_generated.extend(pairs)
 
     if not all_generated:
         print("\n✗ NO PAIRS GENERATED — prompt may be broken. Fix and retry.")
-        return
+        raise RuntimeError("no QA pairs generated — generation prompt broken")
 
     n_pairs = len(all_generated)
     avg_answer_words = sum(len(p["answer"].split()) for p in all_generated) / n_pairs
@@ -130,8 +148,10 @@ def run_one_experiment() -> None:
     print("\nScoring QA pair quality (specificity, tone, groundedness, clinical)...")
     quality_scores = {"specificity": [], "conversational_tone": [], "groundedness": [], "clinical_accuracy": []}
 
-    # Score a sample (up to 15 pairs for speed)
-    sample = all_generated[:15]
+    # Score a seeded random sample of 15 (first-N sampling let weak pairs
+    # hide past the cutoff when pair counts grew — epoch-3 fix)
+    _rng = random.Random(RANDOM_SEED)
+    sample = _rng.sample(all_generated, min(15, len(all_generated)))
     for i, pair in enumerate(sample, 1):
         qs = score_qa_quality(
             oai_client, pair["question"], pair["answer"],
@@ -139,6 +159,17 @@ def run_one_experiment() -> None:
         )
         for k in quality_scores:
             quality_scores[k].append(qs[k])
+        pair_avg = sum(qs.values()) / len(qs)
+        run.report(
+            f"qa_pair_{i:02d}",
+            score=pair_avg,
+            summary=(f"spec={qs['specificity']:.2f} tone={qs['conversational_tone']:.2f} "
+                     f"ground={qs['groundedness']:.2f} clin={qs['clinical_accuracy']:.2f}"),
+            question=pair["question"],
+            answer=pair["answer"][:500],
+            source_excerpt=pair.get("_source_content", "")[:300],
+            **qs,
+        )
         if i % 5 == 0:
             print(f"  [{i}/{len(sample)}] scored")
 
@@ -194,7 +225,18 @@ def run_one_experiment() -> None:
             score = score_faithfulness(oai_client, question, answer, contexts)
             rag_scores.append(score)
         else:
+            score = 0.0
             rag_scores.append(0.0)
+
+        run.report(
+            f"rag_q_{i:02d}",
+            score=score,
+            summary=f"faithfulness={score:.2f} ({len(answer.split())}w)",
+            failure_reason=None if answer else "empty_answer_after_retries",
+            question=question,
+            answer=answer[:500],
+            n_contexts=len(contexts),
+        )
 
         if i % 5 == 0:
             print(f"  [{i}/{len(test_questions)}] evaluated")
@@ -225,6 +267,29 @@ def run_one_experiment() -> None:
     verdict = "KEEP" if improved else "DISCARD"
 
     elapsed = time.time() - t0
+
+    # Combined score is a weighted composite, not a mean of task scores —
+    # pass it to finish() explicitly. run_meta trace carries the breakdown
+    # for future readers (orchestrator / verifier / ideator); report() is
+    # required because log()-only tasks are never flushed to trace files.
+    run.report(
+        "run_meta",
+        score=combined,
+        summary=(f"combined={combined:.4f} human={human_baseline:.4f} "
+                 f"relative={relative_pct:.1f}%"),
+        rag_faithfulness=avg_rag_faithfulness,
+        qa_quality=avg_quality,
+        human_baseline=human_baseline,
+        relative_pct=relative_pct,
+        n_pairs_generated=n_pairs,
+        avg_answer_words=avg_answer_words,
+        hypothesis=hypothesis,
+        gen_model=gen_model,
+        gen_temperature=gen_temp,
+        qa_per_source=qa_per_source,
+        chunk_stats=chunk_stats,
+    )
+    run.finish(score=combined)
 
     # ── 8. Log result ─────────────────────────────────────────
     log_result(

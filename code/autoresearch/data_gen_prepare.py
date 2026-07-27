@@ -20,6 +20,7 @@ The scoring pipeline:
 import json
 import os
 import random
+import re
 import sys
 import textwrap
 from datetime import datetime
@@ -62,7 +63,7 @@ RESULTS_FILE = _AUTORESEARCH_DIR / "data_gen_results.tsv"
 # split (shared.question_split.load_dev_questions), not a fixed 20-row slice of
 # the test sheet. Kept only so older result rows remain interpretable.
 N_EVAL = 20
-N_SOURCE_CHUNKS = 5      # source content chunks to generate from
+N_SOURCE_CHUNKS = 10**9  # all chunks (source parity with human arm; epoch 3)
 RANDOM_SEED = 42         # deterministic source selection
 
 # ---------------------------------------------------------------------------
@@ -310,6 +311,26 @@ Response: {response}
 Score (just the number, nothing else):"""
 
 
+# Refusal answers ("the knowledge base does not provide...") contain no claims,
+# so the grounding rubric is vacuously satisfiable and the judge oscillates
+# between 0 and 10 on near-identical text (verified epoch-1 nondeterminism).
+# For this metric's purpose — does the KB support answering the question? —
+# a refusal is a KB failure: score 0.0 deterministically, both arms.
+_REFUSAL_RE = re.compile(
+    r"(?:knowledge base|context|source|provided information)[^.]{0,60}?"
+    r"(?:does not|doesn't|do not|don't)\s+"
+    r"(?:provide|contain|include|cover|mention|address|offer|have)"
+    r"|no (?:specific )?information (?:is )?(?:available|provided)",
+    re.IGNORECASE,
+)
+
+
+def _is_refusal(response: str) -> bool:
+    """True when the answer's first sentence declines to answer."""
+    first_sentence = response.split(".", 1)[0]
+    return bool(_REFUSAL_RE.search(first_sentence))
+
+
 def score_faithfulness(
     oai_client: OpenAI,
     question: str,
@@ -317,6 +338,8 @@ def score_faithfulness(
     contexts: list[str],
 ) -> float:
     """Fast faithfulness proxy using LLM-as-judge. Returns 0.0–1.0."""
+    if _is_refusal(response):
+        return 0.0
     context_text = "\n\n".join(contexts) if contexts else "(no context)"
     try:
         result = oai_client.chat.completions.create(
