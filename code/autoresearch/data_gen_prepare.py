@@ -267,6 +267,13 @@ def generate_qa_pairs(
         return result
 
     except Exception as e:
+        # A whole-call failure (429 rate-limit, timeout, parse error) is NOT
+        # the same as a chunk that legitimately yielded no pairs — count it so
+        # the runner can fail loudly instead of silently scoring a truncated
+        # KB (2026-07-27: two concurrent runs each lost ~half their chunks to
+        # a shared-TPM 429 storm and committed corrupted scores).
+        if stats is not None:
+            stats["n_chunks_failed"] = stats.get("n_chunks_failed", 0) + 1
         print(f"  GENERATION ERROR: {e}")
         return []
 
