@@ -1,0 +1,1 @@
+exp_id	timestamp	hypothesis	gen_model	rag_faithfulness	qa_specificity	qa_tone	qa_groundedness	qa_clinical	combined_score	human_baseline	relative_pct	n_pairs_generated	avg_answer_words	gen_temperature	gen_max_tokens	qa_per_source	verdict
