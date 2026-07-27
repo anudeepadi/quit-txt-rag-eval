@@ -223,8 +223,17 @@ def generate_qa_pairs(
     model: str = "gpt-4o-mini",
     temperature: float = 0.3,
     max_tokens: int = 2500,
+    stats: dict | None = None,
 ) -> list[dict]:
-    """Generate QA pairs from source content using the given prompt."""
+    """Generate QA pairs from source content using the given prompt.
+
+    Args:
+        stats: Optional mutable counters for the dataset manifest
+            (dataset-generation protocol A1). When given, increments
+            "n_raw" per parsed candidate pair and "n_rejected_wellformed"
+            per candidate dropped by the length filter. Counting only —
+            the filter itself is unchanged.
+    """
     formatted_prompt = system_prompt.format(n=n_pairs)
 
     try:
@@ -249,8 +258,12 @@ def generate_qa_pairs(
         for p in pairs:
             q = str(p.get("question", "")).strip()
             a = str(p.get("answer", "")).strip()
+            if stats is not None:
+                stats["n_raw"] = stats.get("n_raw", 0) + 1
             if len(q) > 10 and len(a) > 20:
                 result.append({"question": q, "answer": a})
+            elif stats is not None:
+                stats["n_rejected_wellformed"] = stats.get("n_rejected_wellformed", 0) + 1
         return result
 
     except Exception as e:

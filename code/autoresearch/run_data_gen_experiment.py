@@ -18,12 +18,15 @@ Usage:
     python3 autoresearch/run_data_gen_experiment.py
 """
 
+import hashlib
 import importlib
+import json
 import os
 import random
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime
 from pathlib import Path
 
 # Mark this process as an optimization run BEFORE any project import. Anything
@@ -36,6 +39,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent))
 
 from data_gen_prepare import (
+    HUMAN_KB_PATH,
     OPENAI_API_KEY,
     RANDOM_SEED,
     build_collection,
@@ -62,6 +66,111 @@ W_SPECIFICITY = 0.20        # clinical detail in generated answers
 W_TONE = 0.10               # conversational naturalness of questions
 W_GROUNDEDNESS = 0.15       # no hallucination in generated answers
 W_CLINICAL = 0.15           # clinical correctness
+
+# Dataset artifacts live OUTSIDE code/ and datasets/ so the harness_integrity
+# gate's pathspecs never see them (docs/dataset_generation_protocol.md).
+_ARTIFACTS_DIR = Path(__file__).parent.parent.parent / "generated_artifacts"
+
+
+def _count_duplicates(pairs: list[dict]) -> tuple[int, int]:
+    """Manifest counters A2: exact + fuzzy question duplicates (count-only).
+
+    Exact = identical after lowercasing/whitespace-collapse. Fuzzy = Jaccard
+    >= 0.9 on question token sets, counted among non-exact-duplicate pairs.
+    Reporting only — nothing is filtered (epoch-4 comparability).
+    """
+    normalized = [" ".join(p["question"].lower().split()) for p in pairs]
+    seen: set[str] = set()
+    exact = 0
+    survivors: list[set[str]] = []
+    for text in normalized:
+        if text in seen:
+            exact += 1
+            continue
+        seen.add(text)
+        survivors.append(set(text.split()))
+
+    fuzzy = 0
+    for i in range(len(survivors)):
+        a = survivors[i]
+        for j in range(i + 1, len(survivors)):
+            b = survivors[j]
+            union = len(a | b)
+            if union and len(a & b) / union >= 0.9:
+                fuzzy += 1
+                break  # count each question at most once
+    return exact, fuzzy
+
+
+def _write_dataset_artifacts(
+    all_generated: list[dict],
+    gen_stats: dict,
+    avg_quality: dict,
+    n_chunks: int,
+    hypothesis: str,
+    gen_model: str,
+    gen_temp: float,
+    gen_max_tokens: int,
+    qa_per_source: int,
+    gen_prompt: str,
+) -> None:
+    """Persist the generated KB with provenance + the version manifest.
+
+    Dataset-generation protocol §2 and §4. Score-neutral: runs after scoring,
+    writes outside the gate's pathspecs, and never mutates the pair list the
+    benchmark used.
+    """
+    _ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    with open(_ARTIFACTS_DIR / "generated_kb.jsonl", "w", encoding="utf-8") as f:
+        for p in all_generated:
+            f.write(json.dumps({
+                "question": p["question"],
+                "answer": p["answer"],
+                "source_id": p.get("_source_id", ""),
+                "source_sha256": p.get("_source_sha256", ""),
+                "source_excerpt": p.get("_source_content", "")[:300],
+            }, ensure_ascii=False) + "\n")
+
+    dup_exact, dup_fuzzy = _count_duplicates(all_generated)
+    try:
+        import subprocess
+        harness_commit = subprocess.run(
+            ["git", "-C", str(Path(__file__).parent), "rev-parse", "HEAD"],
+            capture_output=True, text=True, timeout=10,
+        ).stdout.strip()
+    except Exception:
+        harness_commit = "unknown"
+
+    manifest = {
+        "generated_at": datetime.now().astimezone().isoformat(),
+        "harness_commit": harness_commit,
+        "hypothesis": hypothesis,
+        "source_snapshot": {
+            "file": "datasets/human-rag/human_curated_qa.jsonl",
+            "sha256": hashlib.sha256(HUMAN_KB_PATH.read_bytes()).hexdigest(),
+            "n_chunks": n_chunks,
+        },
+        "model": gen_model,
+        "parameters": {
+            "temperature": gen_temp,
+            "max_tokens": gen_max_tokens,
+            "qa_per_source": qa_per_source,
+        },
+        "system_prompt": gen_prompt,
+        "counts": {
+            "n_raw": gen_stats.get("n_raw", 0),
+            "n_rejected_wellformed": gen_stats.get("n_rejected_wellformed", 0),
+            "n_duplicate_exact": dup_exact,
+            "n_duplicate_fuzzy": dup_fuzzy,
+            "n_kept": len(all_generated),
+        },
+        "quality_sample": {"n": 15, **avg_quality},
+    }
+    with open(_ARTIFACTS_DIR / "dataset_manifest.json", "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2, ensure_ascii=False)
+    print(f"\n  Dataset artifacts written: {_ARTIFACTS_DIR} "
+          f"(kept={len(all_generated)}, dup_exact={dup_exact}, dup_fuzzy={dup_fuzzy})")
 
 
 def run_one_experiment() -> None:
@@ -113,6 +222,11 @@ def run_one_experiment() -> None:
     # Chunks are independent — generate in parallel (444 chunks at full
     # source parity would take ~45 min serially). Results are collected
     # in chunk order so KB construction stays deterministic.
+    # gen_stats: manifest counters (dataset-generation protocol). Concurrent
+    # increments are safe under the GIL for these int bumps, and exact
+    # ordering doesn't matter for counts.
+    gen_stats: dict = {}
+
     def _gen_for_chunk(chunk):
         return generate_qa_pairs(
             oai_client=oai_client,
@@ -122,6 +236,7 @@ def run_one_experiment() -> None:
             model=gen_model,
             temperature=gen_temp,
             max_tokens=gen_max_tokens,
+            stats=gen_stats,
         )
 
     with ThreadPoolExecutor(max_workers=8) as pool:
@@ -134,6 +249,9 @@ def run_one_experiment() -> None:
                             "source_excerpt": chunk["content"][:300]})
         for p in pairs:
             p["_source_content"] = chunk["content"]  # for quality scoring
+            # Provenance (protocol §2): pin each pair to its exact source text.
+            p["_source_id"] = f"chunk_{i:03d}"
+            p["_source_sha256"] = hashlib.sha256(chunk["content"].encode("utf-8")).hexdigest()
         all_generated.extend(pairs)
 
     if not all_generated:
@@ -290,6 +408,20 @@ def run_one_experiment() -> None:
         chunk_stats=chunk_stats,
     )
     run.finish(score=combined)
+
+    # ── 7b. Dataset artifacts (provenance + manifest) ─────────
+    _write_dataset_artifacts(
+        all_generated=all_generated,
+        gen_stats=gen_stats,
+        avg_quality=avg_quality,
+        n_chunks=len(source_chunks),
+        hypothesis=hypothesis,
+        gen_model=gen_model,
+        gen_temp=gen_temp,
+        gen_max_tokens=gen_max_tokens,
+        qa_per_source=qa_per_source,
+        gen_prompt=gen_prompt,
+    )
 
     # ── 8. Log result ─────────────────────────────────────────
     log_result(
