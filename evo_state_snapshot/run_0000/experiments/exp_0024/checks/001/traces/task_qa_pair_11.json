@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.725,
+  "summary": "spec=0.50 tone=0.80 ground=0.90 clin=0.70",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:34:37+00:00",
+  "question": "Are e-cigarettes a safer option for my stroke risk?",
+  "answer": "E-cigarettes and vaping devices are considered less harmful as they deliver nicotine without many of the toxins found in tobacco smoke. However, they are not risk-free, so it's best to consider all options carefully.",
+  "source_excerpt": "Topic: Does secondhand smoke impact children's foot health?\nSecondhand smoke can negatively affect children's health, potentially leading to issues like blood clots in the legs and feet. Children exposed to tobacco smoke may also experience reduced circulation, impacting overall foot health.\n\nTopic:",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.7
+}

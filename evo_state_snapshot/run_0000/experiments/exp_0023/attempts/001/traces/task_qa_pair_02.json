@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_02",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.60 tone=0.70 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:46+00:00",
+  "question": "What causes tooth loss in smokers?",
+  "answer": "Smoking can lead to tooth loss due to the accumulation of tartar and bacteria from reduced saliva production. It's important to address this risk.",
+  "source_excerpt": "Topic: Will my teeth get better after quitting cigarettes and other tobacco products?\nYes, quitting smoking and other tobacco products can improve your oral health. After quitting, your risk of developing oral cancers decreases over time, and you may notice improvements in your gum health and a redu",
+  "specificity": 0.6,
+  "conversational_tone": 0.7,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

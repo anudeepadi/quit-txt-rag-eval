@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_13",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:43:54+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Quitting smoking can lead to less shortness of breath during physical activity, lower risk of stained teeth, cavities, and gum disease, and reduced feelings of stress, anxiety, and depression. These benefits can significantly improve your overall quality of life.",
+  "n_contexts": 3
+}

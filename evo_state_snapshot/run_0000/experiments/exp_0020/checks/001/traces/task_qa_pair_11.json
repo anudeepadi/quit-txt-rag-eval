@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.925,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:24:01+00:00",
+  "ended_at": "2026-07-16T06:30:23+00:00",
+  "question": "Does living with a smoker put me at risk for a stroke?",
+  "answer": "Yes, non-smokers living with smokers are nearly twice as likely to suffer a stroke as those living in smoke-free environments. Creating a smoke-free home can help protect your health.",
+  "source_excerpt": "Topic: Does secondhand smoke impact children's foot health?\nSecondhand smoke can negatively affect children's health, potentially leading to issues like blood clots in the legs and feet. Children exposed to tobacco smoke may also experience reduced circulation, impacting overall foot health.\n\nTopic:",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

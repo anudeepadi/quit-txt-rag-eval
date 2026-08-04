@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_38",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:55+00:00",
+  "question": "What should I do if I slip and smoke again?",
+  "answer": "If you slip and smoke again, remember that it's common and not a failure. Reflect on what led to the relapse, focus on your past successes, and return to your quit plan.",
+  "n_contexts": 3
+}

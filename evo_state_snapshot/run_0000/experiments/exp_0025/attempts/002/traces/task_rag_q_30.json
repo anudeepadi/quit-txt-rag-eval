@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_30",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:23+00:00",
+  "question": "Who can support me during a gradual quit plan?",
+  "answer": "You can seek support from people who encourage your efforts, such as friends and family who are supportive of your decision to quit. Additionally, online communities can provide valuable support during your gradual quit plan.",
+  "n_contexts": 3
+}

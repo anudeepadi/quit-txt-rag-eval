@@ -1,0 +1,67 @@
+diff --git a/code/autoresearch/data_gen_experiment.py b/code/autoresearch/data_gen_experiment.py
+index 1743eeb..4e5f9bd 100644
+--- a/code/autoresearch/data_gen_experiment.py
++++ b/code/autoresearch/data_gen_experiment.py
+@@ -6,10 +6,14 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
+ 
+ # --- Hypothesis (describe what you're testing) ---
+ HYPOTHESIS = (
+-    "BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, "
+-    "2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. "
+-    "Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be "
+-    "a judge-rubric ceiling, not a generator-side lever."
++    "Peripheral-fact mining, COUNT-ISOLATED. Exp5 two-pass extraction picks one "
++    "HEADLINE fact per source passage and drops secondary facts embedded within "
++    "longer answers. PASS 1 now also mines those distinct secondary facts "
++    "(subpopulations affected, secondary benefits, comparative stats). Unlike the "
++    "discarded exp_0002, QA_PER_SOURCE stays 8 to avoid retrieval displacement "
++    "(exp_0002's 40->50 pairs crowded a needed pair out of fixed RAG_TOP_K=3, the "
++    "one real regression there; its apparent faithfulness swings were judge-noise on "
++    "refusals). Strict grounding kept. Expected combined delta vs 0.758: +0..+0.02."
+ )
+ 
+ # --- Generation model ---
+@@ -32,10 +36,19 @@ GEN_SYSTEM_PROMPT = (
+     "CRITICAL CONSTRAINT — HEALTHCARE SAFETY:\n"
+     "This is a health domain. Do NOT add, infer, or rephrase beyond what the "
+     "source explicitly states.\n\n"
+-    "PASS 1 — FACT EXTRACTION:\n"
+-    "First, read the source and mentally identify the {n} most important distinct "
+-    "facts, statistics, medication names, techniques, or clinical findings. Each "
+-    "fact must be directly stated in the source text.\n\n"
++    "PASS 1 — FACT EXTRACTION (maximize breadth):\n"
++    "Read the source and identify the {n} most distinct facts it states, spanning "
++    "the FULL breadth of the content. Do not stop at the single headline fact of "
++    "each passage — a longer answer often states several distinct facts, and each "
++    "one is a separate candidate. In particular, look for facts that are stated but "
++    "easy to overlook:\n"
++    "  - a specific population or group the source says is affected (e.g. a stated "
++    "at-risk or benefiting group),\n"
++    "  - a secondary or downstream effect or benefit mentioned alongside the main one,\n"
++    "  - a comparative statistic, percentage, or magnitude given in the text.\n"
++    "Each extracted fact must be directly stated in the source text. Do not invent "
++    "facts to reach {n}; if the source states fewer than {n} distinct facts, extract "
++    "fewer.\n\n"
+     "PASS 2 — QA PAIR COMPOSITION:\n"
+     "For each extracted fact, compose one question-answer pair:\n"
+     "- Question: conversational, first-person, like texting a quit-smoking chatbot\n"
+@@ -44,7 +57,9 @@ GEN_SYSTEM_PROMPT = (
+     "the source. Do NOT paraphrase clinical terms or numbers.\n\n"
+     "RULES:\n"
+     "1. Every claim in every answer must trace to a specific sentence in the source.\n"
+-    "2. Cover {n} DIFFERENT topics — no repeated themes.\n"
++    "2. Cover {n} DISTINCT facts. A single passage may yield more than one pair when "
++    "it states multiple distinct facts (e.g. a separate affected group or a separate "
++    "benefit), but never emit two pairs that convey the same fact.\n"
+     "3. No disclaimers, hedging, or generic advice unless the source says it.\n"
+     "4. If the source doesn't contain {n} distinct facts, generate fewer pairs.\n\n"
+     "Return a JSON object with key \"qa_pairs\" containing an array of objects, "
+diff --git a/code/autoresearch/data_gen_results.tsv b/code/autoresearch/data_gen_results.tsv
+index 757cde9..60c4d92 100644
+--- a/code/autoresearch/data_gen_results.tsv
++++ b/code/autoresearch/data_gen_results.tsv
+@@ -12,3 +12,4 @@ exp_id	timestamp	hypothesis	gen_model	rag_faithfulness	qa_specificity	qa_tone	qa
+ 11	2026-04-20 14:05:38	Exp11: Specificity plateau attack. Exp5 plateaued at spec=0.69. Make 'specific anchor' a HARD gate: each answer must carry >=1 verbatim anchor (named med + brand, numeric dose/duration/%, or named technique). Pre-extract anchors from source in Pass 1; reject pairs lacking one. Target: specificity 0.80+ without breaking groundedness (keep 0.96).	gpt-4o-mini	0.6550	0.6800	0.6067	0.9667	0.9000	0.7387	0.9000	72.8	40	30.4	0.0	2500	8	DISCARD
+ 12	2026-07-15 21:15:15	BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, 2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be a judge-rubric ceiling, not a generator-side lever.	gpt-4o-mini	0.7250	0.6933	0.6533	0.9533	0.9067	0.7730	0.8700	83.3	40	32.6	0.0	2500	8	KEEP
+ 13	2026-07-15 21:20:35	BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, 2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be a judge-rubric ceiling, not a generator-side lever.	gpt-4o-mini	0.6700	0.7000	0.6800	0.9533	0.9267	0.7580	0.9350	71.7	40	32.8	0.0	2500	8	DISCARD
++14	2026-07-15 22:05:07	Peripheral-fact mining, COUNT-ISOLATED. Exp5 two-pass extraction picks one HEADLINE fact per source passage and drops secondary facts embedded within longer answers. PASS 1 now also mines those distinct secondary facts (subpopulations affected, secondary benefits, comparative stats). Unlike the discarded exp_0002, QA_PER_SOURCE stays 8 to avoid retrieval displacement (exp_0002's 40->50 pairs crowded a needed pair out of fixed RAG_TOP_K=3, the one real regression there; its apparent faithfulness swings were judge-noise on refusals). Strict grounding kept. Expected combined delta vs 0.758: +0..+0.02.	gpt-4o-mini	0.6000	0.7067	0.6333	0.9533	0.9067	0.7237	0.8700	69.0	40	29.9	0.0	2500	8	DISCARD

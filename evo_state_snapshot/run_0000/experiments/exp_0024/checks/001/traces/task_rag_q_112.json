@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_112",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (26w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:12+00:00",
+  "question": "Are herbal cigarettes truly safer than traditional tobacco cigarettes?",
+  "answer": "No, herbal cigarettes are not considered safer than traditional tobacco cigarettes. All tobacco and nicotine products, including herbal cigarettes, carry health risks and are highly addictive.",
+  "n_contexts": 3
+}

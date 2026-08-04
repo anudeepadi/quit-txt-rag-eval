@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_133",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (27w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:52+00:00",
+  "question": "Does weight gain after quitting smoking increase heart disease risk?",
+  "answer": "Quitting smoking significantly reduces your risk of cardiovascular disease, even if you gain weight. The long-term health benefits of quitting smoking far outweigh the temporary weight gain.",
+  "n_contexts": 3
+}

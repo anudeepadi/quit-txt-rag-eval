@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_34",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (27w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:29+00:00",
+  "question": "Can I become addicted if I only smoke once in a while?",
+  "answer": "Yes, even occasional smoking can lead to nicotine addiction. Just one cigarette may be enough to start the addiction process, and repeated use can lead to dependence.",
+  "n_contexts": 3
+}

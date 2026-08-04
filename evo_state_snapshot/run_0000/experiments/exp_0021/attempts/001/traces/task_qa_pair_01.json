@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:18:51+00:00",
+  "question": "How does smoking affect my stroke risk?",
+  "answer": "Smoking increases stroke risk by damaging blood vessels, raising blood pressure, and promoting clot formation, leading to higher chances of stroke.",
+  "source_excerpt": "Topic: How does smoking affect stroke risk?\nSmoking increases stroke risk by damaging blood vessels, raising blood pressure, and promoting clot formation, leading to higher chances of stroke.\n\nTopic: Can quitting smoking reduce stroke risk?\nYes, quitting smoking reduces stroke risk over time, as the",
+  "specificity": 0.8,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

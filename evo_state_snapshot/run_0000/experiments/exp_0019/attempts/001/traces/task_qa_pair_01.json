@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:24+00:00",
+  "question": "What is the Better Health Smoke Free campaign?",
+  "answer": "The Better Health Smoke Free campaign is a UK government initiative launched to encourage adults, especially parents and caregivers, to quit smoking. It highlights the influence adult smoking has on children's likelihood to start smoking and offers resources like the NHS Quit Smoking app, support on Facebook, daily emails and texts, and an online Personal Quit Plan.",
+  "source_excerpt": "Topic: What is the Better Health Smoke Free campaign?\nThe Better Health Smoke Free campaign is a UK government initiative launched to encourage adults, especially parents and caregivers, to quit smoking. It highlights the influence adult smoking has on children's likelihood to start smoking and offe",
+  "specificity": 0.8,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

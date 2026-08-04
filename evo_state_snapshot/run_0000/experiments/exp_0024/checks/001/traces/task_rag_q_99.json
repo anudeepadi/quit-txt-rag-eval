@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_99",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (50w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:50+00:00",
+  "question": "How can healthcare providers improve smoking cessation rates in PAD patients?",
+  "answer": "Healthcare providers can improve smoking cessation rates in PAD patients by incorporating smoking cessation services into their care, which leads to improved treatment outcomes and enhanced quality of life. Additionally, interventions led by trained specialists, such as psychologists or dedicated counselors, are more effective than those from general healthcare providers.",
+  "n_contexts": 3
+}

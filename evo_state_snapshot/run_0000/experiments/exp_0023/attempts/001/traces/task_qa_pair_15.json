@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:03:01+00:00",
+  "question": "What are the risks of smoking while pregnant?",
+  "answer": "Smoking during pregnancy has been consistently associated with an increased risk of orofacial clefts, including cleft lip and cleft palate. Quitting smoking before or during early pregnancy can significantly reduce this risk.",
+  "source_excerpt": "Topic: Can the skin recover from smoking-induced damage?\nWhile some improvements may occur after smoking cessation, certain structural changes in the skin may be long-lasting or irreversible, highlighting the importance of early intervention.\n\nTopic: How does long-term cigarette smoking affect skin ",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_30",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:35+00:00",
+  "question": "Is expressive writing effective for all young adult smokers?",
+  "answer": "The knowledge base does not provide specific information about the effectiveness of expressive writing for all young adult smokers. Therefore, I cannot answer that question based on the provided facts.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_41",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (41w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:44+00:00",
+  "question": "How does smoking contribute to erectile dysfunction?",
+  "answer": "Smoking is linked to erectile dysfunction as it promotes atherosclerosis, which can damage blood vessels and reduce blood flow to the penis. This vascular damage, along with increased oxidative stress and inflammation from smoking, contributes to the development of erectile dysfunction.",
+  "n_contexts": 3
+}

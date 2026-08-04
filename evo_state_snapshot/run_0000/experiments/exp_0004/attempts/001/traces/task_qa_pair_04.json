@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0004",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T03:00:42+00:00",
+  "ended_at": "2026-07-16T03:01:23+00:00",
+  "question": "can smoking make my hands tingle?",
+  "answer": "Smoking can exacerbate nerve problems in the hands, leading to symptoms such as tingling, numbness, and pain. Smokers often report more severe symptoms prior to surgeries like carpal tunnel release.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

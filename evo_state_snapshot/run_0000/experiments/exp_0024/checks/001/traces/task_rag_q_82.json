@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_82",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (37w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:19+00:00",
+  "question": "How do smoke-free workplace policies compare to tax increases in reducing smoking rates?",
+  "answer": "The knowledge base does not provide specific information comparing smoke-free workplace policies to tax increases in reducing smoking rates. However, it does state that smoke-free workplaces can reduce tobacco consumption by 4%\u201310% and motivate smokers to quit.",
+  "n_contexts": 3
+}

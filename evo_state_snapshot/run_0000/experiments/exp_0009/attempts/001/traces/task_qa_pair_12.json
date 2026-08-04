@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0009",
+  "task_id": "qa_pair_12",
+  "status": "passed",
+  "score": 0.925,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T03:39:41+00:00",
+  "ended_at": "2026-07-16T03:40:23+00:00",
+  "question": "Does smoking affect women's ability to have children?",
+  "answer": "Absolutely, smoking increases the risks of infertility, miscarriages, and pregnancy complications like preterm birth and low birth weight. It can pose serious risks to both maternal and fetal health.",
+  "source_excerpt": "Topic: How does tobacco use affect individuals with behavioral health conditions?\nIndividuals with behavioral health conditions are more likely to smoke, accounting for 38% of all U.S. adult cigarette consumption, despite making up only 25% of the population. This group has a smoking rate of 23%, hi",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

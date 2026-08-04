@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0006",
+  "task_id": "rag_q_07",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (36w)",
+  "started_at": "2026-07-16T03:28:26+00:00",
+  "ended_at": "2026-07-16T03:29:21+00:00",
+  "question": "Are there social or financial benefits to quitting smoking?",
+  "answer": "Quitting smoking can improve your social relationships by enhancing how others perceive you and reducing their exposure to secondhand smoke. Additionally, it fosters a healthier image among your peers, which can lead to positive social interactions.",
+  "n_contexts": 3
+}

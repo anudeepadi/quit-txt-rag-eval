@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_28",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "faithfulness=0.50 (31w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:33+00:00",
+  "question": "Can financial incentives help people quit smoking?",
+  "answer": "Yes, financial incentives can help people quit smoking. Research indicates that ex-smokers are 42% less likely to experience financial hardship, and the money saved from quitting can improve overall financial situations.",
+  "n_contexts": 3
+}

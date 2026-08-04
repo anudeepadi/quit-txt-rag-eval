@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_09",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:10:43+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "To prevent kids from picking up smoking early, have open conversations about the dangers of tobacco use, including e-cigarettes, and set clear expectations. Additionally, being a positive role model by remaining tobacco-free can significantly influence their choices.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_31",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:37+00:00",
+  "question": "How does quitting smoking affect my life insurance premiums?",
+  "answer": "Quitting smoking can lead to lower life insurance premiums, as non-smokers typically pay less for coverage compared to smokers. This reduction in premiums can contribute to better financial outcomes over your lifetime.",
+  "n_contexts": 3
+}

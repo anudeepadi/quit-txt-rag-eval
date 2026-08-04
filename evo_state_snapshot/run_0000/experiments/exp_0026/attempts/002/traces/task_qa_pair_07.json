@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_07",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.70 tone=0.90 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:46+00:00",
+  "question": "What happens to my mood when I quit smoking?",
+  "answer": "Quitting smoking can lead to mood changes such as sadness, irritability, or anxiety due to nicotine withdrawal. These feelings are common and usually improve within a couple of weeks, so hang in there!",
+  "source_excerpt": "Topic: What are common concerns about smoking cessation and mental health?\nMany individuals worry that quitting smoking may worsen mental health conditions like depression or anxiety, or that cessation could lead to increased stress or relapse of psychiatric symptoms.\n\nTopic: Does quitting smoking n",
+  "specificity": 0.7,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_119",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (38w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:28+00:00",
+  "question": "How do dual users compare e-cigarettes to traditional cigarettes?",
+  "answer": "Dual users often perceive e-cigarettes as a safer alternative to traditional cigarettes; however, using both is likely more dangerous than using either one alone. It's important to understand that quitting smoking completely is essential to protect your health.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_77",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:06+00:00",
+  "question": "Do smokers impose a financial burden on society?",
+  "answer": "Yes, smokers impose a financial burden on society due to increased medical expenses, missed pay from tobacco-related illnesses, and higher health and life insurance premiums. These costs contribute to overall financial strain on healthcare systems and the economy.",
+  "n_contexts": 3
+}

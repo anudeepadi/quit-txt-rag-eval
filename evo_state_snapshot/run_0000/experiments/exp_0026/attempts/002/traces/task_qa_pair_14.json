@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.70 tone=0.50 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:55+00:00",
+  "question": "How does smoking affect my balance and coordination?",
+  "answer": "Smoking damages the vestibular system and contributes to conditions like atherosclerosis and diabetes, leading to impaired balance and coordination. It's important to be aware of how this can affect you.",
+  "source_excerpt": "Topic: How does smoking affect balance and coordination?\nSmoking damages the vestibular system and contributes to conditions like atherosclerosis and diabetes, leading to impaired balance and coordination.\n\nTopic: What inner ear structures are impacted by smoking?\nSmoking harms the semicircular cana",
+  "specificity": 0.7,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

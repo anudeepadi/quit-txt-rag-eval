@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.80 tone=0.70 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:22+00:00",
+  "question": "Does smoking make respiratory infections worse for people with HIV?",
+  "answer": "Yes, smoking significantly elevates the risk of respiratory infections among people living with HIV, making them more susceptible to severe infections like bacterial pneumonia and PCP.",
+  "source_excerpt": "Topic: Does smoking cause kidney stones?\nWhile smoking does not directly cause kidney stones, it can contribute to conditions that increase the risk. Smoking may lead to dehydration by reducing thirst, and dehydration is a significant risk factor for kidney stone formation. Additionally, smoking can",
+  "specificity": 0.8,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

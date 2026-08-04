@@ -1,0 +1,75 @@
+diff --git a/code/autoresearch/data_gen_experiment.py b/code/autoresearch/data_gen_experiment.py
+index 934c195..82e8459 100644
+--- a/code/autoresearch/data_gen_experiment.py
++++ b/code/autoresearch/data_gen_experiment.py
+@@ -6,16 +6,20 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
+ 
+ # --- Hypothesis (describe what you're testing) ---
+ HYPOTHESIS = (
+-    "exp_0020 (tone lane, parent exp_0019 v3): PORT the epoch-2-validated "
+-    "exp_0009 3-pass register-translation mechanism onto the v3 full-source "
+-    "baseline (444 chunks / ~3555 pairs). exp_0009 won tone 0.66->0.787 at "
+-    "epoch 2 (robust across 3 draws) by (a) PASS-2 mentally drafting a plain "
+-    "clinical sentence that locks every number/med/timeframe verbatim, then "
+-    "(b) PASS-3 translating the pair into a real texting exchange whose ANSWER "
+-    "LEADS with the concrete fact and keeps warmth as a brief trailing clause "
+-    "(the fact-forward constraint that fixed exp_0006's retrieval displacement). "
+-    "PASS-1 fact extraction untouched. Tests whether the tone gain transfers at "
+-    "3555-pair scale without disturbing faithfulness (v3 baseline tone 0.707)."
++    "exp_0023 (composition, parent exp_0020): STACK the round's two orthogonal "
++    "committed mechanisms — exp_0020's 3-pass register-translation (0.8347/0.8513) "
++    "and exp_0021's additive enumerated/secondary-fact extraction (0.8227). Ported "
++    "from exp_0021's committed diff: (a) PASS-1 additive block treating each "
++    "enumerated list item + secondary side-mention as its own extractable fact, "
++    "(b) QA_PER_SOURCE 8->10 so headline extraction is not displaced, and (c) the "
++    "Rule-3 softening from 'no repeated themes' to 'no two pairs may state the same "
++    "fact' that the extraction depends on. The two mechanisms convert DIFFERENT "
++    "refusals (exp_0020 rag_q_05; exp_0021 rag_q_09) and touch disjoint prompt "
++    "sections except Rule 3. Synergy hypothesis: exp_0021's tone drop (0.64) came "
++    "partly from academically-phrased newly-surfaced facts; exp_0020's register "
++    "translation should texting-ify exactly that phrasing, surfacing the enumerated "
++    "facts AND keeping them in real-person register. Keep = rag_q_09 converts AND "
++    "refusals<=3 AND tone>=0.75 AND no new regressions."
+ )
+ 
+ # --- Generation model ---
+@@ -25,7 +29,7 @@ GEN_MODEL = "gpt-4o-mini"
+ # --- Generation parameters ---
+ GEN_TEMPERATURE = 0.0       # maximum determinism — zero creative extrapolation
+ GEN_MAX_TOKENS = 2500
+-QA_PER_SOURCE = 8
++QA_PER_SOURCE = 10
+ 
+ # --- Generation prompt ---
+ # Must contain {n} placeholder for number of pairs to generate.
+@@ -42,7 +46,17 @@ GEN_SYSTEM_PROMPT = (
+     "PASS 1 — FACT EXTRACTION:\n"
+     "First, read the source and mentally identify the {n} most important distinct "
+     "facts, statistics, medication names, techniques, or clinical findings. Each "
+-    "fact must be directly stated in the source text.\n\n"
++    "fact must be directly stated in the source text.\n"
++    "ALSO capture enumerated and secondary facts, not just headline ones:\n"
++    "- When a source sentence lists multiple conditions, effects, affected groups, "
++    "or items (e.g. a list of health conditions, several benefits, a set of "
++    "symptoms), treat EACH listed item as its own extractable fact worth a distinct "
++    "pair — do not collapse the list into one summary fact.\n"
++    "- A fact stated as a secondary or side mention inside an answer about a broader "
++    "topic is itself extractable, even when the broader topic is already covered by "
++    "another pair.\n"
++    "Every such fact must still be directly stated in the source text — never invent "
++    "or infer an item that is not literally present.\n\n"
+     "PASS 2 — GROUNDED DRAFT (internal scaffolding, NOT in the output):\n"
+     "For each extracted fact, mentally write one plain clinical sentence that "
+     "captures the fact with every number, dose, timeframe, and percentage from the "
+@@ -83,7 +97,10 @@ GEN_SYSTEM_PROMPT = (
+     "only the wording is translated, never the clinical content.\n"
+     "2. Warmth and direct address are TONE, not information — never introduce a "
+     "fact, reassurance, or claim the source does not support.\n"
+-    "3. Cover {n} DIFFERENT topics — no repeated themes.\n"
++    "3. Cover {n} DIFFERENT facts — no two pairs may state the same fact. Distinct "
++    "facts that fall under the same broad subject (e.g. two different conditions from "
++    "one health-effects list) are allowed and encouraged; only restating the same "
++    "fact is disallowed.\n"
+     "4. No disclaimers, hedging, or generic advice unless the source says it.\n"
+     "5. If the source doesn't contain {n} distinct facts, generate fewer pairs.\n\n"
+     "Return a JSON object with key \"qa_pairs\" containing an array of objects, "

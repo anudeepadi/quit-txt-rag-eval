@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_27",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (54w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:19+00:00",
+  "question": "Which demographic groups among adults with mental health conditions have higher smoking rates?",
+  "answer": "Individuals with behavioral health conditions, such as those with depression, can have smoking rates as high as 59%, while those with schizophrenia can reach up to 90%. Additionally, approximately 3 out of every 10 cigarettes smoked by adults in the United States are smoked by individuals with mental health conditions like depression and anxiety.",
+  "n_contexts": 3
+}

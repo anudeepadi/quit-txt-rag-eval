@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0001",
+  "task_id": "rag_q_03",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "faithfulness=0.50 (47w)",
+  "started_at": "2026-07-16T02:50:38+00:00",
+  "ended_at": "2026-07-16T02:51:43+00:00",
+  "question": "What are some healthy ways to deal with bad moods instead of smoking?",
+  "answer": "The knowledge base does not provide specific healthy ways to deal with bad moods instead of smoking. However, it does state that quitting smoking is associated with improved mood and quality of life, which may suggest that finding alternatives to smoking can lead to better emotional well-being.",
+  "n_contexts": 3
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:22+00:00",
+  "question": "What are the effects of second-hand smoke on newborns?",
+  "answer": "Newborns exposed to tobacco smoke, either in utero or after birth, face a higher risk of premature birth and low birth weight. There is also a doubled risk of Sudden Infant Death Syndrome (SIDS) among these infants.",
+  "source_excerpt": "Topic: Does reducing cigarette consumption or combining smoking with vaping reduce health risks?\nReducing cigarette consumption or combining fewer cigarettes with vaping does not effectively reduce health risks. The study suggests that cutting down on smoking or supplementing with vaping is no subst",
+  "specificity": 0.8,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

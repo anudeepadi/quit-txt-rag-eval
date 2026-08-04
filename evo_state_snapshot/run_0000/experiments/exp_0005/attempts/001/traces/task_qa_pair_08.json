@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0005",
+  "task_id": "qa_pair_08",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "spec=0.50 tone=0.80 ground=0.80 clin=0.70",
+  "started_at": "2026-07-16T03:12:32+00:00",
+  "ended_at": "2026-07-16T03:13:24+00:00",
+  "question": "How does nicotine affect nerve pain?",
+  "answer": "Nicotine can intensify nerve pain by affecting nerve signaling and blood flow. It has been associated with heightened pain perception and prolonged discomfort in individuals with neuropathy.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.8,
+  "clinical_accuracy": 0.7
+}

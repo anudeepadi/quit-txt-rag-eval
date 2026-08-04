@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0005",
+  "task_id": "rag_q_02",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (62w)",
+  "started_at": "2026-07-16T03:12:32+00:00",
+  "ended_at": "2026-07-16T03:13:43+00:00",
+  "question": "How can I manage stress without turning to tobacco?",
+  "answer": "While the knowledge base does not provide specific methods for managing stress without tobacco, it is important to note that smoking does not effectively relieve stress and can actually increase anxiety and tension. Instead, consider seeking support from healthcare professionals or utilizing quit-smoking medications or nicotine replacement therapy to aid in your cessation journey, which may help reduce stress levels over time.",
+  "n_contexts": 3
+}

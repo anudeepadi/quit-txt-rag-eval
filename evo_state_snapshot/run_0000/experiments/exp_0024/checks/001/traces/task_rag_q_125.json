@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_125",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:37+00:00",
+  "question": "Are there any emotional challenges associated with quitting smoking suddenly?",
+  "answer": "Yes, quitting smoking suddenly can lead to withdrawal symptoms such as irritability, anxiety, and depression due to nicotine dependence affecting your mood and behavior. Being prepared for these emotional challenges is really important.",
+  "n_contexts": 3
+}

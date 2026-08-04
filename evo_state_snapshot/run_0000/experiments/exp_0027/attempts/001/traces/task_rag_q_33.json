@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_33",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (31w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:30+00:00",
+  "question": "How can teens resist peer pressure to smoke?",
+  "answer": "Teens can resist peer pressure to smoke by preparing responses in advance, such as stating their reasons for not smoking, avoiding situations where smoking occurs, and spending time with non-smoking friends.",
+  "n_contexts": 3
+}

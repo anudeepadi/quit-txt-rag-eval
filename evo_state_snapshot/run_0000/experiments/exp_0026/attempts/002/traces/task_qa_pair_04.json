@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.70 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:41+00:00",
+  "question": "I thought smoking helped with stress, but is it actually making my anxiety worse?",
+  "answer": "Nicotine can actually exacerbate anxiety symptoms. The temporary relief you feel is due to alleviating nicotine withdrawal, not genuine stress reduction, which can lead to increased anxiety over time.",
+  "source_excerpt": "Topic: Are there resources available to support me in practicing these techniques?\nYes, resources like Quitline offer support and guidance on practicing relaxation techniques. They provide access to trained counselors who can assist you in developing personalized strategies for stress management and",
+  "specificity": 0.7,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

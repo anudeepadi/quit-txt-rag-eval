@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:08:30+00:00",
+  "question": "Is my immune system affected by smoking?",
+  "answer": "Yes, smoking impairs immune function by altering the balance of immune cells and reducing the effectiveness of natural killer (NK) cells. This leads to a compromised immune response.",
+  "source_excerpt": "Topic: Does smoking affect the effectiveness of arthritis treatments?\nYes, smoking can impair the effectiveness of arthritis treatments. Studies have shown that smokers respond less favorably to methotrexate, a common RA medication, with the response being dose-dependent. Smoking also limits the eff",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

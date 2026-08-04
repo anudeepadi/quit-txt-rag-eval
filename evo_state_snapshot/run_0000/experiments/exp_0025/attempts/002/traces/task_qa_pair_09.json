@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.50 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:08:25+00:00",
+  "question": "How does thinking of myself as a non-smoker help?",
+  "answer": "Thinking of yourself as a non-smoker can actually increase your chances of staying quit. It helps align your identity with your quit goals.",
+  "source_excerpt": "Topic: What role do relationships play in a woman's journey to quit smoking?\nRelationships are crucial; supportive loved ones can aid in facing challenges and celebrating milestones. Conversely, being around unsupportive individuals may lead to slips or relapses. Planning ahead to manage these dynam",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

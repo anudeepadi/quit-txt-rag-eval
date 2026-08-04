@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.70 tone=0.60 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:45+00:00",
+  "question": "What are the health risks of smoking at a young age?",
+  "answer": "Smoking at an early age increases the risk of lung cancer, developing asthma, using alcohol and other drugs, developing heart disease and stroke later in life, and dental problems. It can also cause skin problems like psoriasis, dermatitis, and early wrinkles.",
+  "source_excerpt": "Topic: What are the health risks of smoking at a young age?\nSmoking at an early age increases the risk of lung cancer, developing asthma, using alcohol and other drugs, developing heart disease and stroke later in life, and dental problems. It can also cause skin problems like psoriasis, dermatitis,",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

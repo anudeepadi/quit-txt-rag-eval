@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_44",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (25w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:07+00:00",
+  "question": "Why is it important to remove smoking-related items when trying to quit?",
+  "answer": "It is important to remove smoking-related items like cigarettes, lighters, and ashtrays to eliminate temptation. Creating a smoke-free environment supports your efforts to quit smoking.",
+  "n_contexts": 3
+}

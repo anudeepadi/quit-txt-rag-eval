@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0009",
+  "task_id": "rag_q_07",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-16T03:43:43+00:00",
+  "ended_at": "2026-07-16T03:44:41+00:00",
+  "question": "Are there social or financial benefits to quitting smoking?",
+  "answer": "Yes, quitting smoking can improve your social life by enhancing how others perceive you and reducing their exposure to harmful secondhand smoke. Additionally, it can lead to financial benefits by eliminating the costs associated with purchasing cigarettes.",
+  "n_contexts": 3
+}

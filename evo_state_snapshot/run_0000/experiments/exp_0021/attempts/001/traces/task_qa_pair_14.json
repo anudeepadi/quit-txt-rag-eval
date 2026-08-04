@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.725,
+  "summary": "spec=0.50 tone=0.70 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:19:01+00:00",
+  "question": "Is a fast heart rate after smoking a sign of danger?",
+  "answer": "An increased heart rate, or tachycardia, after smoking can strain the heart and may be a sign of underlying cardiovascular issues.",
+  "source_excerpt": "Topic: How does smoking affect the risk of heart disease and stroke?\nSmoking increases the risk of coronary heart disease and stroke by 2 to 4 times compared to non-smokers.\n\nTopic: What is peripheral vascular disease and how is it related to smoking?\nPeripheral vascular disease (PVD) is a condition",
+  "specificity": 0.5,
+  "conversational_tone": 0.7,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

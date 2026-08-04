@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.70 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:42:01+00:00",
+  "question": "If I quit smoking, how quickly will I see health benefits?",
+  "answer": "Quitting smoking leads to a rapid decline in the risk of acute myocardial infarction (AMI) and stroke. Within the first year of cessation, you can see a significant reduction in hospitalizations for these conditions.",
+  "source_excerpt": "Topic: How does smoking affect my cardiovascular health?\nSmoking significantly increases the risk of cardiovascular diseases. It contributes to nearly one-third of deaths from coronary heart disease due to its impact on blood vessels and heart function. Smoking damages the lining of arteries, leadin",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

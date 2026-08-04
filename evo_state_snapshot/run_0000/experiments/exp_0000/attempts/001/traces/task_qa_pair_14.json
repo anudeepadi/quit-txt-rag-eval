@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T02:17:10+00:00",
+  "ended_at": "2026-07-16T02:18:04+00:00",
+  "question": "What immediate health risks does smoking pose to young people?",
+  "answer": "Smoking can cause serious health issues immediately and well into adulthood. Young people who smoke can become addicted to nicotine, have early heart damage, and reduced lung growth.",
+  "source_excerpt": "Topic: How does tobacco use affect individuals with behavioral health conditions?\nIndividuals with behavioral health conditions are more likely to smoke, accounting for 38% of all U.S. adult cigarette consumption, despite making up only 25% of the population. This group has a smoking rate of 23%, hi",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

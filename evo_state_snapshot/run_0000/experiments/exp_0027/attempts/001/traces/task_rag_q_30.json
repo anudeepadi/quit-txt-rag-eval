@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_30",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:24+00:00",
+  "question": "Who can support me during a gradual quit plan?",
+  "answer": "You can include family, friends, co-workers, and others in your support network while trying to quit. Surrounding yourself with people who support your choice to quit will increase your chances of staying smokefree for good.",
+  "n_contexts": 3
+}

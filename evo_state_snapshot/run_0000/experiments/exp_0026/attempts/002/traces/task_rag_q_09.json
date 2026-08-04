@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_09",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (31w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:42:45+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "To prevent kids from picking up smoking early, start open conversations early, maintain ongoing dialogue, and set a positive example by not using tobacco products. This can make a big difference!",
+  "n_contexts": 3
+}

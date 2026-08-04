@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_27",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:18+00:00",
+  "question": "Which demographic groups among adults with mental health conditions have higher smoking rates?",
+  "answer": "Individuals with serious mental illnesses, such as those with schizophrenia and bipolar disorder, have higher smoking rates. Estimates suggest that 70-85% of people with schizophrenia and 50-70% of those with bipolar disorder smoke.",
+  "n_contexts": 3
+}

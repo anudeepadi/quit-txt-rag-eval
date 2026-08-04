@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_132",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (38w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:51+00:00",
+  "question": "How does smoking affect lupus medication effectiveness?",
+  "answer": "The knowledge base does not provide specific information on how smoking affects lupus medication effectiveness. However, it does state that smoking is especially harmful for individuals with autoimmune conditions, which may imply a negative impact on treatment outcomes.",
+  "n_contexts": 3
+}

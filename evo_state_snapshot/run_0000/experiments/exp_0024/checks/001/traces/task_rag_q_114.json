@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_114",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (24w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:15+00:00",
+  "question": "What social benefits come from quitting smoking?",
+  "answer": "Quitting smoking can improve relationships by reducing secondhand smoke exposure and eliminating the smell of tobacco. You'll likely enjoy more inclusive social experiences too!",
+  "n_contexts": 3
+}

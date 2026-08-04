@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (59w)",
+  "started_at": "2026-07-16T02:17:10+00:00",
+  "ended_at": "2026-07-16T02:18:38+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Quitting smoking can lead to improved mental health, including reduced depression, anxiety, and stress, as well as enhanced mood and quality of life. Additionally, it can improve social relationships by positively changing how others perceive you and reducing exposure to harmful secondhand smoke. Financially, quitting can save an average of \u00a338 a week, amounting to around \u00a32,000 a year.",
+  "n_contexts": 3
+}

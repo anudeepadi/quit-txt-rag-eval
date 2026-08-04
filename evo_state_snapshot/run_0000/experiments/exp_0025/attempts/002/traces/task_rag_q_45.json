@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_45",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:47+00:00",
+  "question": "What steps can I take to slowly quit smoking without feeling overwhelmed?",
+  "answer": "To slowly quit smoking without feeling overwhelmed, you can start by gradually reducing the number of cigarettes you smoke daily. Additionally, setting a quit date and seeking support from healthcare professionals or support groups can provide guidance and encouragement during the process.",
+  "n_contexts": 3
+}

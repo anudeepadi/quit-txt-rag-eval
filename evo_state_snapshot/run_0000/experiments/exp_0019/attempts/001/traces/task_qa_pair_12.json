@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_12",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:46+00:00",
+  "question": "How should I start running after I quit smoking?",
+  "answer": "Begin with a health checkup to assess lung capacity and receive guidance on safe exercise progression. Start with short walks, gradually increasing duration and intensity.",
+  "source_excerpt": "Topic: How does smoking affect lung function and exercise capacity?\nSmoking impairs lung function and reduces exercise capacity, leading to decreased oxygen uptake and increased breathlessness during physical activity.\n\nTopic: Can quitting smoking improve respiratory health?\nYes, quitting smoking ca",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_06",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:43:41+00:00",
+  "question": "What is secondhand smoke and how is it formed?",
+  "answer": "Second-hand smoke, also known as passive smoking, is the smoke exhaled by a smoker and the smoke released directly by cigarettes. It is formed from both the smoke exhaled by smokers and the smoke emitted from the burning end of a cigarette.",
+  "n_contexts": 3
+}

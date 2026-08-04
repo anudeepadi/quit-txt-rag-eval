@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "rag_q_07",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (57w)",
+  "started_at": "2026-07-16T02:12:01+00:00",
+  "ended_at": "2026-07-16T02:13:19+00:00",
+  "question": "Are there social or financial benefits to quitting smoking?",
+  "answer": "Yes, there are both social and financial benefits to quitting smoking. Financially, a smoker could save an average of \u00a338 a week, which amounts to around \u00a32,000 a year. Socially, quitting smoking can improve how others perceive you, reduce exposure to secondhand smoke for those around you, and foster a more positive and health-conscious image among peers.",
+  "n_contexts": 3
+}

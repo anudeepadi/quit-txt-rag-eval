@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=1.00 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:54+00:00",
+  "question": "What types of cancer are linked to smoking?",
+  "answer": "Smoking causes 12 types of cancer, including cancers of the lung, larynx, oral cavity and pharynx, esophagus, pancreas, bladder, stomach, liver, colon and rectum, kidney and renal pelvis, cervix, and acute myeloid leukemia (AML). It's a serious risk to be aware of.",
+  "source_excerpt": "Topic: How does secondhand smoke affect reproductive health?\nSecondhand smoke can cause adverse reproductive health effects in women, including low birth weight.\n\nTopic: How has secondhand smoke exposure changed over time in the U.S.?\nBetween 1999\u20132000 and 2011\u20132012, secondhand smoke exposure among ",
+  "specificity": 1.0,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

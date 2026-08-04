@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.725,
+  "summary": "spec=0.50 tone=0.70 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:42+00:00",
+  "question": "Why is adult smoking cessation emphasized over youth prevention?",
+  "answer": "While preventing smoking initiation among youth is crucial, reducing smoking among adults yields more immediate health and economic benefits. Adults who quit smoking experience rapid health improvements.",
+  "source_excerpt": "Topic: How does smoking affect my cardiovascular health?\nSmoking significantly increases the risk of cardiovascular diseases. It contributes to nearly one-third of deaths from coronary heart disease due to its impact on blood vessels and heart function. Smoking damages the lining of arteries, leadin",
+  "specificity": 0.5,
+  "conversational_tone": 0.7,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

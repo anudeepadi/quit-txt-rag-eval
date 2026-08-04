@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_48",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (42w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:52+00:00",
+  "question": "Is social smoking common among teens?",
+  "answer": "The knowledge base does not explicitly state whether social smoking is common among teens. However, it does indicate that teens who have smokers in their social network are more likely to smoke, suggesting a potential prevalence of social smoking in that demographic.",
+  "n_contexts": 3
+}

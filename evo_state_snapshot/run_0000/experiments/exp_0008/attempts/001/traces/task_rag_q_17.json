@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0008",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T03:36:33+00:00",
+  "ended_at": "2026-07-16T03:37:40+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Quitting smoking can lead to improved mood and quality of life, as well as reduced depression, anxiety, and stress. Additionally, it can enhance social relationships by improving how others perceive you and reducing exposure to harmful secondhand smoke.",
+  "n_contexts": 3
+}

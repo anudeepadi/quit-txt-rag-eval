@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_81",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (19w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:18+00:00",
+  "question": "What method is used to assess morbidity in SLE patients?",
+  "answer": "The knowledge base provided does not contain information regarding the assessment of morbidity in SLE (Systemic Lupus Erythematosus) patients.",
+  "n_contexts": 3
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.50 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:23+00:00",
+  "question": "Why is it so hard for people with ADHD to quit smoking?",
+  "answer": "Individuals with ADHD often find it more challenging to quit smoking due to stronger withdrawal symptoms and cravings. It's tough when nicotine is relied upon to manage ADHD symptoms, but there are medications and therapies that can help.",
+  "source_excerpt": "Topic: Why is nicotine use higher among individuals with ADHD?\nIndividuals with ADHD are more likely to use nicotine because it can temporarily enhance attention and concentration, providing immediate relief from ADHD symptoms. Additionally, the impulsivity associated with ADHD may lead to a prefere",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

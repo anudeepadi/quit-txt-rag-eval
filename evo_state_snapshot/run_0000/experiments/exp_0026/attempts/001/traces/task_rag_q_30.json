@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_30",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:46+00:00",
+  "question": "Who can support me during a gradual quit plan?",
+  "answer": "You can reach out to your doctor or pharmacist for guidance. Informing family and friends about your decision can also help them offer encouragement. Additionally, joining support groups or online communities can provide motivation during your gradual quit plan.",
+  "n_contexts": 3
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_07",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.80 tone=0.50 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:09:39+00:00",
+  "ended_at": "2026-07-16T06:15:54+00:00",
+  "question": "What happens to a boxer's lungs if they smoke?",
+  "answer": "Smoking increases carbon monoxide levels in the blood, which reduces oxygen transport and damages airways and alveoli. This can lead to respiratory issues like chronic obstructive pulmonary disease (COPD), affecting endurance and performance.",
+  "source_excerpt": "Topic: What strategies can support quitting smoking for those looking to improve their cycling?\nEffective strategies include using supportive tools like the Stoptober app to track progress and savings, reading motivational literature such as Allen Carr\u2019s 'Easy Way to Stop Smoking,' and seeking suppo",
+  "specificity": 0.8,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

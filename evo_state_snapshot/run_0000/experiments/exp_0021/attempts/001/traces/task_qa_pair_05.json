@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:18:54+00:00",
+  "question": "How does smoking affect PCOS symptoms?",
+  "answer": "Smoking exacerbates PCOS symptoms by increasing insulin resistance, elevating androgen levels, promoting chronic inflammation, and raising the risk of cardiovascular disease and infertility. These factors collectively worsen hormonal imbalances and metabolic issues associated with PCOS.",
+  "source_excerpt": "Topic: What are the effects of smoking on PCOS?\nSmoking exacerbates PCOS symptoms by increasing insulin resistance, elevating androgen levels, promoting chronic inflammation, and raising the risk of cardiovascular disease and infertility. These factors collectively worsen hormonal imbalances and met",
+  "specificity": 0.8,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

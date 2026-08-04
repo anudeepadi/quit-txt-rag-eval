@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_70",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (17w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:54+00:00",
+  "question": "Are there any side effects associated with laser acupuncture for smoking cessation?",
+  "answer": "The knowledge base does not provide information about side effects associated with laser acupuncture for smoking cessation.",
+  "n_contexts": 3
+}

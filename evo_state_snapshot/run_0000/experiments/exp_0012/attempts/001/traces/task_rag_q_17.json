@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0012",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-16T03:57:30+00:00",
+  "ended_at": "2026-07-16T03:58:43+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Some surprising benefits of quitting smoking include reduced depression, anxiety, and stress, along with improved mood and quality of life. Additionally, you can expect positive changes such as increased energy, feeling healthier, and improved breathing as soon as 2 weeks after quitting.",
+  "n_contexts": 6
+}

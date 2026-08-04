@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_05",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (22w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:35:48+00:00",
+  "question": "Can quitting smoking improve erectile function?",
+  "answer": "Yes, quitting smoking can improve erectile function. Smoking is associated with erectile dysfunction, and stopping can lead to enhancements in this area.",
+  "n_contexts": 3
+}

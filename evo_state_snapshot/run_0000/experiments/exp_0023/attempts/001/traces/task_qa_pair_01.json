@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.50 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:45+00:00",
+  "question": "What are the benefits of quitting smoking for my stroke risk?",
+  "answer": "Smoking cessation lowers your risk of stroke, improves your cardiovascular health, and enhances your overall well-being.",
+  "source_excerpt": "Topic: How does smoking affect stroke risk?\nSmoking increases stroke risk by damaging blood vessels, raising blood pressure, and promoting clot formation, leading to higher chances of stroke.\n\nTopic: Can quitting smoking reduce stroke risk?\nYes, quitting smoking reduces stroke risk over time, as the",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

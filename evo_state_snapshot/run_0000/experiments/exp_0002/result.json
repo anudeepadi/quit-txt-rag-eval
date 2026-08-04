@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 1,
+  "experiment_id": "exp_0002",
+  "failure_class": "hypothesis",
+  "reason": "Net regression 0.731<0.758. Peripheral mining + QA_PER_SOURCE 8->10: apparent faithfulness conversions were judge-noise on refusals; the one real effect was retrieval displacement (rag_q_10 lost) from the 40->50 pair count at fixed top_k=3. Branching a count-isolated variant.",
+  "score": 0.731,
+  "status": "discarded",
+  "timestamp": "2026-07-16T02:56:43+00:00"
+}

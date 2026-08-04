@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_67",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (27w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:50+00:00",
+  "question": "How does quitting smoking benefit daily life?",
+  "answer": "Quitting smoking can lead to improved physical health, enhanced self-esteem, and a better overall quality of life. These benefits contribute to a positive change in daily life.",
+  "n_contexts": 3
+}

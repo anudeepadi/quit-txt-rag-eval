@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "rag_q_10",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (40w)",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:58:55+00:00",
+  "question": "What is secondhand smoke and how is it formed?",
+  "answer": "Secondhand smoke is the combination of smoke from the burning end of a cigarette and the smoke exhaled by smokers. It is formed when a smoker exhales smoke and when smoke is released directly from a burning cigarette or pipe.",
+  "n_contexts": 3
+}

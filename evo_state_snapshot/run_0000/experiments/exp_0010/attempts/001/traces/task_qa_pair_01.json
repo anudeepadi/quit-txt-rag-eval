@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0010",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.725,
+  "summary": "spec=0.80 tone=0.20 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T03:44:21+00:00",
+  "ended_at": "2026-07-16T03:45:03+00:00",
+  "question": "How do researchers assess the neural effects of smoking?",
+  "answer": "Researchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two cigarettes.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.8,
+  "conversational_tone": 0.2,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

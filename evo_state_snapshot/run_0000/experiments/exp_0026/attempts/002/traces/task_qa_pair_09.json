@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.70 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:48+00:00",
+  "question": "How does secondhand smoke impact kids' lungs?",
+  "answer": "Exposure decreases lung efficiency, impairs lung function, increases the frequency and severity of asthma, and aggravates conditions like sinusitis, rhinitis, cystic fibrosis, and chronic respiratory problems.",
+  "source_excerpt": "Topic: How might these findings impact future treatments for smokers with viral infections?\nUnderstanding the molecular pathways of this exaggerated immune response could lead to the development of targeted therapies to mitigate lung damage in smokers during viral infections, potentially improving o",
+  "specificity": 0.8,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

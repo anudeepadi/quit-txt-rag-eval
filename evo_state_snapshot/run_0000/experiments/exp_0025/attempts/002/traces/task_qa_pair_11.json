@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.70 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:08:27+00:00",
+  "question": "How much does smoking increase my stroke risk?",
+  "answer": "Smoking significantly elevates stroke risk; individuals who smoke 20 cigarettes daily are six times more likely to experience a stroke compared to non-smokers. Quitting can greatly lower that risk.",
+  "source_excerpt": "Topic: Does secondhand smoke impact children's foot health?\nSecondhand smoke can negatively affect children's health, potentially leading to issues like blood clots in the legs and feet. Children exposed to tobacco smoke may also experience reduced circulation, impacting overall foot health.\n\nTopic:",
+  "specificity": 0.8,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

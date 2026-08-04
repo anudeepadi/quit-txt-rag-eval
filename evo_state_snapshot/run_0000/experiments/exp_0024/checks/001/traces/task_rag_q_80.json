@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_80",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:14+00:00",
+  "question": "Is hypnosis an effective method to quit smoking?",
+  "answer": "The effectiveness of hypnosis for quitting smoking varies; about 25% of people are not easily hypnotized, which can affect outcomes. While some studies show mixed results, hypnosis may be more effective when combined with other cessation strategies.",
+  "n_contexts": 3
+}

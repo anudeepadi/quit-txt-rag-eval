@@ -1,0 +1,89 @@
+{
+  "attempt": 1,
+  "attempt_state": {
+    "attempt": 1,
+    "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0021/attempts/001/checkpoints",
+    "commit": "2a2b97baa017405517ab12a1829690cacab19fbe",
+    "experiment_id": "exp_0021",
+    "gate_failures": [],
+    "phase": "complete",
+    "pid": 34141,
+    "remote_checkpoint_dir": null,
+    "score": 0.8227,
+    "started_at": "2026-07-16T06:10:46+00:00",
+    "status": "committed",
+    "updated_at": "2026-07-16T06:22:26+00:00"
+  },
+  "benchmark": {
+    "command": "python3 /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0021/code/autoresearch/run_data_gen_experiment.py",
+    "result": {
+      "ended_at": "2026-07-16T06:22:26+00:00",
+      "score": 0.8227,
+      "started_at": "2026-07-16T06:10:48+00:00",
+      "tasks": {
+        "qa_pair_01": 0.85,
+        "qa_pair_02": 0.875,
+        "qa_pair_03": 0.775,
+        "qa_pair_04": 0.875,
+        "qa_pair_05": 0.85,
+        "qa_pair_06": 0.85,
+        "qa_pair_07": 0.75,
+        "qa_pair_08": 0.8,
+        "qa_pair_09": 0.9,
+        "qa_pair_10": 0.825,
+        "qa_pair_11": 0.85,
+        "qa_pair_12": 0.825,
+        "qa_pair_13": 0.725,
+        "qa_pair_14": 0.725,
+        "qa_pair_15": 0.75,
+        "rag_q_01": 1.0,
+        "rag_q_02": 1.0,
+        "rag_q_03": 1.0,
+        "rag_q_04": 1.0,
+        "rag_q_05": 0.0,
+        "rag_q_06": 0.0,
+        "rag_q_07": 1.0,
+        "rag_q_08": 0.0,
+        "rag_q_09": 1.0,
+        "rag_q_10": 1.0,
+        "rag_q_11": 1.0,
+        "rag_q_12": 1.0,
+        "rag_q_13": 1.0,
+        "rag_q_14": 1.0,
+        "rag_q_15": 1.0,
+        "rag_q_16": 0.5,
+        "rag_q_17": 1.0,
+        "rag_q_18": 1.0,
+        "rag_q_19": 1.0,
+        "rag_q_20": 1.0,
+        "run_meta": 0.8226666666666667
+      }
+    },
+    "returncode": 0
+  },
+  "change_files": [
+    "code/autoresearch/data_gen_experiment.py"
+  ],
+  "commit": "2a2b97baa017405517ab12a1829690cacab19fbe",
+  "error": null,
+  "experiment_id": "exp_0021",
+  "finished_at": "2026-07-16T06:22:26+00:00",
+  "gates": [
+    {
+      "command": "git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0021 diff --quiet daddecb -- code/ datasets/ ':(exclude)code/autoresearch/data_gen_experiment.py' ':(exclude)code/autoresearch/data_gen_results.tsv' && test -z \"$(git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0021 status --porcelain --untracked-files=all -- code/ datasets/ | grep '^??')\"",
+      "from": "root",
+      "name": "harness_integrity",
+      "passed": true,
+      "phase": "post",
+      "returncode": 0
+    }
+  ],
+  "hypothesis": "PASS-1 additive enumerated/secondary-fact extraction: when a source answer enumerates multiple conditions/effects/items, each listed item is its own extractable fact; secondary side-mentions within a broader-topic answer are extractable even if the broad subject is already covered. Soften Rule 2 (no-repeated-themes -> no-duplicate-facts, distinct sub-facts of one subject allowed). Fund with QA_PER_SOURCE 8->10. Targets rag_q_05 (erectile, id00284 list) + rag_q_08 (secondhand mental-health, id00853).",
+  "metric": "max",
+  "outcome": "committed",
+  "parent_id": "exp_0019",
+  "parent_score": 0.7933,
+  "runtime": [],
+  "score": 0.8227,
+  "started_at": "2026-07-16T06:10:46+00:00"
+}

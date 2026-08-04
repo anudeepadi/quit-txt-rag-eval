@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_06",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-16T06:09:39+00:00",
+  "ended_at": "2026-07-16T06:15:53+00:00",
+  "question": "How does smoking or vaping affect fertility?",
+  "answer": "Smoking can make it harder to fall pregnant and reduce the effectiveness of infertility treatments. It's best to quit vaping if you\u2019re trying to conceive, as many chemicals in e-cigarettes negatively impact reproductive health.",
+  "source_excerpt": "Topic: What should I do if I've tried to quit smoking before and failed?\nTake comfort in the fact that most people fail several times before quitting successfully. Your past failures are not a lesson that you are unable to quit smoking. Instead, view them as part of the normal journey toward becomin",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

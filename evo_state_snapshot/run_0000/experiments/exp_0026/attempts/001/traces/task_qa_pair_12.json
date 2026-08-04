@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_12",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:24+00:00",
+  "question": "How does smoking really affect my lungs and ability to exercise?",
+  "answer": "Smoking impairs lung function and reduces exercise capacity, leading to decreased oxygen uptake and increased breathlessness during physical activity. It's tough on your body, but understanding this can help you make changes.",
+  "source_excerpt": "Topic: How does smoking affect lung function and exercise capacity?\nSmoking impairs lung function and reduces exercise capacity, leading to decreased oxygen uptake and increased breathlessness during physical activity.\n\nTopic: Can quitting smoking improve respiratory health?\nYes, quitting smoking ca",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

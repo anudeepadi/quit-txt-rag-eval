@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_26",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (50w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:15+00:00",
+  "question": "What role did research play in addressing smoking as a public health concern?",
+  "answer": "Research has played a crucial role in identifying the health impacts of smoking, leading to the enactment of comprehensive smoke-free laws that have improved health outcomes, particularly for children. Additionally, studies have highlighted the importance of addressing social factors and stigmatization in public health campaigns to effectively reduce smoking rates.",
+  "n_contexts": 3
+}

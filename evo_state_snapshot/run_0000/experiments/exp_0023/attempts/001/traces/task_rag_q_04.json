@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "rag_q_04",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:04:07+00:00",
+  "question": "What are common reasons for relapse, and how can I avoid them?",
+  "answer": "Common reasons for relapse include associating with other smokers, consuming alcohol, and feeling isolated. To avoid these triggers, it is important to recognize them and take steps to stay away from situations that may lead to smoking.",
+  "n_contexts": 3
+}

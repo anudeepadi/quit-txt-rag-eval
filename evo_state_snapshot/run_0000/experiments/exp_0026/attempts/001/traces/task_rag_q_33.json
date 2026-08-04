@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_33",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (50w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:52+00:00",
+  "question": "How can teens resist peer pressure to smoke?",
+  "answer": "Teens can resist peer pressure to smoke by recognizing the influence of their peers and understanding that smoking behaviors are easily shared within groups. Additionally, seeking support from friends who do not smoke and focusing on the long-term health effects of smoking can help strengthen their resolve against peer pressure.",
+  "n_contexts": 3
+}

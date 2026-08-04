@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_08",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:25+00:00",
+  "question": "How does smoking affect performance in high-endurance sports?",
+  "answer": "Smoking adversely affects high-endurance sports performance by reducing oxygen delivery to muscles. Carbon monoxide from cigarette smoke binds to hemoglobin, displacing oxygen, which leads to decreased stamina and increased fatigue during physical activity.",
+  "source_excerpt": "Topic: How does smoking affect lung function in university athletes?\nCompared to non-smokers, smoking athletes exhibited higher exhaled carbon monoxide (CO) levels (3.75 \u00b1 3.08 ppm vs. 2.18 \u00b1 0.73 ppm). Interestingly, smokers showed higher forced vital capacity (FVC) and forced expiratory volume in ",
+  "specificity": 0.8,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

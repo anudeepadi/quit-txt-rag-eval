@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_93",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:38+00:00",
+  "question": "Why do people often gain weight after quitting smoking?",
+  "answer": "People often gain weight after quitting smoking due to the reversal of nicotine's appetite-suppressing effects, a decrease in metabolic rate, and increased appetite. Additionally, changes in taste can make food more appealing, leading to potential weight gain.",
+  "n_contexts": 3
+}

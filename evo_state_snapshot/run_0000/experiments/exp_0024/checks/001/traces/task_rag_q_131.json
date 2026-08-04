@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_131",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (22w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:49+00:00",
+  "question": "What role does social identity play in dual usage of e-cigarettes and traditional cigarettes?",
+  "answer": "The knowledge base does not provide information on the role of social identity in the dual usage of e-cigarettes and traditional cigarettes.",
+  "n_contexts": 3
+}

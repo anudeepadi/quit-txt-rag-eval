@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.50 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:20+00:00",
+  "question": "How can I support someone who is trying to quit smoking?",
+  "answer": "Offer encouragement and celebrate their milestones, no matter how small. Be patient and understanding, recognizing that quitting is a process that may involve setbacks, and remind them of their progress and the reasons they want to quit.",
+  "source_excerpt": "Topic: What is the Better Health Smoke Free campaign?\nThe Better Health Smoke Free campaign is a UK government initiative launched to encourage adults, especially parents and caregivers, to quit smoking. It highlights the influence adult smoking has on children's likelihood to start smoking and offe",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

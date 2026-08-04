@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_08",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.80 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:21+00:00",
+  "question": "What long-term health risks should I worry about if I smoke?",
+  "answer": "Long-term smoking significantly increases your risk of developing chronic respiratory conditions like chronic obstructive pulmonary disease (COPD) and lung cancer, making it harder to breathe and perform in endurance sports. Smokers are between 25 and 26 times more likely to develop lung cancer compared to non-smokers.",
+  "source_excerpt": "Topic: How does smoking affect lung function in university athletes?\nCompared to non-smokers, smoking athletes exhibited higher exhaled carbon monoxide (CO) levels (3.75 \u00b1 3.08 ppm vs. 2.18 \u00b1 0.73 ppm). Interestingly, smokers showed higher forced vital capacity (FVC) and forced expiratory volume in ",
+  "specificity": 0.8,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

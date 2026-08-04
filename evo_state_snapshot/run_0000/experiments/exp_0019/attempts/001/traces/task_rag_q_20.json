@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "rag_q_20",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:59:14+00:00",
+  "question": "How does smoking influence the company's costs?",
+  "answer": "Smoking leads to significant lifetime costs for companies, including direct medical expenses and lost earnings due to increased morbidity and mortality among employees. This can impact overall productivity and increase healthcare costs for employers.",
+  "n_contexts": 3
+}

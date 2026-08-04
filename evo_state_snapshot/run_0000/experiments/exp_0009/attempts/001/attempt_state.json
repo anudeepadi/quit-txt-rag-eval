@@ -1,0 +1,13 @@
+{
+  "attempt": 1,
+  "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0009/attempts/001/checkpoints",
+  "experiment_id": "exp_0009",
+  "gate_failures": [],
+  "phase": "complete",
+  "pid": 5573,
+  "remote_checkpoint_dir": null,
+  "score": 0.626,
+  "started_at": "2026-07-16T03:39:38+00:00",
+  "status": "evaluated",
+  "updated_at": "2026-07-16T03:42:28+00:00"
+}

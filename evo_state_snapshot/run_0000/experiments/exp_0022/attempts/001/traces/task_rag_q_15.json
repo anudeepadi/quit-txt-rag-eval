@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "rag_q_15",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:38:57+00:00",
+  "question": "Which groups of children are most affected by secondhand smoke exposure?",
+  "answer": "Children aged 3\u201311 years are most affected by secondhand smoke exposure, with a prevalence rate of approximately 40.6%. Additionally, those living with at least one smoker are about three times more likely to be exposed than nonsmoking adults.",
+  "n_contexts": 3
+}

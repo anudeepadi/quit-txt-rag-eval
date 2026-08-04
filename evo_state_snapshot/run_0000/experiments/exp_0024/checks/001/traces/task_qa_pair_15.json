@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:34:41+00:00",
+  "question": "If I quit smoking, will my inflammation improve?",
+  "answer": "Quitting smoking can lead to a gradual reduction in inflammation and partial restoration of immune function. However, the extent of recovery may vary based on how long and how intensely you smoked.",
+  "source_excerpt": "Topic: Does smoking affect the effectiveness of arthritis treatments?\nYes, smoking can impair the effectiveness of arthritis treatments. Studies have shown that smokers respond less favorably to methotrexate, a common RA medication, with the response being dose-dependent. Smoking also limits the eff",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

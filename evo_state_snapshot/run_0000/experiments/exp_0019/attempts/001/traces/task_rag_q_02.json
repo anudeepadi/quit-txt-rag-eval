@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "rag_q_02",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (29w)",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:58:42+00:00",
+  "question": "How can I manage stress without turning to tobacco?",
+  "answer": "You can manage stress without turning to tobacco by engaging in activities such as mindfulness, exercise, or hobbies. These strategies can help distract from cravings and improve your mood.",
+  "n_contexts": 3
+}

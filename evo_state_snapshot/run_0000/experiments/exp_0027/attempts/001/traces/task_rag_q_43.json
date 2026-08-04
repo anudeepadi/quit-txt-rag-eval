@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_43",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:48+00:00",
+  "question": "What are the first steps I should take when deciding to quit smoking?",
+  "answer": "Start by writing down your reasons for quitting and keep them visible to stay motivated. Identify your triggers, set clear boundaries, and seek support from non-smoking friends or professional resources like counseling or quitlines.",
+  "n_contexts": 3
+}

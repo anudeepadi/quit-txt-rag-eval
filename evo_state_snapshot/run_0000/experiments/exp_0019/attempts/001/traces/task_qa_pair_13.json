@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:47+00:00",
+  "question": "Does smoking suppress the immune system?",
+  "answer": "The chemicals in tobacco smoke can suppress your immune system, limiting your body\u2019s ability to fight off infections effectively. This weakened immune response can also affect how well your body handles tonsil-related illnesses, such as bacterial infections.",
+  "source_excerpt": "Topic: How can I alleviate cottonmouth symptoms?\nTo alleviate cottonmouth, consider drinking more water, using xylitol products, minimizing intake of sugary and caffeinated drinks, sucking on ice cubes, using a humidifier, avoiding spicy or salty foods, quitting smoking or chewing tobacco, and using",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

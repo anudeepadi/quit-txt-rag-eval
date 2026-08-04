@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_122",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:32+00:00",
+  "question": "What are the most effective strategies for quitting smoking to prevent cardiovascular disease?",
+  "answer": "The most effective strategies for quitting smoking include nicotine replacement therapy (NRT), prescription medications like varenicline (Chantix), transcranial magnetic stimulation (TMS), and behavioral counseling. Quitting smoking is essential to prevent cardiovascular diseases linked to smoking.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_16",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:10:58+00:00",
+  "question": "How does smoking influence the company's costs?",
+  "answer": "Smoking influences a company's costs through increased medical expenses for employees, higher health and life insurance premiums, and lost productivity due to tobacco-related illnesses. These factors can significantly strain a company's finances.",
+  "n_contexts": 3
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.925,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:42:00+00:00",
+  "question": "If I quit smoking, how soon will my stroke risk start to go down?",
+  "answer": "Stroke risk begins to decrease almost immediately after quitting; within 8 hours, blood oxygen levels improve, and after five years, the risk is similar to that of non-smokers. So, quitting can make a big difference!",
+  "source_excerpt": "Topic: How does smoking increase the risk of stroke?\nSmoking damages blood vessels, raises blood pressure, lowers 'good' HDL cholesterol, and increases 'bad' LDL cholesterol, all of which elevate stroke risk.\n\nTopic: Does secondhand smoke affect stroke risk?\nYes, non-smokers exposed to secondhand sm",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

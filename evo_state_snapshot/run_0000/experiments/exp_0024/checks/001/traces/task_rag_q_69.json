@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_69",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:53+00:00",
+  "question": "What should I do with smoking-related items after I quit?",
+  "answer": "It is advisable to remove all smoking-related items from your environment to reduce triggers associated with tobacco use. This includes disposing of cigarettes, lighters, ashtrays, and any other smoking paraphernalia.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_107",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (39w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:04+00:00",
+  "question": "What motivates dual users to use e-cigarettes alongside traditional cigarettes?",
+  "answer": "The knowledge base does not provide specific motivations for dual users to use e-cigarettes alongside traditional cigarettes. It only states that dual use is not a safe alternative and emphasizes the importance of quitting smoking completely to protect health.",
+  "n_contexts": 3
+}

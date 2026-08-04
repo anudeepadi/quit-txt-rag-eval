@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_105",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (43w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:01+00:00",
+  "question": "How can quitting smoking improve my finances?",
+  "answer": "Quitting smoking can improve your finances by saving you a significant amount of money that would otherwise be spent on cigarettes. Additionally, ex-smokers are 42% less likely to experience financial hardship, which can alleviate financial stress and enhance your family's quality of life.",
+  "n_contexts": 3
+}

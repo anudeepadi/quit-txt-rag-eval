@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:49+00:00",
+  "question": "How does smoking affect my spinal health?",
+  "answer": "Smoking can damage spinal disc cells and the interior lining of blood vessels. Nicotine shrinks blood vessels, restricting the flow of crucial nutrients like calcium, which is not good for your spine.",
+  "source_excerpt": "Topic: What causes chest pain when smoking?\nSmoking can cause chest pain due to damage to your blood vessels and heart or to your respiratory system and lungs. It's always important to see a doctor if you experience chest pain so that they can determine the cause and recommend the right treatment.\n\n",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

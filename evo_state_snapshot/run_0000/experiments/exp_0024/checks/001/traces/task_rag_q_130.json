@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_130",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (40w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:48+00:00",
+  "question": "Are there different approaches to smoking cessation counseling?",
+  "answer": "Yes, there are different approaches to smoking cessation counseling. Effective methods include individual face-to-face counseling, group-based programs, and telephone support, particularly when delivered by trained specialists. More intensive interventions tend to yield higher abstinence rates at six months or longer.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0010",
+  "task_id": "rag_q_12",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (28w)",
+  "started_at": "2026-07-16T03:44:21+00:00",
+  "ended_at": "2026-07-16T03:45:32+00:00",
+  "question": "Is smoking harmful to brain health even if I don't have other health issues?",
+  "answer": "Yes, smoking can be harmful to brain health. It is associated with changes in brain connectivity and can exacerbate symptoms of neuropathy, which may affect overall neurological function.",
+  "n_contexts": 3
+}

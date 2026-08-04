@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.50 tone=0.90 ground=1.00 clin=0.80",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:41:55+00:00",
+  "question": "I keep getting mouth ulcers, and I smoke \u2014 could that be related?",
+  "answer": "Yes, smoking contributes to mouth ulcers by increasing stress and anxiety levels, which are significant triggers for canker sores and aphthous ulcers.",
+  "source_excerpt": "Topic: What health conditions are caused by smoking?\nSmoking contributes to a range of serious health conditions, including various cancers, heart disease, stroke, and emphysema. It is a major factor in the development of these diseases, significantly impacting overall health.\n\nTopic: How does smoki",
+  "specificity": 0.5,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.8
+}

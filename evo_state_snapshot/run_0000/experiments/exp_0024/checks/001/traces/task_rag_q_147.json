@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_147",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:15+00:00",
+  "question": "How can social support aid in quitting smoking?",
+  "answer": "Social support can enhance the quitting process by providing encouragement and motivation. It can also help target specific demographic factors that may affect an individual's ability to quit smoking effectively.",
+  "n_contexts": 3
+}

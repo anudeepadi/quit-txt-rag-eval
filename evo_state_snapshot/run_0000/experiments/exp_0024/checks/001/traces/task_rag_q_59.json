@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_59",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:35+00:00",
+  "question": "Why should someone concerned about kidney health avoid smoking?",
+  "answer": "Someone concerned about kidney health should avoid smoking because it negatively impacts kidney health and can cause diseases in every organ, including the kidneys. Additionally, smokers are more likely to have protein in their urine, indicating kidney stress.",
+  "n_contexts": 3
+}

@@ -1,0 +1,23 @@
+diff --git a/code/autoresearch/data_gen_experiment.py b/code/autoresearch/data_gen_experiment.py
+index ee2600b..4aaae75 100644
+--- a/code/autoresearch/data_gen_experiment.py
++++ b/code/autoresearch/data_gen_experiment.py
+@@ -6,6 +6,12 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
+ 
+ # --- Hypothesis (describe what you're testing) ---
+ HYPOTHESIS = (
++    "Exp12 (retrieval-depth lane, parent exp_0009): RAG_TOP_K 3->6, applied "
++    "symmetrically to both the generated-KB arm and the human-baseline arm. Tests "
++    "whether deeper retrieval surfaces source-present pairs that were crowded out of "
++    "the top-3, converting displacement refusals (e.g. the cost pair for rag_q_16) "
++    "into grounded answers. The register mechanism below is inherited from exp_0009 "
++    "UNCHANGED. Inherited note: "
+     "Exp9 (tone lane, parent exp_0005): register-translation, FACT-FORWARD variant "
+     "of exp_0006. exp_0006's 3-pass texting-register mechanism won tone 0.66->0.80 "
+     "(+grd/+clin) but regressed faith 0.385->0.30 via retrieval displacement: warm "
+@@ -100,4 +106,4 @@ RAG_TEMPLATE = (
+ )
+ RAG_TEMPERATURE = 0.3
+ RAG_MAX_TOKENS = 150
+-RAG_TOP_K = 3
++RAG_TOP_K = 6

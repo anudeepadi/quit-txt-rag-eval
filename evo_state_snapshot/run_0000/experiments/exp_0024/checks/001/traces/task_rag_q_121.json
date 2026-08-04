@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_121",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:30+00:00",
+  "question": "Do light cigarettes reduce the risk of cancer?",
+  "answer": "No, light cigarettes do not reduce the risk of cancer. Smoking any kind of cigarette, including 'light' ones, puts you at a much greater risk of lung cancer than non-smokers.",
+  "n_contexts": 3
+}

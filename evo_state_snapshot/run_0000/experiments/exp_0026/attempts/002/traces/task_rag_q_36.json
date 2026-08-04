@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_36",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (51w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:36+00:00",
+  "question": "What strategies can help during the hardest stage?",
+  "answer": "During the hardest stage of quitting smoking, effective strategies include practicing relaxation techniques such as deep breathing, locating your stress, and visualization. These techniques may improve your health and help you handle stress in positive ways. Additionally, seeking support from healthcare professionals and engaging in behavioral therapies can also be beneficial.",
+  "n_contexts": 3
+}

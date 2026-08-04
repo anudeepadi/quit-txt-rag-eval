@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0012",
+  "task_id": "rag_q_13",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (53w)",
+  "started_at": "2026-07-16T03:57:30+00:00",
+  "ended_at": "2026-07-16T03:58:38+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "The knowledge base does not provide specific strategies for preventing kids from picking up smoking early. However, it highlights that health concerns have historically been a key motivator for individuals seeking to quit or reduce their smoking habits, which may imply that raising awareness about the health risks of smoking could be beneficial.",
+  "n_contexts": 6
+}

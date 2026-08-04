@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.60 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:17+00:00",
+  "question": "Can CBT help with withdrawal symptoms when I quit smoking?",
+  "answer": "Yes, CBT effectively manages withdrawal symptoms by providing coping mechanisms and addressing the psychological aspects of nicotine addiction. It can make the process a bit easier for you.",
+  "source_excerpt": "Topic: How does Cognitive Behavioral Therapy (CBT) assist in quitting smoking?\nCBT helps identify smoking triggers and develop alternative behaviors, addressing both cognitive and behavioral aspects of addiction.\n\nTopic: What benefits does CBT offer for smoking cessation?\nCBT offers benefits such as",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

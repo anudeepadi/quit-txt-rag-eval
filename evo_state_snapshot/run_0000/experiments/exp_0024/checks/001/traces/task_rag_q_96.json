@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_96",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (36w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:44+00:00",
+  "question": "What are some effective alternatives to smoking?",
+  "answer": "Effective alternatives to smoking include nicotine replacement therapies (NRTs) such as patches, gums, and lozenges, which can help manage withdrawal symptoms. Engaging in physical activities and practicing mindfulness are also recommended to support your quitting journey.",
+  "n_contexts": 3
+}

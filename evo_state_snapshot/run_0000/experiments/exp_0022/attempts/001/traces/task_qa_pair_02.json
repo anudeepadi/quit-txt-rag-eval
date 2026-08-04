@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_02",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.50 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:20+00:00",
+  "question": "I'm worried that quitting smoking will make my anxiety worse. Is that true?",
+  "answer": "Many individuals worry that quitting smoking may worsen mental health conditions like anxiety. However, evidence indicates that smoking cessation is associated with improvements in mental health, including reductions in anxiety.",
+  "source_excerpt": "Topic: What are common concerns about smoking cessation and mental health?\nMany individuals worry that quitting smoking may worsen mental health conditions like depression or anxiety, or that cessation could lead to increased stress or relapse of psychiatric symptoms.\n\nTopic: Does quitting smoking n",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

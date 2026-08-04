@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_47",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (26w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:13+00:00",
+  "question": "Is social smoking less harmful than regular smoking?",
+  "answer": "No, social smoking is not less harmful than regular smoking. Even occasional smoking exposes you to serious health risks, including heart disease, cancers, and respiratory issues.",
+  "n_contexts": 3
+}

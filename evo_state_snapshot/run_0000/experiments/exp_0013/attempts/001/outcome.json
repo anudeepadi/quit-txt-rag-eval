@@ -1,0 +1,89 @@
+{
+  "attempt": 1,
+  "attempt_state": {
+    "attempt": 1,
+    "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0013/attempts/001/checkpoints",
+    "commit": "03b8c16c10c87cca859102704a9eb29745e9c807",
+    "experiment_id": "exp_0013",
+    "gate_failures": [],
+    "phase": "complete",
+    "pid": 90838,
+    "remote_checkpoint_dir": null,
+    "score": 0.66,
+    "started_at": "2026-07-16T04:06:05+00:00",
+    "status": "committed",
+    "updated_at": "2026-07-16T04:09:11+00:00"
+  },
+  "benchmark": {
+    "command": "python3 /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0013/code/autoresearch/run_data_gen_experiment.py",
+    "result": {
+      "ended_at": "2026-07-16T04:09:11+00:00",
+      "score": 0.66,
+      "started_at": "2026-07-16T04:06:10+00:00",
+      "tasks": {
+        "qa_pair_01": 0.775,
+        "qa_pair_02": 0.775,
+        "qa_pair_03": 0.8,
+        "qa_pair_04": 0.8,
+        "qa_pair_05": 0.825,
+        "qa_pair_06": 0.8,
+        "qa_pair_07": 0.725,
+        "qa_pair_08": 0.775,
+        "qa_pair_09": 0.7,
+        "qa_pair_10": 0.725,
+        "qa_pair_11": 0.9,
+        "qa_pair_12": 0.9,
+        "qa_pair_13": 0.825,
+        "qa_pair_14": 0.925,
+        "qa_pair_15": 0.875,
+        "rag_q_01": 0.7,
+        "rag_q_02": 1.0,
+        "rag_q_03": 0.0,
+        "rag_q_04": 0.0,
+        "rag_q_05": 0.7,
+        "rag_q_06": 0.0,
+        "rag_q_07": 1.0,
+        "rag_q_08": 0.0,
+        "rag_q_09": 0.0,
+        "rag_q_10": 0.0,
+        "rag_q_11": 1.0,
+        "rag_q_12": 0.7,
+        "rag_q_13": 0.0,
+        "rag_q_14": 0.0,
+        "rag_q_15": 0.0,
+        "rag_q_16": 1.0,
+        "rag_q_17": 1.0,
+        "rag_q_18": 1.0,
+        "rag_q_19": 1.0,
+        "rag_q_20": 0.0,
+        "run_meta": 0.66
+      }
+    },
+    "returncode": 0
+  },
+  "change_files": [
+    "code/autoresearch/data_gen_experiment.py"
+  ],
+  "commit": "03b8c16c10c87cca859102704a9eb29745e9c807",
+  "error": null,
+  "experiment_id": "exp_0013",
+  "finished_at": "2026-07-16T04:09:11+00:00",
+  "gates": [
+    {
+      "command": "git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0013 diff --quiet ee18d6c -- code/ datasets/ ':(exclude)code/autoresearch/data_gen_experiment.py' ':(exclude)code/autoresearch/data_gen_results.tsv' && test -z \"$(git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0013 status --porcelain --untracked-files=all -- code/ datasets/ | grep '^??')\"",
+      "from": "root",
+      "name": "harness_integrity",
+      "passed": true,
+      "phase": "post",
+      "returncode": 0
+    }
+  ],
+  "hypothesis": "Retrieval-depth x breadth combo: QA_PER_SOURCE 8->10 (50 pairs) + RAG_TOP_K 3->6 (both arms). Isolates the interaction facttype-lane could not test at locked top_k: count=10 converts a behavioral pair (rag_q_02) but displaced a headline pair out of top-3 (rag_q_10-class) under 50-pair crowding. top_k=6 gives that displaced pair a rank-4-6 slot. Register mechanism inherited from exp_0009 UNCHANGED. Predict: net-positive only if the recovered headline pair + retained behavioral conversion outweigh the ~0.1/Q dilution exp_0012 showed on passing Qs.",
+  "metric": "max",
+  "outcome": "committed",
+  "parent_id": "exp_0009",
+  "parent_score": 0.6453,
+  "runtime": [],
+  "score": 0.66,
+  "started_at": "2026-07-16T04:06:05+00:00"
+}

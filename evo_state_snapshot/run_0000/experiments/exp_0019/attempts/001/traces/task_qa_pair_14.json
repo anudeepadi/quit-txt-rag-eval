@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "spec=0.50 tone=0.40 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:48+00:00",
+  "question": "What recommendations did the study make to improve support usage?",
+  "answer": "The researchers recommended increasing motivation to quit, enhancing interest in support, encouraging discussions about stopping smoking with health practitioners, and boosting confidence in quitting with cessation support.",
+  "source_excerpt": "Topic: What are healthier ways to cope with stress?\nInstead of smoking, try activities like walking, relaxation exercises, or engaging in hobbies. These can help manage stress more effectively.\n\nTopic: How can I stay motivated to quit smoking?\nUse tools like SmokefreeTXT for support, identify and av",
+  "specificity": 0.5,
+  "conversational_tone": 0.4,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

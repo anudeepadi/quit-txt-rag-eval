@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.80 tone=0.50 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:30+00:00",
+  "question": "How much do tobacco companies spend on advertising each year?",
+  "answer": "Tobacco companies have historically spent over $4 billion annually on advertising, equating to $15 for every man, woman, and child in the U.S.",
+  "source_excerpt": "Topic: At what age do most smokers start?\nMost smokers begin their habit at a young age. Sixty percent of smokers start by the age of 14, and 90% are firmly addicted before reaching age 19. Only one in ten smokers become addicted after the age of 19, indicating that almost no one starts smoking afte",
+  "specificity": 0.8,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

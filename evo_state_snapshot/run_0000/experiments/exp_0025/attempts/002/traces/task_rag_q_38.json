@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_38",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:35+00:00",
+  "question": "How can teens protect themselves from secondhand smoke?",
+  "answer": "Teens can protect themselves from secondhand smoke by avoiding situations where smoking occurs and spending time with nonsmoking friends. Additionally, engaging in discussions with parents and communities about the risks of smoking can help create a smoke-free environment.",
+  "n_contexts": 3
+}

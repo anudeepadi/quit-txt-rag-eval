@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_143",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:09+00:00",
+  "question": "What are the common stop smoking treatments available?",
+  "answer": "Common stop smoking treatments include nicotine replacement therapies such as gum, inhalers, lozenges, and patches, as well as non-nicotine medications like bupropion and varenicline (Chantix). Behavioral and supportive therapies, including individual, group, or telephone counseling, are also effective.",
+  "n_contexts": 3
+}

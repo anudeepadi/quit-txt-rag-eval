@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.725,
+  "summary": "spec=0.80 tone=0.20 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:19:01+00:00",
+  "question": "How does a mother's education level impact her son's likelihood to smoke?",
+  "answer": "Students whose mother was more highly educated were 50% less likely to smoke.",
+  "source_excerpt": "Topic: Why is it easier for teens to influence peers to start smoking than to help them quit?\nIn order to become a smoker, kids need to know how to smoke, they need to know where to buy cigarettes and how to smoke without being caught, which are all things they can learn from their friends who smoke",
+  "specificity": 0.8,
+  "conversational_tone": 0.2,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

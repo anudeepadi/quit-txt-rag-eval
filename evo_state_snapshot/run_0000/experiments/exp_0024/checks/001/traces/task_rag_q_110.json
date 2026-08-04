@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_110",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:08+00:00",
+  "question": "How can Nicotine Replacement Therapy (NRT) assist in quitting smoking?",
+  "answer": "Nicotine Replacement Therapy (NRT) assists in quitting smoking by providing a low dose of nicotine without the harmful chemicals in tobacco smoke, which helps ease withdrawal symptoms and cravings. It is available in various forms such as patches, gum, inhalators, tablets, lozenges, and sprays.",
+  "n_contexts": 3
+}

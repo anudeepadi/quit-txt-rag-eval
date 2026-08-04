@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "rag_q_11",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:04:19+00:00",
+  "question": "What usually pushes teens to try smoking in the first place?",
+  "answer": "Teens may try smoking due to peer pressure, a desire to appear mature or independent, stress relief, or exposure to family members who smoke. Additionally, psychological instability in adolescents can lead to unmotivated rebellion, making them more susceptible to smoking as a coping mechanism.",
+  "n_contexts": 3
+}

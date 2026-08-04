@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_12",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:13+00:00",
+  "question": "How much money can I save by quitting smoking?",
+  "answer": "If you smoke a pack a day, you could save over $14,000 annually. If you smoke half a pack daily, you could save approximately \u00a32,555 annually, which adds up to around \u00a312,775 over five years.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_21",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:20+00:00",
+  "question": "Will I gain a lot of weight if I quit smoking?",
+  "answer": "While some individuals may gain weight after quitting smoking, it is not guaranteed that you will gain a lot. About 37% of individuals gain less than 5 kg within a year of quitting, and some may even lose weight.",
+  "n_contexts": 3
+}

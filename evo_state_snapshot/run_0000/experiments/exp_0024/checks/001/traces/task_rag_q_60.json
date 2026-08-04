@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_60",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:36+00:00",
+  "question": "Are light cigarettes a safer option when trying to quit smoking?",
+  "answer": "No, 'light' cigarettes are not a safer option when trying to quit smoking, as they do not reduce the health risks associated with smoking. Tar exposure can be just as high with 'light' cigarettes if you take long, deep, or frequent puffs.",
+  "n_contexts": 3
+}

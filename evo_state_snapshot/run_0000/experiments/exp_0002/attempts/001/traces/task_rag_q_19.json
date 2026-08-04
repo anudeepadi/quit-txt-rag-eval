@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0002",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-16T02:50:58+00:00",
+  "ended_at": "2026-07-16T02:52:34+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Quitting smoking is associated with reduced depression, anxiety, and stress, and it improves mood and quality of life. Additionally, it protects loved ones from illnesses related to smoking and reduces the financial burden associated with purchasing cigarettes.",
+  "n_contexts": 3
+}

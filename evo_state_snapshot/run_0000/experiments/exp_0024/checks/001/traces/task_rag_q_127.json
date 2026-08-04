@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_127",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (46w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:41+00:00",
+  "question": "Is the relationship between teen smoking and anxiety disorders causal?",
+  "answer": "The knowledge base does not establish a causal relationship between teen smoking and anxiety disorders; it indicates that higher levels of anxiety are associated with increased smoking among adolescents in psychiatric care. More research is needed to understand the complexities of the factors influencing smoking behavior.",
+  "n_contexts": 3
+}

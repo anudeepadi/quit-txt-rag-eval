@@ -1,0 +1,88 @@
+{
+  "attempt": 1,
+  "attempt_state": {
+    "attempt": 1,
+    "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0002/attempts/001/checkpoints",
+    "experiment_id": "exp_0002",
+    "gate_failures": [],
+    "phase": "complete",
+    "pid": 40904,
+    "remote_checkpoint_dir": null,
+    "score": 0.731,
+    "started_at": "2026-07-16T02:50:56+00:00",
+    "status": "evaluated",
+    "updated_at": "2026-07-16T02:55:07+00:00"
+  },
+  "benchmark": {
+    "command": "python3 /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0002/code/autoresearch/run_data_gen_experiment.py",
+    "result": {
+      "ended_at": "2026-07-16T02:55:06+00:00",
+      "score": 0.731,
+      "started_at": "2026-07-16T02:50:58+00:00",
+      "tasks": {
+        "qa_pair_01": 0.725,
+        "qa_pair_02": 0.8,
+        "qa_pair_03": 0.8,
+        "qa_pair_04": 0.825,
+        "qa_pair_05": 0.775,
+        "qa_pair_06": 0.775,
+        "qa_pair_07": 0.775,
+        "qa_pair_08": 0.7,
+        "qa_pair_09": 0.7,
+        "qa_pair_10": 0.775,
+        "qa_pair_11": 0.9,
+        "qa_pair_12": 0.9,
+        "qa_pair_13": 0.775,
+        "qa_pair_14": 0.875,
+        "qa_pair_15": 0.8,
+        "rag_q_01": 0.7,
+        "rag_q_02": 0.7,
+        "rag_q_03": 0.5,
+        "rag_q_04": 1.0,
+        "rag_q_05": 0.0,
+        "rag_q_06": 0.0,
+        "rag_q_07": 1.0,
+        "rag_q_08": 0.3,
+        "rag_q_09": 1.0,
+        "rag_q_10": 0.0,
+        "rag_q_11": 0.0,
+        "rag_q_12": 1.0,
+        "rag_q_13": 0.5,
+        "rag_q_14": 1.0,
+        "rag_q_15": 0.0,
+        "rag_q_16": 1.0,
+        "rag_q_17": 1.0,
+        "rag_q_18": 1.0,
+        "rag_q_19": 1.0,
+        "rag_q_20": 1.0,
+        "run_meta": 0.7310000000000001
+      }
+    },
+    "returncode": 0
+  },
+  "change_files": [
+    "code/autoresearch/data_gen_experiment.py"
+  ],
+  "commit": null,
+  "error": null,
+  "experiment_id": "exp_0002",
+  "finished_at": "2026-07-16T02:55:07+00:00",
+  "gates": [
+    {
+      "command": "git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0002 diff --quiet ab25928 -- code/ datasets/ ':(exclude)code/autoresearch/data_gen_experiment.py' ':(exclude)code/autoresearch/data_gen_results.tsv' && test -z \"$(git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0002 status --porcelain --untracked-files=all -- code/ datasets/ | grep '^??')\"",
+      "from": "root",
+      "name": "harness_integrity",
+      "passed": true,
+      "phase": "post",
+      "returncode": 0
+    }
+  ],
+  "hypothesis": "Peripheral-fact mining: rewrite PASS 1 to also extract distinct secondary facts embedded within source answers (affected subpopulations, secondary benefits, comparative stats), raise QA_PER_SOURCE 8->10 to give room for them. Targets refusals whose facts ARE in the 5 source chunks but dropped by headline-only extraction (children/secondhand, mood/mental-health, sexual relations). Strict grounding preserved.",
+  "metric": "max",
+  "outcome": "evaluated",
+  "parent_id": "exp_0000",
+  "parent_score": 0.758,
+  "runtime": [],
+  "score": 0.731,
+  "started_at": "2026-07-16T02:50:56+00:00"
+}

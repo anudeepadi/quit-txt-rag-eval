@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.50 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:19:02+00:00",
+  "question": "How does stress relate to smoking?",
+  "answer": "Stress can trigger cravings, but smoking doesn't resolve stress\u2014it often worsens it. Nicotine withdrawal can increase stress, creating a cycle that's hard to break.",
+  "source_excerpt": "Topic: How can I start thinking of myself as a non-smoker?\nBegin by identifying the benefits of quitting smoking, such as improved health and increased freedom. Reflect on the positive aspects of your identity that are not related to smoking, and focus on these qualities to reinforce your non-smoker",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

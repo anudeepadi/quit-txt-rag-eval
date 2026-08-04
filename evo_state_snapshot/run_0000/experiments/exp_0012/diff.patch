@@ -1,0 +1,32 @@
+diff --git a/code/autoresearch/data_gen_experiment.py b/code/autoresearch/data_gen_experiment.py
+index ee2600b..4aaae75 100644
+--- a/code/autoresearch/data_gen_experiment.py
++++ b/code/autoresearch/data_gen_experiment.py
+@@ -6,6 +6,12 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
+ 
+ # --- Hypothesis (describe what you're testing) ---
+ HYPOTHESIS = (
++    "Exp12 (retrieval-depth lane, parent exp_0009): RAG_TOP_K 3->6, applied "
++    "symmetrically to both the generated-KB arm and the human-baseline arm. Tests "
++    "whether deeper retrieval surfaces source-present pairs that were crowded out of "
++    "the top-3, converting displacement refusals (e.g. the cost pair for rag_q_16) "
++    "into grounded answers. The register mechanism below is inherited from exp_0009 "
++    "UNCHANGED. Inherited note: "
+     "Exp9 (tone lane, parent exp_0005): register-translation, FACT-FORWARD variant "
+     "of exp_0006. exp_0006's 3-pass texting-register mechanism won tone 0.66->0.80 "
+     "(+grd/+clin) but regressed faith 0.385->0.30 via retrieval displacement: warm "
+@@ -100,4 +106,4 @@ RAG_TEMPLATE = (
+ )
+ RAG_TEMPERATURE = 0.3
+ RAG_MAX_TOKENS = 150
+-RAG_TOP_K = 3
++RAG_TOP_K = 6
+diff --git a/code/autoresearch/data_gen_results.tsv b/code/autoresearch/data_gen_results.tsv
+index 5b6da5e..c1236f6 100644
+--- a/code/autoresearch/data_gen_results.tsv
++++ b/code/autoresearch/data_gen_results.tsv
+@@ -13,3 +13,4 @@ exp_id	timestamp	hypothesis	gen_model	rag_faithfulness	qa_specificity	qa_tone	qa
+ 12	2026-07-15 22:15:54	BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, 2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be a judge-rubric ceiling, not a generator-side lever.	gpt-4o-mini	0.3850	0.6867	0.6600	0.9533	0.9067	0.6363	0.8200	47.0	40	32.3	0.0	2500	8	DISCARD
+ 13	2026-07-15 22:42:28	Exp9 (tone lane, parent exp_0005): register-translation, FACT-FORWARD variant of exp_0006. exp_0006's 3-pass texting-register mechanism won tone 0.66->0.80 (+grd/+clin) but regressed faith 0.385->0.30 via retrieval displacement: warm empathetic openers ('You're not the only one—') diluted pair embeddings, flipping rag_q_01/10/16 to refusals under top_k=3. Fix: the translated ANSWER must LEAD with the concrete grounded fact (number/medication/term first); warmth and second-person address are a brief TRAILING clause, never a preamble before the fact. Keeps texting tone + protects retrievability and specificity.	gpt-4o-mini	0.3400	0.6600	0.7800	0.9667	0.9000	0.6260	0.7700	44.2	40	31.6	0.0	2500	8	DISCARD
+ 14	2026-07-15 22:46:39	Exp9 (tone lane, parent exp_0005): register-translation, FACT-FORWARD variant of exp_0006. exp_0006's 3-pass texting-register mechanism won tone 0.66->0.80 (+grd/+clin) but regressed faith 0.385->0.30 via retrieval displacement: warm empathetic openers ('You're not the only one—') diluted pair embeddings, flipping rag_q_01/10/16 to refusals under top_k=3. Fix: the translated ANSWER must LEAD with the concrete grounded fact (number/medication/term first); warmth and second-person address are a brief TRAILING clause, never a preamble before the fact. Keeps texting tone + protects retrievability and specificity.	gpt-4o-mini	0.3700	0.6933	0.7867	0.9600	0.9067	0.6453	0.8200	45.1	40	32.3	0.0	2500	8	DISCARD
++15	2026-07-15 23:01:00	Exp12 (retrieval-depth lane, parent exp_0009): RAG_TOP_K 3->6, applied symmetrically to both the generated-KB arm and the human-baseline arm. Tests whether deeper retrieval surfaces source-present pairs that were crowded out of the top-3, converting displacement refusals (e.g. the cost pair for rag_q_16) into grounded answers. The register mechanism below is inherited from exp_0009 UNCHANGED. Inherited note: Exp9 (tone lane, parent exp_0005): register-translation, FACT-FORWARD variant of exp_0006. exp_0006's 3-pass texting-register mechanism won tone 0.66->0.80 (+grd/+clin) but regressed faith 0.385->0.30 via retrieval displacement: warm empathetic openers ('You're not the only one—') diluted pair embeddings, flipping rag_q_01/10/16 to refusals under top_k=3. Fix: the translated ANSWER must LEAD with the concrete grounded fact (number/medication/term first); warmth and second-person address are a brief TRAILING clause, never a preamble before the fact. Keeps texting tone + protects retrievability and specificity.	gpt-4o-mini	0.3050	0.6933	0.7867	0.9533	0.9000	0.6173	0.8100	37.7	40	32.7	0.0	2500	8	DISCARD

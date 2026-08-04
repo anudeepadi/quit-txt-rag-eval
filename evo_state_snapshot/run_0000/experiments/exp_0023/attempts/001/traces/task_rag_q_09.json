@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "rag_q_09",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:04:14+00:00",
+  "question": "How does Allen Carr's Easyway method compare to these treatments?",
+  "answer": "The Easyway method specifically addresses the psychological aspects of nicotine addiction, focusing on understanding and overcoming cravings without relying on willpower alone. Other treatments may not emphasize this psychological approach as strongly.",
+  "n_contexts": 3
+}

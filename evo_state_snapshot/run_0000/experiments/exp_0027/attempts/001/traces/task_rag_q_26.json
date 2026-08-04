@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_26",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:17+00:00",
+  "question": "What role did research play in addressing smoking as a public health concern?",
+  "answer": "Research has played a critical role in identifying the harmful effects of tobacco use and understanding its impact on public health. It has informed public health initiatives and interventions aimed at reducing tobacco-related health disparities, death, and disease.",
+  "n_contexts": 3
+}

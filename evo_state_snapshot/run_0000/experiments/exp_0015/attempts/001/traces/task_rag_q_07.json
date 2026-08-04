@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0015",
+  "task_id": "rag_q_07",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-16T04:20:42+00:00",
+  "ended_at": "2026-07-16T04:21:48+00:00",
+  "question": "Are there social or financial benefits to quitting smoking?",
+  "answer": "Yes, quitting smoking can enhance your social relationships by improving how others perceive you and reducing their exposure to harmful secondhand smoke. Financially, on average, you could save \u00a338 a week, which adds up to around \u00a32,000 a year.",
+  "n_contexts": 5
+}

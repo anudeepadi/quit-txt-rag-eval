@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_07",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.50 tone=0.70 ground=1.00 clin=0.80",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:25+00:00",
+  "question": "Are there costs associated with smoking cessation programs at Froedtert Health?",
+  "answer": "The costs of smoking cessation programs at Froedtert Health may vary depending on the specific services provided and your insurance coverage. It's recommended to contact their billing department or your insurance provider to understand potential costs and coverage options.",
+  "source_excerpt": "Topic: What smoking cessation services are offered at Froedtert Health?\nFroedtert Health provides a comprehensive Smoking Cessation Program that includes education on smoking addiction and related health risks, personalized counseling to address behavioral aspects, and medical management with FDA-ap",
+  "specificity": 0.5,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.8
+}

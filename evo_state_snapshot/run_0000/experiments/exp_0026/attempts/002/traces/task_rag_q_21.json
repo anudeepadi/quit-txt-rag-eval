@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_21",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:07+00:00",
+  "question": "Where can I get help if I'm feeling overwhelmed or depressed?",
+  "answer": "You can talk to your doctor for treatment options, inform friends and family about your struggles to gain support, and seek immediate help by calling or texting 988 for 24-hour, free, and confidential support from trained counselors.",
+  "n_contexts": 3
+}

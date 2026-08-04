@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.50 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:34:30+00:00",
+  "question": "How can CBT help me quit smoking?",
+  "answer": "CBT helps identify smoking triggers and develop alternative behaviors, addressing both cognitive and behavioral aspects of addiction. It's a great way to understand your habits better.",
+  "source_excerpt": "Topic: How does Cognitive Behavioral Therapy (CBT) assist in quitting smoking?\nCBT helps identify smoking triggers and develop alternative behaviors, addressing both cognitive and behavioral aspects of addiction.\n\nTopic: What benefits does CBT offer for smoking cessation?\nCBT offers benefits such as",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

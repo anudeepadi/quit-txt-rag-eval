@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.90 tone=0.50 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:32+00:00",
+  "question": "Does smoking more than a pack a day affect post-stroke outcomes?",
+  "answer": "Yes, stroke patients who smoked more than a pack a day were 27% to 48% more likely to have poor functional outcomes and 32% to 53% more likely to be dependent on others three months after the stroke.",
+  "source_excerpt": "Topic: What strategies can help stroke patients quit smoking?\nComprehensive long-term programs, including individual counseling, post-discharge support, and pharmacological treatments, are recommended to assist stroke patients in quitting smoking.\n\nTopic: How does smoking affect recovery after a str",
+  "specificity": 0.9,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

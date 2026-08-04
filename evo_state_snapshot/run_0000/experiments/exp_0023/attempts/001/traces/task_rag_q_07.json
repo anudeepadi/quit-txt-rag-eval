@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "rag_q_07",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (45w)",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:04:11+00:00",
+  "question": "Are there social or financial benefits to quitting smoking?",
+  "answer": "Yes, quitting smoking can lead to financial benefits such as saving money on cigarettes, reducing healthcare costs related to smoking-related illnesses, and potentially lowering insurance premiums. Socially, ex-smokers are 42% less likely to experience financial hardship, which can improve overall quality of life for families.",
+  "n_contexts": 3
+}

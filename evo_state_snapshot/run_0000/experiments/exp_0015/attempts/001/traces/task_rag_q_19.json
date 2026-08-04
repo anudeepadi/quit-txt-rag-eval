@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0015",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (49w)",
+  "started_at": "2026-07-16T04:20:42+00:00",
+  "ended_at": "2026-07-16T04:22:06+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Some additional advantages of quitting smoking include reducing the risk of your loved ones contracting illnesses like lung cancer and heart disease, as well as improving your mood and quality of life. Quitting smoking can also lead to decreased stress levels, contributing to a more relaxed state of mind.",
+  "n_contexts": 5
+}

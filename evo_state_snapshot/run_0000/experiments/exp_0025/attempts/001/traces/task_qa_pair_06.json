@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_06",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.80 tone=0.70 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T06:34:14+00:00",
+  "ended_at": "2026-07-27T06:40:18+00:00",
+  "question": "Is there a safe amount of smoking or vaping during pregnancy?",
+  "answer": "There is no safe amount of smoking. Every cigarette harms your baby\u2019s development, and scientists don\u2019t recommend any amount of vaping to be safe during pregnancy.",
+  "source_excerpt": "Topic: What should I do if I've tried to quit smoking before and failed?\nTake comfort in the fact that most people fail several times before quitting successfully. Your past failures are not a lesson that you are unable to quit smoking. Instead, view them as part of the normal journey toward becomin",
+  "specificity": 0.8,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

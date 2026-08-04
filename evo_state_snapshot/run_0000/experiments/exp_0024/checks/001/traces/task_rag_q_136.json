@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_136",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:58+00:00",
+  "question": "Does the water in a hookah filter out harmful substances?",
+  "answer": "No, the water in a hookah does not filter out harmful substances. Hookah smoking delivers similar levels of nicotine and exposes users to high concentrations of toxic compounds, including tar and carcinogens.",
+  "n_contexts": 3
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0012",
+  "task_id": "qa_pair_03",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T03:57:30+00:00",
+  "ended_at": "2026-07-16T03:58:09+00:00",
+  "question": "What is Dupuytren's contracture and how is it connected to smoking?",
+  "answer": "Dupuytren's contracture is a condition where your fingers become permanently bent due to thickening of tissue beneath the skin in your palm. Smoking has been identified as a risk factor, with smokers being more likely to develop this condition compared to non-smokers.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

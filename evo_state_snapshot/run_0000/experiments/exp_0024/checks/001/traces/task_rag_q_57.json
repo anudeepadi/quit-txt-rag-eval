@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_57",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:31+00:00",
+  "question": "Does heavy smoking affect the intention to quit?",
+  "answer": "The knowledge base does not provide specific information regarding the effects of heavy smoking on the intention to quit. Therefore, I cannot answer that question based on the provided facts.",
+  "n_contexts": 3
+}

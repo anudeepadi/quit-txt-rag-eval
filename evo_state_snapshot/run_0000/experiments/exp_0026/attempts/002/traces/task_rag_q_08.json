@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_08",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:42:43+00:00",
+  "question": "Is smoking harmful to brain health even if I don't have other health issues?",
+  "answer": "Yes, smoking harms brain health by promoting vascular issues and introducing toxins that lead to inflammation and cellular stress, regardless of other health issues. These factors contribute to the development and progression of dementia.",
+  "n_contexts": 3
+}

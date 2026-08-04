@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.70 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:24:01+00:00",
+  "ended_at": "2026-07-16T06:30:13+00:00",
+  "question": "Will quitting smoking help my diabetes?",
+  "answer": "Quitting smoking leads to improved insulin sensitivity and better glycemic control, reducing the risk of diabetes-related complications. Over time, you can expect an overall improvement in your health outcomes.",
+  "source_excerpt": "Topic: What is the significance of FSG changes in relation to NAFLD risk post-smoking cessation?\nThe study found that changes in fasting serum glucose (FSG) levels after smoking cessation are significantly associated with the risk of non-alcoholic fatty liver disease (NAFLD). Specifically, individua",
+  "specificity": 0.7,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

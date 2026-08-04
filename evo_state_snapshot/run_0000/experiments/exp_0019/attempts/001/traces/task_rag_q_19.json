@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (27w)",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:59:12+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Additional advantages of quitting smoking include enhanced taste and smell, improved skin appearance, better oral health, improved mental clarity, increased energy levels, and a stronger immune system.",
+  "n_contexts": 3
+}

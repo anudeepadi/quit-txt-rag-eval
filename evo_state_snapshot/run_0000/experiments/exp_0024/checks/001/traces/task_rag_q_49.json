@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_49",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (28w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:16+00:00",
+  "question": "Does smoking affect my insurance premiums?",
+  "answer": "Yes, tobacco use can lead to higher health and life insurance premiums. This is one of the financial impacts of smoking beyond just the cost of buying cigarettes.",
+  "n_contexts": 3
+}

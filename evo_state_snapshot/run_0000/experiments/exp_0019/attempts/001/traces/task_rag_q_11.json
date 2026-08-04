@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "rag_q_11",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (47w)",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:58:57+00:00",
+  "question": "What usually pushes teens to try smoking in the first place?",
+  "answer": "Teens are often pushed to try smoking due to psychological instability, characterized by emotional and cognitive imbalances, which can lead to unmotivated rebellion. This instability, along with a lack of self-control and upbringing, makes them more susceptible to smoking as a form of protest or coping mechanism.",
+  "n_contexts": 3
+}

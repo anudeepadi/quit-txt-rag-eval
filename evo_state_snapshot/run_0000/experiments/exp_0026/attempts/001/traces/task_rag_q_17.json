@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (48w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:23+00:00",
+  "question": "Will I gain a lot of weight if I quit smoking?",
+  "answer": "While some individuals may gain weight after quitting smoking, averaging 4\u20135 kg within the first year, this isn't guaranteed for everyone. Changes in metabolism and eating habits can contribute to weight gain, but maintaining a healthy diet and staying active can help manage your weight during this transition.",
+  "n_contexts": 3
+}

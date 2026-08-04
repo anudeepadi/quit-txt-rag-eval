@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_98",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:48+00:00",
+  "question": "What are effective strategies to manage cravings when trying to quit smoking?",
+  "answer": "Effective strategies to manage cravings when trying to quit smoking include identifying triggers, using distraction techniques like walking or chewing gum, and engaging in physical activity. Additionally, delaying for a few minutes, taking slow, deep breaths, and drinking water slowly can help reduce cravings.",
+  "n_contexts": 3
+}

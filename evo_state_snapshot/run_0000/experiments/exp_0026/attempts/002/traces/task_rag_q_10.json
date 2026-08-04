@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_10",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:42:47+00:00",
+  "question": "How prevalent is secondhand smoke exposure among children in the U.S.?",
+  "answer": "Approximately 40.6% of U.S. children aged 3 to 11 are exposed to secondhand smoke. Children and teens living with at least one smoker are about three times more likely to be exposed than nonsmoking adults.",
+  "n_contexts": 3
+}

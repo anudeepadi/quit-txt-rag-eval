@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_72",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (55w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:59+00:00",
+  "question": "What strategies can help manage cravings during the quitting process?",
+  "answer": "To manage cravings during the quitting process, you can use the '4 Ds': Delay the urge, Deep breathe, Distract yourself, and Drink water. Additionally, plan ahead by listing your reasons for quitting and set personal rules, such as waiting 10 minutes before acting on a craving. Engaging in activities like walking can also be beneficial.",
+  "n_contexts": 3
+}

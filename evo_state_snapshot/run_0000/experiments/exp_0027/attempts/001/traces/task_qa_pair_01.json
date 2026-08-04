@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.925,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:41:47+00:00",
+  "question": "What causes this brain fog after I quit smoking?",
+  "answer": "Brain fog occurs because your brain is adjusting to the absence of nicotine, which stimulated dopamine release. This withdrawal leads to a temporary imbalance in neurotransmitter levels, causing symptoms like difficulty concentrating.",
+  "source_excerpt": "Topic: How can I help my lungs recover after quitting smoking?\nAfter quitting smoking, your lungs begin a natural self-cleaning process. To support this, stay hydrated to help thin mucus, engage in regular exercise to improve lung function, and avoid exposure to pollutants. These habits can aid in t",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

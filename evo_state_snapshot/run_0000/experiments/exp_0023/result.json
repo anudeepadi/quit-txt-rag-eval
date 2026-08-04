@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 3,
+  "experiment_id": "exp_0023",
+  "failure_class": "hypothesis",
+  "reason": "Pure composition of exp_0020 register-translation + exp_0021 additive extraction regressed -0.038 (0.797 vs 0.8347, ~3sigma). rag_q_09 converted as designed but QA_PER_SOURCE=10 dilution cost the fragile rag_q_05 + partial rag_q_14/19 and dropped all four quality dims; tone 0.74<0.75 keep-threshold. Mechanisms not positively additive on this lineage (converges with exp_0022 count-isolated regression).",
+  "score": 0.797,
+  "status": "discarded",
+  "timestamp": "2026-07-16T07:08:41+00:00"
+}

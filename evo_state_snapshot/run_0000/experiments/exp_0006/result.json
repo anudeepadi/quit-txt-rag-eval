@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 2,
+  "experiment_id": "exp_0006",
+  "failure_class": "hypothesis",
+  "reason": "Superseded by committed exp_0009. exp_0006 proved the register-translation tone mechanism (tone 0.66->0.80) but regressed faith via retrieval displacement (warm openers buried fact keywords; rag_q_01/10/16 -> refusals). exp_0009's fact-forward answer constraint fixed the displacement and committed. Displacement finding retained in annotation.",
+  "score": 0.6163,
+  "status": "discarded",
+  "timestamp": "2026-07-16T03:51:26+00:00"
+}

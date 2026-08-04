@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_31",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:48+00:00",
+  "question": "What should I do if I slip and smoke again?",
+  "answer": "If you relapse, don't be discouraged. Analyze what led to the relapse, reflect on the experience, and consider setting a new quit date. Seeking support from friends, family, or healthcare professionals can help you get back on track.",
+  "n_contexts": 3
+}

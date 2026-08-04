@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_137",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (28w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:00+00:00",
+  "question": "How does the brain contribute to anxiety during nicotine withdrawal?",
+  "answer": "Anxiety during nicotine withdrawal is linked to specific neural circuits in the brain, with a particular brain region being activated upon nicotine cessation, which leads to heightened anxiety.",
+  "n_contexts": 3
+}

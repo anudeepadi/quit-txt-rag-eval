@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 2,
+  "experiment_id": "exp_0014",
+  "failure_class": "hypothesis",
+  "reason": "Re-parenting: should branch from exp_0013 (top_k=6 committed 0.66) to directly test top_k=5 vs 6, not from exp_0009.",
+  "score": null,
+  "status": "discarded",
+  "timestamp": "2026-07-16T04:18:10+00:00"
+}

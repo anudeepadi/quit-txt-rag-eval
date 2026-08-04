@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0001",
+  "task_id": "rag_q_11",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-16T02:50:38+00:00",
+  "ended_at": "2026-07-16T02:51:56+00:00",
+  "question": "What usually pushes teens to try smoking in the first place?",
+  "answer": "Teens may be pushed to try smoking due to various factors, including peer pressure, curiosity, and the desire to fit in. Additionally, the perception of smoking as a way to appear more mature or rebellious can also influence their decision to start.",
+  "n_contexts": 3
+}

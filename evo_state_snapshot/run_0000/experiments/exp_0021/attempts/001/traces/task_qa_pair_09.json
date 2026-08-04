@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.80 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:18:57+00:00",
+  "question": "What are common triggers that can lead to smoking relapse?",
+  "answer": "Common triggers for smoking relapse include associating with other smokers, consuming alcohol, overconfidence in one's ability to stay smoke-free, isolation from support systems, lack of sleep, frequent stressful situations, feelings of anger or self-pity, and adopting a negative or pessimistic attitude.",
+  "source_excerpt": "Topic: What are the health risks of smoking at a young age?\nSmoking at an early age increases the risk of lung cancer, developing asthma, using alcohol and other drugs, developing heart disease and stroke later in life, and dental problems. It can also cause skin problems like psoriasis, dermatitis,",
+  "specificity": 0.8,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

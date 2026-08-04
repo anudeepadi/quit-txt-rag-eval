@@ -1,0 +1,36 @@
+{
+  "benchmark": "python3 {worktree}/code/autoresearch/run_data_gen_experiment.py",
+  "commit_strategy": "all",
+  "comparison_blocked": false,
+  "current_eval_epoch": 4,
+  "execution_backend": "worktree",
+  "frontier_strategy": {
+    "kind": "pareto_per_task",
+    "params": {
+      "k": 5,
+      "task_floor": 0.0
+    }
+  },
+  "gate": null,
+  "initialized_at": "2026-07-15T19:01:43+00:00",
+  "max_attempts": 3,
+  "metric": "max",
+  "per_exp_timeout": 2700,
+  "project_name": "QuitTxt data-gen prompt",
+  "repo_root": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol",
+  "runtime_env": {
+    "dotenv": [
+      {
+        "keys": [
+          "OPENAI_API_KEY"
+        ],
+        "mode": "allow",
+        "path": "code/.env"
+      }
+    ],
+    "inherit_shell": true
+  },
+  "target": "code/autoresearch/data_gen_experiment.py",
+  "workspace_dir": ".evo",
+  "worktrees_dir": "worktrees"
+}

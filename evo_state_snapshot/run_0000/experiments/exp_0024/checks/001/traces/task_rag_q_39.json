@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_39",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:57+00:00",
+  "question": "Is quitting cold turkey a good strategy?",
+  "answer": "Quitting nicotine 'cold turkey' is often ineffective, with only 3-5% of individuals succeeding long-term using this method. Utilizing evidence-based resources and support systems can significantly increase your chances of success.",
+  "n_contexts": 3
+}

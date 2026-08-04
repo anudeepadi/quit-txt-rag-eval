@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_134",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:55+00:00",
+  "question": "Are pharmacological therapies effective in aiding smoking cessation?",
+  "answer": "Yes, pharmacological therapies such as nicotine replacement therapies (NRT), bupropion, and varenicline have been shown in clinical trials to significantly increase quit rates compared to placebo, making them effective in aiding smoking cessation.",
+  "n_contexts": 3
+}

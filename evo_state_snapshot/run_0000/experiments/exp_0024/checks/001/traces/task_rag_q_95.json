@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_95",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:42+00:00",
+  "question": "What are the most effective treatments to quit smoking?",
+  "answer": "The most effective treatments to quit smoking include nicotine replacement therapies such as gum, inhalers, lozenges, and patches, as well as non-nicotine medications like bupropion and varenicline (Chantix). Behavioral and supportive therapies, including individual, group, or telephone counseling, are also proven to be effective.",
+  "n_contexts": 3
+}

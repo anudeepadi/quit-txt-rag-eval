@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_38",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:39+00:00",
+  "question": "How can teens protect themselves from secondhand smoke?",
+  "answer": "Teens can protect themselves from secondhand smoke by decreasing their proximity to smokers and increasing their exposure to nonsmokers. This can help create a healthier environment and reduce their risk of exposure.",
+  "n_contexts": 3
+}

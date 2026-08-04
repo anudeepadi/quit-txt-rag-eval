@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (51w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:04+00:00",
+  "question": "What are the side effects of quitting smoking?",
+  "answer": "Common side effects of quitting smoking include fatigue, headaches, nausea, tingling in hands and feet, coughing, sore throat, chest pain, constipation, dry mouth, and increased appetite. You may also experience withdrawal symptoms such as cravings, irritability, anxiety, restlessness, poor concentration, light-headedness, and sleep disturbances, which typically last less than 1\u20133 months.",
+  "n_contexts": 3
+}

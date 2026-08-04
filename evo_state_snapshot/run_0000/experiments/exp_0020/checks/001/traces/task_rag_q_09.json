@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "rag_q_09",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (50w)",
+  "started_at": "2026-07-16T06:24:01+00:00",
+  "ended_at": "2026-07-16T06:31:30+00:00",
+  "question": "How does Allen Carr's Easyway method compare to these treatments?",
+  "answer": "Allen Carr's Easyway method is effective because it addresses the psychological aspects of nicotine addiction and helps individuals understand and overcome cravings without relying on willpower alone. Research shows that structured programs like Easyway significantly improve quit rates compared to methods like e-cigarettes, which lack consistent evidence of long-term success.",
+  "n_contexts": 3
+}

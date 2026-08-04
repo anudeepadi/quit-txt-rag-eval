@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_36",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (40w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:37+00:00",
+  "question": "What strategies can help during the hardest stage?",
+  "answer": "During the hardest stage, some effective coping strategies include practicing mindfulness, getting active, drinking water, or chewing gum to keep your mouth busy and distract from cravings. These techniques can help you stay focused and manage the challenges of quitting.",
+  "n_contexts": 3
+}

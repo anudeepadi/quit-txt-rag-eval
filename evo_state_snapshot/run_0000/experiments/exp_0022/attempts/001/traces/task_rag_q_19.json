@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (31w)",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:39:04+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Quitting smoking can enhance your sense of taste and smell, improve overall physical fitness, and lead to improved lung function. It also reduces the risk of heart disease and various cancers.",
+  "n_contexts": 3
+}

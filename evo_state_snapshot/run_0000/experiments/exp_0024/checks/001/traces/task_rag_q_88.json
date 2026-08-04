@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_88",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:29+00:00",
+  "question": "What is the 'Don't Quit Quitting' approach to handling slips during the quitting process?",
+  "answer": "The 'Don't Quit Quitting' approach emphasizes that slips are a normal part of the quitting process and should not be viewed as failures. It encourages individuals to reset their quit plan immediately, learn from the experience, and continue moving forward on their quitting journey.",
+  "n_contexts": 3
+}

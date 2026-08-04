@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "rag_q_16",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (51w)",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:38:59+00:00",
+  "question": "How much money can I save by quitting smoking?",
+  "answer": "If you smoke 20 cigarettes a day, you could save about \u00a35,000 a year by quitting. On average, a smoker could save \u00a338 a week, which amounts to around \u00a32,000 a year. If you smoke a pack a day at approximately $39 per pack, quitting would save you over $14,000 annually.",
+  "n_contexts": 3
+}

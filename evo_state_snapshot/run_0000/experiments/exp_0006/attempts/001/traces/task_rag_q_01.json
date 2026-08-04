@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0006",
+  "task_id": "rag_q_01",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (46w)",
+  "started_at": "2026-07-16T03:28:26+00:00",
+  "ended_at": "2026-07-16T03:29:12+00:00",
+  "question": "How can my social life influence my smoking habits?",
+  "answer": "The knowledge base does not provide specific information on how social life influences smoking habits. However, it does mention that quitting smoking can improve social relationships and enhance how others perceive you, which may indirectly suggest that social interactions could play a role in smoking behaviors.",
+  "n_contexts": 3
+}

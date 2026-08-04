@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_52",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (46w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:21+00:00",
+  "question": "How can I manage cravings and withdrawal symptoms after quitting?",
+  "answer": "You can manage cravings and withdrawal symptoms by taking walks, using nicotine replacement therapy, or practicing relaxation techniques. Additionally, planning ahead by listing your reasons for quitting and setting personal rules can be beneficial. Engaging in activities like walking or practicing deep breathing can also help.",
+  "n_contexts": 3
+}

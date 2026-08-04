@@ -1,0 +1,317 @@
+diff --git a/code/autoresearch/data_gen_experiment.py b/code/autoresearch/data_gen_experiment.py
+index 1743eeb..fc9413c 100644
+--- a/code/autoresearch/data_gen_experiment.py
++++ b/code/autoresearch/data_gen_experiment.py
+@@ -6,10 +6,7 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
+ 
+ # --- Hypothesis (describe what you're testing) ---
+ HYPOTHESIS = (
+-    "BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, "
+-    "2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. "
+-    "Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be "
+-    "a judge-rubric ceiling, not a generator-side lever."
++    "v4 baseline: exp_0020 config + epoch-2/3 harness re-scored on 50-question dev split"
+ )
+ 
+ # --- Generation model ---
+@@ -28,25 +25,58 @@ GEN_SYSTEM_PROMPT = (
+     "You are a smoking cessation counseling expert generating training data "
+     "for a medical AI chatbot used in a healthcare setting.\n\n"
+     "TASK: From the provided source content, generate exactly {n} question-answer "
+-    "pairs using a TWO-PASS approach.\n\n"
++    "pairs using a THREE-PASS approach.\n\n"
+     "CRITICAL CONSTRAINT — HEALTHCARE SAFETY:\n"
+-    "This is a health domain. Do NOT add, infer, or rephrase beyond what the "
+-    "source explicitly states.\n\n"
++    "This is a health domain. Do NOT add, infer, or invent FACTS beyond what the "
++    "source explicitly states. Numbers, medication names, dosages, timeframes, and "
++    "percentages are LOCKED — they must appear exactly as written in the source.\n\n"
+     "PASS 1 — FACT EXTRACTION:\n"
+     "First, read the source and mentally identify the {n} most important distinct "
+     "facts, statistics, medication names, techniques, or clinical findings. Each "
+     "fact must be directly stated in the source text.\n\n"
+-    "PASS 2 — QA PAIR COMPOSITION:\n"
+-    "For each extracted fact, compose one question-answer pair:\n"
+-    "- Question: conversational, first-person, like texting a quit-smoking chatbot\n"
+-    "- Answer: 2-3 sentences using the source's own words. Include specific details "
+-    "(medication names, dosages, timeframes, percentages) exactly as written in "
+-    "the source. Do NOT paraphrase clinical terms or numbers.\n\n"
++    "PASS 2 — GROUNDED DRAFT (internal scaffolding, NOT in the output):\n"
++    "For each extracted fact, mentally write one plain clinical sentence that "
++    "captures the fact with every number, dose, timeframe, and percentage from the "
++    "source verbatim. This locks the content before you touch the wording.\n\n"
++    "PASS 3 — REGISTER TRANSLATION (this produces the output pair):\n"
++    "Translate each grounded draft into a real text-message exchange between a "
++    "person trying to quit and their chatbot counselor. The clinical content is "
++    "fixed; ONLY the register changes.\n"
++    "- Question: what the REAL PERSON would actually text about their own body, "
++    "life, or worry — first or second person ('my', 'I', 'me', 'you'). NEVER an "
++    "academic, study, or textbook question. Do NOT open with 'How did researchers', "
++    "'What methodology', or a bare 'What is <term>' definition request; a person "
++    "texting a quit app never talks that way.\n"
++    "- Answer: how a warm counselor would TEXT back — 2-3 short sentences that "
++    "speak directly to the person ('you', 'your'). CRITICAL ORDERING: the answer "
++    "must OPEN with the concrete grounded fact — the number, medication name, "
++    "timeframe, percentage, or key clinical term appears in the FIRST sentence. Any "
++    "warmth, reassurance, or empathy is a brief TRAILING clause AFTER the fact, "
++    "never a preamble before it. Preserve every number, medication name, dosage, "
++    "timeframe, and percentage from the grounded draft EXACTLY. Change the framing, "
++    "never the facts.\n\n"
++    "REGISTER EXAMPLE (fact leads; numbers survive; warmth trails):\n"
++    "  Source: 'the proportion of individuals motivated to quit due to the cost of "
++    "smoking increased from 38% in 2007 to 57% in 2019, making it the most common "
++    "reason since 2013.'\n"
++    "  Weak (academic third-person, tone~0.3): Q 'Has the rising cost of cigarettes "
++    "influenced people to quit smoking?' / A 'Studies indicate the proportion of "
++    "individuals motivated to quit due to cost increased from 38% in 2007 to 57% in "
++    "2019.'\n"
++    "  Bad (warm but fact buried, hurts retrieval): A \"You're not the only one "
++    "feeling this — and cost went from 38% up to 57%.\"\n"
++    "  Strong (fact-forward texting, tone~0.9): Q 'Is the price finally what pushes "
++    "people to quit, or is that just me?' / A \"The share of people quitting because "
++    "of cost jumped from 38% in 2007 to 57% by 2019, and it's been the top reason "
++    "since 2013 — so you're definitely not the only one feeling that.\"\n\n"
+     "RULES:\n"
+-    "1. Every claim in every answer must trace to a specific sentence in the source.\n"
+-    "2. Cover {n} DIFFERENT topics — no repeated themes.\n"
+-    "3. No disclaimers, hedging, or generic advice unless the source says it.\n"
+-    "4. If the source doesn't contain {n} distinct facts, generate fewer pairs.\n\n"
++    "1. Every fact in every answer must trace to a specific sentence in the source; "
++    "only the wording is translated, never the clinical content.\n"
++    "2. Warmth and direct address are TONE, not information — never introduce a "
++    "fact, reassurance, or claim the source does not support.\n"
++    "3. Cover {n} DIFFERENT topics — no repeated themes.\n"
++    "4. No disclaimers, hedging, or generic advice unless the source says it.\n"
++    "5. If the source doesn't contain {n} distinct facts, generate fewer pairs.\n\n"
+     "Return a JSON object with key \"qa_pairs\" containing an array of objects, "
+     "each with \"question\" (string) and \"answer\" (string) fields only."
+ )
+diff --git a/code/autoresearch/data_gen_prepare.py b/code/autoresearch/data_gen_prepare.py
+index 583a558..80e0609 100644
+--- a/code/autoresearch/data_gen_prepare.py
++++ b/code/autoresearch/data_gen_prepare.py
+@@ -20,6 +20,7 @@ The scoring pipeline:
+ import json
+ import os
+ import random
++import re
+ import sys
+ import textwrap
+ from datetime import datetime
+@@ -62,7 +63,7 @@ RESULTS_FILE = _AUTORESEARCH_DIR / "data_gen_results.tsv"
+ # split (shared.question_split.load_dev_questions), not a fixed 20-row slice of
+ # the test sheet. Kept only so older result rows remain interpretable.
+ N_EVAL = 20
+-N_SOURCE_CHUNKS = 5      # source content chunks to generate from
++N_SOURCE_CHUNKS = 10**9  # all chunks (source parity with human arm; epoch 3)
+ RANDOM_SEED = 42         # deterministic source selection
+ 
+ # ---------------------------------------------------------------------------
+@@ -310,6 +311,26 @@ Response: {response}
+ Score (just the number, nothing else):"""
+ 
+ 
++# Refusal answers ("the knowledge base does not provide...") contain no claims,
++# so the grounding rubric is vacuously satisfiable and the judge oscillates
++# between 0 and 10 on near-identical text (verified epoch-1 nondeterminism).
++# For this metric's purpose — does the KB support answering the question? —
++# a refusal is a KB failure: score 0.0 deterministically, both arms.
++_REFUSAL_RE = re.compile(
++    r"(?:knowledge base|context|source|provided information)[^.]{0,60}?"
++    r"(?:does not|doesn't|do not|don't)\s+"
++    r"(?:provide|contain|include|cover|mention|address|offer|have)"
++    r"|no (?:specific )?information (?:is )?(?:available|provided)",
++    re.IGNORECASE,
++)
++
++
++def _is_refusal(response: str) -> bool:
++    """True when the answer's first sentence declines to answer."""
++    first_sentence = response.split(".", 1)[0]
++    return bool(_REFUSAL_RE.search(first_sentence))
++
++
+ def score_faithfulness(
+     oai_client: OpenAI,
+     question: str,
+@@ -317,6 +338,8 @@ def score_faithfulness(
+     contexts: list[str],
+ ) -> float:
+     """Fast faithfulness proxy using LLM-as-judge. Returns 0.0–1.0."""
++    if _is_refusal(response):
++        return 0.0
+     context_text = "\n\n".join(contexts) if contexts else "(no context)"
+     try:
+         result = oai_client.chat.completions.create(
+diff --git a/code/autoresearch/data_gen_results.tsv b/code/autoresearch/data_gen_results.tsv
+new file mode 100644
+index 0000000..fb8e414
+--- /dev/null
++++ b/code/autoresearch/data_gen_results.tsv
+@@ -0,0 +1,2 @@
++exp_id	timestamp	hypothesis	gen_model	rag_faithfulness	qa_specificity	qa_tone	qa_groundedness	qa_clinical	combined_score	human_baseline	relative_pct	n_pairs_generated	avg_answer_words	gen_temperature	gen_max_tokens	qa_per_source	verdict
++1	2026-07-27 01:46:51	v4 baseline: exp_0020 config + epoch-2/3 harness re-scored on 50-question dev split	gpt-4o-mini	0.8240	0.7000	0.7600	0.9667	0.9200	0.8286	0.8400	98.1	3576	29.4	0.0	2500	8	KEEP
+diff --git a/code/autoresearch/run_data_gen_experiment.py b/code/autoresearch/run_data_gen_experiment.py
+index ed849f7..5af1c94 100644
+--- a/code/autoresearch/run_data_gen_experiment.py
++++ b/code/autoresearch/run_data_gen_experiment.py
+@@ -20,8 +20,10 @@ Usage:
+ 
+ import importlib
+ import os
++import random
+ import sys
+ import time
++from concurrent.futures import ThreadPoolExecutor
+ from pathlib import Path
+ 
+ # Mark this process as an optimization run BEFORE any project import. Anything
+@@ -35,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).parent))
+ 
+ from data_gen_prepare import (
+     OPENAI_API_KEY,
++    RANDOM_SEED,
+     build_collection,
+     generate_qa_pairs,
+     get_best_score,
+@@ -49,6 +52,7 @@ from data_gen_prepare import (
+ 
+ import chromadb
+ from chromadb.config import Settings
++from evo_agent import Run
+ from openai import OpenAI
+ 
+ 
+@@ -90,7 +94,9 @@ def run_one_experiment() -> None:
+     print("=" * 70)
+ 
+     t0 = time.time()
+-    oai_client = OpenAI(api_key=OPENAI_API_KEY)
++    run = Run()
++    # max_retries: transport errors (429/5xx) must not count as task failures
++    oai_client = OpenAI(api_key=OPENAI_API_KEY, max_retries=5)
+     chroma_client = chromadb.Client(Settings(anonymized_telemetry=False))
+ 
+     # ── 2. Load source content ────────────────────────────────
+@@ -102,9 +108,13 @@ def run_one_experiment() -> None:
+     print("\nGenerating QA pairs with agent's prompt...")
+     all_generated = []
+     chunk_sources = []  # track which source each pair came from
++    chunk_stats = []    # per-chunk generation counts, attached to run_meta trace
+ 
+-    for i, chunk in enumerate(source_chunks, 1):
+-        pairs = generate_qa_pairs(
++    # Chunks are independent — generate in parallel (444 chunks at full
++    # source parity would take ~45 min serially). Results are collected
++    # in chunk order so KB construction stays deterministic.
++    def _gen_for_chunk(chunk):
++        return generate_qa_pairs(
+             oai_client=oai_client,
+             source_content=chunk["content"],
+             system_prompt=gen_prompt,
+@@ -113,14 +123,22 @@ def run_one_experiment() -> None:
+             temperature=gen_temp,
+             max_tokens=gen_max_tokens,
+         )
+-        print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
++
++    with ThreadPoolExecutor(max_workers=8) as pool:
++        per_chunk_pairs = list(pool.map(_gen_for_chunk, source_chunks))
++
++    for i, (chunk, pairs) in enumerate(zip(source_chunks, per_chunk_pairs), 1):
++        if i % 50 == 0 or i == len(source_chunks):
++            print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
++        chunk_stats.append({"chunk": i, "n_pairs": len(pairs),
++                            "source_excerpt": chunk["content"][:300]})
+         for p in pairs:
+             p["_source_content"] = chunk["content"]  # for quality scoring
+         all_generated.extend(pairs)
+ 
+     if not all_generated:
+         print("\n✗ NO PAIRS GENERATED — prompt may be broken. Fix and retry.")
+-        return
++        raise RuntimeError("no QA pairs generated — generation prompt broken")
+ 
+     n_pairs = len(all_generated)
+     avg_answer_words = sum(len(p["answer"].split()) for p in all_generated) / n_pairs
+@@ -130,8 +148,10 @@ def run_one_experiment() -> None:
+     print("\nScoring QA pair quality (specificity, tone, groundedness, clinical)...")
+     quality_scores = {"specificity": [], "conversational_tone": [], "groundedness": [], "clinical_accuracy": []}
+ 
+-    # Score a sample (up to 15 pairs for speed)
+-    sample = all_generated[:15]
++    # Score a seeded random sample of 15 (first-N sampling let weak pairs
++    # hide past the cutoff when pair counts grew — epoch-3 fix)
++    _rng = random.Random(RANDOM_SEED)
++    sample = _rng.sample(all_generated, min(15, len(all_generated)))
+     for i, pair in enumerate(sample, 1):
+         qs = score_qa_quality(
+             oai_client, pair["question"], pair["answer"],
+@@ -139,6 +159,17 @@ def run_one_experiment() -> None:
+         )
+         for k in quality_scores:
+             quality_scores[k].append(qs[k])
++        pair_avg = sum(qs.values()) / len(qs)
++        run.report(
++            f"qa_pair_{i:02d}",
++            score=pair_avg,
++            summary=(f"spec={qs['specificity']:.2f} tone={qs['conversational_tone']:.2f} "
++                     f"ground={qs['groundedness']:.2f} clin={qs['clinical_accuracy']:.2f}"),
++            question=pair["question"],
++            answer=pair["answer"][:500],
++            source_excerpt=pair.get("_source_content", "")[:300],
++            **qs,
++        )
+         if i % 5 == 0:
+             print(f"  [{i}/{len(sample)}] scored")
+ 
+@@ -194,8 +225,19 @@ def run_one_experiment() -> None:
+             score = score_faithfulness(oai_client, question, answer, contexts)
+             rag_scores.append(score)
+         else:
++            score = 0.0
+             rag_scores.append(0.0)
+ 
++        run.report(
++            f"rag_q_{i:02d}",
++            score=score,
++            summary=f"faithfulness={score:.2f} ({len(answer.split())}w)",
++            failure_reason=None if answer else "empty_answer_after_retries",
++            question=question,
++            answer=answer[:500],
++            n_contexts=len(contexts),
++        )
++
+         if i % 5 == 0:
+             print(f"  [{i}/{len(test_questions)}] evaluated")
+ 
+@@ -226,6 +268,29 @@ def run_one_experiment() -> None:
+ 
+     elapsed = time.time() - t0
+ 
++    # Combined score is a weighted composite, not a mean of task scores —
++    # pass it to finish() explicitly. run_meta trace carries the breakdown
++    # for future readers (orchestrator / verifier / ideator); report() is
++    # required because log()-only tasks are never flushed to trace files.
++    run.report(
++        "run_meta",
++        score=combined,
++        summary=(f"combined={combined:.4f} human={human_baseline:.4f} "
++                 f"relative={relative_pct:.1f}%"),
++        rag_faithfulness=avg_rag_faithfulness,
++        qa_quality=avg_quality,
++        human_baseline=human_baseline,
++        relative_pct=relative_pct,
++        n_pairs_generated=n_pairs,
++        avg_answer_words=avg_answer_words,
++        hypothesis=hypothesis,
++        gen_model=gen_model,
++        gen_temperature=gen_temp,
++        qa_per_source=qa_per_source,
++        chunk_stats=chunk_stats,
++    )
++    run.finish(score=combined)
++
+     # ── 8. Log result ─────────────────────────────────────────
+     log_result(
+         experiment_id=exp_id,

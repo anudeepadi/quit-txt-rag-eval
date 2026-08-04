@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0001",
+  "task_id": "rag_q_13",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (45w)",
+  "started_at": "2026-07-16T02:50:38+00:00",
+  "ended_at": "2026-07-16T02:52:00+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "The knowledge base does not provide specific strategies for preventing kids from picking up smoking early. However, it is important to note that understanding the serious health issues associated with smoking, such as addiction to nicotine and early heart damage, may help in prevention efforts.",
+  "n_contexts": 3
+}

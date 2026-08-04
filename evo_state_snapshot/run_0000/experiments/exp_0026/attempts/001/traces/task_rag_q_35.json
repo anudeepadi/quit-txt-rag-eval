@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_35",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:56+00:00",
+  "question": "Why might smokers of light cigarettes inhale more deeply?",
+  "answer": "Smokers of light cigarettes might inhale more deeply to compensate for the lower nicotine content, ensuring they still receive the desired effects of nicotine. This deeper inhalation can also lead to increased exposure to harmful substances in the smoke.",
+  "n_contexts": 3
+}

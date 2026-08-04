@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.50 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:41:50+00:00",
+  "question": "I want to start a family soon, but I smoke. Should I quit?",
+  "answer": "Quitting tobacco is one of the best things you can do while you prepare to grow your family. A tobacco-free lifestyle can help ensure a healthy beginning for your little one(s).",
+  "source_excerpt": "Topic: How does tobacco use affect health immediately?\nTobacco products begin to harm your body the moment you start using them.\n\nTopic: What are some specific immediate effects of tobacco use?\nNicotine enters your body within seconds of using a tobacco product, stimulating your brain and causing it",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

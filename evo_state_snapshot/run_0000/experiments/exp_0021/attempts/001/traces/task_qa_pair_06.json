@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_06",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:18:55+00:00",
+  "question": "What does Cognitive-Behavioral Therapy (CBT) do for smoking cessation?",
+  "answer": "Cognitive-Behavioral Therapy (CBT) helps individuals recognize and alter negative thought patterns and behaviors related to smoking, encouraging the development of coping strategies to manage cravings and triggers.",
+  "source_excerpt": "Topic: What smoking cessation services are offered at Froedtert Health?\nFroedtert Health provides a comprehensive Smoking Cessation Program that includes education on smoking addiction and related health risks, personalized counseling to address behavioral aspects, and medical management with FDA-ap",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

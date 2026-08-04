@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_37",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:59+00:00",
+  "question": "Why is it important to remove smoking-related items when trying to quit?",
+  "answer": "Removing smoking-related items is important because it helps reduce triggers and temptations that can lead to relapse. Creating an environment free of these items supports your commitment to quitting and enhances your chances of success.",
+  "n_contexts": 3
+}

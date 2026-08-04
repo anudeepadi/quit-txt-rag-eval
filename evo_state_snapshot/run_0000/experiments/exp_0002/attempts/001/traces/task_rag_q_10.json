@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0002",
+  "task_id": "rag_q_10",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (17w)",
+  "started_at": "2026-07-16T02:50:58+00:00",
+  "ended_at": "2026-07-16T02:52:17+00:00",
+  "question": "What is secondhand smoke and how is it formed?",
+  "answer": "The knowledge base does not provide information on what secondhand smoke is or how it is formed.",
+  "n_contexts": 3
+}

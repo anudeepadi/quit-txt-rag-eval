@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_148",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (20w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:17+00:00",
+  "question": "What other withdrawal symptoms are associated with nicotine cessation?",
+  "answer": "Other withdrawal symptoms associated with nicotine cessation include anger, frustration, insomnia, restlessness, depression, headaches, sore throat, cough, and chest tightness.",
+  "n_contexts": 3
+}

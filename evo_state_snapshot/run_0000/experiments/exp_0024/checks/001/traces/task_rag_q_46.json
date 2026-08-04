@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_46",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (27w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:11+00:00",
+  "question": "Is it safe to smoke only occasionally or socially?",
+  "answer": "No, it is not safe to smoke only occasionally or socially. Even occasional smoking increases the risk of serious health issues, including heart disease and lung cancer.",
+  "n_contexts": 3
+}

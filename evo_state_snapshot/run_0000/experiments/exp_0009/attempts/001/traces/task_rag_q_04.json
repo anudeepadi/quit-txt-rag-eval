@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0009",
+  "task_id": "rag_q_04",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (41w)",
+  "started_at": "2026-07-16T03:39:41+00:00",
+  "ended_at": "2026-07-16T03:40:33+00:00",
+  "question": "What are common reasons for relapse, and how can I avoid them?",
+  "answer": "The knowledge base does not provide specific information on common reasons for relapse or strategies to avoid them. However, it emphasizes the importance of combining quit-smoking medications or nicotine replacement therapy with support from healthcare professionals to increase chances of success.",
+  "n_contexts": 3
+}

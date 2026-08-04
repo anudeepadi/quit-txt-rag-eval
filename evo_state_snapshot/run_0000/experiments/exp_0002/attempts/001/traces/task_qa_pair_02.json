@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0002",
+  "task_id": "qa_pair_02",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.70 tone=0.60 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T02:50:58+00:00",
+  "ended_at": "2026-07-16T02:51:37+00:00",
+  "question": "What negative effects does smoking have on hand health?",
+  "answer": "Cigarette smoking can negatively impact hand health by causing blood vessels to constrict, which reduces blood flow and oxygen delivery to the hands. This can lead to poor wound healing, increased risk of infections, and slower recovery from surgeries or injuries.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

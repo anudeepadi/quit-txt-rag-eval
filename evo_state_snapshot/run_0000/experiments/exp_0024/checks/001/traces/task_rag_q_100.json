@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_100",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:52+00:00",
+  "question": "What are the benefits of implementing smokefree workplace policies?",
+  "answer": "Implementing smokefree workplace policies leads to significant reductions in secondhand smoke exposure, which is crucial for protecting everyone's health. Additionally, studies have shown that these policies result in reductions in respiratory symptoms and overall health improvements among workers.",
+  "n_contexts": 3
+}

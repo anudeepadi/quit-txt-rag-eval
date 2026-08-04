@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "rag_q_19",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (30w)",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:04:32+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Quitting smoking leads to improved lung function, better circulation, and an enhanced sense of taste and smell. It also results in immediate health improvements like better sleep and reduced anxiety.",
+  "n_contexts": 3
+}

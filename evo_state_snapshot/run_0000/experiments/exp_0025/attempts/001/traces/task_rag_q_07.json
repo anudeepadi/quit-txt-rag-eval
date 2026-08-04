@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_07",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T06:34:14+00:00",
+  "ended_at": "2026-07-27T06:42:23+00:00",
+  "question": "What usually pushes teens to try smoking in the first place?",
+  "answer": "Psychological instability in adolescents often leads to unmotivated rebellion, which can manifest as smoking behavior. Additionally, peer pressure can influence teens to start smoking, as seen in situations where they are offered cigarettes by peers.",
+  "n_contexts": 3
+}

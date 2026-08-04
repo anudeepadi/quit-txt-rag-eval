@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0009",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.70 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-16T03:43:43+00:00",
+  "ended_at": "2026-07-16T03:44:22+00:00",
+  "question": "How does smoking cause leg pain?",
+  "answer": "Smoking can lead to leg pain primarily through the development of Peripheral Artery Disease (PAD), where smoking damages blood vessels and narrows arteries in your legs. This reduced blood flow can cause pain, especially when walking or climbing stairs.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

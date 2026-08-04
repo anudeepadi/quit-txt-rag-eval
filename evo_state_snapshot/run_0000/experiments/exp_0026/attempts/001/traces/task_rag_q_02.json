@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_02",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (36w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:32:54+00:00",
+  "question": "What are some healthy ways to deal with bad moods instead of smoking?",
+  "answer": "You can practice deep breathing exercises, engage in mindfulness, or participate in physical activities like brisk walking or jogging. Additionally, activities like walking, relaxation exercises, or engaging in hobbies can help manage bad moods more effectively.",
+  "n_contexts": 3
+}

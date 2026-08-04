@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_128",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (43w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:43+00:00",
+  "question": "How can I incorporate mindfulness into my daily routine?",
+  "answer": "You can incorporate mindfulness into your daily routine by noticing your surroundings, appreciating little things, or taking a moment to breathe deeply and focus on your breath. Additionally, practicing mindfulness techniques can help manage stress and anxiety, which may support your overall well-being.",
+  "n_contexts": 3
+}

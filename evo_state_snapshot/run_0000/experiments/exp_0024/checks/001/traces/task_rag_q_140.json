@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_140",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (41w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:04+00:00",
+  "question": "How does mindfulness help with quitting smoking?",
+  "answer": "Mindfulness helps with quitting smoking by increasing awareness of and detachment from sensations, thoughts, and cravings that may lead to relapse. It improves emotional regulation and reduces stress and anxiety, which can aid in managing negative emotions without resorting to tobacco.",
+  "n_contexts": 3
+}

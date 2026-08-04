@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0018",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (58w)",
+  "started_at": "2026-07-16T04:56:52+00:00",
+  "ended_at": "2026-07-16T04:58:02+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Some surprising benefits of quitting smoking include improved mental health, as it is associated with reduced depression, anxiety, and stress, and enhanced social relationships due to better perceptions from others and reduced exposure to secondhand smoke. Additionally, positive changes such as increased energy, feeling healthier, and improved breathing can be expected as soon as two weeks after quitting.",
+  "n_contexts": 6
+}

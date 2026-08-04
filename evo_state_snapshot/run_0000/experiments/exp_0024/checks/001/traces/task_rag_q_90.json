@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_90",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (45w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:33+00:00",
+  "question": "Why is it important to address weight gain when promoting smoking cessation?",
+  "answer": "It is important to address weight gain when promoting smoking cessation because fear of weight gain is a significant barrier to quitting smoking and a common cause of relapse. By addressing this concern, smoking cessation programs can better support individuals in achieving long-term cessation success.",
+  "n_contexts": 3
+}

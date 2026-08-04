@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "spec=0.50 tone=0.50 ground=0.50 clin=0.50",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:37+00:00",
+  "question": "How much more likely am I to get oral cancer if I smoke?",
+  "answer": "If you smoke cigarettes, you have about 10 times more risk of getting oral cancer than those who don't smoke. This is a serious reason to consider quitting!",
+  "source_excerpt": "Topic: What impact does tobacco have on gum health?\nTobacco makes it harder for your body to fight off infections, which is why people who smoke have nearly twice the risk of gum disease as those who don't. Gum disease can change the color of your gums, cause them to pull back from your teeth, and e",
+  "specificity": 0.5,
+  "conversational_tone": 0.5,
+  "groundedness": 0.5,
+  "clinical_accuracy": 0.5
+}

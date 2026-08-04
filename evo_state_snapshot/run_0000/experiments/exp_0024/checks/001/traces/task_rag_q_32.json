@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_32",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (37w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:39+00:00",
+  "question": "How do income and education levels influence smoking prevalence?",
+  "answer": "Income and education levels are socio-demographic factors that can influence smoking behaviors. Higher education levels are associated with lower smoking prevalence, while income can also play a role in determining smoking habits among different groups of smokers.",
+  "n_contexts": 3
+}

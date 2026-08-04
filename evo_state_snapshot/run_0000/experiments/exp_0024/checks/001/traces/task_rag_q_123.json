@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_123",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:34+00:00",
+  "question": "What role does social support play in smoking cessation at the workplace?",
+  "answer": "Social support plays a crucial role in smoking cessation at the workplace by fostering helpful and trusting relationships among employees. A supportive environment can enhance the effectiveness of smoking cessation efforts and reduce feelings of isolation, which can be beneficial during the quitting process.",
+  "n_contexts": 3
+}

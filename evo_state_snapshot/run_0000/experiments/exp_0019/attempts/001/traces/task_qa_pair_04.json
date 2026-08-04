@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:29+00:00",
+  "question": "What health risks come with light and intermittent smoking?",
+  "answer": "Light and intermittent smoking are linked to several health risks, such as increased chances of developing cardiovascular diseases, lung and other cancers, and respiratory conditions. These risks are present even in individuals who smoke infrequently.",
+  "source_excerpt": "Topic: Does reducing cigarette consumption or combining smoking with vaping reduce health risks?\nReducing cigarette consumption or combining fewer cigarettes with vaping does not effectively reduce health risks. The study suggests that cutting down on smoking or supplementing with vaping is no subst",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_118",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (36w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:26+00:00",
+  "question": "What types of counseling formats are effective for smoking cessation?",
+  "answer": "Effective counseling formats for smoking cessation include individual face-to-face counseling, group-based programs, and telephone support. Interventions by trained specialists and those that are more intensive tend to yield higher abstinence rates at six months or longer.",
+  "n_contexts": 3
+}

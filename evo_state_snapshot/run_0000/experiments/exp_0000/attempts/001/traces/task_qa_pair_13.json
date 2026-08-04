@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.80 tone=0.50 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T02:17:10+00:00",
+  "ended_at": "2026-07-16T02:18:02+00:00",
+  "question": "How does smoking impact cardiovascular health in women?",
+  "answer": "Smoking significantly elevates the risk of heart disease and stroke in women. Research suggests that smoking increases the risk of coronary heart disease in women by 25% more than in men.",
+  "source_excerpt": "Topic: How does tobacco use affect individuals with behavioral health conditions?\nIndividuals with behavioral health conditions are more likely to smoke, accounting for 38% of all U.S. adult cigarette consumption, despite making up only 25% of the population. This group has a smoking rate of 23%, hi",
+  "specificity": 0.8,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

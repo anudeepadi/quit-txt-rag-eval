@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.70 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:56+00:00",
+  "question": "What are some quick strategies I can use to fight cravings?",
+  "answer": "You can take a brisk walk, practice deep breathing, drink water, visualize calming scenes, or list your reasons for quitting. These strategies can be really effective!",
+  "source_excerpt": "Topic: How can I avoid triggers that prompt me to smoke?\nIdentifying and modifying routines associated with smoking, such as having a shower instead of a morning coffee or meeting friends in smoke-free areas, can help. Engaging in new activities and changing your environment can also reduce exposure",
+  "specificity": 0.7,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

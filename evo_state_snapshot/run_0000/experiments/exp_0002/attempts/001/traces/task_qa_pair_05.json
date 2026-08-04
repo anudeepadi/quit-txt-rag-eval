@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0002",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.60 tone=0.50 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T02:50:58+00:00",
+  "ended_at": "2026-07-16T02:51:40+00:00",
+  "question": "What is Peripheral Artery Disease (PAD) and how does smoking contribute to it?",
+  "answer": "Peripheral Artery Disease (PAD) is a condition where the arteries in the legs become narrowed or blocked, reducing blood flow to the limbs. Smoking contributes to PAD by damaging the blood vessels, leading to the accumulation of fatty deposits and calcium in the arteries.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.6,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

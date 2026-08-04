@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_117",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (27w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:20+00:00",
+  "question": "What are some lifestyle benefits of quitting smoking?",
+  "answer": "Quitting smoking improves your general health, enhances overall well-being, and increases energy levels. It also allows you to save money and sets a positive example for others.",
+  "n_contexts": 3
+}

@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 1,
+  "experiment_id": "exp_0001",
+  "failure_class": "hypothesis",
+  "reason": "Tone mechanism validated (+0.053) but tone=10% weight => sub-noise combined impact; combined -0.017 within noise, dragged by faithfulness. Rebuilding both levers as a package.",
+  "score": 0.7413,
+  "status": "discarded",
+  "timestamp": "2026-07-16T02:56:22+00:00"
+}

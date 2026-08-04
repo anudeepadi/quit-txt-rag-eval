@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_21",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:09+00:00",
+  "question": "Where can I get help if I'm feeling overwhelmed or depressed?",
+  "answer": "You can seek help from resources like the national quitline at 1-800-QUIT-NOW, counseling services, and support groups, which can provide guidance and support to help you manage feelings of being overwhelmed or depressed.",
+  "n_contexts": 3
+}

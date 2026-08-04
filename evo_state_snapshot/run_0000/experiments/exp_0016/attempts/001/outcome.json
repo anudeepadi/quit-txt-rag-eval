@@ -1,0 +1,89 @@
+{
+  "attempt": 1,
+  "attempt_state": {
+    "attempt": 1,
+    "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0016/attempts/001/checkpoints",
+    "commit": "19d23cca932b3a5ca07e4c359c9dfddbf446e500",
+    "experiment_id": "exp_0016",
+    "gate_failures": [],
+    "phase": "complete",
+    "pid": 71619,
+    "remote_checkpoint_dir": null,
+    "score": 0.6863,
+    "started_at": "2026-07-16T04:35:15+00:00",
+    "status": "committed",
+    "updated_at": "2026-07-16T04:38:40+00:00"
+  },
+  "benchmark": {
+    "command": "python3 /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0016/code/autoresearch/run_data_gen_experiment.py",
+    "result": {
+      "ended_at": "2026-07-16T04:38:39+00:00",
+      "score": 0.6863,
+      "started_at": "2026-07-16T04:35:16+00:00",
+      "tasks": {
+        "qa_pair_01": 0.775,
+        "qa_pair_02": 0.8,
+        "qa_pair_03": 0.875,
+        "qa_pair_04": 0.85,
+        "qa_pair_05": 0.775,
+        "qa_pair_06": 0.775,
+        "qa_pair_07": 0.7,
+        "qa_pair_08": 0.7,
+        "qa_pair_09": 0.65,
+        "qa_pair_10": 0.75,
+        "qa_pair_11": 0.9,
+        "qa_pair_12": 0.85,
+        "qa_pair_13": 0.85,
+        "qa_pair_14": 0.875,
+        "qa_pair_15": 0.85,
+        "rag_q_01": 0.7,
+        "rag_q_02": 1.0,
+        "rag_q_03": 0.0,
+        "rag_q_04": 1.0,
+        "rag_q_05": 0.7,
+        "rag_q_06": 0.0,
+        "rag_q_07": 1.0,
+        "rag_q_08": 0.0,
+        "rag_q_09": 0.0,
+        "rag_q_10": 0.0,
+        "rag_q_11": 1.0,
+        "rag_q_12": 0.3,
+        "rag_q_13": 1.0,
+        "rag_q_14": 0.0,
+        "rag_q_15": 0.0,
+        "rag_q_16": 1.0,
+        "rag_q_17": 1.0,
+        "rag_q_18": 1.0,
+        "rag_q_19": 1.0,
+        "rag_q_20": 0.0,
+        "run_meta": 0.6863333333333334
+      }
+    },
+    "returncode": 0
+  },
+  "change_files": [
+    "code/autoresearch/data_gen_experiment.py"
+  ],
+  "commit": "19d23cca932b3a5ca07e4c359c9dfddbf446e500",
+  "error": null,
+  "experiment_id": "exp_0016",
+  "finished_at": "2026-07-16T04:38:40+00:00",
+  "gates": [
+    {
+      "command": "git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0016 diff --quiet ee18d6c -- code/ datasets/ ':(exclude)code/autoresearch/data_gen_experiment.py' ':(exclude)code/autoresearch/data_gen_results.tsv' && test -z \"$(git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0016 status --porcelain --untracked-files=all -- code/ datasets/ | grep '^??')\"",
+      "from": "root",
+      "name": "harness_integrity",
+      "passed": true,
+      "phase": "post",
+      "returncode": 0
+    }
+  ],
+  "hypothesis": "Overgenerate-then-self-verify (roundtrip source-verification filter): PASS 1-3 draft {n}+4 candidate pairs (14), then PASS 4 verifies each answer's every claim traces to an explicit source sentence, DISCARDS unsupported/invented pairs, emits up to {n}=10 verified best. Keeps count=10/top_k=6 + exp_0009 3-pass fact-forward register UNCHANGED. GEN_MAX_TOKENS 2500->3600 for the extra drafts+verification. Target: kill invented teen-initiation pair (rag_q_11 -> honest refusal), retain genuine savings pairs (rag_q_07/16), lift quality dims via filtered replacements.",
+  "metric": "max",
+  "outcome": "committed",
+  "parent_id": "exp_0013",
+  "parent_score": 0.66,
+  "runtime": [],
+  "score": 0.6863,
+  "started_at": "2026-07-16T04:35:15+00:00"
+}

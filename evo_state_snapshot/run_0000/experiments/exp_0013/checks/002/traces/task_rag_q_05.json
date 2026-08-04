@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0013",
+  "task_id": "rag_q_05",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "faithfulness=0.50 (33w)",
+  "started_at": "2026-07-16T04:32:08+00:00",
+  "ended_at": "2026-07-16T04:33:10+00:00",
+  "question": "Can quitting smoking improve erectile function?",
+  "answer": "The knowledge base does not specifically mention the effects of quitting smoking on erectile function. However, quitting smoking is associated with various health improvements, which may indirectly benefit overall health, including sexual health.",
+  "n_contexts": 6
+}

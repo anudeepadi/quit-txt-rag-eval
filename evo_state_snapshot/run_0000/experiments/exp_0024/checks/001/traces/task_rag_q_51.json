@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_51",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:19+00:00",
+  "question": "What are the first steps I should take when deciding to quit smoking?",
+  "answer": "The first steps to take when deciding to quit smoking include setting a quit date and consulting with a healthcare provider for personalized cessation plans. Additionally, seeking support from healthcare professionals or support groups can be beneficial.",
+  "n_contexts": 3
+}

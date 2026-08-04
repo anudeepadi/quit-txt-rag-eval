@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_36",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (17w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:51+00:00",
+  "question": "Why do some people prefer to quit smoking gradually?",
+  "answer": "The knowledge base does not provide specific information about why some people prefer to quit smoking gradually.",
+  "n_contexts": 3
+}

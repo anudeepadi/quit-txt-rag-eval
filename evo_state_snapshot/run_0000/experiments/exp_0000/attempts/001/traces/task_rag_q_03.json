@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "rag_q_03",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "faithfulness=0.50 (51w)",
+  "started_at": "2026-07-16T02:17:10+00:00",
+  "ended_at": "2026-07-16T02:18:12+00:00",
+  "question": "What are some healthy ways to deal with bad moods instead of smoking?",
+  "answer": "The knowledge base does not provide specific methods for dealing with bad moods aside from the context of smoking cessation. However, it is important to recognize that smoking does not effectively relieve stress and that quitting can lead to decreased stress levels. For personalized strategies, consulting healthcare professionals may be beneficial.",
+  "n_contexts": 3
+}

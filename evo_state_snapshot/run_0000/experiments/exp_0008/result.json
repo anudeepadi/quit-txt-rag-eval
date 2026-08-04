@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 2,
+  "experiment_id": "exp_0008",
+  "failure_class": "hypothesis",
+  "reason": "Count-isolated additive breadth is zero-sum at QA_PER_SOURCE=8: behavioral extraction displaced headline facts, faith regressed 0.385->0.27. Structural, not fixable by retry.",
+  "score": 0.595,
+  "status": "discarded",
+  "timestamp": "2026-07-16T03:40:49+00:00"
+}

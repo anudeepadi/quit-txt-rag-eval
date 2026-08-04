@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_36",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:58+00:00",
+  "question": "What strategies can help during the hardest stage?",
+  "answer": "Breaking large projects into smaller tasks and taking regular breaks can help maintain focus during the hardest stage. Additionally, implementing structured plans and goal-setting, along with practicing relaxation techniques, can be effective in managing challenges.",
+  "n_contexts": 3
+}

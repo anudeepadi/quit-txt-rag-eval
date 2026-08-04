@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0003",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (31w)",
+  "started_at": "2026-07-16T03:00:29+00:00",
+  "ended_at": "2026-07-16T03:02:03+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Quitting smoking is associated with reduced depression, anxiety, and stress, and improved mood and quality of life. Additionally, the mental health benefits of quitting are comparable to those of antidepressant treatments.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "rag_q_04",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:58:45+00:00",
+  "question": "What are common reasons for relapse, and how can I avoid them?",
+  "answer": "Common reasons for relapse include encountering triggers such as certain social situations or stressors. To avoid relapse, identify these triggers and develop coping mechanisms like exercise, deep breathing, or engaging in hobbies, while also maintaining a support system.",
+  "n_contexts": 3
+}

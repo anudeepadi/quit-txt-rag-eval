@@ -1,0 +1,89 @@
+{
+  "attempt": 1,
+  "attempt_state": {
+    "attempt": 1,
+    "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0020/attempts/001/checkpoints",
+    "commit": "28b6a05cc2e6de7edcc9aa39d65875691f3d57f1",
+    "experiment_id": "exp_0020",
+    "gate_failures": [],
+    "phase": "complete",
+    "pid": 31082,
+    "remote_checkpoint_dir": null,
+    "score": 0.8347,
+    "started_at": "2026-07-16T06:09:33+00:00",
+    "status": "committed",
+    "updated_at": "2026-07-16T06:18:48+00:00"
+  },
+  "benchmark": {
+    "command": "python3 /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0020/code/autoresearch/run_data_gen_experiment.py",
+    "result": {
+      "ended_at": "2026-07-16T06:18:47+00:00",
+      "score": 0.8347,
+      "started_at": "2026-07-16T06:09:39+00:00",
+      "tasks": {
+        "qa_pair_01": 0.85,
+        "qa_pair_02": 0.9,
+        "qa_pair_03": 0.65,
+        "qa_pair_04": 0.8,
+        "qa_pair_05": 0.85,
+        "qa_pair_06": 0.8,
+        "qa_pair_07": 0.825,
+        "qa_pair_08": 0.775,
+        "qa_pair_09": 0.875,
+        "qa_pair_10": 0.95,
+        "qa_pair_11": 0.925,
+        "qa_pair_12": 0.875,
+        "qa_pair_13": 0.875,
+        "qa_pair_14": 0.8,
+        "qa_pair_15": 0.85,
+        "rag_q_01": 1.0,
+        "rag_q_02": 1.0,
+        "rag_q_03": 1.0,
+        "rag_q_04": 1.0,
+        "rag_q_05": 1.0,
+        "rag_q_06": 0.0,
+        "rag_q_07": 1.0,
+        "rag_q_08": 0.0,
+        "rag_q_09": 0.0,
+        "rag_q_10": 1.0,
+        "rag_q_11": 1.0,
+        "rag_q_12": 1.0,
+        "rag_q_13": 1.0,
+        "rag_q_14": 1.0,
+        "rag_q_15": 1.0,
+        "rag_q_16": 0.7,
+        "rag_q_17": 1.0,
+        "rag_q_18": 1.0,
+        "rag_q_19": 1.0,
+        "rag_q_20": 1.0,
+        "run_meta": 0.8346666666666667
+      }
+    },
+    "returncode": 0
+  },
+  "change_files": [
+    "code/autoresearch/data_gen_experiment.py"
+  ],
+  "commit": "28b6a05cc2e6de7edcc9aa39d65875691f3d57f1",
+  "error": null,
+  "experiment_id": "exp_0020",
+  "finished_at": "2026-07-16T06:18:48+00:00",
+  "gates": [
+    {
+      "command": "git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0020 diff --quiet daddecb -- code/ datasets/ ':(exclude)code/autoresearch/data_gen_experiment.py' ':(exclude)code/autoresearch/data_gen_results.tsv' && test -z \"$(git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0020 status --porcelain --untracked-files=all -- code/ datasets/ | grep '^??')\"",
+      "from": "root",
+      "name": "harness_integrity",
+      "passed": true,
+      "phase": "post",
+      "returncode": 0
+    }
+  ],
+  "hypothesis": "Port exp_0009 3-pass register-translation (fact-forward) onto v3 full-source baseline: PASS-2 grounded draft locks numbers/meds/timeframes verbatim, PASS-3 translates the pair into a texting exchange whose ANSWER leads with the concrete fact (warmth trails). Tests whether the epoch-2 tone gain (+0.12, robust across 3 draws) transfers at 444-chunk/3555-pair scale without disturbing faithfulness. PASS-1 fact extraction untouched.",
+  "metric": "max",
+  "outcome": "committed",
+  "parent_id": "exp_0019",
+  "parent_score": 0.7933,
+  "runtime": [],
+  "score": 0.8347,
+  "started_at": "2026-07-16T06:09:33+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_28",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:21+00:00",
+  "question": "How can my social life affect my decision to smoke?",
+  "answer": "Your social life can significantly impact your decision to smoke, as smoking can lead to increased social isolation and loneliness. Smokers may experience reduced social contact and heightened feelings of loneliness over time, which can influence their smoking behavior.",
+  "n_contexts": 3
+}

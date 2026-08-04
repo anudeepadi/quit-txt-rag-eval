@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0018",
+  "task_id": "rag_q_13",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (50w)",
+  "started_at": "2026-07-16T04:56:52+00:00",
+  "ended_at": "2026-07-16T04:57:57+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "To prevent kids from picking up smoking early, it is important to provide education about the health risks associated with smoking, including addiction to nicotine and its immediate health effects. Additionally, fostering a supportive environment and encouraging open communication about the dangers of smoking can help deter youth from starting.",
+  "n_contexts": 6
+}

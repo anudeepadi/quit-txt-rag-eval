@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_135",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (50w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:56+00:00",
+  "question": "How can workplace smoking cessation programs be improved to enhance quit success?",
+  "answer": "While the knowledge base does not provide specific strategies for improving workplace smoking cessation programs, it does indicate that combining different cessation methods can significantly improve success rates. Therefore, incorporating a variety of approaches, such as nicotine replacement therapy (NRT) and behavioral counseling, may enhance the effectiveness of these programs.",
+  "n_contexts": 3
+}

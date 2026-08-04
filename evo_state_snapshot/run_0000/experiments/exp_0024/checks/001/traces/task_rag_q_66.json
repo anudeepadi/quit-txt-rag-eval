@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_66",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:49+00:00",
+  "question": "Are there treatments available for smokers experiencing erectile dysfunction?",
+  "answer": "The knowledge base does not provide specific information about treatments for smokers experiencing erectile dysfunction. It is advisable to consult with a healthcare professional for appropriate guidance and treatment options.",
+  "n_contexts": 3
+}

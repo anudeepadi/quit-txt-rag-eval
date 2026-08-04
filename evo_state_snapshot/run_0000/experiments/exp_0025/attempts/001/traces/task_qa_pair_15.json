@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.70 tone=0.60 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T06:34:14+00:00",
+  "ended_at": "2026-07-27T06:40:25+00:00",
+  "question": "Does smoking make arthritis treatments less effective for me?",
+  "answer": "Yes, smoking can impair the effectiveness of arthritis treatments. Smokers respond less favorably to methotrexate, a common RA medication, and this response is dose-dependent.",
+  "source_excerpt": "Topic: Does smoking affect the effectiveness of arthritis treatments?\nYes, smoking can impair the effectiveness of arthritis treatments. Studies have shown that smokers respond less favorably to methotrexate, a common RA medication, with the response being dose-dependent. Smoking also limits the eff",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

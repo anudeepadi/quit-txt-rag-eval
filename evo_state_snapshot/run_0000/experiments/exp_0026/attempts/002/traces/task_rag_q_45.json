@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_45",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:51+00:00",
+  "question": "What steps can I take to slowly quit smoking without feeling overwhelmed?",
+  "answer": "You can take gradual reduction as an effective strategy by tapering off the number of cigarettes you smoke daily. This approach can help minimize withdrawal symptoms and make the quitting process feel more manageable.",
+  "n_contexts": 3
+}

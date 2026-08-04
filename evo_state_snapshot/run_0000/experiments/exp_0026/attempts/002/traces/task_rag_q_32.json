@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_32",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (51w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:29+00:00",
+  "question": "Is quitting cold turkey a good strategy?",
+  "answer": "Quitting nicotine 'cold turkey' can be effective for some individuals who rely on personal motivation and life events as triggers to quit. However, studies show that only 3-5% of individuals succeed long-term using this method, and experts recommend using evidence-based treatments like behavioral therapy or FDA-approved medications for better success rates.",
+  "n_contexts": 3
+}

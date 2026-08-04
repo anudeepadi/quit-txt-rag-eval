@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "rag_q_01",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (26w)",
+  "started_at": "2026-07-16T06:09:39+00:00",
+  "ended_at": "2026-07-16T06:16:47+00:00",
+  "question": "How can my social life influence my smoking habits?",
+  "answer": "Your social circle can significantly influence your smoking habits. If your friends smoke, it may seem normal and increase the likelihood of you smoking as well.",
+  "n_contexts": 3
+}

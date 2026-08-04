@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_91",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (22w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:34+00:00",
+  "question": "What factors were analyzed to assess the relationship between school performance and smoking initiation?",
+  "answer": "The knowledge base does not provide specific information about the factors analyzed to assess the relationship between school performance and smoking initiation.",
+  "n_contexts": 3
+}

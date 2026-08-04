@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0009",
+  "task_id": "rag_q_01",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (43w)",
+  "started_at": "2026-07-16T03:39:41+00:00",
+  "ended_at": "2026-07-16T03:40:29+00:00",
+  "question": "How can my social life influence my smoking habits?",
+  "answer": "Your social life can influence your smoking habits as social relationships and interactions may encourage or discourage smoking behavior. Positive social support can help you quit, while social settings where smoking is prevalent may make it harder to resist the urge to smoke.",
+  "n_contexts": 3
+}

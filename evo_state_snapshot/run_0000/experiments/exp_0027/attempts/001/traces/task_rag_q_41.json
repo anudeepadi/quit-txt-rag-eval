@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_41",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (25w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:45+00:00",
+  "question": "How does smoking contribute to erectile dysfunction?",
+  "answer": "Smoking damages the endothelial cells lining blood vessels, leading to endothelial dysfunction. This dysfunction impairs vasodilation and promotes atherosclerosis, which can contribute to erectile dysfunction.",
+  "n_contexts": 3
+}

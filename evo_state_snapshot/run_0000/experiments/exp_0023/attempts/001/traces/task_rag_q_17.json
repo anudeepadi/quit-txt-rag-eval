@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (28w)",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:04:29+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Some surprising benefits of quitting smoking include enhanced taste and smell, improved skin appearance, and boosted oral health. These benefits can significantly improve your overall quality of life.",
+  "n_contexts": 3
+}

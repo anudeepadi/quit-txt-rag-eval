@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "rag_q_03",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (41w)",
+  "started_at": "2026-07-16T06:24:01+00:00",
+  "ended_at": "2026-07-16T06:31:21+00:00",
+  "question": "What are some healthy ways to deal with bad moods instead of smoking?",
+  "answer": "Healthy ways to deal with bad moods instead of smoking include practicing deep breathing exercises, engaging in physical activities, and seeking social support by talking to a trusted friend. Additionally, exploring relaxation techniques like mindfulness can also help improve your mood.",
+  "n_contexts": 3
+}

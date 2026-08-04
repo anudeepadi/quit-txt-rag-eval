@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_16",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (37w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:21+00:00",
+  "question": "How does smoking influence the company's costs?",
+  "answer": "Smoking influences a company's costs by contributing to lost productivity, which amounts to over $184 billion annually in the U.S. Additionally, smoking-related illnesses lead to significant direct medical care expenses, totaling more than $241 billion for adults.",
+  "n_contexts": 3
+}

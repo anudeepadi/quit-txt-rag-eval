@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_40",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:59+00:00",
+  "question": "How can teens resist peer pressure to smoke?",
+  "answer": "Teens can resist peer pressure to smoke by fostering positive self-esteem, maintaining open communication with trusted adults, and reinforcing their strengths to build resilience against such pressure. Support from parents and caregivers plays a significant role in helping teens navigate these situations.",
+  "n_contexts": 3
+}

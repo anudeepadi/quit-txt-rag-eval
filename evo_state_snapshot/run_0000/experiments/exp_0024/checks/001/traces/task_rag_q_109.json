@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_109",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:06+00:00",
+  "question": "Are light cigarettes less harmful than regular ones?",
+  "answer": "No, 'light' cigarettes are not less harmful than regular cigarettes. They do not reduce the health risks of smoking, and smoking any kind of cigarette increases the risk of serious health conditions.",
+  "n_contexts": 3
+}

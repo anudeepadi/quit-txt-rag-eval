@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_10",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.50 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:27+00:00",
+  "question": "Does quitting smoking help after a stroke?",
+  "answer": "Yes, quitting smoking after a stroke reduces the risk of recurrence and is a key component of secondary stroke prevention strategies.",
+  "source_excerpt": "Topic: Is the increased risk from smoking after stroke more pronounced in certain age groups?\nYes, the heightened risk for MACE among persistent smokers is notably significant in patients younger than 60 years, but not in those aged 60 or older.\n\nTopic: What do these findings suggest about smoking c",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

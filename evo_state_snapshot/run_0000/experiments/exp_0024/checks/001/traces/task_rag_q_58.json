@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_58",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (51w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:32+00:00",
+  "question": "What factors contribute to adolescent smoking?",
+  "answer": "Factors contributing to adolescent smoking include psychological instability, which can lead to unmotivated rebellion and smoking behavior as a coping mechanism. Additionally, higher levels of depression, anxiety, and conduct problems are associated with increased smoking among adolescents. Peer influence and family activities also play a significant role in adolescent smoking behaviors.",
+  "n_contexts": 3
+}

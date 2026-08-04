@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:20:41+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Some surprising benefits of quitting smoking include being able to take deep breaths without coughing, experiencing easier physical activity, having no more freezing cold hands and feet, and enjoying improved taste and smell.",
+  "n_contexts": 3
+}

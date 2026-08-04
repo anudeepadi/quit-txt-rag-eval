@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_01",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (40w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:35:41+00:00",
+  "question": "How can my social life influence my smoking habits?",
+  "answer": "Your social life can influence your smoking habits because the smoking behaviors of close friends and family members are associated with your own smoking behavior in adulthood. This connection is important to consider when trying to quit or prevent smoking.",
+  "n_contexts": 3
+}

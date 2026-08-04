@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_63",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (16w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:44+00:00",
+  "question": "How long should tapering off smoking take?",
+  "answer": "The knowledge base does not provide specific information on how long tapering off smoking should take.",
+  "n_contexts": 3
+}

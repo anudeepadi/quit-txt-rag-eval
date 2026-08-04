@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_41",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (37w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:40+00:00",
+  "question": "How does smoking contribute to erectile dysfunction?",
+  "answer": "Smoking can lead to erectile dysfunction by causing endothelial damage and inflammation, which harm neurons. Additionally, smoking affects dopamine activity, which is closely tied to memory functions and can further contribute to issues related to erectile function.",
+  "n_contexts": 3
+}

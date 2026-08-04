@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_144",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (29w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:10+00:00",
+  "question": "How does smoking exposure affect lupus skin disease?",
+  "answer": "The knowledge base does not provide specific information about the effects of smoking exposure on lupus skin disease. Therefore, I cannot answer that question based on the provided facts.",
+  "n_contexts": 3
+}

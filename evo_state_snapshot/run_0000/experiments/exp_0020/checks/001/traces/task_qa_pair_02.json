@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_02",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:24:01+00:00",
+  "ended_at": "2026-07-16T06:30:14+00:00",
+  "question": "Does how I quit smoking matter for my vascular health?",
+  "answer": "Yes, the method of smoking cessation can influence how well your endothelial function recovers. For example, varenicline-assisted quitting has shown significant improvements in vascular recovery.",
+  "source_excerpt": "Topic: What measures can be taken to reduce the risk of placental abruption related to smoking?\nTo reduce the risk of placental abruption associated with smoking, it is crucial for pregnant women to avoid both active smoking and exposure to second-hand smoke. Implementing smoking cessation programs ",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

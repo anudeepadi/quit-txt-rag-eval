@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_25",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (68w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:11:13+00:00",
+  "question": "How do income and education levels influence smoking prevalence?",
+  "answer": "Education levels significantly influence smoking habits, with adults holding a GED having a smoking rate of 31% compared to 5.3% for those with an undergraduate degree. Additionally, students whose mothers have higher education are 50% less likely to smoke, indicating that family background can also play a role in smoking prevalence. However, the knowledge base does not provide specific information about the influence of income on smoking rates.",
+  "n_contexts": 3
+}

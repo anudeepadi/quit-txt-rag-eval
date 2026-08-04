@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 2,
+  "experiment_id": "exp_0012",
+  "failure_class": "hypothesis",
+  "reason": "RAG_TOP_K=6 regressed (0.6173 vs 0.6453): 0 conversions, 3 passing Qs diluted, human arm flat. Deeper retrieval dilutes the already-un-displaced exp_0009 KB.",
+  "score": 0.6173,
+  "status": "discarded",
+  "timestamp": "2026-07-16T04:02:25+00:00"
+}

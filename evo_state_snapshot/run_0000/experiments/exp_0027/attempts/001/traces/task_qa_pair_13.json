@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.50 tone=0.90 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:41:59+00:00",
+  "question": "Why am I feeling so anxious after quitting smoking? I thought it would be easier.",
+  "answer": "Nicotine is highly addictive, and your body needs to adjust to its absence, which leads to withdrawal symptoms like anxiety. It's a tough adjustment, but it will get better.",
+  "source_excerpt": "Topic: Are there any dangers associated with quitting smoking cold turkey?\nYes, quitting smoking cold turkey can pose certain risks. The abrupt cessation can lead to severe withdrawal symptoms, including mood swings, headaches, and difficulty concentrating. These intense symptoms may increase the li",
+  "specificity": 0.5,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

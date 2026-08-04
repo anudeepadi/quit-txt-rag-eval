@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_29",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (38w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:23+00:00",
+  "question": "Why do some people prefer to quit smoking gradually?",
+  "answer": "Some people prefer to quit smoking gradually because it allows their body and mind to adjust to lower nicotine levels, which can potentially reduce withdrawal symptoms. This approach can make the transition to a smoke-free life more manageable.",
+  "n_contexts": 3
+}

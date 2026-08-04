@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_84",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (27w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:23+00:00",
+  "question": "Do lungs fully recover after quitting smoking?",
+  "answer": "While some lung damage is permanent, quitting smoking can significantly improve lung function over time and initiate a healing process where your lungs begin to repair themselves.",
+  "n_contexts": 3
+}

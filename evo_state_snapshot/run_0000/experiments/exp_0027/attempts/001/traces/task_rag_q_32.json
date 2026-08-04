@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_32",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (42w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:28+00:00",
+  "question": "Is quitting cold turkey a good strategy?",
+  "answer": "Quitting cold turkey can be a successful strategy for some individuals who rely on personal motivation and life events as triggers to quit. However, it is not the most effective method, and combining this approach with available support can enhance success rates.",
+  "n_contexts": 3
+}

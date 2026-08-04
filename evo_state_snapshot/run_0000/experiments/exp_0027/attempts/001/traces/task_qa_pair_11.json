@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.70 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:41:57+00:00",
+  "question": "I have multiple sclerosis and I smoke. I feel more fatigued and depressed than my friends who don\u2019t smoke. Is that normal?",
+  "answer": "Smokers with MS report significantly greater fatigue and depressive symptoms compared to non-smokers, indicating that smoking negatively impacts your overall well-being.",
+  "source_excerpt": "Topic: What are the effects of smoking on the body?\nSmoking adversely affects nearly every organ in the body. It increases the risk of cardiovascular diseases such as heart disease and stroke, impairs lung function leading to conditions like chronic bronchitis and emphysema, and elevates the likelih",
+  "specificity": 0.7,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

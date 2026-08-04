@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_02",
+  "status": "passed",
+  "score": 0.925,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:39+00:00",
+  "question": "When do withdrawal symptoms start after I quit smoking?",
+  "answer": "Withdrawal symptoms typically start within hours of quitting, peak within the first few days, and generally diminish within 2 to 4 weeks as your body adapts to the absence of nicotine.",
+  "source_excerpt": "Topic: What causes headaches when quitting smoking?\nHeadaches during smoking cessation are commonly caused by nicotine withdrawal, which can lead to muscle tension and changes in brain chemistry. These symptoms are typically temporary and should subside as your body adjusts to the absence of nicotin",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_86",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (56w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:26+00:00",
+  "question": "Why is smoking cessation a persistent problem in patients with peripheral artery disease?",
+  "answer": "Smoking cessation is a persistent problem in patients with peripheral artery disease (PAD) because smoking contributes to the condition by damaging blood vessels and causing fatty deposits to accumulate, which restricts blood flow. Additionally, the addictive nature of nicotine can make it challenging for individuals to quit, despite the known health risks and benefits of cessation.",
+  "n_contexts": 3
+}

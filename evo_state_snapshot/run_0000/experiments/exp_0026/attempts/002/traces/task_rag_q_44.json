@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_44",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:49+00:00",
+  "question": "How can I manage cravings and withdrawal symptoms after quitting?",
+  "answer": "To manage cravings and withdrawal symptoms after quitting, you can use nicotine replacement products, stay busy, engage in physical activity, and avoid triggers associated with tobacco use. It's also helpful to create a tobacco-free environment and spend time in smoke-free public places.",
+  "n_contexts": 3
+}

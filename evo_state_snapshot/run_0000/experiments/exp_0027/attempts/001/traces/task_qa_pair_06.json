@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "qa_pair_06",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.50 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:41:53+00:00",
+  "question": "If I start feeling tempted to smoke again, what should I do?",
+  "answer": "If you slip or relapse, don\u2019t give up; you can still quit and stay quit for life. Remember, it's a journey, and setbacks can happen.",
+  "source_excerpt": "Topic: How does quitting tobacco benefit the baby?\nWhen women quit smoking before they get pregnant or early in their pregnancy, their baby has a lower risk of being born too early or being considered small for their gestational age at birth. New moms who don\u2019t smoke are less likely to experience pr",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

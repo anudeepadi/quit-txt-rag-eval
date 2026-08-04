@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_18",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:14+00:00",
+  "question": "Is smoking cessation beneficial for people with psychiatric disorders?",
+  "answer": "Yes, smoking cessation can be beneficial for people with psychiatric disorders, as quitting can lead to improved mental health outcomes. Additionally, smoking is more prevalent among adults with mental health conditions, and effective cessation strategies can support their recovery.",
+  "n_contexts": 3
+}

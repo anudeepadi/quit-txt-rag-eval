@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_116",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (35w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:19+00:00",
+  "question": "What are some mindfulness techniques to cope with cravings?",
+  "answer": "One mindfulness technique to cope with cravings is mindful walking for five minutes in a peaceful place, focusing on each step you take. Practicing mindfulness in this way can help reduce stress and manage cravings.",
+  "n_contexts": 3
+}

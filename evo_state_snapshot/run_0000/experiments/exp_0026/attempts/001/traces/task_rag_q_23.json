@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_23",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (42w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:33+00:00",
+  "question": "Are there personalized approaches to quitting smoking based on brain activity?",
+  "answer": "The knowledge base does not specifically mention personalized approaches to quitting smoking based on brain activity. However, it does suggest that combining brain stimulation with physical exercise may enhance motivation and reduce cravings, which could imply a tailored strategy could be beneficial.",
+  "n_contexts": 3
+}

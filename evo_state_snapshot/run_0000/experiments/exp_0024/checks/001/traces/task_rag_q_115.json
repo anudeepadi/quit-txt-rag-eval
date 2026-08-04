@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_115",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (46w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:17+00:00",
+  "question": "How does smoking affect breast milk and breastfeeding?",
+  "answer": "Smoking introduces nicotine into breast milk, which can reduce your milk supply and expose your baby to harmful substances. However, breastfeeding offers significant health benefits for both you and your baby, so it's better to breastfeed even if you smoke rather than not breastfeeding at all.",
+  "n_contexts": 3
+}

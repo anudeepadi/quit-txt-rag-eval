@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_11",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (44w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:43:50+00:00",
+  "question": "Which groups of children are most affected by secondhand smoke exposure?",
+  "answer": "Children exposed to secondhand smoke are particularly affected if they belong to groups with higher exposure, such as those living below the poverty level and non-Hispanic Black individuals. Additionally, children in general are at a higher risk for health issues related to secondhand smoke.",
+  "n_contexts": 3
+}

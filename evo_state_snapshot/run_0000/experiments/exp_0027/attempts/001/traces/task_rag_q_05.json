@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_05",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "faithfulness=0.50 (31w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:43:39+00:00",
+  "question": "Are there mental health effects associated with secondhand smoke?",
+  "answer": "The knowledge base does not explicitly mention mental health effects associated with secondhand smoke. It only states that daily smokers have a higher risk of developing psychotic disorders compared to non-smokers.",
+  "n_contexts": 3
+}

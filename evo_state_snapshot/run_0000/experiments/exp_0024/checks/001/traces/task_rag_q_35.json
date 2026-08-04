@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_35",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:36:50+00:00",
+  "question": "How can my social life affect my decision to smoke?",
+  "answer": "Your social life can influence your decision to smoke, as social isolation and loneliness may lead to increased smoking behavior. Additionally, if your social circle includes smokers, it may create pressure to smoke or make it harder to quit.",
+  "n_contexts": 3
+}

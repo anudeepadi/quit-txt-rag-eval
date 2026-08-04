@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0008",
+  "task_id": "rag_q_13",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (30w)",
+  "started_at": "2026-07-16T03:36:33+00:00",
+  "ended_at": "2026-07-16T03:37:35+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "The knowledge base does not provide specific strategies for preventing kids from picking up smoking early. It focuses on the immediate health risks and effects of smoking on young people.",
+  "n_contexts": 3
+}

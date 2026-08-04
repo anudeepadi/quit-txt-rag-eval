@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.70 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:09:39+00:00",
+  "ended_at": "2026-07-16T06:15:48+00:00",
+  "question": "Is there a better time for women to quit smoking during their menstrual cycle?",
+  "answer": "Yes, women who attempt to quit smoking during the luteal phase have longer durations before relapse. Specifically, the mean days to relapse were 21.5 days for the luteal group compared to 13.9 days for the follicular group.",
+  "source_excerpt": "Topic: What is the significance of FSG changes in relation to NAFLD risk post-smoking cessation?\nThe study found that changes in fasting serum glucose (FSG) levels after smoking cessation are significantly associated with the risk of non-alcoholic fatty liver disease (NAFLD). Specifically, individua",
+  "specificity": 0.8,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

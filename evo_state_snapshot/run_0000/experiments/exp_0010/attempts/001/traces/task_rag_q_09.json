@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0010",
+  "task_id": "rag_q_09",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (52w)",
+  "started_at": "2026-07-16T03:44:21+00:00",
+  "ended_at": "2026-07-16T03:45:28+00:00",
+  "question": "How does Allen Carr's Easyway method compare to these treatments?",
+  "answer": "The knowledge base does not provide information on Allen Carr's Easyway method or how it compares to other smoking cessation treatments. It only discusses effective methods to quit smoking, which include combining quit-smoking medications or nicotine replacement therapy with support from healthcare professionals and utilizing resources like the 'I Can Quit' website.",
+  "n_contexts": 3
+}

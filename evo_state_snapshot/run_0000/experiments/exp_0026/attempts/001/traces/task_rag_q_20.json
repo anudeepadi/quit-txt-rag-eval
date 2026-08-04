@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_20",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:27+00:00",
+  "question": "How can I maintain my social life while quitting smoking?",
+  "answer": "To maintain your social life while quitting smoking, communicate your decision to quit to your friends and family and ask for their support. Suggest engaging in non-smoking activities and spend time with supportive individuals.",
+  "n_contexts": 3
+}

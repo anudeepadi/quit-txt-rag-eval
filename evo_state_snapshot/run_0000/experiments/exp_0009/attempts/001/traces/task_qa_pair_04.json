@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0009",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-16T03:39:41+00:00",
+  "ended_at": "2026-07-16T03:40:16+00:00",
+  "question": "Can smoking make my nerve problems worse?",
+  "answer": "Yes, smoking can exacerbate nerve problems in your hands, leading to symptoms like tingling, numbness, and pain. Smokers often report more severe symptoms, especially if they have conditions like diabetes.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_50",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (28w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:18+00:00",
+  "question": "What are the long-term financial benefits of quitting smoking?",
+  "answer": "Quitting smoking can substantially reduce the lifetime economic burden associated with smoking. You can avoid many direct and indirect costs, leading to better financial outcomes over your lifetime.",
+  "n_contexts": 3
+}

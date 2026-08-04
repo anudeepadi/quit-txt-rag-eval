@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_44",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (43w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:51+00:00",
+  "question": "How can I manage cravings and withdrawal symptoms after quitting?",
+  "answer": "To manage cravings and withdrawal symptoms after quitting, consider using nicotine replacement therapies (NRTs) like patches or gum, engaging in regular physical activity, practicing relaxation techniques such as deep breathing or meditation, staying hydrated, and seeking support from friends, family, or support groups.",
+  "n_contexts": 3
+}

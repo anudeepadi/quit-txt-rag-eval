@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_94",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (19w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:40+00:00",
+  "question": "Can smoking cause rheumatoid arthritis?",
+  "answer": "Yes, smoking is a significant risk factor for developing rheumatoid arthritis (RA), particularly in individuals with a genetic predisposition.",
+  "n_contexts": 3
+}

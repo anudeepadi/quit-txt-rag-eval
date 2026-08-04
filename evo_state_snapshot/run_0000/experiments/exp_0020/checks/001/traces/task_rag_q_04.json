@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "rag_q_04",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-16T06:24:01+00:00",
+  "ended_at": "2026-07-16T06:31:23+00:00",
+  "question": "What are common reasons for relapse, and how can I avoid them?",
+  "answer": "Common triggers for relapse include being around other smokers, drinking alcohol, and feeling stressed or angry. To avoid these triggers, you can identify and steer clear of situations that may lead to relapse.",
+  "n_contexts": 3
+}

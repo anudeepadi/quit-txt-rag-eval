@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_10",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.80 tone=0.50 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:18:58+00:00",
+  "question": "How does smoking contribute to cardiovascular disease?",
+  "answer": "Smoking contributes to cardiovascular disease by promoting atherosclerosis, increasing oxidative stress and inflammation, damaging endothelial cells, raising blood pressure, and accelerating clot formation. These factors collectively increase the risk of heart attacks and strokes.",
+  "source_excerpt": "Topic: What are the key mechanisms by which smoking contributes to cardiovascular disease?\nSmoking contributes to cardiovascular disease through several mechanisms: it promotes atherosclerosis by increasing oxidative stress and inflammation, damages endothelial cells, raises blood pressure, and acce",
+  "specificity": 0.8,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

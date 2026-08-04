@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_24",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (27w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:13+00:00",
+  "question": "How does quitting smoking affect my life insurance premiums?",
+  "answer": "The knowledge base does not provide specific information about how quitting smoking affects life insurance premiums. Therefore, I cannot provide an answer based on the available facts.",
+  "n_contexts": 3
+}

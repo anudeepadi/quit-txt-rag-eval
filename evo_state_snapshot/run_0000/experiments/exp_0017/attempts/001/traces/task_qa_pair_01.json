@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0017",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.7250000000000001,
+  "summary": "spec=0.80 tone=0.40 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T04:48:28+00:00",
+  "ended_at": "2026-07-16T04:49:09+00:00",
+  "question": "What method do researchers use to study the brain effects of smoking?",
+  "answer": "Researchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. This method allows for a comparison of brain activity before and after acute nicotine intake.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.8,
+  "conversational_tone": 0.4,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

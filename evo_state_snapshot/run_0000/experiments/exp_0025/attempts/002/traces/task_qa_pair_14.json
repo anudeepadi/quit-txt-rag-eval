@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.70 tone=0.60 ground=0.90 clin=0.80",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:08:29+00:00",
+  "question": "What factors affect pregnant women seeking help to quit smoking?",
+  "answer": "Factors like socioeconomic status, nicotine dependence, and having a partner who smokes didn't significantly predict the interest in or use of cessation support. This means many pregnant smokers are open to seeking help!",
+  "source_excerpt": "Topic: What are healthier ways to cope with stress?\nInstead of smoking, try activities like walking, relaxation exercises, or engaging in hobbies. These can help manage stress more effectively.\n\nTopic: How can I stay motivated to quit smoking?\nUse tools like SmokefreeTXT for support, identify and av",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

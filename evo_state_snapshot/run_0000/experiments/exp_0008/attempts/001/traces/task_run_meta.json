@@ -1,0 +1,51 @@
+{
+  "experiment_id": "exp_0008",
+  "task_id": "run_meta",
+  "status": "passed",
+  "score": 0.595,
+  "summary": "combined=0.5950 human=0.8200 relative=32.9%",
+  "started_at": "2026-07-16T03:36:33+00:00",
+  "ended_at": "2026-07-16T03:39:25+00:00",
+  "rag_faithfulness": 0.27,
+  "qa_quality": {
+    "specificity": 0.7,
+    "conversational_tone": 0.66,
+    "groundedness": 0.9666666666666667,
+    "clinical_accuracy": 0.9066666666666666
+  },
+  "human_baseline": 0.82,
+  "relative_pct": 32.926829268292686,
+  "n_pairs_generated": 40,
+  "avg_answer_words": 31.3,
+  "hypothesis": "PASS-1 additive breadth, count-isolated (epoch 2, parent exp_0005 combined 0.6363). Keep headline/clinical fact extraction FIRST, then ALSO capture practical/behavioral facts the source explicitly states (coping/self-management strategies, how-to guidance, prevention approaches, motivations/drivers, who-is-affected, everyday-life effects). QA_PER_SOURCE HELD AT 8 (not 10) because exp_0007 showed the 50-pair count crowded the definitional pair out of top-3 retrieval and flipped the rag_q_10 canary. Goal: convert domain-present refusal-zeros while retaining definitional coverage and groundedness >=0.90.",
+  "gen_model": "gpt-4o-mini",
+  "gen_temperature": 0.0,
+  "qa_per_source": 8,
+  "chunk_stats": [
+    {
+      "chunk": 1,
+      "n_pairs": 8,
+      "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two "
+    },
+    {
+      "chunk": 2,
+      "n_pairs": 8,
+      "source_excerpt": "Topic: How does tobacco use affect individuals with behavioral health conditions?\nIndividuals with behavioral health conditions are more likely to smoke, accounting for 38% of all U.S. adult cigarette consumption, despite making up only 25% of the population. This group has a smoking rate of 23%, hi"
+    },
+    {
+      "chunk": 3,
+      "n_pairs": 8,
+      "source_excerpt": "Topic: Has the rising cost of cigarettes influenced people to quit smoking?\nYes, studies indicate that the proportion of individuals motivated to quit due to the cost of smoking increased from 38% in 2007 to 57% in 2019, making it the most common reason since 2013.\n\nTopic: Who is most affected by th"
+    },
+    {
+      "chunk": 4,
+      "n_pairs": 8,
+      "source_excerpt": "Topic: How does nicotine affect energy levels?\nNicotine stimulates the release of adrenaline, causing a temporary energy boost; however, as the effect wears off, it can lead to feelings of fatigue.\n\nTopic: Can quitting smoking improve energy?\nYes, quitting smoking can improve energy levels over time"
+    },
+    {
+      "chunk": 5,
+      "n_pairs": 8,
+      "source_excerpt": "Topic: How does quitting smoking affect my appearance?\nSmoking cigarettes has been shown to negatively affect skin by depriving it of oxygen and nutrients, which can result in premature aging of the skin of between 10 to 20 years, a yellow grey complexion, and even cellulite. Once you quit, you can "
+    }
+  ]
+}

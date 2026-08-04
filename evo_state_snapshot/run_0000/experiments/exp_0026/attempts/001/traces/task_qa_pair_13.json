@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.60 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:25+00:00",
+  "question": "Can smoking really give me a sore throat?",
+  "answer": "Yes, smoking can cause a sore throat because the hot, dry air removes moisture from your throat, leading to irritation. It's tough on your throat, and you're not alone in feeling this way.",
+  "source_excerpt": "Topic: How can I alleviate cottonmouth symptoms?\nTo alleviate cottonmouth, consider drinking more water, using xylitol products, minimizing intake of sugary and caffeinated drinks, sucking on ice cubes, using a humidifier, avoiding spicy or salty foods, quitting smoking or chewing tobacco, and using",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

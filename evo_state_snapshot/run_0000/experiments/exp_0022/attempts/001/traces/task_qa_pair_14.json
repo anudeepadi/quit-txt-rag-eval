@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_14",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.60 tone=0.50 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:31+00:00",
+  "question": "What recommendations did the researchers make to improve support usage for pregnant smokers?",
+  "answer": "The researchers recommended increasing motivation to quit, enhancing interest in support, encouraging discussions about stopping smoking with health practitioners, and boosting confidence in quitting with cessation support.",
+  "source_excerpt": "Topic: What are healthier ways to cope with stress?\nInstead of smoking, try activities like walking, relaxation exercises, or engaging in hobbies. These can help manage stress more effectively.\n\nTopic: How can I stay motivated to quit smoking?\nUse tools like SmokefreeTXT for support, identify and av",
+  "specificity": 0.6,
+  "conversational_tone": 0.5,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

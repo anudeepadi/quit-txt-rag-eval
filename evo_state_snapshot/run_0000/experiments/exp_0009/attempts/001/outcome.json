@@ -1,0 +1,88 @@
+{
+  "attempt": 1,
+  "attempt_state": {
+    "attempt": 1,
+    "checkpoint_dir": "/Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/experiments/exp_0009/attempts/001/checkpoints",
+    "experiment_id": "exp_0009",
+    "gate_failures": [],
+    "phase": "complete",
+    "pid": 5573,
+    "remote_checkpoint_dir": null,
+    "score": 0.626,
+    "started_at": "2026-07-16T03:39:38+00:00",
+    "status": "evaluated",
+    "updated_at": "2026-07-16T03:42:28+00:00"
+  },
+  "benchmark": {
+    "command": "python3 /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0009/code/autoresearch/run_data_gen_experiment.py",
+    "result": {
+      "ended_at": "2026-07-16T03:42:28+00:00",
+      "score": 0.626,
+      "started_at": "2026-07-16T03:39:41+00:00",
+      "tasks": {
+        "qa_pair_01": 0.775,
+        "qa_pair_02": 0.775,
+        "qa_pair_03": 0.825,
+        "qa_pair_04": 0.8,
+        "qa_pair_05": 0.85,
+        "qa_pair_06": 0.825,
+        "qa_pair_07": 0.75,
+        "qa_pair_08": 0.8,
+        "qa_pair_09": 0.85,
+        "qa_pair_10": 0.9,
+        "qa_pair_11": 0.85,
+        "qa_pair_12": 0.925,
+        "qa_pair_13": 0.825,
+        "qa_pair_14": 0.8,
+        "qa_pair_15": 0.85,
+        "rag_q_01": 1.0,
+        "rag_q_02": 1.0,
+        "rag_q_03": 0.0,
+        "rag_q_04": 0.0,
+        "rag_q_05": 0.0,
+        "rag_q_06": 0.0,
+        "rag_q_07": 0.8,
+        "rag_q_08": 0.0,
+        "rag_q_09": 0.0,
+        "rag_q_10": 0.0,
+        "rag_q_11": 0.0,
+        "rag_q_12": 1.0,
+        "rag_q_13": 0.0,
+        "rag_q_14": 0.0,
+        "rag_q_15": 0.0,
+        "rag_q_16": 0.0,
+        "rag_q_17": 1.0,
+        "rag_q_18": 1.0,
+        "rag_q_19": 1.0,
+        "rag_q_20": 0.0,
+        "run_meta": 0.626
+      }
+    },
+    "returncode": 0
+  },
+  "change_files": [
+    "code/autoresearch/data_gen_experiment.py"
+  ],
+  "commit": null,
+  "error": null,
+  "experiment_id": "exp_0009",
+  "finished_at": "2026-07-16T03:42:28+00:00",
+  "gates": [
+    {
+      "command": "git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0009 diff --quiet ee18d6c -- code/ datasets/ ':(exclude)code/autoresearch/data_gen_experiment.py' ':(exclude)code/autoresearch/data_gen_results.tsv' && test -z \"$(git -C /Users/vuc229/Documents/Projects/ai-ml/Papers/gemini-protocol/.evo/run_0000/worktrees/exp_0009 status --porcelain --untracked-files=all -- code/ datasets/ | grep '^??')\"",
+      "from": "root",
+      "name": "harness_integrity",
+      "passed": true,
+      "phase": "post",
+      "returncode": 0
+    }
+  ],
+  "hypothesis": "Register-translation, fact-forward variant of exp_0006: keep the 3-pass texting-register mechanism (tone 0.66->0.80 win) but constrain the translated ANSWER to LEAD with the concrete grounded fact (number/medication/term first), with warmth/second-person as a brief trailing clause only -- no empathetic preamble before the fact. Fixes the retrieval displacement exp_0006 caused (rag_q_01/10/16 flipped to refusals because warm openers diluted the pair embedding away from fact keywords under top_k=3).",
+  "metric": "max",
+  "outcome": "evaluated",
+  "parent_id": "exp_0005",
+  "parent_score": 0.6363,
+  "runtime": [],
+  "score": 0.626,
+  "started_at": "2026-07-16T03:39:38+00:00"
+}

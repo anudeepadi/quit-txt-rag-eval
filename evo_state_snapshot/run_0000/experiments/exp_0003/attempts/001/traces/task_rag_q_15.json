@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0003",
+  "task_id": "rag_q_15",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (20w)",
+  "started_at": "2026-07-16T03:00:29+00:00",
+  "ended_at": "2026-07-16T03:02:00+00:00",
+  "question": "Which groups of children are most affected by secondhand smoke exposure?",
+  "answer": "The knowledge base does not provide specific information about which groups of children are most affected by secondhand smoke exposure.",
+  "n_contexts": 3
+}

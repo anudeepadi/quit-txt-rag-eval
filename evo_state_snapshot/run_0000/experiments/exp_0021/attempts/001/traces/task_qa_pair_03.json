@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "qa_pair_03",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.70 tone=0.60 ground=1.00 clin=0.80",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:18:53+00:00",
+  "question": "How do personality traits influence smoking cessation among Chinese adults?",
+  "answer": "A study published in BMC Psychology found that among men, lower levels of neuroticism and extraversion, and higher levels of openness to experience were associated with a higher likelihood of quitting smoking. For women, lower levels of conscientiousness were linked to successful smoking cessation.",
+  "source_excerpt": "Topic: Are there free resources available to help quit smoking?\nYes, the Gulfcoast South Area Health Education Center (GSAHEC), as part of the Tobacco Free Florida AHEC Cessation Program, offers free tobacco cessation sessions. These sessions, available both virtually and in-person, provide informat",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.8
+}

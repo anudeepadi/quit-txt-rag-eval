@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_15",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.80 tone=0.60 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:27+00:00",
+  "question": "How does smoking actually cause atherosclerosis?",
+  "answer": "The chemicals inhaled during smoking damage the inner lining of arteries, promoting plaque buildup. This narrows the arteries over time, restricting blood flow and increasing the risk of heart disease and stroke.",
+  "source_excerpt": "Topic: Are younger smokers at risk of sudden cardiovascular events?\nYes, younger smokers are also at risk. The study found that smokers under 40 had an increased risk of developing cardiovascular disease earlier than non-smokers, with some experiencing fatal events as their first symptom.\n\nTopic: Wh",
+  "specificity": 0.8,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

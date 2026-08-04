@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_05",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.60 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:43+00:00",
+  "question": "Will I definitely gain weight if I stop smoking?",
+  "answer": "While some people may gain weight after quitting smoking due to changes in metabolism and appetite, this isn't inevitable. Maintaining a healthy diet and staying active can help manage your weight effectively during this transition.",
+  "source_excerpt": "Topic: Are there herbal treatments that can aid in quitting smoking?\nCertain herbal remedies, such as lobelia and St. John's wort, have been explored for smoking cessation. However, their efficacy is not well-established, and they may interact with other medications. It's important to consult with a",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

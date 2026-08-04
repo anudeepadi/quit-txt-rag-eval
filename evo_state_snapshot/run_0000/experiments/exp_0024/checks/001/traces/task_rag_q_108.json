@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_108",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:05+00:00",
+  "question": "Are there specific products recommended to help with the oral fixation of smoking?",
+  "answer": "The knowledge base does not provide specific products for addressing the oral fixation of smoking. However, it does mention nicotine replacement therapies (NRTs) like gum, which may help with oral fixation indirectly.",
+  "n_contexts": 3
+}

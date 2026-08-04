@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_83",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:21+00:00",
+  "question": "Are there any side effects associated with Deep TMS for smoking cessation?",
+  "answer": "Yes, common side effects of Deep TMS include mild scalp discomfort and headaches, which usually go away over time. It's important to discuss any concerns with your healthcare provider before starting treatment.",
+  "n_contexts": 3
+}

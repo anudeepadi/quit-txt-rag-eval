@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_11",
+  "status": "passed",
+  "score": 0.725,
+  "summary": "spec=0.70 tone=0.50 ground=0.90 clin=0.80",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:40:51+00:00",
+  "question": "Does having other health issues change how smoking affects cognitive decline?",
+  "answer": "The relationship between smoking and cognitive test scores was apparent regardless of the presence of high blood pressure or Type 2 diabetes. This means smoking has a strong impact on cognitive function, no matter what other conditions are present.",
+  "source_excerpt": "Topic: What are the effects of chronic nicotine exposure on hippocampal cell morphology?\nChronic nicotine exposure during adolescence causes reductions in dendritic complexity and spine density in hippocampal pyramidal neurons, which may underlie observed behavioral deficits.\n\nTopic: Are nicotine po",
+  "specificity": 0.7,
+  "conversational_tone": 0.5,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

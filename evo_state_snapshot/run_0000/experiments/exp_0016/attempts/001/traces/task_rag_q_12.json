@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0016",
+  "task_id": "rag_q_12",
+  "status": "failed",
+  "score": 0.3,
+  "summary": "faithfulness=0.30 (29w)",
+  "started_at": "2026-07-16T04:35:16+00:00",
+  "ended_at": "2026-07-16T04:36:31+00:00",
+  "question": "Is smoking harmful to brain health even if I don't have other health issues?",
+  "answer": "The knowledge base does not specifically address the impact of smoking on brain health without other health issues. Therefore, I cannot provide an answer based on the provided facts.",
+  "n_contexts": 6
+}

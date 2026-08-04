@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_07",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:20+00:00",
+  "question": "What kind of support does Froedtert Health offer for quitting smoking?",
+  "answer": "Froedtert Health provides a comprehensive Smoking Cessation Program that includes education on smoking addiction and related health risks, personalized counseling, and medical management with FDA-approved medications. It's great that they offer such a well-rounded approach!",
+  "source_excerpt": "Topic: What smoking cessation services are offered at Froedtert Health?\nFroedtert Health provides a comprehensive Smoking Cessation Program that includes education on smoking addiction and related health risks, personalized counseling to address behavioral aspects, and medical management with FDA-ap",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

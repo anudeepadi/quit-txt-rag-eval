@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_10",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:43:48+00:00",
+  "question": "How prevalent is secondhand smoke exposure among children in the U.S.?",
+  "answer": "Disparities persist in secondhand smoke exposure among children, with higher exposure rates noted among children, non-Hispanic Black individuals, those living below the poverty level, and renters. There is no safe threshold for exposure, making it a serious issue that affects many families.",
+  "n_contexts": 3
+}

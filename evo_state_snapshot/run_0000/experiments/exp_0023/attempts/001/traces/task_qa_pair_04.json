@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.70 tone=0.60 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:48+00:00",
+  "question": "What health issues can arise from dry mouth caused by smoking?",
+  "answer": "Dry mouth from smoking can lead to tooth decay and gum disease. Additionally, gum disease is linked to increased risks of heart disease, Alzheimer's disease, and complications related to diabetes.",
+  "source_excerpt": "Topic: How much more likely are smokers to get dry socket compared to non-smokers?\nA 2022 review found that the occurrence of dry socket in smokers was around 13.2%, compared to 3.8% in non-smokers, indicating that smoking more than triples the risk of developing this condition.\n\nTopic: If I smoke, ",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

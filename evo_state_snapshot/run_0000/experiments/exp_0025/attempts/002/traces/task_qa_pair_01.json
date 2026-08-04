@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.50 tone=0.90 ground=1.00 clin=0.80",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:08:17+00:00",
+  "question": "What challenges might I face when trying to quit smoking with diabetes?",
+  "answer": "You might worry about weight gain and managing your blood glucose levels when quitting smoking. Nicotine withdrawal can also affect your mood and stress, so tailored support can be really helpful.",
+  "source_excerpt": "Topic: What is the significance of FSG changes in relation to NAFLD risk post-smoking cessation?\nThe study found that changes in fasting serum glucose (FSG) levels after smoking cessation are significantly associated with the risk of non-alcoholic fatty liver disease (NAFLD). Specifically, individua",
+  "specificity": 0.5,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.8
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0007",
+  "task_id": "qa_pair_10",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "spec=0.60 tone=0.70 ground=0.80 clin=0.70",
+  "started_at": "2026-07-16T03:28:10+00:00",
+  "ended_at": "2026-07-16T03:29:03+00:00",
+  "question": "What steps can be taken to manage neuropathy pain?",
+  "answer": "While neuropathy cannot be cured, pain can be managed through various treatments. At Neuropathy Treatment Clinics of Texas, electric cell signaling treatment is used to help alleviate pain, with most patients seeing improvement after six to eight sessions.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.6,
+  "conversational_tone": 0.7,
+  "groundedness": 0.8,
+  "clinical_accuracy": 0.7
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0002",
+  "task_id": "qa_pair_10",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.50 tone=0.70 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T02:50:58+00:00",
+  "ended_at": "2026-07-16T02:51:45+00:00",
+  "question": "What conditions related to smoking can cause leg pain?",
+  "answer": "Other conditions related to smoking that can cause leg pain include Raynaud\u2019s disease, neuropathy, osteoporosis, and chronic obstructive pulmonary disease (COPD).",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.5,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

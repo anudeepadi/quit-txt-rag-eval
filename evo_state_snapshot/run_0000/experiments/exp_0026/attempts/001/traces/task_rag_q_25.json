@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_25",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (36w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:37+00:00",
+  "question": "How do income and education levels influence smoking prevalence?",
+  "answer": "Income and education levels influence smoking prevalence, as smoking rates vary by demographics. For instance, adults with a GED have a smoking rate of 31%, while those with an undergraduate degree have a rate of 5.3%.",
+  "n_contexts": 3
+}

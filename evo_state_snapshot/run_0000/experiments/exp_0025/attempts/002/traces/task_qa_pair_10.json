@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "qa_pair_10",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.90 tone=0.70 ground=1.00 clin=1.00",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:08:26+00:00",
+  "question": "How much does smoking increase my risk of having another stroke?",
+  "answer": "Persistent smoking after an initial stroke significantly increases the risk of recurrence. Smoking 1\u201320 cigarettes daily raises your risk by 68%, while more than 40 cigarettes daily increases it by 172%.",
+  "source_excerpt": "Topic: Is the increased risk from smoking after stroke more pronounced in certain age groups?\nYes, the heightened risk for MACE among persistent smokers is notably significant in patients younger than 60 years, but not in those aged 60 or older.\n\nTopic: What do these findings suggest about smoking c",
+  "specificity": 0.9,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

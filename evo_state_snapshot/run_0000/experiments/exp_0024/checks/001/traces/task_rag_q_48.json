@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_48",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (32w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:14+00:00",
+  "question": "How does smoking contribute to erectile dysfunction?",
+  "answer": "Smoking can lead to erectile dysfunction by reducing sperm quality and promoting inflammation, which affects blood flow and overall reproductive health. Quitting smoking can help improve these issues and enhance erectile function.",
+  "n_contexts": 3
+}

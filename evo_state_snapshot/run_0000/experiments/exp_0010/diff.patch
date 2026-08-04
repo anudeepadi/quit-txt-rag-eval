@@ -1,0 +1,57 @@
+diff --git a/code/autoresearch/data_gen_experiment.py b/code/autoresearch/data_gen_experiment.py
+index 1743eeb..5112169 100644
+--- a/code/autoresearch/data_gen_experiment.py
++++ b/code/autoresearch/data_gen_experiment.py
+@@ -6,10 +6,17 @@ After modifying, run:  python3 autoresearch/run_data_gen_experiment.py
+ 
+ # --- Hypothesis (describe what you're testing) ---
+ HYPOTHESIS = (
+-    "BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, "
+-    "2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. "
+-    "Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be "
+-    "a judge-rubric ceiling, not a generator-side lever."
++    "PASS-1 gentle-append breadth (epoch 2, parent exp_0005 combined 0.6363). "
++    "Keep the ORIGINAL headline fact-extraction sentence verbatim (the behavior "
++    "that made the definitional canary pass), and APPEND one line nudging "
++    "inclusion of directly-stated practical/behavioral facts (coping/self-"
++    "management, prevention, motivations, who-is-affected). No restructure, no "
++    "added 'do not invent' clause -- groundedness is already guarded by the "
++    "global HEALTHCARE-SAFETY constraint. QA_PER_SOURCE=10 for room so the "
++    "behavioral additions do not displace headline facts (the count=8 zero-sum "
++    "seen in the discarded count-isolated sibling). Goal: retain definitional "
++    "coverage while converting domain-present refusal-zeros; hold groundedness "
++    ">=0.90."
+ )
+ 
+ # --- Generation model ---
+@@ -19,7 +26,7 @@ GEN_MODEL = "gpt-4o-mini"
+ # --- Generation parameters ---
+ GEN_TEMPERATURE = 0.0       # maximum determinism — zero creative extrapolation
+ GEN_MAX_TOKENS = 2500
+-QA_PER_SOURCE = 8
++QA_PER_SOURCE = 10
+ 
+ # --- Generation prompt ---
+ # Must contain {n} placeholder for number of pairs to generate.
+@@ -35,7 +42,11 @@ GEN_SYSTEM_PROMPT = (
+     "PASS 1 — FACT EXTRACTION:\n"
+     "First, read the source and mentally identify the {n} most important distinct "
+     "facts, statistics, medication names, techniques, or clinical findings. Each "
+-    "fact must be directly stated in the source text.\n\n"
++    "fact must be directly stated in the source text.\n"
++    "When the source states practical or everyday content — coping and self-"
++    "management strategies, prevention approaches, motivations or drivers, and "
++    "who is affected — include those directly-stated facts too; do not skip a "
++    "stated practical fact in favor of a redundant clinical one.\n\n"
+     "PASS 2 — QA PAIR COMPOSITION:\n"
+     "For each extracted fact, compose one question-answer pair:\n"
+     "- Question: conversational, first-person, like texting a quit-smoking chatbot\n"
+diff --git a/code/autoresearch/data_gen_results.tsv b/code/autoresearch/data_gen_results.tsv
+index 4b78c70..7b5d74b 100644
+--- a/code/autoresearch/data_gen_results.tsv
++++ b/code/autoresearch/data_gen_results.tsv
+@@ -11,3 +11,4 @@ exp_id	timestamp	hypothesis	gen_model	rag_faithfulness	qa_specificity	qa_tone	qa
+ 10	2026-04-02 03:11:36	Exp10: Exp5 two-pass + retrieval-optimized. Ask model to include relevant medical terms and synonyms in answers (e.g., 'nicotine replacement therapy (NRT)' not just 'NRT'). More keyword surface area = better cosine retrieval matches for varied test questions. temp=0.0.	gpt-4o-mini	0.5700	0.6867	0.6933	0.9667	0.9200	0.7177	0.9350	61.0	40	32.1	0.0	2500	8	DISCARD
+ 11	2026-04-20 14:05:38	Exp11: Specificity plateau attack. Exp5 plateaued at spec=0.69. Make 'specific anchor' a HARD gate: each answer must carry >=1 verbatim anchor (named med + brand, numeric dose/duration/%, or named technique). Pre-extract anchors from source in Pass 1; reject pairs lacking one. Target: specificity 0.80+ without breaking groundedness (keep 0.96).	gpt-4o-mini	0.6550	0.6800	0.6067	0.9667	0.9000	0.7387	0.9000	72.8	40	30.4	0.0	2500	8	DISCARD
+ 12	2026-07-15 22:15:54	BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, 2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be a judge-rubric ceiling, not a generator-side lever.	gpt-4o-mini	0.3850	0.6867	0.6600	0.9533	0.9067	0.6363	0.8200	47.0	40	32.3	0.0	2500	8	DISCARD
++13	2026-07-15 22:47:20	PASS-1 gentle-append breadth (epoch 2, parent exp_0005 combined 0.6363). Keep the ORIGINAL headline fact-extraction sentence verbatim (the behavior that made the definitional canary pass), and APPEND one line nudging inclusion of directly-stated practical/behavioral facts (coping/self-management, prevention, motivations, who-is-affected). No restructure, no added 'do not invent' clause -- groundedness is already guarded by the global HEALTHCARE-SAFETY constraint. QA_PER_SOURCE=10 for room so the behavioral additions do not displace headline facts (the count=8 zero-sum seen in the discarded count-isolated sibling). Goal: retain definitional coverage while converting domain-present refusal-zeros; hold groundedness >=0.90.	gpt-4o-mini	0.3200	0.7067	0.6200	0.9600	0.9000	0.6103	0.7700	41.6	50	31.8	0.0	2500	10	DISCARD

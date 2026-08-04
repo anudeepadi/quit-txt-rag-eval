@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_65",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (48w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:47+00:00",
+  "question": "Why should I get my teeth cleaned after quitting smoking?",
+  "answer": "Getting your teeth cleaned after quitting smoking is important because it helps remove any built-up stains and tartar, improving your oral health. Additionally, professional cleaning can enhance gum health and support the restoration of natural saliva production, further reducing the risk of gum disease and other dental problems.",
+  "n_contexts": 3
+}

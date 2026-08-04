@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0020",
+  "task_id": "qa_pair_04",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-16T06:09:39+00:00",
+  "ended_at": "2026-07-16T06:15:51+00:00",
+  "question": "Is it safe to mix different nicotine replacement therapies?",
+  "answer": "Yes, many people safely use a combination of NRTs to manage withdrawal and cravings. Healthcare providers often recommend this strategy to improve your chances of quitting successfully.",
+  "source_excerpt": "Topic: What should individuals with certain health conditions consider before using quit-smoking medications?\nIndividuals who have had a heart attack in the last two weeks, have serious heart problems, or experience chest pain should consult their doctor before using nicotine replacement therapies (",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

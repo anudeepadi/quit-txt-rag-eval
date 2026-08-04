@@ -1,0 +1,98 @@
+{
+  "events": [
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 1 id(s) seed=1735320991",
+      "returned_ids": [
+        "exp_0000"
+      ],
+      "seed": 1735320991,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-07-16T02:41:45+00:00"
+    },
+    {
+      "breaking": true,
+      "message": "Faithfulness judge nondeterministic on refusal answers (verified: rag_q_11 identical refusal 1.0 vs 0.0 across exps; rag_q_14 reverse; human-baseline arm swung 0.935->0.885 on identical inputs). Epoch-1 scores untrustworthy at observed effect sizes. v2: deterministic refusal pre-check (first-sentence refusal => 0.0) in score_faithfulness, symmetric both arms.",
+      "timestamp": "2026-07-16T03:10:51+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 2 id(s) seed=330757025",
+      "returned_ids": [
+        "exp_0009",
+        "exp_0004"
+      ],
+      "seed": 330757025,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-07-16T03:53:22+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 2 id(s) seed=808975279",
+      "returned_ids": [
+        "exp_0009",
+        "exp_0004"
+      ],
+      "seed": 808975279,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-07-16T03:53:25+00:00"
+    },
+    {
+      "breaking": true,
+      "message": "Epoch 3: source parity. Generated arm sampled 5/444 human-KB chunks (1.1% of source) while human arm retrieves from all 4431 pairs \u2014 six lanes converged on this as the binding ceiling (8-10/12 refusal questions structurally unreachable). v3: N_SOURCE_CHUNKS=all(444), parallel generation (thread pool, amortizable), seeded random quality sample instead of [:15]. Refusal determinism (epoch 2) retained. Epoch-2 scores not comparable to epoch-3.",
+      "timestamp": "2026-07-16T05:46:47+00:00"
+    },
+    {
+      "breaking": true,
+      "message": "Eval question set changed: dev/test split freeze (reviewer overfitting fix). Loop now scores on 50 dev questions via shared.question_split.load_dev_questions (commit 674b763 on master); frozen 77-question test set locked behind EVO_OPTIMIZING guard. Epoch-3 scores (20-question slice, best 0.8347) not comparable.",
+      "timestamp": "2026-07-27T06:13:31+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 4 id(s) seed=1160813084",
+      "returned_ids": [
+        "exp_0025",
+        "exp_0020",
+        "exp_0021",
+        "exp_0013"
+      ],
+      "seed": 1160813084,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-07-27T19:14:41+00:00"
+    },
+    {
+      "breaking": false,
+      "message": "v4.1 harness (instrumentation-only, non-breaking): dataset-generation protocol \u2014 per-pair provenance, acceptance counters, version manifest (docs/dataset_generation_protocol.md). Scoring/judges/filters unchanged; epoch-4 scores comparable. Gate re-anchored dbeca27 -> 80439df. Master data_gen_experiment.py now carries exp_0020 baseline config.",
+      "timestamp": "2026-07-27T19:15:31+00:00"
+    },
+    {
+      "breaking": false,
+      "message": "v4.2 harness (fail-loud guard, non-breaking): >5% chunk-generation-call failures now abort the run instead of silently scoring a truncated KB; manifest records n_chunks_failed. Root cause: concurrent runs vs shared 200k TPM -> 429 storm; exp_0026/exp_0027 pruned --invalid. Benchmark runs serialized by policy. Gate re-anchored 80439df -> 7fd5468. Scores comparable (guard is score-neutral for clean runs).",
+      "timestamp": "2026-07-27T19:56:51+00:00"
+    }
+  ]
+}

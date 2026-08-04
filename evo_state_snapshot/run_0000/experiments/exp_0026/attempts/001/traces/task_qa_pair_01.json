@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_01",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:13+00:00",
+  "question": "Does my childhood IQ matter when it comes to smoking and my brain later in life?",
+  "answer": "Yes, childhood IQ plays a role in later-life cognitive function. However, even after adjusting for childhood intelligence, smoking still negatively affects cognitive performance in old age.",
+  "source_excerpt": "Topic: Does smoking increase the risk of Alzheimer's disease?\nYes, smoking is associated with an increased risk of Alzheimer's disease. Long-term cigarette smoking has been linked to a decline in cognitive ability and a higher risk of developing Alzheimer's disease. This may be due to the harmful su",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

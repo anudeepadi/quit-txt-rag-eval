@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_87",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (15w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:27+00:00",
+  "question": "Is social smoking really that common?",
+  "answer": "The knowledge base does not provide information on the prevalence or commonality of social smoking.",
+  "n_contexts": 3
+}

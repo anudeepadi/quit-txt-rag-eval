@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_05",
+  "status": "failed",
+  "score": 0.0,
+  "summary": "faithfulness=0.00 (31w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:32:58+00:00",
+  "question": "Are there mental health effects associated with secondhand smoke?",
+  "answer": "The knowledge base does not provide information on mental health effects associated with secondhand smoke. It focuses on physical health issues such as respiratory problems, heart disease, and other health risks.",
+  "n_contexts": 3
+}

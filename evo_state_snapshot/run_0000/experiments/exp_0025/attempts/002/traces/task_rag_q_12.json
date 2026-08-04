@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0025",
+  "task_id": "rag_q_12",
+  "status": "passed",
+  "score": 0.5,
+  "summary": "faithfulness=0.50 (34w)",
+  "started_at": "2026-07-27T07:01:50+00:00",
+  "ended_at": "2026-07-27T07:10:52+00:00",
+  "question": "How much money can I save by quitting smoking?",
+  "answer": "On average, you could save \u00a338 a week by quitting smoking, which adds up to around \u00a32,000 a year. If you smoke half a pack daily, you could save approximately \u00a32,555 annually by quitting.",
+  "n_contexts": 3
+}

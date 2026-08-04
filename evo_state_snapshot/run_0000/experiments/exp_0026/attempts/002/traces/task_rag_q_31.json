@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_31",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:27+00:00",
+  "question": "What should I do if I slip and smoke again?",
+  "answer": "If you slip or relapse, don\u2019t give up! Recognize that slips are common and don\u2019t mean you\u2019ve failed; instead, see it as a temporary setback and an opportunity to learn about your triggers and develop coping strategies.",
+  "n_contexts": 3
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_54",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (46w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:26+00:00",
+  "question": "How can I prevent smoking relapse?",
+  "answer": "To prevent smoking relapse, you can develop coping skills for cravings, seek social support, and use nicotine replacement therapies. Additionally, having a plan for high-risk situations and making it hard to smoke by avoiding places where you might easily get a cigarette can be effective strategies.",
+  "n_contexts": 3
+}

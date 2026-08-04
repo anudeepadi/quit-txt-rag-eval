@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_50",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (41w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:59+00:00",
+  "question": "Why should someone concerned about kidney health avoid smoking?",
+  "answer": "While the knowledge base does not specifically mention kidney health, smoking is a major contributor to cardiovascular diseases, which can indirectly affect kidney function. Additionally, smoking is linked to several serious vascular conditions that may impact overall health, including the kidneys.",
+  "n_contexts": 3
+}

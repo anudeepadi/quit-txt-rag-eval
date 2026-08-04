@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_15",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:42:57+00:00",
+  "question": "What are some additional advantages of quitting smoking?",
+  "answer": "Quitting smoking leads to improved lung function, better circulation, and an enhanced sense of taste and smell. Additionally, it stabilizes heart rate and blood pressure within days and reduces the risk of heart disease, stroke, and cancer over time.",
+  "n_contexts": 3
+}

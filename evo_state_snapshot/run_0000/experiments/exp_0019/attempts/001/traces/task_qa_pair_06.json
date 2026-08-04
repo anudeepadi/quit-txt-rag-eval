@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0019",
+  "task_id": "qa_pair_06",
+  "status": "passed",
+  "score": 0.8,
+  "summary": "spec=0.70 tone=0.60 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T05:48:58+00:00",
+  "ended_at": "2026-07-16T05:57:38+00:00",
+  "question": "How effective are exercise interventions for quitting smoking?",
+  "answer": "A Cochrane systematic review found that exercise interventions alone do not significantly increase long-term smoking cessation rates compared to usual care or other non-exercise interventions. However, exercise may help reduce withdrawal symptoms and cravings, and assist in managing weight gain associated with quitting.",
+  "source_excerpt": "Topic: How can combining brain stimulation and exercise aid in quitting smoking?\nA recent randomized controlled trial published in *Scientific Reports* found that combining transcranial direct current stimulation (tDCS) with aerobic exercise (AE) significantly reduced cigarette cravings and consumpt",
+  "specificity": 0.7,
+  "conversational_tone": 0.6,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

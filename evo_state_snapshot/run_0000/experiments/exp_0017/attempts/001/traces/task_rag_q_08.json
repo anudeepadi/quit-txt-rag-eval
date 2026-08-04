@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0017",
+  "task_id": "rag_q_08",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (36w)",
+  "started_at": "2026-07-16T04:48:28+00:00",
+  "ended_at": "2026-07-16T04:49:38+00:00",
+  "question": "Are there mental health effects associated with secondhand smoke?",
+  "answer": "The knowledge base does not specifically address the mental health effects associated with secondhand smoke. It primarily discusses the risks of secondhand smoke in relation to physical illnesses and the mental health benefits of quitting smoking.",
+  "n_contexts": 6
+}

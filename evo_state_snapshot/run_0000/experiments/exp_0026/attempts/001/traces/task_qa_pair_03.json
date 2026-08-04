@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_03",
+  "status": "passed",
+  "score": 0.825,
+  "summary": "spec=0.70 tone=0.80 ground=0.90 clin=0.90",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:15+00:00",
+  "question": "What strategies work best for helping pregnant women quit smoking?",
+  "answer": "Combining emotion regulation treatment (ERT) with cognitive-behavioral therapy (CBT) is effective. ERT teaches mindfulness skills and coping strategies, which can help manage cravings and improve your chances of quitting.",
+  "source_excerpt": "Topic: How does anger management impact smoking cessation success?\nA randomized controlled trial published in the *Journal of the American Board of Family Medicine* investigated the effects of a cognitive behavioral therapy\u2013oriented anger management and stress control program on smoking cessation. T",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.9
+}

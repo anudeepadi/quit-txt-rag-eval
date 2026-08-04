@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_89",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (49w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:31+00:00",
+  "question": "What are the challenges in implementing smoking cessation programs for people with mental health conditions?",
+  "answer": "Challenges in implementing smoking cessation programs for people with mental health conditions include the need for a comprehensive approach that integrates behavioral therapies and pharmacological support. Additionally, tailoring programs to address the unique challenges faced by individuals with mental health conditions is essential for enhancing their chances of success.",
+  "n_contexts": 3
+}

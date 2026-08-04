@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0022",
+  "task_id": "qa_pair_12",
+  "status": "passed",
+  "score": 0.9,
+  "summary": "spec=0.80 tone=0.80 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T06:29:47+00:00",
+  "ended_at": "2026-07-16T06:37:29+00:00",
+  "question": "Is light or occasional smoking safe for my health?",
+  "answer": "No, light or occasional smoking is not safe. Even low levels of cigarette consumption are associated with significant health risks, including increased mortality and cardiovascular disease.",
+  "source_excerpt": "Topic: Does reducing cigarette consumption or combining smoking with vaping reduce health risks?\nReducing cigarette consumption or combining fewer cigarettes with vaping does not effectively reduce health risks. The study suggests that cutting down on smoking or supplementing with vaping is no subst",
+  "specificity": 0.8,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

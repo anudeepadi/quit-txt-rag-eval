@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_03",
+  "status": "passed",
+  "score": 0.775,
+  "summary": "spec=0.60 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:47+00:00",
+  "question": "How does smoking affect my personality over time?",
+  "answer": "Long-term smoking has been linked to increases in neuroticism and decreases in conscientiousness. This means smoking can impact not just your health but also your personality traits.",
+  "source_excerpt": "Topic: Are there free resources available to help quit smoking?\nYes, the Gulfcoast South Area Health Education Center (GSAHEC), as part of the Tobacco Free Florida AHEC Cessation Program, offers free tobacco cessation sessions. These sessions, available both virtually and in-person, provide informat",
+  "specificity": 0.6,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

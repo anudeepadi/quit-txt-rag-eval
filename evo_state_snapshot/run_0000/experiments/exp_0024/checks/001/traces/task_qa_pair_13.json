@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "qa_pair_13",
+  "status": "passed",
+  "score": 0.875,
+  "summary": "spec=0.80 tone=0.70 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:34:39+00:00",
+  "question": "If I keep smoking after my cancer diagnosis, am I at risk for another cancer?",
+  "answer": "Yes, continuing to smoke after a cancer diagnosis increases the risk of developing a second cancer in the future. Quitting tobacco significantly reduces this risk.",
+  "source_excerpt": "Topic: How does quitting smoking impact cancer risk over time?\nOver time, quitting smoking lowers your risk of various cancers, including those of the stomach, liver, cervix, colon, rectum, and acute myeloid leukemia.\n\nTopic: Can quitting smoking reduce the risk of heart disease?\nYes, quitting smoki",
+  "specificity": 0.8,
+  "conversational_tone": 0.7,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}

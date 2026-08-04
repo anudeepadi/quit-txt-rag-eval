@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "qa_pair_06",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:30:19+00:00",
+  "question": "What exactly is tDCS and how does it work?",
+  "answer": "Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation technique that delivers a low electrical current to specific areas of the brain via electrodes placed on the scalp. It can modulate neuronal activity, which may help reduce cravings associated with smoking.",
+  "source_excerpt": "Topic: How can combining brain stimulation and exercise aid in quitting smoking?\nA recent randomized controlled trial published in *Scientific Reports* found that combining transcranial direct current stimulation (tDCS) with aerobic exercise (AE) significantly reduced cigarette cravings and consumpt",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0017",
+  "task_id": "qa_pair_12",
+  "status": "passed",
+  "score": 0.85,
+  "summary": "spec=0.70 tone=0.80 ground=1.00 clin=0.90",
+  "started_at": "2026-07-16T04:48:28+00:00",
+  "ended_at": "2026-07-16T04:49:19+00:00",
+  "question": "What happens to my mental health if I quit smoking?",
+  "answer": "Quitting smoking is associated with reduced depression, anxiety, and stress, and improved mood and quality of life. The mental health benefits of quitting are comparable to those of antidepressant treatments.",
+  "source_excerpt": "Topic: How does tobacco use affect individuals with behavioral health conditions?\nIndividuals with behavioral health conditions are more likely to smoke, accounting for 38% of all U.S. adult cigarette consumption, despite making up only 25% of the population. This group has a smoking rate of 23%, hi",
+  "specificity": 0.7,
+  "conversational_tone": 0.8,
+  "groundedness": 1.0,
+  "clinical_accuracy": 0.9
+}

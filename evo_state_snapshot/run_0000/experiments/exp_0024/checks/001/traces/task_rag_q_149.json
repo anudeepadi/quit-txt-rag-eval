@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_149",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:20+00:00",
+  "question": "In what ways can stopping smoking improve relationships and social life?",
+  "answer": "Stopping smoking can improve relationships by reducing secondhand smoke exposure and eliminating the smell of tobacco. This can lead to more inclusive social experiences and enhance how others perceive you.",
+  "n_contexts": 3
+}

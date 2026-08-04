@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_71",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:56+00:00",
+  "question": "Is it true that light smoking causes minimal harm to the lungs?",
+  "answer": "No, light smoking does not cause minimal harm to the lungs. It accelerates lung function decline and increases the risk of chronic obstructive pulmonary disease (COPD), and light smokers can lose lung function nearly as quickly as heavy smokers.",
+  "n_contexts": 3
+}

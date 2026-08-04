@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_124",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (28w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:39:36+00:00",
+  "question": "Is hookah smoking safer than cigarette smoking?",
+  "answer": "Hookah smoking is not a safe alternative to cigarettes. It delivers similar levels of nicotine and exposes users to high concentrations of toxic compounds, including tar and carcinogens.",
+  "n_contexts": 3
+}

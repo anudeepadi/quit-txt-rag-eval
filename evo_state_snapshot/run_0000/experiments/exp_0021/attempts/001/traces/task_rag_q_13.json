@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0021",
+  "task_id": "rag_q_13",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (45w)",
+  "started_at": "2026-07-16T06:10:48+00:00",
+  "ended_at": "2026-07-16T06:20:35+00:00",
+  "question": "What can be done to prevent kids from picking up smoking early?",
+  "answer": "To prevent early smoking initiation, parents should initiate open and honest conversations about smoking as early as kindergarten and maintain ongoing dialogue as children grow older. Additionally, setting a positive example by not using tobacco products and establishing a smoke-free home environment are effective strategies.",
+  "n_contexts": 3
+}

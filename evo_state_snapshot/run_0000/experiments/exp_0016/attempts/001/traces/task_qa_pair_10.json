@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0016",
+  "task_id": "qa_pair_10",
+  "status": "passed",
+  "score": 0.75,
+  "summary": "spec=0.50 tone=0.80 ground=0.90 clin=0.80",
+  "started_at": "2026-07-16T04:35:16+00:00",
+  "ended_at": "2026-07-16T04:36:09+00:00",
+  "question": "What happens to my hands when I smoke?",
+  "answer": "Smoking can lead to poor wound healing and a higher risk of infections in your hands due to reduced blood flow and oxygen delivery caused by nicotine.",
+  "source_excerpt": "Topic: What methodology was used to assess the neural effects of acute smoking?\nResearchers employed resting-state functional magnetic resonance imaging (rs-fMRI) to assess changes in brain connectivity. Participants were scanned after a 12-hour smoking abstinence period and again after smoking two ",
+  "specificity": 0.5,
+  "conversational_tone": 0.8,
+  "groundedness": 0.9,
+  "clinical_accuracy": 0.8
+}

@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_79",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (49w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:12+00:00",
+  "question": "What are common causes of smoking relapse?",
+  "answer": "Common causes of smoking relapse include exposure to triggers such as stress or social situations, withdrawal symptoms like irritability and cravings, and complacency. Additionally, pattern triggers linked to past smoking habits, such as drinking coffee or alcohol, finishing a meal, or taking work breaks, can also contribute to relapse.",
+  "n_contexts": 3
+}

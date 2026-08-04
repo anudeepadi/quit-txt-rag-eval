@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 2,
+  "experiment_id": "exp_0011",
+  "failure_class": "hypothesis",
+  "reason": "Question-only variant underperformed committed exp_0009 on tone (0.70 vs 0.787) AND specificity (0.62 vs 0.693). Answer-side fact-forward constraint in exp_0009 is load-bearing: it primes question register upward and protects specificity from the casual-question pull. exp_0009 stays best.",
+  "score": 0.621,
+  "status": "discarded",
+  "timestamp": "2026-07-16T04:02:19+00:00"
+}

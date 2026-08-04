@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_56",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:29+00:00",
+  "question": "Is social smoking common among teens?",
+  "answer": "Yes, social smoking is common among teens, often influenced by peer pressure and social environments. However, it is important to note that social smoking is not safe and can lead to health issues.",
+  "n_contexts": 3
+}

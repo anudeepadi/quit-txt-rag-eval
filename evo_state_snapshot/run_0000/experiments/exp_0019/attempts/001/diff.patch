@@ -1,0 +1,243 @@
+diff --git a/.gitignore b/.gitignore
+index aab6790..606e6eb 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -7,3 +7,8 @@ __pycache__/
+ *.log
+ # root-level artifact (old pre-autoresearch AI dataset; use datasets/human-ai/ instead)
+ /ai_generated_qa.jsonl
++.evo/
++.pytest_cache/
++node_modules/
++dist/
++build/
+diff --git a/code/autoresearch/data_gen_prepare.py b/code/autoresearch/data_gen_prepare.py
+index d79c62f..efb7fc2 100644
+--- a/code/autoresearch/data_gen_prepare.py
++++ b/code/autoresearch/data_gen_prepare.py
+@@ -20,6 +20,7 @@ The scoring pipeline:
+ import json
+ import os
+ import random
++import re
+ import sys
+ import textwrap
+ from datetime import datetime
+@@ -58,7 +59,7 @@ TEST_SET_PATH = _PROJECT_ROOT / "datasets" / "eval-rag" / "test_set_150q.xlsx"
+ 
+ RESULTS_FILE = _AUTORESEARCH_DIR / "data_gen_results.tsv"
+ N_EVAL = 20              # test questions per experiment
+-N_SOURCE_CHUNKS = 5      # source content chunks to generate from
++N_SOURCE_CHUNKS = 10**9  # all chunks (source parity with human arm; epoch 3)
+ RANDOM_SEED = 42         # deterministic source selection
+ 
+ # ---------------------------------------------------------------------------
+@@ -299,6 +300,26 @@ Response: {response}
+ Score (just the number, nothing else):"""
+ 
+ 
++# Refusal answers ("the knowledge base does not provide...") contain no claims,
++# so the grounding rubric is vacuously satisfiable and the judge oscillates
++# between 0 and 10 on near-identical text (verified epoch-1 nondeterminism).
++# For this metric's purpose — does the KB support answering the question? —
++# a refusal is a KB failure: score 0.0 deterministically, both arms.
++_REFUSAL_RE = re.compile(
++    r"(?:knowledge base|context|source|provided information)[^.]{0,60}?"
++    r"(?:does not|doesn't|do not|don't)\s+"
++    r"(?:provide|contain|include|cover|mention|address|offer|have)"
++    r"|no (?:specific )?information (?:is )?(?:available|provided)",
++    re.IGNORECASE,
++)
++
++
++def _is_refusal(response: str) -> bool:
++    """True when the answer's first sentence declines to answer."""
++    first_sentence = response.split(".", 1)[0]
++    return bool(_REFUSAL_RE.search(first_sentence))
++
++
+ def score_faithfulness(
+     oai_client: OpenAI,
+     question: str,
+@@ -306,6 +327,8 @@ def score_faithfulness(
+     contexts: list[str],
+ ) -> float:
+     """Fast faithfulness proxy using LLM-as-judge. Returns 0.0–1.0."""
++    if _is_refusal(response):
++        return 0.0
+     context_text = "\n\n".join(contexts) if contexts else "(no context)"
+     try:
+         result = oai_client.chat.completions.create(
+diff --git a/code/autoresearch/data_gen_results.tsv b/code/autoresearch/data_gen_results.tsv
+index 2f319ee..4b78c70 100644
+--- a/code/autoresearch/data_gen_results.tsv
++++ b/code/autoresearch/data_gen_results.tsv
+@@ -10,3 +10,4 @@ exp_id	timestamp	hypothesis	gen_model	rag_faithfulness	qa_specificity	qa_tone	qa
+ 9	2026-04-02 03:07:13	Exp9: Exp5 two-pass approach but temp=0.2 instead of 0.0. Slight randomness may produce more varied question phrasing, improving semantic diversity in ChromaDB and boosting RAG retrieval hits for diverse test questions.	gpt-4o-mini	0.6800	0.6867	0.6600	0.9533	0.9000	0.7533	0.9350	72.7	40	32.5	0.2	2500	8	DISCARD
+ 10	2026-04-02 03:11:36	Exp10: Exp5 two-pass + retrieval-optimized. Ask model to include relevant medical terms and synonyms in answers (e.g., 'nicotine replacement therapy (NRT)' not just 'NRT'). More keyword surface area = better cosine retrieval matches for varied test questions. temp=0.0.	gpt-4o-mini	0.5700	0.6867	0.6933	0.9667	0.9200	0.7177	0.9350	61.0	40	32.1	0.0	2500	8	DISCARD
+ 11	2026-04-20 14:05:38	Exp11: Specificity plateau attack. Exp5 plateaued at spec=0.69. Make 'specific anchor' a HARD gate: each answer must carry >=1 verbatim anchor (named med + brand, numeric dose/duration/%, or named technique). Pre-extract anchors from source in Pass 1; reject pairs lacking one. Target: specificity 0.80+ without breaking groundedness (keep 0.96).	gpt-4o-mini	0.6550	0.6800	0.6067	0.9667	0.9000	0.7387	0.9000	72.8	40	30.4	0.0	2500	8	DISCARD
++12	2026-07-15 22:15:54	BEST CONFIG (Exp5): Two-pass fact extraction, temp=0.0, gpt-4o-mini, 2-3 sentences. Combined=0.7583, 77.1% of human. Groundedness=0.96. Exp11 (hard anchor gate) DISCARDED — specificity plateau appears to be a judge-rubric ceiling, not a generator-side lever.	gpt-4o-mini	0.3850	0.6867	0.6600	0.9533	0.9067	0.6363	0.8200	47.0	40	32.3	0.0	2500	8	DISCARD
+diff --git a/code/autoresearch/run_data_gen_experiment.py b/code/autoresearch/run_data_gen_experiment.py
+index 3b445ea..721d1c2 100644
+--- a/code/autoresearch/run_data_gen_experiment.py
++++ b/code/autoresearch/run_data_gen_experiment.py
+@@ -19,8 +19,10 @@ Usage:
+ """
+ 
+ import importlib
++import random
+ import sys
+ import time
++from concurrent.futures import ThreadPoolExecutor
+ from pathlib import Path
+ 
+ # Ensure imports work from project root
+@@ -29,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).parent))
+ 
+ from data_gen_prepare import (
+     OPENAI_API_KEY,
++    RANDOM_SEED,
+     build_collection,
+     generate_qa_pairs,
+     get_best_score,
+@@ -43,6 +46,7 @@ from data_gen_prepare import (
+ 
+ import chromadb
+ from chromadb.config import Settings
++from evo_agent import Run
+ from openai import OpenAI
+ 
+ 
+@@ -84,7 +88,9 @@ def run_one_experiment() -> None:
+     print("=" * 70)
+ 
+     t0 = time.time()
+-    oai_client = OpenAI(api_key=OPENAI_API_KEY)
++    run = Run()
++    # max_retries: transport errors (429/5xx) must not count as task failures
++    oai_client = OpenAI(api_key=OPENAI_API_KEY, max_retries=5)
+     chroma_client = chromadb.Client(Settings(anonymized_telemetry=False))
+ 
+     # ── 2. Load source content ────────────────────────────────
+@@ -96,9 +102,13 @@ def run_one_experiment() -> None:
+     print("\nGenerating QA pairs with agent's prompt...")
+     all_generated = []
+     chunk_sources = []  # track which source each pair came from
++    chunk_stats = []    # per-chunk generation counts, attached to run_meta trace
+ 
+-    for i, chunk in enumerate(source_chunks, 1):
+-        pairs = generate_qa_pairs(
++    # Chunks are independent — generate in parallel (444 chunks at full
++    # source parity would take ~45 min serially). Results are collected
++    # in chunk order so KB construction stays deterministic.
++    def _gen_for_chunk(chunk):
++        return generate_qa_pairs(
+             oai_client=oai_client,
+             source_content=chunk["content"],
+             system_prompt=gen_prompt,
+@@ -107,14 +117,22 @@ def run_one_experiment() -> None:
+             temperature=gen_temp,
+             max_tokens=gen_max_tokens,
+         )
+-        print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
++
++    with ThreadPoolExecutor(max_workers=8) as pool:
++        per_chunk_pairs = list(pool.map(_gen_for_chunk, source_chunks))
++
++    for i, (chunk, pairs) in enumerate(zip(source_chunks, per_chunk_pairs), 1):
++        if i % 50 == 0 or i == len(source_chunks):
++            print(f"  Chunk [{i}/{len(source_chunks)}]: generated {len(pairs)} pairs")
++        chunk_stats.append({"chunk": i, "n_pairs": len(pairs),
++                            "source_excerpt": chunk["content"][:300]})
+         for p in pairs:
+             p["_source_content"] = chunk["content"]  # for quality scoring
+         all_generated.extend(pairs)
+ 
+     if not all_generated:
+         print("\n✗ NO PAIRS GENERATED — prompt may be broken. Fix and retry.")
+-        return
++        raise RuntimeError("no QA pairs generated — generation prompt broken")
+ 
+     n_pairs = len(all_generated)
+     avg_answer_words = sum(len(p["answer"].split()) for p in all_generated) / n_pairs
+@@ -124,8 +142,10 @@ def run_one_experiment() -> None:
+     print("\nScoring QA pair quality (specificity, tone, groundedness, clinical)...")
+     quality_scores = {"specificity": [], "conversational_tone": [], "groundedness": [], "clinical_accuracy": []}
+ 
+-    # Score a sample (up to 15 pairs for speed)
+-    sample = all_generated[:15]
++    # Score a seeded random sample of 15 (first-N sampling let weak pairs
++    # hide past the cutoff when pair counts grew — epoch-3 fix)
++    _rng = random.Random(RANDOM_SEED)
++    sample = _rng.sample(all_generated, min(15, len(all_generated)))
+     for i, pair in enumerate(sample, 1):
+         qs = score_qa_quality(
+             oai_client, pair["question"], pair["answer"],
+@@ -133,6 +153,17 @@ def run_one_experiment() -> None:
+         )
+         for k in quality_scores:
+             quality_scores[k].append(qs[k])
++        pair_avg = sum(qs.values()) / len(qs)
++        run.report(
++            f"qa_pair_{i:02d}",
++            score=pair_avg,
++            summary=(f"spec={qs['specificity']:.2f} tone={qs['conversational_tone']:.2f} "
++                     f"ground={qs['groundedness']:.2f} clin={qs['clinical_accuracy']:.2f}"),
++            question=pair["question"],
++            answer=pair["answer"][:500],
++            source_excerpt=pair.get("_source_content", "")[:300],
++            **qs,
++        )
+         if i % 5 == 0:
+             print(f"  [{i}/{len(sample)}] scored")
+ 
+@@ -188,8 +219,19 @@ def run_one_experiment() -> None:
+             score = score_faithfulness(oai_client, question, answer, contexts)
+             rag_scores.append(score)
+         else:
++            score = 0.0
+             rag_scores.append(0.0)
+ 
++        run.report(
++            f"rag_q_{i:02d}",
++            score=score,
++            summary=f"faithfulness={score:.2f} ({len(answer.split())}w)",
++            failure_reason=None if answer else "empty_answer_after_retries",
++            question=question,
++            answer=answer[:500],
++            n_contexts=len(contexts),
++        )
++
+         if i % 5 == 0:
+             print(f"  [{i}/{len(test_questions)}] evaluated")
+ 
+@@ -220,6 +262,29 @@ def run_one_experiment() -> None:
+ 
+     elapsed = time.time() - t0
+ 
++    # Combined score is a weighted composite, not a mean of task scores —
++    # pass it to finish() explicitly. run_meta trace carries the breakdown
++    # for future readers (orchestrator / verifier / ideator); report() is
++    # required because log()-only tasks are never flushed to trace files.
++    run.report(
++        "run_meta",
++        score=combined,
++        summary=(f"combined={combined:.4f} human={human_baseline:.4f} "
++                 f"relative={relative_pct:.1f}%"),
++        rag_faithfulness=avg_rag_faithfulness,
++        qa_quality=avg_quality,
++        human_baseline=human_baseline,
++        relative_pct=relative_pct,
++        n_pairs_generated=n_pairs,
++        avg_answer_words=avg_answer_words,
++        hypothesis=hypothesis,
++        gen_model=gen_model,
++        gen_temperature=gen_temp,
++        qa_per_source=qa_per_source,
++        chunk_stats=chunk_stats,
++    )
++    run.finish(score=combined)
++
+     # ── 8. Log result ─────────────────────────────────────────
+     log_result(
+         experiment_id=exp_id,

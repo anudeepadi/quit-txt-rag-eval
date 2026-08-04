@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0023",
+  "task_id": "qa_pair_07",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "spec=0.50 tone=0.70 ground=0.80 clin=0.80",
+  "started_at": "2026-07-16T06:56:10+00:00",
+  "ended_at": "2026-07-16T07:02:51+00:00",
+  "question": "What are some strategies to cope with cravings in social settings?",
+  "answer": "Managing smoking triggers in social settings involves altering routines and finding alternatives. For instance, if drinking coffee prompts a craving, try switching to tea or engaging in activities like walking.",
+  "source_excerpt": "Topic: How can I prevent future smoking relapses?\nTo prevent relapse, be aware of high-risk situations like stress or being around other smokers. Use coping strategies such as the 'Five D's': Delay, Drink water, Do something else, Deep breathe, and Discuss with a friend. Regularly satisfying basic n",
+  "specificity": 0.5,
+  "conversational_tone": 0.7,
+  "groundedness": 0.8,
+  "clinical_accuracy": 0.8
+}

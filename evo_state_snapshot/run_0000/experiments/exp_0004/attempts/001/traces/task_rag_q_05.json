@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0004",
+  "task_id": "rag_q_05",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (33w)",
+  "started_at": "2026-07-16T03:00:42+00:00",
+  "ended_at": "2026-07-16T03:01:46+00:00",
+  "question": "Can quitting smoking improve erectile function?",
+  "answer": "Yes, quitting smoking can improve sexual relations, which includes erectile function. Smoking is known to negatively impact blood flow and can contribute to erectile dysfunction, so stopping can lead to better sexual health.",
+  "n_contexts": 3
+}

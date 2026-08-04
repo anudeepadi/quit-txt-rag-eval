@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0002",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (42w)",
+  "started_at": "2026-07-16T02:50:58+00:00",
+  "ended_at": "2026-07-16T02:52:30+00:00",
+  "question": "What are some surprising benefits of quitting smoking?",
+  "answer": "Quitting smoking is associated with reduced depression, anxiety, and stress, and it improves mood and quality of life. Additionally, quitting protects loved ones from illnesses like cancer and heart disease, and it alleviates concerns about smoking's long-term health risks for your partner.",
+  "n_contexts": 3
+}

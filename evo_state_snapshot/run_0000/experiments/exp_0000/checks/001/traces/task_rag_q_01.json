@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "rag_q_01",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (50w)",
+  "started_at": "2026-07-16T02:12:01+00:00",
+  "ended_at": "2026-07-16T02:13:08+00:00",
+  "question": "How can my social life influence my smoking habits?",
+  "answer": "Your social life can influence your smoking habits as social interactions often involve peer behaviors, and being around smokers may increase the likelihood of smoking. Additionally, social support from friends and family can either encourage smoking cessation or perpetuate smoking habits, depending on their own behaviors and attitudes towards smoking.",
+  "n_contexts": 3
+}

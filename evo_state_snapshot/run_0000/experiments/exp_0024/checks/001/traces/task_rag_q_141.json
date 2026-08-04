@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_141",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (30w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:40:06+00:00",
+  "question": "How does quitting smoking influence overall quality of life?",
+  "answer": "Quitting smoking can lead to a better overall quality of life by improving physical health and enhancing self-esteem. It can also result in increased energy levels and better physical performance.",
+  "n_contexts": 3
+}

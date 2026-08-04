@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_45",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:53+00:00",
+  "question": "What steps can I take to slowly quit smoking without feeling overwhelmed?",
+  "answer": "You can take a gradual approach to quitting smoking by setting a clear timeframe for when you aim to be smoke-free. This can help you feel more in control of the process and reduce feelings of overwhelm.",
+  "n_contexts": 3
+}

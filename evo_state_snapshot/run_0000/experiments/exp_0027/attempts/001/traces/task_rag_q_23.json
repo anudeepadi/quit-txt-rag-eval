@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_23",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (45w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:12+00:00",
+  "question": "Are there personalized approaches to quitting smoking based on brain activity?",
+  "answer": "The findings suggest that integrating non-invasive brain stimulation with physical exercise could be a promising strategy for smoking cessation, indicating a potential for personalized approaches based on brain activity. However, specific personalized methods based solely on brain activity are not detailed in the knowledge base.",
+  "n_contexts": 3
+}

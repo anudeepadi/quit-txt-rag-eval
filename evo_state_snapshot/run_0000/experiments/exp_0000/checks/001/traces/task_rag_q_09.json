@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0000",
+  "task_id": "rag_q_09",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (39w)",
+  "started_at": "2026-07-16T02:12:01+00:00",
+  "ended_at": "2026-07-16T02:13:22+00:00",
+  "question": "How does Allen Carr's Easyway method compare to these treatments?",
+  "answer": "The knowledge base does not provide information on Allen Carr's Easyway method or how it compares to other smoking cessation treatments. It only discusses the effectiveness of combining quit-smoking medications or nicotine replacement therapy with support from healthcare professionals.",
+  "n_contexts": 3
+}

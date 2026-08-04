@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_97",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (40w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:38:46+00:00",
+  "question": "What does this mean for people who smoke occasionally or have quit recently?",
+  "answer": "For people who smoke occasionally or have quit recently, it means they may still experience cravings and psychological urges triggered by certain situations or emotions. Recognizing these triggers and developing coping strategies can help manage the intensity of these urges.",
+  "n_contexts": 3
+}

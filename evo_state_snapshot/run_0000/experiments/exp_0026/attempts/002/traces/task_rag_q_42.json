@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_42",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (26w)",
+  "started_at": "2026-07-27T19:36:07+00:00",
+  "ended_at": "2026-07-27T19:43:46+00:00",
+  "question": "What are the long-term financial benefits of quitting smoking?",
+  "answer": "Long-term financial benefits of quitting smoking include reduced healthcare costs associated with smoking-related illnesses and potentially lower insurance premiums. This contributes to your overall financial well-being.",
+  "n_contexts": 3
+}

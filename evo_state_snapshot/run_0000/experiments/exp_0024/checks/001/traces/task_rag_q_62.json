@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "rag_q_62",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (43w)",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:37:43+00:00",
+  "question": "What is a gradual way to quit smoking?",
+  "answer": "A gradual way to quit smoking involves setting a clear timeframe for becoming smoke-free and creating a plan to systematically reduce the number of cigarettes you smoke each day. This approach can help minimize withdrawal symptoms and make the quitting process more manageable.",
+  "n_contexts": 3
+}

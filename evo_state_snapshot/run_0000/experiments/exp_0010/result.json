@@ -1,0 +1,9 @@
+{
+  "eval_epoch": 2,
+  "experiment_id": "exp_0010",
+  "failure_class": "hypothesis",
+  "reason": "Gentle-append breadth regressed faith 0.385->0.32; rag_q_10 canary refused here and in all my runs, revealing it is itself noise-bound (needed definition absent from source). PASS-1 fact-type breadth yields no net faithfulness gain within the n=20 noise floor.",
+  "score": 0.6103,
+  "status": "discarded",
+  "timestamp": "2026-07-16T03:48:00+00:00"
+}

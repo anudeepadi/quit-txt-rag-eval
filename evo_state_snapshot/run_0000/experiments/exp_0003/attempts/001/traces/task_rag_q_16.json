@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0003",
+  "task_id": "rag_q_16",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (19w)",
+  "started_at": "2026-07-16T03:00:29+00:00",
+  "ended_at": "2026-07-16T03:02:01+00:00",
+  "question": "How much money can I save by quitting smoking?",
+  "answer": "On average, a smoker could save \u00a338 a week by quitting smoking, which amounts to around \u00a32,000 a year.",
+  "n_contexts": 3
+}

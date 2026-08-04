@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_17",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:44:01+00:00",
+  "question": "Will I gain a lot of weight if I quit smoking?",
+  "answer": "While some people may gain weight after quitting smoking, it is not inevitable. With healthy choices, such as maintaining a healthy diet and staying active, you can manage your weight effectively during this transition.",
+  "n_contexts": 3
+}

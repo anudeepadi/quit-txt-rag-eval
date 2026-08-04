@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0027",
+  "task_id": "rag_q_08",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (34w)",
+  "started_at": "2026-07-27T19:36:31+00:00",
+  "ended_at": "2026-07-27T19:43:45+00:00",
+  "question": "Is smoking harmful to brain health even if I don't have other health issues?",
+  "answer": "Yes, smoking is harmful to brain health regardless of other health issues. It introduces toxic chemicals that can lead to neurobiological changes and increase the risk of neurological diseases, including Alzheimer's and other dementias.",
+  "n_contexts": 3
+}

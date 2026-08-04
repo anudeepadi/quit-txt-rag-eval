@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0001",
+  "task_id": "rag_q_10",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (57w)",
+  "started_at": "2026-07-16T02:50:38+00:00",
+  "ended_at": "2026-07-16T02:51:55+00:00",
+  "question": "What is secondhand smoke and how is it formed?",
+  "answer": "Secondhand smoke is the smoke that is exhaled by a smoker or that comes from the burning end of a cigarette, cigar, or pipe. It is formed when tobacco products are used and releases a mixture of over 7,000 chemicals, many of which are toxic and can cause health problems in non-smokers who are exposed to it.",
+  "n_contexts": 3
+}

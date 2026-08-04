@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_28",
+  "status": "passed",
+  "score": 0.7,
+  "summary": "faithfulness=0.70 (54w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:33:43+00:00",
+  "question": "How can my social life affect my decision to smoke?",
+  "answer": "Your social life can influence your decision to smoke due to the presence of social smoking behaviors among peers, which may increase the likelihood of transitioning to regular smoking. Additionally, mental health problems such as anxiety and depression, which are more common among smokers, can limit social interactions and affect your overall social experience.",
+  "n_contexts": 3
+}

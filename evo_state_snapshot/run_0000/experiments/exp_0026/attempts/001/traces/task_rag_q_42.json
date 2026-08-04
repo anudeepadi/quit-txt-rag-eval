@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_42",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (32w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:34:09+00:00",
+  "question": "What are the long-term financial benefits of quitting smoking?",
+  "answer": "For every dollar U.S. states spend on providing tobacco cessation treatments, there is an average potential return on investment of $1.26. This financial benefit comes from reduced healthcare costs and increased productivity.",
+  "n_contexts": 3
+}

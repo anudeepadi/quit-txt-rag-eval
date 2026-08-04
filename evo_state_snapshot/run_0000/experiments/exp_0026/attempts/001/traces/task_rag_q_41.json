@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_0026",
+  "task_id": "rag_q_41",
+  "status": "passed",
+  "score": 1.0,
+  "summary": "faithfulness=1.00 (37w)",
+  "started_at": "2026-07-27T19:24:47+00:00",
+  "ended_at": "2026-07-27T19:34:07+00:00",
+  "question": "How does smoking contribute to erectile dysfunction?",
+  "answer": "Smoking can lead to erectile dysfunction due to its harmful effects on blood vessels and circulation. The endothelial damage and inflammation caused by smoking can impair blood flow, which is essential for achieving and maintaining an erection.",
+  "n_contexts": 3
+}

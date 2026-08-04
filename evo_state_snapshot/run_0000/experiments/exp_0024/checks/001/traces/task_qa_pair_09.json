@@ -1,0 +1,16 @@
+{
+  "experiment_id": "exp_0024",
+  "task_id": "qa_pair_09",
+  "status": "passed",
+  "score": 0.925,
+  "summary": "spec=0.80 tone=0.90 ground=1.00 clin=1.00",
+  "started_at": "2026-07-16T15:28:02+00:00",
+  "ended_at": "2026-07-16T15:34:35+00:00",
+  "question": "What text programs can help me quit smoking?",
+  "answer": "Smokefree.gov has several text messaging programs for women, like SmokefreeTXT, SmokefreeMOM, Practice Quit, and Daily Challenges. They offer 24/7 support, tips, and encouragement to help you quit.",
+  "source_excerpt": "Topic: What role do relationships play in a woman's journey to quit smoking?\nRelationships are crucial; supportive loved ones can aid in facing challenges and celebrating milestones. Conversely, being around unsupportive individuals may lead to slips or relapses. Planning ahead to manage these dynam",
+  "specificity": 0.8,
+  "conversational_tone": 0.9,
+  "groundedness": 1.0,
+  "clinical_accuracy": 1.0
+}
