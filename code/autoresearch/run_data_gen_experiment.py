@@ -161,6 +161,7 @@ def _write_dataset_artifacts(
         "counts": {
             "n_raw": gen_stats.get("n_raw", 0),
             "n_rejected_wellformed": gen_stats.get("n_rejected_wellformed", 0),
+            "n_chunks_failed": gen_stats.get("n_chunks_failed", 0),
             "n_duplicate_exact": dup_exact,
             "n_duplicate_fuzzy": dup_fuzzy,
             "n_kept": len(all_generated),
@@ -253,6 +254,21 @@ def run_one_experiment() -> None:
             p["_source_id"] = f"chunk_{i:03d}"
             p["_source_sha256"] = hashlib.sha256(chunk["content"].encode("utf-8")).hexdigest()
         all_generated.extend(pairs)
+
+    # Fail-loud guard: a rate-limit storm makes whole chunks silently yield
+    # zero pairs, so the benchmark would score a truncated KB as if it were
+    # the hypothesis's fault. Above 5% chunk-call failures the measurement is
+    # invalid — abort so the run FAILS visibly instead of committing garbage.
+    n_chunks_failed = gen_stats.get("n_chunks_failed", 0)
+    if n_chunks_failed > 0.05 * len(source_chunks):
+        raise RuntimeError(
+            f"generation measurement invalid: {n_chunks_failed}/{len(source_chunks)} "
+            "chunk calls failed (rate-limit storm?). Re-run serially — do not "
+            "score a truncated KB."
+        )
+    if n_chunks_failed:
+        print(f"  WARNING: {n_chunks_failed} chunk call(s) failed — within the 5% "
+              "tolerance, recorded in the manifest.")
 
     if not all_generated:
         print("\n✗ NO PAIRS GENERATED — prompt may be broken. Fix and retry.")
