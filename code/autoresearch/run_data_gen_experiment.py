@@ -60,6 +60,23 @@ from evo_agent import Run
 from openai import OpenAI
 
 
+# Sampling temperature for the RAG answers that get scored for faithfulness.
+# PROTECTED — deliberately read from here, not from cfg, so an experiment
+# cannot tune it.
+#
+# It sat in the agent-editable config at 0.3 through epochs 2-4. Because
+# faithfulness carries 40% of the combined score, sampling those answers
+# non-deterministically made it 92% of all run-to-run variance: five
+# byte-identical replicates of one config (exp_0029-0033, 2026-08-05) scored
+# 0.7985-0.8472, sd 0.0216, with faithfulness alone ranging 0.12. That put the
+# single-run minimum detectable effect at 0.0854 — larger than any delta the
+# optimization had ever acted on, so epoch-3 and epoch-4 rankings were noise.
+#
+# Lowering it also raises faithfulness without improving the knowledge base at
+# all, which makes it a scoring lever rather than a hypothesis. Same class of
+# gaming vector as RAG_TEMPLATE (.evo/project.md). Both belong here.
+RAG_TEMPERATURE = 0.0
+
 # Weights for combined score
 W_RAG_FAITHFULNESS = 0.40   # how well the generated KB supports RAG answers
 W_SPECIFICITY = 0.20        # clinical detail in generated answers
@@ -156,11 +173,15 @@ def _write_dataset_artifacts(
             "temperature": gen_temp,
             "max_tokens": gen_max_tokens,
             "qa_per_source": qa_per_source,
+            # Recorded because it drove 92% of run-to-run variance at 0.3;
+            # a score is not interpretable without it.
+            "rag_temperature": RAG_TEMPERATURE,
         },
         "system_prompt": gen_prompt,
         "counts": {
             "n_raw": gen_stats.get("n_raw", 0),
             "n_rejected_wellformed": gen_stats.get("n_rejected_wellformed", 0),
+            "n_chunks_failed": gen_stats.get("n_chunks_failed", 0),
             "n_duplicate_exact": dup_exact,
             "n_duplicate_fuzzy": dup_fuzzy,
             "n_kept": len(all_generated),
@@ -187,7 +208,7 @@ def run_one_experiment() -> None:
     qa_per_source = cfg.QA_PER_SOURCE
     gen_prompt = cfg.GEN_SYSTEM_PROMPT
     rag_template = cfg.RAG_TEMPLATE
-    rag_temp = cfg.RAG_TEMPERATURE
+    rag_temp = RAG_TEMPERATURE
     rag_max_tokens = cfg.RAG_MAX_TOKENS
     rag_top_k = cfg.RAG_TOP_K
 
@@ -253,6 +274,21 @@ def run_one_experiment() -> None:
             p["_source_id"] = f"chunk_{i:03d}"
             p["_source_sha256"] = hashlib.sha256(chunk["content"].encode("utf-8")).hexdigest()
         all_generated.extend(pairs)
+
+    # Fail-loud guard: a rate-limit storm makes whole chunks silently yield
+    # zero pairs, so the benchmark would score a truncated KB as if it were
+    # the hypothesis's fault. Above 5% chunk-call failures the measurement is
+    # invalid — abort so the run FAILS visibly instead of committing garbage.
+    n_chunks_failed = gen_stats.get("n_chunks_failed", 0)
+    if n_chunks_failed > 0.05 * len(source_chunks):
+        raise RuntimeError(
+            f"generation measurement invalid: {n_chunks_failed}/{len(source_chunks)} "
+            "chunk calls failed (rate-limit storm?). Re-run serially — do not "
+            "score a truncated KB."
+        )
+    if n_chunks_failed:
+        print(f"  WARNING: {n_chunks_failed} chunk call(s) failed — within the 5% "
+              "tolerance, recorded in the manifest.")
 
     if not all_generated:
         print("\n✗ NO PAIRS GENERATED — prompt may be broken. Fix and retry.")
