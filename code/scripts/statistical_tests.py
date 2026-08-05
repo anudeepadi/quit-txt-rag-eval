@@ -37,6 +37,13 @@ OUTPUT_DIR = _ROOT / "results" / "statistical_tests"
 ALL_CONFIGS = ["baseline", "ai_rag", "human_rag", "web_rag"]
 METRICS = ["faithfulness", "answer_relevancy", "context_precision", "context_recall"]
 
+# Non-inferiority margin, pre-registered before the frozen test set is
+# unblinded. 0.05 faithfulness is roughly 1.7x the measured run-to-run noise
+# floor (sd 0.0115, MDE ~0.03) and is the value proposed to the reviewer.
+# Changing this after seeing test-set results invalidates the claim.
+DEFAULT_MARGIN = 0.05
+DEFAULT_REFERENCE = "human_rag"
+
 
 # ---------------------------------------------------------------------------
 # Data loading
@@ -179,6 +186,104 @@ def wilcoxon_test(x: list[float], y: list[float]) -> dict:
         }
 
 
+def noninferiority_test(
+    x: list[float],
+    y: list[float],
+    margin: float,
+    n_boot: int = 10000,
+    ci: float = 0.95,
+    seed: int = 42,
+) -> dict:
+    """Paired non-inferiority and TOST equivalence test.
+
+    A two-sided Wilcoxon can only fail to reject "the arms differ" — it can
+    never establish that they are the same. Claiming parity requires shifting
+    the null: we must reject "x is worse than y by at least `margin`". This is
+    the test the parity claim actually needs.
+
+    `margin` is the largest drop in the metric that is still acceptable, and
+    it must be pre-registered before the test set is unblinded. Choosing it
+    after seeing the result turns non-inferiority into a rubber stamp.
+
+    Hypotheses on the paired difference d = x - y:
+      Non-inferiority  H0: median(d) <= -margin   H1: median(d) > -margin
+      Equivalence      H0: |median(d)| >= margin  H1: |median(d)| < margin
+                       (TOST: both one-sided tests must reject)
+
+    Args:
+        x: Scores for the test config (e.g. ai_rag).
+        y: Scores for the reference config (e.g. human_rag), same order.
+        margin: Pre-registered acceptable margin, in metric units.
+        n_boot: Bootstrap resamples for the difference CI.
+        ci: Confidence level for the two-sided CI.
+        seed: Random seed for reproducibility.
+
+    Returns:
+        Dict with the paired difference, its CI, both one-sided p-values,
+        and the non-inferiority / equivalence verdicts.
+    """
+    from scipy.stats import wilcoxon
+
+    pairs = [(a, b) for a, b in zip(x, y) if not (np.isnan(a) or np.isnan(b))]
+    if len(pairs) < 5:
+        return {
+            "margin": margin,
+            "n_valid": len(pairs),
+            "non_inferior": None,
+            "equivalent": None,
+            "note": "Too few valid pairs for test",
+        }
+
+    diffs = np.array([a - b for a, b in pairs])
+
+    # Bootstrap CI on the mean paired difference.
+    rng = np.random.default_rng(seed)
+    boot = np.array([
+        rng.choice(diffs, size=len(diffs), replace=True).mean()
+        for _ in range(n_boot)
+    ])
+    alpha = 1 - ci
+    ci_lower = float(np.percentile(boot, 100 * alpha / 2))
+    ci_upper = float(np.percentile(boot, 100 * (1 - alpha / 2)))
+    # One-sided lower bound at the same alpha, which is what the
+    # non-inferiority decision reads.
+    os_lower = float(np.percentile(boot, 100 * alpha))
+
+    def _one_sided(shifted: np.ndarray, alternative: str) -> float | None:
+        if np.all(shifted == 0):
+            return 1.0
+        try:
+            return float(wilcoxon(shifted, alternative=alternative)[1])
+        except ValueError:
+            return None
+
+    # Lower test: is d greater than -margin?  Upper test: is d less than +margin?
+    p_lower = _one_sided(diffs + margin, "greater")
+    p_upper = _one_sided(diffs - margin, "less")
+
+    non_inferior = None if p_lower is None else bool(p_lower < alpha)
+    equivalent = (
+        None if (p_lower is None or p_upper is None)
+        else bool(max(p_lower, p_upper) < alpha)
+    )
+
+    return {
+        "margin": margin,
+        "n_valid": len(pairs),
+        "mean_diff": round(float(diffs.mean()), 4),
+        "median_diff": round(float(np.median(diffs)), 4),
+        "ci_lower": round(ci_lower, 4),
+        "ci_upper": round(ci_upper, 4),
+        "one_sided_lower_bound": round(os_lower, 4),
+        "p_non_inferiority": p_lower,
+        "p_upper": p_upper,
+        "p_equivalence": None if (p_lower is None or p_upper is None) else max(p_lower, p_upper),
+        "non_inferior": non_inferior,
+        "equivalent": equivalent,
+        "alpha": alpha,
+    }
+
+
 def cliffs_delta(x: list[float], y: list[float]) -> dict:
     """Compute Cliff's delta effect size.
 
@@ -268,12 +373,18 @@ def bootstrap_ci(
 def run_statistical_tests(
     configs: list[str],
     metrics: list[str] | None = None,
+    results_file: Path | None = None,
+    margin: float = DEFAULT_MARGIN,
+    reference: str = DEFAULT_REFERENCE,
 ) -> dict:
     """Run statistical significance tests across all config pairs.
 
     Args:
         configs: List of configurations to compare.
         metrics: List of metrics to test. None = all available.
+        results_file: Explicit RAGAS results JSON. None = merge latest.
+        margin: Pre-registered non-inferiority margin, in metric units.
+        reference: Config every other arm is tested for non-inferiority against.
 
     Returns:
         Full results dict.
@@ -286,10 +397,11 @@ def run_statistical_tests(
     print("=" * 70)
     print("STATISTICAL SIGNIFICANCE TESTS")
     print(f"Configs: {configs}  |  Metrics: {metrics}")
+    print(f"Non-inferiority: margin={margin} vs reference={reference}")
     print("=" * 70)
 
     # Load RAGAS scores
-    ragas_scores = load_ragas_scores()
+    ragas_scores = load_ragas_scores(results_file)
 
     # Try to load BERTScore
     bertscore_data = load_bertscore_results()
@@ -318,6 +430,7 @@ def run_statistical_tests(
     # --- Pairwise Wilcoxon tests ---
     print("\n--- Pairwise Wilcoxon Signed-Rank Tests ---")
     pairwise_results = {}
+    noninf_results: dict[str, dict] = {}
     config_pairs = list(combinations(configs, 2))
 
     for metric in metrics:
@@ -351,11 +464,39 @@ def run_statistical_tests(
                 "cliffs_delta": effect,
             }
 
+            # Non-inferiority only makes sense against the reference arm, and
+            # only in the direction "candidate vs reference" — so orient the
+            # difference as candidate minus reference regardless of pair order.
+            if reference in (c1, c2):
+                cand, cand_scores = (c2, y) if c1 == reference else (c1, x)
+                ref_scores = x if c1 == reference else y
+                noninf_results.setdefault(metric, {})[f"{cand}_vs_{reference}"] = (
+                    noninferiority_test(cand_scores, ref_scores, margin)
+                )
+
             p_str = f"{wilcox['p_value']:.6f}" if wilcox['p_value'] is not None else "N/A"
             sig_str = "**" if wilcox.get("significant_001") else ("*" if wilcox.get("significant_005") else "ns")
             d_str = f"{effect['delta']:.4f}" if effect['delta'] is not None else "N/A"
 
             print(f"  {c1} vs {c2:<20} {p_str:>10} {sig_str:>6} {d_str:>10} {effect['magnitude']:>12}")
+
+    # --- Non-inferiority / equivalence ---
+    print(f"\n--- Non-Inferiority vs {reference} (margin={margin}) ---")
+    for metric in metrics:
+        results = noninf_results.get(metric, {})
+        if not results:
+            continue
+        print(f"\n  Metric: {metric}")
+        print(f"  {'Comparison':<35} {'diff':>8} {'one-sided LB':>13} "
+              f"{'p(NI)':>10} {'Non-inf?':>10} {'Equiv?':>8}")
+        print(f"  {'-'*88}")
+        for key, r in results.items():
+            if r.get("non_inferior") is None and r.get("mean_diff") is None:
+                print(f"  {key:<35} {r.get('note', 'n/a')}")
+                continue
+            p_str = f"{r['p_non_inferiority']:.6f}" if r['p_non_inferiority'] is not None else "N/A"
+            print(f"  {key:<35} {r['mean_diff']:>8.4f} {r['one_sided_lower_bound']:>13.4f} "
+                  f"{p_str:>10} {str(r['non_inferior']):>10} {str(r['equivalent']):>8}")
 
     # --- Save outputs ---
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -368,9 +509,14 @@ def run_statistical_tests(
             "test": "Wilcoxon signed-rank (two-sided)",
             "effect_size": "Cliff's delta",
             "confidence_intervals": "Bootstrap 95% (10000 samples)",
+            "noninferiority_test": "Paired Wilcoxon TOST + bootstrap difference CI",
+            "noninferiority_margin": margin,
+            "noninferiority_reference": reference,
+            "results_file": str(results_file) if results_file else "merged latest",
         },
         "confidence_intervals": ci_results,
         "pairwise_tests": pairwise_results,
+        "noninferiority_tests": noninf_results,
     }
 
     json_path = OUTPUT_DIR / f"statistical_tests_{timestamp}.json"
@@ -415,9 +561,49 @@ def run_statistical_tests(
             d_str = f"{e['delta']:.4f}" if e['delta'] is not None else "N/A"
             md_lines.append(f"| {pair_key.replace('_vs_', ' vs ')} | {p_str} | {sig} | {d_str} | {e['magnitude']} |\n")
 
+    md_lines.append(
+        f"\n## Non-Inferiority vs `{reference}` (margin = {margin})\n\n"
+        "The two-sided Wilcoxon above can only fail to detect a difference; it "
+        "cannot establish parity. These tests reject the null that the candidate "
+        f"arm is worse than `{reference}` by at least {margin}.\n\n"
+    )
+    for metric in metrics:
+        results = noninf_results.get(metric, {})
+        if not results:
+            continue
+        md_lines.append(f"\n### {metric}\n\n")
+        md_lines.append(
+            "| Comparison | Mean diff | 95% CI | One-sided LB | p (non-inf) | "
+            "p (equiv) | Non-inferior? | Equivalent? | n |\n"
+        )
+        md_lines.append("|---|---|---|---|---|---|---|---|---|\n")
+        for key, r in results.items():
+            if r.get("mean_diff") is None:
+                md_lines.append(f"| {key} | — | — | — | — | — | — | — | {r['n_valid']} |\n")
+                continue
+            pni = f"{r['p_non_inferiority']:.6f}" if r['p_non_inferiority'] is not None else "N/A"
+            peq = f"{r['p_equivalence']:.6f}" if r['p_equivalence'] is not None else "N/A"
+            md_lines.append(
+                f"| {key.replace('_vs_', ' vs ')} | {r['mean_diff']:.4f} | "
+                f"[{r['ci_lower']:.4f}, {r['ci_upper']:.4f}] | {r['one_sided_lower_bound']:.4f} | "
+                f"{pni} | {peq} | {r['non_inferior']} | {r['equivalent']} | {r['n_valid']} |\n"
+            )
+
     md_lines.append("\n## Interpretation Guide\n\n")
     md_lines.append("**Significance levels:** * p<0.05, ** p<0.01, ns = not significant\n\n")
-    md_lines.append("**Cliff's delta magnitudes:** |d|<0.147 negligible, <0.33 small, <0.474 medium, ≥0.474 large\n")
+    md_lines.append("**Cliff's delta magnitudes:** |d|<0.147 negligible, <0.33 small, <0.474 medium, ≥0.474 large\n\n")
+    md_lines.append(
+        f"**Non-inferiority:** the candidate is declared non-inferior when the one-sided "
+        f"95% lower bound on (candidate − {reference}) sits above −{margin} and the paired "
+        f"Wilcoxon shifted by +{margin} rejects at p<0.05. **Equivalence** additionally "
+        f"requires the upper one-sided test to reject (TOST), i.e. the difference is "
+        f"bounded inside ±{margin} in both directions.\n\n"
+    )
+    md_lines.append(
+        f"**Margin justification:** {margin} faithfulness is ~1.7x the measured "
+        "run-to-run noise floor (sd 0.0115, minimum detectable effect ~0.03). The margin "
+        "is pre-registered — it must not be revised after the frozen test set is unblinded.\n"
+    )
 
     with open(md_path, "w", encoding="utf-8") as f:
         f.writelines(md_lines)
@@ -458,6 +644,18 @@ def _parse_args() -> argparse.Namespace:
         default=None,
         help="Explicit path to RAGAS results JSON (default: latest in results/ragas_evaluation/)",
     )
+    parser.add_argument(
+        "--margin",
+        type=float,
+        default=DEFAULT_MARGIN,
+        help=f"Pre-registered non-inferiority margin (default: {DEFAULT_MARGIN})",
+    )
+    parser.add_argument(
+        "--reference",
+        choices=ALL_CONFIGS,
+        default=DEFAULT_REFERENCE,
+        help=f"Reference arm for non-inferiority (default: {DEFAULT_REFERENCE})",
+    )
     return parser.parse_args()
 
 
@@ -466,4 +664,7 @@ if __name__ == "__main__":
     run_statistical_tests(
         configs=args.configs,
         metrics=args.metrics,
+        results_file=Path(args.results_file) if args.results_file else None,
+        margin=args.margin,
+        reference=args.reference,
     )
