@@ -533,6 +533,18 @@
       "experiment_id": "exp_0027",
       "task_id": null,
       "timestamp": "2026-07-27T19:53:37+00:00"
+    },
+    {
+      "analysis": "Score 0.8356 with full 444/444 chunk coverage. GATE_FAILED harness_integrity is a false positive for cheating and a true positive for wrong-harness-version: this worktree branched from exp_0027 (pre-7fd5468) so the fail-loud 429 guard is absent. Do not commit. Re-run on current-harness parent.",
+      "experiment_id": "exp_0029",
+      "task_id": null,
+      "timestamp": "2026-08-05T14:35:38+00:00"
+    },
+    {
+      "analysis": "Gate PASSED. 444/444 chunk coverage, n_chunks_failed=0, 3569 pairs. Score 0.7985. CRITICAL: this is the same prompt config as exp_0029 (0.8356, also 444/444), so two clean full-coverage replicates of an IDENTICAL config differ by 0.0371 -- larger than the assumed minimum detectable effect of 0.03. The noise floor of sd=0.0115 was measured at epoch 2 on truncated/smaller runs and does not hold for full-coverage runs. The 'score_regressed vs parent=0.8227' label is meaningless: exp_0027's 0.8227 came from a 48.6%-coverage KB. Re-testing the exp_0025/0026 prompts is not interpretable until the full-coverage noise floor is re-measured with more replicates.",
+      "experiment_id": "exp_0030",
+      "task_id": null,
+      "timestamp": "2026-08-05T14:52:44+00:00"
     }
   ]
 }

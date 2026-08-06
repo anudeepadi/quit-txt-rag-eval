@@ -268,12 +268,14 @@ def bootstrap_ci(
 def run_statistical_tests(
     configs: list[str],
     metrics: list[str] | None = None,
+    results_file: Path | None = None,
 ) -> dict:
     """Run statistical significance tests across all config pairs.
 
     Args:
         configs: List of configurations to compare.
         metrics: List of metrics to test. None = all available.
+        results_file: Explicit RAGAS results JSON. None = merge latest.
 
     Returns:
         Full results dict.
@@ -289,7 +291,7 @@ def run_statistical_tests(
     print("=" * 70)
 
     # Load RAGAS scores
-    ragas_scores = load_ragas_scores()
+    ragas_scores = load_ragas_scores(results_file)
 
     # Try to load BERTScore
     bertscore_data = load_bertscore_results()
@@ -466,4 +468,5 @@ if __name__ == "__main__":
     run_statistical_tests(
         configs=args.configs,
         metrics=args.metrics,
+        results_file=Path(args.results_file) if args.results_file else None,
     )

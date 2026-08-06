@@ -93,6 +93,82 @@
       "breaking": false,
       "message": "v4.2 harness (fail-loud guard, non-breaking): >5% chunk-generation-call failures now abort the run instead of silently scoring a truncated KB; manifest records n_chunks_failed. Root cause: concurrent runs vs shared 200k TPM -> 429 storm; exp_0026/exp_0027 pruned --invalid. Benchmark runs serialized by policy. Gate re-anchored 80439df -> 7fd5468. Scores comparable (guard is score-neutral for clean runs).",
       "timestamp": "2026-07-27T19:56:51+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 4 id(s) seed=309881363",
+      "returned_ids": [
+        "exp_0021",
+        "exp_0020",
+        "exp_0013",
+        "exp_0025"
+      ],
+      "seed": 309881363,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-08-05T14:17:44+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 4 id(s) seed=342941129",
+      "returned_ids": [
+        "exp_0021",
+        "exp_0013",
+        "exp_0020",
+        "exp_0025"
+      ],
+      "seed": 342941129,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-08-05T14:17:54+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 4 id(s) seed=2024812508",
+      "returned_ids": [
+        "exp_0021",
+        "exp_0020",
+        "exp_0025",
+        "exp_0013"
+      ],
+      "seed": 2024812508,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-08-05T14:17:54+00:00"
+    },
+    {
+      "kind": "frontier",
+      "message": "frontier(pareto_per_task) -> 4 id(s) seed=2136571471",
+      "returned_ids": [
+        "exp_0025",
+        "exp_0020",
+        "exp_0021",
+        "exp_0027"
+      ],
+      "seed": 2136571471,
+      "strategy": {
+        "kind": "pareto_per_task",
+        "params": {
+          "k": 5,
+          "task_floor": 0.0
+        }
+      },
+      "timestamp": "2026-08-05T14:18:35+00:00"
     }
   ]
 }

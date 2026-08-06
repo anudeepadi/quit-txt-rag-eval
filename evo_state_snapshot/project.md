@@ -4,17 +4,19 @@
 
 `code/autoresearch/data_gen_experiment.py` holds the config for AI QA-pair generation:
 `GEN_SYSTEM_PROMPT` (primary lever), `GEN_TEMPERATURE`, `GEN_MAX_TOKENS`, `QA_PER_SOURCE`,
-`GEN_MODEL`, plus the RAG-eval params (`RAG_TEMPLATE`, `RAG_TEMPERATURE`, `RAG_MAX_TOKENS`,
-`RAG_TOP_K`). The paper goal: AI-generated QA knowledge bases that match or beat the
+`GEN_MODEL`, plus the RAG-eval params (`RAG_TEMPLATE`, `RAG_MAX_TOKENS`, `RAG_TOP_K`).
+`RAG_TEMPERATURE` used to live here; it is now fixed infra (see below).
+The paper goal: AI-generated QA knowledge bases that match or beat the
 human-curated KB (current best: combined 0.7583, ~77-83% of human on RAG faithfulness).
 
 ## What can change vs what must stay stable
 
 - **Changeable**: everything in `data_gen_experiment.py`. The generation prompt accounts
   for ~80% of variance historically. `HYPOTHESIS` must describe each change.
-- **Fixed**: `run_data_gen_experiment.py` (harness), `data_gen_prepare.py` (data loading +
-  LLM judges + TSV logging), everything under `datasets/` (incl. the 20-question test slice
-  from `test_set_150q.xlsx`). Protected by the `harness_integrity` gate.
+- **Fixed**: `run_data_gen_experiment.py` (harness, and since f60f8e3 the home of
+  `RAG_TEMPERATURE`, pinned 0.0), `data_gen_prepare.py` (data loading + LLM judges + TSV
+  logging), everything under `datasets/` (incl. the 20-question test slice from
+  `test_set_150q.xlsx`). Protected by the `harness_integrity` gate.
 - Caution: `RAG_TEMPLATE` is agent-controlled but used for BOTH the generated-KB arm and
   the human-baseline arm - template changes that inflate faithfulness (e.g. verbatim
   context-copying instructions) are a known gaming vector; treat template experiments
@@ -101,14 +103,65 @@ chunks while human arm uses the full KB — source-sample asymmetry now dominate
 the honest metric. Fixing it means changing N_SOURCE_CHUNKS in fixed infra
 (epoch 3) and affects the paper's claim framing.
 
-## Measured noise floor (epoch 2, 4 draws of exp_0013 config)
+## Measured noise floor (epoch 5, harness f60f8e3, RAG_TEMPERATURE pinned 0.0)
 
-Combined sd = 0.0115 (range 0.027). Single-run-vs-single-run minimum detectable
-effect ~= 0.03. Tone is the stable component (0.78-0.79); faithfulness and the
-human arm each carry ~+/-0.02-0.03 residual judge noise on substantive answers.
-Do not commit/prune on single-run deltas under 0.03 without replicates.
-(Measured at 20 eval questions; 50-question epoch-4 runs should have a LOWER
-faithfulness noise floor — re-measure before applying the 0.03 threshold hard.)
+**Pooled sd = 0.0047**, from two configs at three draws each, all at 444/444
+chunk coverage with n_chunks_failed=0, run serially on the 50-question dev
+split:
+
+| config | draws | mean | sd |
+|---|---|---|---|
+| exp_0027 prompt (exp_0034/35/36) | 0.8182, 0.8194, 0.8214 | 0.8197 | 0.0016 |
+| exp_0025 prompt (exp_0037/39/40) | 0.8255, 0.8351, 0.8229 | 0.8278 | 0.0064 |
+
+Minimum detectable effect (alpha=.05 two-sided, 80% power):
+
+| replicates/arm | required gap |
+|---|---|
+| 1 | 0.0186 |
+| 3 | 0.0107 |
+| 5 | 0.0083 |
+| 8 | 0.0066 |
+| 12 | 0.0054 |
+
+**Use the pooled figure, never a single config's sd.** The first post-fix
+measurement quoted sd = 0.0016 from group A alone — three draws, df=2, which
+is far too thin to pin a variance. The very next config came back at 0.0064,
+4x larger. A 3-draw sd can be off by a factor of 3 in either direction; a
+comparison built on one is overconfident by the same factor. Noise is also
+prompt-dependent, so a floor measured on one config does not transfer to
+another.
+
+### Why it was 4.6x worse, and what to never do again
+
+Before f60f8e3, the RAG answers scored for faithfulness were sampled at
+`RAG_TEMPERATURE = 0.3` from the *agent-editable* config. Faithfulness carries
+40% of the combined score, so that single knob produced **92% of all
+run-to-run variance**. Five replicates of one identical config
+(exp_0029-0033) scored 0.7985-0.8472: **sd 0.0216**, faithfulness alone
+ranging 0.12, single-run MDE **0.0854**.
+
+Pinning it to 0.0 in protected infra cut the pooled sd to 0.0047 (4.6x) while
+leaving the mean unmoved (0.8194 -> 0.8197). The fix removed noise, not signal.
+
+Consequences that stand:
+
+- **Every epoch-3 and epoch-4 ranking is unproven.** All deltas acted on were
+  under 0.025, far inside the old 0.0854 band: exp_0025 vs exp_0027 (0.0013),
+  the epoch-4 spread (0.0026), exp_0020 vs exp_0021 (0.0120).
+- **The framework will manufacture improvements out of noise.** evo committed
+  exp_0031 as "+0.0245 vs parent" when it was a byte-identical replicate of
+  its parent's config. Pruned 2026-08-05.
+- The pre-f60f8e3 figure (sd 0.0115, MDE 0.03, epoch 2, 20 eval questions) was
+  1.9x optimistic, and the prediction that 50-question runs would lower the
+  floor was wrong — it went up until the sampler was pinned.
+- **Any scoring knob reachable from the editable config is a gaming vector**,
+  not just a parameter. `RAG_TEMPERATURE` lowered the score's noise *and*
+  raised faithfulness without improving the KB. It now lives in
+  `run_data_gen_experiment.py` with `RAG_TEMPLATE`-class protection. Audit the
+  rest of the config the same way before trusting a result.
+- Paper caveat: all faithfulness numbers produced before f60f8e3 carry roughly
+  +/-0.05 and need re-running before publication.
 
 ## Epoch 4 (dev-split eval, harness commit dbeca27)
 
@@ -143,3 +196,62 @@ is the generation source):
   freeze fixes optimization-fit contamination (the reviewer's objection);
   SOURCE-level contamination is a separate channel it does not cover. Flag
   this when the frozen-test number becomes a paper headline.
+
+## Epoch 5 (harness f60f8e3, RAG_TEMPERATURE pinned 0.0)
+
+Harness change: `RAG_TEMPERATURE` moved from the agent-editable config into
+`run_data_gen_experiment.py` and pinned at 0.0. Epoch-4 scores are NOT
+comparable to epoch-5 scores.
+
+**Working parent: exp_0037 (the exp_0025 prompt), mean 0.8278 over 3 draws.**
+
+Chosen on 2026-08-06 over the exp_0027 prompt (0.8197). The gap is +0.0082
+with 95% CI [-0.0025, +0.0188], t=2.135, df=4, **p=0.0997 — not significant**.
+Resolving it properly needs 6 draws per arm (~2 hours). It was accepted on
+weaker evidence than that, deliberately:
+
+- all three exp_0025-prompt draws sit above the exp_0027-prompt mean, so the
+  direction is consistent even though the magnitude is not established;
+- the cost of being wrong is ~0.008, small next to what an optimization round
+  should find;
+- the alternative was spending another two hours certifying a difference no
+  reviewer will ask about.
+
+**Do not report this choice as an experimental result.** It is a working
+decision under acknowledged uncertainty. If epoch 5 produces a finalist worth
+publishing, re-establish the parent comparison at 6+ draws per arm first.
+
+### Void prior results
+
+Every epoch-3 and epoch-4 ranking is unusable, for two independent reasons:
+
+1. **Truncated corpora.** exp_0025-0027 ran concurrently on 2026-07-27 and lost
+   roughly half their source chunks to a shared-TPM 429 storm: exp_0026 covered
+   234/444 (52.7%), exp_0027 216/444 (48.6%). The fail-loud guard (7fd5468)
+   landed after those runs.
+2. **A noisy sampler.** At `RAG_TEMPERATURE = 0.3` the single-run MDE was
+   0.0854, larger than every delta the optimization acted on.
+
+Re-tested at full coverage on the pinned harness, the July ranking **inverts**:
+
+| prompt | July | epoch 5 | moved |
+|---|---|---|---|
+| exp_0025 | 0.8214 | 0.8278 (n=3) | +0.0064 |
+| exp_0026 | 0.8201 | 0.8250 (n=1) | +0.0049 |
+| exp_0027 | 0.8227 *(picked as best)* | 0.8197 (n=3) | -0.0030 |
+
+Round 1 did not fail. It produced two prompts that beat the baseline and the
+measurement picked the wrong winner. Note also that exp_0027 accumulated the
+most prompt rules (anchor requirement, first-person framing, basis attachment)
+and scores lowest of the three — more constraints made it worse.
+
+### Standing rules
+
+- One run per experiment resolves ~0.019. Anything tighter needs replicates;
+  see the MDE table above and use the POOLED sd.
+- Never run experiments concurrently — that is what caused the 429 truncation.
+- Verify `len({source_id}) == 444` in `generated_kb.jsonl` before trusting any
+  score.
+- Audit the editable config for other scoring levers. `RAG_TOP_K` and
+  `RAG_MAX_TOKENS` are still reachable and both plausibly move the score
+  without improving the dataset.

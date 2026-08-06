@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "generated_at": "2026-08-04T21:11:15.683032",
+    "configs": [
+      "ai_rag",
+      "human_rag"
+    ],
+    "metrics": [
+      "faithfulness"
+    ],
+    "test": "Wilcoxon signed-rank (two-sided)",
+    "effect_size": "Cliff's delta",
+    "confidence_intervals": "Bootstrap 95% (10000 samples)",
+    "noninferiority_test": "Paired Wilcoxon TOST + bootstrap difference CI",
+    "noninferiority_margin": 0.05,
+    "noninferiority_reference": "human_rag",
+    "results_file": "results/ragas_evaluation/ragas_eval_concise_20260721_044307.json"
+  },
+  "confidence_intervals": {
+    "ai_rag": {
+      "faithfulness": {
+        "mean": 0.8167,
+        "ci_lower": 0.7535,
+        "ci_upper": 0.8756,
+        "n": 100
+      }
+    },
+    "human_rag": {
+      "faithfulness": {
+        "mean": 0.7707,
+        "ci_lower": 0.7046,
+        "ci_upper": 0.8322,
+        "n": 100
+      }
+    }
+  },
+  "pairwise_tests": {
+    "faithfulness": {
+      "ai_rag_vs_human_rag": {
+        "wilcoxon": {
+          "statistic": 303.5,
+          "p_value": 0.09913989468445397,
+          "n_valid": 100,
+          "significant_005": "False",
+          "significant_001": "False"
+        },
+        "cliffs_delta": {
+          "delta": 0.11,
+          "magnitude": "negligible"
+        }
+      }
+    }
+  },
+  "noninferiority_tests": {
+    "faithfulness": {
+      "ai_rag_vs_human_rag": {
+        "margin": 0.05,
+        "n_valid": 100,
+        "mean_diff": 0.046,
+        "median_diff": 0.0,
+        "ci_lower": -0.0152,
+        "ci_upper": 0.1051,
+        "one_sided_lower_bound": -0.0051,
+        "p_non_inferiority": 1.8999891211427517e-08,
+        "p_upper": 0.030112690381602997,
+        "p_equivalence": 0.030112690381602997,
+        "non_inferior": true,
+        "equivalent": true,
+        "alpha": 0.050000000000000044
+      }
+    }
+  }
+}
