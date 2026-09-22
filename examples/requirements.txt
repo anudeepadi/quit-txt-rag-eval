@@ -1,0 +1,3 @@
+# Minimal, provider-free walkthrough environment. Full experiments use ../requirements.txt.
+openpyxl==3.1.5
+scipy==1.17.1

@@ -1,0 +1,6 @@
+{
+  "provenance": "Hand-authored synthetic onboarding fixture. Not measured model output or study data.",
+  "illustrative_margin": 0.05,
+  "ai_rag": [0.82, 0.76, 0.91, 0.67, 0.85, 0.71, 0.94, 0.79, 0.88, 0.73],
+  "human_rag": [0.80, 0.79, 0.90, 0.70, 0.83, 0.75, 0.92, 0.81, 0.86, 0.77]
+}

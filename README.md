@@ -1,12 +1,34 @@
-# Quitxt RAG Evaluation
+# Quitxt Eval
 
 Research code for comparing retrieval-augmented generation configurations in smoking-cessation question answering.
 
 This repository contains the evaluation and analysis portion of the Quitxt benchmarking study. It compares model-only answers with answers grounded in human-curated, AI-generated, and web-derived knowledge bases, then analyzes answer quality, latency, and uncertainty.
 
-**Availability:** code only. Evaluation datasets, raw results, and per-run logs are not included; the existing study documentation makes them available from the corresponding author on reasonable request. The messaging application is a separate project.
+**Status:** research code with a runnable synthetic onboarding example. Study datasets, raw results, and per-run logs are not included; the existing study documentation makes them available from the corresponding author on reasonable request. The messaging application is a separate project.
 
-[Method](#evaluation-design) · [Architecture](#architecture) · [Setup](#setup) · [Code guide](#code-guide)
+[Try the synthetic example](#try-the-synthetic-example) · [Method](#evaluation-design) · [Architecture](#architecture) · [Study setup](#study-setup) · [Code guide](#code-guide)
+
+## Try the synthetic example
+
+This entry point uses **Python 3.12** and [uv](https://docs.astral.sh/uv/getting-started/installation/), two small analysis dependencies, and no provider accounts or study files. It calls the repository's actual workbook loader, frozen-split guard, summary statistics, and paired non-inferiority/equivalence functions. Outbound socket connections are blocked while it runs.
+
+```bash
+git clone https://github.com/anudeepadi/quit-txt-rag-eval.git
+cd quit-txt-rag-eval
+uv venv --python 3.12 .venv
+source .venv/bin/activate
+uv pip install -r examples/requirements.txt
+python examples/synthetic_evaluation.py
+```
+
+The [script](examples/synthetic_evaluation.py) creates a temporary workbook with invented, nonmedical questions. It removes one flagged row, checks a 50/10 split with no overlap, confirms that held-out access is blocked during optimization, then analyzes [hand-authored score fixtures](examples/synthetic_scores.json). It never reads or changes the study workbook or its manifest.
+
+| Synthetic fixture | n | Mean score | SD |
+| --- | ---: | ---: | ---: |
+| AI RAG fixture | 10 | 0.8060 | 0.0896 |
+| Human RAG fixture | 10 | 0.8130 | 0.0673 |
+
+See the [complete output](examples/synthetic-results.md). These numbers are **not study findings**, generated answers, or RAGAS measurements. The example checks analysis plumbing; it does not compare model quality. The illustrative 0.05 margin is not a clinically justified study margin.
 
 ## Evaluation design
 
@@ -36,9 +58,9 @@ flowchart TD
 
 The scripts implement related experiments rather than a single production service. Baseline generation bypasses retrieval; held-out reanalysis consumes saved scores and does not call a model provider.
 
-## Setup
+## Study setup
 
-Use a Python environment compatible with the dependencies in [requirements.txt](requirements.txt). Dependencies are mostly unpinned, so retain an environment snapshot with any reproduced experiment.
+The full experimental environment in [requirements.txt](requirements.txt) is separate from the tested minimal walkthrough above. Dependencies are mostly unpinned; review compatibility and retain an environment snapshot with any reproduced experiment. A fresh provider-backed study run has not been verified in this documentation refresh.
 
 ```bash
 git clone https://github.com/anudeepadi/quit-txt-rag-eval.git
